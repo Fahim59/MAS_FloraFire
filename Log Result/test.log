@@ -1,0 +1,8 @@
+2024-10-26 20:48:42.309 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
+2024-10-26 20:48:47.455 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
+2024-10-26 20:48:47.672 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
+2024-10-26 20:48:47.678 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-26 20:50:08.918 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
+2024-10-26 20:50:13.750 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
+2024-10-26 20:50:13.991 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
+2024-10-26 20:50:13.997 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully

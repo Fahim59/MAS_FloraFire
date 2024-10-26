@@ -1,7 +1,10 @@
 {
-  "products": {
-    "product1": "Pomelo (Jambura) Kg",
-    "product2": "Shwapno Butter Bun 100gm",
-    "message": "Your order has been placed successfully"
+  "registration_info": {
+    "email": "testmustafizur+200@gmail.com",
+    "sec.question1": "What is your favorite color?",
+    "sec.question1_answer": "Green",
+    "sec.question2": "What city were you born in?",
+    "sec.question2_answer": "Narayanganj",
+    "password": "11!!qqQQ"
   }
 }

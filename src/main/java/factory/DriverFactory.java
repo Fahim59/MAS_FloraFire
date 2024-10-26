@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import utils.ConfigLoader;
 
@@ -46,21 +47,36 @@ public class DriverFactory {
                 options.setExperimentalOption("prefs", prefs);
 
                 WebDriverManager.chromedriver().setup();
+                //WebDriverManager.chromedriver().browserVersion("").setup();
                 tlDriver.set(new ChromeDriver(options));
                 break;
 
             case "firefox":
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+                firefoxOptions.addPreference("dom.webnotifications.enabled", false);
+
+                firefoxOptions.addPreference("browser.download.dir", "/path/to/download");
+                firefoxOptions.addPreference("browser.download.folderList", 2);
+                firefoxOptions.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf,application/octet-stream");
+
+                firefoxOptions.addPreference("signon.rememberSignons", false);   //prevent pop up of save password window
+                firefoxOptions.addPreference("signon.autofillForms", false);    //prevent pop up of save password window
+
                 WebDriverManager.firefoxdriver().setup();
+                //WebDriverManager.firefoxdriver().browserVersion("").setup();
                 tlDriver.set(new FirefoxDriver());
                 break;
 
             case "edge":
                 WebDriverManager.edgedriver().setup();
+                //WebDriverManager.edgedriver().browserVersion("").setup();
                 tlDriver.set(new EdgeDriver());
                 break;
 
             case "safari":
                 WebDriverManager.safaridriver().setup();
+                //WebDriverManager.safaridriver().browserVersion("").setup();
                 tlDriver.set(new SafariDriver());
                 break;
 

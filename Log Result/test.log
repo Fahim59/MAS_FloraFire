@@ -1,20 +1,7 @@
-2024-10-26 20:48:42.309 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
-2024-10-26 20:48:47.455 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
-2024-10-26 20:48:47.672 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
-2024-10-26 20:48:47.678 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-10-26 20:50:08.918 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
-2024-10-26 20:50:13.750 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
-2024-10-26 20:50:13.991 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
-2024-10-26 20:50:13.997 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-10-26 22:06:59.797 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
-2024-10-26 22:07:02.063 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
-2024-10-26 22:07:02.242 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
-2024-10-26 22:07:02.247 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-10-26 22:11:25.007 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
-2024-10-26 22:11:28.483 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
-2024-10-26 22:11:28.700 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
-2024-10-26 22:11:28.706 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-10-26 22:11:58.659 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser launched successfully
-2024-10-26 22:12:03.373 [TestNG-test=nopStation-1] INFO  base.BaseClass - Website open successfully
-2024-10-26 22:12:03.702 [TestNG-test=nopStation-1] INFO  tests.CustomerRegistration - Customer go to the FLorafire Registration page
-2024-10-26 22:12:03.710 [TestNG-test=nopStation-1] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 00:00:18.641 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 00:00:26.512 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 00:00:27.472 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 00:00:30.126 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 00:00:31.176 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 00:00:32.610 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 00:00:32.611 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

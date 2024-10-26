@@ -1,10 +1,12 @@
 {
   "registration_info": {
-    "email": "testmustafizur+200@gmail.com",
+    "email": "janopin766@regishub.com",
     "sec.question1": "What is your favorite color?",
     "sec.question1_answer": "Green",
     "sec.question2": "What city were you born in?",
     "sec.question2_answer": "Narayanganj",
-    "password": "11!!qqQQ"
+    "password": "11!!qqQQ",
+    "regSuccessText": "Your registration has been completed successfully",
+    "emailText": "Your registration has been successfully completed. You have just been sent an email containing activation instructions."
   }
 }

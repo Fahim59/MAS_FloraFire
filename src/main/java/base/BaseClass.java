@@ -44,10 +44,10 @@ public class BaseClass {
 
     @BeforeClass
     public static void open_website(){
-        Open_Website(EndPoint.registration.url);
+        //Open_Website(EndPoint.registration.url);
         //Open_Website(EndPoint.login.url);
 
-        logger.info("Website open successfully");
+        //logger.info("Website open successfully");
     }
     //---------------------------------------------------------------------------------------------//
     public String dateTime() {

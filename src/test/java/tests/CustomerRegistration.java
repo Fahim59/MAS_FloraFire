@@ -115,6 +115,7 @@ public class CustomerRegistration extends BaseClass {
         String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
         String emailAddress = email;
         String expectedCustomerName = firstName +" "+ lastName;
+        String expectedSubject = jsonData.getJSONObject("registration_info").getString("emailSubject");
 
         HttpResponse<JsonNode> response = Unirest.get("https://mailosaur.com/api/messages")
                 .basicAuth(apiKey, "")
@@ -124,7 +125,16 @@ public class CustomerRegistration extends BaseClass {
 
         if (!response.getBody().getObject().getJSONArray("items").isEmpty()) {
             kong.unirest.json.JSONObject latestEmail = response.getBody().getObject().getJSONArray("items").getJSONObject(0);
+
             String messageId = latestEmail.getString("id");
+            String emailSubject = latestEmail.getString("subject");
+
+            System.out.println("Email Subject: " +emailSubject);
+
+            if (!expectedSubject.equals(emailSubject)) {
+                System.out.println("Email subject does not match.");
+                return;
+            }
 
             HttpResponse<JsonNode> messageResponse = Unirest.get("https://mailosaur.com/api/messages/" + messageId)
                     .basicAuth(apiKey, "")

@@ -11,6 +11,7 @@
     "password": "11!!qqQQ",
     "regSuccessText": "Your registration has been completed successfully",
     "emailText": "Your registration has been successfully completed. You have just been sent an email containing activation instructions.",
-    "activationSuccessText": "Your account has been activated"
+    "activationSuccessText": "Your account has been activated",
+    "emailSubject": "Activate the User Account"
   }
 }

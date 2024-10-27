@@ -60,7 +60,7 @@ public class BaseClass {
         DriverFactory.getDriver().get(new ConfigLoader().initializeProperty().getProperty("baseUrl") +endPoint);
     }
 
-    public static void SmallWait(int second) throws InterruptedException {Thread.sleep(second);}
+    public static void SmallWait(int milliSecond) throws InterruptedException {Thread.sleep(milliSecond);}
 
     public static void Scroll_Down() throws InterruptedException {
         SmallWait(1000);

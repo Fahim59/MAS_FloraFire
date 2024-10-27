@@ -5,3 +5,65 @@
 2024-10-27 00:00:31.176 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
 2024-10-27 00:00:32.610 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
 2024-10-27 00:00:32.611 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 11:04:24.664 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 11:04:28.438 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 11:04:29.447 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 11:04:33.004 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 11:04:34.052 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 11:04:35.619 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 11:04:35.620 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 11:48:53.591 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 11:49:37.636 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 11:49:38.657 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 11:49:40.798 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 11:49:41.852 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 11:49:43.231 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 11:49:43.233 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 12:58:54.726 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:04:33.156 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:06:14.460 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:06:17.810 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:08:31.143 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:12:20.016 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:14:48.071 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:14:52.668 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:16:46.304 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:16:52.129 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:16:53.116 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 13:16:54.181 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 13:17:24.696 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:17:28.079 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:17:29.001 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 13:17:34.571 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 13:18:02.233 [main] INFO  tests.CustomerRegistration - Customer checked their email and clicked on the activation link.
+2024-10-27 13:18:02.235 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 13:20:19.418 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:20:23.846 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:20:24.611 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 13:20:26.829 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 13:20:27.872 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 13:20:28.945 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 13:21:34.741 [main] INFO  tests.CustomerRegistration - Customer checked their email and clicked on the activation link.
+2024-10-27 13:21:34.742 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 13:47:55.560 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:47:59.621 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:48:00.555 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 13:48:03.242 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 13:48:04.287 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 13:48:05.775 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 13:55:58.958 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 13:56:02.372 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 13:56:03.292 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 13:56:06.722 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 13:56:07.771 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 13:56:08.972 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 13:57:14.405 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Customer checked their email and clicked on the activation link.
+2024-10-27 13:57:14.407 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-27 14:11:55.898 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser launched successfully
+2024-10-27 14:11:58.874 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-10-27 14:11:59.831 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
+2024-10-27 14:12:02.945 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
+2024-10-27 14:12:03.992 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Verified successful registration message.
+2024-10-27 14:12:05.138 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Navigated to the login page.
+2024-10-27 14:13:09.633 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  tests.CustomerRegistration - Customer checked their email and clicked on the activation link.
+2024-10-27 14:13:09.634 [TestNG-test=nopStation/MAS_FloraFire_EcomPortal-1] INFO  base.BaseClass - Browser quit and Send Report successfully

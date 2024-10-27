@@ -129,6 +129,20 @@
             <version>20231013</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.mailosaur/mailosaur-java -->
+        <dependency>
+            <groupId>com.mailosaur</groupId>
+            <artifactId>mailosaur-java</artifactId>
+            <version>8.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.konghq/unirest-java -->
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>3.14.5</version>
+        </dependency>
+
     </dependencies>
 
 </project>

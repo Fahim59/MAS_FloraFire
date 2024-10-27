@@ -5,7 +5,7 @@
         <listener class-name="utils.Listeners"/>
         <listener class-name="retry_analyzer.Transformer"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="nopStation">
+    <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_EcomPortal">
         <classes>
             <class name="tests.CustomerRegistration"/>
         </classes>

@@ -18,7 +18,7 @@ public class Extent_Report {
             ExtentSparkReporter html = new ExtentSparkReporter("Reports/Html Reports/Extent.html");
 
             html.config().setDocumentTitle("Html Report");
-            html.config().setReportName("Base Project");
+            html.config().setReportName("MAS Florafire");
             html.config().setTheme(Theme.DARK);
             extent = new ExtentReports();
             extent.attachReporter(html);

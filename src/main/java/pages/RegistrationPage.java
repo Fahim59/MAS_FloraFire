@@ -43,6 +43,8 @@ public class RegistrationPage extends BaseClass{
 
     private final By loginBtn = By.xpath("//a[normalize-space()='Go to Login Screen.']");
 
+    private final By activationSuccessTextField = By.xpath("//p[@class='content']");
+
     public RegistrationPage enterFirstName(String firstName){
         write_Send_Keys(firstNameField, firstName);
         return this;
@@ -98,15 +100,19 @@ public class RegistrationPage extends BaseClass{
         click_Element(registerBtn);
     }
 
-    public String fetchRegSuccessTextField(){
+    public String fetchRegSuccessText(){
         return get_Text(regSuccessTextField);
     }
 
-    public String fetchEmailTextField(){
+    public String fetchEmailText(){
         return get_Text(emailTextField);
     }
 
     public void clickLoginPageBtn() {
         click_Element(loginBtn);
+    }
+
+    public String fetchActivationText(){
+        return get_Text(activationSuccessTextField);
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel= "classes" thread-count="2">
+<suite name="All Test Suite" thread-count="2">
     <listeners>
         <listener class-name="utils.Listeners"/>
         <listener class-name="retry_analyzer.Transformer"/>
@@ -8,6 +8,7 @@
     <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_EcomPortal">
         <classes>
             <class name="tests.CustomerRegistration"/>
+            <class name="tests.CustomerLogin"/>
         </classes>
     </test>
 </suite>

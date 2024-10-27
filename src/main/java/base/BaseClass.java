@@ -36,7 +36,8 @@ public class BaseClass {
 
     private static final Logger logger = LogManager.getLogger(BaseClass.class);
 
-    @BeforeClass
+    //@BeforeClass
+    @BeforeSuite
     public static void launch_browser(){
         driver = DriverFactory.initializeDriver(System.getProperty("browser",
                 new ConfigLoader().initializeProperty().getProperty("browser")));
@@ -163,6 +164,12 @@ public class BaseClass {
                     js.executeScript("arguments[0].click();", option);
                 }
             }
+        }
+    }
+    public void click_CheckBox(By locator) {
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        if (!element.isSelected()) {
+            js.executeScript("arguments[0].click();", element);
         }
     }
 

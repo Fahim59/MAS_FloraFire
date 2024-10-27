@@ -32,6 +32,8 @@ public class BaseClass {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
+    public static String userName;
+
     private static final Logger logger = LogManager.getLogger(BaseClass.class);
 
     @BeforeClass

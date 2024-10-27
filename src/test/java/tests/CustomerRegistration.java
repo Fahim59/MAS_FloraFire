@@ -67,6 +67,8 @@ public class CustomerRegistration extends BaseClass {
         lastName = faker.name().lastName();
         email = firstName.toLowerCase() + "@" + jsonData.getJSONObject("mailosaur").getString("serverId") + ".mailosaur.net";
 
+        userName = email;
+
         registrationPage.enterRegistrationDetails(firstName, lastName, email, email,
                 jsonData.getJSONObject("registration_info").getString("sec.question1"), jsonData.getJSONObject("registration_info").getString("sec.question1_answer"),
                 jsonData.getJSONObject("registration_info").getString("sec.question2"), jsonData.getJSONObject("registration_info").getString("sec.question2_answer"),
@@ -101,10 +103,9 @@ public class CustomerRegistration extends BaseClass {
 
         getActivationLink();
 
-        driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
+        //driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
         driver.get(link);
 
-        SmallWait(500);
         Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("activationSuccessText"), registrationPage.fetchActivationText());
 
         logger.info("Customer checked their email and clicked on the activation link.");

@@ -36,7 +36,6 @@ public class BaseClass {
 
     private static final Logger logger = LogManager.getLogger(BaseClass.class);
 
-    //@BeforeClass
     @BeforeSuite
     public static void launch_browser(){
         driver = DriverFactory.initializeDriver(System.getProperty("browser",
@@ -45,13 +44,6 @@ public class BaseClass {
         logger.info("Browser launched successfully");
     }
 
-    @BeforeClass
-    public static void open_website(){
-        //Open_Website(EndPoint.registration.url);
-        //Open_Website(EndPoint.login.url);
-
-        //logger.info("Website open successfully");
-    }
     //---------------------------------------------------------------------------------------------//
     public String dateTime() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
@@ -286,8 +278,7 @@ public class BaseClass {
         }
     }
 
-    //@AfterSuite
-    @AfterClass
+    @AfterSuite
     public static void QuitBrowser() throws InterruptedException {
         //driver.quit();
         //SendEmail();

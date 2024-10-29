@@ -115,3 +115,11 @@
 2024-10-27 18:44:35.029 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
 2024-10-27 18:44:39.045 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
 2024-10-27 18:44:39.046 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-29 13:50:17.014 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-29 13:50:17.610 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-29 13:53:10.435 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-29 13:53:10.963 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-29 13:53:49.434 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-29 13:53:49.951 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-10-29 13:54:44.977 [main] INFO  base.BaseClass - Browser launched successfully
+2024-10-29 13:54:45.460 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

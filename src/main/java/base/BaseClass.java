@@ -1,8 +1,6 @@
 package base;
 
-import constants.EndPoint;
 import factory.DriverFactory;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -266,12 +264,6 @@ public class BaseClass {
     public static void SaveLogFile(){
         try {
             File logFile = new File("Log Result/test.log");
-            File outputFile = new File("Log Result/test_output.txt");
-
-            String outputContents = FileUtils.readFileToString(outputFile, "UTF-8");
-            FileUtils.writeStringToFile(logFile, outputContents, "UTF-8", true);
-
-            outputFile.delete();
         }
         catch (Exception e) {
             System.out.println("Log save failed" +e);

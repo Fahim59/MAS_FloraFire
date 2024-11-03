@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseClass;
+import constants.EndPoint;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
@@ -48,7 +49,10 @@ public class CustomerLogin extends BaseClass {
 
     @Test(description = "Verifies that a customer can log in successfully", priority = 1)
     public void verifyCustomerSuccessfulLogin() {
-        loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
+        Open_Website(EndPoint.login.url);
+
+        //loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
+        loginPage.enterLoginDetails("janopin764@regishub.com", jsonData.getJSONObject("registration_info").getString("password"));
         loginPage.clickLoginBtn();
 
         logger.info("Customer logged in successfully.");

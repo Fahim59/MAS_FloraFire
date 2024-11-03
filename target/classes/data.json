@@ -13,5 +13,15 @@
     "emailText": "Your registration has been successfully completed. You have just been sent an email containing activation instructions.",
     "activationSuccessText": "Your account has been activated",
     "emailSubject": "Activate the User Account"
+  },
+  "tabURL": {
+    "packageSelection": "/PackageSelection",
+    "contactInfo": "/ContactInfo",
+    "storeInfo": "/StoreInfo",
+    "checkout": "/Checkout",
+    "receipt": "/Receipt"
+  },
+  "packageDetails": {
+    "package": "Silver"
   }
 }

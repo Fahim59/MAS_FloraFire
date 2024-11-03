@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import utils.ConfigLoader;
 
@@ -118,6 +119,11 @@ public class BaseClass {
             mex.printStackTrace();
             System.out.println("Email Sent Failed....");
         }
+    }
+
+    public void verifyCurrentUrl(String expectedText) {
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
 
     //---------------------------------------------------------------------------------------//

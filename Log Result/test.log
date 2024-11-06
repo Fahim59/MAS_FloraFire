@@ -1,89 +1,87 @@
-2024-10-29 14:13:53.115 [main] INFO  base.BaseClass - Browser launched successfully
-2024-10-29 14:14:01.283 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2024-10-29 14:14:02.349 [main] INFO  tests.CustomerRegistration - Entered customer details in the registration form.
-2024-10-29 14:14:06.927 [main] INFO  tests.CustomerRegistration - Clicked on the register button to submit the form.
-2024-10-29 14:14:07.973 [main] INFO  tests.CustomerRegistration - Verified successful registration message.
-2024-10-29 14:14:09.166 [main] INFO  tests.CustomerRegistration - Navigated to the login page.
-2024-10-29 14:15:16.025 [main] INFO  tests.CustomerRegistration - Customer checked their email and clicked on the activation link.
-2024-10-29 14:15:18.558 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-10-29 14:15:19.034 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 13:13:54.943 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 13:13:59.587 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 13:16:01.248 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 13:16:06.448 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 13:16:07.037 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 13:16:51.562 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 13:16:56.473 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 13:16:57.497 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 13:16:58.008 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 14:24:04.330 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 14:24:09.746 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 14:24:10.560 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 14:26:03.268 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 14:26:10.152 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 14:26:10.186 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 14:26:11.023 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 14:27:00.351 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 14:27:08.269 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 14:27:08.784 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 14:27:09.353 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:27:36.686 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:27:42.471 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:27:42.969 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:27:43.610 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:29:03.022 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:29:10.108 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:29:10.658 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:29:11.250 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:29:55.427 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:30:02.376 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:30:02.887 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:30:03.444 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:36:10.500 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:36:16.092 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:36:16.602 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:36:17.196 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:40:07.666 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:40:14.292 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:40:17.800 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:40:18.352 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:50:12.534 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:50:17.800 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:50:22.772 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:50:23.334 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:50:44.492 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:50:56.845 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:51:01.915 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:51:02.478 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:51:13.075 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:51:32.563 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:51:34.584 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:51:35.138 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:53:33.239 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:53:38.968 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:53:41.006 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:53:41.527 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:53:56.327 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:54:01.524 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:54:02.893 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:54:03.430 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 20:54:34.575 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 20:54:41.545 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 20:54:42.917 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 20:54:43.406 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 22:47:24.112 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 22:47:30.135 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 22:47:31.514 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 22:47:32.168 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 23:46:13.502 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 23:46:19.868 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 23:46:39.021 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 23:50:45.386 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 23:50:51.714 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 23:50:53.107 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 23:50:55.866 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-11-03 23:51:17.441 [main] INFO  base.BaseClass - Browser launched successfully
-2024-11-03 23:51:27.035 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-11-03 23:51:40.856 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
-2024-11-03 23:51:42.869 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
-2024-11-03 23:51:43.420 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:18:55.550 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:18:57.734 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:18:58.397 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:29:20.811 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:29:23.153 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:29:23.680 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:33:21.632 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:33:23.988 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:33:24.533 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:34:55.419 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:34:57.882 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:34:58.410 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:41:18.805 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:41:21.170 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:41:21.667 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:45:45.831 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:45:48.299 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:45:48.791 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:47:28.450 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:47:30.929 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:47:31.408 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:49:29.190 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:49:31.594 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:49:32.075 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:55:16.429 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:55:18.770 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:55:19.299 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 22:57:33.520 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 22:57:35.894 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 22:57:36.439 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:12:21.057 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:12:26.631 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:12:30.459 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:12:32.836 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:12:36.129 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:13:32.243 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:13:40.908 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:13:44.593 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:13:46.969 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:13:51.046 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:17:52.491 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:18:05.453 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:18:10.083 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:18:12.412 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:18:15.895 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:19:23.971 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:19:33.344 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:19:37.304 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:19:39.700 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:19:44.385 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:21:09.688 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:21:15.929 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:21:19.605 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:21:21.928 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:21:25.884 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:22:24.328 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:22:31.150 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:22:34.632 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:22:36.959 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:22:41.946 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:23:13.638 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:23:21.698 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:23:25.538 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:23:27.986 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:23:33.529 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:25:44.777 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:25:52.012 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:25:55.921 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:25:58.718 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:26:04.554 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:30:09.026 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:30:17.540 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:30:22.401 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:30:25.088 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:30:31.040 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:31:57.022 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:32:02.803 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:32:06.312 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:32:08.639 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:32:14.181 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 23:32:15.074 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-04 23:33:12.846 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-04 23:33:19.662 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-04 23:33:23.185 [main] INFO  tests.PackageSelection - Customer selected their preferred package.
+2024-11-04 23:33:25.764 [main] INFO  tests.PackageSelection - Customer clicked the save button and verified navigation to the Contact Info page
+2024-11-04 23:33:30.987 [main] INFO  tests.ContactInfo - Customer entered all their basic information.
+2024-11-04 23:33:31.717 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

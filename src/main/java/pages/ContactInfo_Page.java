@@ -66,11 +66,12 @@ public class ContactInfo_Page extends BaseClass{
     }
 
     public ContactInfo_Page selectCountry(String country){
-        write_Send_Keys(countryField, country);
+        select_Dropdown_Element(countryField, country);
         return this;
     }
-    public ContactInfo_Page selectState(String state){
-        write_Send_Keys(stateField, state);
+    public ContactInfo_Page selectState(String state) throws InterruptedException {
+        SmallWait(2000);
+        select_Dropdown_Element(stateField, state);
         return this;
     }
 
@@ -98,7 +99,7 @@ public class ContactInfo_Page extends BaseClass{
     }
 
     public ContactInfo_Page selectAboutUs(String aboutUs){
-        write_Send_Keys(aboutUsField, aboutUs);
+        select_Dropdown_Element(aboutUsField, aboutUs);
         return this;
     }
     public ContactInfo_Page enterAnswer(String answer){
@@ -113,11 +114,11 @@ public class ContactInfo_Page extends BaseClass{
 
     public ContactInfo_Page enterContactInfoDetails(String company, String address, String addressCont, String country, String state,
                                                     String city, String zip, String businessPhone, String mobile, String phone,
-                                                    String aboutUs, String answer, String email){
+                                                    String aboutUs, String answer) throws InterruptedException {
 
         return enterCompany(company).enterAddress(address).enterContAddress(addressCont).selectCountry(country).selectState(state).
                 enterCity(city).enterZip(zip).enterBusinessPhone(businessPhone).enterMobile(mobile).enterAdditionalPhone(phone).
-                selectAboutUs(aboutUs).verifyEmail(email).enterAnswer(answer);
+                selectAboutUs(aboutUs).enterAnswer(answer);
     }
 
     public void clickSaveBtn() { click_Element(saveBtn); }

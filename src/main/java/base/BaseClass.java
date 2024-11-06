@@ -1,5 +1,6 @@
 package base;
 
+import com.github.javafaker.Faker;
 import factory.DriverFactory;
 import org.apache.logging.log4j.*;
 import org.openqa.selenium.By;
@@ -32,6 +33,47 @@ public class BaseClass {
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public static String userName;
+
+    private final Faker faker;
+    private final String fullName, firstName, lastName, address, addressCont, city, state, company;
+
+    //---------------------------------------------------------------------------------------------//
+    public BaseClass() {
+        faker = new Faker(new Locale("en-US"));
+
+        this.fullName = faker.name().fullName();
+        this.firstName = fullName.split(" ")[0];
+        this.lastName = fullName.split(" ")[fullName.split(" ").length - 1];
+
+        this.address = faker.address().streetAddress();
+        this.addressCont = faker.address().secondaryAddress();
+        this.city = faker.address().city();
+        this.state = faker.address().state();
+
+        this.company = faker.company().name();
+    }
+
+    public String getFullName() { return fullName; }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
+
+    public String getAddress() { return address; }
+    public String getAddressCont() { return addressCont; }
+    public String getCity() { return city; }
+    public String getState() { return state; }
+
+    public String getEmail() { return firstName.toLowerCase() + "@" + "qjav2ant.mailosaur.net"; }
+
+    public String getPhone() {
+        String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));
+        String centralOfficeCode = String.format("%03d", faker.number().numberBetween(100, 999));
+        String lineNumber = String.format("%04d", faker.number().numberBetween(1000, 9999));
+
+        return String.format("(%s) %s-%s", areaCode, centralOfficeCode, lineNumber);
+    }
+
+    public String getCompany() { return company; }
+    //---------------------------------------------------------------------------------------------//
 
     private static final Logger logger = LogManager.getLogger(BaseClass.class);
 

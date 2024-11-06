@@ -50,7 +50,12 @@ public class ContactInfo extends BaseClass {
     public void verifyCustomerBasicInfoEntry() throws InterruptedException {
         SmallWait(1500);
 
-        //contactInfoPage.enterContactInfoDetails();
+        String country = "United States of America";
+        String zip = "94105";
+        String answer = "I heard about you from the newspaper";
+
+        contactInfoPage.enterContactInfoDetails(getCompany(), getAddress(), getAddressCont(), country, getState(),
+                getCity(), zip, getPhone(), getPhone(), getPhone(), "Newspaper", answer);
 
         //contactInfoPage.clickSaveBtn();
 

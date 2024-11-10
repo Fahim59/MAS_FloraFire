@@ -11,11 +11,10 @@ import pages.*;
 
 import java.io.FileReader;
 
-public class CustomerLogin extends BaseClass {
+public class Payment extends BaseClass {
 
-    private static final Logger logger = LogManager.getLogger(CustomerLogin.class);
+    private static final Logger logger = LogManager.getLogger(Payment.class);
 
-    private Login_Page loginPage;
     private Payment_Page paymentPage;
 
     FileReader data;
@@ -44,25 +43,26 @@ public class CustomerLogin extends BaseClass {
 
     @BeforeMethod
     public void beforeMethod() {
-        loginPage = new Login_Page(driver);
         paymentPage = new Payment_Page(driver);
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can log in successfully", priority = 1)
-    public void verifyCustomerSuccessfulLogin() throws InterruptedException {
-        Open_Website(EndPoint.login.url);
-
-        //loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
-
-        loginPage.enterLoginDetails("testmustafizur+14@gmail.com", jsonData.getJSONObject("registration_info").getString("password"));
-
-        loginPage.clickLoginBtn();
-
+    @Test(description = "Verifies that a customer can enter all credit card information and successfully submit an order", priority = 1)
+    public void verifyCustomerCreditCardInfoAndSubmitOrder() throws InterruptedException {
         SmallWait(500);
-        paymentPage.clickPaymentTab();
 
-        logger.info("Customer logged in successfully.");
+        String cardNumber = jsonData.getJSONObject("payment").getString("cardNumber");
+        String expiration = jsonData.getJSONObject("payment").getString("expiration");
+        String cvv = jsonData.getJSONObject("payment").getString("cvv");
+
+        String promo = jsonData.getJSONObject("payment").getString("promo");
+        String message = jsonData.getJSONObject("payment").getString("promoMessage");
+
+        paymentPage.enterPaymentDetails(cardNumber, expiration, cvv);
+
+        //paymentPage.applyPromo(promo, message);
+
+        logger.info("Customer entered all credit card information and submitted the order.");
     }
 
     @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2, enabled = false)

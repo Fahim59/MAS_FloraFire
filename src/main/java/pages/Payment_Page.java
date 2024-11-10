@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -22,34 +23,61 @@ public class Payment_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By emailField = By.xpath("//input[@id='Email']");
+    private final By paymentTab = By.xpath("//strong[normalize-space()='Payment']");
 
-    private final By passwordField = By.xpath("//input[@id='Password']");
+    private final By cardField = By.xpath("//input[@name='cardNumber']");
 
-    private final By rememberMeField = By.xpath("//input[@id='RememberMe']");
+    private final By expirationField = By.xpath("//input[@name='cardExpiration']");
 
-    private final By loginBtn = By.xpath("//button[normalize-space()='Log in']");
+    private final By cvvField = By.xpath("//input[@name='cardCvv']");
 
-    public Payment_Page enterEmail(String email){
-        write_Send_Keys(emailField, email);
+    private final By promoField = By.xpath("//input[@name='PromoCode']");
+    private final By applyPromoBtn = By.xpath("//button[@id='applypromocode']");
+
+    private final By promoSuccessMessage = By.cssSelector(".message-success");
+
+    private final By termsField = By.cssSelector("#terms");
+
+    private final By orderBtn = By.xpath("//button[@id='checkout-next-step-button']");
+
+    public void clickPaymentTab() { click_Element(paymentTab); }
+
+    public Payment_Page enterCardNumber(String cardNumber){
+        driver.switchTo().frame("heartland-frame-cardNumber");
+        write_Send_Keys(cardField, cardNumber);
+        driver.switchTo().defaultContent();
+        return this;
+    }
+    public Payment_Page enterExpirationDate(String date){
+        driver.switchTo().frame("heartland-frame-cardExpiration");
+        write_Send_Keys(expirationField, date);
+        driver.switchTo().defaultContent();
+        return this;
+    }
+    public Payment_Page enterCVV(String cvv){
+        driver.switchTo().frame("heartland-frame-cardCvv");
+        write_Send_Keys(cvvField, cvv);
+        driver.switchTo().defaultContent();
         return this;
     }
 
-    public Payment_Page enterPassword(String password){
-        write_Send_Keys(passwordField, password);
+    public Payment_Page applyPromo(String promo, String message){
+        write_Send_Keys(promoField, promo);
+        click_Element(applyPromoBtn);
+        Assert.assertEquals(message, get_Text(promoSuccessMessage));
         return this;
     }
 
-    public Payment_Page clickRememberBtn(){
-        click_CheckBox(rememberMeField);
+    public Payment_Page enterPaymentDetails(String cardNumber, String date, String cvv){
+        return enterCardNumber(cardNumber).enterExpirationDate(date).enterCVV(cvv).clickTermsBtn();
+    }
+
+    public Payment_Page clickTermsBtn(){
+        click_CheckBox(termsField);
         return this;
     }
 
-    public Payment_Page enterLoginDetails(String email, String password){
-        return enterEmail(email).enterPassword(password).clickRememberBtn();
-    }
-
-    public void clickLoginBtn() {
-        click_Element(loginBtn);
+    public void clickSubmitOrderBtn() {
+        click_Element(orderBtn);
     }
 }

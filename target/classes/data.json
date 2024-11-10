@@ -37,5 +37,12 @@
     "timeZone": "(UTC-06:00) Central America",
     "fax": "+12124567890",
     "count": "3"
+  },
+  "payment": {
+    "cardNumber": "4111 1111 1111 1111",
+    "expiration": "01 / 2026",
+    "cvv": "123",
+    "promo": "11/11",
+    "promoMessage": "The coupon code was applied"
   }
 }

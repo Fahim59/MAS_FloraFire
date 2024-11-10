@@ -226,3 +226,37 @@
 2024-11-10 20:33:24.962 [main] INFO  tests.LocationAndUser - Customer entered all their license information.
 2024-11-10 20:33:27.369 [main] INFO  tests.LocationAndUser - Customer clicked the save button and verified navigation to the Checkout page
 2024-11-10 20:33:28.034 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:16:52.354 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:17:06.355 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:17:07.276 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:17:08.260 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:17:37.648 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:17:48.848 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:17:49.903 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:17:50.538 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:21:15.918 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:21:30.872 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:21:35.525 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:22:57.907 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:23:11.897 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:23:13.589 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:23:14.341 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:25:35.866 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:25:48.774 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:25:50.776 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:25:51.852 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:28:47.858 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:29:00.127 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:29:02.034 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:30:11.607 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:30:24.776 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:30:26.105 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:30:26.912 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:31:24.472 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:31:34.301 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:31:35.479 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:31:36.111 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-11-10 22:33:39.583 [main] INFO  base.BaseClass - Browser launched successfully
+2024-11-10 22:33:52.754 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-11-10 22:33:54.088 [main] INFO  tests.Payment - Customer entered all credit card information and submitted the order.
+2024-11-10 22:33:54.834 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

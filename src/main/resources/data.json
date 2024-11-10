@@ -42,6 +42,7 @@
     "cardNumber": "4111 1111 1111 1111",
     "expiration": "01 / 2026",
     "cvv": "123",
-    "promo": "Promo"
+    "promo": "11/11",
+    "promoMessage": "The coupon code was applied"
   }
 }

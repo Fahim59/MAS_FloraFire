@@ -11,6 +11,7 @@
             <class name="tests.CustomerLogin"/>
             <class name="tests.PackageSelection"/>
             <class name="tests.ContactInfo"/>
+            <class name="tests.LocationAndUser"/>
         </classes>
     </test>
 </suite>

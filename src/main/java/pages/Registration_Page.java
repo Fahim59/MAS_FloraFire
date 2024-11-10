@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class RegistrationPage extends BaseClass{
+public class Registration_Page extends BaseClass{
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
     private final Actions actions;
 
-    public RegistrationPage(WebDriver driver) {
+    public Registration_Page(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         js = (JavascriptExecutor) driver;
@@ -45,52 +45,52 @@ public class RegistrationPage extends BaseClass{
 
     private final By activationSuccessTextField = By.xpath("//p[@class='content']");
 
-    public RegistrationPage enterFirstName(String firstName){
+    public Registration_Page enterFirstName(String firstName){
         write_Send_Keys(firstNameField, firstName);
         return this;
     }
-    public RegistrationPage enterLastName(String lastName){
+    public Registration_Page enterLastName(String lastName){
         write_Send_Keys(lastNameField, lastName);
         return this;
     }
 
-    public RegistrationPage enterEmail(String email){
+    public Registration_Page enterEmail(String email){
         write_Send_Keys(emailField, email);
         return this;
     }
-    public RegistrationPage enterConfirmEmail(String email){
+    public Registration_Page enterConfirmEmail(String email){
         write_Send_Keys(confirmEmailField, email);
         return this;
     }
 
-    public RegistrationPage selectSecQstnOne(String question){
+    public Registration_Page selectSecQstnOne(String question){
         select_Dropdown_Element(secQstnOneField, question);
         return this;
     }
-    public RegistrationPage enterSecQstnOneAnswer(String answer){
+    public Registration_Page enterSecQstnOneAnswer(String answer){
         write_Send_Keys(secQstnOneAnsField, answer);
         return this;
     }
-    public RegistrationPage selectSecQstnTwo(String question){
+    public Registration_Page selectSecQstnTwo(String question){
         select_Dropdown_Element(secQstnTwoField, question);
         return this;
     }
-    public RegistrationPage enterSecQstnTwoAnswer(String answer){
+    public Registration_Page enterSecQstnTwoAnswer(String answer){
         write_Send_Keys(secQstnTwoAnsField, answer);
         return this;
     }
 
-    public RegistrationPage enterPassword(String password){
+    public Registration_Page enterPassword(String password){
         write_Send_Keys(passwordField, password);
         return this;
     }
-    public RegistrationPage enterConfirmPassword(String password){
+    public Registration_Page enterConfirmPassword(String password){
         write_Send_Keys(confirmPassField, password);
         return this;
     }
 
-    public RegistrationPage enterRegistrationDetails(String firstName, String lastName, String email, String cEmail, String question1, String answer1,
-                                                     String question2, String answer2, String password, String cPassword){
+    public Registration_Page enterRegistrationDetails(String firstName, String lastName, String email, String cEmail, String question1, String answer1,
+                                                      String question2, String answer2, String password, String cPassword){
         return enterFirstName(firstName).enterLastName(lastName).enterEmail(email).enterConfirmEmail(cEmail).
                 selectSecQstnOne(question1).enterSecQstnOneAnswer(answer1).selectSecQstnTwo(question2).enterSecQstnTwoAnswer(answer2).
                 enterPassword(password).enterConfirmPassword(cPassword);

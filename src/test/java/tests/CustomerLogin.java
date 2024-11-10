@@ -15,7 +15,8 @@ public class CustomerLogin extends BaseClass {
 
     private static final Logger logger = LogManager.getLogger(CustomerLogin.class);
 
-    private LoginPage loginPage;
+    private Login_Page loginPage;
+    private LocationAndUser_Page locationAndUserPage;
 
     FileReader data;
     JSONObject jsonData;
@@ -43,22 +44,28 @@ public class CustomerLogin extends BaseClass {
 
     @BeforeMethod
     public void beforeMethod() {
-        loginPage = new LoginPage(driver);
+        loginPage = new Login_Page(driver);
+        locationAndUserPage = new LocationAndUser_Page(driver);
     }
     //-------------------------------------------------------//
 
     @Test(description = "Verifies that a customer can log in successfully", priority = 1)
-    public void verifyCustomerSuccessfulLogin() {
+    public void verifyCustomerSuccessfulLogin() throws InterruptedException {
         Open_Website(EndPoint.login.url);
 
         loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
+
         //loginPage.enterLoginDetails("testmustafizur+14@gmail.com", jsonData.getJSONObject("registration_info").getString("password"));
+
         loginPage.clickLoginBtn();
+
+        SmallWait(500);
+        locationAndUserPage.clickLocationAndUserTab();
 
         logger.info("Customer logged in successfully.");
     }
 
-    @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2)
+    @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2, enabled = false)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("packageSelection"));

@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LoginPage extends BaseClass{
+public class Login_Page extends BaseClass{
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
     private final Actions actions;
 
-    public LoginPage(WebDriver driver) {
+    public Login_Page(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         js = (JavascriptExecutor) driver;
@@ -30,22 +30,22 @@ public class LoginPage extends BaseClass{
 
     private final By loginBtn = By.xpath("//button[normalize-space()='Log in']");
 
-    public LoginPage enterEmail(String email){
+    public Login_Page enterEmail(String email){
         write_Send_Keys(emailField, email);
         return this;
     }
 
-    public LoginPage enterPassword(String password){
+    public Login_Page enterPassword(String password){
         write_Send_Keys(passwordField, password);
         return this;
     }
 
-    public LoginPage clickRememberBtn(){
+    public Login_Page clickRememberBtn(){
         click_CheckBox(rememberMeField);
         return this;
     }
 
-    public LoginPage enterLoginDetails(String email, String password){
+    public Login_Page enterLoginDetails(String email, String password){
         return enterEmail(email).enterPassword(password).clickRememberBtn();
     }
 

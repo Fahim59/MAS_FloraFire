@@ -67,7 +67,7 @@ public class ContactInfo_Page extends BaseClass{
         select_Dropdown_Element(countryField, country);
         return this;
     }
-    public ContactInfo_Page selectState(String state) throws InterruptedException {
+    public ContactInfo_Page selectState(String state) {
         wait.until(ExpectedConditions.textToBePresentInElementLocated(stateField, state));
         select_Dropdown_Element(stateField, state);
         return this;

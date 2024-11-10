@@ -18,7 +18,7 @@ public class CustomerRegistration extends BaseClass {
 
     private static final Logger logger = LogManager.getLogger(CustomerRegistration.class);
 
-    private RegistrationPage registrationPage;
+    private Registration_Page registrationPage;
     static String link;
 
     FileReader data;
@@ -47,7 +47,7 @@ public class CustomerRegistration extends BaseClass {
 
     @BeforeMethod
     public void beforeMethod() {
-        registrationPage = new RegistrationPage(driver);
+        registrationPage = new Registration_Page(driver);
         userName = getEmail();
     }
     //-------------------------------------------------------//

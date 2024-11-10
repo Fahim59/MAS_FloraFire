@@ -23,5 +23,19 @@
   },
   "packageDetails": {
     "package": "Silver"
+  },
+  "contactInfo": {
+    "country": "United States of America",
+    "zip": "94105",
+    "businessPhone": "+18647682463",
+    "mobile": "+12124567890",
+    "additionalPhone": "+16868603186",
+    "aboutUs": "Newspaper",
+    "answer": "I heard about you from the newspaper"
+  },
+  "storeInfo": {
+    "timeZone": "(UTC-06:00) Central America",
+    "fax": "+12124567890",
+    "count": "3"
   }
 }

@@ -21,14 +21,14 @@ public class ContactInfo_Page extends BaseClass{
 
     public ContactInfo_Page(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
     }
 
     private final By contactInfoTab = By.xpath("//strong[normalize-space()='Contact Info']");
 
-    private final By companyField = By.cssSelector("#Attention");
+    private final By companyField = By.cssSelector("#CompanyName");
 
     private final By addressField = By.cssSelector("#Address");
     private final By addressContField = By.cssSelector("#AddressCont");
@@ -70,7 +70,7 @@ public class ContactInfo_Page extends BaseClass{
         return this;
     }
     public ContactInfo_Page selectState(String state) throws InterruptedException {
-        SmallWait(2000);
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(stateField, state));
         select_Dropdown_Element(stateField, state);
         return this;
     }
@@ -104,11 +104,6 @@ public class ContactInfo_Page extends BaseClass{
     }
     public ContactInfo_Page enterAnswer(String answer){
         write_Send_Keys(answerField, answer);
-        return this;
-    }
-
-    public ContactInfo_Page verifyEmail(String email){
-        Assert.assertEquals(email, get_Text(emailField));
         return this;
     }
 

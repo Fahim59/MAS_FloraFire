@@ -1,7 +1,6 @@
 package tests;
 
 import base.BaseClass;
-import com.github.javafaker.Faker;
 import constants.EndPoint;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
@@ -19,10 +18,8 @@ public class CustomerRegistration extends BaseClass {
 
     private static final Logger logger = LogManager.getLogger(CustomerRegistration.class);
 
-    Faker faker = new Faker();
-
     private RegistrationPage registrationPage;
-    static String firstName, lastName, email, link;
+    static String link;
 
     FileReader data;
     JSONObject jsonData;
@@ -51,6 +48,7 @@ public class CustomerRegistration extends BaseClass {
     @BeforeMethod
     public void beforeMethod() {
         registrationPage = new RegistrationPage(driver);
+        userName = getEmail();
     }
     //-------------------------------------------------------//
 
@@ -63,13 +61,8 @@ public class CustomerRegistration extends BaseClass {
 
     @Test(description = "Verifies the registration form submission flow for a new customer", priority = 2)
     public void verifyNewCustomerRegistrationSubmissionFlow() throws InterruptedException {
-        firstName = faker.name().firstName();
-        lastName = faker.name().lastName();
-        email = firstName.toLowerCase() + "@" + jsonData.getJSONObject("mailosaur").getString("serverId") + ".mailosaur.net";
 
-        userName = email;
-
-        registrationPage.enterRegistrationDetails(firstName, lastName, email, email,
+        registrationPage.enterRegistrationDetails(getFirstName(), getLastName(), getEmail(), getEmail(),
                 jsonData.getJSONObject("registration_info").getString("sec.question1"), jsonData.getJSONObject("registration_info").getString("sec.question1_answer"),
                 jsonData.getJSONObject("registration_info").getString("sec.question2"), jsonData.getJSONObject("registration_info").getString("sec.question2_answer"),
                 jsonData.getJSONObject("registration_info").getString("password"), jsonData.getJSONObject("registration_info").getString("password"));
@@ -88,7 +81,7 @@ public class CustomerRegistration extends BaseClass {
 
         Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("regSuccessText"), registrationPage.fetchRegSuccessText());
 
-        Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("emailText") + "\n" + email,
+        Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("emailText") + "\n" + getEmail(),
                 registrationPage.fetchEmailText());
 
         logger.info("Verified successful registration message.");
@@ -114,8 +107,8 @@ public class CustomerRegistration extends BaseClass {
     public void getActivationLink() {
         String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
         String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
-        String emailAddress = email;
-        String expectedCustomerName = firstName +" "+ lastName;
+        String emailAddress = getEmail();
+        String expectedCustomerName = getFirstName() +" "+ getLastName();
         String expectedSubject = jsonData.getJSONObject("registration_info").getString("emailSubject");
 
         HttpResponse<JsonNode> response = Unirest.get("https://mailosaur.com/api/messages")

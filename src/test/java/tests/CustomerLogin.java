@@ -51,10 +51,18 @@ public class CustomerLogin extends BaseClass {
     public void verifyCustomerSuccessfulLogin() {
         Open_Website(EndPoint.login.url);
 
-        //loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
-        loginPage.enterLoginDetails("janopin764@regishub.com", jsonData.getJSONObject("registration_info").getString("password"));
+        loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
+        //loginPage.enterLoginDetails("testmustafizur+14@gmail.com", jsonData.getJSONObject("registration_info").getString("password"));
         loginPage.clickLoginBtn();
 
         logger.info("Customer logged in successfully.");
+    }
+
+    @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2)
+    public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
+        SmallWait(2000);
+        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("packageSelection"));
+
+        logger.info("Customer clicked the login button and verified navigation to the Package Selection page");
     }
 }

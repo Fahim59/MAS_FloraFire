@@ -9,8 +9,8 @@
         <classes>
             <class name="tests.CustomerRegistration"/>
             <class name="tests.CustomerLogin"/>
-<!--            <class name="tests.PackageSelection"/>-->
-<!--            <class name="tests.ContactInfo"/>-->
+            <class name="tests.PackageSelection"/>
+            <class name="tests.ContactInfo"/>
         </classes>
     </test>
 </suite>

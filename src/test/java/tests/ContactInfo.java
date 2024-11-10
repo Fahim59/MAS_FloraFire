@@ -48,21 +48,25 @@ public class ContactInfo extends BaseClass {
 
     @Test(description = "Verifies that a customer can enter all required basic information", priority = 1)
     public void verifyCustomerBasicInfoEntry() throws InterruptedException {
-        SmallWait(1500);
+        SmallWait(500);
 
-        String country = "United States of America";
-        String zip = "94105";
-        String answer = "I heard about you from the newspaper";
+        String country = jsonData.getJSONObject("contactInfo").getString("country");
+        String zip = jsonData.getJSONObject("contactInfo").getString("zip");
+        String businessPhone = jsonData.getJSONObject("contactInfo").getString("businessPhone");
+        String mobile = jsonData.getJSONObject("contactInfo").getString("mobile");
+        String additionalPhone = jsonData.getJSONObject("contactInfo").getString("additionalPhone");
+        String aboutUs = jsonData.getJSONObject("contactInfo").getString("aboutUs");
+        String answer = jsonData.getJSONObject("contactInfo").getString("answer");
 
         contactInfoPage.enterContactInfoDetails(getCompany(), getAddress(), getAddressCont(), country, getState(),
-                getCity(), zip, getPhone(), getPhone(), getPhone(), "Newspaper", answer);
+                getCity(), zip, businessPhone, mobile, additionalPhone, aboutUs, answer);
 
-        //contactInfoPage.clickSaveBtn();
+        contactInfoPage.clickSaveBtn();
 
         logger.info("Customer entered all their basic information.");
     }
 
-    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Store Info page", priority = 2, enabled = false)
+    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Store Info page", priority = 2)
     public void verifyCustomerNavigationAfterSaving() throws InterruptedException {
         SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("storeInfo"));

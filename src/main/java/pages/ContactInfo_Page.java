@@ -47,8 +47,6 @@ public class ContactInfo_Page extends BaseClass{
     private final By aboutUsField = By.cssSelector("#ValueListId");
     private final By answerField = By.cssSelector("#ValueListValue");
 
-    private final By emailField = By.cssSelector("#Email");
-
     private final By saveBtn = By.xpath("//button[normalize-space()='Save And Next']");
 
     public ContactInfo_Page enterCompany(String company){
@@ -117,4 +115,6 @@ public class ContactInfo_Page extends BaseClass{
     }
 
     public void clickSaveBtn() { click_Element(saveBtn); }
+
+    public void clickContactInfoTab() { click_Element(contactInfoTab); }
 }

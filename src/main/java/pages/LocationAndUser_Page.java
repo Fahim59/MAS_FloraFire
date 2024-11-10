@@ -1,0 +1,176 @@
+package pages;
+
+import base.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class LocationAndUser_Page extends BaseClass{
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    private final JavascriptExecutor js;
+    private final Actions actions;
+
+    public LocationAndUser_Page(WebDriver driver) {
+        this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        js = (JavascriptExecutor) driver;
+        actions = new Actions(driver);
+    }
+
+    private final By locationAndUserTab = By.xpath("//strong[normalize-space()='Location & User']");
+
+    private final By sameAsBillingField = By.cssSelector("#copy-location-checkbox");
+
+    private final By primaryStoreField = By.cssSelector("#StoreModels_0__StoreName");
+    private final By contactNameField = By.cssSelector("#StoreModels_0__ContactName");
+    private final By timeZoneField = By.cssSelector("#StoreModels_0__TimeZoneId");
+    private final By faxField = By.cssSelector("#StoreModels_0__FaxNumber");
+
+    private final By includeMASField = By.cssSelector("#IncludeStoreOnMasDirectory");
+
+    private final By addNewStoreBtn = By.cssSelector("button[onclick='addNewStore()']");
+
+    private final By additionalStoreField = By.cssSelector("#StoreModels_1__StoreName");
+
+    private final By additionalStoreContactNameField = By.cssSelector("#StoreModels_1__ContactName");
+    private final By emailField = By.cssSelector("#StoreModels_1__Email");
+
+    private final By addressField = By.cssSelector("#StoreModels_1__AddressLine1");
+    private final By addressContField = By.cssSelector("#StoreModels_1__AddressLine2");
+
+    private final By countryField = By.cssSelector("#StoreModels_1__CountryId");
+    private final By stateField = By.cssSelector("#StoreModels_1__StateId");
+
+    private final By cityField = By.cssSelector("#StoreModels_1__City");
+    private final By zipField = By.cssSelector("#StoreModels_1__ZipCode");
+
+    private final By additionalStoreTimeZoneField = By.cssSelector("#StoreModels_1__TimeZoneId");
+    private final By additionalPhoneField = By.cssSelector("#StoreModels_1__PhoneNumber");
+    private final By additionalStoreFaxField = By.cssSelector("#StoreModels_1__FaxNumber");
+
+    private final By saveBtn = By.xpath("//button[normalize-space()='Save And Next']");
+
+    public LocationAndUser_Page clickSameAsBillingBtn(){
+        click_CheckBox(sameAsBillingField);
+        return this;
+    }
+
+    public LocationAndUser_Page enterPrimaryStoreName(String storeName){
+        write_Send_Keys(primaryStoreField, storeName);
+        return this;
+    }
+    public LocationAndUser_Page enterContactPersonName(String name){
+        write_Send_Keys(contactNameField, name);
+        return this;
+    }
+    public LocationAndUser_Page selectTimeZone(String timeZone){
+        select_Dropdown_Element(timeZoneField, timeZone);
+        return this;
+    }
+    public LocationAndUser_Page enterFaxNumber(String fax){
+        write_Send_Keys(faxField, fax);
+        return this;
+    }
+
+    public LocationAndUser_Page clickIncludeMASDirectBtn(){
+        click_CheckBox(includeMASField);
+        return this;
+    }
+
+    public LocationAndUser_Page enterPrimaryStoreInfoDetails(String storeName, String name, String timeZone, String fax) {
+
+        return clickSameAsBillingBtn().enterPrimaryStoreName(storeName).enterContactPersonName(name).selectTimeZone(timeZone).
+                enterFaxNumber(fax).clickIncludeMASDirectBtn();
+    }
+
+    public void clickAddNewStoreBtn() { click_Element(addNewStoreBtn); }
+
+    public LocationAndUser_Page enterAdditionalStoreName(String storeName){
+        write_Send_Keys(additionalStoreField, storeName);
+        return this;
+    }
+
+    public LocationAndUser_Page enterAdditionalStoreContactPersonName(String name){
+        write_Send_Keys(additionalStoreContactNameField, name);
+        return this;
+    }
+    public LocationAndUser_Page enterEmail(String email){
+        write_Send_Keys(emailField, email);
+        return this;
+    }
+
+    public LocationAndUser_Page enterAddress(String address){
+        write_Send_Keys(addressField, address);
+        return this;
+    }
+    public LocationAndUser_Page enterContAddress(String address){
+        write_Send_Keys(addressContField, address);
+        return this;
+    }
+
+    public LocationAndUser_Page selectCountry(String country){
+        select_Dropdown_Element(countryField, country);
+        return this;
+    }
+    public LocationAndUser_Page selectState(String state) {
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(stateField, state));
+        select_Dropdown_Element(stateField, state);
+        return this;
+    }
+
+    public LocationAndUser_Page enterCity(String city){
+        write_Send_Keys(cityField, city);
+        return this;
+    }
+    public LocationAndUser_Page enterZip(String zip){
+        write_Send_Keys(zipField, zip);
+        return this;
+    }
+
+    public LocationAndUser_Page selectAdditionalStoreTimeZone(String timeZone){
+        select_Dropdown_Element(additionalStoreTimeZoneField, timeZone);
+        return this;
+    }
+    public LocationAndUser_Page enterAdditionalStorePhone(String phone){
+        write_Send_Keys(additionalPhoneField, phone);
+        return this;
+    }
+    public LocationAndUser_Page enterAdditionalStoreFaxNumber(String fax){
+        write_Send_Keys(additionalStoreFaxField, fax);
+        return this;
+    }
+
+    public LocationAndUser_Page enterAdditionalStoreInfoDetails(String storeName, String name, String email, String address, String addressCont,
+                                                             String country, String state, String city, String zip,
+                                                             String timeZone, String phone, String fax) {
+
+        return enterAdditionalStoreName(storeName).enterAdditionalStoreContactPersonName(name).enterEmail(email).enterAddress(address).
+                enterContAddress(addressCont).selectCountry(country).selectState(state).enterCity(city).enterZip(zip).
+                selectAdditionalStoreTimeZone(timeZone).enterAdditionalStorePhone(phone).enterAdditionalStoreFaxNumber(fax);
+    }
+
+    //-------------------------------------------------------------------------------------------------------------------//
+    //--------------------------------------------- Additional License Info ---------------------------------------------//
+    //-------------------------------------------------------------------------------------------------------------------//
+
+    private final By licenseTab = By.cssSelector("#LicenseCountTab");
+
+    private final By additionalLicenseField = By.cssSelector("#AdditionalLicenseCount");
+
+    public void clickLocationTab() { click_Element(licenseTab); }
+
+    public void enterAdditionalLicense(String count){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(additionalLicenseField));
+        write_Send_Keys(additionalLicenseField, count);
+    }
+
+    public void clickSaveBtn() { click_Element(saveBtn); }
+
+    public void clickLocationAndUserTab() { click_Element(locationAndUserTab); }
+}

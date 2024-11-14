@@ -1,7 +1,6 @@
 package tests;
 
 import base.BaseClass;
-import constants.EndPoint;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
@@ -58,18 +57,28 @@ public class Payment extends BaseClass {
         String promo = jsonData.getJSONObject("payment").getString("promo");
         String message = jsonData.getJSONObject("payment").getString("promoMessage");
 
+        String password = jsonData.getJSONObject("registration_info").getString("password");
+
         paymentPage.enterPaymentDetails(cardNumber, expiration, cvv);
 
         //paymentPage.applyPromo(promo, message);
 
+        paymentPage.clickSubmitOrderBtn();
+        SmallWait(500);
+        paymentPage.enterPassword(password);
+        paymentPage.clickConfirmBtn();
+
         logger.info("Customer entered all credit card information and submitted the order.");
     }
 
-    @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2, enabled = false)
-    public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
-        SmallWait(2000);
-        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("packageSelection"));
+    @Test(description = "Verifies that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)
+    public void verifyCustomerNavigationAfterPayment() throws InterruptedException {
+        SmallWait(15000);
 
-        logger.info("Customer clicked the login button and verified navigation to the Package Selection page");
+        paymentPage.checkPaymentFailedMessage();
+
+        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("receipt"));
+
+        logger.info("Customer clicked the Submit Order button and navigated to the Receipt page");
     }
 }

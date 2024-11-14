@@ -4,7 +4,9 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -18,7 +20,7 @@ public class Payment_Page extends BaseClass{
 
     public Payment_Page(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
     }
@@ -39,6 +41,11 @@ public class Payment_Page extends BaseClass{
     private final By termsField = By.cssSelector("#terms");
 
     private final By orderBtn = By.xpath("//button[@id='checkout-next-step-button']");
+
+    private final By passwordField = By.cssSelector("#txtPassword");
+    private final By passwordSubmitBtn = By.cssSelector("#submitPassword");
+
+    private final By paymentFailedMessage = By.cssSelector("div[class='message-error validation-summary-errors'] ul li");
 
     public void clickPaymentTab() { click_Element(paymentTab); }
 
@@ -79,5 +86,25 @@ public class Payment_Page extends BaseClass{
 
     public void clickSubmitOrderBtn() {
         click_Element(orderBtn);
+    }
+
+    public void enterPassword(String password){
+        write_Send_Keys(passwordField, password);
+    }
+    public void clickConfirmBtn(){
+        click_CheckBox(passwordSubmitBtn);
+    }
+
+    public void checkPaymentFailedMessage(){
+        try {
+            WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(paymentFailedMessage));
+
+            if (message.isDisplayed()) {
+                Assert.fail("Payment failed. Test stopped.");
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Payment Successful");
+        }
     }
 }

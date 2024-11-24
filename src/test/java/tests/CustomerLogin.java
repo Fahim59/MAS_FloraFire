@@ -17,6 +17,7 @@ public class CustomerLogin extends BaseClass {
 
     private Login_Page loginPage;
     private Payment_Page paymentPage;
+    private LocationAndUser_Page locationAndUserPage;
 
     FileReader data;
     JSONObject jsonData;
@@ -46,6 +47,7 @@ public class CustomerLogin extends BaseClass {
     public void beforeMethod() {
         loginPage = new Login_Page(driver);
         paymentPage = new Payment_Page(driver);
+        locationAndUserPage = new LocationAndUser_Page(driver);
     }
     //-------------------------------------------------------//
 
@@ -55,12 +57,13 @@ public class CustomerLogin extends BaseClass {
 
         //loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 
-        loginPage.enterLoginDetails("testmustafizur+14@gmail.com", jsonData.getJSONObject("registration_info").getString("password"));
+        loginPage.enterLoginDetails("janopin765@regishub.com", jsonData.getJSONObject("registration_info").getString("password"));
 
         loginPage.clickLoginBtn();
 
         SmallWait(500);
-        paymentPage.clickPaymentTab();
+        //paymentPage.clickPaymentTab();
+        locationAndUserPage.clickLocationAndUserTab();
 
         logger.info("Customer logged in successfully.");
     }

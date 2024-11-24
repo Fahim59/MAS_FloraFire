@@ -4,11 +4,15 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LocationAndUser_Page extends BaseClass{
     private final WebDriver driver;
@@ -162,6 +166,69 @@ public class LocationAndUser_Page extends BaseClass{
     private final By licenseTab = By.cssSelector("#LicenseCountTab");
 
     private final By additionalLicenseField = By.cssSelector("#AdditionalLicenseCount");
+
+    private final By licensePrice = By.cssSelector("#AdditionalLicenseCount");
+
+    private final String licensePriceTable = "//*[@id='licenseCount']/div/div/div[2]/table/tbody";
+    private final By priceTr = By.xpath(licensePriceTable+"/tr");
+
+    public int getLicensePriceTrSize() {
+        List<WebElement> elements = driver.findElements(priceTr);
+        return elements.size();
+    }
+
+    public double priceTable(double licenseCount) throws InterruptedException {
+        System.out.println("Tr Size: " +getLicensePriceTrSize());
+        double totalLicenseFee = 0.0;
+
+        for(int l = 1; l<= getLicensePriceTrSize(); l++){
+
+            String range = driver.findElement(By.xpath(licensePriceTable+ "/tr["+l+"]/td[1]")).getText();
+            String price = driver.findElement(By.xpath(licensePriceTable+ "/tr["+l+"]/td[2]")).getText();
+
+            if(range.contains("less than")){
+                Pattern pattern = Pattern.compile("less than (\\d+)");
+                Matcher matcher = pattern.matcher(range);
+
+                if (matcher.find()) {
+                    int upperLimit = Integer.parseInt(matcher.group(1));
+                    if (licenseCount < upperLimit) {
+                        System.out.println("Match found on row: " +l);
+
+                        totalLicenseFee = calculateTotalFee(price, licenseCount);
+
+                        break;
+                    }
+                }
+            }
+            else{
+                Pattern pattern = Pattern.compile("(\\d+)-(\\d+)");
+                Matcher matcher = pattern.matcher(range);
+
+                if (matcher.find()) {
+                    int lowerLimit = Integer.parseInt(matcher.group(1));
+                    int upperLimit = Integer.parseInt(matcher.group(2));
+                    if (licenseCount >= lowerLimit && licenseCount <= upperLimit) {
+                        System.out.println("Match found on row: " +l);
+
+                        totalLicenseFee = calculateTotalFee(price, licenseCount);
+
+                        break;
+                    }
+                }
+            }
+        }
+        if (totalLicenseFee == 0.0) {
+            throw new IllegalArgumentException("No matching range found for the given license count: " + licenseCount);
+        }
+        System.out.println("License Fee is: " +totalLicenseFee);
+        return totalLicenseFee;
+    }
+
+    private double calculateTotalFee(String price, double licenseCount) {
+        double licenseFee = Double.parseDouble(price.replaceAll("[^\\d.]", ""));
+        return licenseFee * licenseCount;
+    }
 
     public void clickLocationTab() { click_Element(licenseTab); }
 

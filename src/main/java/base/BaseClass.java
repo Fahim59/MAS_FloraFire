@@ -33,6 +33,7 @@ public class BaseClass {
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public static String userName;
+    public static double licensePrice;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;

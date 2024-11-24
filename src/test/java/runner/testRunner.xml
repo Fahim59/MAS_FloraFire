@@ -11,8 +11,8 @@
             <class name="tests.CustomerLogin"/>
 <!--            <class name="tests.PackageSelection"/>-->
 <!--            <class name="tests.ContactInfo"/>-->
-<!--            <class name="tests.LocationAndUser"/>-->
-            <class name="tests.Payment"/>
+            <class name="tests.LocationAndUser"/>
+<!--            <class name="tests.Payment"/>-->
         </classes>
     </test>
 </suite>

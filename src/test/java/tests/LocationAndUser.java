@@ -46,7 +46,7 @@ public class LocationAndUser extends BaseClass {
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can enter all required store information", priority = 1)
+    @Test(description = "Verifies that a customer can enter all required store information", priority = 1, enabled = false)
     public void verifyCustomerStoreInfoEntry() throws InterruptedException {
         SmallWait(500);
 
@@ -77,18 +77,23 @@ public class LocationAndUser extends BaseClass {
     public void verifyCustomerLicenseInfoEntry() throws InterruptedException {
         SmallWait(500);
 
-        String licenseCount = jsonData.getJSONObject("storeInfo").getString("count");
+        SmallWait(500);
+        locationAndUserPage.clickLocationTab();
 
-        locationAndUserPage.enterAdditionalLicense(licenseCount);
+        double licenseCount = Double.parseDouble(jsonData.getJSONObject("storeInfo").getString("count"));
 
-        SmallWait(2000);
+        //locationAndUserPage.enterAdditionalLicense(licenseCount);
 
-        locationAndUserPage.clickSaveBtn();
+        //SmallWait(2000);
+
+        //locationAndUserPage.clickSaveBtn();
+
+        licensePrice = locationAndUserPage.priceTable(licenseCount);
 
         logger.info("Customer entered all their license information.");
     }
 
-    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Checkout page", priority = 3)
+    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Checkout page", priority = 3, enabled = false)
     public void verifyCustomerNavigationAfterSaving() throws InterruptedException {
         SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("checkout"));

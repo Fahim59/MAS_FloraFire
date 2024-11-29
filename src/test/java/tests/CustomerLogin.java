@@ -51,28 +51,35 @@ public class CustomerLogin extends BaseClass {
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can log in successfully", priority = 1)
+    @Test(description = "Verify that a customer can log in successfully", priority = 1)
     public void verifyCustomerSuccessfulLogin() throws InterruptedException {
         Open_Website(EndPoint.login.url);
 
-        //loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
+        loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 
-        loginPage.enterLoginDetails("janopin765@regishub.com", jsonData.getJSONObject("registration_info").getString("password"));
+        //loginPage.enterLoginDetails("margherita@qjav2ant.mailosaur.net", jsonData.getJSONObject("registration_info").getString("password"));
 
         loginPage.clickLoginBtn();
 
-        SmallWait(500);
+        //SmallWait(500);
+//        locationAndUserPage.clickLocationAndUserTab();
         //paymentPage.clickPaymentTab();
-        locationAndUserPage.clickLocationAndUserTab();
+
+//        packagePrice = 14.0;
+//        perUserLicensePrice = 15.0;
+//        totalLicensePrice = 150.0;
+//        subTotal = 164.0;
+//        promoDiscount = 18.04;
+//        recurringFee = 145.96;
 
         logger.info("Customer logged in successfully.");
     }
 
-    @Test(description = "Verifies that after successful login, the customer is successfully navigated to Package Selection page", priority = 2, enabled = false)
+    @Test(description = "Verify that after successful login, the customer is successfully navigated to Package Selection page", priority = 2, enabled = true)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
-        SmallWait(2000);
+        SmallWait(1000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("packageSelection"));
 
-        logger.info("Customer clicked the login button and verified navigation to the Package Selection page");
+        logger.info("Customer successfully navigated to the Package Selection page");
     }
 }

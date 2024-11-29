@@ -7,12 +7,13 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_EcomPortal">
         <classes>
-<!--            <class name="tests.CustomerRegistration"/>-->
+            <class name="tests.CustomerRegistration"/>
             <class name="tests.CustomerLogin"/>
-<!--            <class name="tests.PackageSelection"/>-->
-<!--            <class name="tests.ContactInfo"/>-->
+            <class name="tests.PackageSelection"/>
+            <class name="tests.ContactInfo"/>
             <class name="tests.LocationAndUser"/>
-<!--            <class name="tests.Payment"/>-->
+            <class name="tests.Payment"/>
+            <class name="tests.Receipt"/>
         </classes>
     </test>
 </suite>

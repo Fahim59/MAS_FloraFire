@@ -46,9 +46,9 @@ public class ContactInfo extends BaseClass {
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can enter all required basic information", priority = 1)
+    @Test(description = "Verify that a customer can enter all required basic information", priority = 1)
     public void verifyCustomerBasicInfoEntry() throws InterruptedException {
-        SmallWait(500);
+        SmallWait(1000);
 
         String country = jsonData.getJSONObject("contactInfo").getString("country");
         String zip = jsonData.getJSONObject("contactInfo").getString("zip");
@@ -63,14 +63,14 @@ public class ContactInfo extends BaseClass {
 
         contactInfoPage.clickSaveBtn();
 
-        logger.info("Customer entered all their basic information.");
+        logger.info("Customer entered all the basic information and clicked on save button.");
     }
 
-    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Store Info page", priority = 2)
+    @Test(description = "Verify that after clicking the save button, the customer is successfully navigated to Store Info page", priority = 2)
     public void verifyCustomerNavigationAfterSaving() throws InterruptedException {
-        SmallWait(2000);
+        SmallWait(1000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("storeInfo"));
 
-        logger.info("Customer clicked the save button and verified navigation to the Store Info page");
+        logger.info("Customer successfully navigated to the Store Info page");
     }
 }

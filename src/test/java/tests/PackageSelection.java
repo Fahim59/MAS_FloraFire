@@ -46,21 +46,22 @@ public class PackageSelection extends BaseClass {
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can select their preferred package successfully", priority = 1)
+    @Test(description = "Verify that a customer can select preferred package successfully", priority = 1)
     public void verifyCustomerPreferredPackageSelection() throws InterruptedException {
         String packageName = jsonData.getJSONObject("packageDetails").getString("package");
-        packageSelectionPage.selectPackage(packageName);
+
+        packagePrice = packageSelectionPage.selectPackageAndGetValue(packageName);
 
         packageSelectionPage.clickSaveBtn();
 
-        logger.info("Customer selected their preferred package.");
+        logger.info("Customer selected the preferred package and clicked on save button.");
     }
 
-    @Test(description = "Verifies that after clicking the save button, the customer is successfully navigated to Contact Info page", priority = 2)
+    @Test(description = "Verify that after clicking the save button, the customer is successfully navigated to Contact Info page", priority = 2)
     public void verifyCustomerNavigationAfterSaving() throws InterruptedException {
-        SmallWait(2000);
+        SmallWait(1000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("contactInfo"));
 
-        logger.info("Customer clicked the save button and verified navigation to the Contact Info page");
+        logger.info("Customer successfully navigated to the Contact Info page");
     }
 }

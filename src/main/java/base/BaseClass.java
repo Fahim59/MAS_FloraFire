@@ -33,7 +33,7 @@ public class BaseClass {
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public static String userName;
-    public static double licensePrice;
+    public static double packagePrice, perUserLicensePrice, totalLicensePrice, subTotal, promoDiscount, recurringFee;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;
@@ -236,7 +236,8 @@ public class BaseClass {
 
         if (text.isEmpty()) {
             element.sendKeys(txt);
-        } else {
+        }
+        else {
             element.clear();
             element.sendKeys(txt);
         }

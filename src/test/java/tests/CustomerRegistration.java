@@ -52,14 +52,14 @@ public class CustomerRegistration extends BaseClass {
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verifies that a customer can navigate to the registration page successfully", priority = 1)
+    @Test(description = "Verify that a customer can navigate to the registration page successfully", priority = 1)
     public void verifyCustomerNavigationToRegistrationPage() {
         Open_Website(EndPoint.registration.url);
 
         logger.info("Customer navigated to the registration page.");
     }
 
-    @Test(description = "Verifies the registration form submission flow for a new customer", priority = 2)
+    @Test(description = "Verify the registration form submission flow for a new customer", priority = 2)
     public void verifyNewCustomerRegistrationSubmissionFlow() throws InterruptedException {
 
         registrationPage.enterRegistrationDetails(getFirstName(), getLastName(), getEmail(), getEmail(),
@@ -67,15 +67,15 @@ public class CustomerRegistration extends BaseClass {
                 jsonData.getJSONObject("registration_info").getString("sec.question2"), jsonData.getJSONObject("registration_info").getString("sec.question2_answer"),
                 jsonData.getJSONObject("registration_info").getString("password"), jsonData.getJSONObject("registration_info").getString("password"));
 
-        logger.info("Entered customer details in the registration form.");
+        logger.info("Customer entered registration details in the registration form.");
 
         SmallWait(1000);
 
         registrationPage.clickRegisterBtn();
-        logger.info("Clicked on the register button to submit the form.");
+        logger.info("Customer clicked on the register button to submit the form.");
     }
 
-    @Test(description = "Verifies that a customer can complete the registration, see a success message, and navigate to the login page", priority = 3)
+    @Test(description = "Verify that a customer can complete the registration, see a success message, and navigate to the login page", priority = 3)
     public void verifyCustomerRegistrationAndLoginNavigation() throws InterruptedException {
         SmallWait(1000);
 
@@ -84,13 +84,14 @@ public class CustomerRegistration extends BaseClass {
         Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("emailText") + "\n" + getEmail(),
                 registrationPage.fetchEmailText());
 
-        logger.info("Verified successful registration message.");
+        logger.info("Registration message verification successful.");
 
         registrationPage.clickLoginPageBtn();
-        logger.info("Navigated to the login page.");
+
+        logger.info("Customer navigated to the login page.");
     }
 
-    @Test(description = "Verifies that a customer can check their email and successfully click on the activation link", priority = 4)
+    @Test(description = "Verify that a customer can check their email and successfully click on the activation link", priority = 4)
     public void verifyCustomerEmailActivation() throws InterruptedException {
         SmallWait(60000);
 
@@ -101,7 +102,7 @@ public class CustomerRegistration extends BaseClass {
 
         Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("activationSuccessText"), registrationPage.fetchActivationText());
 
-        logger.info("Customer checked their email and clicked on the activation link.");
+        logger.info("Customer checked email and clicked on the activation link.");
     }
 
     public void getActivationLink() {
@@ -123,10 +124,10 @@ public class CustomerRegistration extends BaseClass {
             String messageId = latestEmail.getString("id");
             String emailSubject = latestEmail.getString("subject");
 
-            System.out.println("Email Subject: " +emailSubject);
+            logger.info("Email Subject: {}", emailSubject);
 
             if (!expectedSubject.equals(emailSubject)) {
-                System.out.println("Email subject does not match.");
+                logger.info("Email subject does not match.");
                 return;
             }
 
@@ -141,7 +142,7 @@ public class CustomerRegistration extends BaseClass {
             if (!toArray.isEmpty()) {
                 String customerName = toArray.getJSONObject(0).getString("name");
 
-                System.out.println("Customer Name: " +customerName);
+                logger.info("Customer Name: {}", customerName);
 
                 if (expectedCustomerName.equals(customerName)) {
 
@@ -150,14 +151,15 @@ public class CustomerRegistration extends BaseClass {
                     if (!linksArray.isEmpty()) {
                         String confirmationLink = linksArray.getJSONObject(0).getString("href");
                         link = confirmationLink;
-                        System.out.println("Confirmation link: " + confirmationLink);
+
+                        logger.info("Confirmation link: {}", confirmationLink);
                     }
-                    else { System.out.println("No links found in the email."); }
+                    else { logger.info("No links found in the email."); }
                 }
-                else { System.out.println("Customer name does not match."); }
+                else { logger.info("Customer name does not match."); }
             }
-            else { System.out.println("No recipient details found."); }
+            else { logger.info("No recipient details found."); }
         }
-        else { System.out.println("No emails found."); }
+        else { logger.info("No emails found."); }
     }
 }

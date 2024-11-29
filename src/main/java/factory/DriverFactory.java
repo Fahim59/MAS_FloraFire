@@ -44,6 +44,11 @@ public class DriverFactory {
                 prefs.put("credentials_enable_service", false);         //prevent pop up of save password window
                 prefs.put("profile.password_manager_enabled", false);   //prevent pop up of save password window
 
+                prefs.put("autofill.profile_enabled", false);           //prevent autofill for addresses and profiles
+                prefs.put("autofill.address_enabled", false);           //prevent address autofill
+
+                prefs.put("autofill.credit_card_enabled", false);       //prevent the Save Card popup
+
                 options.setExperimentalOption("prefs", prefs);
 
                 WebDriverManager.chromedriver().setup();

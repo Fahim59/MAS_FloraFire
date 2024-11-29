@@ -177,9 +177,11 @@ public class LocationAndUser_Page extends BaseClass{
         return elements.size();
     }
 
-    public double priceTable(double licenseCount) throws InterruptedException {
+    public Object[] priceTable(int licenseCount) {
         System.out.println("Tr Size: " +getLicensePriceTrSize());
+
         double totalLicenseFee = 0.0;
+        double licenseFee = 0.0;
 
         for(int l = 1; l<= getLicensePriceTrSize(); l++){
 
@@ -189,6 +191,8 @@ public class LocationAndUser_Page extends BaseClass{
             if(range.contains("less than")){
                 Pattern pattern = Pattern.compile("less than (\\d+)");
                 Matcher matcher = pattern.matcher(range);
+
+                licenseFee = Double.parseDouble(price.replaceAll("[^\\d.]", ""));
 
                 if (matcher.find()) {
                     int upperLimit = Integer.parseInt(matcher.group(1));
@@ -204,6 +208,8 @@ public class LocationAndUser_Page extends BaseClass{
             else{
                 Pattern pattern = Pattern.compile("(\\d+)-(\\d+)");
                 Matcher matcher = pattern.matcher(range);
+
+                licenseFee = Double.parseDouble(price.replaceAll("[^\\d.]", ""));
 
                 if (matcher.find()) {
                     int lowerLimit = Integer.parseInt(matcher.group(1));
@@ -222,19 +228,20 @@ public class LocationAndUser_Page extends BaseClass{
             throw new IllegalArgumentException("No matching range found for the given license count: " + licenseCount);
         }
         System.out.println("License Fee is: " +totalLicenseFee);
-        return totalLicenseFee;
+
+        return new Object[] {totalLicenseFee, licenseFee};
     }
 
-    private double calculateTotalFee(String price, double licenseCount) {
+    private double calculateTotalFee(String price, int licenseCount) {
         double licenseFee = Double.parseDouble(price.replaceAll("[^\\d.]", ""));
         return licenseFee * licenseCount;
     }
 
     public void clickLocationTab() { click_Element(licenseTab); }
 
-    public void enterAdditionalLicense(String count){
+    public void enterAdditionalLicense(int count){
         wait.until(ExpectedConditions.visibilityOfElementLocated(additionalLicenseField));
-        write_Send_Keys(additionalLicenseField, count);
+        write_Send_Keys(additionalLicenseField, String.valueOf(count));
     }
 
     public void clickSaveBtn() { click_Element(saveBtn); }

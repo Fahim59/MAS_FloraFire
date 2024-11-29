@@ -1,6 +1,8 @@
 package pages;
 
 import base.BaseClass;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +13,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Payment_Page extends BaseClass{
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
     private final Actions actions;
+
+    private static final Logger logger = LogManager.getLogger(Payment_Page.class);
 
     public Payment_Page(WebDriver driver) {
         this.driver = driver;
@@ -36,7 +42,7 @@ public class Payment_Page extends BaseClass{
     private final By promoField = By.xpath("//input[@name='PromoCode']");
     private final By applyPromoBtn = By.xpath("//button[@id='applypromocode']");
 
-    private final By promoSuccessMessage = By.cssSelector(".message-success");
+    private final By promoMessage = By.xpath("//div[contains(@class, 'message-')]");
 
     private final By termsField = By.cssSelector("#terms");
 
@@ -46,6 +52,15 @@ public class Payment_Page extends BaseClass{
     private final By passwordSubmitBtn = By.cssSelector("#submitPassword");
 
     private final By paymentFailedMessage = By.cssSelector("div[class='message-error validation-summary-errors'] ul li");
+
+    private final By recurringHeader = By.xpath("//h2[normalize-space()='Recurring Order Summary']");
+    private final By proratedHeader = By.xpath("//h2[normalize-space()='Current Order Summary Pro-Rated']");
+
+    private final By recurringPackagePrice = By.xpath("//p[contains(normalize-space(), '/Monthly')]");
+    private final By recurringLicensePrice = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[1]");
+    private final By recurringSubtotal = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[2]");
+    private final By promotionalDiscount = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[3]");
+    private final By recurringMonthlyFee = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[4]");
 
     public void clickPaymentTab() { click_Element(paymentTab); }
 
@@ -68,11 +83,11 @@ public class Payment_Page extends BaseClass{
         return this;
     }
 
-    public Payment_Page applyPromo(String promo, String message){
+    public String applyPromoAndGetMessage(String promo){
         write_Send_Keys(promoField, promo);
         click_Element(applyPromoBtn);
-        Assert.assertEquals(message, get_Text(promoSuccessMessage));
-        return this;
+
+        return get_Text(promoMessage);
     }
 
     public Payment_Page enterPaymentDetails(String cardNumber, String date, String cvv){
@@ -104,7 +119,57 @@ public class Payment_Page extends BaseClass{
             }
         }
         catch (Exception e) {
-            System.out.println("Payment Successful");
+            logger.info("Payment Failed");
         }
+    }
+
+    public double fetchPackagePrice(){
+        String text = get_Text(recurringPackagePrice);
+        String priceText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");
+
+        return Double.parseDouble(priceText);
+    }
+    public double[] fetchLicenseDetails(){
+        String text = get_Text(recurringLicensePrice);
+
+        Pattern pattern = Pattern.compile("\\$(\\d+\\.\\d+).*\\$(\\d+\\.\\d+).*\\*\\s*(\\d+)\\s*users");
+        Matcher matcher = pattern.matcher(text);
+
+        double[] priceDetails = new double[3];
+
+        if (matcher.find()) {
+            priceDetails[0] = Double.parseDouble(matcher.group(1));
+            priceDetails[1] = Double.parseDouble(matcher.group(2));
+            priceDetails[2] = Integer.parseInt(matcher.group(3));
+        }
+
+        return priceDetails;
+    }
+    public double fetchSubtotal(){
+        String text = get_Text(recurringSubtotal);
+        String subTotalText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");
+
+        return Double.parseDouble(subTotalText);
+    }
+    public String[] fetchPromoDiscount(){
+        String text = get_Text(promotionalDiscount);
+
+        Pattern pattern = Pattern.compile("-\\$(\\d+\\.\\d+)\\s*\\(([^)]+)\\)");
+        Matcher matcher = pattern.matcher(text);
+
+        String[] priceAndPromo = new String[2];
+
+        if (matcher.find()) {
+            priceAndPromo[0] = matcher.group(1); //promoDiscount
+            priceAndPromo[1] = matcher.group(2); //promoCode
+        }
+
+        return priceAndPromo;
+    }
+    public double fetchRecurringFee(){
+        String text = get_Text(recurringMonthlyFee);
+        String recurringFeeText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");
+
+        return Double.parseDouble(recurringFeeText);
     }
 }

@@ -3,6 +3,7 @@ package base;
 import com.github.javafaker.Faker;
 import factory.DriverFactory;
 import org.apache.logging.log4j.*;
+import org.json.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ import javax.mail.internet.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
+import java.io.*;
 import java.text.*;
 import java.time.Duration;
 import java.util.*;
@@ -32,8 +33,14 @@ public class BaseClass {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    public static String userName;
+    private static final Logger baseLogger = LogManager.getLogger(BaseClass.class);
+    protected final Logger logger = LogManager.getLogger(getClass());
+
+    protected JSONObject jsonData;
+
+    public static String userName, customerName;
     public static double packagePrice, perUserLicensePrice, totalLicensePrice, subTotal, promoDiscount, recurringFee;
+    public static boolean promoApplied = true;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;
@@ -75,15 +82,33 @@ public class BaseClass {
 
     public String getCompany() { return company; }
     //---------------------------------------------------------------------------------------------//
-
-    private static final Logger logger = LogManager.getLogger(BaseClass.class);
-
     @BeforeSuite
     public static void launch_browser(){
         driver = DriverFactory.initializeDriver(System.getProperty("browser",
                 new ConfigLoader().initializeProperty().getProperty("browser")));
 
-        logger.info("Browser launched successfully");
+        baseLogger.info("Browser launched successfully");
+    }
+
+    @BeforeClass
+    public void readJsonData() throws Exception {
+        FileReader data = null;
+        try {
+            String file = "src/main/resources/data.json";
+            data = new FileReader(file);
+
+            JSONTokener tokener = new JSONTokener(data);
+            jsonData = new JSONObject(tokener);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+        finally {
+            if (data != null) {
+                data.close();
+            }
+        }
     }
 
     //---------------------------------------------------------------------------------------------//
@@ -103,6 +128,12 @@ public class BaseClass {
         SmallWait(1000);
         JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
         js.executeScript("window.scrollBy(0,500)", "");
+    }
+
+    public static void Scroll_Up() throws InterruptedException {
+        SmallWait(1000);
+        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
+        js.executeScript("window.scrollBy(0,-500)", "");
     }
 
     public static void SendEmail() throws InterruptedException {
@@ -168,7 +199,6 @@ public class BaseClass {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
-
     //---------------------------------------------------------------------------------------//
     public WebElement wait_for_visibility(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -322,9 +352,9 @@ public class BaseClass {
 
     @AfterSuite
     public static void QuitBrowser() throws InterruptedException {
-        //driver.quit();
+        driver.quit();
         //SendEmail();
 
-        logger.info("Browser quit and Send Report successfully");
+        baseLogger.info("Browser quit and Send Report successfully");
     }
 }

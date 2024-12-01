@@ -1,50 +1,24 @@
 package tests;
 
 import base.BaseClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.json.JSONObject;
-import org.json.JSONTokener;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
-import java.io.FileReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.regex.*;
 
 public class PackageSelection extends BaseClass {
-
-    private static final Logger logger = LogManager.getLogger(PackageSelection.class);
-
     private PackageSelection_Page packageSelectionPage;
 
-    FileReader data;
-    JSONObject jsonData;
-
-    @BeforeClass
-    public void beforeClass() throws Exception {
-        try {
-            String file = "src/main/resources/data.json";
-            data = new FileReader(file);
-
-            JSONTokener tokener = new JSONTokener(data);
-
-            jsonData = new JSONObject(tokener);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-        finally {
-            if (data != null) {
-                data.close();
-            }
-        }
-    }
-
     @BeforeMethod
-    public void beforeMethod() {
+    public void initializePageObjects() {
         packageSelectionPage = new PackageSelection_Page(driver);
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that a customer can select preferred package successfully", priority = 1)
     public void verifyCustomerPreferredPackageSelection() throws InterruptedException {

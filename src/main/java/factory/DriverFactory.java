@@ -23,7 +23,7 @@ public class DriverFactory {
      *
      * @param browser
      * @return this will return tldriver.
-     */
+    */
 
     public static WebDriver initializeDriver(String browser){
         System.out.println("browser value is: " + browser);
@@ -97,7 +97,7 @@ public class DriverFactory {
      * this is used to get the driver with ThreadLocal
      *
      * @return
-     */
+    */
 
     public static WebDriver getDriver() {
         return tlDriver.get();

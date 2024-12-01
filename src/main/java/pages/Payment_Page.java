@@ -1,8 +1,6 @@
 package pages;
 
 import base.BaseClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,8 +19,6 @@ public class Payment_Page extends BaseClass{
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
     private final Actions actions;
-
-    private static final Logger logger = LogManager.getLogger(Payment_Page.class);
 
     public Payment_Page(WebDriver driver) {
         this.driver = driver;
@@ -90,13 +86,12 @@ public class Payment_Page extends BaseClass{
         return get_Text(promoMessage);
     }
 
-    public Payment_Page enterPaymentDetails(String cardNumber, String date, String cvv){
-        return enterCardNumber(cardNumber).enterExpirationDate(date).enterCVV(cvv).clickTermsBtn();
+    public void enterPaymentDetails(String cardNumber, String date, String cvv){
+        enterCardNumber(cardNumber).enterExpirationDate(date).enterCVV(cvv).clickTermsBtn();
     }
 
-    public Payment_Page clickTermsBtn(){
+    public void clickTermsBtn(){
         click_CheckBox(termsField);
-        return this;
     }
 
     public void clickSubmitOrderBtn() {
@@ -119,7 +114,7 @@ public class Payment_Page extends BaseClass{
             }
         }
         catch (Exception e) {
-            logger.info("Payment Failed");
+            logger.info("Payment failed message not found. Test continues.");
         }
     }
 

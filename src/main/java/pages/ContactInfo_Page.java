@@ -4,14 +4,11 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class ContactInfo_Page extends BaseClass{
     private final WebDriver driver;
@@ -25,8 +22,6 @@ public class ContactInfo_Page extends BaseClass{
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
     }
-
-    private final By contactInfoTab = By.xpath("//strong[normalize-space()='Contact Info']");
 
     private final By companyField = By.cssSelector("#CompanyName");
 
@@ -105,16 +100,14 @@ public class ContactInfo_Page extends BaseClass{
         return this;
     }
 
-    public ContactInfo_Page enterContactInfoDetails(String company, String address, String addressCont, String country, String state,
-                                                    String city, String zip, String businessPhone, String mobile, String phone,
-                                                    String aboutUs, String answer) throws InterruptedException {
+    public void enterContactInfoDetails(String company, String address, String addressCont, String country, String state,
+                                        String city, String zip, String businessPhone, String mobile, String phone,
+                                        String aboutUs, String answer) {
 
-        return enterCompany(company).enterAddress(address).enterContAddress(addressCont).selectCountry(country).selectState(state).
+        enterCompany(company).enterAddress(address).enterContAddress(addressCont).selectCountry(country).selectState(state).
                 enterCity(city).enterZip(zip).enterBusinessPhone(businessPhone).enterMobile(mobile).enterAdditionalPhone(phone).
-                selectAboutUs(aboutUs).enterAnswer(answer);
+                selectAboutUs(aboutUs).enterAnswer(answer).clickSaveBtn();
     }
 
     public void clickSaveBtn() { click_Element(saveBtn); }
-
-    public void clickContactInfoTab() { click_Element(contactInfoTab); }
 }

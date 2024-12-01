@@ -45,8 +45,8 @@ public class Login_Page extends BaseClass{
         return this;
     }
 
-    public Login_Page enterLoginDetails(String email, String password){
-        return enterEmail(email).enterPassword(password).clickRememberBtn();
+    public void enterLoginDetails(String email, String password){
+        enterEmail(email).enterPassword(password).clickRememberBtn().clickLoginBtn();
     }
 
     public void clickLoginBtn() {

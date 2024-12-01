@@ -1,8 +1,6 @@
 package pages;
 
 import base.BaseClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,19 +10,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.text.DecimalFormat;
 import java.time.Duration;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class PackageSelection_Page extends BaseClass{
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
     private final Actions actions;
-
-    private static final Logger logger = LogManager.getLogger(PackageSelection_Page.class);
 
     public PackageSelection_Page(WebDriver driver) {
         this.driver = driver;

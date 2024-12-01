@@ -1,53 +1,20 @@
 package tests;
 
 import base.BaseClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.json.JSONObject;
-import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
-import java.io.FileReader;
-
 public class Payment extends BaseClass {
-
-    private static final Logger logger = LogManager.getLogger(Payment.class);
-
     private Payment_Page paymentPage;
 
-    FileReader data;
-    JSONObject jsonData;
-
-    @BeforeClass
-    public void beforeClass() throws Exception {
-        try {
-            String file = "src/main/resources/data.json";
-            data = new FileReader(file);
-
-            JSONTokener tokener = new JSONTokener(data);
-
-            jsonData = new JSONObject(tokener);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-        finally {
-            if (data != null) {
-                data.close();
-            }
-        }
-    }
-
     @BeforeMethod
-    public void beforeMethod() {
+    public void initializePageObjects() {
         paymentPage = new Payment_Page(driver);
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verify that customer can apply promo code and enter credit card information", priority = 1, enabled = true)
+    @Test(description = "Verify that customer can apply promo code and enter credit card information", priority = 1)
     public void verifyCustomerCreditCardInfoAndSubmitOrder() throws InterruptedException {
         SmallWait(1000);
 
@@ -64,6 +31,7 @@ public class Payment extends BaseClass {
         }
         else{
             logger.info("Promo Code could not be applied: {}", displayedMessage);
+            promoApplied = false;
         }
 
         SmallWait(1000);
@@ -79,31 +47,57 @@ public class Payment extends BaseClass {
 
         String password = jsonData.getJSONObject("registration_info").getString("password");
 
+        /*
+         * validating package price
+        */
+
         double getPackagePrice = paymentPage.fetchPackagePrice();
+        Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
+
+        /*
+         * validating license details
+        */
 
         int licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
         double[] licenseDetails = paymentPage.fetchLicenseDetails();
-
-        String promoCode = jsonData.getJSONObject("payment").getString("promo");
-        String[] promoDetails = paymentPage.fetchPromoDiscount();
-        promoDiscount = Double.parseDouble(promoDetails[0]);
-
-        subTotal = packagePrice + totalLicensePrice;
-        double getSubTotal = paymentPage.fetchSubtotal();
-
-        recurringFee = subTotal - promoDiscount;
-        double getRecurringFee = paymentPage.fetchRecurringFee();
-
-        Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
 
         Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
         Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);
         Assert.assertEquals(licenseCount , licenseDetails[2],"License count mismatch; should be: " +licenseCount+ " but displayed: " +licenseDetails[2]);
 
+        /*
+         * validating subtotal amount
+        */
+
+        subTotal = packagePrice + totalLicensePrice;
+        double getSubTotal = paymentPage.fetchSubtotal();
+
         Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);
 
-        Assert.assertEquals(promoCode, promoDetails[1],"Promo Code mismatch; should be: " +promoCode+ " but displayed: " +promoDetails[1]);
+        /*
+         * validating promo discount
+        */
 
+        if(promoApplied){
+            String promoCode = jsonData.getJSONObject("payment").getString("promo");
+            String[] promoDetails = paymentPage.fetchPromoDiscount();
+            promoDiscount = Double.parseDouble(promoDetails[0]);
+
+            Assert.assertEquals(promoCode, promoDetails[1],"Promo Code mismatch; should be: " +promoCode+ " but displayed: " +promoDetails[1]);
+        }
+
+        /*
+         * validating recurring fee
+        */
+
+        if(promoApplied){
+            recurringFee = subTotal - promoDiscount;
+        }
+        else{
+            recurringFee = subTotal;
+        }
+
+        double getRecurringFee = paymentPage.fetchRecurringFee();
         Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
 
         //paymentPage.clickTermsBtn();           //Extra
@@ -116,7 +110,7 @@ public class Payment extends BaseClass {
         logger.info("Customer verified recurring payment details and submitted the order.");
     }
 
-    @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 3, enabled = true)
+    @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 3)
     public void verifyCustomerNavigationAfterPayment() throws InterruptedException {
         SmallWait(15000);
         //SmallWait(1000);

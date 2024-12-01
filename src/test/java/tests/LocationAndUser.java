@@ -1,47 +1,14 @@
 package tests;
 
 import base.BaseClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.json.JSONObject;
-import org.json.JSONTokener;
 import org.testng.annotations.*;
 import pages.*;
 
-import java.io.FileReader;
-
 public class LocationAndUser extends BaseClass {
-
-    private static final Logger logger = LogManager.getLogger(LocationAndUser.class);
-
     private LocationAndUser_Page locationAndUserPage;
 
-    FileReader data;
-    JSONObject jsonData;
-
-    @BeforeClass
-    public void beforeClass() throws Exception {
-        try {
-            String file = "src/main/resources/data.json";
-            data = new FileReader(file);
-
-            JSONTokener tokener = new JSONTokener(data);
-
-            jsonData = new JSONObject(tokener);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-        finally {
-            if (data != null) {
-                data.close();
-            }
-        }
-    }
-
     @BeforeMethod
-    public void beforeMethod() {
+    public void initializePageObjects() {
         locationAndUserPage = new LocationAndUser_Page(driver);
     }
     //-------------------------------------------------------//
@@ -67,7 +34,6 @@ public class LocationAndUser extends BaseClass {
                 getAddressCont(), country, getState(), getCity(), zip, timeZone, businessPhone, fax);
 
         SmallWait(1500);
-
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer entered all the required store information and clicked on save button.");
@@ -76,8 +42,6 @@ public class LocationAndUser extends BaseClass {
     @Test(description = "Verify that a customer can enter all required license information", priority = 2)
     public void verifyCustomerLicenseInfoEntry() throws InterruptedException {
         SmallWait(1500);
-
-        //locationAndUserPage.clickLocationTab();
 
         String licenseCount = jsonData.getJSONObject("storeInfo").getString("count");
         locationAndUserPage.enterAdditionalLicense(Integer.parseInt(licenseCount));

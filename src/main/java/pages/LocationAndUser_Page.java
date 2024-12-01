@@ -167,8 +167,6 @@ public class LocationAndUser_Page extends BaseClass{
 
     private final By additionalLicenseField = By.cssSelector("#AdditionalLicenseCount");
 
-    private final By licensePrice = By.cssSelector("#AdditionalLicenseCount");
-
     private final String licensePriceTable = "//*[@id='licenseCount']/div/div/div[2]/table/tbody";
     private final By priceTr = By.xpath(licensePriceTable+"/tr");
 
@@ -237,8 +235,6 @@ public class LocationAndUser_Page extends BaseClass{
         return licenseFee * licenseCount;
     }
 
-    public void clickLocationTab() { click_Element(licenseTab); }
-
     public void enterAdditionalLicense(int count){
         wait.until(ExpectedConditions.visibilityOfElementLocated(additionalLicenseField));
         write_Send_Keys(additionalLicenseField, String.valueOf(count));
@@ -247,4 +243,6 @@ public class LocationAndUser_Page extends BaseClass{
     public void clickSaveBtn() { click_Element(saveBtn); }
 
     public void clickLocationAndUserTab() { click_Element(locationAndUserTab); }
+
+    public void clickLocationTab() { click_Element(licenseTab); }
 }

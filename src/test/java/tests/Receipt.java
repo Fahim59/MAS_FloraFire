@@ -1,8 +1,6 @@
 package tests;
 
 import base.BaseClass;
-import org.apache.logging.log4j.*;
-import org.json.*;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -10,6 +8,7 @@ import pages.*;
 import utils.*;
 
 import java.io.*;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -21,44 +20,17 @@ import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 
 public class Receipt extends BaseClass {
-
-    private static final Logger logger = LogManager.getLogger(Receipt.class);
-
     private Receipt_Page receiptPage;
     private PackageSelection_Page packageSelectionPage;
 
-    FileReader data;
-    JSONObject jsonData;
-
-    @BeforeClass
-    public void beforeClass() throws Exception {
-        try {
-            String file = "src/main/resources/data.json";
-            data = new FileReader(file);
-
-            JSONTokener tokener = new JSONTokener(data);
-
-            jsonData = new JSONObject(tokener);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-        finally {
-            if (data != null) {
-                data.close();
-            }
-        }
-    }
-
     @BeforeMethod
-    public void beforeMethod() {
+    public void initializePageObjects() {
         receiptPage = new Receipt_Page(driver);
         packageSelectionPage = new PackageSelection_Page(driver);
     }
     //-------------------------------------------------------//
 
-    @Test(description = "Verify that customer can see the receipt page and see the payment details", priority = 1, enabled = true)
+    @Test(description = "Verify that customer can see the receipt page and see the payment details", priority = 1)
     public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
         SmallWait(1000);
 
@@ -76,9 +48,9 @@ public class Receipt extends BaseClass {
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }
 
-    @Test(description = "Verify that a customer can download the receipt and validate the data within it", priority = 2, enabled = true)
+    @Test(description = "Verify that a customer can download the receipt and validate the data within it", priority = 2)
     public void verifyCustomerReceiptDownloadAndDataValidation() throws InterruptedException {
-        SmallWait(1000);
+        Scroll_Up();
 
         receiptPage.clickDownloadBtn();
 
@@ -113,8 +85,10 @@ public class Receipt extends BaseClass {
                 String subTotalAmount = String.format("$%.2f", subTotal);
                 Assert.assertTrue(extractedText.contains(subTotalAmount), "The text " + subTotalAmount + " does not exist in the downloaded PDF file.");
 
-                String promoAmount = String.format("$%.2f", promoDiscount);
-                Assert.assertTrue(extractedText.contains(promoAmount), "The text " + promoAmount + " does not exist in the downloaded PDF file.");
+                if(promoApplied){
+                    String promoAmount = String.format("$%.2f", promoDiscount);
+                    Assert.assertTrue(extractedText.contains(promoAmount), "The text " + promoAmount + " does not exist in the downloaded PDF file.");
+                }
 
                 String recurringAmount = String.format("$%.2f", recurringFee);
                 Assert.assertTrue(extractedText.contains(recurringAmount), "The text " + recurringAmount + " does not exist in the downloaded PDF file.");
@@ -136,31 +110,27 @@ public class Receipt extends BaseClass {
         logger.info("Customer successfully received the trial receipt.");
     }
 
-    @Test(description = "Verify that a customer can navigate back to the package tab and check paid subscription data", priority = 4, enabled = true)
-    public void verifyCustomerNavigationToPackageTabAndSubscriptionData() throws InterruptedException {
-        SmallWait(1500);
-
+    @Test(description = "Verify that a customer can navigate back to the package tab and check paid subscription data", priority = 4)
+    public void verifyCustomerNavigationToPackageTabAndSubscriptionData() throws InterruptedException, ParseException {
         packageSelectionPage.clickPackageTab();
 
+        SmallWait(1500);
+
         String packageText = packageSelectionPage.getPackageText();
-        String trialStartText = packageSelectionPage.getTrialStartText();
-        String trialEndText = packageSelectionPage.getTrialEndText();
-
-        String subscriptionText = packageSelectionPage.getSubscriptionText();
-
         Matcher packageMatcher = Pattern.compile("Current Package: (.+?) \\(Trial\\)").matcher(packageText);
-        Matcher trialStartMatcher = Pattern.compile("Trial Start Date : (\\d{2}/\\d{2}/\\d{4})").matcher(trialStartText);
-        Matcher trialEndMatcher = Pattern.compile("Trial End Date: (\\d{2}/\\d{2}/\\d{4})").matcher(trialEndText);
-
-        //Matcher subscriptionMatcher = Pattern.compile("Your current subscription (.+?) will upgrade trial to active from (\\d{2}/\\d{2}/\\d{4}) if you don't cancel your subscription\\.").matcher(subscriptionText);
-
-        //System.out.println(subscriptionMatcher);
-
         String packageName = jsonData.getJSONObject("packageDetails").getString("package");
+
+        String trialStartText = packageSelectionPage.getTrialStartText();
+        Matcher trialStartMatcher = Pattern.compile("Trial Start Date : (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialStartText);
         String startDate = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+
+        String trialEndText = packageSelectionPage.getTrialEndText();
+        Matcher trialEndMatcher = Pattern.compile("Trial End Date: (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialEndText);
         String endDate = LocalDate.now().plusDays(13).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
-        //String recurringDate = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String subscriptionText = packageSelectionPage.getSubscriptionText();
+        Matcher subscriptionMatcher = Pattern.compile("Your current subscription (.+?) will upgrade trial to active from (\\d{1,2}/\\d{1,2}/\\d{4}) if you don't cancel you subscription.").matcher(subscriptionText);
+        String recurringDate = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
         if (packageMatcher.find()) {
             Assert.assertEquals(packageName, packageMatcher.group(1), "Package name mismatch; should be: " +packageName+ " but displayed: " +packageMatcher.group(1));
@@ -168,34 +138,29 @@ public class Receipt extends BaseClass {
         else{ Assert.fail("Package text not found"); }
 
         if (trialStartMatcher.find()) {
-            Assert.assertEquals(startDate, trialStartMatcher.group(1), "Trial Start date mismatch; should be: " +startDate+ " but displayed: " +trialStartMatcher.group(1));
+            String extractedDate = new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("M/d/yyyy").
+                    parse(trialStartMatcher.group(1)));
+
+            Assert.assertEquals(startDate, extractedDate, "Trial Start date mismatch; should be: " +startDate+ " but displayed: " +extractedDate);
         }
         else{ Assert.fail("Trial start date not found"); }
 
         if (trialEndMatcher.find()) {
-            Assert.assertEquals(endDate, trialEndMatcher.group(1), "Trial End date mismatch; should be: " +endDate+ " but displayed: " +trialEndMatcher.group(1));
+            String extractedDate = LocalDate.parse(trialEndMatcher.group(1), DateTimeFormatter.ofPattern("M/d/yyyy")).
+                    format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+            Assert.assertEquals(endDate, extractedDate, "Trial End date mismatch; should be: " +endDate+ " but displayed: " +extractedDate);
         }
         else{ Assert.fail("Trial end date not found"); }
 
-//        if (subscriptionMatcher.find()) {
-//            Assert.assertEquals(packageName, subscriptionMatcher.group(1), "Package name mismatch; should be: " +packageName+ " but displayed: " +subscriptionMatcher.group(1));
-//            System.out.println(packageName);
-//            System.out.println(subscriptionMatcher.group(1));
-//
-//            Assert.assertEquals(endDate, subscriptionMatcher.group(2), "Recurring start date mismatch; should be: " +endDate+ " but displayed: " +subscriptionMatcher.group(2));
-//            System.out.println(endDate);
-//            System.out.println(subscriptionMatcher.group(2));
-//        }
-//        if (subscriptionMatcher.find()) {
-//            String subscriptionType = subscriptionMatcher.group(1);
-//            String date = subscriptionMatcher.group(2);
-//
-//            System.out.println("Subscription Type: " + subscriptionType);
-//            System.out.println("Date: " + date);
-//        }
-//        else{
-//            Assert.fail("Subscription text not found");
-//        }
+        if (subscriptionMatcher.find()) {
+            String extractedDate = LocalDate.parse(subscriptionMatcher.group(2), DateTimeFormatter.ofPattern("M/d/yyyy")).
+                    format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+            Assert.assertEquals(packageName, subscriptionMatcher.group(1), "Package name mismatch; should be: " +packageName+ " but displayed: " +subscriptionMatcher.group(1));
+            Assert.assertEquals(recurringDate, extractedDate, "Recurring start date mismatch; should be: " +recurringDate+ " but displayed: " +extractedDate);
+        }
+        else{ Assert.fail("Subscription text not found"); }
 
         packageSelectionPage.paidStartSubscriptionButtonVisibility();
         packageSelectionPage.packageChangeButtonVisibility();
@@ -208,9 +173,7 @@ public class Receipt extends BaseClass {
         String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
         String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
         String emailAddress = getEmail();
-        String expectedCustomerName = getFirstName() +" "+ getLastName();
-//        String emailAddress = "margherita@qjav2ant.mailosaur.net";
-//        String expectedCustomerName = "Margherita Prosacco";
+        String expectedCustomerName = customerName;
         String expectedSubject = jsonData.getJSONObject("registration_info").getString("trialReceiptEmailSubject");
 
         HttpResponse<JsonNode> response = Unirest.get("https://mailosaur.com/api/messages")
@@ -243,14 +206,7 @@ public class Receipt extends BaseClass {
             if (!toArray.isEmpty()) {
                 String customerName = toArray.getJSONObject(0).getString("name");
 
-                logger.info("Customer Name: {}", customerName);
-
-                if (expectedCustomerName.equals(customerName)) {
-                    logger.info("Customer name matches.");
-                }
-                else {
-                    logger.info("Customer name does not match.");
-                }
+                Assert.assertEquals(expectedCustomerName, customerName, "Customer Name mismatch; should be: " +expectedCustomerName+ " but displayed: " +customerName);
             }
             else {
                 logger.info("No recipient details found.");

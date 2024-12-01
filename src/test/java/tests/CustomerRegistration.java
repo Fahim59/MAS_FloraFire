@@ -5,48 +5,16 @@ import constants.EndPoint;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.json.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
-import java.io.FileReader;
-
 public class CustomerRegistration extends BaseClass {
-
-    private static final Logger logger = LogManager.getLogger(CustomerRegistration.class);
-
     private Registration_Page registrationPage;
     static String link;
 
-    FileReader data;
-    JSONObject jsonData;
-
-    @BeforeClass
-    public void beforeClass() throws Exception {
-        try {
-            String file = "src/main/resources/data.json";
-            data = new FileReader(file);
-
-            JSONTokener tokener = new JSONTokener(data);
-
-            jsonData = new JSONObject(tokener);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-        finally {
-            if (data != null) {
-                data.close();
-            }
-        }
-    }
-
     @BeforeMethod
-    public void beforeMethod() {
+    public void initializePageObjects() {
         registrationPage = new Registration_Page(driver);
         userName = getEmail();
     }
@@ -61,6 +29,7 @@ public class CustomerRegistration extends BaseClass {
 
     @Test(description = "Verify the registration form submission flow for a new customer", priority = 2)
     public void verifyNewCustomerRegistrationSubmissionFlow() throws InterruptedException {
+        customerName = getFirstName() +" "+ getLastName();
 
         registrationPage.enterRegistrationDetails(getFirstName(), getLastName(), getEmail(), getEmail(),
                 jsonData.getJSONObject("registration_info").getString("sec.question1"), jsonData.getJSONObject("registration_info").getString("sec.question1_answer"),
@@ -145,7 +114,6 @@ public class CustomerRegistration extends BaseClass {
                 logger.info("Customer Name: {}", customerName);
 
                 if (expectedCustomerName.equals(customerName)) {
-
                     kong.unirest.json.JSONArray linksArray = messageContent.getJSONObject("html").getJSONArray("links");
 
                     if (!linksArray.isEmpty()) {

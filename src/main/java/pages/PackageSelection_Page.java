@@ -122,4 +122,6 @@ public class PackageSelection_Page extends BaseClass{
             logger.info("Package Cancel Button is not visible");
         }
     }
+
+    public void clickPaidSubscriptionBtn() { click_Element(startPaidSubscriptionBtn); }
 }

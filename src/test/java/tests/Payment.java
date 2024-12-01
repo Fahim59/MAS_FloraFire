@@ -12,7 +12,6 @@ public class Payment extends BaseClass {
     public void initializePageObjects() {
         paymentPage = new Payment_Page(driver);
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that customer can apply promo code and enter credit card information", priority = 1)
     public void verifyCustomerCreditCardInfoAndSubmitOrder() throws InterruptedException {

@@ -11,7 +11,6 @@ public class LocationAndUser extends BaseClass {
     public void initializePageObjects() {
         locationAndUserPage = new LocationAndUser_Page(driver);
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that a customer can enter all required store information", priority = 1)
     public void verifyCustomerStoreInfoEntry() throws InterruptedException {

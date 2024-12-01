@@ -244,5 +244,8 @@ public class LocationAndUser_Page extends BaseClass{
 
     public void clickLocationAndUserTab() { click_Element(locationAndUserTab); }
 
-    public void clickLocationTab() { click_Element(licenseTab); }
+    public void clickLocationTab() throws InterruptedException {
+        SmallWait(1500);
+        click_Element(licenseTab);
+    }
 }

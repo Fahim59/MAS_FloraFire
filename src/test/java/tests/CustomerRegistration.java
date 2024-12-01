@@ -18,7 +18,6 @@ public class CustomerRegistration extends BaseClass {
         registrationPage = new Registration_Page(driver);
         userName = getEmail();
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that a customer can navigate to the registration page successfully", priority = 1)
     public void verifyCustomerNavigationToRegistrationPage() {

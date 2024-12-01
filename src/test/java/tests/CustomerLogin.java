@@ -25,21 +25,21 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            //userName = "ariel@qjav2ant.mailosaur.net";
-            userName = "kasandra@qjav2ant.mailosaur.net";
-            packagePrice = 14.0;
-            perUserLicensePrice = 10.0;
-            totalLicensePrice = 80.0;
-            subTotal = 94.0;
-            promoDiscount = 10.34;
-            recurringFee = 83.66;
+            userName = "luz@qjav2ant.mailosaur.net";
+
+//            packagePrice = 14.0;
+//            perUserLicensePrice = 10.0;
+//            totalLicensePrice = 80.0;
+//            subTotal = 94.0;
+//            promoDiscount = 10.34;
+//            recurringFee = 83.66;
 
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 
-            SmallWait(500);
-            //locationAndUserPage.clickLocationAndUserTab();
-            //locationAndUserPage.clickLocationTab();
-            paymentPage.clickPaymentTab();
+//            SmallWait(500);
+//            locationAndUserPage.clickLocationAndUserTab();
+//            locationAndUserPage.clickLocationTab();
+//            paymentPage.clickPaymentTab();
         }
 
         logger.info("Customer logged in successfully.");

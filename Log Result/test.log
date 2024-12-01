@@ -279,3 +279,72 @@
 2024-12-01 18:08:46.203 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
 2024-12-01 18:08:54.527 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
 2024-12-01 18:08:55.351 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:09:28.394 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:09:32.470 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-12-01 21:09:33.668 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2024-12-01 21:09:35.337 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2024-12-01 21:13:03.322 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:13:05.116 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer purchased new seasonal license/s successfully and clicked on save button.
+2024-12-01 21:13:05.117 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer verifies seasonal license price and submit the order
+2024-12-01 21:13:05.612 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully navigated to the Receipt page
+2024-12-01 21:13:05.998 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:13:06.634 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully received the Seasonal License purchase receipt.
+2024-12-01 21:13:07.621 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:14:28.166 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:14:37.445 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:14:37.829 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer purchased new seasonal license/s successfully and clicked on save button.
+2024-12-01 21:14:37.829 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer verifies seasonal license price and submit the order
+2024-12-01 21:14:38.200 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully navigated to the Receipt page
+2024-12-01 21:14:38.559 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:14:38.939 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully received the Seasonal License purchase receipt.
+2024-12-01 21:14:39.822 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:15:39.101 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:15:47.463 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:15:48.727 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer purchased new seasonal license/s successfully and clicked on save button.
+2024-12-01 21:15:48.728 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer verifies seasonal license price and submit the order
+2024-12-01 21:15:49.727 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully navigated to the Receipt page
+2024-12-01 21:15:50.404 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:15:51.025 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully received the Seasonal License purchase receipt.
+2024-12-01 21:15:52.656 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:16:17.367 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:16:26.503 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:16:26.871 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer purchased new seasonal license/s successfully and clicked on save button.
+2024-12-01 21:16:26.871 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer verifies seasonal license price and submit the order
+2024-12-01 21:16:27.187 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully navigated to the Receipt page
+2024-12-01 21:16:27.548 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:16:27.886 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully received the Seasonal License purchase receipt.
+2024-12-01 21:16:28.687 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:30:17.771 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:30:28.270 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:30:29.358 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer clicked on start paid subscription button and successfully navigated to the Payment page
+2024-12-01 21:30:30.679 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully navigated to the Receipt page
+2024-12-01 21:30:32.476 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer verified prorated payment details and submitted the order.
+2024-12-01 21:30:33.743 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:30:34.762 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully received the Trail Upgrade receipt.
+2024-12-01 21:30:35.577 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:32:21.186 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:32:28.116 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:32:30.089 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer clicked on start paid subscription button and successfully navigated to the Payment page
+2024-12-01 21:32:31.143 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully navigated to the Receipt page
+2024-12-01 21:32:32.160 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer verified prorated payment details and submitted the order.
+2024-12-01 21:32:33.209 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:32:34.622 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully received the Trail Upgrade receipt.
+2024-12-01 21:32:35.520 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:35:14.310 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:35:20.541 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:35:22.541 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-01 21:35:29.557 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer clicked on start paid subscription button and successfully navigated to the Payment page
+2024-12-01 21:35:30.536 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully navigated to the Receipt page
+2024-12-01 21:35:31.529 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer verified prorated payment details and submitted the order.
+2024-12-01 21:35:32.557 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:35:33.523 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully received the Trail Upgrade receipt.
+2024-12-01 21:35:34.873 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-01 21:36:36.485 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-01 21:36:43.493 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-01 21:36:46.039 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-01 21:36:53.540 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer clicked on start paid subscription button and successfully navigated to the Payment page
+2024-12-01 21:36:54.454 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully navigated to the Receipt page
+2024-12-01 21:36:55.560 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer verified prorated payment details and submitted the order.
+2024-12-01 21:36:56.500 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer viewed the receipt page and verified the prorated order details.
+2024-12-01 21:36:57.460 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully received the Trail Upgrade receipt.
+2024-12-01 21:36:58.326 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

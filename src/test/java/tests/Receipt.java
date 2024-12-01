@@ -28,7 +28,6 @@ public class Receipt extends BaseClass {
         receiptPage = new Receipt_Page(driver);
         packageSelectionPage = new PackageSelection_Page(driver);
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that customer can see the receipt page and see the payment details", priority = 1)
     public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {

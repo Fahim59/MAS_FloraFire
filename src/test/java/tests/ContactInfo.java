@@ -12,7 +12,6 @@ public class ContactInfo extends BaseClass {
     public void initializePageObjects() {
         contactInfoPage = new ContactInfo_Page(driver);
     }
-    //-------------------------------------------------------//
 
     @Test(description = "Verify that a customer can enter all required basic information", priority = 1)
     public void verifyCustomerBasicInfoEntry() throws InterruptedException {

@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.Duration;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -57,6 +59,8 @@ public class Payment_Page extends BaseClass{
     private final By recurringSubtotal = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[2]");
     private final By promotionalDiscount = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[3]");
     private final By recurringMonthlyFee = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[4]");
+
+    private final By confirmPaidSubscriptionBtn = By.cssSelector("#confirmButton");
 
     public void clickPaymentTab() { click_Element(paymentTab); }
 
@@ -118,13 +122,13 @@ public class Payment_Page extends BaseClass{
         }
     }
 
-    public double fetchPackagePrice(){
+    public double fetchRecurringPackagePrice(){
         String text = get_Text(recurringPackagePrice);
         String priceText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");
 
         return Double.parseDouble(priceText);
     }
-    public double[] fetchLicenseDetails(){
+    public double[] fetchRecurringLicenseDetails(){
         String text = get_Text(recurringLicensePrice);
 
         Pattern pattern = Pattern.compile("\\$(\\d+\\.\\d+).*\\$(\\d+\\.\\d+).*\\*\\s*(\\d+)\\s*users");
@@ -166,5 +170,49 @@ public class Payment_Page extends BaseClass{
         String recurringFeeText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");
 
         return Double.parseDouble(recurringFeeText);
+    }
+
+    public void verifyProratedOrderTable_Manual(int licenseCount) {
+
+        String proratedOrderTable = "//table/tbody";
+
+        double getPackageNetDue, getLicenseNetDue, getTotalDue;
+
+        /*
+         * Calculations
+        */
+
+        perDayPackagePrice = packagePrice / monthTotalDays;
+        packageRemainingAmount = new BigDecimal(perDayPackagePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        perDayLicensePrice = (licenseCount * perUserLicensePrice) / monthTotalDays;
+        licenseRemainingAmount = new BigDecimal(perDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        totalDue = new BigDecimal(packageRemainingAmount + licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        /*
+         * validating package price
+        */
+
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
+
+        /*
+         * validating license price
+        */
+
+        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
+
+        /*
+         * validating net due
+        */
+
+        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
+    }
+
+    public void clickPaidSubscriptionConfirmBtn() {
+        click_Element(confirmPaidSubscriptionBtn);
     }
 }

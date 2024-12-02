@@ -50,7 +50,7 @@ public class Payment extends BaseClass {
          * validating package price
         */
 
-        double getPackagePrice = paymentPage.fetchPackagePrice();
+        double getPackagePrice = paymentPage.fetchRecurringPackagePrice();
         Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
 
         /*
@@ -58,7 +58,7 @@ public class Payment extends BaseClass {
         */
 
         int licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
-        double[] licenseDetails = paymentPage.fetchLicenseDetails();
+        double[] licenseDetails = paymentPage.fetchRecurringLicenseDetails();
 
         Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
         Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);

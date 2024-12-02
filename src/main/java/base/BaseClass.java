@@ -25,6 +25,8 @@ import java.awt.event.KeyEvent;
 import java.io.*;
 import java.text.*;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.YearMonth;
 import java.util.*;
 import java.util.List;
 
@@ -41,6 +43,9 @@ public class BaseClass {
     public static String userName, customerName;
     public static double packagePrice, perUserLicensePrice, totalLicensePrice, subTotal, promoDiscount, recurringFee;
     public static boolean promoApplied = true;
+
+    public static int monthTotalDays, monthUsedDays, licenseCount;
+    public static double perDayPackagePrice, packageRemainingAmount, perDayLicensePrice, licenseRemainingAmount, totalDue;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;
@@ -81,6 +86,13 @@ public class BaseClass {
     }
 
     public String getCompany() { return company; }
+
+    public static Object[] monthDays() {
+        int totalDays = YearMonth.now().lengthOfMonth();
+        int daysLeft = totalDays - LocalDate.now().getDayOfMonth() + 1;
+
+        return new Object[] {totalDays, daysLeft};
+    }
     //---------------------------------------------------------------------------------------------//
     @BeforeSuite
     public static void launch_browser(){

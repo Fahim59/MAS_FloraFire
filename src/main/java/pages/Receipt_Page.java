@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.Duration;
 import java.util.*;
 import java.util.regex.*;
@@ -201,5 +203,33 @@ public class Receipt_Page extends BaseClass{
         }
 
         return text;
+    }
+
+    public void verifyProratedOrderTable_Manual() {
+
+        String proratedOrderTable = "(//table[@class='order-table']/tbody)[1]";
+
+        double getPackageNetDue, getLicenseNetDue, getTotalDue;
+
+        /*
+         * validating package price
+        */
+
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[1]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
+
+        /*
+         * validating license price
+        */
+
+        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
+
+        /*
+         * validating net due
+        */
+
+        getTotalDue = Double.parseDouble(driver.findElement(By.xpath("(//table[@class='order-table']/tfoot)[1]/tr/th[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
     }
 }

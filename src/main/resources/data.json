@@ -13,7 +13,8 @@
     "emailText": "Your registration has been successfully completed. You have just been sent an email containing activation instructions.",
     "activationSuccessText": "Your account has been activated",
     "emailSubject": "Activate the User Account",
-    "trialReceiptEmailSubject": "Activation of Trial Receipt"
+    "trialReceiptEmailSubject": "Activation of Trial Receipt",
+    "trialUpgradeReceiptEmailSubject": "Subscription Reminder (Trial Upgrade)"
   },
   "tabURL": {
     "packageSelection": "/PackageSelection",
@@ -37,7 +38,7 @@
   "storeInfo": {
     "timeZone": "(UTC-06:00) Central America",
     "fax": "+12124567890",
-    "count": "8"
+    "count": "10"
   },
   "payment": {
     "cardNumber": "3782 822463 10005",

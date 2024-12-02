@@ -15,6 +15,12 @@ public class CustomerLogin extends BaseClass {
         loginPage = new Login_Page(driver);
         paymentPage = new Payment_Page(driver);
         locationAndUserPage = new LocationAndUser_Page(driver);
+
+        Object[] monthDays = monthDays();
+        monthTotalDays = (int) monthDays[0];
+        monthUsedDays = (int) monthDays[1];
+
+        licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
     }
 
     @Test(description = "Verify that a customer can log in successfully", priority = 1)
@@ -25,14 +31,15 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            userName = "luz@qjav2ant.mailosaur.net";
+            userName = "shavonne@qjav2ant.mailosaur.net";
+            customerName = "Shavonne Botsford";
 
-//            packagePrice = 14.0;
-//            perUserLicensePrice = 10.0;
-//            totalLicensePrice = 80.0;
-//            subTotal = 94.0;
-//            promoDiscount = 10.34;
-//            recurringFee = 83.66;
+            packagePrice = 10.0;
+            perUserLicensePrice = 10.0;
+            totalLicensePrice = 80.0;
+            subTotal = 94.0;
+            promoDiscount = 10.34;
+            recurringFee = 83.66;
 
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 

@@ -31,15 +31,17 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            userName = "shavonne@qjav2ant.mailosaur.net";
-            customerName = "Shavonne Botsford";
+            userName = "ariel@qjav2ant.mailosaur.net";
+            customerName = "Ariel Thiel";
 
             packagePrice = 10.0;
+
             perUserLicensePrice = 10.0;
-            totalLicensePrice = 80.0;
-            subTotal = 94.0;
-            promoDiscount = 10.34;
-            recurringFee = 83.66;
+            totalLicensePrice = 100.0;
+
+            subTotal = 110.0;
+            promoDiscount = 12.10;
+            recurringFee = 97.90;
 
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 

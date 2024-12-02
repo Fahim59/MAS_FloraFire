@@ -29,14 +29,14 @@ public class TestCase_1 extends BaseClass {
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)
     public void verifyCustomerNavigationAfterPayment() throws InterruptedException {
-        //SmallWait(1000);
+        //SmallWait(1500);
 
         //verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("receipt"));
 
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page and see the prorated payment details", priority = 3)
+    @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
     public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
 
         logger.info("Customer viewed the receipt page and verified the prorated order details.");

@@ -42,7 +42,7 @@ public class Receipt extends BaseClass {
 
         Scroll_Down();
 
-        receiptPage.verifyRecurringOrderTable(totalUser);
+        receiptPage.verifyTrialRecurringOrderTable(totalUser);
 
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }

@@ -172,7 +172,49 @@ public class Payment_Page extends BaseClass{
         return Double.parseDouble(recurringFeeText);
     }
 
-    public void verifyProratedOrderTable_Manual(int licenseCount) {
+    public void verifyRecurringOrderTable_Manual() {
+        /*
+         * validating package price
+        */
+
+        double getPackagePrice = fetchRecurringPackagePrice();
+        Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
+
+        /*
+         * validating license details
+        */
+
+        double[] licenseDetails = fetchRecurringLicenseDetails();
+
+        Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
+        Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);
+        Assert.assertEquals(licenseCount , licenseDetails[2],"License count mismatch; should be: " +licenseCount+ " but displayed: " +licenseDetails[2]);
+
+        /*
+         * validating subtotal amount
+        */
+
+        subTotal = packagePrice + totalLicensePrice;
+        double getSubTotal = fetchSubtotal();
+
+        Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);
+
+        /*
+         * validating recurring fee
+        */
+
+        if(promoApplied){
+            recurringFee = subTotal - promoDiscount;
+        }
+        else{
+            recurringFee = subTotal;
+        }
+
+        double getRecurringFee = fetchRecurringFee();
+        Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
+    }
+
+    public void verifyProratedOrderTable_Manual() {
 
         String proratedOrderTable = "//table/tbody";
 

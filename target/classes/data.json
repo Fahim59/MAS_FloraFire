@@ -1,0 +1,50 @@
+{
+  "mailosaur": {
+    "apiKey": "jVQj7LryYoocix8oSudhoPrE7gThOv1Y",
+    "serverId": "qjav2ant"
+  },
+  "registration_info": {
+    "sec.question1": "What is your favorite color?",
+    "sec.question1_answer": "Green",
+    "sec.question2": "What city were you born in?",
+    "sec.question2_answer": "Narayanganj",
+    "password": "11!!qqQQ",
+    "regSuccessText": "Your registration has been completed successfully",
+    "emailText": "Your registration has been successfully completed. You have just been sent an email containing activation instructions.",
+    "activationSuccessText": "Your account has been activated",
+    "emailSubject": "Activate the User Account",
+    "trialReceiptEmailSubject": "Activation of Trial Receipt",
+    "trialUpgradeReceiptEmailSubject": "Subscription Reminder (Trial Upgrade)"
+  },
+  "tabURL": {
+    "packageSelection": "/PackageSelection",
+    "contactInfo": "/ContactInfo",
+    "storeInfo": "/StoreInfo",
+    "checkout": "/Checkout",
+    "receipt": "/Receipt"
+  },
+  "packageDetails": {
+    "package": "Bronze"
+  },
+  "contactInfo": {
+    "country": "United States of America",
+    "zip": "94105",
+    "businessPhone": "+18647682463",
+    "mobile": "+12124567890",
+    "additionalPhone": "+16868603186",
+    "aboutUs": "Newspaper",
+    "answer": "I heard about you from the newspaper"
+  },
+  "storeInfo": {
+    "timeZone": "(UTC-06:00) Central America",
+    "fax": "+12124567890",
+    "count": "10"
+  },
+  "payment": {
+    "cardNumber": "3782 822463 10005",
+    "expiration": "01 / 2026",
+    "cvv": "123",
+    "promo": "11/11",
+    "promoMessage": "The coupon code was applied"
+  }
+}

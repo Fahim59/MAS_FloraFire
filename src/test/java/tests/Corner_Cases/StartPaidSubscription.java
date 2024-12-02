@@ -12,6 +12,14 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StartPaidSubscription extends BaseClass {
     private PackageSelection_Page packageSelectionPage;
     private Payment_Page paymentPage;
@@ -34,10 +42,13 @@ public class StartPaidSubscription extends BaseClass {
         logger.info("Customer clicked on start paid subscription button and successfully navigated to the Payment page");
     }
 
-    @Test(description = "Verify the prorated payment details and submit an order", priority = 2)
-    public void verifyProratedPaymentDetails() throws InterruptedException {
+    @Test(description = "Verify the prorated and recurring payment details and submit an order", priority = 2)
+    public void verifyProratedAndRecurringPaymentDetails() throws InterruptedException {
         SmallWait(1000);
-        paymentPage.verifyProratedOrderTable_Manual(licenseCount);
+        paymentPage.verifyProratedOrderTable_Manual();
+
+        SmallWait(500);
+        paymentPage.verifyRecurringOrderTable_Manual();
 
         SmallWait(1000);
 
@@ -60,12 +71,15 @@ public class StartPaidSubscription extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the prorated payment details in receipt page", priority = 4)
-    public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
+    @Test(description = "Verify that customer can see the prorated and recurring payment details in receipt page", priority = 4)
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         SmallWait(1000);
-        receiptPage.verifyProratedOrderTable_Manual();
+        receiptPage.verifyProratedOrderTable();
 
-        logger.info("Customer viewed the receipt page and verified the prorated order details.");
+        Scroll_Down();
+        receiptPage.verifyRecurringOrderTable();
+
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the trial upgrade receipt in email", priority = 5)
@@ -75,6 +89,60 @@ public class StartPaidSubscription extends BaseClass {
         checkTrialUpgradeReceipt();
 
         logger.info("Customer successfully received the Trail Upgrade receipt.");
+    }
+
+    @Test(description = "Verify that a customer can navigate back to the package tab and check paid subscription data", priority = 6)
+    public void verifyCustomerNavigationToPackageTabAndSubscriptionData() throws InterruptedException, ParseException {
+        packageSelectionPage.clickPackageTab();
+
+        SmallWait(1500);
+
+        /*
+         * validating package name
+        */
+
+        String packageText = packageSelectionPage.getPackageText();
+        Matcher packageMatcher = Pattern.compile("Current Package: (.+)").matcher(packageText);
+        String packageName = jsonData.getJSONObject("packageDetails").getString("package");
+
+        if (packageMatcher.find()) {
+            Assert.assertEquals(packageName, packageMatcher.group(1), "Package name mismatch; should be: " +packageName+ " but displayed: " +packageMatcher.group(1));
+        }
+        else{ Assert.fail("Package text not found"); }
+
+        /*
+         * validating package start date
+        */
+
+        String packageStartText = packageSelectionPage.getTrialStartText();
+        Matcher packageStartMatcher = Pattern.compile("Package Start Date : (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(packageStartText);
+        String startDate = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+
+        if (packageStartMatcher.find()) {
+            String extractedDate = new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("M/d/yyyy").
+                    parse(packageStartMatcher.group(1)));
+
+            Assert.assertEquals(startDate, extractedDate, "Package Start date mismatch; should be: " +startDate+ " but displayed: " +extractedDate);
+        }
+        else{ Assert.fail("Package start date not found"); }
+
+        /*
+         * validating next recurring date
+        */
+
+        String nextRecurringText = packageSelectionPage.getTrialEndText();
+        Matcher nextRecurringMatcher = Pattern.compile("Next Recurring Date: (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(nextRecurringText);
+        String endDate = LocalDate.now().plusMonths(1).withDayOfMonth(1).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+        if (nextRecurringMatcher.find()) {
+            String extractedDate = LocalDate.parse(nextRecurringMatcher.group(1), DateTimeFormatter.ofPattern("M/d/yyyy")).
+                    format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+            Assert.assertEquals(endDate, extractedDate, "Next Recurring Date mismatch; should be: " +endDate+ " but displayed: " +extractedDate);
+        }
+        else{ Assert.fail("Next Recurring Date not found"); }
+
+        logger.info("Customer navigated back to the package page and verified the subscription data.");
     }
 
     public void checkTrialUpgradeReceipt() {

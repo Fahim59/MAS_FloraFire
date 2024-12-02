@@ -10,7 +10,10 @@
         <classes>
             <class name="tests.CustomerLogin"/>
 <!--            <class name="tests.Corner_Cases.StartPaidSubscription"/>-->
-            <class name="tests.Corner_Cases.TestCase_1"/>
+<!--            <class name="tests.Corner_Cases.TestCase_1"/>-->
+<!--            <class name="tests.Corner_Cases.TestCase_2"/>-->
+<!--            <class name="tests.Corner_Cases.TestCase_3"/>-->
+            <class name="tests.Corner_Cases.TestCase_4"/>
         </classes>
     </test>
 </suite>

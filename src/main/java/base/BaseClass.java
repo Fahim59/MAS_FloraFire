@@ -2,6 +2,9 @@ package base;
 
 import com.github.javafaker.Faker;
 import factory.DriverFactory;
+import kong.unirest.HttpResponse;
+import kong.unirest.JsonNode;
+import kong.unirest.Unirest;
 import org.apache.logging.log4j.*;
 import org.json.*;
 import org.openqa.selenium.By;
@@ -41,11 +44,28 @@ public class BaseClass {
     protected JSONObject jsonData;
 
     public static String userName, customerName;
-    public static double packagePrice, perUserLicensePrice, totalLicensePrice, subTotal, promoDiscount, recurringFee;
-    public static boolean promoApplied = true;
+    public static boolean promoApplied = true, packageSame = true;
 
-    public static int monthTotalDays, monthUsedDays, licenseCount;
-    public static double perDayPackagePrice, packageRemainingAmount, perDayLicensePrice, licenseRemainingAmount, totalDue;
+    public static double tolerance = 0.011;
+
+    public static int monthTotalDays, monthUsedDays, seasonalMonthTotalDays, seasonalMonthUsedDays;
+
+    //Package
+    public static double packagePrice, perDayPackagePrice, packageRemainingAmount,
+            upgradedPackagePrice, upgradedPerDayPackagePrice, packageNeedToPay, packageAdjustment;
+
+    //License
+    public static int licenseCount, upgradedLicenseCount;
+    public static double perUserLicensePrice, perDayLicensePrice, licenseRemainingAmount, totalLicensePrice,
+            upgradedPerUserLicensePrice, upgradedPerDayLicensePrice, licenseNeedToPay, licenseAdjustment;
+
+    //Seasonal
+    public static int seasonalLicenseCount, perUserSeasonalLicensePrice, seasonalMonth, upgradedSeasonalLicenseCount,
+            upgradedPerUserSeasonalLicensePrice, upgradedSeasonalMonth;
+
+    public static double perDaySeasonalLicensePrice, seasonalLicenseTotalPrice, upgradedTotalAmount, seasonalLicenseAdjustment;
+
+    public static double subTotal, promoDiscount, recurringFee, packageNetDue, licenseNetDue, seasonalNetDue, totalDue;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;
@@ -204,6 +224,55 @@ public class BaseClass {
         catch (MessagingException mex) {
             mex.printStackTrace();
             System.out.println("Email Sent Failed....");
+        }
+    }
+
+    public void checkReceipt(String subject) {
+        String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
+        String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
+
+        String emailAddress = userName;
+        String expectedCustomerName = customerName;
+        String expectedSubject = jsonData.getJSONObject("registration_info").getString(subject);
+
+        HttpResponse<JsonNode> response = Unirest.get("https://mailosaur.com/api/messages")
+                .basicAuth(apiKey, "")
+                .queryString("server", serverId)
+                .queryString("sentTo", emailAddress)
+                .asJson();
+
+        if (!response.getBody().getObject().getJSONArray("items").isEmpty()) {
+            kong.unirest.json.JSONObject latestEmail = response.getBody().getObject().getJSONArray("items").getJSONObject(0);
+
+            String messageId = latestEmail.getString("id");
+            String emailSubject = latestEmail.getString("subject");
+
+            baseLogger.info("Email Subject: {}", emailSubject);
+
+            if (!expectedSubject.equalsIgnoreCase(emailSubject)) {
+                baseLogger.info("Email subject does not match.");
+                return;
+            }
+
+            HttpResponse<JsonNode> messageResponse = Unirest.get("https://mailosaur.com/api/messages/" + messageId)
+                    .basicAuth(apiKey, "")
+                    .asJson();
+
+            kong.unirest.json.JSONObject messageContent = messageResponse.getBody().getObject();
+
+            kong.unirest.json.JSONArray toArray = messageContent.getJSONArray("to");
+
+            if (!toArray.isEmpty()) {
+                String customerName = toArray.getJSONObject(0).getString("name");
+
+                Assert.assertEquals(expectedCustomerName, customerName, "Customer Name mismatch; should be: " +expectedCustomerName+ " but displayed: " +customerName);
+            }
+            else {
+                baseLogger.info("No recipient details found.");
+            }
+        }
+        else {
+            baseLogger.info("No emails found.");
         }
     }
 

@@ -57,7 +57,6 @@ public class Payment extends BaseClass {
          * validating license details
         */
 
-        int licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
         double[] licenseDetails = paymentPage.fetchRecurringLicenseDetails();
 
         Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);

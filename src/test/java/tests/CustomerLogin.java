@@ -17,10 +17,10 @@ public class CustomerLogin extends BaseClass {
         locationAndUserPage = new LocationAndUser_Page(driver);
 
         Object[] monthDays = monthDays();
-        monthTotalDays = (int) monthDays[0];
-        monthUsedDays = (int) monthDays[1];
+        monthTotalDays = (int) monthDays[0];                    //for package and additional license
+        monthUsedDays = (int) monthDays[1];                    //for package and additional license
 
-        licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
+        licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("licenseCount"));
     }
 
     @Test(description = "Verify that a customer can log in successfully", priority = 1)
@@ -31,20 +31,24 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            userName = "shavonne@qjav2ant.mailosaur.net";
-            customerName = "Shavonne Botsford";
+            userName = "margherita@qjav2ant.mailosaur.net";
+            customerName = "Margherita Prosacco";
 
-            packagePrice = 10.0;
-            perUserLicensePrice = 10.0;
-            totalLicensePrice = 80.0;
-            subTotal = 94.0;
-            promoDiscount = 10.34;
-            recurringFee = 83.66;
+            //packagePrice = 10.0;
+
+            //perUserLicensePrice = 10.0;
+            //totalLicensePrice = 100.0;
+
+            //subTotal = 110.0;
+
+            //promoApplied = true;
+            //promoDiscount = 15;
+
+            //recurringFee = 97.90;
 
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 
 //            SmallWait(500);
-//            locationAndUserPage.clickLocationAndUserTab();
 //            locationAndUserPage.clickLocationTab();
 //            paymentPage.clickPaymentTab();
         }

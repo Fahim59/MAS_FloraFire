@@ -172,7 +172,61 @@ public class Payment_Page extends BaseClass{
         return Double.parseDouble(recurringFeeText);
     }
 
-    public void verifyProratedOrderTable_Manual(int licenseCount) {
+    public void verifyRecurringOrderTable_Manual() {
+        logger.info("Verifying Recurring Order Table in Payment Page - ");
+        /*
+         * validating package price
+        */
+
+        double getPackagePrice = fetchRecurringPackagePrice();
+        Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
+
+        logger.info("Get Package Price: {} and Package Price: {}", getPackagePrice, packagePrice);
+
+        /*
+         * validating license details
+        */
+
+        double[] licenseDetails = fetchRecurringLicenseDetails();
+
+        Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
+        Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);
+        Assert.assertEquals(licenseCount , licenseDetails[2],"License count mismatch; should be: " +licenseCount+ " but displayed: " +licenseDetails[2]);
+
+        logger.info("Get Total License Price: {} and Total License Price: {}", licenseDetails[0], totalLicensePrice);
+        logger.info("Get Per User License Price: {} and Per User License Price: {}", licenseDetails[1], perUserLicensePrice);
+        logger.info("Get License Count: {} and License Count: {}", licenseDetails[2],licenseCount);
+
+        /*
+         * validating subtotal amount
+        */
+
+        subTotal = packagePrice + totalLicensePrice;
+        double getSubTotal = fetchSubtotal();
+
+        Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);
+
+        logger.info("Get Sub Total: {} and Sub Total: {}", getSubTotal, subTotal);
+
+        /*
+         * validating recurring fee
+        */
+        if(promoApplied){
+            recurringFee = subTotal - promoDiscount;
+        }
+        else{
+            recurringFee = subTotal;
+        }
+
+        double getRecurringFee = fetchRecurringFee();
+        Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
+
+        logger.info("Get Recurring Fee: {} and Recurring Fee: {}", getRecurringFee, recurringFee);
+    }
+
+    public void verifyProratedOrderTable_Manual() {
+
+        logger.info("Verifying Prorated Order Table (Manual) in Payment Page - ");
 
         String proratedOrderTable = "//table/tbody";
 
@@ -197,6 +251,8 @@ public class Payment_Page extends BaseClass{
         getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
 
+        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
+
         /*
          * validating license price
         */
@@ -204,15 +260,151 @@ public class Payment_Page extends BaseClass{
         getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
 
+        logger.info("Get License Net Due: {} and License Remaining Amount: {}", getLicenseNetDue, licenseRemainingAmount);
+
         /*
          * validating net due
         */
 
         getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
+
+        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
 
     public void clickPaidSubscriptionConfirmBtn() {
         click_Element(confirmPaidSubscriptionBtn);
+    }
+
+    public void verifySeasonalLicensePrice() {
+
+        String proratedOrderTable = "//table/tbody";
+
+        double getSeasonalNetDue, getTotalDue;
+
+        /*
+         * Calculations
+         */
+
+        totalDue = new BigDecimal(seasonalLicenseTotalPrice).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        /*
+         * validating seasonal license price
+         */
+
+        getSeasonalNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[4]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(seasonalLicenseTotalPrice, getSeasonalNetDue, "Seasonal license due mismatch; should be: " +seasonalLicenseTotalPrice+ " but displayed: " +getSeasonalNetDue);
+
+        logger.info("Get Seasonal Fee: {} and Seasonal Fee: {}", getSeasonalNetDue, seasonalLicenseTotalPrice);
+
+        /*
+         * validating total due
+         */
+
+        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
+
+        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
+    }
+
+    public void verifyProratedOrderTable() {
+
+        String proratedOrderTable = "//table/tbody";
+
+        double getPackageNetDue, getLicenseNetDue, getSeasonalNetDue, getTotalDue;
+
+        /*
+         * Calculations
+        */
+
+        licenseAdjustment = new BigDecimal(licenseNeedToPay - licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        if(licenseAdjustment < 0){
+            licenseAdjustment = 0;
+        }
+
+        seasonalLicenseAdjustment = seasonalLicenseTotalPrice + upgradedTotalAmount;
+
+        //totalDue = new BigDecimal(licenseAdjustment + seasonalLicenseTotalPrice).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        totalDue = new BigDecimal(licenseAdjustment + seasonalLicenseAdjustment).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        /*
+         * validating additional license price
+         */
+
+        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[4]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertTrue(Math.abs(licenseAdjustment - getLicenseNetDue) <= tolerance, "Additional License Net Due Today mismatch; should be: " +licenseAdjustment+ " but displayed: " +getLicenseNetDue);
+
+        logger.info("Get License Net Due: {} and License Adjustment: {}", getLicenseNetDue, licenseAdjustment);
+
+        /*
+         * validating seasonal license price
+         */
+
+        getSeasonalNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[4]/td[4]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+
+        Assert.assertTrue(Math.abs(seasonalLicenseAdjustment - getSeasonalNetDue) <= tolerance, "Seasonal license due mismatch; should be: " +seasonalLicenseAdjustment+ " but displayed: " +getSeasonalNetDue);
+
+        logger.info("Get Seasonal Fee: {} and Seasonal Fee: {}", getSeasonalNetDue, seasonalLicenseAdjustment);
+
+        /*
+         * validating total due
+         */
+
+        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertTrue(Math.abs(totalDue - getTotalDue) <= tolerance, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
+
+        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
+    }
+
+    public void verifyRecurringOrderTable(double packageFee, double licenseAmount) {
+        logger.info("Verifying Recurring Order Table in Payment Page - ");
+        /*
+         * validating package price
+         */
+
+        double getPackagePrice = fetchRecurringPackagePrice();
+        Assert.assertEquals(packageFee, getPackagePrice,"Package price mismatch; should be: " +packageFee+ " but displayed: " +getPackagePrice);
+
+        logger.info("Get Package Price: {} and Package Price: {}", getPackagePrice, packageFee);
+
+        /*
+         * validating license details
+         */
+
+        double[] licenseDetails = fetchRecurringLicenseDetails();
+
+        Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
+        Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);
+        Assert.assertEquals(licenseAmount , licenseDetails[2],"License count mismatch; should be: " +licenseAmount+ " but displayed: " +licenseDetails[2]);
+
+        logger.info("Get Total License Price: {} and Total License Price: {}", licenseDetails[0], totalLicensePrice);
+        logger.info("Get Per User License Price: {} and Per User License Price: {}", licenseDetails[1], perUserLicensePrice);
+        logger.info("Get License Count: {} and License Count: {}", licenseDetails[2],licenseAmount);
+
+        /*
+         * validating subtotal amount
+         */
+
+        subTotal = packagePrice + totalLicensePrice;
+        double getSubTotal = fetchSubtotal();
+
+        Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);
+
+        logger.info("Get Sub Total: {} and Sub Total: {}", getSubTotal, subTotal);
+
+        /*
+         * validating recurring fee
+         */
+        if(promoApplied){
+            recurringFee = subTotal - promoDiscount;
+        }
+        else{
+            recurringFee = subTotal;
+        }
+
+        double getRecurringFee = fetchRecurringFee();
+        Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
+
+        logger.info("Get Recurring Fee: {} and Recurring Fee: {}", getRecurringFee, recurringFee);
     }
 }

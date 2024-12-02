@@ -14,6 +14,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class LocationAndUser_Page extends BaseClass{
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -170,14 +173,16 @@ public class LocationAndUser_Page extends BaseClass{
     private final String licensePriceTable = "//*[@id='licenseCount']/div/div/div[2]/table/tbody";
     private final By priceTr = By.xpath(licensePriceTable+"/tr");
 
+    private final By seasonalLicenseField = By.xpath("//input[@id='SeasonalLicenseUsers']");
+    private final By seasonalLicenseMonthField = By.xpath("//input[@class='form-check-input']");
+    private final By seasonalLicensePriceField = By.xpath("//strong[contains(text(),'Charge for Seasonal License')]");
+
     public int getLicensePriceTrSize() {
         List<WebElement> elements = driver.findElements(priceTr);
         return elements.size();
     }
 
     public Object[] priceTable(int licenseCount) {
-        System.out.println("Tr Size: " +getLicensePriceTrSize());
-
         double totalLicenseFee = 0.0;
         double licenseFee = 0.0;
 
@@ -225,7 +230,7 @@ public class LocationAndUser_Page extends BaseClass{
         if (totalLicenseFee == 0.0) {
             throw new IllegalArgumentException("No matching range found for the given license count: " + licenseCount);
         }
-        System.out.println("License Fee is: " +totalLicenseFee);
+        //System.out.println("License Fee is: " +totalLicenseFee);
 
         return new Object[] {totalLicenseFee, licenseFee};
     }
@@ -245,7 +250,87 @@ public class LocationAndUser_Page extends BaseClass{
     public void clickLocationAndUserTab() { click_Element(locationAndUserTab); }
 
     public void clickLocationTab() throws InterruptedException {
+        clickLocationAndUserTab();
         SmallWait(1500);
         click_Element(licenseTab);
+    }
+
+    public void enterSeasonalLicenseAndMonth(int count, int month){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(seasonalLicenseField));
+        write_Send_Keys(seasonalLicenseField, String.valueOf(count));
+        click_Radio_Element(seasonalLicenseMonthField, String.valueOf(month));
+    }
+
+    /*
+     * test case 1, 3
+     */
+
+    public double calculateSeasonalLicenseTotalFee_Prior(){
+        //seasonalLicenseTotalPrice = seasonalLicenseCount * seasonalMonth * perUserSeasonalLicensePrice;
+
+        perDaySeasonalLicensePrice = (double) (seasonalLicenseCount * perUserSeasonalLicensePrice) / seasonalMonthTotalDays;
+        seasonalLicenseTotalPrice = perDaySeasonalLicensePrice * seasonalMonthUsedDays;
+
+        return seasonalLicenseTotalPrice;
+    }
+
+    public double calculateSeasonalLicenseTotalFee_Today(){
+        return upgradedTotalAmount = upgradedSeasonalLicenseCount * upgradedPerUserSeasonalLicensePrice * upgradedSeasonalMonth;
+    }
+
+    /*
+     * test case 2, 3
+     */
+
+    public double calculatePriorPackagePrepaid(){
+        logger.info("Calculating Prior Package Prepaid Data - ");
+
+        Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(licenseCount)));
+        perUserLicensePrice = (double) priceTable[1];
+
+        perDayLicensePrice = (licenseCount * perUserLicensePrice) / monthTotalDays;
+        licenseRemainingAmount = new BigDecimal(perDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        logger.info("Per User License Price: {}", perUserLicensePrice);
+        logger.info("Per Day License Price: {}", perDayLicensePrice);
+        logger.info("License Remaining Price: {}", licenseRemainingAmount);
+
+        return licenseRemainingAmount;
+    }
+
+    public double calculateTodayPackageChange(){
+        logger.info("Calculating Today's Package Change - ");
+
+        Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
+        upgradedPerUserLicensePrice = (double) priceTable[1];
+
+        upgradedPerDayLicensePrice = (upgradedLicenseCount * upgradedPerUserLicensePrice) / monthTotalDays;
+        licenseNeedToPay = new BigDecimal(upgradedPerDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        logger.info("Upgraded Per User License Price: {}", upgradedPerUserLicensePrice);
+        logger.info("Upgraded Per Day License Price: {}", upgradedPerDayLicensePrice);
+        logger.info("License Need to Pay: {}", licenseNeedToPay);
+
+        return licenseNeedToPay;
+    }
+
+    /*
+     * test case 3
+     */
+
+    public double calculateTodayPackageChange_Seasonal(){
+        logger.info("Calculating Seasonal Today's Package Change - ");
+
+        Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
+        upgradedPerUserLicensePrice = (double) priceTable[1];
+
+        upgradedPerDayLicensePrice = (upgradedLicenseCount * upgradedPerUserLicensePrice) / monthTotalDays;
+        licenseNeedToPay = new BigDecimal(upgradedPerDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        logger.info("Upgraded Per User License Price: {}", upgradedPerUserLicensePrice);
+        logger.info("Upgraded Per Day License Price: {}", upgradedPerDayLicensePrice);
+        logger.info("License Need to Pay: {}", licenseNeedToPay);
+
+        return licenseNeedToPay;
     }
 }

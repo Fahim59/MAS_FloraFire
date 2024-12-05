@@ -19,8 +19,13 @@ public class TestCase_2 extends BaseClass {
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
 
-        licenseCount = 2;           //Additional User Count
-        upgradedLicenseCount = 4;  //Additional User Count Now
+        packagePrice = 10.0;                       //Package Price
+
+        licenseCount = 18;                       //Additional User Count
+        upgradedLicenseCount = 20;              //Additional User Count Now
+
+        promoApplied = true;
+        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can purchase additional license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
@@ -34,13 +39,18 @@ public class TestCase_2 extends BaseClass {
 
         locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
 
+        Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
+        totalLicensePrice = (double) priceTable[0];
+        perUserLicensePrice = (double) priceTable[1];
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer upgraded additional license/s successfully and clicked on save button.");
 
         paymentPage.verifyProratedOrderTable();
-//        paymentPage.verifyRecurringOrderTable();                 //Will do later
+
+        paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
@@ -58,41 +68,25 @@ public class TestCase_2 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
+    @Test(description = "Verify that customer can see the receipt page check the prorated and recurring payment details", priority = 3)
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
-//        Scroll_Down();
+        Scroll_Down();
 
-//        receiptPage.verifyRecurringOrderTable();                 //Will do later
-//
-//        Scroll_Up();
+        receiptPage.verifyRecurringOrderTable_(packagePrice, upgradedLicenseCount);
+
+        Scroll_Up();
 
         logger.info("Customer viewed the receipt page and verified the prorated order details.");
     }
 
-    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4, enabled = false)
+    @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)
     public void verifyCustomerReceivedSubscriptionUpgradeReceipt() throws InterruptedException {
         SmallWait(60000);
 
         checkReceipt("subscriptionUpgrade");
 
         logger.info("Customer successfully received the Subscription Upgrade receipt.");
-
-        resetValue();
-    }
-
-    public void resetValue() {
-        perUserLicensePrice = 0;
-        perDayLicensePrice = 0;
-        licenseRemainingAmount = 0;
-
-        upgradedPerUserLicensePrice = 0;
-        upgradedPerDayLicensePrice = 0;
-        licenseNeedToPay = 0;
-
-        licenseAdjustment = 0;
-
-        totalDue = 0;
     }
 }

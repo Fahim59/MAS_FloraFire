@@ -27,8 +27,8 @@ public class TestCase_4 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can purchase additional license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
-    public void verifyCustomerAdditionalLicensePurchase() throws InterruptedException {
+    @Test(description = "Verify that the customer can downgrade additional license(s), confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    public void verifyCustomerAdditionalLicenseDowngrade() throws InterruptedException {
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
@@ -42,7 +42,7 @@ public class TestCase_4 extends BaseClass {
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
-        logger.info("Customer upgraded additional license/s successfully and clicked on save button.");
+        logger.info("Customer downgraded additional license/s successfully and clicked on save button.");
 
         paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
@@ -62,15 +62,15 @@ public class TestCase_4 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithProratedOrderDetails() {
+    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
+    public void verifyCustomerReceiptPageWithRecurringOrderDetails() {
         receiptPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
-        logger.info("Customer viewed the receipt page and verified the prorated order details.");
+        logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }
 
-    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4)
-    public void verifyCustomerReceivedSubscriptionUpgradeReceipt() throws InterruptedException {
+    @Test(description = "Verify that the customer has received the subscription downgrade receipt in email", priority = 4)
+    public void verifyCustomerReceivedSubscriptionDowngradeReceipt() throws InterruptedException {
         SmallWait(60000);
 
         checkReceipt("subscriptionDowngrade");

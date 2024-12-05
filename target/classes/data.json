@@ -14,7 +14,11 @@
     "activationSuccessText": "Your account has been activated",
     "emailSubject": "Activate the User Account",
     "trialReceiptEmailSubject": "Activation of Trial Receipt",
-    "trialUpgradeReceiptEmailSubject": "Subscription Reminder (Trial Upgrade)"
+    "trialUpgradeReceiptEmailSubject": "Subscription Reminder (Trial Upgrade)",
+    "seasonalLicense": "Seasonal License",
+    "subscriptionUpgrade": "Subscription Upgrade",
+    "subscriptionDowngrade": "Subscription Downgrade",
+    "cancelOrder": "Cancelation Confirmation"
   },
   "tabURL": {
     "packageSelection": "/PackageSelection",
@@ -38,13 +42,13 @@
   "storeInfo": {
     "timeZone": "(UTC-06:00) Central America",
     "fax": "+12124567890",
-    "count": "10"
+    "licenseCount": "2"
   },
   "payment": {
     "cardNumber": "3782 822463 10005",
     "expiration": "01 / 2026",
     "cvv": "123",
-    "promo": "11/11",
+    "promo": "Promo_Auto",
     "promoMessage": "The coupon code was applied"
   }
 }

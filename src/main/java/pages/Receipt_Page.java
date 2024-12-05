@@ -205,7 +205,7 @@ public class Receipt_Page extends BaseClass{
         return text;
     }
 
-    public void verifyProratedOrderTable() {
+    public void verifyProratedOrderTable_Manual() {
 
         logger.info("Verifying Prorated Order Table in Receipt Page - ");
 
@@ -433,7 +433,7 @@ public class Receipt_Page extends BaseClass{
         logger.info("Get Recurring Fee: {} and Recurring Fee: {}", getRecurringFee, recurringFee);
     }
 
-    public void verifyRecurringOrderTable() {
+    public void verifyRecurringOrderTable_(double packageFee, double licenseAmount) {
 
         String recurringOrderTable = "(//table[@class='order-table']/tbody)[2]";
 
@@ -444,7 +444,7 @@ public class Receipt_Page extends BaseClass{
          */
 
         getPackageFee = Double.parseDouble(driver.findElement(By.xpath(recurringOrderTable + "/tr[1]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(packagePrice, getPackageFee, "Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackageFee);
+        Assert.assertEquals(packageFee, getPackageFee, "Package price mismatch; should be: " +packageFee+ " but displayed: " +getPackageFee);
 
         /*
          * validating license details
@@ -464,7 +464,7 @@ public class Receipt_Page extends BaseClass{
 
         Assert.assertEquals(perUserLicensePrice, perUserPrice, "Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +perUserPrice);
         Assert.assertEquals(totalLicensePrice, totalPrice, "Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +totalPrice);
-        Assert.assertEquals(licenseCount, userCount, "License count mismatch; should be: " +licenseCount+ " but displayed: " +userCount);
+        Assert.assertEquals(licenseAmount, userCount, "License count mismatch; should be: " +licenseAmount+ " but displayed: " +userCount);
 
         /*
          * validating subtotal price

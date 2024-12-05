@@ -21,12 +21,19 @@ public class TestCase_1 extends BaseClass {
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
 
-        seasonalMonthTotalDays = 30;         //(Month Days) Fixed
-        seasonalMonthUsedDays = 30;         //Remaining Month Day
+        packagePrice = 10.0;                       //Package Price
 
-        seasonalLicenseCount = 2;         //Seasonal License Added
-        perUserSeasonalLicensePrice = 5; //Seasonal License Price
-        seasonalMonth = 1;              //Month
+        licenseCount = 20;                       //Additional User Count
+
+        seasonalMonthTotalDays = 30;           //(Month Days) Fixed
+        seasonalMonthUsedDays = 30;           //Remaining Month Day
+
+        seasonalLicenseCount = 2;           //Seasonal License Added
+        perUserSeasonalLicensePrice = 5;   //Seasonal License Price
+        seasonalMonth = 1;                //Month
+
+        promoApplied = true;
+        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can purchase new seasonal license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
@@ -39,6 +46,10 @@ public class TestCase_1 extends BaseClass {
 
         locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
 
+        Object[] priceTable = locationAndUserPage.priceTable(licenseCount);
+        totalLicensePrice = (double) priceTable[0];
+        perUserLicensePrice = (double) priceTable[1];
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
@@ -46,7 +57,7 @@ public class TestCase_1 extends BaseClass {
 
         paymentPage.verifyProratedOrderTable();
 
-        //paymentPage.verifyRecurringOrderTable();    // Will do later
+        paymentPage.verifyRecurringOrderTable(packagePrice, licenseCount);
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
@@ -66,19 +77,18 @@ public class TestCase_1 extends BaseClass {
 
     @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
     public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
-        //receiptPage.verifyProratedOrderTable();
         receiptPage.verifyProratedOrderTable();
 
-        //Scroll_Down();
+        Scroll_Down();
 
-        //receiptPage.verifyRecurringOrderTable();
+        receiptPage.verifyRecurringOrderTable_(packagePrice, licenseCount);
 
-        //Scroll_Up();
+        Scroll_Up();
 
         logger.info("Customer viewed the receipt page and verified the prorated order details.");
     }
 
-    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4, enabled = false)
+    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4)
     public void verifyCustomerReceivedSeasonalLicenseReceipt() throws InterruptedException {
         SmallWait(60000);
 
@@ -87,12 +97,5 @@ public class TestCase_1 extends BaseClass {
         packageSelectionPage.clickPackageTab();
 
         logger.info("Customer successfully received the Seasonal License purchase receipt.");
-
-        resetValue();
-    }
-
-    public void resetValue() {
-        seasonalLicenseTotalPrice = 0;
-        totalDue = 0;
     }
 }

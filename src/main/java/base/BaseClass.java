@@ -433,7 +433,7 @@ public class BaseClass {
 
     @AfterSuite
     public static void QuitBrowser() throws InterruptedException {
-        driver.quit();
+        //driver.quit();
         //SendEmail();
 
         baseLogger.info("Browser quit and Send Report successfully");

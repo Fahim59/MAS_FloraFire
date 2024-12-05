@@ -1,5 +1,7 @@
 /*
  * Scenario 3: Package Same – Addi. License Upgrade – Seasonal License New Buy
+ *
+ * Change = licenseCount, upgradedLicenseCount
 */
 
 package tests.Corner_Cases;
@@ -19,19 +21,25 @@ public class TestCase_3 extends BaseClass {
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
 
-        licenseCount = 8;                       //Additional User Count
-        upgradedLicenseCount = 12;              //Additional User Count Now
+        packagePrice = 10.0;                       //Package Price
 
-        seasonalMonthTotalDays = 30;         //(Month Days) Fixed
-        seasonalMonthUsedDays = 30;         //Remaining Month Day
+        licenseCount = 16;                       //Additional User Count
+        upgradedLicenseCount = 18;              //Additional User Count Now
 
-        seasonalLicenseCount = 2;         //Seasonal License Added
-        perUserSeasonalLicensePrice = 5; //Seasonal License Price
-        seasonalMonth = 1;              //Month
+        seasonalMonthTotalDays = 30;          //(Month Days) Fixed
+        seasonalMonthUsedDays = 30;          //Remaining Month Day
+
+        seasonalLicenseCount = 2;          //Seasonal License Added
+        perUserSeasonalLicensePrice = 5;  //Seasonal License Price
+        seasonalMonth = 1;               //Month
+
+        promoApplied = true;
+        promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can purchase additional license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can upgrade additional license(s), buy new seasonal license and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerAdditionalLicensePurchase() throws InterruptedException {
+        System.out.println(packagePrice);
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
@@ -45,6 +53,10 @@ public class TestCase_3 extends BaseClass {
 
         locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
 
+        Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
+        totalLicensePrice = (double) priceTable[0];
+        perUserLicensePrice = (double) priceTable[1];
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
@@ -52,7 +64,7 @@ public class TestCase_3 extends BaseClass {
 
         paymentPage.verifyProratedOrderTable();
 
-//        paymentPage.verifyRecurringOrderTable();                 //Will do later
+        paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
@@ -70,24 +82,24 @@ public class TestCase_3 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
+    @Test(description = "Verify that customer can see the receipt page check the prorated and recurring payment details", priority = 3)
     public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
-//        Scroll_Down();
+        Scroll_Down();
 
-//        receiptPage.verifyRecurringOrderTable();                 //Will do later
-//
-//        Scroll_Up();
+        receiptPage.verifyRecurringOrderTable_(packagePrice, upgradedLicenseCount);
+
+        Scroll_Up();
 
         logger.info("Customer viewed the receipt page and verified the prorated order details.");
     }
 
-    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4)
+    @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)
     public void verifyCustomerReceivedSubscriptionUpgradeReceipt() throws InterruptedException {
-        //SmallWait(60000);
+        SmallWait(60000);
 
-        //checkReceipt("subscriptionUpgrade");
+        checkReceipt("subscriptionUpgrade");
 
         logger.info("Customer successfully received the Subscription Upgrade receipt.");
     }

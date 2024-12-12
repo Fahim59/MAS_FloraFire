@@ -1,5 +1,5 @@
 /*
- * Scenario 6: Package Upgrade – Addi. License Same – Seasonal License New Buy
+ * Scenario 7: Package Upgrade – Addi. License Same – Seasonal License New Buy
 */
 
 package tests.Corner_Cases;

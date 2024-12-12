@@ -57,8 +57,6 @@ public class TestCase_8 extends BaseClass {
 
         paymentPage.clickPaymentTab();
 
-        logger.info("Customer downgraded package successfully.");
-
         paymentPage.verifyRecurringOrderTable(upgradedPackagePrice, licenseCount);
 
         paymentPage.clickTermsBtn();

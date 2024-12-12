@@ -21,9 +21,8 @@ public class TestCase_4 extends BaseClass {
 
         packagePrice = 10.0;                      //Package Price
 
-        upgradedLicenseCount = 8;              //Additional User Count Now
+        upgradedLicenseCount = 10;              //Additional User Count Now
 
-        promoApplied = true;
         promoDiscount = 15;
     }
 
@@ -48,6 +47,9 @@ public class TestCase_4 extends BaseClass {
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
+
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
 
         logger.info("Customer verifies additional license price and submit the order");
@@ -64,7 +66,7 @@ public class TestCase_4 extends BaseClass {
 
     @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
     public void verifyCustomerReceiptPageWithRecurringOrderDetails() {
-        receiptPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
+        receiptPage.verifyRecurringOrderTable_(packagePrice, upgradedLicenseCount);
 
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }

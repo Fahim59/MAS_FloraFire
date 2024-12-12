@@ -83,7 +83,7 @@ public class TestCase_1 extends BaseClass {
 
         Scroll_Down();
 
-        receiptPage.verifyRecurringOrderTable_(packagePrice, licenseCount);
+        receiptPage.verifyRecurringOrderTable(packagePrice, licenseCount);
 
         Scroll_Up();
 

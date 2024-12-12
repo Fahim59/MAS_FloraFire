@@ -356,7 +356,6 @@ public class Payment_Page extends BaseClass{
 
         logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
-
     public void verifyRecurringOrderTable(double packageFee, double licenseAmount) {
         logger.info("\nVerifying Recurring Order Table in Payment Page - \n");
         /*

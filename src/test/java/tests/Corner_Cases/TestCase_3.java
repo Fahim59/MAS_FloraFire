@@ -1,7 +1,5 @@
 /*
  * Scenario 3: Package Same – Addi. License Upgrade – Seasonal License New Buy
- *
- * Change = licenseCount, upgradedLicenseCount
 */
 
 package tests.Corner_Cases;
@@ -23,8 +21,8 @@ public class TestCase_3 extends BaseClass {
 
         packagePrice = 10.0;                       //Package Price
 
-        licenseCount = 16;                       //Additional User Count
-        upgradedLicenseCount = 18;              //Additional User Count Now
+        licenseCount = 10;                       //Additional User Count
+        upgradedLicenseCount = 12;              //Additional User Count Now
 
         seasonalMonthTotalDays = 30;          //(Month Days) Fixed
         seasonalMonthUsedDays = 30;          //Remaining Month Day
@@ -33,7 +31,6 @@ public class TestCase_3 extends BaseClass {
         perUserSeasonalLicensePrice = 5;  //Seasonal License Price
         seasonalMonth = 1;               //Month
 
-        promoApplied = true;
         promoDiscount = 15;
     }
 
@@ -68,6 +65,9 @@ public class TestCase_3 extends BaseClass {
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
+
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
 
         logger.info("Customer verifies additional license price and submit the order");
@@ -88,7 +88,7 @@ public class TestCase_3 extends BaseClass {
 
         Scroll_Down();
 
-        receiptPage.verifyRecurringOrderTable_(packagePrice, upgradedLicenseCount);
+        receiptPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
         Scroll_Up();
 

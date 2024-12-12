@@ -7,14 +7,10 @@ import pages.*;
 
 public class CustomerLogin extends BaseClass {
     private Login_Page loginPage;
-    private Payment_Page paymentPage;
-    private LocationAndUser_Page locationAndUserPage;
 
     @BeforeMethod
     public void initializePageObjects() {
         loginPage = new Login_Page(driver);
-        paymentPage = new Payment_Page(driver);
-        locationAndUserPage = new LocationAndUser_Page(driver);
 
         Object[] monthDays = monthDays();
         monthTotalDays = (int) monthDays[0];                    //for package and additional license

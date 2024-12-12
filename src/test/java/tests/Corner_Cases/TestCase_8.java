@@ -81,7 +81,7 @@ public class TestCase_8 extends BaseClass {
     }
 
     @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
+    public void verifyCustomerReceiptPageWithRecurringOrderDetails() {
         receiptPage.verifyRecurringOrderTable_(upgradedPackagePrice, licenseCount);
 
         logger.info("Customer viewed the receipt page and verified the recurring order details.");

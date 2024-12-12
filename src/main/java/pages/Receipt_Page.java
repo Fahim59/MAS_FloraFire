@@ -206,8 +206,7 @@ public class Receipt_Page extends BaseClass{
     }
 
     public void verifyProratedOrderTable_Manual() {
-
-        logger.info("Verifying Prorated Order Table in Receipt Page - ");
+        logger.info("\nVerifying Prorated Order Table (Manual) in Receipt Page - \n");
 
         String proratedOrderTable = "(//table[@class='order-table']/tbody)[1]";
 
@@ -249,8 +248,8 @@ public class Receipt_Page extends BaseClass{
 
         logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
-
     public void verifyRecurringOrderTable_Manual() {
+        logger.info("\nVerifying Prorated Order Table (Manual) in Receipt Page - \n");
 
         String recurringOrderTable = "(//table[@class='order-table']/tbody)[2]";
 
@@ -320,8 +319,7 @@ public class Receipt_Page extends BaseClass{
     }
 
     public void verifyProratedOrderTable() {
-
-        logger.info("Verifying Prorated Order Table in Receipt Page - ");
+        logger.info("\nVerifying Prorated Order Table in Receipt Page - \n");
 
         String proratedOrderTable = "(//table[@class='order-table']/tbody)[1]";
 
@@ -331,10 +329,10 @@ public class Receipt_Page extends BaseClass{
          * validating package price
          */
 
-//        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[1]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-//        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
-//
-//        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[1]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
+
+        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
 
         /*
          * validating license price

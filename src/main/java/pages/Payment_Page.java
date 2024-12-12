@@ -60,6 +60,8 @@ public class Payment_Page extends BaseClass{
     private final By promotionalDiscount = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[3]");
     private final By recurringMonthlyFee = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[4]");
 
+    private final By nameField = By.xpath("(//div[@class='column']/p)[13]");
+
     private final By confirmPaidSubscriptionBtn = By.cssSelector("#confirmButton");
 
     public void clickPaymentTab() { click_Element(paymentTab); }
@@ -172,8 +174,58 @@ public class Payment_Page extends BaseClass{
         return Double.parseDouble(recurringFeeText);
     }
 
+    public String fetchNameValue(){
+        return get_Text(nameField);
+    }
+
+    public void verifyProratedOrderTable_Manual() {
+        logger.info("\nVerifying Prorated Order Table (Manual) in Payment Page - \n");
+
+        String proratedOrderTable = "//table/tbody";
+
+        double getPackageNetDue, getLicenseNetDue, getTotalDue;
+
+        /*
+         * Calculations
+         */
+
+        perDayPackagePrice = packagePrice / monthTotalDays;
+        packageRemainingAmount = new BigDecimal(perDayPackagePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        perDayLicensePrice = (licenseCount * perUserLicensePrice) / monthTotalDays;
+        licenseRemainingAmount = new BigDecimal(perDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        totalDue = new BigDecimal(packageRemainingAmount + licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        /*
+         * validating package price
+         */
+
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
+
+        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
+
+        /*
+         * validating license price
+         */
+
+        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
+
+        logger.info("Get License Net Due: {} and License Remaining Amount: {}", getLicenseNetDue, licenseRemainingAmount);
+
+        /*
+         * validating net due
+         */
+
+        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
+
+        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
+    }
     public void verifyRecurringOrderTable_Manual() {
-        logger.info("Verifying Recurring Order Table in Payment Page - ");
+        logger.info("\nVerifying Recurring Order Table (Manual) in Payment Page - \n");
         /*
          * validating package price
         */
@@ -222,54 +274,6 @@ public class Payment_Page extends BaseClass{
         Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
 
         logger.info("Get Recurring Fee: {} and Recurring Fee: {}", getRecurringFee, recurringFee);
-    }
-
-    public void verifyProratedOrderTable_Manual() {
-
-        logger.info("Verifying Prorated Order Table (Manual) in Payment Page - ");
-
-        String proratedOrderTable = "//table/tbody";
-
-        double getPackageNetDue, getLicenseNetDue, getTotalDue;
-
-        /*
-         * Calculations
-        */
-
-        perDayPackagePrice = packagePrice / monthTotalDays;
-        packageRemainingAmount = new BigDecimal(perDayPackagePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        perDayLicensePrice = (licenseCount * perUserLicensePrice) / monthTotalDays;
-        licenseRemainingAmount = new BigDecimal(perDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        totalDue = new BigDecimal(packageRemainingAmount + licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        /*
-         * validating package price
-        */
-
-        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
-
-        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
-
-        /*
-         * validating license price
-        */
-
-        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
-
-        logger.info("Get License Net Due: {} and License Remaining Amount: {}", getLicenseNetDue, licenseRemainingAmount);
-
-        /*
-         * validating net due
-        */
-
-        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
-
-        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
 
     public void clickPaidSubscriptionConfirmBtn() {

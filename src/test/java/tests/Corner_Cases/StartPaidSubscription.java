@@ -1,13 +1,10 @@
 /*
- * Customer starts Paid Subscription Manually.
+ * Customer starts Paid Subscription manually.
 */
 
 package tests.Corner_Cases;
 
 import base.BaseClass;
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
-import kong.unirest.Unirest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
@@ -30,6 +27,13 @@ public class StartPaidSubscription extends BaseClass {
         packageSelectionPage = new PackageSelection_Page(driver);
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
+
+        packagePrice = 10.0;                       //Package Price
+
+        perUserLicensePrice = 5;
+        totalLicensePrice = licenseCount * perUserLicensePrice;
+
+        promoDiscount = 15;
     }
 
     @Test(description = "Verify that after clicking on start paid subscription button, the customer is navigated to the payment page.", priority = 1)
@@ -56,6 +60,8 @@ public class StartPaidSubscription extends BaseClass {
 
         Scroll_Down();
 
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
         SmallWait(300);
         paymentPage.clickPaidSubscriptionConfirmBtn();
@@ -77,7 +83,10 @@ public class StartPaidSubscription extends BaseClass {
         receiptPage.verifyProratedOrderTable_Manual();
 
         Scroll_Down();
+
         receiptPage.verifyRecurringOrderTable_Manual();
+
+        Scroll_Up();
 
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
@@ -143,15 +152,5 @@ public class StartPaidSubscription extends BaseClass {
         else{ Assert.fail("Next Recurring Date not found"); }
 
         logger.info("Customer navigated back to the package page and verified the subscription data.");
-
-        resetValue();
-    }
-
-    public void resetValue() {
-        perDayPackagePrice = 0;
-        packageRemainingAmount = 0;
-        perDayLicensePrice = 0;
-        licenseRemainingAmount = 0;
-        totalDue = 0;
     }
 }

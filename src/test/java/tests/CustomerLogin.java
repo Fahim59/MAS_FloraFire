@@ -31,8 +31,8 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            userName = "luz@qjav2ant.mailosaur.net";
-            customerName = "Margherita Prosacco";
+            userName = "mr@qca6z4pm.mailosaur.net";
+            //customerName = "Valorie Denesik";
 
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 

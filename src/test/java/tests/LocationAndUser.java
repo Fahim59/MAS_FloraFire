@@ -42,8 +42,6 @@ public class LocationAndUser extends BaseClass {
     public void verifyCustomerLicenseInfoEntry() throws InterruptedException {
         SmallWait(1500);
 
-//        String licenseCount = jsonData.getJSONObject("storeInfo").getString("licenseCount");
-//        locationAndUserPage.enterAdditionalLicense(Integer.parseInt(licenseCount));
         locationAndUserPage.enterAdditionalLicense(licenseCount);
 
         Object[] priceTable = locationAndUserPage.priceTable(licenseCount);

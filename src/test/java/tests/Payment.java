@@ -98,8 +98,6 @@ public class Payment extends BaseClass {
         double getRecurringFee = paymentPage.fetchRecurringFee();
         Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
 
-        //paymentPage.clickTermsBtn();           //Extra
-
         paymentPage.clickSubmitOrderBtn();
         SmallWait(1000);
         paymentPage.enterPassword(password);
@@ -111,7 +109,6 @@ public class Payment extends BaseClass {
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 3)
     public void verifyCustomerNavigationAfterPayment() throws InterruptedException {
         SmallWait(15000);
-        //SmallWait(1000);
 
         paymentPage.checkPaymentFailedMessage();
 

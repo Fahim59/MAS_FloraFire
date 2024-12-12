@@ -34,18 +34,6 @@ public class CustomerLogin extends BaseClass {
             userName = "luz@qjav2ant.mailosaur.net";
             customerName = "Margherita Prosacco";
 
-            //packagePrice = 10.0;
-
-            //perUserLicensePrice = 10.0;
-            //totalLicensePrice = 100.0;
-
-            //subTotal = 110.0;
-
-            //promoApplied = true;
-            //promoDiscount = 15;
-
-            //recurringFee = 97.90;
-
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
 
 //            SmallWait(500);

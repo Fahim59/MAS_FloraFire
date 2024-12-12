@@ -1,16 +1,8 @@
 package tests;
 
 import base.BaseClass;
-import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.regex.*;
 
 public class PackageSelection extends BaseClass {
     private PackageSelection_Page packageSelectionPage;

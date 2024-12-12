@@ -33,7 +33,6 @@ public class Receipt extends BaseClass {
     public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
         SmallWait(1000);
 
-        int totalUser = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("count"));
         String cardNumber = jsonData.getJSONObject("payment").getString("cardNumber");
 
         receiptPage.verifyTrialText();
@@ -42,7 +41,7 @@ public class Receipt extends BaseClass {
 
         Scroll_Down();
 
-        receiptPage.verifyTrialRecurringOrderTable(totalUser);
+        receiptPage.verifyTrialRecurringOrderTable(licenseCount);
 
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }
@@ -76,9 +75,9 @@ public class Receipt extends BaseClass {
 
                 String totalLicenseAmount = String.format("$%.2f", totalLicensePrice);
                 String perUserLicenseAmount = String.format("$%.2f", perUserLicensePrice);
-                String userCount = jsonData.getJSONObject("storeInfo").getString("count");
+                //String userCount = jsonData.getJSONObject("storeInfo").getString("count");
 
-                String licenseInformation = String.format("%s (%s x %s)", totalLicenseAmount, perUserLicenseAmount, userCount);
+                String licenseInformation = String.format("%s (%s x %s)", totalLicenseAmount, perUserLicenseAmount, licenseCount);
                 Assert.assertTrue(extractedText.contains(licenseInformation), "The text \"" + licenseInformation + "\" does not exist in the downloaded PDF file.");
 
                 String subTotalAmount = String.format("$%.2f", subTotal);

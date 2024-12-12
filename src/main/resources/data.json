@@ -1,7 +1,7 @@
 {
   "mailosaur": {
-    "apiKey": "jVQj7LryYoocix8oSudhoPrE7gThOv1Y",
-    "serverId": "qjav2ant"
+    "apiKey": "XJJDMGvh5N3Q2e3iSe26hyhv81cwwGXk",
+    "serverId": "qca6z4pm"
   },
   "registration_info": {
     "sec.question1": "What is your favorite color?",
@@ -42,7 +42,7 @@
   "storeInfo": {
     "timeZone": "(UTC-06:00) Central America",
     "fax": "+12124567890",
-    "licenseCount": "2"
+    "licenseCount": "8"
   },
   "payment": {
     "cardNumber": "3782 822463 10005",

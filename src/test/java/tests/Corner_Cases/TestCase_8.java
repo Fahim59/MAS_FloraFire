@@ -23,7 +23,6 @@ public class TestCase_8 extends BaseClass {
 
         upgradedPackageName = "Silver";
 
-        packagePrice = 18.0;                                    //Package Price
         licenseCount = 8;                                      //Additional User Count
 
         promoDiscount = 15;

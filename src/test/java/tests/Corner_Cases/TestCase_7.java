@@ -42,7 +42,7 @@ public class TestCase_7 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can upgrade package, buys seasonal license and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can upgrade package, buys seasonal license and confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndSeasonalPurchase() throws InterruptedException {
         /*
          * calculating Prior Package Prepaid details
@@ -117,7 +117,7 @@ public class TestCase_7 extends BaseClass {
     }
 
     @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
+    public void verifyCustomerReceiptPageWithRecurringAndProratedOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();

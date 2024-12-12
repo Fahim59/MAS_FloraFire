@@ -32,13 +32,7 @@ public class CustomerLogin extends BaseClass {
         }
         else {
             userName = "mr@qca6z4pm.mailosaur.net";
-            //customerName = "Valorie Denesik";
-
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
-
-//            SmallWait(500);
-//            locationAndUserPage.clickLocationTab();
-//            paymentPage.clickPaymentTab();
         }
 
         logger.info("Customer logged in successfully.");

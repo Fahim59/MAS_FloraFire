@@ -5,12 +5,8 @@
 package tests.Corner_Cases;
 
 import base.BaseClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.LocationAndUser_Page;
-import pages.PackageSelection_Page;
-import pages.Payment_Page;
-import pages.Receipt_Page;
+import org.testng.annotations.*;
+import pages.*;
 
 public class TestCase_8 extends BaseClass {
     private PackageSelection_Page packageSelectionPage;

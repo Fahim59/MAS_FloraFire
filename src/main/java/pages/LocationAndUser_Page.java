@@ -200,7 +200,7 @@ public class LocationAndUser_Page extends BaseClass{
                 if (matcher.find()) {
                     int upperLimit = Integer.parseInt(matcher.group(1));
                     if (licenseCount < upperLimit) {
-                        System.out.println("Match found on row: " +l);
+                        //System.out.println("Match found on row: " +l);
 
                         totalLicenseFee = calculateTotalFee(price, licenseCount);
 
@@ -218,7 +218,7 @@ public class LocationAndUser_Page extends BaseClass{
                     int lowerLimit = Integer.parseInt(matcher.group(1));
                     int upperLimit = Integer.parseInt(matcher.group(2));
                     if (licenseCount >= lowerLimit && licenseCount <= upperLimit) {
-                        System.out.println("Match found on row: " +l);
+                        //System.out.println("Match found on row: " +l);
 
                         totalLicenseFee = calculateTotalFee(price, licenseCount);
 
@@ -230,7 +230,6 @@ public class LocationAndUser_Page extends BaseClass{
         if (totalLicenseFee == 0.0) {
             throw new IllegalArgumentException("No matching range found for the given license count: " + licenseCount);
         }
-        //System.out.println("License Fee is: " +totalLicenseFee);
 
         return new Object[] {totalLicenseFee, licenseFee};
     }

@@ -312,6 +312,7 @@ public class Payment_Page extends BaseClass{
     }
 
     public void verifyProratedOrderTable() {
+        logger.info("\nVerifying Prorated Order Table in Payment Page - \n");
 
         String proratedOrderTable = "//table/tbody";
 
@@ -321,14 +322,10 @@ public class Payment_Page extends BaseClass{
          * Calculations
         */
 
-        licenseAdjustment = new BigDecimal(licenseNeedToPay - licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue();
-        if(licenseAdjustment < 0){
-            licenseAdjustment = 0;
-        }
+        licenseAdjustment = Math.max(0, new BigDecimal(licenseNeedToPay - licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue());
 
-        seasonalLicenseAdjustment = seasonalLicenseTotalPrice + upgradedTotalAmount;
+        seasonalLicenseAdjustment = Math.max(0, new BigDecimal(seasonalLicenseTotalPrice + upgradedTotalAmount).setScale(2, RoundingMode.HALF_UP).doubleValue());
 
-        //totalDue = new BigDecimal(licenseAdjustment + seasonalLicenseTotalPrice).setScale(2, RoundingMode.HALF_UP).doubleValue();
         totalDue = new BigDecimal(licenseAdjustment + seasonalLicenseAdjustment).setScale(2, RoundingMode.HALF_UP).doubleValue();
 
         /*
@@ -361,7 +358,7 @@ public class Payment_Page extends BaseClass{
     }
 
     public void verifyRecurringOrderTable(double packageFee, double licenseAmount) {
-        logger.info("Verifying Recurring Order Table in Payment Page - ");
+        logger.info("\nVerifying Recurring Order Table in Payment Page - \n");
         /*
          * validating package price
          */

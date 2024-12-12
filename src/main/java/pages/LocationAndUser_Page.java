@@ -261,13 +261,7 @@ public class LocationAndUser_Page extends BaseClass{
         click_Radio_Element(seasonalLicenseMonthField, String.valueOf(month));
     }
 
-    /*
-     * test case 1, 3
-     */
-
     public double calculateSeasonalLicenseTotalFee_Prior(){
-        //seasonalLicenseTotalPrice = seasonalLicenseCount * seasonalMonth * perUserSeasonalLicensePrice;
-
         perDaySeasonalLicensePrice = (double) (seasonalLicenseCount * perUserSeasonalLicensePrice) / seasonalMonthTotalDays;
         seasonalLicenseTotalPrice = perDaySeasonalLicensePrice * seasonalMonthUsedDays;
 
@@ -278,12 +272,8 @@ public class LocationAndUser_Page extends BaseClass{
         return upgradedTotalAmount = upgradedSeasonalLicenseCount * upgradedPerUserSeasonalLicensePrice * upgradedSeasonalMonth;
     }
 
-    /*
-     * test case 2, 3
-     */
-
     public double calculatePriorPackagePrepaid(){
-        logger.info("Calculating Prior Package Prepaid Data - ");
+        logger.info("\nCalculating Prior Package Prepaid Data - \n");
 
         Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(licenseCount)));
         perUserLicensePrice = (double) priceTable[1];
@@ -299,7 +289,7 @@ public class LocationAndUser_Page extends BaseClass{
     }
 
     public double calculateTodayPackageChange(){
-        logger.info("Calculating Today's Package Change - ");
+        logger.info("\nCalculating Today's Package Change - \n");
 
         Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
         upgradedPerUserLicensePrice = (double) priceTable[1];
@@ -314,12 +304,8 @@ public class LocationAndUser_Page extends BaseClass{
         return licenseNeedToPay;
     }
 
-    /*
-     * test case 3
-     */
-
     public double calculateTodayPackageChange_Seasonal(){
-        logger.info("Calculating Seasonal Today's Package Change - ");
+        logger.info("\nCalculating Seasonal Today's Package Change - \n");
 
         Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
         upgradedPerUserLicensePrice = (double) priceTable[1];

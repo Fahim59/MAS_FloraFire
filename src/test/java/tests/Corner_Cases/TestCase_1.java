@@ -23,7 +23,7 @@ public class TestCase_1 extends BaseClass {
 
         packagePrice = 10.0;                       //Package Price
 
-        licenseCount = 20;                       //Additional User Count
+        licenseCount = 8;                        //Additional User Count
 
         seasonalMonthTotalDays = 30;           //(Month Days) Fixed
         seasonalMonthUsedDays = 30;           //Remaining Month Day
@@ -32,7 +32,6 @@ public class TestCase_1 extends BaseClass {
         perUserSeasonalLicensePrice = 5;   //Seasonal License Price
         seasonalMonth = 1;                //Month
 
-        promoApplied = true;
         promoDiscount = 15;
     }
 
@@ -61,6 +60,9 @@ public class TestCase_1 extends BaseClass {
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
+
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
 
         logger.info("Customer verifies seasonal license price and submit the order");
@@ -93,8 +95,6 @@ public class TestCase_1 extends BaseClass {
         SmallWait(60000);
 
         checkReceipt("seasonalLicense");
-
-        packageSelectionPage.clickPackageTab();
 
         logger.info("Customer successfully received the Seasonal License purchase receipt.");
     }

@@ -21,10 +21,9 @@ public class TestCase_2 extends BaseClass {
 
         packagePrice = 10.0;                       //Package Price
 
-        licenseCount = 18;                       //Additional User Count
-        upgradedLicenseCount = 20;              //Additional User Count Now
+        licenseCount = 8;                       //Additional User Count
+        upgradedLicenseCount = 10;              //Additional User Count Now
 
-        promoApplied = true;
         promoDiscount = 15;
     }
 
@@ -54,6 +53,9 @@ public class TestCase_2 extends BaseClass {
 
         paymentPage.clickTermsBtn();
         Scroll_Down();
+
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
 
         logger.info("Customer verifies additional license price and submit the order");

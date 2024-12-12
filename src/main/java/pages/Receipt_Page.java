@@ -361,7 +361,6 @@ public class Receipt_Page extends BaseClass{
 
         logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
-
     public void verifyRecurringOrderTable(double packageFee, double licenseAmount) {
 
         String recurringOrderTable = "(//table[@class='order-table']/tbody)";

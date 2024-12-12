@@ -322,11 +322,22 @@ public class Payment_Page extends BaseClass{
          * Calculations
         */
 
+        packageAdjustment = Math.max(0, new BigDecimal(packageNeedToPay - packageRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue());
+
         licenseAdjustment = Math.max(0, new BigDecimal(licenseNeedToPay - licenseRemainingAmount).setScale(2, RoundingMode.HALF_UP).doubleValue());
 
         seasonalLicenseAdjustment = Math.max(0, new BigDecimal(seasonalLicenseTotalPrice + upgradedTotalAmount).setScale(2, RoundingMode.HALF_UP).doubleValue());
 
-        totalDue = new BigDecimal(licenseAdjustment + seasonalLicenseAdjustment).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        totalDue = new BigDecimal(packageAdjustment + licenseAdjustment + seasonalLicenseAdjustment).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        /*
+         * validating package price
+         */
+
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[4]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        Assert.assertTrue(Math.abs(packageAdjustment - getPackageNetDue) <= tolerance, "Package Net Due Today mismatch; should be: " +packageAdjustment+ " but displayed: " +getPackageNetDue);
+
+        logger.info("Get License Net Due: {} and License Adjustment: {}", getPackageNetDue, packageAdjustment);
 
         /*
          * validating additional license price
@@ -385,7 +396,7 @@ public class Payment_Page extends BaseClass{
          * validating subtotal amount
          */
 
-        subTotal = packagePrice + totalLicensePrice;
+        subTotal = packageFee + totalLicensePrice;
         double getSubTotal = fetchSubtotal();
 
         Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);

@@ -265,6 +265,8 @@ public class LocationAndUser_Page extends BaseClass{
         perDaySeasonalLicensePrice = (double) (seasonalLicenseCount * perUserSeasonalLicensePrice) / seasonalMonthTotalDays;
         seasonalLicenseTotalPrice = perDaySeasonalLicensePrice * seasonalMonthUsedDays;
 
+        logger.info("Seasonal License Price: {}", seasonalLicenseTotalPrice);
+
         return seasonalLicenseTotalPrice;
     }
 
@@ -272,36 +274,50 @@ public class LocationAndUser_Page extends BaseClass{
         return upgradedTotalAmount = upgradedSeasonalLicenseCount * upgradedPerUserSeasonalLicensePrice * upgradedSeasonalMonth;
     }
 
-    public double calculatePriorPackagePrepaid(){
+    public Object[] calculatePriorPackagePrepaid(){
         logger.info("\nCalculating Prior Package Prepaid Data - \n");
 
         Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(licenseCount)));
         perUserLicensePrice = (double) priceTable[1];
 
+        perDayPackagePrice = packagePrice / monthTotalDays;
+        packageRemainingAmount = new BigDecimal(perDayPackagePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
         perDayLicensePrice = (licenseCount * perUserLicensePrice) / monthTotalDays;
         licenseRemainingAmount = new BigDecimal(perDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        logger.info("Per Day Package Price: {}", perDayPackagePrice);
+        logger.info("Package Remaining Price: {}", packageRemainingAmount);
 
         logger.info("Per User License Price: {}", perUserLicensePrice);
         logger.info("Per Day License Price: {}", perDayLicensePrice);
         logger.info("License Remaining Price: {}", licenseRemainingAmount);
 
-        return licenseRemainingAmount;
+        //return licenseRemainingAmount;
+        return new Object[] {packageRemainingAmount, licenseRemainingAmount};
     }
 
-    public double calculateTodayPackageChange(){
+    public Object[] calculateTodayPackageChange(){
         logger.info("\nCalculating Today's Package Change - \n");
 
         Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
         upgradedPerUserLicensePrice = (double) priceTable[1];
 
+        upgradedPerDayPackagePrice = upgradedPackagePrice / monthTotalDays;
+        packageNeedToPay = new BigDecimal(upgradedPerDayPackagePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
         upgradedPerDayLicensePrice = (upgradedLicenseCount * upgradedPerUserLicensePrice) / monthTotalDays;
         licenseNeedToPay = new BigDecimal(upgradedPerDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        logger.info("Upgraded Per Day Package Price: {}", upgradedPerDayPackagePrice);
+        logger.info("Package Need to Pay: {}", packageNeedToPay);
 
         logger.info("Upgraded Per User License Price: {}", upgradedPerUserLicensePrice);
         logger.info("Upgraded Per Day License Price: {}", upgradedPerDayLicensePrice);
         logger.info("License Need to Pay: {}", licenseNeedToPay);
 
-        return licenseNeedToPay;
+        //return licenseNeedToPay;
+        return new Object[] {packageNeedToPay, licenseNeedToPay};
     }
 
     public double calculateTodayPackageChange_Seasonal(){

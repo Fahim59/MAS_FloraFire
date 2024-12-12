@@ -1,5 +1,5 @@
 /*
- * Scenario 3: Package Same – Addi. License Downgrade – Seasonal License Ney Buy
+ * Scenario 5: Package Same – Addi. License Downgrade – Seasonal License Ney Buy
 */
 
 package tests.Corner_Cases;
@@ -36,8 +36,8 @@ public class TestCase_5 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can downgrade additional license(s), confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
-    public void verifyCustomerAdditionalLicenseDowngrade() throws InterruptedException {
+    @Test(description = "Verify that the customer can downgrade additional license(s), buys seasonal license and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    public void verifyCustomerAdditionalLicenseDowngradeAndSeasonalPurchase() throws InterruptedException {
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
@@ -80,8 +80,8 @@ public class TestCase_5 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
+    @Test(description = "Verify that customer can see the receipt page, check the prorated and recurring payment details", priority = 3)
+    public void verifyCustomerReceiptPageWithRecurringAndProratedOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();

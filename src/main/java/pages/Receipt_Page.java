@@ -328,9 +328,9 @@ public class Receipt_Page extends BaseClass{
          */
 
         getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[1]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
+        Assert.assertEquals(packageAdjustment, getPackageNetDue, "Package net due mismatch; should be: " +packageAdjustment+ " but displayed: " +getPackageNetDue);
 
-        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
+        logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageAdjustment);
 
         /*
          * validating license price

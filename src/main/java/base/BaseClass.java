@@ -43,7 +43,7 @@ public class BaseClass {
 
     protected JSONObject jsonData;
 
-    public static String userName, customerName;
+    public static String userName, customerName, upgradedPackageName;
     public static boolean promoApplied = true, packageSame = true;
 
     public static double tolerance = 0.011;

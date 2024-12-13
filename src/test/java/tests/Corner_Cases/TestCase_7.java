@@ -66,6 +66,8 @@ public class TestCase_7 extends BaseClass {
         Scroll_Down();
         packageSelectionPage.clickSaveBtn();
 
+        logger.info("Customer upgraded package to: {} level", upgradedPackageName);
+
         /*
          * buying new seasonal license and calculating Today's Package Change details
          */

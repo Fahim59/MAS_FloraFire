@@ -85,8 +85,8 @@ public class TestCase_8 extends BaseClass {
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }
 
-    @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)
-    public void verifyCustomerReceivedSubscriptionUpgradeReceipt() throws InterruptedException {
+    @Test(description = "Verify that the customer has received the subscription downgrade receipt in email", priority = 4)
+    public void verifyCustomerReceivedSubscriptionDowngradeReceipt() throws InterruptedException {
         SmallWait(60000);
 
         checkReceipt("subscriptionDowngrade");

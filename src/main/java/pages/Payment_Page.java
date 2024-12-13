@@ -337,7 +337,7 @@ public class Payment_Page extends BaseClass{
         getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[4]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertTrue(Math.abs(packageAdjustment - getPackageNetDue) <= tolerance, "Package Net Due Today mismatch; should be: " +packageAdjustment+ " but displayed: " +getPackageNetDue);
 
-        logger.info("Get License Net Due: {} and License Adjustment: {}", getPackageNetDue, packageAdjustment);
+        logger.info("Get Package Net Due: {} and Package Adjustment: {}", getPackageNetDue, packageAdjustment);
 
         /*
          * validating additional license price

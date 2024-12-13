@@ -1,11 +1,13 @@
 package tests;
 
 import base.BaseClass;
+import com.github.javafaker.Faker;
 import org.testng.annotations.*;
 import pages.*;
 
 public class LocationAndUser extends BaseClass {
     private LocationAndUser_Page locationAndUserPage;
+    private Faker faker;
 
     @BeforeMethod
     public void initializePageObjects() {
@@ -21,6 +23,7 @@ public class LocationAndUser extends BaseClass {
         String businessPhone = jsonData.getJSONObject("contactInfo").getString("businessPhone");
         String timeZone = jsonData.getJSONObject("storeInfo").getString("timeZone");
         String fax = jsonData.getJSONObject("storeInfo").getString("fax");
+        String secondStore = faker.company().name();
 
         locationAndUserPage.enterPrimaryStoreInfoDetails(getCompany(), getFullName(), timeZone, fax);
 
@@ -29,7 +32,7 @@ public class LocationAndUser extends BaseClass {
 
         Scroll_Down();
 
-        locationAndUserPage.enterAdditionalStoreInfoDetails(getCompany(), getFullName(), getEmail(), getAddress(),
+        locationAndUserPage.enterAdditionalStoreInfoDetails(secondStore, getFullName(), getEmail(), getAddress(),
                 getAddressCont(), country, getState(), getCity(), zip, timeZone, businessPhone, fax);
 
         SmallWait(1500);

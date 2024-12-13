@@ -7,7 +7,7 @@ import pages.*;
 
 public class LocationAndUser extends BaseClass {
     private LocationAndUser_Page locationAndUserPage;
-    private Faker faker;
+    private final Faker faker = new Faker();
 
     @BeforeMethod
     public void initializePageObjects() {

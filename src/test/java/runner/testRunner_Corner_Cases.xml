@@ -19,7 +19,8 @@
 <!--            <class name="tests.Corner_Cases.TestCase_7"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_8"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_9"/>-->
-            <class name="tests.Corner_Cases.TestCase_10"/>
+<!--            <class name="tests.Corner_Cases.TestCase_10"/>-->
+            <class name="tests.Corner_Cases.TestCase_11"/>
         </classes>
     </test>
 </suite>

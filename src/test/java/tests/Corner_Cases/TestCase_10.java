@@ -39,7 +39,7 @@ public class TestCase_10 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can downgrade package, upgrade licence and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can upgrade package, upgrade licence and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndLicensePurchase() throws InterruptedException {
         /*
          * calculating Prior Package Prepaid details
@@ -119,15 +119,15 @@ public class TestCase_10 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
+    @Test(description = "Verify that customer can see the receipt page check the prorated and recurring payment details", priority = 3)
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();
 
         receiptPage.verifyRecurringOrderTable(upgradedPackagePrice, upgradedLicenseCount);
 
-        logger.info("Customer viewed the receipt page and verified the recurring order details.");
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)

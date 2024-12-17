@@ -127,6 +127,8 @@ public class TestCase_10 extends BaseClass {
 
         receiptPage.verifyRecurringOrderTable(upgradedPackagePrice, upgradedLicenseCount);
 
+        Scroll_Up();
+
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 

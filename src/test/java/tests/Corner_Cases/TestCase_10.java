@@ -39,7 +39,7 @@ public class TestCase_10 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can upgrade package, upgrade licence and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can upgrade package, upgrade licence and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndLicensePurchase() throws InterruptedException {
         /*
          * calculating Prior Package Prepaid details

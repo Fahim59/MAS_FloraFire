@@ -107,7 +107,7 @@ public class TestCase_10 extends BaseClass {
 
         paymentPage.clickSubmitOrderBtn();
 
-        logger.info("Customer verifies recurring order price and submit the order");
+        logger.info("Customer verifies prorated and recurring order price and submit the order");
     }
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)

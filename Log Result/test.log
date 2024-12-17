@@ -1,191 +1,33 @@
-2024-12-13 15:26:08.123 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 15:26:12.750 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2024-12-13 15:26:14.065 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2024-12-13 15:26:17.887 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2024-12-13 15:26:19.418 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2024-12-13 15:26:20.480 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2024-12-13 15:27:21.982 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2024-12-13 15:27:22.465 [main] INFO  tests.CustomerRegistration - Customer Name: Curtis Wisozk
-2024-12-13 15:27:22.465 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=6746a75e-5e44-4968-a7f8-1809f5c326f0&guid=d883d0e2-eacf-4ab4-b3bb-afd20e2ab9e8
-2024-12-13 15:27:23.511 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2024-12-13 15:27:26.519 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-12-13 15:27:27.856 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2024-12-13 15:27:30.884 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2024-12-13 15:27:32.281 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2024-12-13 15:27:36.691 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2024-12-13 15:27:38.032 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2024-12-13 15:30:05.511 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 15:30:08.765 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2024-12-13 15:30:10.181 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2024-12-13 15:30:12.366 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2024-12-13 15:30:13.971 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2024-12-13 15:30:14.980 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2024-12-13 15:31:16.255 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2024-12-13 15:31:16.704 [main] INFO  tests.CustomerRegistration - Customer Name: Nohemi Reichert
-2024-12-13 15:31:16.704 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=66dcb7f5-6bd7-4169-9c40-3b94bd9f715e&guid=7f93def8-ac3d-4794-9663-df88f54428b1
-2024-12-13 15:31:17.690 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2024-12-13 15:31:20.443 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-12-13 15:31:21.797 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2024-12-13 15:31:26.118 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2024-12-13 15:31:27.450 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2024-12-13 15:31:31.510 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2024-12-13 15:31:32.863 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2024-12-13 15:31:41.000 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2024-12-13 15:31:46.956 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2024-12-13 15:31:48.295 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2024-12-13 15:31:50.473 [main] INFO  tests.Payment - Promo Code applied successfully
-2024-12-13 15:31:51.839 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2024-12-13 15:31:53.931 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2024-12-13 15:32:31.517 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2024-12-13 15:32:31.523 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2024-12-13 15:32:33.230 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2024-12-13 15:32:33.265 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2024-12-13 15:32:34.362 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2024-12-13 15:32:38.190 [main] INFO  tests.Receipt - File downloaded successfully
-2024-12-13 15:32:38.192 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt.pdf
-2024-12-13 15:32:41.757 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2024-12-13 15:33:43.385 [main] INFO  tests.Receipt - Email Subject: Activation of Trial Receipt
-2024-12-13 15:33:43.862 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
-2024-12-13 15:33:48.851 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-12-13 19:37:00.728 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 19:37:07.080 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2024-12-13 19:37:08.370 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2024-12-13 19:37:11.462 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2024-12-13 19:37:12.987 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2024-12-13 19:37:14.039 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2024-12-13 19:37:32.877 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 19:37:38.569 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-12-13 19:37:39.945 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2024-12-13 19:37:44.560 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Prior Package Prepaid Data - 
-
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.3225806451612903
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 6.13
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 10.0
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 3.225806451612903
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 61.29
-2024-12-13 19:37:44.656 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
-2024-12-13 19:37:51.106 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package to: Silver level
-2024-12-13 19:37:54.280 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Today's Package Change - 
-
-2024-12-13 19:37:54.351 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.45161290322580644
-2024-12-13 19:37:54.351 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 8.58
-2024-12-13 19:37:54.351 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 15.0
-2024-12-13 19:37:54.351 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 5.806451612903226
-2024-12-13 19:37:54.351 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 110.32
-2024-12-13 19:37:54.352 [main] INFO  tests.Corner_Cases.TestCase_10 - Seasonal License Total Price: 0.0
-2024-12-13 19:37:58.282 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package, buys additional license successfully and clicked on save button.
-2024-12-13 19:37:58.283 [main] INFO  pages.Payment_Page - 
-Verifying Prorated Order Table in Payment Page - 
-
-2024-12-13 19:37:58.302 [main] INFO  pages.Payment_Page - Get License Net Due: 2.45 and License Adjustment: 2.45
-2024-12-13 19:37:58.322 [main] INFO  pages.Payment_Page - Get License Net Due: 49.03 and License Adjustment: 49.03
-2024-12-13 19:37:58.339 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
-2024-12-13 19:37:58.356 [main] INFO  pages.Payment_Page - Get Total Due: 61.48 and Total Due: 61.48
-2024-12-13 19:37:58.356 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2024-12-13 19:37:58.374 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
-2024-12-13 19:37:58.390 [main] INFO  pages.Payment_Page - Get Total License Price: 180.0 and Total License Price: 180.0
-2024-12-13 19:37:58.391 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
-2024-12-13 19:37:58.391 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
-2024-12-13 19:37:58.406 [main] INFO  pages.Payment_Page - Get Sub Total: 194.0 and Sub Total: 194.0
-2024-12-13 19:37:59.998 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer successfully navigated to the Receipt page
-2024-12-13 19:38:01.561 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer viewed the receipt page and verified the recurring order details.
-2024-12-13 19:38:02.158 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-12-13 19:38:56.850 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 19:39:02.615 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-12-13 19:39:04.046 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2024-12-13 19:39:08.755 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Prior Package Prepaid Data - 
-
-2024-12-13 19:39:08.846 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.3225806451612903
-2024-12-13 19:39:08.846 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 6.13
-2024-12-13 19:39:08.846 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 10.0
-2024-12-13 19:39:08.846 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 3.225806451612903
-2024-12-13 19:39:08.847 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 61.29
-2024-12-13 19:39:08.847 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
-2024-12-13 19:39:14.570 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package to: Silver level
-2024-12-13 19:39:17.765 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Today's Package Change - 
-
-2024-12-13 19:39:17.856 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.45161290322580644
-2024-12-13 19:39:17.856 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 8.58
-2024-12-13 19:39:17.856 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 15.0
-2024-12-13 19:39:17.856 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 5.806451612903226
-2024-12-13 19:39:17.856 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 110.32
-2024-12-13 19:39:17.856 [main] INFO  tests.Corner_Cases.TestCase_10 - Seasonal License Total Price: 0.0
-2024-12-13 19:39:21.577 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package, buys additional license successfully and clicked on save button.
-2024-12-13 19:39:21.577 [main] INFO  pages.Payment_Page - 
-Verifying Prorated Order Table in Payment Page - 
-
-2024-12-13 19:39:21.600 [main] INFO  pages.Payment_Page - Get License Net Due: 2.45 and License Adjustment: 2.45
-2024-12-13 19:39:21.625 [main] INFO  pages.Payment_Page - Get License Net Due: 49.03 and License Adjustment: 49.03
-2024-12-13 19:39:21.645 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
-2024-12-13 19:39:21.661 [main] INFO  pages.Payment_Page - Get Total Due: 61.48 and Total Due: 61.48
-2024-12-13 19:39:21.661 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2024-12-13 19:39:21.680 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
-2024-12-13 19:39:21.698 [main] INFO  pages.Payment_Page - Get Total License Price: 180.0 and Total License Price: 180.0
-2024-12-13 19:39:21.698 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
-2024-12-13 19:39:21.698 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
-2024-12-13 19:39:21.717 [main] INFO  pages.Payment_Page - Get Sub Total: 194.0 and Sub Total: 194.0
-2024-12-13 19:39:21.734 [main] INFO  pages.Payment_Page - Get Recurring Fee: 179.0 and Recurring Fee: 179.0
-2024-12-13 19:39:22.828 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer verifies recurring order price and submit the order
-2024-12-13 19:39:24.121 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer successfully navigated to the Receipt page
-2024-12-13 19:39:25.327 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer viewed the receipt page and verified the recurring order details.
-2024-12-13 19:39:25.955 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2024-12-13 19:44:22.398 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-13 19:44:28.128 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2024-12-13 19:44:29.507 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2024-12-13 19:44:34.395 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Prior Package Prepaid Data - 
-
-2024-12-13 19:44:34.487 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.3225806451612903
-2024-12-13 19:44:34.487 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 6.13
-2024-12-13 19:44:34.487 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 10.0
-2024-12-13 19:44:34.487 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 3.225806451612903
-2024-12-13 19:44:34.487 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 61.29
-2024-12-13 19:44:34.488 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
-2024-12-13 19:44:40.744 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package to: Silver level
-2024-12-13 19:44:43.916 [main] INFO  pages.LocationAndUser_Page - 
-Calculating Today's Package Change - 
-
-2024-12-13 19:44:43.992 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.45161290322580644
-2024-12-13 19:44:43.992 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 8.58
-2024-12-13 19:44:43.992 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 15.0
-2024-12-13 19:44:43.992 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 5.806451612903226
-2024-12-13 19:44:43.992 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 110.32
-2024-12-13 19:44:43.992 [main] INFO  tests.Corner_Cases.TestCase_10 - Seasonal License Total Price: 0.0
-2024-12-13 19:44:47.659 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package, buys additional license successfully and clicked on save button.
-2024-12-13 19:44:47.659 [main] INFO  pages.Payment_Page - 
-Verifying Prorated Order Table in Payment Page - 
-
-2024-12-13 19:44:47.680 [main] INFO  pages.Payment_Page - Get Package Net Due: 2.45 and Package Adjustment: 2.45
-2024-12-13 19:44:47.701 [main] INFO  pages.Payment_Page - Get License Net Due: 49.03 and License Adjustment: 49.03
-2024-12-13 19:44:47.717 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
-2024-12-13 19:44:47.733 [main] INFO  pages.Payment_Page - Get Total Due: 61.48 and Total Due: 61.48
-2024-12-13 19:44:47.733 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2024-12-13 19:44:47.752 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
-2024-12-13 19:44:47.768 [main] INFO  pages.Payment_Page - Get Total License Price: 180.0 and Total License Price: 180.0
-2024-12-13 19:44:47.769 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
-2024-12-13 19:44:47.769 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
-2024-12-13 19:44:47.785 [main] INFO  pages.Payment_Page - Get Sub Total: 194.0 and Sub Total: 194.0
-2024-12-13 19:44:47.803 [main] INFO  pages.Payment_Page - Get Recurring Fee: 179.0 and Recurring Fee: 179.0
-2024-12-13 19:44:57.802 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer verifies recurring order price and submit the order
-2024-12-13 19:45:00.396 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer successfully navigated to the Receipt page
-2024-12-13 19:45:01.891 [main] INFO  pages.Receipt_Page - 
-Verifying Prorated Order Table in Receipt Page - 
-
-2024-12-13 19:45:01.912 [main] INFO  pages.Receipt_Page - Get Package Net Due: 2.45 and Package Remaining Amount: 2.45
-2024-12-13 19:45:01.930 [main] INFO  pages.Receipt_Page - Get License Net Due: 49.03 and License Remaining Amount: 49.03
-2024-12-13 19:45:01.950 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 10.0 and Seasonal License Total Amount: 10.0
-2024-12-13 19:45:01.967 [main] INFO  pages.Receipt_Page - Get Total Due: 61.48 and Total Due: 61.48
-2024-12-13 19:45:02.990 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
-
-2024-12-13 19:45:03.775 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-17 16:06:02.920 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-17 16:06:06.745 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-12-17 16:06:08.085 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2024-12-17 16:06:10.601 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2024-12-17 16:06:12.012 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
+2024-12-17 16:06:12.996 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
+2024-12-17 16:07:14.319 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
+2024-12-17 16:07:14.743 [main] INFO  tests.CustomerRegistration - Customer Name: Sheridan Schumm
+2024-12-17 16:07:14.743 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=1ebe952d-bf5e-4b8a-bae2-9ec6f4a3a276&guid=c21914e3-f5ad-4b87-aee8-8f152425901b
+2024-12-17 16:07:16.053 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
+2024-12-17 16:07:20.191 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-17 16:07:21.519 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-17 16:07:24.621 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2024-12-17 16:07:25.942 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2024-12-17 16:07:30.353 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2024-12-17 16:07:31.723 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2024-12-17 16:07:39.784 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
+2024-12-17 16:07:46.037 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
+2024-12-17 16:07:47.414 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
+2024-12-17 16:07:49.447 [main] INFO  tests.Payment - Promo Code applied successfully
+2024-12-17 16:07:50.811 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
+2024-12-17 16:07:52.910 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
+2024-12-17 16:08:38.958 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
+2024-12-17 16:08:38.963 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
+2024-12-17 16:08:40.662 [main] INFO  pages.Receipt_Page - Trial Text is visible
+2024-12-17 16:08:40.696 [main] INFO  pages.Receipt_Page - Amex type card details matched
+2024-12-17 16:08:41.786 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
+2024-12-17 16:08:45.585 [main] INFO  tests.Receipt - File downloaded successfully
+2024-12-17 16:08:45.588 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt.pdf
+2024-12-17 16:08:49.069 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
+2024-12-17 16:09:50.487 [main] INFO  tests.Receipt - Email Subject: Activation of Trial Receipt
+2024-12-17 16:09:50.912 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
+2024-12-17 16:09:55.153 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

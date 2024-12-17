@@ -20,7 +20,7 @@ public class CustomerLogin extends BaseClass {
     }
 
     @Test(description = "Verify that a customer can log in successfully", priority = 1)
-    public void verifyCustomerSuccessfulLogin() throws InterruptedException {
+    public void verifyCustomerSuccessfulLogin() {
         Open_Website(EndPoint.login.url);
 
         if (userName != null && !userName.isEmpty()) {

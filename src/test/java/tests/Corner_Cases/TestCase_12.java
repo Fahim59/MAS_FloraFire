@@ -28,7 +28,7 @@ public class TestCase_12 extends BaseClass {
         promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can downgrade package, additional and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can downgrade package, additional license and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageAndLicenseDowngrade() throws InterruptedException {
         /*
          * package downgrade

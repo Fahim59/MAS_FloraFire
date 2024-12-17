@@ -138,3 +138,51 @@ Verifying Prorated Order Table in Receipt Page -
 2024-12-17 17:46:17.970 [main] INFO  base.BaseClass - Email subject does not match.
 2024-12-17 17:46:17.970 [main] INFO  tests.Corner_Cases.TestCase_11 - Customer successfully received the Subscription Upgrade receipt.
 2024-12-17 17:46:18.457 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-17 18:17:00.471 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-17 18:17:12.175 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-17 18:17:13.586 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-17 18:17:21.628 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer downgraded package to: Silver level
+2024-12-17 18:17:31.697 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer downgraded package and additional successfully and clicked on save button.
+2024-12-17 18:17:31.697 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2024-12-17 18:17:31.719 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
+2024-12-17 18:17:31.738 [main] INFO  pages.Payment_Page - Get Total License Price: 180.0 and Total License Price: 180.0
+2024-12-17 18:17:31.738 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2024-12-17 18:17:31.738 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
+2024-12-17 18:17:31.756 [main] INFO  pages.Payment_Page - Get Sub Total: 194.0 and Sub Total: 194.0
+2024-12-17 18:17:31.775 [main] INFO  pages.Payment_Page - Get Recurring Fee: 179.0 and Recurring Fee: 179.0
+2024-12-17 18:17:32.841 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer verifies recurring order price and submit the order
+2024-12-17 18:17:34.062 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer successfully navigated to the Receipt page
+2024-12-17 18:17:35.303 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer viewed the receipt page and verified the recurring order details.
+2024-12-17 18:17:36.511 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer successfully received the Subscription Downgrade receipt.
+2024-12-17 18:17:37.066 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-17 18:19:04.904 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-17 18:19:10.305 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-17 18:19:11.771 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-17 18:19:17.378 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer downgraded package to: Silver level
+2024-12-17 18:19:24.283 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer downgraded package and additional successfully and clicked on save button.
+2024-12-17 18:19:24.283 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2024-12-17 18:19:24.305 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
+2024-12-17 18:19:24.326 [main] INFO  pages.Payment_Page - Get Total License Price: 180.0 and Total License Price: 180.0
+2024-12-17 18:19:24.326 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2024-12-17 18:19:24.326 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
+2024-12-17 18:19:24.346 [main] INFO  pages.Payment_Page - Get Sub Total: 194.0 and Sub Total: 194.0
+2024-12-17 18:19:24.366 [main] INFO  pages.Payment_Page - Get Recurring Fee: 179.0 and Recurring Fee: 179.0
+2024-12-17 18:19:35.470 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer verifies recurring order price and submit the order
+2024-12-17 18:19:37.846 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer successfully navigated to the Receipt page
+2024-12-17 18:19:39.131 [main] INFO  pages.Receipt_Page - 
+Verifying Recurring Order Table in Receipt Page - 
+
+2024-12-17 18:19:39.151 [main] INFO  pages.Receipt_Page - Get Package Price: 14.0 and Package Price: 14.0
+2024-12-17 18:19:39.167 [main] INFO  pages.Receipt_Page - Get Total License Price: 180.0 and Total License Price: 180.0
+2024-12-17 18:19:39.167 [main] INFO  pages.Receipt_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2024-12-17 18:19:39.167 [main] INFO  pages.Receipt_Page - Get License Count: 12 and License Count: 12.0
+2024-12-17 18:19:39.179 [main] INFO  pages.Receipt_Page - Get Sub Total: 194.0 and Sub Total: 194.0
+2024-12-17 18:19:39.199 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2024-12-17 18:19:39.216 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 179.0 and Recurring Fee: 179.0
+2024-12-17 18:19:39.216 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer viewed the receipt page and verified the recurring order details.
+2024-12-17 18:19:40.639 [main] INFO  tests.Corner_Cases.TestCase_12 - Customer successfully received the Subscription Downgrade receipt.
+2024-12-17 18:19:41.232 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

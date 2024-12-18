@@ -65,8 +65,13 @@ public class CustomerRegistration extends BaseClass {
 
         getActivationLink();
 
-        //driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
-        driver.get(link);
+        try {
+            //driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
+            driver.get(link);
+        }
+        catch (Exception e) {
+            logger.info("Email was not received");
+        }
 
         Assert.assertEquals(jsonData.getJSONObject("registration_info").getString("activationSuccessText"), registrationPage.fetchActivationText());
 
@@ -76,6 +81,7 @@ public class CustomerRegistration extends BaseClass {
     public void getActivationLink() {
         String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
         String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
+
         String emailAddress = getEmail();
         String expectedCustomerName = getFirstName() +" "+ getLastName();
         String expectedSubject = jsonData.getJSONObject("registration_info").getString("emailSubject");

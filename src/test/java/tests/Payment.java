@@ -60,6 +60,8 @@ public class Payment extends BaseClass {
 
         paymentPage.verifyRecurringOrderTable(packagePrice, licenseCount);
 
+        customerName = paymentPage.fetchNameValue();
+
         paymentPage.clickSubmitOrderBtn();
         SmallWait(1000);
         paymentPage.enterPassword(password);

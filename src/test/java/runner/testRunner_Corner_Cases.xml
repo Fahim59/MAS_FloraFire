@@ -21,7 +21,8 @@
 <!--            <class name="tests.Corner_Cases.TestCase_9"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_10"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_11"/>-->
-            <class name="tests.Corner_Cases.TestCase_12"/>
+<!--            <class name="tests.Corner_Cases.TestCase_12"/>-->
+            <class name="tests.Corner_Cases.TestCase_13"/>
         </classes>
     </test>
 </suite>

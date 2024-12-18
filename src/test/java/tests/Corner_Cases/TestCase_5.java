@@ -5,11 +5,8 @@
 package tests.Corner_Cases;
 
 import base.BaseClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.LocationAndUser_Page;
-import pages.Payment_Page;
-import pages.Receipt_Page;
+import org.testng.annotations.*;
+import pages.*;
 
 public class TestCase_5 extends BaseClass {
     private LocationAndUser_Page locationAndUserPage;
@@ -40,20 +37,36 @@ public class TestCase_5 extends BaseClass {
 
         SmallWait(1000);
 
+        /*
+         * calculating Prior Package Prepaid details
+         */
+
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
 
-        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
-
-        locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
+        /*
+         * calculating Today's Package Change details
+         */
 
         Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        /*
+         * downgrading additional license and purchase seasonal license
+         */
+
+        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
+
+        locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
-        logger.info("Customer downgraded additional license/s successfully and clicked on save button.");
+        logger.info("Customer downgraded additional license/s, purchase seasonal license successfully and clicked on save button.");
+
+        /*
+         * verifying prorated and recurring order in payment page and submit order
+         */
 
         paymentPage.verifyProratedOrderTable();
 
@@ -66,7 +79,7 @@ public class TestCase_5 extends BaseClass {
 
         paymentPage.clickSubmitOrderBtn();
 
-        logger.info("Customer verifies additional license price and submit the order");
+        logger.info("Customer verifies prorated and recurring order price and submit the order");
     }
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)
@@ -88,7 +101,7 @@ public class TestCase_5 extends BaseClass {
 
         Scroll_Up();
 
-        logger.info("Customer viewed the receipt page and verified the recurring order details.");
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the subscription downgrade receipt in email", priority = 4)

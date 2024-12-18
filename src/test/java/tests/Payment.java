@@ -47,34 +47,8 @@ public class Payment extends BaseClass {
         String password = jsonData.getJSONObject("registration_info").getString("password");
 
         /*
-         * validating package price
-        */
-
-        double getPackagePrice = paymentPage.fetchRecurringPackagePrice();
-        Assert.assertEquals(packagePrice, getPackagePrice,"Package price mismatch; should be: " +packagePrice+ " but displayed: " +getPackagePrice);
-
-        /*
-         * validating license details
-        */
-
-        double[] licenseDetails = paymentPage.fetchRecurringLicenseDetails();
-
-        Assert.assertEquals(totalLicensePrice , licenseDetails[0],"Total License Price mismatch; should be: " +totalLicensePrice+ " but displayed: " +licenseDetails[0]);
-        Assert.assertEquals(perUserLicensePrice , licenseDetails[1],"Per User License Price mismatch; should be: " +perUserLicensePrice+ " but displayed: " +licenseDetails[1]);
-        Assert.assertEquals(licenseCount , licenseDetails[2],"License count mismatch; should be: " +licenseCount+ " but displayed: " +licenseDetails[2]);
-
-        /*
-         * validating subtotal amount
-        */
-
-        subTotal = packagePrice + totalLicensePrice;
-        double getSubTotal = paymentPage.fetchSubtotal();
-
-        Assert.assertEquals(subTotal, getSubTotal,"Subtotal mismatch; should be: " +subTotal+ " but displayed: " +getSubTotal);
-
-        /*
          * validating promo discount
-        */
+         */
 
         if(promoApplied){
             String promoCode = jsonData.getJSONObject("payment").getString("promo");
@@ -84,19 +58,7 @@ public class Payment extends BaseClass {
             Assert.assertEquals(promoCode, promoDetails[1],"Promo Code mismatch; should be: " +promoCode+ " but displayed: " +promoDetails[1]);
         }
 
-        /*
-         * validating recurring fee
-        */
-
-        if(promoApplied){
-            recurringFee = subTotal - promoDiscount;
-        }
-        else{
-            recurringFee = subTotal;
-        }
-
-        double getRecurringFee = paymentPage.fetchRecurringFee();
-        Assert.assertEquals(recurringFee, getRecurringFee,"Recurring Fee mismatch; should be: " +recurringFee+ " but displayed: " +getRecurringFee);
+        paymentPage.verifyRecurringOrderTable(packagePrice, licenseCount);
 
         paymentPage.clickSubmitOrderBtn();
         SmallWait(1000);

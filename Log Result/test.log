@@ -284,3 +284,84 @@ Verifying Prorated Order Table in Receipt Page -
 2024-12-18 12:18:09.242 [main] INFO  base.BaseClass - Email Subject: Subscription Upgrade
 2024-12-18 12:18:09.710 [main] INFO  tests.Corner_Cases.TestCase_14 - Customer successfully received the Subscription Upgrade receipt.
 2024-12-18 12:18:10.263 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-18 13:16:21.868 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 13:16:30.588 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-12-18 13:16:31.827 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2024-12-18 13:16:35.588 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2024-12-18 13:16:37.021 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
+2024-12-18 13:16:38.074 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
+2024-12-18 13:17:39.386 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
+2024-12-18 13:17:39.871 [main] INFO  tests.CustomerRegistration - Customer Name: Rufina Hintz
+2024-12-18 13:17:39.871 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=a9d31502-f661-45e2-a7b8-d923094ab0d2&guid=2045fa1a-7c43-4841-8335-cc89f8eed5d6
+2024-12-18 13:17:41.031 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
+2024-12-18 13:17:43.698 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-18 13:17:45.066 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-18 13:17:48.403 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2024-12-18 13:17:49.717 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2024-12-18 13:17:54.433 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2024-12-18 13:17:55.802 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2024-12-18 13:18:03.726 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
+2024-12-18 13:18:10.143 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
+2024-12-18 13:18:11.513 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
+2024-12-18 13:18:13.742 [main] INFO  tests.Payment - Promo Code applied successfully
+2024-12-18 13:18:15.113 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
+2024-12-18 13:18:15.962 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2024-12-18 13:18:15.983 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2024-12-18 13:18:16.000 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2024-12-18 13:18:16.000 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2024-12-18 13:18:16.000 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2024-12-18 13:18:16.014 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2024-12-18 13:34:13.343 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 13:34:19.929 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2024-12-18 13:34:21.012 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2024-12-18 13:34:26.454 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2024-12-18 13:34:28.150 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
+2024-12-18 13:34:30.126 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
+2024-12-18 13:35:31.663 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
+2024-12-18 13:35:32.120 [main] INFO  tests.CustomerRegistration - Customer Name: Rita Lebsack
+2024-12-18 13:35:32.121 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=27ba93db-c6ca-4e6f-bf80-17e813901ab5&guid=bff34979-ff42-413f-8d33-dcd26e1d8128
+2024-12-18 13:35:33.476 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
+2024-12-18 13:35:39.499 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2024-12-18 13:35:40.826 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2024-12-18 13:35:47.382 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2024-12-18 13:35:48.703 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2024-12-18 13:35:55.326 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2024-12-18 13:35:56.638 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2024-12-18 13:36:06.353 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
+2024-12-18 13:36:13.721 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
+2024-12-18 13:36:15.035 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
+2024-12-18 13:36:17.369 [main] INFO  tests.Payment - Promo Code applied successfully
+2024-12-18 13:36:18.720 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
+2024-12-18 13:36:19.541 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2024-12-18 13:36:19.557 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2024-12-18 13:36:19.572 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2024-12-18 13:36:19.572 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2024-12-18 13:36:19.572 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2024-12-18 13:36:19.586 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2024-12-18 13:36:19.601 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2024-12-18 13:36:20.783 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
+2024-12-18 13:37:42.347 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
+2024-12-18 13:37:42.353 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
+2024-12-18 13:37:43.997 [main] INFO  pages.Receipt_Page - Trial Text is visible
+2024-12-18 13:37:44.027 [main] INFO  pages.Receipt_Page - Amex type card details matched
+2024-12-18 13:37:45.047 [main] INFO  pages.Receipt_Page - 
+Verifying Recurring Order Table in Receipt Page - 
+
+2024-12-18 13:37:45.065 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2024-12-18 13:37:45.081 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2024-12-18 13:37:45.081 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2024-12-18 13:37:45.081 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2024-12-18 13:37:45.095 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2024-12-18 13:37:45.109 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2024-12-18 13:37:45.122 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2024-12-18 13:37:45.122 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
+2024-12-18 13:37:48.786 [main] INFO  tests.Receipt - File downloaded successfully
+2024-12-18 13:37:48.787 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (1).pdf
+2024-12-18 13:37:52.190 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
+2024-12-18 13:38:53.692 [main] INFO  tests.Receipt - Email Subject: Activation of Trial Receipt
+2024-12-18 13:38:54.191 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
+2024-12-18 13:38:59.213 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

@@ -41,7 +41,7 @@ public class Receipt extends BaseClass {
 
         Scroll_Down();
 
-        receiptPage.verifyTrialRecurringOrderTable(licenseCount);
+        receiptPage.verifyRecurringOrderTable_(packagePrice, licenseCount);
 
         logger.info("Customer viewed the receipt page and verified the recurring order details.");
     }
@@ -114,26 +114,26 @@ public class Receipt extends BaseClass {
 
         SmallWait(1500);
 
+        /*
+         * verifying package name
+         */
+
         String packageText = packageSelectionPage.getPackageText();
         Matcher packageMatcher = Pattern.compile("Current Package: (.+?) \\(Trial\\)").matcher(packageText);
         String packageName = jsonData.getJSONObject("packageDetails").getString("package");
-
-        String trialStartText = packageSelectionPage.getTrialStartText();
-        Matcher trialStartMatcher = Pattern.compile("Trial Start Date : (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialStartText);
-        String startDate = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
-
-        String trialEndText = packageSelectionPage.getTrialEndText();
-        Matcher trialEndMatcher = Pattern.compile("Trial End Date: (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialEndText);
-        String endDate = LocalDate.now().plusDays(13).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
-        String subscriptionText = packageSelectionPage.getSubscriptionText();
-        Matcher subscriptionMatcher = Pattern.compile("Your current subscription (.+?) will upgrade trial to active from (\\d{1,2}/\\d{1,2}/\\d{4}) if you don't cancel you subscription.").matcher(subscriptionText);
-        String recurringDate = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
         if (packageMatcher.find()) {
             Assert.assertEquals(packageName, packageMatcher.group(1), "Package name mismatch; should be: " +packageName+ " but displayed: " +packageMatcher.group(1));
         }
         else{ Assert.fail("Package text not found"); }
+
+        /*
+         * verifying trial start text
+         */
+
+        String trialStartText = packageSelectionPage.getTrialStartText();
+        Matcher trialStartMatcher = Pattern.compile("Trial Start Date : (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialStartText);
+        String startDate = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
 
         if (trialStartMatcher.find()) {
             String extractedDate = new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("M/d/yyyy").
@@ -143,6 +143,14 @@ public class Receipt extends BaseClass {
         }
         else{ Assert.fail("Trial start date not found"); }
 
+        /*
+         * verifying trial end text
+         */
+
+        String trialEndText = packageSelectionPage.getTrialEndText();
+        Matcher trialEndMatcher = Pattern.compile("Trial End Date: (\\d{1,2}/\\d{1,2}/\\d{4})").matcher(trialEndText);
+        String endDate = LocalDate.now().plusDays(13).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
         if (trialEndMatcher.find()) {
             String extractedDate = LocalDate.parse(trialEndMatcher.group(1), DateTimeFormatter.ofPattern("M/d/yyyy")).
                     format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
@@ -150,6 +158,14 @@ public class Receipt extends BaseClass {
             Assert.assertEquals(endDate, extractedDate, "Trial End date mismatch; should be: " +endDate+ " but displayed: " +extractedDate);
         }
         else{ Assert.fail("Trial end date not found"); }
+
+        /*
+         * verifying subscription text
+         */
+
+        String subscriptionText = packageSelectionPage.getSubscriptionText();
+        Matcher subscriptionMatcher = Pattern.compile("Your current subscription (.+?) will upgrade trial to active from (\\d{1,2}/\\d{1,2}/\\d{4}) if you don't cancel you subscription.").matcher(subscriptionText);
+        String recurringDate = LocalDate.now().plusDays(14).format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
         if (subscriptionMatcher.find()) {
             String extractedDate = LocalDate.parse(subscriptionMatcher.group(2), DateTimeFormatter.ofPattern("M/d/yyyy")).

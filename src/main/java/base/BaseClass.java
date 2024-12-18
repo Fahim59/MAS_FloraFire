@@ -1,34 +1,25 @@
 package base;
 
 import com.github.javafaker.Faker;
-import constants.EndPoint;
 import factory.DriverFactory;
-import org.apache.commons.io.FileUtils;
+
 import org.apache.logging.log4j.*;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.json.*;
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import utils.ConfigLoader;
+import utils.*;
 
-import javax.activation.*;
-import javax.mail.*;
-import javax.mail.internet.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.text.*;
-import java.time.Duration;
+import java.time.*;
 import java.util.*;
 import java.util.List;
 

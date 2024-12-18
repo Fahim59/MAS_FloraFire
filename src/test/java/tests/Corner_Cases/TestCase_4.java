@@ -1,5 +1,5 @@
 /*
- * Scenario 3: Package Same – Addi. License Downgrade – Seasonal License Same
+ * Scenario 4: Package Same – Addi. License Downgrade – Seasonal License Same
 */
 
 package tests.Corner_Cases;

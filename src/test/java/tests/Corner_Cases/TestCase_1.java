@@ -77,7 +77,7 @@ public class TestCase_1 extends BaseClass {
 
         paymentPage.clickSubmitOrderBtn();
 
-        logger.info("Customer verifies seasonal license price and submit the order");
+        logger.info("Customer verifies prorated and recurring order price and submit the order");
     }
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)
@@ -90,7 +90,7 @@ public class TestCase_1 extends BaseClass {
     }
 
     @Test(description = "Verify that customer can see the receipt page and check the prorated and recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();

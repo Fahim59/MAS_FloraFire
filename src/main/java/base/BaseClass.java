@@ -1,9 +1,12 @@
 package base;
 
+import com.github.javafaker.Faker;
 import constants.EndPoint;
 import factory.DriverFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import utils.ConfigLoader;
 
@@ -22,6 +26,7 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileReader;
 import java.text.*;
 import java.time.Duration;
 import java.util.*;
@@ -32,23 +37,81 @@ public class BaseClass {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    private static final Logger logger = LogManager.getLogger(BaseClass.class);
+    private static final Logger baseLogger = LogManager.getLogger(BaseClass.class);
+    protected final Logger logger = LogManager.getLogger(getClass());
 
-    @BeforeClass
+    protected JSONObject jsonData;
+
+    private final Faker faker;
+    private final String fullName, firstName, lastName, address, addressCont, city, state, company;
+
+    //---------------------------------------------------------------------------------------------//
+    public BaseClass() {
+        faker = new Faker(new Locale("en-US"));
+
+        this.fullName = faker.name().fullName().replaceAll("\\.", "");
+        this.firstName = fullName.split(" ")[0];
+        this.lastName = fullName.split(" ")[fullName.split(" ").length - 1];
+
+        this.address = faker.address().streetAddress();
+        this.addressCont = faker.address().secondaryAddress();
+        this.city = faker.address().city();
+        this.state = faker.address().state();
+
+        this.company = faker.company().name();
+    }
+
+    public String getFullName() { return fullName; }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
+
+    public String getAddress() { return address; }
+    public String getAddressCont() { return addressCont; }
+    public String getCity() { return city; }
+    public String getState() { return state; }
+
+    public String getEmail() { return firstName.toLowerCase() + "@" + "qca6z4pm.mailosaur.net"; }
+
+    public String getPhone() {
+        String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));
+        String centralOfficeCode = String.format("%03d", faker.number().numberBetween(100, 999));
+        String lineNumber = String.format("%04d", faker.number().numberBetween(1000, 9999));
+
+        return String.format("(%s) %s-%s", areaCode, centralOfficeCode, lineNumber);
+    }
+
+    public String getCompany() { return company; }
+    //---------------------------------------------------------------------------------------------//
+
+    @BeforeSuite
     public static void launch_browser(){
         driver = DriverFactory.initializeDriver(System.getProperty("browser",
                 new ConfigLoader().initializeProperty().getProperty("browser")));
 
-        logger.info("Browser launched successfully");
+        baseLogger.info("Browser launched successfully");
     }
 
     @BeforeClass
-    public static void open_website(){
-        Open_Website(EndPoint.registration.url);
-        //Open_Website(EndPoint.login.url);
+    public void readJsonData() throws Exception {
+        FileReader data = null;
+        try {
+            String file = "src/main/resources/data.json";
+            data = new FileReader(file);
 
-        logger.info("Website open successfully");
+            JSONTokener tokener = new JSONTokener(data);
+            jsonData = new JSONObject(tokener);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+        finally {
+            if (data != null) {
+                data.close();
+            }
+        }
     }
+
     //---------------------------------------------------------------------------------------------//
     public String dateTime() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
@@ -65,66 +128,18 @@ public class BaseClass {
     public static void Scroll_Down() throws InterruptedException {
         SmallWait(1000);
         JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
-        js.executeScript("window.scrollBy(0,600)", "");
+        js.executeScript("window.scrollBy(0,500)", "");
     }
 
-    public static void SendEmail() throws InterruptedException {
-        SmallWait(2000);
+    public static void Scroll_Up() throws InterruptedException {
+        SmallWait(1000);
+        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
+        js.executeScript("window.scrollBy(0,-500)", "");
+    }
 
-        String decode_pass = "aWl1bXJmdHRmd3VldGdjdQ==";
-        String password = new String(Base64.getDecoder().decode(decode_pass.getBytes()));
-
-        final String from = "testmustafizur@gmail.com"; //For Yahoo, it should be a yahoo mail
-
-        final String p1 = "mrahaman59@yahoo.com";
-
-        String host = "smtp.gmail.com"; //smtp.mail.yahoo.com
-        Properties properties = System.getProperties();
-
-        properties.put("mail.smtp.host", host);
-        properties.put("mail.smtp.port", "587");
-        properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.auth", "true");
-
-        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("testmustafizur", password);
-            }
-        });
-
-        session.setDebug(true);
-        try {
-            MimeMessage message = new MimeMessage(session);
-            Multipart multipartObject = new MimeMultipart();
-
-            message.setFrom(new InternetAddress(from));
-
-            message.addRecipient(Message.RecipientType.BCC, new InternetAddress(p1));
-
-            message.setSubject("Test Execution Result Report"); //Mail Subject
-
-            BodyPart emailBody = new MimeBodyPart();
-            emailBody.setText("Dear Sir/Ma'am, " + "\n" + "Here is test result execution report." + "\n" + "\n" + "Test Executed By-" + "\n" + "Mustafizur Rahman");
-
-            BodyPart attachment = new MimeBodyPart();
-            String filename = new ConfigLoader().initializeProperty().getProperty("reportFile");
-            DataSource source = new FileDataSource(filename);
-            attachment.setDataHandler(new DataHandler(source));
-            attachment.setFileName(filename);
-
-            multipartObject.addBodyPart(emailBody); //Mail Body
-            multipartObject.addBodyPart(attachment); // Attachment
-
-            message.setContent(multipartObject);
-
-            System.out.println("Sending............");
-            Transport.send(message);
-            System.out.println("Email Sent Successfully....");
-        }
-        catch (MessagingException mex) {
-            mex.printStackTrace();
-            System.out.println("Email Sent Failed....");
-        }
+    public void verifyCurrentUrl(String expectedText) {
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
 
     //---------------------------------------------------------------------------------------//
@@ -265,24 +280,16 @@ public class BaseClass {
     public static void SaveLogFile(){
         try {
             File logFile = new File("Log Result/test.log");
-            File outputFile = new File("Log Result/test_output.txt");
-
-            String outputContents = FileUtils.readFileToString(outputFile, "UTF-8");
-            FileUtils.writeStringToFile(logFile, outputContents, "UTF-8", true);
-
-            outputFile.delete();
         }
         catch (Exception e) {
             System.out.println("Log save failed" +e);
         }
     }
 
-    //@AfterSuite
-    @AfterClass
-    public static void QuitBrowser() throws InterruptedException {
+    @AfterSuite
+    public static void QuitBrowser() {
         //driver.quit();
-        //SendEmail();
 
-        logger.info("Browser quit and Send Report successfully");
+        baseLogger.info("Browser quit successfully");
     }
 }

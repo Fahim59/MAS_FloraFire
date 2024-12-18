@@ -24,10 +24,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
-<!--                                <configuration>-->
-<!--                                    <parallel>methods</parallel>-->
-<!--                                    <threadCount>3</threadCount>  &lt;!&ndash; feature count &ndash;&gt;-->
-<!--                                </configuration>-->
+                <!--                                <configuration>-->
+                <!--                                    <parallel>methods</parallel>-->
+                <!--                                    <threadCount>3</threadCount>  &lt;!&ndash; feature count &ndash;&gt;-->
+                <!--                                </configuration>-->
             </plugin>
         </plugins>
     </build>
@@ -54,7 +54,7 @@
             <version>5.8.0</version>
         </dependency>
 
-                       <!-- TestNG Dependencies -->
+        <!-- TestNG Dependencies -->
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -62,7 +62,7 @@
             <version>7.7.0</version>
         </dependency>
 
-                            <!-- Report Dependencies -->
+        <!-- Report Dependencies -->
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
             <groupId>com.aventstack</groupId>
@@ -70,7 +70,7 @@
             <version>5.0.9</version>
         </dependency>
 
-                           <!-- Log Dependencies -->
+        <!-- Log Dependencies -->
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -85,7 +85,7 @@
             <version>2.17.1</version>
         </dependency>
 
-                      <!-- Excel Data Reading -->
+        <!-- Excel Data Reading -->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -106,7 +106,7 @@
             <artifactId>poi-ooxml-schemas</artifactId>
             <version>4.1.2</version>
         </dependency>
-                       <!-- Excel Data Reading Close -->
+        <!-- Excel Data Reading Close -->
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
@@ -127,6 +127,27 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20231013</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.mailosaur/mailosaur-java -->
+        <dependency>
+            <groupId>com.mailosaur</groupId>
+            <artifactId>mailosaur-java</artifactId>
+            <version>8.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.konghq/unirest-java -->
+        <dependency>
+            <groupId>com.konghq</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>3.14.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.27</version>
         </dependency>
 
     </dependencies>

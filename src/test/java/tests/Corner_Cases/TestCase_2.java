@@ -21,31 +21,46 @@ public class TestCase_2 extends BaseClass {
 
         packagePrice = 10.0;                       //Package Price
 
-        licenseCount = 8;                       //Additional User Count
+        licenseCount = 8;                        //Additional User Count
         upgradedLicenseCount = 10;              //Additional User Count Now
-
-        promoDiscount = 15;
     }
 
-    @Test(description = "Verify that the customer can purchase additional license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
+    @Test(description = "Verify that the customer can purchase additional license(s), confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerAdditionalLicensePurchase() throws InterruptedException {
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
 
-        locationAndUserPage.calculatePriorPackagePrepaid();
-        locationAndUserPage.calculateTodayPackageChange();
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
-        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
+        locationAndUserPage.calculatePriorPackagePrepaid();
+
+        /*
+         * calculating Today's Package Change details
+         */
+
+        locationAndUserPage.calculateTodayPackageChange();
 
         Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        /*
+         * purchase new additional license
+         */
+
+        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer upgraded additional license/s successfully and clicked on save button.");
+
+        /*
+         * verifying prorated and recurring order in payment page and submit order
+         */
 
         paymentPage.verifyProratedOrderTable();
 

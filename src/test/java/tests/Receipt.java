@@ -181,8 +181,6 @@ public class Receipt extends BaseClass {
         packageSelectionPage.packageCancelButtonVisibility();
 
         logger.info("Customer navigated back to the package page and verified the subscription data.");
-
-        summary();
     }
 
     public void checkTrialReceipt() {
@@ -231,20 +229,5 @@ public class Receipt extends BaseClass {
         else {
             logger.info("No emails found.");
         }
-    }
-
-    public void summary() {
-        logger.info("Package Price: {}", packagePrice);
-
-        logger.info("License Count: {}", licenseCount);
-        logger.info("Per User License Price: {}", perUserLicensePrice);
-        logger.info("Total License Price: {}", totalLicensePrice);
-
-        logger.info("Subtotal: {}", subTotal);
-
-        logger.info("Promo Applied: {}", promoApplied);
-        logger.info("Promo Discount: {}", promoDiscount);
-
-        logger.info("Recurring Fee: {}", recurringFee);
     }
 }

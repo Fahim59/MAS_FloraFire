@@ -25,15 +25,15 @@ public class TestCase_10 extends BaseClass {
         upgradedPackageName = "Silver";
 
         packagePrice = 10.0;                                    //Package Price
-        licenseCount = 10;                                     //Additional User Count
+        licenseCount = 8;                                     //Additional User Count
 
-        upgradedLicenseCount = 12;                           //Additional User Count Now
+        upgradedLicenseCount = 10;                           //Additional User Count Now
 
         seasonalMonthTotalDays = 30;                       //(Month Days) Fixed
         seasonalMonthUsedDays = 30;                       //Remaining Month Day
 
-        seasonalLicenseCount = 2;                       //Seasonal License Added
-        perUserSeasonalLicensePrice = 5;               //Seasonal License Price
+        seasonalLicenseCount = 0;                       //Seasonal License Added
+        perUserSeasonalLicensePrice = 0;               //Seasonal License Price
         seasonalMonth = 1;                            //Month
     }
 

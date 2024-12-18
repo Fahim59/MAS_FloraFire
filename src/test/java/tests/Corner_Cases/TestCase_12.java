@@ -23,9 +23,7 @@ public class TestCase_12 extends BaseClass {
 
         upgradedPackageName = "Silver";
 
-        upgradedLicenseCount = 12;                            //Additional User Count Now
-
-        promoDiscount = 15;
+        upgradedLicenseCount = 10;                    //Additional User Count Now
     }
 
     @Test(description = "Verify that the customer can downgrade package, additional license and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
@@ -59,8 +57,6 @@ public class TestCase_12 extends BaseClass {
 
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
-
-        logger.info("Customer downgraded package and additional license successfully and clicked on save button.");
 
         /*
          * verifying recurring order in payment page and submit order

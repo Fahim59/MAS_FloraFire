@@ -24,22 +24,20 @@ public class TestCase_11 extends BaseClass {
         upgradedPackageName = "Gold";
 
         packagePrice = 14.0;                                    //Package Price
-        licenseCount = 12;                                     //Additional User Count
+        licenseCount = 10;                                     //Additional User Count
 
-        upgradedLicenseCount = 14;                           //Additional User Count Now
+        upgradedLicenseCount = 12;                           //Additional User Count Now
 
         seasonalMonthTotalDays = 30;                       //(Month Days) Fixed
-        seasonalMonthUsedDays = 26;                       //Remaining Month Day
+        seasonalMonthUsedDays = 30;                       //Remaining Month Day
 
-        seasonalLicenseCount = 2;                       //Seasonal License Added
-        perUserSeasonalLicensePrice = 5;               //Seasonal License Price
+        seasonalLicenseCount = 0;                       //Seasonal License Added
+        perUserSeasonalLicensePrice = 0;               //Seasonal License Price
         seasonalMonth = 1;                            //Month
 
         upgradedSeasonalLicenseCount = 2;           //New Seasonal License Added
         upgradedPerUserSeasonalLicensePrice = 15;  //New Seasonal License Price
         upgradedSeasonalMonth = 1;                //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can upgrade package, additional and seasonal license and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
@@ -94,8 +92,6 @@ public class TestCase_11 extends BaseClass {
 
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
-
-        logger.info("Customer upgraded package, buys additional and seasonal license successfully and clicked on save button.");
 
         /*
          * verifying prorated and recurring order in payment page and submit order

@@ -1,6 +1,6 @@
 /*
  * New Account
- * Scenario 10: Package Upgrade – Addi. License Downgrade – Seasonal License Same
+ * Scenario 13: Package Upgrade – Addi. License Downgrade – Seasonal License Same
 */
 
 package tests.Corner_Cases;
@@ -32,22 +32,20 @@ public class TestCase_13 extends BaseClass {
         seasonalMonthTotalDays = 30;                       //(Month Days) Fixed
         seasonalMonthUsedDays = 30;                       //Remaining Month Day
 
-        seasonalLicenseCount = 2;                       //Seasonal License Added
-        perUserSeasonalLicensePrice = 5;               //Seasonal License Price
+        seasonalLicenseCount = 0;                       //Seasonal License Added
+        perUserSeasonalLicensePrice = 0;               //Seasonal License Price
         seasonalMonth = 1;                            //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can upgrade package, downgrade licence and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndLicensePurchase() throws InterruptedException {
-        /*
-         * calculating Prior Package Prepaid details
-         */
-
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
+
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
         locationAndUserPage.calculatePriorPackagePrepaid();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
@@ -89,8 +87,6 @@ public class TestCase_13 extends BaseClass {
 
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
-
-        logger.info("Customer downgraded additional license successfully and clicked on save button.");
 
         /*
          * verifying prorated and recurring order in payment page and submit order

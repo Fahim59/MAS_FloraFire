@@ -35,19 +35,17 @@ public class TestCase_10 extends BaseClass {
         seasonalLicenseCount = 2;                       //Seasonal License Added
         perUserSeasonalLicensePrice = 5;               //Seasonal License Price
         seasonalMonth = 1;                            //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can upgrade package, upgrade licence and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndLicensePurchase() throws InterruptedException {
-        /*
-         * calculating Prior Package Prepaid details
-         */
-
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
+
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
         locationAndUserPage.calculatePriorPackagePrepaid();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
@@ -93,8 +91,6 @@ public class TestCase_10 extends BaseClass {
         /*
          * verifying prorated and recurring order in payment page and submit order
          */
-
-        logger.info("Customer upgraded package, buys additional license successfully and clicked on save button.");
 
         paymentPage.verifyProratedOrderTable();
 

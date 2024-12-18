@@ -23,9 +23,7 @@ public class TestCase_8 extends BaseClass {
 
         upgradedPackageName = "Silver";
 
-        licenseCount = 8;                                      //Additional User Count
-
-        promoDiscount = 15;
+        licenseCount = 8;                   //Additional User Count
     }
 
     @Test(description = "Verify that the customer can downgrade package and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
@@ -33,6 +31,7 @@ public class TestCase_8 extends BaseClass {
         /*
          * package downgrade
          */
+
         upgradedPackagePrice = packageSelectionPage.selectPackageAndGetValue(upgradedPackageName);
 
         packageSelectionPage.clickSaveBtn();

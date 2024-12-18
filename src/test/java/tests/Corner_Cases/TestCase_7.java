@@ -38,19 +38,17 @@ public class TestCase_7 extends BaseClass {
         upgradedSeasonalLicenseCount = 2;           //New Seasonal License Added
         upgradedPerUserSeasonalLicensePrice = 15;  //New Seasonal License Price
         upgradedSeasonalMonth = 1;                //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can upgrade package, buys seasonal license and confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndSeasonalPurchase() throws InterruptedException {
-        /*
-         * calculating Prior Package Prepaid details
-         */
-
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
+
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
         locationAndUserPage.calculatePriorPackagePrepaid();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
@@ -69,14 +67,12 @@ public class TestCase_7 extends BaseClass {
         logger.info("Customer upgraded package to: {} level", upgradedPackageName);
 
         /*
-         * buying new seasonal license and calculating Today's Package Change details
+         * calculating Today's Package Change details
          */
 
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
-
-        locationAndUserPage.enterSeasonalLicenseAndMonth(upgradedSeasonalLicenseCount, upgradedSeasonalMonth);
 
         locationAndUserPage.calculateTodayPackageChange();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Today();
@@ -86,14 +82,18 @@ public class TestCase_7 extends BaseClass {
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        /*
+         * buying new seasonal license
+         */
+
+        locationAndUserPage.enterSeasonalLicenseAndMonth(upgradedSeasonalLicenseCount, upgradedSeasonalMonth);
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
         /*
          * verifying prorated and recurring order in payment page and submit order
          */
-
-        logger.info("Customer upgraded package, buys seasonal license successfully and clicked on save button.");
 
         paymentPage.verifyProratedOrderTable();
 
@@ -118,7 +118,7 @@ public class TestCase_7 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
+    @Test(description = "Verify that customer can see the receipt page and check the prorated and recurring payment details", priority = 3)
     public void verifyCustomerReceiptPageWithRecurringAndProratedOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
@@ -128,7 +128,7 @@ public class TestCase_7 extends BaseClass {
 
         Scroll_Up();
 
-        logger.info("Customer viewed the receipt page and verified the recurring order details.");
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)

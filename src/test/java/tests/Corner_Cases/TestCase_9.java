@@ -23,9 +23,7 @@ public class TestCase_9 extends BaseClass {
 
         upgradedPackageName = "Bronze";
 
-        upgradedLicenseCount = 10;                             //Additional User Count Now
-
-        promoDiscount = 15;
+        upgradedLicenseCount = 10;              //Additional User Count Now
     }
 
     @Test(description = "Verify that the customer can downgrade package, upgrade licence and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
@@ -33,6 +31,7 @@ public class TestCase_9 extends BaseClass {
         /*
          * package downgrade
          */
+
         upgradedPackagePrice = packageSelectionPage.selectPackageAndGetValue(upgradedPackageName);
 
         packageSelectionPage.clickSaveBtn();
@@ -40,18 +39,22 @@ public class TestCase_9 extends BaseClass {
         logger.info("Customer downgraded package to: {} level", upgradedPackageName);
 
         /*
-         * calculating downgraded package's license details and upgrading license
+         * calculating downgraded package's license details
          */
 
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
 
-        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
-
         Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
+
+        /*
+         * upgrading additional license
+         */
+
+        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
 
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();

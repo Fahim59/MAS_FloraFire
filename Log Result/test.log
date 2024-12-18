@@ -1,0 +1,18 @@
+2024-12-18 21:53:27.600 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 21:53:29.291 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 21:53:30.004 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-18 21:54:20.490 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 21:54:21.909 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 21:54:22.433 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-18 21:56:24.551 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 21:56:26.240 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 21:56:26.857 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-18 22:01:27.005 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 22:01:29.028 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 22:01:29.677 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-18 22:08:06.396 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 22:08:07.746 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 22:08:08.205 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-18 22:08:51.981 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-18 22:08:53.332 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-18 22:08:53.808 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

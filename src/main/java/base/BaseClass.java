@@ -111,7 +111,7 @@ public class BaseClass {
     }
 
     public static void Open_Website(String endPoint){
-        DriverFactory.getDriver().get(new ConfigLoader().initializeProperty().getProperty("baseUrl") +endPoint);
+        DriverFactory.getDriver().get(new ConfigLoader().initializeProperty().getProperty("baseUrl") );
     }
 
     public static void SmallWait(int second) throws InterruptedException {Thread.sleep(second);}
@@ -167,6 +167,13 @@ public class BaseClass {
                     js.executeScript("arguments[0].click();", option);
                 }
             }
+        }
+    }
+
+    public void click_CheckBox(By locator) {
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        if (!element.isSelected()) {
+            js.executeScript("arguments[0].click();", element);
         }
     }
 

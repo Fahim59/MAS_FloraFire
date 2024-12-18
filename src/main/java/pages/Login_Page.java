@@ -22,13 +22,13 @@ public class Login_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By emailField = By.xpath("//input[@id='Email']");
+    private final By emailField = By.xpath("//input[@name='username']");
 
-    private final By passwordField = By.xpath("//input[@id='Password']");
+    private final By passwordField = By.xpath("//input[@name='password']");
 
-    private final By rememberMeField = By.xpath("//input[@id='RememberMe']");
+    private final By rememberMeField = By.xpath("//input[@name='rememberMe']");
 
-    private final By loginBtn = By.xpath("//button[normalize-space()='Log in']");
+    private final By loginBtn = By.xpath("//span[normalize-space()='Login']");
 
     public Login_Page enterEmail(String email){
         write_Send_Keys(emailField, email);
@@ -41,12 +41,12 @@ public class Login_Page extends BaseClass{
     }
 
     public Login_Page clickRememberBtn(){
-        //click_CheckBox(rememberMeField);
+        click_CheckBox(rememberMeField);
         return this;
     }
 
     public void enterLoginDetails(String email, String password){
-        //enterEmail(email).enterPassword(password).clickRememberBtn().clickLoginBtn();
+        enterEmail(email).enterPassword(password).clickRememberBtn().clickLoginBtn();
     }
 
     public void clickLoginBtn() {

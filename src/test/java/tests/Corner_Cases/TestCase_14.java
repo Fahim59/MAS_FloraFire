@@ -44,13 +44,13 @@ public class TestCase_14 extends BaseClass {
 
     @Test(description = "Verify that the customer can upgrade package, downgrade additional and buy seasonal license and confirm the accuracy of prorated and recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgradeAndLicensePurchase() throws InterruptedException {
-        /*
-         * calculating Prior Package Prepaid details
-         */
-
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
+
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
         locationAndUserPage.calculatePriorPackagePrepaid();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();

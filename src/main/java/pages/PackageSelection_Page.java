@@ -42,6 +42,9 @@ public class PackageSelection_Page extends BaseClass{
     private final By packageChangeBtn = By.xpath("//button[normalize-space()='Package Change']");
     private final By packageCancelBtn = By.xpath("//button[normalize-space()='Package Cancel']");
 
+    //private final String packageHistoryTable = "//div[@class='previous-history']//table//tbody";
+    //private final By historyTr = By.xpath(packageHistoryTable+"/tr");
+
     public double selectPackageAndGetValue(String expectedTooltip) throws InterruptedException {
         js.executeScript("arguments[0].scrollIntoView();", driver.findElement(saveBtn));
 

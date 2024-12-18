@@ -17,6 +17,8 @@ public class CustomerLogin extends BaseClass {
         monthUsedDays = (int) monthDays[1];                    //for package and additional license
 
         licenseCount = Integer.parseInt(jsonData.getJSONObject("storeInfo").getString("licenseCount"));
+
+        promoDiscount = 15;
     }
 
     @Test(description = "Verify that a customer can log in successfully", priority = 1)
@@ -27,7 +29,7 @@ public class CustomerLogin extends BaseClass {
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
         else {
-            userName = "le@qca6z4pm.mailosaur.net";
+            userName = "rufina@qca6z4pm.mailosaur.net";
             loginPage.enterLoginDetails(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
 

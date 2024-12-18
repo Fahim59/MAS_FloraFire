@@ -32,8 +32,6 @@ public class StartPaidSubscription extends BaseClass {
 
         perUserLicensePrice = 5;
         totalLicensePrice = licenseCount * perUserLicensePrice;
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that after clicking on start paid subscription button, the customer is navigated to the payment page.", priority = 1)
@@ -51,10 +49,9 @@ public class StartPaidSubscription extends BaseClass {
         SmallWait(1000);
         paymentPage.verifyProratedOrderTable_Manual();
 
-        SmallWait(500);
         paymentPage.verifyRecurringOrderTable_Manual();
 
-        SmallWait(1000);
+        SmallWait(500);
 
         paymentPage.clickTermsBtn();
 
@@ -66,7 +63,7 @@ public class StartPaidSubscription extends BaseClass {
         SmallWait(300);
         paymentPage.clickPaidSubscriptionConfirmBtn();
 
-        logger.info("Customer verified prorated payment details and submitted the order.");
+        logger.info("Customer verified prorated and recurring payment details and submitted the order.");
     }
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 3)
@@ -151,6 +148,6 @@ public class StartPaidSubscription extends BaseClass {
         }
         else{ Assert.fail("Next Recurring Date not found"); }
 
-        logger.info("Customer navigated back to the package page and verified the subscription data.");
+        logger.info("Customer navigated to the package page and verified the subscription data.");
     }
 }

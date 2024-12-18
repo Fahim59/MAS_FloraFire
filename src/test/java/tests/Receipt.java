@@ -15,10 +15,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.regex.*;
 
-import kong.unirest.HttpResponse;
-import kong.unirest.JsonNode;
-import kong.unirest.Unirest;
-
 public class Receipt extends BaseClass {
     private Receipt_Page receiptPage;
     private PackageSelection_Page packageSelectionPage;
@@ -103,7 +99,7 @@ public class Receipt extends BaseClass {
     public void verifyCustomerReceivedTrialReceipt() throws InterruptedException {
         SmallWait(60000);
 
-        checkTrialReceipt();
+        checkReceipt("trialReceiptEmailSubject");
 
         logger.info("Customer successfully received the trial receipt.");
     }
@@ -181,53 +177,5 @@ public class Receipt extends BaseClass {
         packageSelectionPage.packageCancelButtonVisibility();
 
         logger.info("Customer navigated back to the package page and verified the subscription data.");
-    }
-
-    public void checkTrialReceipt() {
-        String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
-        String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
-        String emailAddress = getEmail();
-        String expectedCustomerName = customerName;
-        String expectedSubject = jsonData.getJSONObject("registration_info").getString("trialReceiptEmailSubject");
-
-        HttpResponse<JsonNode> response = Unirest.get("https://mailosaur.com/api/messages")
-                .basicAuth(apiKey, "")
-                .queryString("server", serverId)
-                .queryString("sentTo", emailAddress)
-                .asJson();
-
-        if (!response.getBody().getObject().getJSONArray("items").isEmpty()) {
-            kong.unirest.json.JSONObject latestEmail = response.getBody().getObject().getJSONArray("items").getJSONObject(0);
-
-            String messageId = latestEmail.getString("id");
-            String emailSubject = latestEmail.getString("subject");
-
-            logger.info("Email Subject: {}", emailSubject);
-
-            if (!expectedSubject.equalsIgnoreCase(emailSubject)) {
-                logger.info("Email subject does not match.");
-                return;
-            }
-
-            HttpResponse<JsonNode> messageResponse = Unirest.get("https://mailosaur.com/api/messages/" + messageId)
-                    .basicAuth(apiKey, "")
-                    .asJson();
-
-            kong.unirest.json.JSONObject messageContent = messageResponse.getBody().getObject();
-
-            kong.unirest.json.JSONArray toArray = messageContent.getJSONArray("to");
-
-            if (!toArray.isEmpty()) {
-                String customerName = toArray.getJSONObject(0).getString("name");
-
-                Assert.assertEquals(expectedCustomerName, customerName, "Customer Name mismatch; should be: " +expectedCustomerName+ " but displayed: " +customerName);
-            }
-            else {
-                logger.info("No recipient details found.");
-            }
-        }
-        else {
-            logger.info("No emails found.");
-        }
     }
 }

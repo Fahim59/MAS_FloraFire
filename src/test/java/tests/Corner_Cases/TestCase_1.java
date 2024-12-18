@@ -9,14 +9,12 @@ import org.testng.annotations.*;
 import pages.*;
 
 public class TestCase_1 extends BaseClass {
-    private PackageSelection_Page packageSelectionPage;
     private LocationAndUser_Page locationAndUserPage;
     private Payment_Page paymentPage;
     private Receipt_Page receiptPage;
 
     @BeforeMethod
     public void initializePageObjects() {
-        packageSelectionPage = new PackageSelection_Page(driver);
         locationAndUserPage = new LocationAndUser_Page(driver);
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
@@ -31,8 +29,6 @@ public class TestCase_1 extends BaseClass {
         seasonalLicenseCount = 2;           //Seasonal License Added
         perUserSeasonalLicensePrice = 5;   //Seasonal License Price
         seasonalMonth = 1;                //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can purchase new seasonal license(s), confirm the accuracy of prorated payment details and successfully submit the order.", priority = 1)
@@ -41,18 +37,34 @@ public class TestCase_1 extends BaseClass {
 
         SmallWait(1000);
 
+        /*
+         * calculating Prior Package Prepaid details
+         */
+
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
 
-        locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
+        /*
+         * calculating Today's Package Change details
+         */
 
         Object[] priceTable = locationAndUserPage.priceTable(licenseCount);
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        /*
+         * purchase new seasonal license
+         */
+
+        locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer purchased new seasonal license/s successfully and clicked on save button.");
+
+        /*
+         * verifying prorated and recurring order in payment page and submit order
+         */
 
         paymentPage.verifyProratedOrderTable();
 
@@ -77,7 +89,7 @@ public class TestCase_1 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the prorated payment details", priority = 3)
+    @Test(description = "Verify that customer can see the receipt page and check the prorated and recurring payment details", priority = 3)
     public void verifyCustomerReceiptPageWithProratedOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
@@ -87,7 +99,7 @@ public class TestCase_1 extends BaseClass {
 
         Scroll_Up();
 
-        logger.info("Customer viewed the receipt page and verified the prorated order details.");
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4)

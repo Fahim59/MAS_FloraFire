@@ -70,7 +70,7 @@ public class BaseClass {
     public BaseClass() {
         faker = new Faker(new Locale("en-US"));
 
-        this.fullName = faker.name().fullName();
+        this.fullName = faker.name().fullName().replaceAll("\\.", "");
         this.firstName = fullName.split(" ")[0];
         this.lastName = fullName.split(" ")[fullName.split(" ").length - 1];
 

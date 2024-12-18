@@ -32,8 +32,6 @@ public class TestCase_5 extends BaseClass {
         seasonalLicenseCount = 2;           //Seasonal License Added
         perUserSeasonalLicensePrice = 5;   //Seasonal License Price
         seasonalMonth = 1;                //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can downgrade additional license(s), buys seasonal license and confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)

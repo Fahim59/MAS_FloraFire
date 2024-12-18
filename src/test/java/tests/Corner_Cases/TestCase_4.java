@@ -22,8 +22,6 @@ public class TestCase_4 extends BaseClass {
         packagePrice = 10.0;                      //Package Price
 
         upgradedLicenseCount = 10;              //Additional User Count Now
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can downgrade additional license(s), confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
@@ -32,16 +30,28 @@ public class TestCase_4 extends BaseClass {
 
         SmallWait(1000);
 
-        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
+        /*
+         * calculating Today's Package Change details
+         */
 
         Object[] priceTable = locationAndUserPage.priceTable(upgradedLicenseCount);
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        /*
+         * downgrading additional license
+         */
+
+        locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
+
         Scroll_Down();
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer downgraded additional license/s successfully and clicked on save button.");
+
+        /*
+         * verifying recurring order in payment page and submit order
+         */
 
         paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
@@ -52,7 +62,7 @@ public class TestCase_4 extends BaseClass {
 
         paymentPage.clickSubmitOrderBtn();
 
-        logger.info("Customer verifies additional license price and submit the order");
+        logger.info("Customer verifies recurring order price and submit the order");
     }
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 2)
@@ -64,7 +74,7 @@ public class TestCase_4 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
+    @Test(description = "Verify that customer can see the receipt page and check the recurring payment details", priority = 3)
     public void verifyCustomerReceiptPageWithRecurringOrderDetails() {
         receiptPage.verifyRecurringOrderTable_(packagePrice, upgradedLicenseCount);
 

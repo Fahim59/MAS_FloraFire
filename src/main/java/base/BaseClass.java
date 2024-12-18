@@ -40,7 +40,7 @@ public class BaseClass {
     protected JSONObject jsonData;
 
     public static String userName, customerName, upgradedPackageName;
-    public static boolean promoApplied = true, packageSame = true;
+    public static boolean promoApplied = true;
 
     public static double tolerance = 0.011;
 
@@ -61,7 +61,7 @@ public class BaseClass {
 
     public static double perDaySeasonalLicensePrice, seasonalLicenseTotalPrice, upgradedTotalAmount, seasonalLicenseAdjustment;
 
-    public static double subTotal, promoDiscount, recurringFee, packageNetDue, licenseNetDue, seasonalNetDue, totalDue;
+    public static double subTotal, promoDiscount, recurringFee, totalDue;
 
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;

@@ -92,7 +92,7 @@ public class TestCase_5 extends BaseClass {
     }
 
     @Test(description = "Verify that customer can see the receipt page, check the prorated and recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringAndProratedOrderDetails() throws InterruptedException {
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();

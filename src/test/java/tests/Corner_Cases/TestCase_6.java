@@ -34,19 +34,17 @@ public class TestCase_6 extends BaseClass {
         seasonalLicenseCount = 6;           //Seasonal License Added
         perUserSeasonalLicensePrice = 5;   //Seasonal License Price
         seasonalMonth = 1;                //Month
-
-        promoDiscount = 15;
     }
 
     @Test(description = "Verify that the customer can upgrade package, confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageUpgrade() throws InterruptedException {
-        /*
-         * calculating Prior Package Prepaid details
-         */
-
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
+
+        /*
+         * calculating Prior Package Prepaid details
+         */
 
         locationAndUserPage.calculatePriorPackagePrepaid();
         locationAndUserPage.calculateSeasonalLicenseTotalFee_Prior();
@@ -61,6 +59,8 @@ public class TestCase_6 extends BaseClass {
 
         Scroll_Down();
         packageSelectionPage.clickSaveBtn();
+
+        logger.info("Customer upgraded package to: {} level", upgradedPackageName);
 
         /*
          * calculating Today's Package Change details
@@ -78,13 +78,11 @@ public class TestCase_6 extends BaseClass {
         totalLicensePrice = (double) priceTable[0];
         perUserLicensePrice = (double) priceTable[1];
 
+        paymentPage.clickPaymentTab();
+
         /*
          * verifying prorated and recurring order in payment page and submit order
          */
-
-        paymentPage.clickPaymentTab();
-
-        logger.info("Customer upgraded package successfully and clicked on save button.");
 
         paymentPage.verifyProratedOrderTable();
 
@@ -109,8 +107,8 @@ public class TestCase_6 extends BaseClass {
         logger.info("Customer successfully navigated to the Receipt page");
     }
 
-    @Test(description = "Verify that customer can see the receipt page check the recurring payment details", priority = 3)
-    public void verifyCustomerReceiptPageWithRecurringOrderDetails() throws InterruptedException {
+    @Test(description = "Verify that customer can see the receipt page and check the prorated and recurring payment details", priority = 3)
+    public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
         Scroll_Down();
@@ -119,7 +117,7 @@ public class TestCase_6 extends BaseClass {
 
         Scroll_Up();
 
-        logger.info("Customer viewed the receipt page and verified the recurring order details.");
+        logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
     @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)

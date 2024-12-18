@@ -51,9 +51,6 @@ public class Payment_Page extends BaseClass{
 
     private final By paymentFailedMessage = By.cssSelector("div[class='message-error validation-summary-errors'] ul li");
 
-    private final By recurringHeader = By.xpath("//h2[normalize-space()='Recurring Order Summary']");
-    private final By proratedHeader = By.xpath("//h2[normalize-space()='Current Order Summary Pro-Rated']");
-
     private final By recurringPackagePrice = By.xpath("//p[contains(normalize-space(), '/Monthly')]");
     private final By recurringLicensePrice = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[1]");
     private final By recurringSubtotal = By.xpath("//p[contains(normalize-space(), '/Monthly')]/following-sibling::p[2]");
@@ -226,6 +223,7 @@ public class Payment_Page extends BaseClass{
     }
     public void verifyRecurringOrderTable_Manual() {
         logger.info("\nVerifying Recurring Order Table (Manual) in Payment Page - \n");
+
         /*
          * validating package price
         */
@@ -263,6 +261,7 @@ public class Payment_Page extends BaseClass{
         /*
          * validating recurring fee
         */
+
         if(promoApplied){
             recurringFee = subTotal - promoDiscount;
         }
@@ -278,37 +277,6 @@ public class Payment_Page extends BaseClass{
 
     public void clickPaidSubscriptionConfirmBtn() {
         click_Element(confirmPaidSubscriptionBtn);
-    }
-
-    public void verifySeasonalLicensePrice() {
-
-        String proratedOrderTable = "//table/tbody";
-
-        double getSeasonalNetDue, getTotalDue;
-
-        /*
-         * Calculations
-         */
-
-        totalDue = new BigDecimal(seasonalLicenseTotalPrice).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        /*
-         * validating seasonal license price
-         */
-
-        getSeasonalNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[4]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(seasonalLicenseTotalPrice, getSeasonalNetDue, "Seasonal license due mismatch; should be: " +seasonalLicenseTotalPrice+ " but displayed: " +getSeasonalNetDue);
-
-        logger.info("Get Seasonal Fee: {} and Seasonal Fee: {}", getSeasonalNetDue, seasonalLicenseTotalPrice);
-
-        /*
-         * validating total due
-         */
-
-        getTotalDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[5]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-        Assert.assertEquals(totalDue, getTotalDue, "Total Due Today mismatch; should be: " +totalDue+ " but displayed: " +getTotalDue);
-
-        logger.info("Get Total Due: {} and Total Due: {}", getTotalDue, totalDue);
     }
 
     public void verifyProratedOrderTable() {
@@ -369,6 +337,7 @@ public class Payment_Page extends BaseClass{
     }
     public void verifyRecurringOrderTable(double packageFee, double licenseAmount) {
         logger.info("\nVerifying Recurring Order Table in Payment Page - \n");
+
         /*
          * validating package price
          */
@@ -406,6 +375,7 @@ public class Payment_Page extends BaseClass{
         /*
          * validating recurring fee
          */
+
         if(promoApplied){
             recurringFee = subTotal - promoDiscount;
         }

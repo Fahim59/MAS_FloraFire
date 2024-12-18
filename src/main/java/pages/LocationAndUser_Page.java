@@ -85,14 +85,13 @@ public class LocationAndUser_Page extends BaseClass{
         return this;
     }
 
-    public LocationAndUser_Page clickIncludeMASDirectBtn(){
+    public void clickIncludeMASDirectBtn(){
         click_CheckBox(includeMASField);
-        return this;
     }
 
-    public LocationAndUser_Page enterPrimaryStoreInfoDetails(String storeName, String name, String timeZone, String fax) {
+    public void enterPrimaryStoreInfoDetails(String storeName, String name, String timeZone, String fax) {
 
-        return clickSameAsBillingBtn().enterPrimaryStoreName(storeName).enterContactPersonName(name).selectTimeZone(timeZone).
+        clickSameAsBillingBtn().enterPrimaryStoreName(storeName).enterContactPersonName(name).selectTimeZone(timeZone).
                 enterFaxNumber(fax).clickIncludeMASDirectBtn();
     }
 
@@ -268,7 +267,6 @@ public class LocationAndUser_Page extends BaseClass{
 
         return seasonalLicenseTotalPrice;
     }
-
     public double calculateSeasonalLicenseTotalFee_Today(){
         return upgradedTotalAmount = upgradedSeasonalLicenseCount * upgradedPerUserSeasonalLicensePrice * upgradedSeasonalMonth;
     }
@@ -292,10 +290,8 @@ public class LocationAndUser_Page extends BaseClass{
         logger.info("Per Day License Price: {}", perDayLicensePrice);
         logger.info("License Remaining Price: {}", licenseRemainingAmount);
 
-        //return licenseRemainingAmount;
         return new Object[] {packageRemainingAmount, licenseRemainingAmount};
     }
-
     public Object[] calculateTodayPackageChange(){
         logger.info("\nCalculating Today's Package Change - \n");
 
@@ -315,23 +311,6 @@ public class LocationAndUser_Page extends BaseClass{
         logger.info("Upgraded Per Day License Price: {}", upgradedPerDayLicensePrice);
         logger.info("License Need to Pay: {}", licenseNeedToPay);
 
-        //return licenseNeedToPay;
         return new Object[] {packageNeedToPay, licenseNeedToPay};
-    }
-
-    public double calculateTodayPackageChange_Seasonal(){
-        logger.info("\nCalculating Seasonal Today's Package Change - \n");
-
-        Object[] priceTable = priceTable(Integer.parseInt(String.valueOf(upgradedLicenseCount)));
-        upgradedPerUserLicensePrice = (double) priceTable[1];
-
-        upgradedPerDayLicensePrice = (upgradedLicenseCount * upgradedPerUserLicensePrice) / monthTotalDays;
-        licenseNeedToPay = new BigDecimal(upgradedPerDayLicensePrice * monthUsedDays).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        logger.info("Upgraded Per User License Price: {}", upgradedPerUserLicensePrice);
-        logger.info("Upgraded Per Day License Price: {}", upgradedPerDayLicensePrice);
-        logger.info("License Need to Pay: {}", licenseNeedToPay);
-
-        return licenseNeedToPay;
     }
 }

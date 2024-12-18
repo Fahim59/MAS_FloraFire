@@ -59,7 +59,6 @@ public class PackageSelection_Page extends BaseClass{
             if (packageTooltipText != null && packageTooltipText.contains(expectedTooltip)) {
 
                 packageFee = Double.parseDouble(packageTooltipText.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
-                //System.out.println("Package Fee: "+packageFee);
 
                 tryNow.click();
                 break;

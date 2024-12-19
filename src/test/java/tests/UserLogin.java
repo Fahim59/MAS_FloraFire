@@ -6,25 +6,32 @@ import pages.*;
 
 public class UserLogin extends BaseClass {
     private Login_Page loginPage;
+    private Home_Page homePage;
+
+    String userName, password;
 
     @BeforeMethod
     public void initializePageObjects() {
         loginPage = new Login_Page(driver);
+        homePage = new Home_Page(driver);
     }
 
     @Test(description = "Verify that a user can log in successfully", priority = 1)
     public void verifyUserSuccessfulLogin() {
         Open_Website("");
 
-        loginPage.enterLoginDetails("mustafiz","11!!qqQQ");
+        userName = jsonData.getJSONObject("login_info").getString("username");
+        password = jsonData.getJSONObject("login_info").getString("password");
+
+        loginPage.enterLoginDetails(userName, password);
 
         logger.info("User logged in successfully.");
     }
 
-    @Test(description = "Verify that after successful login, the user is successfully navigated to Home page", priority = 2)
-    public void verifyUserNavigationAfterLogin() throws InterruptedException {
-        //SmallWait(1000);
-        //verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("packageSelection"));
+    @Test(description = "Verify that after successful login, user can see the Home menu", priority = 2)
+    public void verifyHomeMenuVisibilityAfterLogin() throws InterruptedException {
+        SmallWait(1000);
+        homePage.verifyHomeMenuVisibility();
 
         logger.info("User successfully navigated to the Home page");
     }

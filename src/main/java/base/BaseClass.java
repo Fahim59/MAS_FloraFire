@@ -133,6 +133,22 @@ public class BaseClass {
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
 
+    public void verifyElementVisibility(By locator) {
+        try {
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+            if (element.isDisplayed()) {
+                baseLogger.info("The 'Home' menu is visible.");
+            }
+            else {
+                Assert.fail("Login failed, the 'Home' menu is not visible.");
+            }
+        }
+        catch (Exception e) {
+            baseLogger.info("Test Failed: An exception occurred - {}", e.getMessage());
+        }
+    }
+
     //---------------------------------------------------------------------------------------//
     public WebElement wait_for_visibility(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

@@ -42,3 +42,11 @@
 2024-12-19 12:27:07.562 [main] INFO  tests.UserLogin - User logged in successfully.
 2024-12-19 12:27:08.003 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2024-12-19 12:27:08.619 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:35:37.935 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:35:47.330 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:35:47.942 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:57:04.409 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:57:14.616 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:57:19.279 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-19 12:57:19.279 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 12:57:19.852 [main] INFO  base.BaseClass - Browser quit successfully

@@ -16,3 +16,4 @@
 2024-12-18 22:08:51.981 [main] INFO  base.BaseClass - Browser launched successfully
 2024-12-18 22:08:53.332 [TestNG-test=nopStation/MAS_FloraFire_ClientPortal-1] INFO  tests.UserLogin - User successfully navigated to the Home page
 2024-12-18 22:08:53.808 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2024-12-19 11:41:31.022 [main] INFO  base.BaseClass - Browser launched successfully

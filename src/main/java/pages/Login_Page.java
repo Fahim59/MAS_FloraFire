@@ -22,11 +22,11 @@ public class Login_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By emailField = By.xpath("//input[@name='username']");
+    private final By emailField = By.xpath("(.//*[@name='username'])[1]");
 
-    private final By passwordField = By.xpath("//input[@name='password']");
+    private final By passwordField = By.xpath("(.//*[@name='password'])[1]");
 
-    private final By rememberMeField = By.xpath("//input[@name='rememberMe']");
+    private final By rememberMeField = By.cssSelector("label[for='mat-mdc-checkbox-1-input']");
 
     private final By loginBtn = By.xpath("//span[normalize-space()='Login']");
 

@@ -20,3 +20,25 @@
 2024-12-19 11:44:46.672 [main] INFO  base.BaseClass - Browser launched successfully
 2024-12-19 11:45:12.163 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2024-12-19 11:45:12.888 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 11:52:51.604 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 11:53:17.708 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 11:53:18.324 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 11:59:19.873 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 11:59:51.222 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 11:59:51.733 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:19:25.943 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:19:43.573 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:19:43.953 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 12:19:44.530 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:20:34.823 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:20:44.267 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:20:44.699 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 12:20:45.318 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:26:12.706 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:26:23.761 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:26:24.239 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 12:26:24.848 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-19 12:26:56.672 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-19 12:27:07.562 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-19 12:27:08.003 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-19 12:27:08.619 [main] INFO  base.BaseClass - Browser quit successfully

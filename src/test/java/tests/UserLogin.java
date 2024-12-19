@@ -1,7 +1,6 @@
 package tests;
 
 import base.BaseClass;
-import constants.EndPoint;
 import org.testng.annotations.*;
 import pages.*;
 
@@ -15,7 +14,6 @@ public class UserLogin extends BaseClass {
 
     @Test(description = "Verify that a user can log in successfully", priority = 1)
     public void verifyUserSuccessfulLogin() {
-        //Open_Website(EndPoint.login.url);
         Open_Website("");
 
         loginPage.enterLoginDetails("mustafiz","11!!qqQQ");

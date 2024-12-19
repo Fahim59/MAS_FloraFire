@@ -111,7 +111,7 @@ public class BaseClass {
     }
 
     public static void Open_Website(String endPoint){
-        DriverFactory.getDriver().get(new ConfigLoader().initializeProperty().getProperty("baseUrl") );
+        DriverFactory.getDriver().get(new ConfigLoader().initializeProperty().getProperty("baseUrl") +endPoint);
     }
 
     public static void SmallWait(int second) throws InterruptedException {Thread.sleep(second);}

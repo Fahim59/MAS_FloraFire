@@ -7,7 +7,7 @@
 </listeners>
 <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_ClientPortal">
     <classes>
-<!--        <class name="tests.UserLogin"/>-->
+        <class name="tests.UserLogin"/>
         <class name="tests.Value_Addition"/>
     </classes>
 </test>

@@ -30,6 +30,8 @@ public class Value_Page extends BaseClass{
     private final By displayOrderField = By.xpath("//*[contains(@formcontrolname,'displayOrder')]");
     private final By statusField = By.xpath("//label[normalize-space()='Active']");
 
+    private final By selectedField = By.xpath("//label[normalize-space()='Preselected']");
+
     private final By saveButton = By.xpath("//span[contains(text(),'Save')]");
 
     private final By message = By.xpath("(.//*[text()='value type added successfully'])[1]");
@@ -57,6 +59,12 @@ public class Value_Page extends BaseClass{
         click_CheckBox(statusField);
         return this;
     }
+    public Value_Page selectPreSelected(String flag){
+        if(flag.equalsIgnoreCase("Yes")){
+            click_CheckBox(selectedField);
+        }
+        return this;
+    }
     public void clickSaveButton(){
         click_Element(saveButton);
     }
@@ -65,14 +73,20 @@ public class Value_Page extends BaseClass{
         enterName(name).enterDisplayOrder(order).selectStatus().clickSaveButton();
     }
 
+    public void enterValueListDetails(String name, String order, String preselected){
+        enterName(name).enterDisplayOrder(order).selectPreSelected(preselected).clickSaveButton();
+    }
+
     public String getSuccessMessage(){
         return get_Text(message);
     }
 
-    public void clickDetailsButton(String valueName) throws InterruptedException {
-        System.out.println(get_Size(valueTr));
+    public int getValueTableTrSize() {
+        return get_Size(valueTr);
+    }
 
-        for(int l = 1; l<= get_Size(valueTr); l++){
+    public void clickDetailsButton(String valueName) throws InterruptedException {
+        for(int l = 1; l<= getValueTableTrSize(); l++){
 
             String name = driver.findElement(By.xpath(valueTable+ "/mat-row["+l+"]/mat-cell[2]")).getText();
             WebElement actionButton = driver.findElement(By.xpath(valueTable+ "/mat-row["+l+"]/mat-cell[1]"));

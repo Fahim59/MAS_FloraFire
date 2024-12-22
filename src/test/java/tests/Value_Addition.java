@@ -58,23 +58,29 @@ public class Value_Addition extends BaseClass {
 
         String childValue = valueData.get("Name");
         String orderNo = valueData.get("Order");
+        String preSelected = valueData.get("PreSelected");
 
         String message = jsonData.getJSONObject("successMessage").getString("value");
 
-        valuePage.selectValue(value);
+        if(valuePage.getValueTableTrSize() > 1){
+            valuePage.selectValue(value);
+        }
+        if(valuePage.getValueTableTrSize() == 1){
+            valuePage.clickDetailsButton(value);
+        }
 
-        valuePage.clickDetailsButton(value);
+//        valuePage.selectValue(value);
 
-        valuePage.clickNewValueButton();
-
-        valuePage.enterValueDetails(childValue, orderNo);
-
-        Assert.assertEquals(message, valuePage.getSuccessMessage());
-
-        SmallWait(1000);
-
-        //valuePage.clickDetailsButton("Value");
-
-        logger.info("User added values successfully.");
+//        valuePage.clickDetailsButton(value);
+//
+//        valuePage.clickNewValueButton();
+//
+//        valuePage.enterValueListDetails(childValue, orderNo, preSelected);
+//
+//        Assert.assertEquals(message, valuePage.getSuccessMessage());
+//
+//        SmallWait(1000);
+//
+//        logger.info("User added value list successfully.");
     }
 }

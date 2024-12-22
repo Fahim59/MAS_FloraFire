@@ -264,6 +264,16 @@ public class BaseClass {
         return elements.size();
     }
 
+    public boolean isElementVisible(By locator) {
+        try {
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            return element.isDisplayed();
+        }
+        catch (TimeoutException e) {
+            return false;
+        }
+    }
+
     public void upload_file(By locator, String path) throws InterruptedException {
         Actions action = new Actions(driver);
 

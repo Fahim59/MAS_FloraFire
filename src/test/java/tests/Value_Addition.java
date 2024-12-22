@@ -1,8 +1,12 @@
 package tests;
 
 import base.BaseClass;
+import base.DataSource;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
+
+import java.util.Map;
 
 public class Value_Addition extends BaseClass {
     private Home_Page homePage;
@@ -26,18 +30,50 @@ public class Value_Addition extends BaseClass {
         logger.info("User clicked on the value menu and successfully navigated to the Value Types page");
     }
 
-    @Test(description = "Verify that user can add values successfully", priority = 2)
-    public void verifyCustomerValueAddition() throws InterruptedException {
+    @Test(description = "Verify that user can add values successfully", dataProvider = "clientPortalData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
+    public void verifyValueAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
-        //valuePage.clickNewValueButton();
+        String childValue = valueData.get("Name");
+        String orderNo = valueData.get("Order");
 
-        //valuePage.enterValueDetails("Test","1");
+        String message = jsonData.getJSONObject("successMessage").getString("value");
 
-        //System.out.println(valuePage.getSuccessMessage());
-        //Assert.assertEquals("আবেদনটি সফলভাবে প্রেরণ করা হয়েছে", nameClearancePage.text());
+        valuePage.clickNewValueButton();
 
-        valuePage.clickDetailsButton("Value");
+        valuePage.enterValueDetails(childValue, orderNo);
+
+        Assert.assertEquals(message, valuePage.getSuccessMessage());
+
+        SmallWait(1000);
+
+        logger.info("User added values successfully.");
+    }
+
+    @Test(description = "Verify that user can add value list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 3)
+    public void verifyAbandonReasonValueListAdditions(Map<String, String> valueData) throws InterruptedException {
+        SmallWait(1000);
+
+        String value = "Abandon Reason";
+
+        String childValue = valueData.get("Name");
+        String orderNo = valueData.get("Order");
+
+        String message = jsonData.getJSONObject("successMessage").getString("value");
+
+        valuePage.selectValue(value);
+
+        valuePage.clickDetailsButton(value);
+
+        valuePage.clickNewValueButton();
+
+        valuePage.enterValueDetails(childValue, orderNo);
+
+        Assert.assertEquals(message, valuePage.getSuccessMessage());
+
+        SmallWait(1000);
+
+        //valuePage.clickDetailsButton("Value");
 
         logger.info("User added values successfully.");
     }

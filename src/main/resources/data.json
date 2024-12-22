@@ -5,5 +5,8 @@
   },
   "tabURL": {
     "valueTypes": "/valuetypes"
+  },
+  "successMessage": {
+    "value": "value type added successfully"
   }
 }

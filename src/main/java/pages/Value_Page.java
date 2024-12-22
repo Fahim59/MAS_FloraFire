@@ -39,6 +39,8 @@ public class Value_Page extends BaseClass{
 
     private final By detailsButton = By.xpath("//span[normalize-space()='Details']");
 
+    private final By searchField = By.xpath("//div[@id='mat-select-value-3']");
+
     public void clickNewValueButton(){
         click_Element(newValueButton);
     }
@@ -87,5 +89,11 @@ public class Value_Page extends BaseClass{
                 logger.info("Value does not exist");
             }
         }
+    }
+
+    public void selectValue(String value) throws InterruptedException {
+        click_Element(searchField);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
     }
 }

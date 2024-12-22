@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import factory.DriverFactory;
 
 import org.apache.logging.log4j.*;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.json.*;
 
 import org.openqa.selenium.*;
@@ -18,6 +19,7 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.*;
+import java.lang.reflect.Method;
 import java.text.*;
 import java.time.*;
 import java.util.*;

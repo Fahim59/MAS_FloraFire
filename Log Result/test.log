@@ -1,79 +1,16 @@
-2024-12-20 11:31:27.263 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 11:31:36.541 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 11:31:42.225 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 11:31:42.225 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 11:31:42.932 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 14:12:45.720 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 14:12:55.094 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 14:13:02.119 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 14:13:02.119 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 14:13:04.937 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 14:13:05.569 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 14:13:46.955 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 14:13:56.296 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 14:14:02.944 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 14:14:02.944 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 14:14:05.743 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 14:14:06.407 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 14:14:06.968 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:01:44.889 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:01:56.912 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:02:02.661 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:02:02.661 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:02:05.486 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:02:06.265 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:02:22.547 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:04:55.989 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:05:05.339 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:05:10.834 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:05:10.834 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:05:13.650 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:05:15.415 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:06:29.600 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:06:38.882 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:06:44.387 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:06:44.387 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:06:47.327 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:07:05.558 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:08:33.701 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:08:43.043 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:08:48.632 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:08:48.632 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:08:51.514 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:08:54.760 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 15:08:55.357 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:31:18.079 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:31:27.306 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:31:33.059 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:31:33.059 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:31:35.886 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:31:40.041 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:37:20.785 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:37:34.607 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:37:41.044 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:37:41.045 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:37:43.825 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:37:47.294 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 15:37:47.872 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 15:38:49.201 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 15:38:58.910 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 15:39:05.476 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 15:39:05.477 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 15:39:08.229 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 15:46:58.635 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 17:15:50.300 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 17:16:00.697 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 17:16:07.592 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 17:16:07.592 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 17:16:10.389 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 17:16:12.100 [main] INFO  pages.Value_Page - Value does not exist
-2024-12-20 17:16:13.211 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 17:16:13.810 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-20 17:20:02.047 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-20 17:20:11.565 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-20 17:20:17.163 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-20 17:20:17.163 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-20 17:20:20.052 [main] INFO  tests.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
-2024-12-20 17:20:21.929 [main] INFO  pages.Value_Page - Value does not exist
-2024-12-20 17:20:23.235 [main] INFO  tests.Value_Addition - User added values successfully.
-2024-12-20 17:20:23.855 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 00:01:47.274 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 00:02:35.315 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 00:08:59.459 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 00:09:54.093 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 00:10:51.483 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 00:11:39.167 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 13:50:01.335 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 13:50:03.511 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 14:13:35.760 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 14:14:03.801 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 14:14:06.200 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 14:15:36.969 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 14:15:53.073 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 14:15:56.133 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-22 14:16:51.250 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-22 14:16:54.286 [main] INFO  base.BaseClass - Browser quit successfully

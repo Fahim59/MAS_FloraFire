@@ -34,14 +34,15 @@ public class Value_Page extends BaseClass{
 
     private final By saveButton = By.xpath("//span[contains(text(),'Save')]");
 
-    private final By message = By.xpath("(.//*[text()='value type added successfully'])[1]");
+    private final By valueTypeMessage = By.xpath("(.//*[text()='value type added successfully'])[1]");
+    private final By valueMessage = By.xpath("(.//*[text()='value added successfully'])[1]");
 
     private final String valueTable = "//mat-table[@role='table']";
     private final By valueTr = By.xpath(valueTable+"/mat-row");
 
-    private final By detailsButton = By.xpath("//span[normalize-space()='Details']");
-
     private final By searchField = By.xpath("//div[@id='mat-select-value-3']");
+    private final By detailsButton = By.xpath("//span[normalize-space()='Details']");
+    private final By backButton = By.xpath("(//span[@class='mat-mdc-button-touch-target'])[1]");
 
     public void clickNewValueButton(){
         click_Element(newValueButton);
@@ -77,12 +78,21 @@ public class Value_Page extends BaseClass{
         enterName(name).enterDisplayOrder(order).selectPreSelected(preselected).clickSaveButton();
     }
 
-    public String getSuccessMessage(){
-        return get_Text(message);
+    public String getValueTypeSuccessMessage(){
+        return get_Text(valueTypeMessage);
+    }
+    public String getValueSuccessMessage(){
+        return get_Text(valueMessage);
     }
 
     public int getValueTableTrSize() {
         return get_Size(valueTr);
+    }
+
+    public void selectValue(String value) throws InterruptedException {
+        click_Element(searchField);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
     }
 
     public void clickDetailsButton(String valueName) throws InterruptedException {
@@ -105,9 +115,5 @@ public class Value_Page extends BaseClass{
         }
     }
 
-    public void selectValue(String value) throws InterruptedException {
-        click_Element(searchField);
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
-    }
+    public void clickBackButton() { click_Element(backButton); }
 }

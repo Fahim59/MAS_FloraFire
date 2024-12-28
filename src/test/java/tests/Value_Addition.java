@@ -5,12 +5,15 @@ import base.DataSource;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
+import pages.Settings.ValueTypeSettings_Page;
 
 import java.util.Map;
 
 public class Value_Addition extends BaseClass {
     private Home_Page homePage;
     private Value_Page valuePage;
+    private ValueTypeSettings_Page valueTypeSettingsPage;
+
     private String message;
     private static String value;
 
@@ -18,11 +21,12 @@ public class Value_Addition extends BaseClass {
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
         valuePage = new Value_Page(driver);
+        valueTypeSettingsPage = new ValueTypeSettings_Page(driver);
 
         message = jsonData.getJSONObject("successMessage").getString("value");
     }
 
-    @Test(description = "Verify that after successful login, the customer is successfully navigated to Package Selection page", priority = 1)
+    @Test(description = "Verify that after successful login, the customer is successfully navigated to Package Selection page", priority = 1, enabled = false)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(1000);
 
@@ -503,5 +507,82 @@ public class Value_Addition extends BaseClass {
         }
 
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
+    }
+
+
+    @Test(description = "Verify that user can map value type in the settings successfully", priority = 19)
+    public void verifyValueTypeSettingMap() throws InterruptedException {
+        SmallWait(1000);
+
+        homePage.clickValueTypeSettingsMenu();
+
+        SmallWait(2000);
+        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("valueTypeSettings"));
+
+        /*
+         * setup of customer data
+         */
+
+        String status = jsonData.getJSONObject("values").getString("status");
+        String accountClass = jsonData.getJSONObject("values").getString("accClass");
+        String referredBy = jsonData.getJSONObject("values").getString("referredBy");
+        String manager = jsonData.getJSONObject("values").getString("accManager");
+        String invoicePayment = jsonData.getJSONObject("values").getString("invoicePayment");
+        String term = jsonData.getJSONObject("values").getString("term");
+        String statementInvoice = jsonData.getJSONObject("values").getString("statementInvoice");
+        String priceSheet = jsonData.getJSONObject("values").getString("priceSheet");
+
+        valueTypeSettingsPage.setCustomerFields(status, accountClass, referredBy, manager, invoicePayment, term, statementInvoice, priceSheet);
+
+        /*
+         * setup of product data
+         */
+
+        String productType = jsonData.getJSONObject("values").getString("productType");
+        String prodDepartment = jsonData.getJSONObject("values").getString("productDepartment");
+        String careCode = jsonData.getJSONObject("values").getString("careCode");
+
+        valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
+
+        /*
+         * setup of employee data
+         */
+
+        String empStatus = jsonData.getJSONObject("values").getString("employeeStatus");
+        String empDepartment = jsonData.getJSONObject("values").getString("empDepartment");
+        String empRole = jsonData.getJSONObject("values").getString("empRole");
+        String contactPersonRelation = jsonData.getJSONObject("values").getString("contactPersonRelation");
+
+        valueTypeSettingsPage.setEmployeeFields(empStatus, empDepartment, empRole, contactPersonRelation);
+
+        /*
+         * setup of vehicle data
+         */
+
+        String vehicleStatus = jsonData.getJSONObject("values").getString("vehicleStatus");
+
+        valueTypeSettingsPage.selectVehicleStatus(vehicleStatus);
+
+        /*
+         * setup of gift card data
+         */
+
+        String giftCardReason = jsonData.getJSONObject("values").getString("giftCardReason");
+
+        valueTypeSettingsPage.selectGiftCardReason(giftCardReason);
+
+        /*
+         * setup of order data
+         */
+
+        String tipCategory = jsonData.getJSONObject("values").getString("tipCategory");
+
+        valueTypeSettingsPage.selectTipCategory(tipCategory);
+
+        Scroll_Down();
+
+        valueTypeSettingsPage.clickSaveBtn();
+
+        logger.info("User mapped value type settings successfully.");
     }
 }

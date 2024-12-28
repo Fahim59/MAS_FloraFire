@@ -26,7 +26,7 @@ public class Value_Addition extends BaseClass {
         message = jsonData.getJSONObject("successMessage").getString("value");
     }
 
-    @Test(description = "Verify that after successful login, the customer is successfully navigated to Package Selection page", priority = 1, enabled = false)
+    @Test(description = "Verify that after successful login, the customer is successfully navigated to Value Types page", priority = 1, enabled = false)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(1000);
 

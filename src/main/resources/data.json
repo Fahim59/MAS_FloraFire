@@ -1,11 +1,13 @@
 {
   "login_info": {
-    "username": "sean@qca6z4pm.mailosaur.net",
+    "username": "mustafiz",
     "password": "11!!qqQQ"
   },
   "tabURL": {
     "valueTypes": "/valuetypes",
-    "valueTypeSettings": "/valuetypesettings"
+    "valueTypeSettings": "/valuetypesettings",
+    "customerList": "/customers",
+    "customerMaintenance": "/customers/create"
   },
   "values": {
     "status": "Customer Status",

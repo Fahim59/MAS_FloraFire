@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" thread-count="2">
-<listeners>
-    <listener class-name="utils.Listeners"/>
-    <listener class-name="retry_analyzer.Transformer"/>
-</listeners>
+<!--<listeners>-->
+<!--    <listener class-name="utils.Listeners"/>-->
+<!--    <listener class-name="retry_analyzer.Transformer"/>-->
+<!--</listeners>-->
 <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_ClientPortal">
     <classes>
         <class name="tests.UserLogin"/>
-        <class name="tests.Value_Addition"/>
+<!--        <class name="tests.Value_Addition"/>-->
+        <class name="tests.Customer_Maintenance"/>
     </classes>
 </test>
 </suite>

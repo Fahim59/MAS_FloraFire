@@ -20,7 +20,7 @@ public class UserLogin extends BaseClass {
     public void verifyUserSuccessfulLogin() {
         Open_Website("");
 
-        userName = jsonData.getJSONObject("login_info").getString("username");
+        userName = jsonData.getJSONObject("login_info").getString("username"); //sean@qca6z4pm.mailosaur.net
         password = jsonData.getJSONObject("login_info").getString("password");
 
         loginPage.enterLoginDetails(userName, password);

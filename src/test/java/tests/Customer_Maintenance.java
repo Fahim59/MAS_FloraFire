@@ -82,17 +82,11 @@ public class Customer_Maintenance extends BaseClass {
         String[] customerInfo = customerData(data);
 
         SmallWait(2000);
-
-        //customerInfo[0];
-
-        String childValue = data.get("Flag");
-        System.out.println(childValue);
-
         customerMaintenancePage.clickNewCustomerButton();
 
         SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("customerMaintenance"));
 
-        customerMaintenancePage.enterCustomerId(customerInfo[0],"100");
+        customerMaintenancePage.enterCustomerId(customerInfo[0],customerInfo[1]);
     }
 }

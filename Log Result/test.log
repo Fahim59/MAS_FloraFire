@@ -287,3 +287,46 @@
 2024-12-31 18:07:00.560 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
 2024-12-31 18:07:00.568 [main] INFO  tests.Message_ShortCut - Short Code Test 2 added successfully
 2024-12-31 18:07:00.570 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 18:35:33.681 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 18:35:49.296 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 18:35:53.766 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 18:35:53.766 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 18:35:57.538 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2024-12-31 18:36:06.972 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2024-12-31 18:36:12.961 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2024-12-31 19:54:48.143 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 19:54:58.002 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 19:55:02.445 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 19:55:02.445 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 19:55:07.350 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2024-12-31 19:55:10.578 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 19:59:07.758 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 19:59:18.604 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 19:59:23.092 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 19:59:23.093 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 19:59:27.883 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2024-12-31 19:59:31.856 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 19:59:57.408 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 20:00:09.138 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 20:00:21.804 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 20:00:21.805 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 20:01:02.342 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 20:02:10.054 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 20:02:19.816 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 20:02:24.241 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 20:02:24.241 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 20:02:29.121 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2024-12-31 20:02:35.104 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 not found
+2024-12-31 20:02:35.127 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 not found
+2024-12-31 20:02:35.151 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2024-12-31 20:02:35.152 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2024-12-31 20:02:40.628 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.646 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.667 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.688 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.709 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.732 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.754 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2024-12-31 20:02:40.776 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
+2024-12-31 20:02:40.776 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2024-12-31 20:02:40.779 [main] INFO  base.BaseClass - Browser quit successfully

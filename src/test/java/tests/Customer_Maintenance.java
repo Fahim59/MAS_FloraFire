@@ -91,6 +91,8 @@ public class Customer_Maintenance extends BaseClass {
         customerMaintenancePage.enterCustomerPersonalDetails(customerInfo[0],customerInfo[1],customerInfo[2],customerInfo[3],
                 customerInfo[4],customerInfo[5],customerInfo[6],customerInfo[7],customerInfo[8]);
 
+        logger.info("Personal details added successfully for {}", customerInfo[2]);
+
         Scroll(0, 500);
 
         SmallWait(500);
@@ -99,6 +101,8 @@ public class Customer_Maintenance extends BaseClass {
                 storeName, customerInfo[12], customerInfo[13], customerInfo[14], customerInfo[15], customerInfo[15],
                 customerInfo[16], customerInfo[17]);
 
+        logger.info("Other details added successfully for {}", customerInfo[2]);
+
         SmallWait(500);
 
         customerMaintenancePage.clickSaveAndContButton();
@@ -106,11 +110,15 @@ public class Customer_Maintenance extends BaseClass {
         Scroll(0, -600);
 
         customerMaintenancePage.enterCustomerEmail(customerInfo[18]);
+        logger.info("Email added successfully for {}", customerInfo[2]);
 
         customerMaintenancePage.enterCustomerPhone(customerInfo[19]);
+        logger.info("Phone number added successfully for {}", customerInfo[2]);
 
         Scroll(0, 900);
 
         customerMaintenancePage.clickSaveButton();
+
+        logger.info("Successfully added customer - {}", customerInfo[2]);
     }
 }

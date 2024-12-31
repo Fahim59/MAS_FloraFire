@@ -22,6 +22,8 @@ public class Home_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
+    private final By storeDropdown = By.xpath("//mat-select[@panelclass='store-select-panel']/div/div/span/span");
+
     private final By homeMenu = By.xpath("//span[text()='Home']");
 
     private final By valueMenu = By.xpath("(.//span[text()='Value'])[1]");
@@ -52,6 +54,10 @@ public class Home_Page extends BaseClass{
     private final By employeesMenu = By.xpath("(.//span[text()='Employees'])[1]");
 
     private final By POSMenu = By.xpath("(.//span[text()='POS'])[1]");
+
+    public String getStoreName(){
+        return get_Text(storeDropdown);
+    }
 
     public void verifyHomeMenuVisibility(){
         verifyElementVisibility(homeMenu);

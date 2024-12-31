@@ -116,19 +116,15 @@ public class BaseClass {
 
     public static void SmallWait(int second) throws InterruptedException {Thread.sleep(second);}
 
-    public static void Scroll_Down() throws InterruptedException {
+    public static void Scroll(int xOffset, int yOffset) throws InterruptedException {
         SmallWait(1000);
         JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
-        js.executeScript("window.scrollBy(0,500)", "");
+        js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
     }
 
-    public static void Scroll_Up() throws InterruptedException {
-        SmallWait(1000);
-        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
-        js.executeScript("window.scrollBy(0,-500)", "");
-    }
+    public void verifyCurrentUrl(String expectedText) throws InterruptedException {
+        SmallWait(2000);
 
-    public void verifyCurrentUrl(String expectedText) {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
@@ -190,6 +186,12 @@ public class BaseClass {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         if (!element.isSelected()) {
             js.executeScript("arguments[0].click();", element);
+        }
+    }
+    public void selectCheckBox(By locator){
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        if (!element.isSelected()) {
+            element.click();
         }
     }
 
@@ -260,16 +262,6 @@ public class BaseClass {
     public int get_Size(By locator) {
         List<WebElement> elements = wait_for_presence_list(locator);
         return elements.size();
-    }
-
-    public boolean isElementVisible(By locator) {
-        try {
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-            return element.isDisplayed();
-        }
-        catch (TimeoutException e) {
-            return false;
-        }
     }
 
     public void upload_file(By locator, String path) throws InterruptedException {

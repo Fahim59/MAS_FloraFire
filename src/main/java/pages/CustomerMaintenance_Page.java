@@ -22,8 +22,6 @@ public class CustomerMaintenance_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By Field = By.xpath("");
-
     private final By newCustomerButton = By.xpath("//span[contains(text(),'New Customer')]");
 
     private final By manualIdType = By.xpath("(.//*[@type='radio'])[1]");
@@ -42,12 +40,13 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By faxField = By.xpath("//input[@formcontrolname='fax']");
 
-    private final By customerTypeField = By.xpath("//div[@id='mat-select-value-185']");
+    private final By customerStatusField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[2]");
+    private final By customerTypeField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[3]");
+    private final By customerAccountClassField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[4]");
+    private final By storeField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[6]");
 
-    private final By storeField = By.xpath("//div[@id='mat-select-value-191']");
-
-    private final By taxYesField = By.xpath("//label[@for='mat-radio-92-input']");
-    private final By taxNoField = By.xpath("//label[@for='mat-radio-93-input']");
+    private final By taxYesField = By.xpath("(//input[@type='radio' and @value='true'])[4]");
+    private final By taxNoField = By.xpath("(//input[@type='radio' and @value='false'])[4]");
     private final By taxNumberField = By.xpath("//input[@formcontrolname='taxCertificate']");
 
     private final By deliveryField = By.xpath("//*[@class='mdc-checkbox__native-control' and @type='checkbox']");
@@ -55,38 +54,36 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By discountField = By.xpath("//input[@formcontrolname='discount']");
 
+    private final By wireOutDiscountField = By.xpath("//input[@formcontrolname='discountOnWireout']");
+
     private final By referenceField = By.xpath("//input[@formcontrolname='customerReference']");
     private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
 
     private final By newEmailButton = By.xpath("//span[contains(text(),'New Email')]");
     private final By emailField = By.xpath("//input[@formcontrolname='email']");
-    private final By isPrimaryEmailField = By.xpath("//input[@id='mat-mdc-checkbox-23-input']");
+    private final By isPrimaryEmailField = By.xpath("(.//*[@type='checkbox'])[2]");
     private final By saveEmailBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
 
-    private final By newPhoneField = By.xpath("//span[contains(text(),'New Phone Number')]");
+    private final By newPhoneButton = By.xpath("//span[contains(text(),'New Phone Number')]");
     private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
-    private final By isPrimaryPhoneField = By.xpath("//input[@id='mat-mdc-checkbox-26-input']");
+    private final By isPrimaryPhoneField = By.xpath("(.//*[@type='checkbox'])[2]");
     private final By savePhoneBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
 
     private final By saveAndContBtn = By.xpath("//span[contains(text(),'Save And Continue')]");
     private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
 
-    public void clickNewCustomerButton() { click_Element(newCustomerButton); }
-
-    public void clickManualEntry() { click_Radio_Element(manualIdType, "false"); }
-    public void clickAutoEntry() { click_Radio_Element(autoIdType, "true"); }
-
-    public void enterId(String id){
-        write_Send_Keys(customerIdField, id);
+    public void clickNewCustomerButton() throws InterruptedException {
+        SmallWait(2000);
+        click_Element(newCustomerButton);
     }
 
     public CustomerMaintenance_Page enterCustomerId(String flag, String id){
         if(flag.equalsIgnoreCase("Yes")){
-            clickAutoEntry();
+            click_Radio_Element(autoIdType, "true");
         }
         else{
-            clickManualEntry();
-            enterId(id);
+            click_Radio_Element(manualIdType, "false");
+            write_Send_Keys(customerIdField, id);
         }
 
         return this;
@@ -105,14 +102,26 @@ public class CustomerMaintenance_Page extends BaseClass{
         write_Send_Keys(addressContField, address);
         return this;
     }
-    public CustomerMaintenance_Page selectCustomerCountry(String country){
+
+    public CustomerMaintenance_Page selectCustomerCountry(String country) throws InterruptedException {
+        click_Element(countryField);
         write_Send_Keys(countryField, country);
+
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+country+"')]")));
         return this;
     }
-    public CustomerMaintenance_Page selectCustomerState(String state){
+    public CustomerMaintenance_Page selectCustomerState(String state) throws InterruptedException {
+        SmallWait(1500);
+        click_Element(stateField);
+        SmallWait(500);
         write_Send_Keys(stateField, state);
+
+        SmallWait(500);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+state+"')]")));
         return this;
     }
+
     public CustomerMaintenance_Page enterCustomerCity(String city){
         write_Send_Keys(cityField, city);
         return this;
@@ -120,5 +129,150 @@ public class CustomerMaintenance_Page extends BaseClass{
     public CustomerMaintenance_Page enterCustomerZip(String zip){
         write_Send_Keys(zipField, zip);
         return this;
+    }
+
+    public void enterCustomerFax(){
+        write_Send_Keys(faxField, "+1-212-555-1234");
+    }
+
+    public CustomerMaintenance_Page selectCustomerStatus(String status) throws InterruptedException {
+        if(!get_Text(customerStatusField).equals(status)){
+            click_Element(customerStatusField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+status+"', ' ')]")));
+        }
+
+        return this;
+    }
+    public CustomerMaintenance_Page selectCustomerType(String type) throws InterruptedException {
+        if(!get_Text(customerTypeField).equals(type)){
+            click_Element(customerTypeField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+type+"')]")));
+        }
+
+        return this;
+    }
+
+    public CustomerMaintenance_Page selectCustomerClass(String accClass) throws InterruptedException {
+        if(!get_Text(customerAccountClassField).equals(accClass)){
+            click_Element(customerAccountClassField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+accClass+"', ' ')]")));
+        }
+
+        return this;
+    }
+    public CustomerMaintenance_Page selectStore(String store) throws InterruptedException {
+        if(!get_Text(storeField).contains(store)){
+            click_Element(storeField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
+        }
+
+        return this;
+    }
+
+    public CustomerMaintenance_Page enterTaxDetails(String flag) throws InterruptedException {
+        if(flag.equalsIgnoreCase("No")){
+            click_Radio_Element(taxNoField, "false");
+        }
+        else{
+            click_Radio_Element(taxYesField, "true");
+            SmallWait(500);
+            write_Send_Keys(taxNumberField, "9xx-xx-xxxx");
+        }
+
+        Scroll(0, 500);
+
+        SmallWait(500);
+
+        return this;
+    }
+
+    public CustomerMaintenance_Page addDeliveryCharge(String flag, String charge) throws InterruptedException {
+        if(flag.equalsIgnoreCase("Yes")){
+            selectCheckBox(deliveryField);
+            SmallWait(500);
+            write_Send_Keys(deliveryChargeField, charge);
+        }
+        return this;
+    }
+
+    public CustomerMaintenance_Page enterCustomerDiscount(String discount){
+        write_Send_Keys(discountField, discount);
+        return this;
+    }
+    public CustomerMaintenance_Page enterWireOutDiscount(String discount){
+        write_Send_Keys(wireOutDiscountField, discount);
+        return this;
+    }
+
+    public CustomerMaintenance_Page enterCustomerReference(String reference){
+        write_Send_Keys(referenceField, reference);
+        return this;
+    }
+
+    public void enterComment(String comment) throws InterruptedException {
+        write_Send_Keys(commentField, comment);
+
+        Scroll(0, 500);
+    }
+
+    public void enterCustomerPersonalDetails(String flag, String id, String name, String address, String addressCont, String country,
+                                             String state, String city, String zip) throws InterruptedException {
+
+        enterCustomerId(flag, id).enterCustomerName(name).enterCustomerAddress(address).enterCustomerAddressCont(addressCont).
+                selectCustomerCountry(country).selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).
+                enterCustomerFax();
+    }
+
+    public void enterCustomerOtherDetails(String status, String type, String accClass, String store, String flag, String deliveryFlag,
+                                          String charge, String discount, String wireDiscount, String reference, String comment) throws InterruptedException {
+
+        selectCustomerStatus(status).selectCustomerType(type).selectCustomerClass(accClass).selectStore(store).
+                enterTaxDetails(flag).addDeliveryCharge(deliveryFlag, charge).enterCustomerDiscount(discount).
+                enterWireOutDiscount(wireDiscount).enterCustomerReference(reference).enterComment(comment);
+    }
+
+    public void clickSaveAndContButton() throws InterruptedException {
+        SmallWait(2000);
+        click_Element(saveAndContBtn);
+    }
+
+    public CustomerMaintenance_Page clickEmailButton() {
+        click_Element(newEmailButton);
+        return this;
+    }
+    public void enterEmail(String email) throws InterruptedException {
+        write_Send_Keys(emailField, email);
+        selectCheckBox(isPrimaryEmailField);
+        SmallWait(500);
+        click_Element(saveEmailBtn);
+    }
+
+    public void enterCustomerEmail(String email) throws InterruptedException {
+        SmallWait(500);
+        clickEmailButton().enterEmail(email);
+    }
+
+    public CustomerMaintenance_Page clickPhoneButton() {
+        click_Element(newPhoneButton);
+        return this;
+    }
+    public void enterPhone(String phone) throws InterruptedException {
+        write_Send_Keys(phoneField, phone);
+        selectCheckBox(isPrimaryPhoneField);
+        SmallWait(500);
+        click_Element(savePhoneBtn);
+    }
+
+    public void enterCustomerPhone(String phone) throws InterruptedException {
+        SmallWait(500);
+        clickPhoneButton().enterPhone(phone);
+    }
+
+    public void clickSaveButton() {
+        click_Element_Js(saveBtn);
     }
 }

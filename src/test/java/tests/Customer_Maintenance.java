@@ -23,7 +23,6 @@ public class Customer_Maintenance extends BaseClass {
 
         homePage.clickCustomerMaintenanceMenu();
 
-        SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("customerList"));
 
         logger.info("User clicked on the customer menu and successfully navigated to the Customer List page");
@@ -40,16 +39,17 @@ public class Customer_Maintenance extends BaseClass {
          * data[6] = state
          * data[7] = city
          * data[8] = zip
-         * data[9] = customer type
-         * data[10] = store
-         * data[11] = tax flag
-         * data[12] = delivery flag
-         * data[13] = charge
-         * data[14] = discount
-         * data[15] = reference
-         * data[16] = comment
-         * data[17] = email
-         * data[18] = phone
+         * data[9] = status
+         * data[10] = customer type
+         * data[11] = class
+         * data[12] = tax flag
+         * data[13] = delivery flag
+         * data[14] = charge
+         * data[15] = discount
+         * data[16] = reference
+         * data[17] = comment
+         * data[18] = email
+         * data[19] = phone
          */
 
         String flag = valueData.get("Flag");
@@ -61,8 +61,9 @@ public class Customer_Maintenance extends BaseClass {
         String state = valueData.get("State");
         String city = valueData.get("City");
         String zip = valueData.get("Zip");
+        String status = valueData.get("Status");
         String customer_type = valueData.get("Type");
-        String store = valueData.get("Store");
+        String customer_class = valueData.get("Class");
         String tax_flag = valueData.get("Tax");
         String delivery_flag = valueData.get("Delivery");
         String charge = valueData.get("Charge");
@@ -72,21 +73,44 @@ public class Customer_Maintenance extends BaseClass {
         String email = valueData.get("Email");
         String phone = valueData.get("Phone");
 
-        return new String[] {flag, id, name, address, address_cont, country, state, city, zip, customer_type, store,
+        return new String[] {flag, id, name, address, address_cont, country, state, city, zip, status, customer_type, customer_class,
                 tax_flag, delivery_flag, charge, discount, reference, comment, email, phone};
     }
 
     @Test(description = "Verify that the user can add customer's data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("Test")
+    @DataSource.SheetName("Customer")
     public void verifyCustomerDataEntry(Map<String, String> data) throws InterruptedException {
         String[] customerInfo = customerData(data);
 
-        SmallWait(2000);
+        String storeName = homePage.getStoreName();
+
         customerMaintenancePage.clickNewCustomerButton();
 
-        SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("customerMaintenance"));
 
-        customerMaintenancePage.enterCustomerId(customerInfo[0],customerInfo[1]);
+        customerMaintenancePage.enterCustomerPersonalDetails(customerInfo[0],customerInfo[1],customerInfo[2],customerInfo[3],
+                customerInfo[4],customerInfo[5],customerInfo[6],customerInfo[7],customerInfo[8]);
+
+        Scroll(0, 500);
+
+        SmallWait(500);
+
+        customerMaintenancePage.enterCustomerOtherDetails(customerInfo[9], customerInfo[10], customerInfo[11],
+                storeName, customerInfo[12], customerInfo[13], customerInfo[14], customerInfo[15], customerInfo[15],
+                customerInfo[16], customerInfo[17]);
+
+        SmallWait(500);
+
+        customerMaintenancePage.clickSaveAndContButton();
+
+        Scroll(0, -600);
+
+        customerMaintenancePage.enterCustomerEmail(customerInfo[18]);
+
+        customerMaintenancePage.enterCustomerPhone(customerInfo[19]);
+
+        Scroll(0, 900);
+
+        customerMaintenancePage.clickSaveButton();
     }
 }

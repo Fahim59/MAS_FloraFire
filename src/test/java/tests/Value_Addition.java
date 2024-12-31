@@ -32,7 +32,6 @@ public class Value_Addition extends BaseClass {
 
         homePage.clickValueMenu();
 
-        SmallWait(1000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("valueTypes"));
 
         logger.info("User clicked on the value menu and successfully navigated to the Value Types page");
@@ -516,7 +515,6 @@ public class Value_Addition extends BaseClass {
 
         homePage.clickValueTypeSettingsMenu();
 
-        SmallWait(2000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("valueTypeSettings"));
 
         /*
@@ -579,7 +577,7 @@ public class Value_Addition extends BaseClass {
 
         valueTypeSettingsPage.selectTipCategory(tipCategory);
 
-        Scroll_Down();
+        Scroll(0, 500);
 
         valueTypeSettingsPage.clickSaveBtn();
 

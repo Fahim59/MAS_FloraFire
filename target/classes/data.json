@@ -7,7 +7,8 @@
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
     "customerList": "/customers",
-    "customerMaintenance": "/customers/create"
+    "customerMaintenance": "/customers/create",
+    "messageShortcut": "/messageShortcuts"
   },
   "values": {
     "status": "Customer Status",
@@ -36,6 +37,7 @@
   },
   "successMessage": {
     "valueType": "value type added successfully",
-    "value": "value added successfully"
+    "value": "value added successfully",
+    "shortCut": "Message Shortcut Created Successfully"
   }
 }

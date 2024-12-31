@@ -9,7 +9,8 @@
     <classes>
         <class name="tests.UserLogin"/>
 <!--        <class name="tests.Value_Addition"/>-->
-        <class name="tests.Customer_Maintenance"/>
+<!--        <class name="tests.Customer_Maintenance"/>-->
+        <class name="tests.Message_ShortCut"/>
     </classes>
 </test>
 </suite>

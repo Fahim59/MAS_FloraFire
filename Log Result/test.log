@@ -208,3 +208,82 @@
 2024-12-31 15:42:02.036 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2024-12-31 15:42:05.823 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
 2024-12-31 15:42:36.508 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 17:11:29.678 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 17:12:26.275 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 17:12:30.818 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 17:12:30.818 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 17:12:35.603 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2024-12-31 17:12:36.928 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 17:39:21.300 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 17:39:31.025 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 17:39:35.701 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 17:39:35.701 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 17:39:40.592 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2024-12-31 17:39:43.186 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.211 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.234 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.258 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.281 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.305 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.327 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.351 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.375 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.399 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:39:43.408 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
+2024-12-31 17:39:43.411 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 17:42:36.647 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 17:42:47.037 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 17:42:51.650 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 17:42:51.650 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 17:42:56.493 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2024-12-31 17:43:00.170 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.196 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.219 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.243 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.267 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.294 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.318 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.342 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.366 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.391 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 17:43:00.399 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
+2024-12-31 17:43:03.363 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.383 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.402 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.423 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.458 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.477 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.497 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.516 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.537 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.558 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 17:43:03.565 [main] INFO  tests.Message_ShortCut - Short Code Test 2 added successfully
+2024-12-31 17:43:03.568 [main] INFO  base.BaseClass - Browser quit successfully
+2024-12-31 18:06:33.099 [main] INFO  base.BaseClass - Browser launched successfully
+2024-12-31 18:06:43.890 [main] INFO  tests.UserLogin - User logged in successfully.
+2024-12-31 18:06:48.380 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2024-12-31 18:06:48.381 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2024-12-31 18:06:53.391 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2024-12-31 18:06:57.145 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.169 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.195 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.221 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.245 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.269 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.293 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.317 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.342 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.367 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
+2024-12-31 18:06:57.379 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
+2024-12-31 18:07:00.378 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.399 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.420 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.440 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.459 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.478 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.498 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.519 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.540 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.560 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
+2024-12-31 18:07:00.568 [main] INFO  tests.Message_ShortCut - Short Code Test 2 added successfully
+2024-12-31 18:07:00.570 [main] INFO  base.BaseClass - Browser quit successfully

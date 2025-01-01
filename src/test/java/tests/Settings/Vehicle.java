@@ -53,7 +53,7 @@ public class Vehicle extends BaseClass {
     }
 
     @Test(description = "Verify that the user can add vehicle data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("Test")
+    @DataSource.SheetName("Vehicle")
     public void verifyVehicleDataEntry(Map<String, String> data) throws InterruptedException {
         String[] vehicleInfo = vehicleData(data);
 

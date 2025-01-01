@@ -3,10 +3,9 @@ package tests.Settings;
 import base.BaseClass;
 import base.DataSource;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.Home_Page;
-import pages.Settings.Vehicle_Page;
+import org.testng.annotations.*;
+import pages.*;
+import pages.Settings.*;
 
 import java.util.Map;
 

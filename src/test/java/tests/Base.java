@@ -24,7 +24,7 @@ public class Base extends BaseClass {
         SmallWait(1000);
         //verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("valueTypes"));
 
-        logger.info("User clicked on the  menu and successfully navigated to the  page");
+        logger.info("User successfully navigated to the  page");
     }
 
     public static String[] xData(Map<String, String> valueData) {

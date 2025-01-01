@@ -9,7 +9,8 @@
     "customerList": "/customers",
     "customerMaintenance": "/customers/create",
     "messageShortcut": "/messageShortcuts",
-    "vehicle": "/vehicles"
+    "vehicle": "/vehicles",
+    "employeeSettings": "/employee-settings"
   },
   "values": {
     "status": "Customer Status",
@@ -40,6 +41,7 @@
     "valueType": "value type added successfully",
     "value": "value added successfully",
     "shortCut": "Message Shortcut Created Successfully",
-    "vehicle": "Vehicle Created Successfully"
+    "vehicle": "Vehicle Created Successfully",
+    "employeeSettings": "Employee settings saved successfully"
   }
 }

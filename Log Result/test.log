@@ -215,3 +215,76 @@
 2025-01-01 12:07:59.958 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 found
 2025-01-01 12:07:59.958 [main] INFO  tests.Settings.Vehicle - Vehicle BD-6178 added successfully
 2025-01-01 12:07:59.961 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 17:19:27.015 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 17:19:36.916 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 17:19:45.134 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 17:19:45.134 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 17:19:49.677 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 17:19:50.158 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:32:12.808 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:32:21.706 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:32:27.783 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:32:27.783 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:32:32.683 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:32:33.705 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:32:33.708 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:32:48.737 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:32:59.634 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:33:05.230 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:33:05.230 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:33:10.152 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:33:11.209 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:33:11.212 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:49:23.889 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:49:32.780 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:49:38.689 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:49:38.691 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:49:43.597 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:49:44.613 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:50:21.081 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:50:31.394 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:50:42.110 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:50:42.111 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:50:46.951 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:51:05.074 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:51:41.135 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:51:50.560 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:51:58.253 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:51:58.253 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:52:03.117 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:52:07.263 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:52:07.282 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:55:31.276 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:55:40.564 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:55:47.140 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:55:47.140 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:55:52.028 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:55:56.204 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:55:56.208 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:56:24.214 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:56:33.024 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:56:38.794 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:56:38.794 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:56:43.704 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:56:48.217 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:56:48.220 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:58:23.532 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:58:32.445 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:58:38.283 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:58:38.283 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:58:43.097 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:58:46.025 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 18:59:29.749 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 18:59:38.546 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 18:59:44.571 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 18:59:44.571 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 18:59:49.771 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 18:59:54.072 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 18:59:54.092 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 19:03:36.344 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 19:03:45.285 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 19:03:51.147 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 19:03:51.147 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 19:03:56.024 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-01 19:04:02.667 [main] INFO  tests.Settings.Employee_Settings - Successfully updated Employee Settings data
+2025-01-01 19:04:02.670 [main] INFO  base.BaseClass - Browser quit successfully

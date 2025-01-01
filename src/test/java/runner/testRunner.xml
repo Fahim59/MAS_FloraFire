@@ -12,7 +12,7 @@
 <!--        <class name="tests.Customer_Maintenance"/>-->
 <!--        <class name="tests.Message_ShortCut"/>-->
 <!--        <class name="tests.Settings.Vehicle"/>-->
-        <class name="tests.Settings.Vehicle"/>
+        <class name="tests.Settings.Employee_Settings"/>
     </classes>
 </test>
 </suite>

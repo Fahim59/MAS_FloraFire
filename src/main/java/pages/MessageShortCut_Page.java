@@ -63,7 +63,9 @@ public class MessageShortCut_Page extends BaseClass{
         return get_Text(successMessage);
     }
 
-    public void verifyShortCodeAddition(String shortcut) {
+    public void verifyShortCodeAddition(String shortcut) throws InterruptedException {
+        SmallWait(1500);
+
         for(int l = 1; l<= get_Size(rows); l++){
 
             String code = driver.findElement(By.xpath(shortcutTable+ "/tr["+l+"]/td[2]")).getText();

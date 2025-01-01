@@ -44,11 +44,13 @@ public class Vehicle_Page extends BaseClass{
         write_Send_Keys(licensePlateField, license);
         return this;
     }
-    public Vehicle_Page enterVIN(String vin){
+    public Vehicle_Page enterVIN(String vin) throws InterruptedException {
+        SmallWait(200);
         write_Send_Keys(vinField, vin);
         return this;
     }
-    public Vehicle_Page enterModel(String model){
+    public Vehicle_Page enterModel(String model) throws InterruptedException {
+        SmallWait(200);
         write_Send_Keys(modelField, model);
         return this;
     }
@@ -60,11 +62,13 @@ public class Vehicle_Page extends BaseClass{
         js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+status+"')]")));
         return this;
     }
-    public Vehicle_Page enterExpirationDate(String date){
+    public Vehicle_Page enterExpirationDate(String date) throws InterruptedException {
+        SmallWait(200);
         write_Send_Keys(expireDateField, date);
         return this;
     }
-    public Vehicle_Page enterMaintenanceDate(String date){
+    public Vehicle_Page enterMaintenanceDate(String date) throws InterruptedException {
+        SmallWait(200);
         write_Send_Keys(maintenanceDueField, date);
         return this;
     }
@@ -86,7 +90,9 @@ public class Vehicle_Page extends BaseClass{
     private final String vehicleTable = "//table[@role='table']/tbody";
     private final By rows = By.xpath(vehicleTable+"/tr");
 
-    public void verifyVehicleAddition(String shortcut) {
+    public void verifyVehicleAddition(String shortcut) throws InterruptedException {
+        SmallWait(1500);
+
         for(int l = 1; l<= get_Size(rows); l++){
 
             String code = driver.findElement(By.xpath(vehicleTable+ "/tr["+l+"]/td[2]")).getText();

@@ -1,332 +1,217 @@
-2024-12-31 10:57:12.035 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 10:57:27.292 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 10:57:33.313 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 10:57:33.313 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 10:57:37.040 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 10:57:45.096 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 11:03:16.699 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 11:03:26.790 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 11:03:31.475 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 11:03:31.475 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 11:03:35.245 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 11:03:45.508 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 11:06:17.805 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 11:06:28.641 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 11:06:36.680 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 11:06:36.680 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 11:06:40.489 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 11:06:54.466 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:08:17.514 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:08:27.307 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:08:31.872 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:08:31.872 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:08:35.825 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:08:49.857 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:20:26.682 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:20:36.437 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:20:41.431 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:20:41.431 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:20:45.242 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:20:59.432 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:22:47.361 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:22:57.088 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:23:01.777 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:23:01.778 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:23:05.588 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:23:17.646 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:27:50.419 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:28:00.211 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:28:04.713 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:28:04.713 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:28:08.615 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:28:20.630 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:34:03.833 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:34:13.732 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:34:18.191 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:34:18.191 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:34:22.040 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:34:36.115 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:52:06.112 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:52:15.993 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:52:20.480 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:52:20.480 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:52:24.275 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:52:38.198 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 12:53:09.431 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 12:53:18.939 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 12:53:23.323 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 12:53:23.324 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 12:53:27.171 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 12:53:56.556 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:02:58.980 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:03:17.038 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:03:21.819 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:03:21.820 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:03:25.596 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:03:40.390 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:05:07.406 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:05:17.293 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:05:21.655 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:05:21.655 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:05:25.454 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:05:40.183 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:07:29.802 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:07:39.746 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:07:44.210 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:07:44.210 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:07:48.061 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:08:02.809 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:33:34.403 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:33:49.988 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:33:55.515 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:33:55.516 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:33:59.296 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:33:59.327 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:34:20.639 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:34:30.789 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:34:35.758 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:34:35.758 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:34:39.570 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:34:54.632 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:39:04.969 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:39:14.794 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:39:19.400 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:39:19.400 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:39:23.253 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:39:39.160 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:43:33.208 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:43:43.072 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:43:48.296 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:43:48.296 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:43:52.068 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:44:09.101 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:46:38.780 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:46:49.017 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:46:53.497 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:46:53.497 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:46:57.437 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:47:14.055 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:49:53.399 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:50:03.048 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:50:07.506 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:50:07.507 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:50:11.262 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:50:30.697 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 13:53:33.882 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 13:53:44.679 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 13:53:49.199 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 13:53:49.200 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 13:53:52.941 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 13:54:12.321 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:03:22.690 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:03:32.481 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:03:37.563 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:03:37.564 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:03:41.357 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:04:02.071 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:04:29.206 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:04:39.228 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:04:43.628 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:04:43.630 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:04:47.546 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:05:08.700 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:11:46.041 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:11:57.883 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:12:02.308 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:12:02.308 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:12:06.194 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:13:00.218 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:13:13.452 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:13:19.944 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:13:19.944 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:13:23.735 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:14:02.680 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:14:45.316 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:14:56.682 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:15:02.290 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:15:02.290 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:15:06.094 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:15:29.657 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:17:10.862 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:17:21.259 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:17:31.259 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:17:31.260 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:17:35.067 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:17:58.569 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:26:44.716 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:26:55.412 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:27:09.214 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:27:13.838 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:27:13.838 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:27:17.616 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:27:42.341 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:28:01.212 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:28:12.214 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:28:18.118 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:28:18.118 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:28:21.843 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:28:46.832 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:35:40.946 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:36:37.183 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:36:42.295 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:36:42.296 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:36:46.033 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:37:12.850 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:38:41.880 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:38:51.532 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:38:55.966 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:38:55.966 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:38:59.779 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:39:25.425 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:41:50.631 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:41:59.861 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:42:04.330 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:42:04.332 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:42:08.120 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:42:31.672 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 14:57:40.809 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 14:57:53.815 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 14:57:58.363 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 14:57:58.363 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 14:58:02.118 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 14:58:48.228 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 15:16:31.311 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 15:16:41.265 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 15:16:46.190 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 15:16:46.190 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 15:16:50.002 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 15:17:56.943 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 15:39:13.115 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 15:39:59.441 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 15:40:04.868 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 15:40:04.868 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 15:40:08.704 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 15:40:39.190 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 15:41:39.463 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 15:41:53.819 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 15:42:02.036 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 15:42:02.036 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 15:42:05.823 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 15:42:36.508 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 17:11:29.678 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 17:12:26.275 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 17:12:30.818 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 17:12:30.818 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 17:12:35.603 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
-2024-12-31 17:12:36.928 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 17:39:21.300 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 17:39:31.025 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 17:39:35.701 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 17:39:35.701 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 17:39:40.592 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
-2024-12-31 17:39:43.186 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.211 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.234 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.258 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.281 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.305 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.327 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.351 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.375 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.399 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:39:43.408 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
-2024-12-31 17:39:43.411 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 17:42:36.647 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 17:42:47.037 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 17:42:51.650 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 17:42:51.650 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 17:42:56.493 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
-2024-12-31 17:43:00.170 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.196 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.219 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.243 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.267 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.294 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.318 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.342 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.366 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.391 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 17:43:00.399 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
-2024-12-31 17:43:03.363 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.383 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.402 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.423 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.458 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.477 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.497 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.516 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.537 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.558 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 17:43:03.565 [main] INFO  tests.Message_ShortCut - Short Code Test 2 added successfully
-2024-12-31 17:43:03.568 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 18:06:33.099 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 18:06:43.890 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 18:06:48.380 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 18:06:48.381 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 18:06:53.391 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
-2024-12-31 18:06:57.145 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.169 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.195 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.221 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.245 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.269 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.293 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.317 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.342 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.367 [main] INFO  pages.MessageShortCut_Page - Short Code Test not found
-2024-12-31 18:06:57.379 [main] INFO  tests.Message_ShortCut - Short Code Test added successfully
-2024-12-31 18:07:00.378 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.399 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.420 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.440 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.459 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.478 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.498 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.519 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.540 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.560 [main] INFO  pages.MessageShortCut_Page - Short Code Test 2 not found
-2024-12-31 18:07:00.568 [main] INFO  tests.Message_ShortCut - Short Code Test 2 added successfully
-2024-12-31 18:07:00.570 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 18:35:33.681 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 18:35:49.296 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 18:35:53.766 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 18:35:53.766 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 18:35:57.538 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2024-12-31 18:36:06.972 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2024-12-31 18:36:12.961 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
-2024-12-31 19:54:48.143 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 19:54:58.002 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 19:55:02.445 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 19:55:02.445 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 19:55:07.350 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2024-12-31 19:55:10.578 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 19:59:07.758 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 19:59:18.604 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 19:59:23.092 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 19:59:23.093 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 19:59:27.883 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2024-12-31 19:59:31.856 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 19:59:57.408 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 20:00:09.138 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 20:00:21.804 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 20:00:21.805 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 20:01:02.342 [main] INFO  base.BaseClass - Browser quit successfully
-2024-12-31 20:02:10.054 [main] INFO  base.BaseClass - Browser launched successfully
-2024-12-31 20:02:19.816 [main] INFO  tests.UserLogin - User logged in successfully.
-2024-12-31 20:02:24.241 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2024-12-31 20:02:24.241 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2024-12-31 20:02:29.121 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2024-12-31 20:02:35.104 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 not found
-2024-12-31 20:02:35.127 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 not found
-2024-12-31 20:02:35.151 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
-2024-12-31 20:02:35.152 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
-2024-12-31 20:02:40.628 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.646 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.667 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.688 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.709 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.732 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.754 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
-2024-12-31 20:02:40.776 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
-2024-12-31 20:02:40.776 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
-2024-12-31 20:02:40.779 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 11:50:09.773 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 11:50:45.124 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 11:50:53.956 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 11:50:59.796 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 11:50:59.796 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 11:51:04.582 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2025-01-01 11:51:09.233 [main] INFO  pages.MessageShortCut_Page - Short Code AML found
+2025-01-01 11:51:09.233 [main] INFO  tests.Message_ShortCut - Short Code AML added successfully
+2025-01-01 11:51:12.239 [main] INFO  pages.MessageShortCut_Page - Short Code AOL not found
+2025-01-01 11:51:12.248 [main] INFO  tests.Message_ShortCut - Short Code AOL added successfully
+2025-01-01 11:51:15.272 [main] INFO  pages.MessageShortCut_Page - Short Code ATB not found
+2025-01-01 11:51:15.292 [main] INFO  pages.MessageShortCut_Page - Short Code ATB not found
+2025-01-01 11:51:15.304 [main] INFO  tests.Message_ShortCut - Short Code ATB added successfully
+2025-01-01 11:51:18.322 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:51:18.339 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:51:18.363 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:51:18.369 [main] INFO  tests.Message_ShortCut - Short Code BR added successfully
+2025-01-01 11:51:21.316 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:51:21.335 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:51:21.357 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:51:21.378 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:51:21.384 [main] INFO  tests.Message_ShortCut - Short Code BW added successfully
+2025-01-01 11:51:24.367 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:51:24.386 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:51:24.402 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:51:24.419 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:51:24.433 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:51:24.451 [main] INFO  tests.Message_ShortCut - Short Code CG added successfully
+2025-01-01 11:51:27.387 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.402 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.418 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.438 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.462 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.486 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:51:27.490 [main] INFO  tests.Message_ShortCut - Short Code DS added successfully
+2025-01-01 11:51:30.575 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.596 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.615 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.635 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.655 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.673 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.693 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:51:30.700 [main] INFO  tests.Message_ShortCut - Short Code FBS added successfully
+2025-01-01 11:51:33.649 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.669 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.692 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.707 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.722 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.749 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.768 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.787 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:51:33.800 [main] INFO  tests.Message_ShortCut - Short Code GBY added successfully
+2025-01-01 11:51:36.750 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.768 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.786 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.804 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.822 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.841 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.856 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.875 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.894 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:51:36.900 [main] INFO  tests.Message_ShortCut - Short Code GL added successfully
+2025-01-01 11:51:36.905 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 11:54:18.002 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 11:54:26.819 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 11:54:32.466 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 11:54:32.466 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 11:54:37.387 [main] INFO  tests.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2025-01-01 11:54:42.489 [main] INFO  pages.MessageShortCut_Page - Short Code AML found
+2025-01-01 11:54:42.489 [main] INFO  tests.Message_ShortCut - Short Code AML added successfully
+2025-01-01 11:54:47.007 [main] INFO  pages.MessageShortCut_Page - Short Code AOL not found
+2025-01-01 11:54:47.029 [main] INFO  pages.MessageShortCut_Page - Short Code AOL found
+2025-01-01 11:54:47.029 [main] INFO  tests.Message_ShortCut - Short Code AOL added successfully
+2025-01-01 11:54:51.535 [main] INFO  pages.MessageShortCut_Page - Short Code ATB not found
+2025-01-01 11:54:51.555 [main] INFO  pages.MessageShortCut_Page - Short Code ATB not found
+2025-01-01 11:54:51.577 [main] INFO  pages.MessageShortCut_Page - Short Code ATB found
+2025-01-01 11:54:51.577 [main] INFO  tests.Message_ShortCut - Short Code ATB added successfully
+2025-01-01 11:54:56.077 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:54:56.094 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:54:56.111 [main] INFO  pages.MessageShortCut_Page - Short Code BR not found
+2025-01-01 11:54:56.133 [main] INFO  pages.MessageShortCut_Page - Short Code BR found
+2025-01-01 11:54:56.133 [main] INFO  tests.Message_ShortCut - Short Code BR added successfully
+2025-01-01 11:55:00.567 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:55:00.585 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:55:00.602 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:55:00.622 [main] INFO  pages.MessageShortCut_Page - Short Code BW not found
+2025-01-01 11:55:00.646 [main] INFO  pages.MessageShortCut_Page - Short Code BW found
+2025-01-01 11:55:00.646 [main] INFO  tests.Message_ShortCut - Short Code BW added successfully
+2025-01-01 11:55:05.157 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:55:05.181 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:55:05.202 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:55:05.221 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:55:05.240 [main] INFO  pages.MessageShortCut_Page - Short Code CG not found
+2025-01-01 11:55:05.262 [main] INFO  pages.MessageShortCut_Page - Short Code CG found
+2025-01-01 11:55:05.262 [main] INFO  tests.Message_ShortCut - Short Code CG added successfully
+2025-01-01 11:55:09.692 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.710 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.729 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.749 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.767 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.784 [main] INFO  pages.MessageShortCut_Page - Short Code DS not found
+2025-01-01 11:55:09.806 [main] INFO  pages.MessageShortCut_Page - Short Code DS found
+2025-01-01 11:55:09.806 [main] INFO  tests.Message_ShortCut - Short Code DS added successfully
+2025-01-01 11:55:14.246 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.263 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.280 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.299 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.317 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.336 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.357 [main] INFO  pages.MessageShortCut_Page - Short Code FBS not found
+2025-01-01 11:55:14.381 [main] INFO  pages.MessageShortCut_Page - Short Code FBS found
+2025-01-01 11:55:14.381 [main] INFO  tests.Message_ShortCut - Short Code FBS added successfully
+2025-01-01 11:55:18.844 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.868 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.891 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.911 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.935 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.956 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:18.979 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:19.000 [main] INFO  pages.MessageShortCut_Page - Short Code GBY not found
+2025-01-01 11:55:19.020 [main] INFO  pages.MessageShortCut_Page - Short Code GBY found
+2025-01-01 11:55:19.020 [main] INFO  tests.Message_ShortCut - Short Code GBY added successfully
+2025-01-01 11:55:23.549 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.567 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.584 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.602 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.619 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.635 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.654 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.671 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.691 [main] INFO  pages.MessageShortCut_Page - Short Code GL not found
+2025-01-01 11:55:23.712 [main] INFO  pages.MessageShortCut_Page - Short Code GL found
+2025-01-01 11:55:23.712 [main] INFO  tests.Message_ShortCut - Short Code GL added successfully
+2025-01-01 11:55:23.715 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 11:57:13.753 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 11:57:22.469 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 11:57:28.249 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 11:57:28.249 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 11:57:33.067 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-01 11:57:40.660 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-01 11:57:40.660 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-01 11:57:52.154 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 11:57:52.174 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 11:57:52.179 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2025-01-01 11:57:58.522 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-01 11:57:58.539 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-01 11:57:58.559 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 found
+2025-01-01 11:57:58.559 [main] INFO  tests.Settings.Vehicle - Vehicle BD-9101 added successfully
+2025-01-01 11:58:04.885 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1123 found
+2025-01-01 11:58:04.885 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1123 added successfully
+2025-01-01 11:58:11.201 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-01 11:58:11.218 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-01 11:58:11.236 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 found
+2025-01-01 11:58:11.236 [main] INFO  tests.Settings.Vehicle - Vehicle BD-3145 added successfully
+2025-01-01 11:58:17.554 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 11:58:17.571 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 11:58:17.589 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 11:58:17.610 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 11:58:17.630 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 found
+2025-01-01 11:58:17.631 [main] INFO  tests.Settings.Vehicle - Vehicle BD-6178 added successfully
+2025-01-01 11:58:17.633 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 11:58:57.023 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 11:59:05.770 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 11:59:11.405 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 11:59:11.405 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 11:59:16.232 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-01 11:59:23.394 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-01 11:59:23.394 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-01 12:03:04.100 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 12:03:16.987 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 12:03:23.187 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 12:03:23.187 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 12:03:28.049 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-01 12:03:35.272 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-01 12:03:35.273 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-01 12:03:41.613 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 12:03:41.635 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 12:03:41.657 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
+2025-01-01 12:03:41.658 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2025-01-01 12:03:41.660 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-01 12:04:48.628 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 12:05:02.055 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 12:05:07.923 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 12:05:07.923 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 12:05:12.804 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-01 12:05:20.033 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-01 12:05:20.033 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-01 12:05:26.449 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 12:05:26.471 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
+2025-01-01 12:05:26.471 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2025-01-01 12:06:55.483 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-01 12:07:04.335 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-01 12:07:10.036 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-01 12:07:10.036 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-01 12:07:14.879 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-01 12:07:22.848 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-01 12:07:22.849 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-01 12:07:30.104 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-01 12:07:30.136 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
+2025-01-01 12:07:30.136 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2025-01-01 12:07:37.725 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-01 12:07:37.742 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-01 12:07:37.763 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 found
+2025-01-01 12:07:37.763 [main] INFO  tests.Settings.Vehicle - Vehicle BD-9101 added successfully
+2025-01-01 12:07:44.988 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1123 found
+2025-01-01 12:07:44.988 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1123 added successfully
+2025-01-01 12:07:52.144 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-01 12:07:52.164 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-01 12:07:52.183 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 found
+2025-01-01 12:07:52.183 [main] INFO  tests.Settings.Vehicle - Vehicle BD-3145 added successfully
+2025-01-01 12:07:59.871 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 12:07:59.888 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 12:07:59.907 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 12:07:59.936 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-01 12:07:59.958 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 found
+2025-01-01 12:07:59.958 [main] INFO  tests.Settings.Vehicle - Vehicle BD-6178 added successfully
+2025-01-01 12:07:59.961 [main] INFO  base.BaseClass - Browser quit successfully

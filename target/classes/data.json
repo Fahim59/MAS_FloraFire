@@ -3,6 +3,7 @@
     "username": "sean@qca6z4pm.mailosaur.net",
     "password": "11!!qqQQ"
   },
+
   "tabURL": {
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
@@ -14,6 +15,7 @@
     "productList": "/products",
     "productMaintenance": "/products/create"
   },
+
   "values": {
     "status": "Customer Status",
     "accClass": "Account Class",
@@ -39,6 +41,7 @@
 
     "tipCategory": "Tip Category"
   },
+
   "successMessage": {
     "valueType": "value type added successfully",
     "value": "value added successfully",
@@ -47,6 +50,7 @@
     "employeeSettings": "Employee settings saved successfully",
     "productCreate": "Created Successfully"
   },
+
   "giftCard": {
     "category": "GiftCard",
     "type": "Gift Card",

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.Settings.Vehicle_Page;
 
 import java.time.Duration;
 
@@ -36,33 +35,32 @@ public class ProductMaintenance_Page extends BaseClass{
      */
 
     private final By codeField = By.xpath("//input[@formcontrolname='productCode']");
-    private final By typeField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[1]");
+    private final By typeField = By.cssSelector("#mat-select-value-3");
 
-    private final By statusField = By.xpath("(//span[contains(@class,'mat-mdc-select-value-text ng')])[2]");
+    private final By statusField = By.cssSelector("#mat-select-value-5");
     private final By productSKUField = By.xpath("//input[@formcontrolname='sku']");
 
-    private final By departmentField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[2]");
+    private final By departmentField = By.cssSelector("#mat-select-value-7");
     private final By itemNameField = By.xpath("//input[@formcontrolname='name']");
 
-    private final By careCodeField = By.xpath("(//span[contains(@class,'mat-mdc-select-value-text ng')])[3]");
+    private final By careCodeField = By.cssSelector("#mat-select-value-9");
     private final By binLocationField = By.xpath("//input[@formcontrolname='binLocation']");
 
-    private final By purchaseUnitField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[3]");
+    private final By purchaseUnitField = By.cssSelector("#mat-select-value-11");
     private final By purchaseUnitValueField = By.xpath("//input[@formcontrolname='purchasedUnitOfMeasureValue']");
 
-    private final By sellingUnitField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[4]");
+    private final By sellingUnitField = By.cssSelector("#mat-select-value-13");
     private final By sellingUnitValueField = By.xpath("//input[@formcontrolname='sellingUnitOfMeasureValue']");
 
     private final By descriptionField = By.xpath("//textarea[@formcontrolname='description']");
     private final By storeField = By.cssSelector("#mat-select-value-15");
 
-    //private final By productCategoryField = By.xpath("(//span[contains(@class,'mat-mdc-select-value-text ng')])[5]");
     private final By productCategoryField = By.cssSelector("#mat-select-value-17");
 
-    private final By commisionableField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[1]");
+    private final By commisionableField = By.xpath("//input[@id='mat-mdc-checkbox-1-input']");
 
-    private final By forceWireServiceField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[2]");
-    private final By wireServiceField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[6]");
+    private final By forceWireServiceField = By.xpath("//input[@id='mat-mdc-checkbox-2-input']");
+    private final By wireServiceField = By.cssSelector("#mat-select-value-19");
 
     public ProductMaintenance_Page enterProductCode(String code){
         write_Send_Keys(codeField, code);
@@ -178,10 +176,14 @@ public class ProductMaintenance_Page extends BaseClass{
         return this;
     }
 
-    public ProductMaintenance_Page isCommisionable(String flag) {
+    public ProductMaintenance_Page isCommisionable(String flag) throws InterruptedException {
         if(flag.equalsIgnoreCase("Yes")){
             selectCheckBox(commisionableField);
         }
+
+        Scroll(0, 600);
+        SmallWait(500);
+
         return this;
     }
     public void isForceWireService(String flag, String wireService) throws InterruptedException {
@@ -214,7 +216,7 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Pricing Details
      */
 
-    private final By nonTaxableField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[3]");
+    private final By nonTaxableField = By.xpath("//input[@id='mat-mdc-checkbox-3-input']");
 
     private final By basePriceField = By.xpath("//input[@formcontrolname='basePrice']");
     private final By midPriceField = By.xpath("//input[@formcontrolname='midPrice']");
@@ -223,7 +225,7 @@ public class ProductMaintenance_Page extends BaseClass{
     private final By wireOutField = By.xpath("//input[@formcontrolname='wireOut']");
     private final By unitCostField = By.xpath("//input[@formcontrolname='unitCost']");
 
-    private final By basePriceOverriddenField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[4]");
+    private final By basePriceOverriddenField = By.xpath("//input[@id='mat-mdc-checkbox-4-input']");
 
     public ProductMaintenance_Page isNonTaxable(String flag) {
         if(flag.equalsIgnoreCase("Yes")){
@@ -276,15 +278,18 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Inventory Details
      */
 
-    private final By trackInventoryField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[5]");
+    private final By trackInventoryField = By.xpath("//input[@id='mat-mdc-checkbox-5-input']");
 
     private final By onHandField = By.xpath("//input[@formcontrolname='onHandQuantity']");
     private final By onOrderField = By.xpath("//input[@formcontrolname='onOrderQuantity']");
     private final By lowStockField = By.xpath("//input[@formcontrolname='lowStockQuantiy']");
 
-    private final By ouOfStockSalesField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[6]");
+    private final By ouOfStockSalesField = By.xpath("//input[@id='mat-mdc-checkbox-6-input']");
 
-    public ProductMaintenance_Page isTrackInventory(String trackFlag) {
+    public ProductMaintenance_Page isTrackInventory(String trackFlag) throws InterruptedException {
+        Scroll(0, 400);
+        SmallWait(500);
+
         if(trackFlag.equalsIgnoreCase("Yes")){
             selectCheckBox(trackInventoryField);
         }
@@ -315,7 +320,7 @@ public class ProductMaintenance_Page extends BaseClass{
         }
     }
 
-    public void enterProductInventoryDetails(String trackFlag, String onHand, String onOrder, String lowStock, String stockFlag) {
+    public void enterProductInventoryDetails(String trackFlag, String onHand, String onOrder, String lowStock, String stockFlag) throws InterruptedException {
 
         isTrackInventory(trackFlag).enterOnHandQuantity(onHand).enterOnOrderQuantity(onOrder).enterLowStockQuantity(lowStock).
                 isAllowOutOfStockSales(trackFlag, stockFlag);
@@ -325,13 +330,13 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Other Details
      */
 
-    private final By isSeasonalField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[7]");
+    private final By isSeasonalField = By.xpath("//input[@id='mat-mdc-checkbox-7-input']");
 
-    private final By isSeasonalPricing = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[8]");
+    private final By isSeasonalPricing = By.xpath("//input[@id='mat-mdc-checkbox-8-input']");
 
     private final By seasonalPriceField = By.xpath("//input[@formcontrolname='seasonalPrice']");
 
-    private final By isSeasonalAvailability = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[9]");
+    private final By isSeasonalAvailability = By.xpath("//input[@id='mat-mdc-checkbox-9-input']");
 
     private final By startDateField = By.xpath("//input[@formcontrolname='seasonalAvailabilityStartDate']");
 
@@ -339,7 +344,10 @@ public class ProductMaintenance_Page extends BaseClass{
 
     private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
 
-    public ProductMaintenance_Page isSeasonalField(String seasonalFlag) {
+    public ProductMaintenance_Page isSeasonalField(String seasonalFlag) throws InterruptedException {
+        Scroll(0, 400);
+        SmallWait(500);
+
         if(seasonalFlag.equalsIgnoreCase("Yes")){
             selectCheckBox(isSeasonalField);
         }
@@ -398,7 +406,7 @@ public class ProductMaintenance_Page extends BaseClass{
     }
 
     public void enterProductOtherDetails(String seasonalFlag, String seasonalPricingFlag, String price, String seasonalAvailabilityFlag,
-                                         String startDate, String endDate, String comment) {
+                                         String startDate, String endDate, String comment) throws InterruptedException {
 
         isSeasonalField(seasonalFlag).isSeasonalPricingField(seasonalFlag, seasonalPricingFlag).
                 enterSeasonalPrice(seasonalFlag, seasonalPricingFlag, price).isSeasonalAvailabilityField(seasonalFlag,
@@ -410,7 +418,6 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Image Upload
      */
 
-    //private final By isImageURLField = By.xpath("(//*[@class='mdc-checkbox__native-control' and @type='checkbox'])[9]");
     private final By isImageURLField = By.cssSelector("#mat-mdc-checkbox-20-input");
 
     private final By imageURLField = By.xpath("//input[@formcontrolname='imageUrl']");

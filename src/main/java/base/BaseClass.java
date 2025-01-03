@@ -292,6 +292,10 @@ public class BaseClass {
         }
     }
 
+    public void refreshPage(){
+        driver.navigate().refresh();
+    }
+
     //---------------------------------------------------------------------------------------------//
     @AfterTest
     public static void SaveLogFile(){

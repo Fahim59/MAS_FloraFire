@@ -474,3 +474,277 @@ Session ID: 81bc2ae0-b963-4868-86eb-d91a78f36306
 2025-01-03 17:00:45.882 [main] INFO  pages.ProductMaintenance_Page - Product GC found
 2025-01-03 17:00:45.882 [main] INFO  tests.Product_Maintenance - Gift Card added successfully
 2025-01-03 17:00:45.885 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:12:56.487 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:13:05.867 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:13:12.281 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:13:12.281 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:13:17.236 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:13:22.599 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:16:30.568 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:16:40.058 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:16:46.089 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:16:46.089 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:16:51.090 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:16:56.406 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:18:06.336 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:18:15.433 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:18:21.460 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:18:21.460 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:18:26.426 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:18:33.199 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 17:18:33.203 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:22:10.953 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:22:20.700 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:22:27.021 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:22:27.021 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:22:31.993 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:22:39.452 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 17:22:39.455 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:25:50.325 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:25:59.769 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:26:05.850 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:26:05.850 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:26:10.801 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:26:19.763 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 17:26:19.765 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:47:08.964 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:47:19.636 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:47:26.153 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:47:26.153 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:47:31.158 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:47:40.324 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 17:47:40.327 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:49:05.129 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:49:14.570 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:49:19.932 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:49:19.932 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:49:24.873 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:49:33.154 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:50:55.213 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:51:04.403 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:51:10.415 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:51:10.415 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:51:15.352 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:51:32.939 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:53:25.421 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:53:35.587 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:53:43.683 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:53:43.684 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:53:48.684 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:54:13.217 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 17:57:12.902 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:57:24.431 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:57:31.485 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:57:31.485 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:57:36.519 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:58:44.995 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 17:59:03.872 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 17:59:11.323 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 17:59:11.323 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 17:59:16.296 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 17:59:26.837 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:00:12.047 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:00:20.936 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:00:26.873 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:00:26.873 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:00:31.859 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:00:43.861 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:00:43.864 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:04:25.983 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:04:47.947 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:04:54.387 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:04:54.387 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:04:59.354 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:05:11.467 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:05:11.470 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:11:27.434 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:11:37.945 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:11:43.748 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:11:43.748 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:11:48.749 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:12:01.055 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:12:01.058 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:12:43.286 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:12:52.453 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:12:58.384 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:12:58.384 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:13:03.342 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:13:16.087 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:13:16.090 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:15:48.657 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:16:00.451 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:16:06.267 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:16:06.267 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:16:11.276 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:16:23.995 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:16:23.998 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:20:59.581 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:22:12.585 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:22:22.365 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:22:28.803 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:22:28.803 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:22:33.747 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:22:48.064 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:22:48.067 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:23:16.335 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:23:27.170 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:23:34.161 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:23:34.161 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:23:39.143 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:23:54.363 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:23:54.366 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:24:30.236 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:24:40.353 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:24:46.232 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:24:46.232 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:24:51.219 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:25:06.186 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:25:06.189 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:25:21.343 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:25:30.231 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:25:36.117 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:25:36.117 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:25:41.079 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:25:55.964 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:25:55.968 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:29:16.593 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:29:25.630 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:29:32.012 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:29:32.012 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:29:37.010 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:29:51.908 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:29:51.911 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:43:56.488 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:44:06.454 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:44:12.907 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:44:12.907 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:44:17.844 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:44:34.048 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:44:34.050 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:47:21.377 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:47:30.952 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:47:36.869 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:47:36.869 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:47:41.885 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:47:58.731 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:47:58.734 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:49:14.818 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:49:24.490 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:49:30.356 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:49:30.356 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:49:35.346 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:49:51.856 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:49:51.859 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:54:56.207 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:55:05.924 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:55:11.728 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:55:11.729 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:55:16.631 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:55:42.717 [main] INFO  pages.ProductMaintenance_Page - Product HC found
+2025-01-03 18:55:42.718 [main] INFO  tests.Product_Maintenance - Successfully added data - HC
+2025-01-03 18:55:42.720 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:56:31.393 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:56:40.859 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:56:46.733 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:56:46.733 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:56:51.697 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 18:57:19.229 [main] INFO  pages.ProductMaintenance_Page - Product DL found
+2025-01-03 18:57:19.230 [main] INFO  tests.Product_Maintenance - Successfully added data - DL
+2025-01-03 18:57:39.677 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 18:59:08.580 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 18:59:18.087 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 18:59:23.961 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 18:59:23.961 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 18:59:28.921 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:00:07.780 [main] INFO  pages.ProductMaintenance_Page - Product TL found
+2025-01-03 19:00:07.780 [main] INFO  tests.Product_Maintenance - Successfully added data - TL
+2025-01-03 19:00:07.784 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:12:02.101 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:12:11.767 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:12:17.662 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:12:17.663 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:12:22.668 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:12:56.305 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:15:24.160 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:15:34.128 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:15:40.024 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:15:40.024 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:15:45.065 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:16:18.705 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:18:30.698 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:18:41.464 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:18:46.875 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:18:46.876 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:18:51.866 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:19:19.981 [main] INFO  pages.ProductMaintenance_Page - Product F001 found
+2025-01-03 19:19:19.982 [main] INFO  tests.Product_Maintenance - Successfully added data - F001
+2025-01-03 19:19:19.985 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:29:35.302 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:29:45.215 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:29:51.104 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:29:51.104 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:29:56.117 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:30:24.344 [main] INFO  pages.ProductMaintenance_Page - Product F002 found
+2025-01-03 19:30:24.344 [main] INFO  tests.Product_Maintenance - Successfully added data - F002
+2025-01-03 19:30:24.346 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:31:04.697 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:31:15.515 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:31:20.905 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:31:20.906 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:31:25.913 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:32:01.104 [main] INFO  pages.ProductMaintenance_Page - Product F003 found
+2025-01-03 19:32:01.104 [main] INFO  tests.Product_Maintenance - Successfully added data - F003
+2025-01-03 19:32:01.107 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:33:03.260 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:33:14.042 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:33:21.312 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:33:21.313 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:33:26.377 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:33:54.038 [main] INFO  pages.ProductMaintenance_Page - Product F004 found
+2025-01-03 19:33:54.038 [main] INFO  tests.Product_Maintenance - Successfully added data - F004
+2025-01-03 19:33:54.041 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:34:29.142 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:34:41.783 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:34:48.685 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:34:48.685 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:34:53.628 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:35:20.796 [main] INFO  pages.ProductMaintenance_Page - Product F005 found
+2025-01-03 19:35:20.796 [main] INFO  tests.Product_Maintenance - Successfully added data - F005
+2025-01-03 19:35:20.801 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:36:21.364 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:36:31.577 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:36:37.502 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:36:37.502 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:36:42.514 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:37:10.383 [main] INFO  pages.ProductMaintenance_Page - Product F006 found
+2025-01-03 19:37:10.383 [main] INFO  tests.Product_Maintenance - Successfully added product - F006
+2025-01-03 19:37:10.387 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:37:44.538 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:37:55.859 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:38:03.813 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:38:03.813 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:38:08.773 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:38:37.061 [main] INFO  tests.Product_Maintenance - Successfully added product - F007
+2025-01-03 19:38:37.063 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:39:36.200 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:39:45.670 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:39:52.264 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:39:52.264 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:39:57.285 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:40:25.351 [main] INFO  tests.Product_Maintenance - Successfully added product - F008
+2025-01-03 19:40:25.354 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:40:50.554 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:41:00.267 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:41:06.152 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:41:06.152 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:41:11.151 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:41:38.921 [main] INFO  tests.Product_Maintenance - Successfully added product - F009
+2025-01-03 19:41:38.925 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-03 19:44:31.781 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-03 19:44:41.850 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-03 19:44:47.302 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-03 19:44:47.303 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-03 19:44:52.255 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-03 19:45:23.256 [main] INFO  tests.Product_Maintenance - Successfully added product - F009
+2025-01-03 19:45:57.972 [main] INFO  tests.Product_Maintenance - Successfully added product - F010
+2025-01-03 19:45:57.976 [main] INFO  base.BaseClass - Browser quit successfully

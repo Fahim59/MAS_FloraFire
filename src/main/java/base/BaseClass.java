@@ -264,7 +264,7 @@ public class BaseClass {
         return elements.size();
     }
 
-    public void upload_file(By locator, String path) throws InterruptedException {
+    public void upload_file(By locator, String filename) throws InterruptedException {
         Actions action = new Actions(driver);
 
         WebElement element = wait_for_presence(locator);
@@ -273,8 +273,8 @@ public class BaseClass {
         SmallWait(1000);
 
         try {
-            StringSelection filePath = new StringSelection(path);
-            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
+            StringSelection fileSelection = new StringSelection(System.getProperty("user.dir") + new ConfigLoader().initializeProperty().getProperty("uploadPath") + filename);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(fileSelection, null);
 
             Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_CONTROL);
@@ -291,6 +291,7 @@ public class BaseClass {
             exp.printStackTrace();
         }
     }
+
     //---------------------------------------------------------------------------------------------//
     @AfterTest
     public static void SaveLogFile(){

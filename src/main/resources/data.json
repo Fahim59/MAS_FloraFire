@@ -3,6 +3,7 @@
     "username": "sean@qca6z4pm.mailosaur.net",
     "password": "11!!qqQQ"
   },
+
   "tabURL": {
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
@@ -10,8 +11,11 @@
     "customerMaintenance": "/customers/create",
     "messageShortcut": "/messageShortcuts",
     "vehicle": "/vehicles",
-    "employeeSettings": "/employee-settings"
+    "employeeSettings": "/employee-settings",
+    "productList": "/products",
+    "productMaintenance": "/products/create"
   },
+
   "values": {
     "status": "Customer Status",
     "accClass": "Account Class",
@@ -37,11 +41,22 @@
 
     "tipCategory": "Tip Category"
   },
+
   "successMessage": {
     "valueType": "value type added successfully",
     "value": "value added successfully",
     "shortCut": "Message Shortcut Created Successfully",
     "vehicle": "Vehicle Created Successfully",
-    "employeeSettings": "Employee settings saved successfully"
+    "employeeSettings": "Employee settings saved successfully",
+    "productCreate": "Created Successfully"
+  },
+
+  "giftCard": {
+    "category": "GiftCard",
+    "type": "Gift Card",
+    "description": "A versatile gift card, redeemable for any of our products—perfect for any occasion!",
+    "flag": "No",
+    "url": "",
+    "fileName": "gc.png"
   }
 }

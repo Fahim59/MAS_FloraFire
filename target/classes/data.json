@@ -10,7 +10,9 @@
     "customerMaintenance": "/customers/create",
     "messageShortcut": "/messageShortcuts",
     "vehicle": "/vehicles",
-    "employeeSettings": "/employee-settings"
+    "employeeSettings": "/employee-settings",
+    "productList": "/products",
+    "productMaintenance": "/products/create"
   },
   "values": {
     "status": "Customer Status",
@@ -42,6 +44,15 @@
     "value": "value added successfully",
     "shortCut": "Message Shortcut Created Successfully",
     "vehicle": "Vehicle Created Successfully",
-    "employeeSettings": "Employee settings saved successfully"
+    "employeeSettings": "Employee settings saved successfully",
+    "productCreate": "Created Successfully"
+  },
+  "giftCard": {
+    "category": "GiftCard",
+    "type": "Gift Card",
+    "description": "A versatile gift card, redeemable for any of our products—perfect for any occasion!",
+    "flag": "No",
+    "url": "",
+    "fileName": "gc.png"
   }
 }

@@ -16,7 +16,9 @@
     "productMaintenance": "/products/create",
     "giftCardList": "/giftCards",
     "discountList": "/discounts",
-    "discountMaintenance": "/discounts/create"
+    "discountMaintenance": "/discounts/create",
+    "employeeList": "/employees",
+    "employeeMaintenance": "/employees/create"
   },
 
   "values": {

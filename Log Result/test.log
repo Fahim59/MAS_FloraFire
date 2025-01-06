@@ -217,3 +217,83 @@ Session ID: a252652e-90f7-4678-b52d-6aa391e62a51
 2025-01-06 16:53:16.803 [main] INFO  tests.Discount_Maintenance - Successfully added data - FREEDEL
 2025-01-06 16:53:27.375 [main] INFO  tests.Discount_Maintenance - Successfully added data - MIDNIGHT100
 2025-01-06 16:53:27.378 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 18:52:42.443 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 18:52:56.908 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 18:53:12.615 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 18:53:12.617 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 18:53:17.619 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 18:53:23.475 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 18:56:45.149 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 18:56:55.968 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 18:57:01.487 [main] INFO  base.BaseClass - Test Failed: An exception occurred - The element with the reference efedace0-3407-4467-93b1-2a002fbc8195 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [972caac5-2c20-4cf9-b7e7-55d9dc89a467, isElementDisplayed {id=efedace0-3407-4467-93b1-2a002fbc8195}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31452, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (972caac5-2c20-4cf9-b7e7-55d9dc89a467)] -> xpath: //span[text()='Home']]
+Session ID: 972caac5-2c20-4cf9-b7e7-55d9dc89a467
+2025-01-06 18:57:01.487 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 18:57:06.481 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 18:57:12.285 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 18:58:12.960 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 18:58:32.442 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 18:58:38.973 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 18:58:38.973 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 18:58:43.946 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 18:58:53.528 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 18:58:53.532 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 18:59:15.550 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 18:59:25.268 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 18:59:34.348 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 18:59:34.348 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 18:59:39.260 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 18:59:50.407 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 18:59:50.412 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:01:07.130 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:01:15.977 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:01:22.010 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:01:22.012 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:01:27.003 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:01:39.482 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 19:01:39.485 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:14:27.819 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:14:37.758 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:14:43.607 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:14:43.607 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:14:48.632 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:15:06.727 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:16:33.262 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:16:42.428 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:16:48.784 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:16:48.785 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:16:53.713 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:17:08.478 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 19:17:08.481 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:18:32.477 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:18:42.069 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:18:48.018 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:18:48.020 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:18:52.944 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:19:11.373 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 19:19:11.376 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:46:43.463 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:46:55.622 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:47:04.889 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:47:04.889 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:47:09.827 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:47:28.467 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:49:03.840 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:49:14.149 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:49:20.591 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:49:20.591 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:49:25.548 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:49:44.297 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 19:53:40.827 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 19:53:53.705 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 19:53:59.527 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 19:53:59.527 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 19:54:04.485 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-06 19:54:23.850 [main] INFO  tests.Employees - Successfully added Employee - Ana
+2025-01-06 19:54:23.853 [main] INFO  base.BaseClass - Browser quit successfully

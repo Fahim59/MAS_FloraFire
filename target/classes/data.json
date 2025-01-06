@@ -1,6 +1,6 @@
 {
   "login_info": {
-    "username": "mustafiz",
+    "username": "sean@qca6z4pm.mailosaur.net",
     "password": "11!!qqQQ"
   },
 
@@ -14,7 +14,9 @@
     "employeeSettings": "/employee-settings",
     "productList": "/products",
     "productMaintenance": "/products/create",
-    "giftCardList": "/giftCards"
+    "giftCardList": "/giftCards",
+    "discountList": "/discounts",
+    "discountMaintenance": "/discounts/create"
   },
 
   "values": {
@@ -50,7 +52,7 @@
     "vehicle": "Vehicle Created Successfully",
     "employeeSettings": "Employee settings saved successfully",
     "productCreate": "Created Successfully",
-    "giftCardCreate": "Created Successfully"
+    "discountCreate": "Discount has been created successfully"
   },
 
   "giftCard": {

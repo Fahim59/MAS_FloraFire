@@ -105,3 +105,115 @@ Session ID: b1e062b7-4b25-4754-afc2-9fce5a9c84d5
 2025-01-06 13:31:06.216 [main] INFO  pages.GiftCard_Page - Gift Card 2006 found
 2025-01-06 13:31:06.216 [main] INFO  tests.GiftCards - Successfully added data - 2006
 2025-01-06 13:31:06.219 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:14:42.544 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:14:53.019 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:14:58.448 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:14:58.448 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:15:03.422 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:15:26.624 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:15:46.882 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:15:56.489 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:16:00.816 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:16:00.816 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:16:05.771 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:16:13.642 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-06 16:16:13.645 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:19:25.783 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:19:35.444 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:19:40.035 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:19:40.035 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:19:45.027 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:19:52.951 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:20:29.658 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:20:39.778 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:20:43.746 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:20:43.746 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:20:48.697 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:20:56.705 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-06 16:20:56.708 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:28:47.016 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:28:57.081 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:29:04.139 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:29:04.139 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:29:09.257 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:29:17.318 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-06 16:29:17.320 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:32:01.454 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:32:11.617 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:32:15.974 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:32:15.974 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:32:20.925 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:32:28.877 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-06 16:32:28.880 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:33:44.633 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:33:59.009 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [62fd20bb-a5a3-48fc-8234-daf0582f6001, findElement {using=xpath, value=//span[text()='Home']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21544, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 62fd20bb-a5a3-48fc-8234-daf0582f6001
+2025-01-06 16:33:59.010 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:34:04.228 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:34:15.150 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:34:27.042 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9467ac2b-db74-477f-9168-f1ad83dbf083, findElement {value=//span[text()='Home'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7896, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9467ac2b-db74-477f-9168-f1ad83dbf083
+2025-01-06 16:34:27.043 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:34:32.192 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:35:19.322 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:35:27.807 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a6ff8c13-4b5a-4c1a-b171-dbb751e744da, findElement {using=xpath, value=//span[text()='Home']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24336, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a6ff8c13-4b5a-4c1a-b171-dbb751e744da
+2025-01-06 16:35:27.807 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:35:32.895 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:35:40.729 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:35:59.290 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a252652e-90f7-4678-b52d-6aa391e62a51, findElement {value=//span[text()='Home'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29936, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a252652e-90f7-4678-b52d-6aa391e62a51
+2025-01-06 16:35:59.290 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:36:04.324 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:36:19.180 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:36:35.575 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:36:41.992 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:36:41.993 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:36:47.030 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:36:54.292 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:43:04.765 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:43:23.628 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:43:30.107 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:43:30.107 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:43:35.062 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:43:43.469 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
+2025-01-06 16:43:43.472 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-06 16:48:38.365 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:48:48.172 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:48:54.001 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:48:54.001 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:48:58.920 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:49:10.502 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-06 16:49:21.338 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLOWER10
+2025-01-06 16:51:59.720 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-06 16:52:09.311 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-06 16:52:15.299 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-06 16:52:15.299 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-06 16:52:20.300 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-06 16:52:32.860 [main] INFO  tests.Discount_Maintenance - Successfully added data - VALENTINE20
+2025-01-06 16:52:43.838 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
+2025-01-06 16:52:54.347 [main] INFO  tests.Discount_Maintenance - Successfully added data - SAVE50
+2025-01-06 16:53:05.392 [main] INFO  tests.Discount_Maintenance - Successfully added data - FIRSTORDER
+2025-01-06 16:53:16.803 [main] INFO  tests.Discount_Maintenance - Successfully added data - FREEDEL
+2025-01-06 16:53:27.375 [main] INFO  tests.Discount_Maintenance - Successfully added data - MIDNIGHT100
+2025-01-06 16:53:27.378 [main] INFO  base.BaseClass - Browser quit successfully

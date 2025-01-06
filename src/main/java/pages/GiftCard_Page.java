@@ -22,8 +22,6 @@ public class GiftCard_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By Field = By.xpath("");
-
     private final By newGiftCardButton = By.xpath("//span[contains(text(),'New Gift Card')]");
 
     private final By typeField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");

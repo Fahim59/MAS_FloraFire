@@ -1,6 +1,6 @@
 {
   "login_info": {
-    "username": "sean@qca6z4pm.mailosaur.net",
+    "username": "mustafiz",
     "password": "11!!qqQQ"
   },
 
@@ -13,7 +13,8 @@
     "vehicle": "/vehicles",
     "employeeSettings": "/employee-settings",
     "productList": "/products",
-    "productMaintenance": "/products/create"
+    "productMaintenance": "/products/create",
+    "giftCardList": "/giftCards"
   },
 
   "values": {
@@ -48,7 +49,8 @@
     "shortCut": "Message Shortcut Created Successfully",
     "vehicle": "Vehicle Created Successfully",
     "employeeSettings": "Employee settings saved successfully",
-    "productCreate": "Created Successfully"
+    "productCreate": "Created Successfully",
+    "giftCardCreate": "Created Successfully"
   },
 
   "giftCard": {

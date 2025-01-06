@@ -13,7 +13,8 @@
 <!--        <class name="tests.Message_ShortCut"/>-->
 <!--        <class name="tests.Settings.Vehicle"/>-->
 <!--        <class name="tests.Settings.Employee_Settings"/>-->
-        <class name="tests.Product_Maintenance"/>
+<!--        <class name="tests.Product_Maintenance"/>-->
+        <class name="tests.GiftCards"/>
     </classes>
 </test>
 </suite>

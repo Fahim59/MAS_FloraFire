@@ -26,16 +26,28 @@ public class Home_Page extends BaseClass{
 
     private final By homeMenu = By.xpath("//span[text()='Home']");
 
-    private final By valueMenu = By.xpath("(.//span[text()='Value'])[1]");
+    private final By orderEntryMenu = By.xpath("(.//span[text()='Order Entry'])[1]");
+
+    private final By orderControlMenu = By.xpath("(.//span[text()='Order Control'])[1]");
 
     private final By customerMaintenanceMenu = By.xpath("(.//span[text()='Customer Maintenance'])[1]");
 
-    private final By messageShortcutsMenu = By.xpath("(.//span[text()='Message ShortCuts'])[1]");
+    private final By productMaintenanceMenu = By.xpath("(.//span[text()='Product Maintenance'])[1]");
+
+    private final By discountMaintenanceMenu = By.xpath("(.//span[text()='Discount Maintenance'])[1]");
+
+    private final By giftCardsMenu = By.xpath("(.//span[text()='Gift Cards'])[1]");
+
+    private final By employeesMenu = By.xpath("(.//span[text()='Employees'])[1]");
 
     private final By settingsMenu = By.xpath("(.//span[text()='Settings'])[1]");
-    private final By corporateSettingsMenu = By.xpath("(.//span[text()='Corporate Settings'])[1]");
+
+    private final By valueSettingMenu = By.xpath("(.//span[text()='Value Settings'])[1]");
+    private final By valueMenu = By.xpath("(.//span[text()='Value'])[1]");
     private final By valueTypeSettingsMenu = By.xpath("(.//span[text()='Value Type Settings'])[1]");
-    private final By vehiclesMenu = By.xpath("(.//span[text()='Vehicles'])[1]");
+
+    private final By corporateSettingsMenu = By.xpath("(.//span[text()='Corporate Settings'])[1]");
+
     private final By employeeSettingsMenu = By.xpath("(.//span[text()='Employee Settings'])[1]");
 
     private final By deliveryMenu = By.xpath("(.//span[text()='Deliveries'])[1]");
@@ -45,15 +57,9 @@ public class Home_Page extends BaseClass{
     private final By deliveryCodeMenu = By.xpath("(.//span[text()='Delivery Code'])[1]");
     private final By shortCodeMenu = By.xpath("(.//span[text()='Short Codes'])[1]");
 
-    private final By giftCardsMenu = By.xpath("(.//span[text()='Gift Cards'])[1]");
+    private final By vehiclesMenu = By.xpath("(.//span[text()='Vehicles'])[1]");
 
-    private final By productMaintenanceMenu = By.xpath("(.//span[text()='Product Maintenance'])[1]");
-
-    private final By discountMaintenanceMenu = By.xpath("(.//span[text()='Discount Maintenance'])[1]");
-
-    private final By employeesMenu = By.xpath("(.//span[text()='Employees'])[1]");
-
-    private final By POSMenu = By.xpath("(.//span[text()='POS'])[1]");
+    private final By messageShortcutsMenu = By.xpath("(.//span[text()='Message ShortCuts'])[1]");
 
     public String getStoreName(){
         return get_Text(storeDropdown);
@@ -63,58 +69,16 @@ public class Home_Page extends BaseClass{
         verifyElementVisibility(homeMenu);
     }
 
-    public void clickValueMenu(){
-        click_Element(valueMenu);
+    public void clickOrderEntryMenu() {
+        click_Element(orderEntryMenu);
+    }
+
+    public void clickOrderControlMenu() {
+        click_Element(orderControlMenu);
     }
 
     public void clickCustomerMaintenanceMenu() {
         click_Element(customerMaintenanceMenu);
-    }
-
-    public void clickMessageShortcutsMenu() {
-        click_Element(messageShortcutsMenu);
-    }
-
-    public void clickCorporateSettingsMenu() {
-        click_Element(settingsMenu);
-        click_Element(corporateSettingsMenu);
-    }
-    public void clickValueTypeSettingsMenu() {
-        click_Element(settingsMenu);
-        click_Element(valueTypeSettingsMenu);
-    }
-    public void clickVehiclesMenu() {
-        click_Element(settingsMenu);
-        click_Element(vehiclesMenu);
-    }
-    public void clickEmployeeSettingsMenu() {
-        click_Element(settingsMenu);
-        click_Element(employeeSettingsMenu);
-    }
-
-    public void clickDeliveryZonesMenu() {
-        click_Element(deliveryMenu);
-        click_Element(deliveryZonesMenu);
-    }
-    public void clickDeliverySlotMenu() {
-        click_Element(deliveryMenu);
-        click_Element(deliverySlotMenu);
-    }
-    public void clickDeliveryModesMenu() {
-        click_Element(deliveryMenu);
-        click_Element(deliveryModesMenu);
-    }
-    public void clickDeliveryCodeMenu() {
-        click_Element(deliveryMenu);
-        click_Element(deliveryCodeMenu);
-    }
-    public void clickShortCodeMenu() {
-        click_Element(deliveryMenu);
-        click_Element(shortCodeMenu);
-    }
-
-    public void clickGiftCardsMenu() {
-        click_Element(giftCardsMenu);
     }
 
     public void clickProductMaintenanceMenu() {
@@ -125,11 +89,73 @@ public class Home_Page extends BaseClass{
         click_Element(discountMaintenanceMenu);
     }
 
+    public void clickGiftCardsMenu() {
+        click_Element(giftCardsMenu);
+    }
+
     public void clickEmployeesMenu() {
         click_Element(employeesMenu);
     }
 
-    public void clickPOSMenu() {
-        click_Element(POSMenu);
+    public void clickValueMenu() throws InterruptedException {
+        click_Element(settingsMenu);
+        SmallWait(200);
+        click_Element(valueSettingMenu);
+        SmallWait(200);
+        click_Element(valueMenu);
+    }
+
+    public void clickValueTypeSettingsMenu() throws InterruptedException {
+        click_Element(settingsMenu);
+        SmallWait(200);
+        click_Element(valueSettingMenu);
+        SmallWait(200);
+        click_Element(valueTypeSettingsMenu);
+    }
+
+    public void clickCorporateSettingsMenu() {
+        click_Element(settingsMenu);
+        click_Element(corporateSettingsMenu);
+    }
+
+    public void clickEmployeeSettingsMenu() {
+        click_Element(settingsMenu);
+        click_Element(employeeSettingsMenu);
+    }
+
+    public void clickDeliveryZonesMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(deliveryZonesMenu);
+    }
+    public void clickDeliverySlotMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(deliverySlotMenu);
+    }
+    public void clickDeliveryModesMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(deliveryModesMenu);
+    }
+    public void clickDeliveryCodeMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(deliveryCodeMenu);
+    }
+    public void clickShortCodeMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(shortCodeMenu);
+    }
+
+    public void clickVehiclesMenu() {
+        click_Element(settingsMenu);
+        click_Element(vehiclesMenu);
+    }
+
+    public void clickMessageShortcutsMenu() {
+        click_Element(settingsMenu);
+        click_Element(messageShortcutsMenu);
     }
 }

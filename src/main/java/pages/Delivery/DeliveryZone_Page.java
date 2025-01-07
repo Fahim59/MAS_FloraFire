@@ -156,6 +156,10 @@ public class DeliveryZone_Page extends BaseClass{
         return this;
     }
 
+    public void createZoneWithCoordinate(String zone, String description, String type){
+
+    }
+
     /*
      * Delivery Prices
      */

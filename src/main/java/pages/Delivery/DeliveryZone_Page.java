@@ -57,7 +57,7 @@ public class DeliveryZone_Page extends BaseClass{
 
     private final By zipCodeField = By.xpath("//input[@formcontrolname='zipCode']");
 
-    private final By autoTransferField = By.xpath("//input[@id='mat-mdc-checkbox-2-input']");
+    private final By autoTransferField = By.xpath("//input[@type='checkbox']");
 
     private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
 
@@ -75,7 +75,7 @@ public class DeliveryZone_Page extends BaseClass{
         if(!get_Text(zoneTypeField).equals(type)){
             click_Element(zoneTypeField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+type+"', ' ')]")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+type+"']")));
         }
 
         return this;
@@ -85,7 +85,8 @@ public class DeliveryZone_Page extends BaseClass{
         if(!get_Text(zoneAreaField).equals(area)){
             click_Element(zoneAreaField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+area+"', ' ')]")));
+            //js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+area+"', ' ')]")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+area+"']")));
         }
 
         return this;
@@ -108,31 +109,34 @@ public class DeliveryZone_Page extends BaseClass{
         return this;
     }
 
-    public DeliveryZone_Page enterLongitudeOne(String latOne) {
-        write_Send_Keys(longitudeOneField, latOne);
+    public DeliveryZone_Page enterLongitudeOne(String longOne) {
+        write_Send_Keys(longitudeOneField, longOne);
         return this;
     }
-    public DeliveryZone_Page enterLongitudeTwo(String latTwo) {
-        write_Send_Keys(longitudeTwoField, latTwo);
+    public DeliveryZone_Page enterLongitudeTwo(String longTwo) {
+        write_Send_Keys(longitudeTwoField, longTwo);
         return this;
     }
-    public DeliveryZone_Page enterLongitudeThree(String latThree) {
-        write_Send_Keys(longitudeThreeField, latThree);
+    public DeliveryZone_Page enterLongitudeThree(String longThree) {
+        write_Send_Keys(longitudeThreeField, longThree);
         return this;
     }
-    public DeliveryZone_Page enterLongitudeFour(String latFour) {
-        write_Send_Keys(longitudeFourField, latFour);
+    public DeliveryZone_Page enterLongitudeFour(String longFour) {
+        write_Send_Keys(longitudeFourField, longFour);
         return this;
     }
 
-    public void clickAddCoordinateButton() throws InterruptedException {
+    public DeliveryZone_Page clickAddCoordinateButton() throws InterruptedException {
         SmallWait(1000);
         click_Element(addCoordinateButton);
+
+        return this;
     }
 
-    public void clickGenerateMapButton() throws InterruptedException {
-        SmallWait(1000);
+    public DeliveryZone_Page clickGenerateMapButton() throws InterruptedException {
         click_Element(generateMapButton);
+        SmallWait(2000);
+        return this;
     }
 
     public DeliveryZone_Page enterZipCode(String zip) {
@@ -147,17 +151,25 @@ public class DeliveryZone_Page extends BaseClass{
         return this;
     }
 
-    public DeliveryZone_Page selectStore(String store) throws InterruptedException {
+    public void selectStore(String store) throws InterruptedException {
         click_Element(storeField);
 
         SmallWait(200);
         js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
-
-        return this;
     }
 
-    public void createZoneWithCoordinate(String zone, String description, String type){
+    public void createZoneWithCoordinate(String zone, String description, String type, String area, String latOne, String longOne, String latTwo,
+                                         String longTwo, String latThree, String longThree, String flag, String store) throws InterruptedException {
 
+        enterZoneName(zone).enterZoneDescription(description).selectZoneType(type).selectZoneAreaSelector(area).enterLatitudeOne(latOne).enterLongitudeOne(longOne).
+                enterLatitudeTwo(latTwo).enterLongitudeTwo(longTwo).enterLatitudeThree(latThree).enterLongitudeThree(longThree).clickAddCoordinateButton().
+                enterLatitudeFour(latOne).enterLongitudeFour(longOne).clickGenerateMapButton().isAutoTransfer(flag).selectStore(store);
+    }
+
+    public void createZoneWithZipCode(String zone, String description, String type, String area, String zip, String flag, String store) throws InterruptedException {
+
+        enterZoneName(zone).enterZoneDescription(description).selectZoneType(type).selectZoneAreaSelector(area).enterZipCode(zip).
+                isAutoTransfer(flag).selectStore(store);
     }
 
     /*
@@ -177,6 +189,60 @@ public class DeliveryZone_Page extends BaseClass{
     private final By salesTaxField = By.xpath("//input[@formcontrolname='salesTax']");
     private final By sundayDeliveryField = By.xpath("//input[@formcontrolname='sundayDeliveryFee']");
 
+    public DeliveryZone_Page enterDeliveryFee(String fee) {
+        write_Send_Keys(deliveryFeeField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterDeliveryFeeWithinTwoHour(String fee) {
+        write_Send_Keys(deliveryWithinTwoHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterDeliveryFeeWithinThreeHour(String fee) {
+        write_Send_Keys(deliveryWithinThreeHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterDeliveryFeeWithinFourHour(String fee) {
+        write_Send_Keys(deliveryWithinFourHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterExpressDeliveryFee(String expressFee) {
+        write_Send_Keys(expressDeliveryField, expressFee);
+        return this;
+    }
+    public DeliveryZone_Page enterWeddingDeliveryFee(String weddingFee) {
+        write_Send_Keys(weddingDeliveryField, weddingFee);
+        return this;
+    }
+
+    public DeliveryZone_Page enterDeliveryFeeFutureWithinTwoHour(String fee) {
+        write_Send_Keys(futureWithinTwoHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterDeliveryFeeFutureWithinThreeHour(String fee) {
+        write_Send_Keys(futureWithinThreeHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterDeliveryFeeFutureWithinFourHour(String fee) {
+        write_Send_Keys(futureWithinFourHourField, fee);
+        return this;
+    }
+    public DeliveryZone_Page enterSalesTax(String tax) {
+        write_Send_Keys(salesTaxField, tax);
+        return this;
+    }
+    public void enterSundayDeliveryFee(String sundayFee) {
+        write_Send_Keys(sundayDeliveryField, sundayFee);
+    }
+
+    public void enterDeliveryPrice(String fee, String fee2, String fee3, String fee4, String expressFee, String weddingFee,
+                                   String fee_2, String fee_3, String fee_4, String tax, String sundayFee) {
+
+        enterDeliveryFee(fee).enterDeliveryFeeWithinTwoHour(fee2).enterDeliveryFeeWithinThreeHour(fee3).enterDeliveryFeeWithinFourHour(fee4).
+                enterExpressDeliveryFee(expressFee).enterWeddingDeliveryFee(weddingFee).
+                enterDeliveryFeeFutureWithinTwoHour(fee_2).enterDeliveryFeeFutureWithinThreeHour(fee_3).enterDeliveryFeeFutureWithinFourHour(fee_4).
+                enterSalesTax(tax).enterSundayDeliveryFee(sundayFee);
+    }
+
     /*
      * Button and Message
      */
@@ -192,5 +258,7 @@ public class DeliveryZone_Page extends BaseClass{
     public void clickSaveButton() throws InterruptedException {
         SmallWait(1000);
         click_Element(saveBtn);
+
+        SmallWait(2000);
     }
 }

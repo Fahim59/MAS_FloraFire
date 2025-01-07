@@ -15,6 +15,7 @@ public class Delivery_Zone extends BaseClass {
     @BeforeMethod
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
+        deliveryZonePage = new DeliveryZone_Page(driver);
     }
 
     @Test(description = "Verify that after successful login, the customer is successfully navigated to Delivery Zone page", priority = 1)
@@ -43,15 +44,16 @@ public class Delivery_Zone extends BaseClass {
          * data[9] = long3
          * data[10] = zip
          * data[11] = zoneFee
-         * data[11] = withInTwo
-         * data[12] = withInThree
-         * data[13] = express
-         * data[14] = wedding
-         * data[15] = futureWithInTwo
-         * data[16] = futureWithInThree
-         * data[17] = futureWithInFour
-         * data[18] = salesTax
-         * data[19] = sunday
+         * data[12] = withInTwo
+         * data[13] = withInThree
+         * data[14] = withInThree
+         * data[15] = express
+         * data[16] = wedding
+         * data[17] = futureWithInTwo
+         * data[18] = futureWithInThree
+         * data[19] = futureWithInFour
+         * data[20] = salesTax
+         * data[21] = sunday
          */
 
         String name = valueData.get("Zone Name");
@@ -81,13 +83,36 @@ public class Delivery_Zone extends BaseClass {
                 withInFour, express, wedding, futureWithInTwo, futureWithInThree, futureWithInFour, salesTax, sunday};
     }
 
-    @Test(description = "Verify that the user can add  data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("")
-    public void verifyXDataEntry(Map<String, String> data) throws InterruptedException {
+    @Test(description = "Verify that the user can add Delivery Zone data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
+    @DataSource.SheetName("Zone")
+    public void verifyDeliveryZoneDataEntry(Map<String, String> data) throws InterruptedException {
         String[] zoneInfo = zoneData(data);
+
+        String flag = "Yes";
+        String storeName = homePage.getStoreName();
 
         deliveryZonePage.clickNewZoneButton();
 
-        logger.info("Successfully added data - {}", zoneInfo[0]);
+        SmallWait(1500);
+
+        if(zoneInfo[0].equalsIgnoreCase("Coordinates")){
+            deliveryZonePage.createZoneWithCoordinate(zoneInfo[0], zoneInfo[1], zoneInfo[2], zoneInfo[3],
+                    zoneInfo[4], zoneInfo[5], zoneInfo[6], zoneInfo[7], zoneInfo[8], zoneInfo[9], flag, storeName);
+
+            Scroll(0, 500);
+        }
+        else if(zoneInfo[0].equalsIgnoreCase("Zip")){
+            deliveryZonePage.createZoneWithZipCode(zoneInfo[0], zoneInfo[1], zoneInfo[2], zoneInfo[3],
+                    zoneInfo[10], flag, storeName);
+
+            Scroll(0, 300);
+        }
+
+        deliveryZonePage.enterDeliveryPrice(zoneInfo[11], zoneInfo[12], zoneInfo[13], zoneInfo[14], zoneInfo[15], zoneInfo[16],
+                zoneInfo[17], zoneInfo[18], zoneInfo[19], zoneInfo[20], zoneInfo[21]);
+
+        deliveryZonePage.clickSaveButton();
+
+        logger.info("Successfully added Delivery Zone using - {}", zoneInfo[0]);
     }
 }

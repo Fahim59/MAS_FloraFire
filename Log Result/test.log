@@ -165,3 +165,139 @@
 2025-01-07 11:48:15.939 [main] INFO  pages.Employee_Page - Employee 1005 found
 2025-01-07 11:48:15.939 [main] INFO  tests.Employees - Successfully added Employee - 1005
 2025-01-07 11:48:15.943 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 20:36:36.560 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 20:36:47.188 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 20:36:55.327 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 20:36:55.327 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 20:36:59.886 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 20:36:59.889 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 20:39:01.187 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 20:39:11.322 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 20:39:20.645 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 20:39:20.646 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 20:39:25.271 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 20:39:25.960 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 20:41:59.464 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 20:42:10.154 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 20:42:17.388 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 20:42:17.388 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 20:42:22.011 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 20:42:23.097 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 20:43:13.750 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 20:43:23.710 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 20:43:31.049 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 20:43:31.049 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 20:43:35.998 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 20:43:38.950 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 20:43:38.954 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:01:52.349 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:02:04.042 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:02:12.784 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:02:12.784 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:02:17.758 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:02:23.049 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:07:35.854 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:07:48.573 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:07:56.522 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:07:56.522 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:08:01.437 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:11:14.559 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:11:25.005 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:11:31.446 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:11:31.446 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:11:36.425 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:11:59.022 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:12:20.981 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:12:33.309 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:12:39.676 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:12:39.676 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:12:44.695 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:13:05.614 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:16:56.492 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:17:15.374 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:17:21.239 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:17:21.239 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:17:26.137 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:17:31.702 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 21:17:31.704 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:31:15.806 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:31:27.092 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:31:34.272 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:31:34.272 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:31:39.236 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:31:46.268 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 21:31:46.271 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:35:42.786 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:35:51.707 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:36:00.268 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:36:00.268 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:36:05.209 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:36:13.013 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 21:36:13.017 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:36:45.210 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:36:54.639 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:37:02.546 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:37:02.546 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:37:07.466 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:37:17.443 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:37:17.445 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:37:34.420 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:37:43.928 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:37:51.413 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:37:51.413 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:37:56.329 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:38:04.789 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:38:04.792 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:38:35.259 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:38:35.879 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:38:45.328 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:38:54.257 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:39:02.568 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:39:02.568 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:39:07.530 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:39:17.051 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:39:17.053 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:39:41.923 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:39:51.091 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:39:59.179 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:39:59.179 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:40:04.119 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:40:14.128 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:40:14.132 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:40:32.231 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:40:41.986 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:40:50.992 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:40:50.992 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:40:55.966 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:41:06.742 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:41:06.745 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:41:45.900 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:41:59.936 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:42:07.965 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:42:07.966 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:42:12.895 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:42:24.247 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:42:24.250 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:44:00.282 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:44:10.051 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:44:16.968 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:44:16.969 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:44:22.005 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:44:33.772 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:44:33.774 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:45:15.124 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:45:25.324 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:45:32.100 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:45:32.100 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:45:37.065 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:45:50.234 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:45:59.574 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 21:45:59.578 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 21:46:46.129 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 21:46:56.095 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 21:47:03.036 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 21:47:03.036 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 21:47:07.962 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-07 21:47:21.459 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Coordinates
+2025-01-07 21:47:29.900 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added data - Zip
+2025-01-07 21:47:29.903 [main] INFO  base.BaseClass - Browser quit successfully

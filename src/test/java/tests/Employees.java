@@ -2,6 +2,7 @@ package tests;
 
 import base.BaseClass;
 import base.DataSource;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
@@ -85,11 +86,13 @@ public class Employees extends BaseClass {
     }
 
     @Test(description = "Verify that the user can add Employee data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("Test")
+    @DataSource.SheetName("Employee")
     public void verifyEmployeeDataEntry(Map<String, String> data) throws InterruptedException {
         String[] employeeInfo = employeeData(data);
 
         String storeName = homePage.getStoreName();
+
+        String createMessage = jsonData.getJSONObject("successMessage").getString("employeeCreate");
 
         String comment = "N/A";
 
@@ -110,6 +113,12 @@ public class Employees extends BaseClass {
         employeePage.enterUserDetails(employeeInfo[16], employeeInfo[17], employeeInfo[18], employeeInfo[19],
                 employeeInfo[20], employeeInfo[21], employeeInfo[22]);
 
-        logger.info("Successfully added Employee - {}", employeeInfo[0]);
+        employeePage.clickSaveButton();
+
+        Assert.assertEquals(createMessage, employeePage.getSuccessMessage());
+
+        employeePage.verifyEmployeeAddition(employeeInfo[18]);
+
+        logger.info("Successfully added Employee - {}", employeeInfo[18]);
     }
 }

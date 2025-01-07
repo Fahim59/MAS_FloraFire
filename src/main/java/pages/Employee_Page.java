@@ -3,13 +3,14 @@ package pages;
 import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Employee_Page extends BaseClass{
+public class Employee_Page extends BaseClass {
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final JavascriptExecutor js;
@@ -58,46 +59,52 @@ public class Employee_Page extends BaseClass{
         write_Send_Keys(firstNameField, firstName);
         return this;
     }
+
     public Employee_Page enterLastName(String lastName) {
         write_Send_Keys(lastNameField, lastName);
         return this;
     }
 
-    public Employee_Page enterAddress(String address){
+    public Employee_Page enterAddress(String address) {
         write_Send_Keys(addressField, address);
         return this;
     }
-    public Employee_Page enterAddressCont(String address){
+
+    public Employee_Page enterAddressCont(String address) {
         write_Send_Keys(addressContField, address);
         return this;
     }
+
     public Employee_Page selectCountry(String country) throws InterruptedException {
         SmallWait(1000);
 
-        if(!get_Text(countryField).equals(country)){
+        if (!get_Text(countryField).equals(country)) {
             click_Element(countryField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+country+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + country + "']")));
         }
 
         return this;
     }
+
     public Employee_Page selectState(String state) throws InterruptedException {
         SmallWait(1500);
 
-        if(!get_Text(stateField).equals(state)){
+        if (!get_Text(stateField).equals(state)) {
             click_Element(stateField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+state+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + state + "']")));
         }
 
         return this;
     }
-    public Employee_Page enterCity(String city){
+
+    public Employee_Page enterCity(String city) {
         write_Send_Keys(cityField, city);
         return this;
     }
-    public Employee_Page enterZip(String zip){
+
+    public Employee_Page enterZip(String zip) {
         write_Send_Keys(zipField, zip);
         return this;
     }
@@ -105,25 +112,26 @@ public class Employee_Page extends BaseClass{
     public Employee_Page selectPhoneType(String type) throws InterruptedException {
         SmallWait(1000);
 
-        if(!get_Text(phoneTypeField).equals(type)){
+        if (!get_Text(phoneTypeField).equals(type)) {
             click_Element(phoneTypeField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+type+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + type + "']")));
         }
 
         return this;
     }
-    public Employee_Page enterPhone(String phone){
+
+    public Employee_Page enterPhone(String phone) {
         write_Send_Keys(phoneField, phone);
         return this;
     }
 
-    public Employee_Page enterEmail(String email){
+    public Employee_Page enterEmail(String email) {
         write_Send_Keys(emailField, email);
         return this;
     }
 
-    public Employee_Page enterHireDate(String date){
+    public Employee_Page enterHireDate(String date) {
         write_Send_Keys(hireDateField, date);
         return this;
     }
@@ -133,7 +141,7 @@ public class Employee_Page extends BaseClass{
     }
 
     public void enterEmployeePersonalDetails(String firstName, String lastName, String address, String address_cont, String country,
-                                           String state, String city, String zip, String type, String phone, String email, String date, String comment) throws InterruptedException {
+                                             String state, String city, String zip, String type, String phone, String email, String date, String comment) throws InterruptedException {
 
         enterFirstName(firstName).enterLastName(lastName).enterAddress(address).enterAddressCont(address_cont).selectCountry(country).
                 selectState(state).enterCity(city).enterZip(zip).selectPhoneType(type).enterPhone(phone).enterEmail(email).
@@ -155,49 +163,51 @@ public class Employee_Page extends BaseClass{
     public Employee_Page selectStatus(String status) throws InterruptedException {
         SmallWait(1000);
 
-        if(!get_Text(statusField).equals(status)){
+        if (!get_Text(statusField).equals(status)) {
             click_Element(statusField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+status+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + status + "']")));
         }
 
         return this;
     }
+
     public Employee_Page selectRole(String role) throws InterruptedException {
         SmallWait(1000);
 
-        if(!get_Text(roleField).equals(role)){
+        if (!get_Text(roleField).equals(role)) {
             click_Element(roleField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+role+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + role + "']")));
         }
 
         return this;
     }
 
     public Employee_Page selectStore(String store) throws InterruptedException {
-        if(!get_Text(storeField).contains(store)){
+        if (!get_Text(storeField).contains(store)) {
             click_Element(storeField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '" + store + "')]")));
         }
 
         return this;
     }
+
     public Employee_Page selectDepartment(String department) throws InterruptedException {
         SmallWait(1000);
 
-        if(!get_Text(departmentField).equals(department)){
+        if (!get_Text(departmentField).equals(department)) {
             click_Element(departmentField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+department+"']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + department + "']")));
         }
 
         return this;
     }
 
     public void selectOrderReview(String flag) {
-        if(flag.equalsIgnoreCase("Yes")){
+        if (flag.equalsIgnoreCase("Yes")) {
             selectCheckBox(reviewField);
         }
     }
@@ -224,47 +234,51 @@ public class Employee_Page extends BaseClass{
     private final By contactPersonPhoneField = By.xpath("//input[@formcontrolname='contactPersonPhone']");
     private final By contactPersonRelationField = By.xpath("(//div[contains(@id,'mat-select-value')])[9]");
 
-    public Employee_Page enterUserName(String uname){
+    public Employee_Page enterUserName(String uname) {
         write_Send_Keys(usernameField, uname);
         return this;
     }
 
-    public Employee_Page enterPassword(String pass){
+    public Employee_Page enterPassword(String pass) {
         write_Send_Keys(passField, pass);
         return this;
     }
-    public Employee_Page enterConfirmPassword(String cpass){
+
+    public Employee_Page enterConfirmPassword(String cpass) {
         write_Send_Keys(confirmPassField, cpass);
         return this;
     }
 
-    public Employee_Page enterEmployeeId(String id){
+    public Employee_Page enterEmployeeId(String id) {
         write_Send_Keys(empIdField, id);
         return this;
     }
 
-    public Employee_Page enterPin(String pin){
+    public Employee_Page enterPin(String pin) {
         write_Send_Keys(pinField, pin);
         return this;
     }
-    public Employee_Page enterConfirmPin(String cPin){
+
+    public Employee_Page enterConfirmPin(String cPin) {
         write_Send_Keys(confirmPinField, cPin);
         return this;
     }
 
-    public Employee_Page enterContactPersonName(String name){
+    public Employee_Page enterContactPersonName(String name) {
         write_Send_Keys(contactPersonField, name);
         return this;
     }
-    public Employee_Page enterContactPersonPhone(String phone){
+
+    public Employee_Page enterContactPersonPhone(String phone) {
         write_Send_Keys(contactPersonPhoneField, phone);
         return this;
     }
+
     public void selectRelation(String relation) throws InterruptedException {
-        if(!get_Text(contactPersonRelationField).contains(relation)){
+        if (!get_Text(contactPersonRelationField).contains(relation)) {
             click_Element(contactPersonRelationField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+relation+"')]")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '" + relation + "')]")));
         }
     }
 
@@ -273,5 +287,40 @@ public class Employee_Page extends BaseClass{
 
         enterUserName(uname).enterPassword(pass).enterConfirmPassword(pass).enterEmployeeId(id).enterPin(pin).
                 enterConfirmPin(pin).enterContactPersonName(name).enterContactPersonPhone(phone).selectRelation(relation);
+    }
+
+    /*
+     * Button and Message
+     */
+
+    private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
+
+    private final By successMessage = By.xpath("//p[@class='abp-toast-message']");
+
+    private final String employeeTable = "//mat-table[@role='table']";
+    private final By rows = By.xpath(employeeTable+"/mat-row");
+
+    public void clickSaveButton() throws InterruptedException {
+        SmallWait(1000);
+        click_Element(saveBtn);
+    }
+
+    public String getSuccessMessage() throws InterruptedException {
+                SmallWait(200);
+        return get_Text(successMessage);
+    }
+
+    public void verifyEmployeeAddition(String id) throws InterruptedException {
+        SmallWait(1500);
+
+        for(int l = 1; l<= get_Size(rows); l++){
+
+            String employeeId = driver.findElement(By.xpath(employeeTable+ "/mat-row["+l+"]/mat-cell[3]")).getText();
+
+            if(employeeId.equalsIgnoreCase(id)){
+                logger.info("Employee {} found", id);
+                break;
+            }
+        }
     }
 }

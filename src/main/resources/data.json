@@ -54,7 +54,8 @@
     "vehicle": "Vehicle Created Successfully",
     "employeeSettings": "Employee settings saved successfully",
     "productCreate": "Created Successfully",
-    "discountCreate": "Discount has been created successfully"
+    "discountCreate": "Discount has been created successfully",
+    "employeeCreate": "Employee created successfully"
   },
 
   "giftCard": {

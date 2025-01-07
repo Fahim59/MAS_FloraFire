@@ -1,299 +1,167 @@
-2025-01-06 12:17:22.700 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 12:17:36.483 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 12:17:47.555 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 12:17:47.555 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 12:17:52.492 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 12:18:12.527 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 12:44:14.627 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 12:44:29.765 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 12:44:42.901 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 12:44:42.902 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 12:44:47.920 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 12:44:56.680 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 12:45:46.971 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 12:45:56.515 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 12:46:02.420 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 12:46:02.420 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 12:46:07.377 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 12:46:15.930 [main] INFO  tests.GiftCards - Successfully added data - 1001
-2025-01-06 12:46:15.933 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 12:50:09.799 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 12:50:21.040 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 12:50:31.651 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8e7e66e5-78f2-46f9-941b-ed547db13296, findElement {using=xpath, value=//span[text()='Home']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20984, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 8e7e66e5-78f2-46f9-941b-ed547db13296
-2025-01-06 12:50:31.651 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 12:50:36.735 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:01:05.194 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:01:15.909 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Tried to run command without establishing a connection
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b1e062b7-4b25-4754-afc2-9fce5a9c84d5, findElement {using=xpath, value=//span[text()='Home']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28592, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b1e062b7-4b25-4754-afc2-9fce5a9c84d5
-2025-01-06 13:01:15.910 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:01:21.111 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:06:56.387 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:07:08.082 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:07:14.470 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:07:14.470 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:07:19.733 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:07:25.527 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:08:59.293 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:09:09.242 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:09:15.823 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:09:15.823 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:09:20.919 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:09:32.030 [main] INFO  pages.GiftCard_Page - Gift Card 1001 found
-2025-01-06 13:09:32.030 [main] INFO  tests.GiftCards - Successfully added data - 1001
-2025-01-06 13:09:32.033 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:09:50.457 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:10:00.175 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:10:07.122 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:10:07.122 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:10:12.122 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:10:38.584 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:11:13.703 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:11:22.804 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:11:28.785 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:11:28.785 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:11:33.773 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:12:00.174 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:15:09.980 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:15:19.620 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:15:26.107 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:15:26.108 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:15:31.119 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:15:57.685 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:25:03.140 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:25:17.931 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:25:23.374 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:25:23.374 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:25:28.290 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:25:39.350 [main] INFO  pages.GiftCard_Page - Gift Card 2002 found
-2025-01-06 13:25:39.350 [main] INFO  tests.GiftCards - Successfully added data - 2002
-2025-01-06 13:25:39.354 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:27:42.772 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:27:53.067 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:27:57.920 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:27:57.921 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:28:02.842 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:28:24.261 [main] INFO  pages.GiftCard_Page - Gift Card 2002 found
-2025-01-06 13:28:24.261 [main] INFO  tests.GiftCards - Successfully added data - 2002
-2025-01-06 13:28:34.686 [main] INFO  tests.GiftCards - Successfully added data - 2003
-2025-01-06 13:28:47.559 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 13:29:43.298 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 13:29:53.985 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 13:29:58.282 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 13:29:58.282 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 13:30:03.322 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-01-06 13:30:14.578 [main] INFO  pages.GiftCard_Page - Gift Card 2001 found
-2025-01-06 13:30:14.578 [main] INFO  tests.GiftCards - Successfully added data - 2001
-2025-01-06 13:30:24.911 [main] INFO  pages.GiftCard_Page - Gift Card 2002 found
-2025-01-06 13:30:24.911 [main] INFO  tests.GiftCards - Successfully added data - 2002
-2025-01-06 13:30:35.193 [main] INFO  pages.GiftCard_Page - Gift Card 2003 found
-2025-01-06 13:30:35.193 [main] INFO  tests.GiftCards - Successfully added data - 2003
-2025-01-06 13:30:45.566 [main] INFO  pages.GiftCard_Page - Gift Card 2004 found
-2025-01-06 13:30:45.566 [main] INFO  tests.GiftCards - Successfully added data - 2004
-2025-01-06 13:30:55.904 [main] INFO  pages.GiftCard_Page - Gift Card 2005 found
-2025-01-06 13:30:55.904 [main] INFO  tests.GiftCards - Successfully added data - 2005
-2025-01-06 13:31:06.216 [main] INFO  pages.GiftCard_Page - Gift Card 2006 found
-2025-01-06 13:31:06.216 [main] INFO  tests.GiftCards - Successfully added data - 2006
-2025-01-06 13:31:06.219 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:14:42.544 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:14:53.019 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:14:58.448 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:14:58.448 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:15:03.422 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:15:26.624 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:15:46.882 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:15:56.489 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:16:00.816 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:16:00.816 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:16:05.771 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:16:13.642 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-01-06 16:16:13.645 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:19:25.783 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:19:35.444 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:19:40.035 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:19:40.035 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:19:45.027 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:19:52.951 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:20:29.658 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:20:39.778 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:20:43.746 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:20:43.746 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:20:48.697 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:20:56.705 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-01-06 16:20:56.708 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:28:47.016 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:28:57.081 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:29:04.139 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:29:04.139 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:29:09.257 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:29:17.318 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-01-06 16:29:17.320 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:32:01.454 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:32:11.617 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:32:15.974 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:32:15.974 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:32:20.925 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:32:28.877 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-01-06 16:32:28.880 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:33:44.633 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:33:59.009 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [62fd20bb-a5a3-48fc-8234-daf0582f6001, findElement {using=xpath, value=//span[text()='Home']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21544, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 62fd20bb-a5a3-48fc-8234-daf0582f6001
-2025-01-06 16:33:59.010 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:34:04.228 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:34:15.150 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:34:27.042 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9467ac2b-db74-477f-9168-f1ad83dbf083, findElement {value=//span[text()='Home'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7896, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 9467ac2b-db74-477f-9168-f1ad83dbf083
-2025-01-06 16:34:27.043 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:34:32.192 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:35:19.322 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:35:27.807 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a6ff8c13-4b5a-4c1a-b171-dbb751e744da, findElement {using=xpath, value=//span[text()='Home']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24336, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a6ff8c13-4b5a-4c1a-b171-dbb751e744da
-2025-01-06 16:35:27.807 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:35:32.895 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:35:40.729 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:35:59.290 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Failed to decode response from marionette
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a252652e-90f7-4678-b52d-6aa391e62a51, findElement {value=//span[text()='Home'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29936, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a252652e-90f7-4678-b52d-6aa391e62a51
-2025-01-06 16:35:59.290 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:36:04.324 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:36:19.180 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:36:35.575 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:36:41.992 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:36:41.993 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:36:47.030 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:36:54.292 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:43:04.765 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:43:23.628 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:43:30.107 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:43:30.107 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:43:35.062 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:43:43.469 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
-2025-01-06 16:43:43.472 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 16:48:38.365 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:48:48.172 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:48:54.001 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:48:54.001 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:48:58.920 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:49:10.502 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-01-06 16:49:21.338 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLOWER10
-2025-01-06 16:51:59.720 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 16:52:09.311 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 16:52:15.299 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 16:52:15.299 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 16:52:20.300 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-01-06 16:52:32.860 [main] INFO  tests.Discount_Maintenance - Successfully added data - VALENTINE20
-2025-01-06 16:52:43.838 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
-2025-01-06 16:52:54.347 [main] INFO  tests.Discount_Maintenance - Successfully added data - SAVE50
-2025-01-06 16:53:05.392 [main] INFO  tests.Discount_Maintenance - Successfully added data - FIRSTORDER
-2025-01-06 16:53:16.803 [main] INFO  tests.Discount_Maintenance - Successfully added data - FREEDEL
-2025-01-06 16:53:27.375 [main] INFO  tests.Discount_Maintenance - Successfully added data - MIDNIGHT100
-2025-01-06 16:53:27.378 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 18:52:42.443 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 18:52:56.908 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 18:53:12.615 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 18:53:12.617 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 18:53:17.619 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 18:53:23.475 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 18:56:45.149 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 18:56:55.968 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 18:57:01.487 [main] INFO  base.BaseClass - Test Failed: An exception occurred - The element with the reference efedace0-3407-4467-93b1-2a002fbc8195 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [972caac5-2c20-4cf9-b7e7-55d9dc89a467, isElementDisplayed {id=efedace0-3407-4467-93b1-2a002fbc8195}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31452, moz:profile: C:\Users\BS01361\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (972caac5-2c20-4cf9-b7e7-55d9dc89a467)] -> xpath: //span[text()='Home']]
-Session ID: 972caac5-2c20-4cf9-b7e7-55d9dc89a467
-2025-01-06 18:57:01.487 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 18:57:06.481 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 18:57:12.285 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 18:58:12.960 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 18:58:32.442 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 18:58:38.973 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 18:58:38.973 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 18:58:43.946 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 18:58:53.528 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 18:58:53.532 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 18:59:15.550 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 18:59:25.268 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 18:59:34.348 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 18:59:34.348 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 18:59:39.260 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 18:59:50.407 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 18:59:50.412 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:01:07.130 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:01:15.977 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:01:22.010 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:01:22.012 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:01:27.003 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:01:39.482 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 19:01:39.485 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:14:27.819 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:14:37.758 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:14:43.607 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:14:43.607 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:14:48.632 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:15:06.727 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:16:33.262 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:16:42.428 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:16:48.784 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:16:48.785 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:16:53.713 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:17:08.478 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 19:17:08.481 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:18:32.477 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:18:42.069 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:18:48.018 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:18:48.020 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:18:52.944 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:19:11.373 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 19:19:11.376 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:46:43.463 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:46:55.622 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:47:04.889 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:47:04.889 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:47:09.827 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:47:28.467 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:49:03.840 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:49:14.149 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:49:20.591 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:49:20.591 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:49:25.548 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:49:44.297 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-06 19:53:40.827 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-06 19:53:53.705 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-06 19:53:59.527 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-06 19:53:59.527 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-06 19:54:04.485 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
-2025-01-06 19:54:23.850 [main] INFO  tests.Employees - Successfully added Employee - Ana
-2025-01-06 19:54:23.853 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 09:55:29.823 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 09:55:41.486 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 09:55:48.021 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 09:55:48.022 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 09:55:53.166 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 09:56:16.686 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 09:56:25.180 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 09:56:35.397 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 09:56:41.846 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 09:56:41.847 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 09:56:46.797 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 09:57:13.385 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 09:57:49.376 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 09:57:59.504 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 09:58:05.344 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 09:58:05.345 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 09:58:10.320 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 09:58:37.127 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:07:22.736 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:07:33.111 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:07:39.618 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:07:39.619 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:07:44.617 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 10:08:11.296 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:08:37.705 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:08:47.530 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:08:53.378 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:08:53.378 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:08:58.269 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 10:09:24.883 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:15:04.976 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:15:14.470 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:15:20.248 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:15:20.248 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:15:25.037 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 10:15:51.019 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:21:44.193 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:21:54.654 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:22:01.405 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:22:01.405 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:22:06.164 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 10:22:14.148 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:23:07.339 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:23:16.650 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:23:22.353 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:23:22.353 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:23:27.169 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 10:23:40.141 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 10:59:35.459 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 10:59:46.712 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 10:59:53.739 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 10:59:53.740 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 10:59:58.556 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:04:00.161 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:04:09.687 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:04:15.217 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:04:15.217 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:04:19.996 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:04:36.753 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-07 11:04:36.756 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:06:51.835 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:07:04.723 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:07:12.098 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:07:12.098 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:07:17.060 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:07:33.220 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:07:52.859 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:08:04.918 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:08:14.121 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:08:14.121 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:08:18.870 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:08:35.670 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-07 11:08:35.673 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:08:56.497 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:09:07.182 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:09:13.954 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:09:13.954 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:09:18.792 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:09:45.031 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:09:55.125 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:10:04.680 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:10:10.297 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:10:10.297 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:10:15.058 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:10:34.162 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-07 11:10:34.165 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:10:47.201 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:10:56.476 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:11:02.071 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:11:02.071 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:11:06.850 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:11:33.654 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:12:24.226 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:12:33.970 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:12:41.135 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:12:41.135 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:12:46.052 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:12:58.886 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:25:56.952 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:26:06.938 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:26:13.049 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:26:13.049 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:26:17.893 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:26:37.222 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-07 11:26:37.224 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:31:18.682 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:31:28.140 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:31:33.806 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:31:33.806 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:31:38.658 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:31:58.609 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:32:47.047 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:32:56.458 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:33:02.075 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:33:02.076 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:33:06.848 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:33:33.749 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:33:47.538 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:33:56.933 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:34:02.532 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:34:02.533 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:34:07.323 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:34:24.571 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:34:39.579 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:34:48.726 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:34:54.583 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:34:54.583 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:34:59.342 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:35:18.578 [main] INFO  tests.Employees - Successfully added Employee - 1001
+2025-01-07 11:35:18.581 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:36:29.511 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:36:38.907 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:36:44.908 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:36:44.908 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:36:49.665 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:37:08.743 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-01-07 11:37:08.746 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:37:19.579 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:37:29.077 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:37:34.634 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:37:34.634 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:37:39.503 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:37:58.021 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-01-07 11:37:58.025 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:39:22.895 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:39:32.318 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:39:37.828 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:39:37.828 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:39:42.710 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:40:05.838 [main] INFO  pages.Employee_Page - Employee 1002 found
+2025-01-07 11:40:05.838 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-01-07 11:40:05.841 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-07 11:41:14.212 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:41:23.622 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:41:29.145 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:41:29.146 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:41:34.004 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:46:50.132 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-07 11:46:59.647 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-07 11:47:05.281 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-07 11:47:05.281 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-07 11:47:10.055 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-07 11:47:33.164 [main] INFO  pages.Employee_Page - Employee 1003 found
+2025-01-07 11:47:33.164 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-07 11:48:15.939 [main] INFO  pages.Employee_Page - Employee 1005 found
+2025-01-07 11:48:15.939 [main] INFO  tests.Employees - Successfully added Employee - 1005
+2025-01-07 11:48:15.943 [main] INFO  base.BaseClass - Browser quit successfully

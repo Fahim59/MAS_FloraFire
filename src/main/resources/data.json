@@ -18,7 +18,8 @@
     "discountList": "/discounts",
     "discountMaintenance": "/discounts/create",
     "employeeList": "/employees",
-    "employeeMaintenance": "/employees/create"
+    "employeeMaintenance": "/employees/create",
+    "deliveryZone": "/delivery-zones"
   },
 
   "values": {

@@ -136,6 +136,8 @@ public class DeliveryZone_Page extends BaseClass{
     public DeliveryZone_Page clickGenerateMapButton() throws InterruptedException {
         click_Element(generateMapButton);
         SmallWait(2000);
+
+        Scroll(0, 200);
         return this;
     }
 

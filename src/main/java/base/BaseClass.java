@@ -120,6 +120,8 @@ public class BaseClass {
         SmallWait(1000);
         JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
         js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
+
+        SmallWait(500);
     }
 
     public void verifyCurrentUrl(String expectedText) throws InterruptedException {

@@ -426,3 +426,110 @@
 2025-01-08 15:15:46.159 [main] INFO  tests.Product_Maintenance - Successfully added product - F009
 2025-01-08 15:16:11.063 [main] INFO  tests.Product_Maintenance - Successfully added product - F010
 2025-01-08 15:16:11.065 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:09:51.803 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:10:01.600 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:10:10.406 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:10:10.406 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:10:15.464 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:10:19.582 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:11:00.263 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:11:09.939 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:11:15.567 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:11:15.568 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:11:20.454 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:11:25.292 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:13:23.038 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:13:32.373 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:13:37.911 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:13:37.911 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:13:42.885 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:13:47.881 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:13:47.884 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:14:07.618 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:14:19.003 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:14:31.208 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:14:31.209 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:14:36.102 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:14:42.262 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:14:42.265 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:15:16.037 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:15:25.835 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:15:32.330 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:15:32.330 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:15:37.271 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:15:43.628 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:15:43.631 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:41:54.314 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:42:04.579 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:42:11.183 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:42:11.183 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:42:16.120 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:42:21.333 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:42:21.336 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:42:52.743 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:43:02.826 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:43:09.062 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:43:09.063 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:43:14.024 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:43:21.187 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:43:21.189 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:43:44.616 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:43:53.965 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:43:59.397 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:43:59.397 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:44:04.399 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-08 19:44:32.506 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:46:18.913 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:46:28.630 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:46:36.280 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:46:36.280 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:46:41.315 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-08 19:47:07.851 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:47:39.801 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:47:49.203 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:47:55.829 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:47:55.829 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:48:00.722 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-08 19:48:18.259 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-01-08 19:48:28.686 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Zip
+2025-01-08 19:48:28.690 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:48:47.286 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:48:56.751 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:49:02.250 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:49:02.250 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:49:07.168 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:49:14.105 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:49:14.108 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:50:05.537 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:50:14.883 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:50:20.534 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:50:20.534 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:50:25.538 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:50:33.929 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:50:33.932 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:51:07.298 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:51:16.685 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:51:22.299 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:51:22.299 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:51:27.253 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:51:35.659 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:51:35.661 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:52:19.272 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:52:28.995 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:52:34.499 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:52:34.499 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:52:39.431 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:52:48.835 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:54:18.099 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:54:27.839 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:54:33.976 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:54:33.976 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:54:38.987 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:55:03.255 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-08 19:55:44.266 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-08 19:55:54.529 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-08 19:56:00.097 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-08 19:56:00.097 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-08 19:56:05.094 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-08 19:56:15.133 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-08 19:56:15.136 [main] INFO  base.BaseClass - Browser quit successfully

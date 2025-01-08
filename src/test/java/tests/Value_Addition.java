@@ -37,6 +37,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User clicked on the value menu and successfully navigated to the Value Types page");
     }
 
+
     @Test(description = "Verify that user can add values successfully", dataProvider = "clientPortalData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
     public void verifyValueAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
@@ -509,7 +510,7 @@ public class Value_Addition extends BaseClass {
     }
 
 
-    @Test(description = "Verify that user can map value type in the settings successfully", priority = 19)
+    @Test(description = "Verify that user can map value type in the settings successfully", priority = 19, enabled = true)
     public void verifyValueTypeSettingMap() throws InterruptedException {
         SmallWait(1000);
 
@@ -541,6 +542,9 @@ public class Value_Addition extends BaseClass {
         String careCode = jsonData.getJSONObject("values").getString("careCode");
 
         valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
+
+        Scroll(0, 600);
+        SmallWait(500);
 
         /*
          * setup of employee data

@@ -35,32 +35,32 @@ public class ProductMaintenance_Page extends BaseClass{
      */
 
     private final By codeField = By.xpath("//input[@formcontrolname='productCode']");
-    private final By typeField = By.cssSelector("#mat-select-value-3");
+    private final By typeField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
 
-    private final By statusField = By.cssSelector("#mat-select-value-5");
+    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
     private final By productSKUField = By.xpath("//input[@formcontrolname='sku']");
 
-    private final By departmentField = By.cssSelector("#mat-select-value-7");
+    private final By departmentField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
     private final By itemNameField = By.xpath("//input[@formcontrolname='name']");
 
-    private final By careCodeField = By.cssSelector("#mat-select-value-9");
+    private final By careCodeField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
     private final By binLocationField = By.xpath("//input[@formcontrolname='binLocation']");
 
-    private final By purchaseUnitField = By.cssSelector("#mat-select-value-11");
+    private final By purchaseUnitField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
     private final By purchaseUnitValueField = By.xpath("//input[@formcontrolname='purchasedUnitOfMeasureValue']");
 
-    private final By sellingUnitField = By.cssSelector("#mat-select-value-13");
+    private final By sellingUnitField = By.xpath("(//div[contains(@id,'mat-select-value')])[7]");
     private final By sellingUnitValueField = By.xpath("//input[@formcontrolname='sellingUnitOfMeasureValue']");
 
     private final By descriptionField = By.xpath("//textarea[@formcontrolname='description']");
-    private final By storeField = By.cssSelector("#mat-select-value-15");
+    private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[8]");
 
-    private final By productCategoryField = By.cssSelector("#mat-select-value-17");
+    private final By productCategoryField = By.xpath("(//div[contains(@id,'mat-select-value')])[9]");
 
-    private final By commisionableField = By.xpath("//input[@id='mat-mdc-checkbox-1-input']");
+    private final By commisionableField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[1]");
 
-    private final By forceWireServiceField = By.xpath("//input[@id='mat-mdc-checkbox-2-input']");
-    private final By wireServiceField = By.cssSelector("#mat-select-value-19");
+    private final By forceWireServiceField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[2]");
+    private final By wireServiceField = By.xpath("(//div[contains(@id,'mat-select-value')])[10]");
 
     public ProductMaintenance_Page enterProductCode(String code){
         write_Send_Keys(codeField, code);
@@ -216,7 +216,7 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Pricing Details
      */
 
-    private final By nonTaxableField = By.xpath("//input[@id='mat-mdc-checkbox-3-input']");
+    private final By nonTaxableField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[3]");
 
     private final By basePriceField = By.xpath("//input[@formcontrolname='basePrice']");
     private final By midPriceField = By.xpath("//input[@formcontrolname='midPrice']");
@@ -225,7 +225,7 @@ public class ProductMaintenance_Page extends BaseClass{
     private final By wireOutField = By.xpath("//input[@formcontrolname='wireOut']");
     private final By unitCostField = By.xpath("//input[@formcontrolname='unitCost']");
 
-    private final By basePriceOverriddenField = By.xpath("//input[@id='mat-mdc-checkbox-4-input']");
+    private final By basePriceOverriddenField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[4]");
 
     public ProductMaintenance_Page isNonTaxable(String flag) {
         if(flag.equalsIgnoreCase("Yes")){
@@ -278,13 +278,14 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Inventory Details
      */
 
-    private final By trackInventoryField = By.xpath("//input[@id='mat-mdc-checkbox-5-input']");
+    //private final By trackInventoryField = By.xpath("//input[@id='mat-mdc-checkbox-5-input']");
+    private final By trackInventoryField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[5]");
 
     private final By onHandField = By.xpath("//input[@formcontrolname='onHandQuantity']");
     private final By onOrderField = By.xpath("//input[@formcontrolname='onOrderQuantity']");
     private final By lowStockField = By.xpath("//input[@formcontrolname='lowStockQuantiy']");
 
-    private final By ouOfStockSalesField = By.xpath("//input[@id='mat-mdc-checkbox-6-input']");
+    private final By ouOfStockSalesField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[6]");
 
     public ProductMaintenance_Page isTrackInventory(String trackFlag) throws InterruptedException {
         Scroll(0, 400);
@@ -330,13 +331,13 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Other Details
      */
 
-    private final By isSeasonalField = By.xpath("//input[@id='mat-mdc-checkbox-7-input']");
+    private final By isSeasonalField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[7]");
 
-    private final By isSeasonalPricing = By.xpath("//input[@id='mat-mdc-checkbox-8-input']");
+    private final By isSeasonalPricing = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[8]");
 
     private final By seasonalPriceField = By.xpath("//input[@formcontrolname='seasonalPrice']");
 
-    private final By isSeasonalAvailability = By.xpath("//input[@id='mat-mdc-checkbox-9-input']");
+    private final By isSeasonalAvailability = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[9]");
 
     private final By startDateField = By.xpath("//input[@formcontrolname='seasonalAvailabilityStartDate']");
 
@@ -345,7 +346,7 @@ public class ProductMaintenance_Page extends BaseClass{
     private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
 
     public ProductMaintenance_Page isSeasonalField(String seasonalFlag) throws InterruptedException {
-        Scroll(0, 400);
+        Scroll(0, 650);
         SmallWait(500);
 
         if(seasonalFlag.equalsIgnoreCase("Yes")){

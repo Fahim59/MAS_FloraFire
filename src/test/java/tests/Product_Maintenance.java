@@ -76,7 +76,7 @@ public class Product_Maintenance extends BaseClass {
                 seasonalPrice, seasonalAvailability, startDate, endDate, imageUrl, url, fileName};
     }
 
-    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2)
+    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2, enabled = true)
     public void verifyGiftCardDataEntry() throws InterruptedException {
         /*
          * Variables
@@ -118,7 +118,7 @@ public class Product_Maintenance extends BaseClass {
 
         productMaintenancePage.verifyProductAddition("GC");
 
-        refreshPage();
+        //refreshPage();
 
         logger.info("Gift Card added successfully");
     }
@@ -166,7 +166,7 @@ public class Product_Maintenance extends BaseClass {
 
         productMaintenancePage.verifyProductAddition(productInfo[0]);
 
-        refreshPage();
+        //refreshPage();
 
         logger.info("Successfully added product - {}", productInfo[0]);
     }

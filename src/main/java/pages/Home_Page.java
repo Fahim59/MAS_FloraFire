@@ -105,11 +105,9 @@ public class Home_Page extends BaseClass{
         click_Element(valueMenu);
     }
 
-    public void clickValueTypeSettingsMenu() throws InterruptedException {
+    public void clickValueTypeSettingsMenu() {
         click_Element(settingsMenu);
-        SmallWait(200);
         click_Element(valueSettingMenu);
-        SmallWait(200);
         click_Element(valueTypeSettingsMenu);
     }
 

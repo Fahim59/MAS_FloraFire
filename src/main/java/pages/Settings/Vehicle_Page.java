@@ -28,7 +28,7 @@ public class Vehicle_Page extends BaseClass{
     private final By licensePlateField = By.xpath("//input[@formcontrolname='licensePlate']");
     private final By vinField = By.xpath("//input[@formcontrolname='vin']");
     private final By modelField = By.xpath("//input[@formcontrolname='model']");
-    private final By statusField = By.xpath("(//span[contains(@class,'mat-mdc-select-placeholder')])[1]");
+    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
     private final By expireDateField = By.xpath("//input[@formcontrolname='expirationDate']");
     private final By maintenanceDueField = By.xpath("//input[@formcontrolname='maintenanceDue']");
 

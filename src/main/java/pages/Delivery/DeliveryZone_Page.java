@@ -31,7 +31,7 @@ public class DeliveryZone_Page extends BaseClass{
     }
 
     /*
-     * Delivery Prices
+     * Delivery Area
      */
 
     private final By zoneNameField = By.xpath("//input[@formcontrolname='name']");

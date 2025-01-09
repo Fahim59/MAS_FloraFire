@@ -2,10 +2,9 @@ package tests.Delivery;
 
 import base.BaseClass;
 import base.DataSource;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.Delivery.DeliverySlot_Page;
-import pages.Home_Page;
+import org.testng.annotations.*;
+import pages.Delivery.*;
+import pages.*;
 
 import java.util.Map;
 
@@ -44,21 +43,13 @@ public class Delivery_Slot extends BaseClass {
     }
 
     @Test(description = "Verify that the user can add Delivery Slot data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("Test")
+    @DataSource.SheetName("Slot")
     public void verifySlotDataEntry(Map<String, String> data) throws InterruptedException {
         String[] slotInfo = slotData(data);
 
         deliverySlotPage.clickNewSlotButton();
 
-        deliverySlotPage.enterSlotName(slotInfo[0]);
-        deliverySlotPage.clickSaveButton();
-
-        SmallWait(2000);
-
-        deliverySlotPage.selectDeliveryZone(slotInfo[1], slotInfo[2]);
-
-        deliverySlotPage.enterSlotTime(slotInfo[3], slotInfo[4]);
-        deliverySlotPage.selectAmPm(slotInfo[5]);
+        deliverySlotPage.enterDeliverySlotDetails(slotInfo[0], slotInfo[3], slotInfo[4], slotInfo[5], slotInfo[1], slotInfo[2]);
 
         deliverySlotPage.clickFinalSaveButton();
 

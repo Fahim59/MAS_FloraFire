@@ -77,16 +77,17 @@ public class DeliverySlot_Page extends BaseClass{
         return this;
     }
 
-    public void selectAmPm(String text) throws InterruptedException {
+    public DeliverySlot_Page selectAmPm(String text) throws InterruptedException {
         if(!get_Text(amPmField).equals(text)){
             click_Element(amPmField);
             SmallWait(200);
             js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+text+"']")));
         }
+        return this;
     }
 
-    public void enterDeliverySlotDetails(String name, String zone, String hours, String minute, String text) throws InterruptedException {
-        enterSlotName(name).clickSaveButton().selectDeliveryZone(zone).enterSlotTime(hours, minute).selectAmPm(text);
+    public void enterDeliverySlotDetails(String name, String hours, String minute, String text, String... zoneOptions) throws InterruptedException {
+        enterSlotName(name).clickSaveButton().enterSlotTime(hours, minute).selectAmPm(text).selectDeliveryZone(zoneOptions);
     }
 
     /*
@@ -107,7 +108,7 @@ public class DeliverySlot_Page extends BaseClass{
         SmallWait(1000);
         click_Element(saveBtn);
 
-        SmallWait(1000);
+        SmallWait(2000);
 
         return this;
     }

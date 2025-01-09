@@ -20,7 +20,8 @@
     "employeeList": "/employees",
     "employeeMaintenance": "/employees/create",
     "deliveryZone": "/delivery-zones",
-    "deliverySlot": "/deliverySlots"
+    "deliverySlot": "/deliverySlots",
+    "deliveryMode": "/deliveryModes"
   },
 
   "values": {

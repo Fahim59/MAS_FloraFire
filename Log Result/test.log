@@ -46,3 +46,32 @@ Session ID: 031a377b9ba2de081e93ee2ba0e96605
 2025-01-09 18:45:31.058 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
 2025-01-09 18:45:39.029 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-EVEN
 2025-01-09 18:45:39.033 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-09 19:10:07.612 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-09 19:10:19.378 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-09 19:10:28.755 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-09 19:10:28.755 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-09 19:10:33.654 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-01-09 19:10:41.844 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
+2025-01-09 19:10:41.847 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-09 19:11:21.606 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-09 19:11:30.992 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-09 19:11:35.440 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-09 19:11:35.440 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-09 19:11:40.510 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-01-09 19:11:51.635 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
+2025-01-09 19:11:51.638 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-09 19:12:57.451 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-09 19:13:06.881 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-09 19:13:11.782 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-09 19:13:11.782 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-09 19:13:16.699 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-01-09 19:13:26.757 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
+2025-01-09 19:13:26.760 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-09 19:13:55.207 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-09 19:14:04.830 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-09 19:14:09.418 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-09 19:14:09.418 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-09 19:14:14.304 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-01-09 19:14:23.255 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
+2025-01-09 19:14:31.602 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
+2025-01-09 19:14:31.605 [main] INFO  base.BaseClass - Browser quit successfully

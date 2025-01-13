@@ -19,7 +19,8 @@
 <!--        <class name="tests.Employees"/>-->
 <!--        <class name="tests.Delivery.Delivery_Zone"/>-->
 <!--        <class name="tests.Delivery.Delivery_Slot"/>-->
-        <class name="tests.Delivery.Delivery_Mode"/>
+<!--        <class name="tests.Delivery.Delivery_Mode"/>-->
+        <class name="tests.Delivery.Delivery_Code"/>
     </classes>
 </test>
 </suite>

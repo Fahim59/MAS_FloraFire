@@ -6,7 +6,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.ProductMaintenance_Page;
 
 import java.time.Duration;
 
@@ -86,10 +85,10 @@ public class DeliveryCode_Page extends BaseClass{
         return this;
     }
 
-    public DeliveryCode_Page selectStatusCategory(String category) throws InterruptedException {
+    public DeliveryCode_Page selectStatusCategory(String status) throws InterruptedException {
         click_Element(statusField);
         SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+category+"', ' ')]")));
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+status+"', ' ')]")));
 
         return this;
     }

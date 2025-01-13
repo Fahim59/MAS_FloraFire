@@ -21,7 +21,8 @@
     "employeeMaintenance": "/employees/create",
     "deliveryZone": "/delivery-zones",
     "deliverySlot": "/deliverySlots",
-    "deliveryMode": "/deliveryModes"
+    "deliveryMode": "/deliveryModes",
+    "deliveryCode": "/delivery-code"
   },
 
   "values": {

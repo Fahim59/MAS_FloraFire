@@ -1,77 +1,116 @@
-2025-01-09 13:58:45.401 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 13:58:54.881 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 13:59:01.976 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 13:59:01.977 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 13:59:06.932 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
-2025-01-09 13:59:16.334 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
-2025-01-09 13:59:16.337 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 13:59:53.643 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 14:00:07.205 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 14:00:18.008 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 14:00:23.681 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 14:00:23.681 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 14:00:28.667 [main] INFO  tests.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
-2025-01-09 14:00:46.337 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
-2025-01-09 14:00:57.277 [main] INFO  tests.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Zip
-2025-01-09 14:00:57.288 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 14:01:09.845 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 14:01:20.343 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 14:01:24.760 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 14:01:24.761 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 14:01:29.773 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
-2025-01-09 14:01:38.901 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
-2025-01-09 14:01:38.904 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 14:02:46.465 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 14:02:55.725 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 14:03:13.215 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Home'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59378}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59378/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 031a377b9ba2de081e93ee2ba0e96605
-2025-01-09 14:03:13.215 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 14:03:45.036 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 18:42:43.062 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 18:42:53.991 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 18:43:00.892 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 18:43:00.892 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 18:43:05.781 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
-2025-01-09 18:43:17.879 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
-2025-01-09 18:43:17.888 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 18:45:03.425 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 18:45:12.542 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 18:45:17.529 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 18:45:17.529 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 18:45:22.649 [main] INFO  tests.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
-2025-01-09 18:45:31.058 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-MORN
-2025-01-09 18:45:39.029 [main] INFO  tests.Delivery.Delivery_Slot - Successfully added data - DS-EVEN
-2025-01-09 18:45:39.033 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 19:10:07.612 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 19:10:19.378 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 19:10:28.755 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 19:10:28.755 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 19:10:33.654 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
-2025-01-09 19:10:41.844 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
-2025-01-09 19:10:41.847 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 19:11:21.606 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 19:11:30.992 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 19:11:35.440 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 19:11:35.440 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 19:11:40.510 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
-2025-01-09 19:11:51.635 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
-2025-01-09 19:11:51.638 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 19:12:57.451 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 19:13:06.881 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 19:13:11.782 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 19:13:11.782 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 19:13:16.699 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
-2025-01-09 19:13:26.757 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
-2025-01-09 19:13:26.760 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-09 19:13:55.207 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-09 19:14:04.830 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-09 19:14:09.418 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-09 19:14:09.418 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-09 19:14:14.304 [main] INFO  tests.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
-2025-01-09 19:14:23.255 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
-2025-01-09 19:14:31.602 [main] INFO  tests.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
-2025-01-09 19:14:31.605 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:16:02.475 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:16:21.012 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:16:27.639 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:16:27.639 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:16:33.020 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:16:36.612 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:16:36.618 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:24:01.010 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:24:15.158 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:24:24.313 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:24:24.313 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:24:30.013 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:24:33.627 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:24:33.634 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:25:59.354 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:26:11.849 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:26:19.522 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:26:19.522 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:26:25.059 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:26:28.562 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:26:28.568 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:27:38.094 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:27:52.750 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:28:00.291 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:28:00.291 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:28:06.334 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:28:10.884 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:28:10.889 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:28:59.135 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:29:11.286 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:29:20.956 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:29:20.957 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:29:26.557 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:29:31.423 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:29:31.439 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:32:12.310 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:32:24.098 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:32:33.112 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:32:33.115 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:32:38.623 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:32:43.684 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:32:43.689 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:42:13.294 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:42:31.212 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:42:41.847 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:42:41.847 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:42:47.125 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:42:53.026 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:42:53.031 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:44:49.528 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:45:00.356 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:45:08.942 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:45:08.942 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:45:14.286 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:45:20.777 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:45:20.782 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:46:48.311 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:46:59.040 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:47:05.248 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:47:05.248 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:47:10.891 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:47:18.204 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:47:18.211 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 21:57:33.918 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 21:57:51.719 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 21:57:58.220 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 21:57:58.220 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 21:58:03.719 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 21:58:10.742 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 21:58:10.748 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 22:05:25.527 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 22:05:42.121 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 22:05:48.516 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 22:05:48.517 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 22:05:54.155 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 22:05:54.220 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 22:11:54.820 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 22:12:14.473 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 22:12:21.997 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 22:12:21.998 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 22:12:27.523 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 22:12:34.870 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 22:12:34.877 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 22:20:01.751 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 22:20:14.190 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 22:20:23.109 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 22:20:23.109 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 22:20:28.627 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 22:20:38.739 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 22:20:38.744 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 22:39:43.755 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 22:39:55.078 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 22:40:05.149 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 22:40:05.149 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 22:40:10.569 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 22:40:22.378 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC001 found
+2025-01-16 22:40:22.378 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 22:40:56.118 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-16 22:52:36.585 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-16 22:52:49.564 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-16 22:52:56.054 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-16 22:52:56.055 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-16 22:53:01.414 [main] INFO  tests.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-16 22:53:13.112 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC001 found
+2025-01-16 22:53:13.113 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-16 22:53:23.609 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC002 found
+2025-01-16 22:53:23.610 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC002
+2025-01-16 22:53:34.061 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC003 found
+2025-01-16 22:53:34.061 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC003
+2025-01-16 22:53:44.495 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC004 found
+2025-01-16 22:53:44.495 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC004
+2025-01-16 22:53:54.911 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC005 found
+2025-01-16 22:53:54.911 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC005
+2025-01-16 22:54:05.326 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC006 found
+2025-01-16 22:54:05.326 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC006
+2025-01-16 22:54:05.333 [main] INFO  base.BaseClass - Browser quit successfully

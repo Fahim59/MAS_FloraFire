@@ -68,11 +68,17 @@ public class Delivery_Code extends BaseClass {
     }
 
     @Test(description = "Verify that the user can add Delivery Code data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
-    @DataSource.SheetName("Test")
+    @DataSource.SheetName("Code")
     public void verifyDeliveryCodeDataEntry(Map<String, String> data) throws InterruptedException {
         String[] deliveryCodeInfo = deliveryCodeData(data);
 
         deliveryCodePage.clickNewDeliveryCodeButton();
+
+        deliveryCodePage.enterDeliveryCodeDetails(deliveryCodeInfo[0], deliveryCodeInfo[1], deliveryCodeInfo[2], deliveryCodeInfo[3],
+                deliveryCodeInfo[4], deliveryCodeInfo[5], deliveryCodeInfo[6], deliveryCodeInfo[7], deliveryCodeInfo[8], deliveryCodeInfo[9],
+                deliveryCodeInfo[10], deliveryCodeInfo[11], deliveryCodeInfo[12], deliveryCodeInfo[13]);
+
+        deliveryCodePage.verifyDeliveryCodeAddition(deliveryCodeInfo[0]);
 
         logger.info("Successfully added Delivery Code - {}", deliveryCodeInfo[0]);
     }

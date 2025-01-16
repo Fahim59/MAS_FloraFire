@@ -33,7 +33,7 @@ public class DeliveryCode_Page extends BaseClass{
      * Delivery Code
      */
 
-    private final By codeField = By.xpath("//input[@formcontrolname='code']");
+    private final By codeField = By.xpath("(//input[@formcontrolname='code'])[2]");
     private final By departmentResponsibleField = By.xpath("//input[@formcontrolname='departmentResponse']");
     private final By shortDescriptionField = By.xpath("//input[@formcontrolname='shortDescription']");
     private final By phoneSystemCodeField = By.xpath("//input[@formcontrolname='phoneSystemCode']");
@@ -43,13 +43,13 @@ public class DeliveryCode_Page extends BaseClass{
     private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
     private final By wireServiceMessage1Field = By.xpath("//input[@formcontrolname='wsmCode1']");
 
-    private final By sendToProblemBoxField = By.xpath("(//input[contains(@id,'mat-radio')])[1]");
+    private final By sendToProblemBoxField = By.xpath("//mat-radio-group[@formcontrolname='sendProblemBox']//input[contains(@name, 'mat-radio-group')]");
     private final By wireServiceMessage2Field = By.xpath("//input[@formcontrolname='wsmCode2']");
 
-    private final By forceSignEntryField = By.xpath("(//input[contains(@id,'mat-radio')])[2]");
+    private final By forceSignEntryField = By.xpath("//mat-radio-group[@formcontrolname='forceSignByEntry']//input[contains(@name, 'mat-radio-group')]");
     private final By emailFileNameField = By.xpath("//input[@formcontrolname='emailFileName']");
 
-    private final By leftAtAddressField = By.xpath("(//input[contains(@id,'mat-radio')])[3]");
+    private final By leftAtAddressField = By.xpath("//mat-radio-group[@formcontrolname='leftAtAddressEntry']//input[contains(@name, 'mat-radio-group')]");
     private final By emailSubjectField = By.xpath("//input[@formcontrolname='emailSubject']");
 
     public DeliveryCode_Page enterDeliveryCode(String code) throws InterruptedException {
@@ -141,5 +141,51 @@ public class DeliveryCode_Page extends BaseClass{
         SmallWait(200);
         write_Send_Keys(emailSubjectField, subject);
         return this;
+    }
+
+    public void enterDeliveryCodeDetails(String code, String department, String description, String phoneCode, String longDescription,
+                                         String messageCode, String status, String msg1, String flag, String msg2,
+                                         String flag2, String file, String flag3, String subject) throws InterruptedException {
+
+        enterDeliveryCode(code).enterResponsibleDepartment(department).enterShortDescription(description).enterPhoneSystemCode(phoneCode).
+                enterLongDescription(longDescription).enterPhoneSystemMessageCode(messageCode).selectStatusCategory(status).
+                enterWireServiceMessageOne(msg1).clickSendToProblemBox(flag).enterWireServiceMessageTwo(msg2).clickForceSignEntry(flag2).
+                enterEmailFileName(file).clickLeftAddressEntry(flag3).enterEmailSubject(subject).clickSaveButton();
+    }
+
+    /*
+     * Button and Message
+     */
+
+    private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
+
+    private final By successMessage = By.xpath("//p[@class='abp-toast-message']");
+
+    public String getSuccessMessage(){
+        return get_Text(successMessage);
+    }
+
+    public void clickSaveButton() throws InterruptedException {
+        SmallWait(1000);
+        click_Element(saveBtn);
+
+        SmallWait(2000);
+    }
+
+    private final String codeTable = "//table[@role='table']/tbody";
+    private final By rows = By.xpath(codeTable+"/tr");
+
+    public void verifyDeliveryCodeAddition(String code) throws InterruptedException {
+        SmallWait(1500);
+
+        for(int l = 1; l<= get_Size(rows); l++){
+
+            String deliveryCode = driver.findElement(By.xpath(codeTable+ "/tr["+l+"]/td[2]")).getText();
+
+            if(deliveryCode.equalsIgnoreCase(code)){
+                logger.info("Delivery Code {} found", code);
+                break;
+            }
+        }
     }
 }

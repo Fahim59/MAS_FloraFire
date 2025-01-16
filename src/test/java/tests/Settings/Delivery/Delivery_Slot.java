@@ -3,7 +3,6 @@ package tests.Settings.Delivery;
 import base.BaseClass;
 import base.DataSource;
 import org.testng.annotations.*;
-import pages.Delivery.*;
 import pages.*;
 import pages.Settings.Delivery.DeliverySlot_Page;
 

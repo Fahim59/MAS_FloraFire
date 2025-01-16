@@ -1,4 +1,4 @@
-package tests;
+package tests.Settings;
 
 import base.BaseClass;
 import base.DataSource;
@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 import pages.Settings.ValueTypeSettings_Page;
+import pages.Settings.Value_Page;
 
 import java.util.Map;
 

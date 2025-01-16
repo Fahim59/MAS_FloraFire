@@ -1,4 +1,4 @@
-package pages.Delivery;
+package pages.Settings.Delivery;
 
 import base.BaseClass;
 import org.openqa.selenium.By;
@@ -6,7 +6,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.ProductMaintenance_Page;
 
 import java.time.Duration;
 

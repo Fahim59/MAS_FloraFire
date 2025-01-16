@@ -1,4 +1,4 @@
-package pages;
+package pages.Settings;
 
 import base.BaseClass;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package pages.Delivery;
+package pages.Settings.Delivery;
 
 import base.BaseClass;
 import org.openqa.selenium.*;
@@ -6,7 +6,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
 
 public class DeliverySlot_Page extends BaseClass{
     private final WebDriver driver;

@@ -1,9 +1,9 @@
-package tests.Delivery;
+package tests.Settings.Delivery;
 
 import base.BaseClass;
 import base.DataSource;
 import org.testng.annotations.*;
-import pages.Delivery.DeliveryCode_Page;
+import pages.Settings.Delivery.DeliveryCode_Page;
 import pages.Home_Page;
 
 import java.util.Map;

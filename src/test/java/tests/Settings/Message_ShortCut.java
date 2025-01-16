@@ -1,10 +1,11 @@
-package tests;
+package tests.Settings;
 
 import base.BaseClass;
 import base.DataSource;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
+import pages.Settings.MessageShortCut_Page;
 
 import java.util.Map;
 

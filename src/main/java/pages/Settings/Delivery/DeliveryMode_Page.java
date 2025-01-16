@@ -1,4 +1,4 @@
-package pages.Delivery;
+package pages.Settings.Delivery;
 
 import base.BaseClass;
 import org.openqa.selenium.*;

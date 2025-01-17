@@ -22,7 +22,8 @@
     "deliveryZone": "/delivery-zones",
     "deliverySlot": "/deliverySlots",
     "deliveryMode": "/deliveryModes",
-    "deliveryCode": "/delivery-code"
+    "deliveryCode": "/delivery-code",
+    "shortCode": "/delivery-short-code"
   },
 
   "values": {

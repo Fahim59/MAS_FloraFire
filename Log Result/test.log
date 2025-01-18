@@ -114,3 +114,239 @@
 2025-01-16 22:54:05.326 [main] INFO  pages.Delivery.DeliveryCode_Page - Delivery Code DC006 found
 2025-01-16 22:54:05.326 [main] INFO  tests.Delivery.Delivery_Code - Successfully added Delivery Code - DC006
 2025-01-16 22:54:05.333 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 14:12:46.111 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 14:13:06.838 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - null
+2025-01-18 14:13:06.844 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 14:13:27.956 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 14:13:40.403 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 14:13:48.353 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 14:13:48.354 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 14:13:53.984 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 14:13:56.322 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - null
+2025-01-18 14:13:56.329 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 14:14:43.460 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 14:14:54.035 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 14:15:04.370 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 14:15:04.370 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 14:15:09.706 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 14:15:12.791 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - null
+2025-01-18 14:15:12.795 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 17:09:29.607 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 17:09:39.595 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 17:09:46.029 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 17:09:46.029 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 17:09:50.932 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 17:09:53.547 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 17:09:53.550 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 17:12:43.426 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 17:12:53.542 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 17:13:00.154 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 17:13:00.154 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 17:13:05.060 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 17:13:08.464 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 17:14:04.383 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 17:14:14.414 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 17:14:21.164 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 17:14:21.165 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 17:14:26.318 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 17:14:29.717 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 17:15:37.868 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 17:15:47.462 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 17:15:53.776 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 17:15:53.776 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 17:15:59.029 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 17:16:02.760 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 17:16:42.119 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 17:16:52.682 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 17:16:59.723 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 17:16:59.723 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 17:17:04.961 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 17:17:08.985 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:16:27.796 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:17:03.143 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:17:14.267 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:17:24.383 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:17:24.383 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:17:29.675 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:17:33.980 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:20:35.464 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:20:46.187 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:20:52.706 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:20:52.706 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:20:58.191 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:21:03.241 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:21:03.246 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:21:28.805 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:21:39.892 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:21:47.054 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:21:47.055 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:21:52.579 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:21:57.705 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:21:57.711 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:22:26.627 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:22:38.003 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:22:46.858 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:22:46.858 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:22:52.732 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:23:01.556 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:23:01.573 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:25:33.097 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:25:44.913 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:25:52.153 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:25:52.154 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:25:57.511 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:26:07.635 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:26:07.640 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:26:41.234 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:26:52.018 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:26:58.019 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:26:58.019 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:27:03.788 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:27:13.263 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:31:05.624 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:31:17.117 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:31:23.385 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:31:23.385 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:31:28.746 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:31:38.120 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:31:38.125 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:34:57.730 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:35:08.851 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:35:15.424 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:35:15.424 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:35:21.530 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:35:31.846 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:35:31.859 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:38:53.255 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:39:04.359 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:39:10.333 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:39:10.333 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:39:15.715 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:39:31.702 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:39:31.706 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:40:06.083 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:40:16.641 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:40:22.710 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:40:22.710 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:40:28.795 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:40:41.270 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:40:41.273 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:48:03.960 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:48:14.721 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:48:21.369 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:48:21.370 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:48:26.647 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:48:31.444 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:48:55.685 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:49:06.959 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:49:13.023 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:49:13.023 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:49:18.528 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:49:31.131 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 18:49:31.135 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 18:57:50.655 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 18:58:01.886 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 18:58:08.811 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 18:58:08.812 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 18:58:14.358 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 18:58:29.999 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:48:14.065 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:48:25.342 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:48:37.272 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:48:37.272 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:48:42.202 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:49:06.511 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:51:12.604 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:51:23.361 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:51:34.401 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:51:34.401 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:51:39.382 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:52:10.421 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:52:20.604 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:52:32.135 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:52:32.135 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:52:37.046 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:52:58.915 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:53:39.811 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:53:50.068 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:53:59.813 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:53:59.814 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:54:04.659 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:54:08.602 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:55:24.100 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:55:39.202 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:55:48.867 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:55:48.867 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:55:54.050 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:56:14.048 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:56:28.261 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:56:37.658 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:56:46.810 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:56:46.810 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:56:51.786 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:57:18.767 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:57:43.176 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:57:57.629 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:58:08.162 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:58:17.247 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:58:17.247 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:58:22.136 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:58:26.092 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 21:58:53.820 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 21:59:04.326 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 21:59:13.707 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 21:59:13.707 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 21:59:18.664 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 21:59:35.235 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 21:59:35.239 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:08:19.007 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:08:31.059 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:08:40.437 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:08:40.437 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:08:45.365 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:09:02.294 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:09:12.069 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:09:23.459 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:09:31.679 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:09:31.679 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:09:36.654 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:09:53.415 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:10:41.816 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:10:54.344 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:11:03.600 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:11:03.600 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:11:08.531 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:11:25.040 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 22:11:25.043 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:15:03.465 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:15:23.157 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:15:32.696 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:15:32.696 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:15:37.760 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:15:49.259 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:15:55.544 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:16:05.415 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:16:14.192 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:16:14.192 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:16:19.139 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:16:49.074 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-18 22:18:23.953 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:18:34.916 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:18:42.467 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:18:42.467 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:18:47.538 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:19:47.662 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-18 22:19:58.464 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-18 22:20:09.788 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-18 22:20:09.788 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-18 22:20:14.808 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-18 22:20:35.996 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Flower Haven found
+2025-01-18 22:20:35.996 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-18 22:20:57.559 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Elegant Petals
+2025-01-18 22:21:17.888 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Sunshine Florals found
+2025-01-18 22:21:17.888 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Sunshine Florals
+2025-01-18 22:21:38.442 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Blooming Gardens found
+2025-01-18 22:21:38.442 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Blooming Gardens
+2025-01-18 22:21:58.988 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Petal Place found
+2025-01-18 22:21:58.988 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Petal Place
+2025-01-18 22:21:58.991 [main] INFO  base.BaseClass - Browser quit successfully

@@ -7,7 +7,7 @@
 <!--</listeners>-->
 <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_ClientPortal">
     <classes>
-<!--        <class name="tests.UserLogin"/>-->
+        <class name="tests.UserLogin"/>
 <!--        <class name="tests.Settings.Value_Addition"/>-->
 <!--        <class name="tests.Customer_Maintenance"/>-->
 <!--        <class name="tests.Settings.Message_ShortCut"/>-->
@@ -21,7 +21,7 @@
 <!--        <class name="tests.Settings.Delivery.Delivery_Slot"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Mode"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Code"/>-->
-        <class name="tests.Settings.Delivery.Delivery_Code"/>
+        <class name="tests.Settings.Delivery.Short_Code"/>
     </classes>
 </test>
 </suite>

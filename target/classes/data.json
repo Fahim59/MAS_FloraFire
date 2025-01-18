@@ -22,7 +22,8 @@
     "deliveryZone": "/delivery-zones",
     "deliverySlot": "/deliverySlots",
     "deliveryMode": "/deliveryModes",
-    "deliveryCode": "/delivery-code"
+    "deliveryCode": "/delivery-code",
+    "shortCode": "/delivery-short-code"
   },
 
   "values": {
@@ -60,7 +61,8 @@
     "productCreate": "Created Successfully",
     "discountCreate": "Discount has been created successfully",
     "employeeCreate": "Employee created successfully",
-    "deliverySlot": "Delivery slot saved successfully!"
+    "addressValidationSuccessText": "Address validation is successful",
+    "addressValidationFailedText": "Address validation failed"
   },
 
   "giftCard": {

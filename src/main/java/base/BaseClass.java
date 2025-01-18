@@ -1,6 +1,5 @@
 package base;
 
-import com.github.javafaker.Faker;
 import factory.DriverFactory;
 
 import org.apache.logging.log4j.*;
@@ -32,47 +31,6 @@ public class BaseClass {
     protected final Logger logger = LogManager.getLogger(getClass());
 
     protected JSONObject jsonData;
-
-    private final Faker faker;
-    private final String fullName, firstName, lastName, address, addressCont, city, state, company;
-
-    //---------------------------------------------------------------------------------------------//
-    public BaseClass() {
-        faker = new Faker(new Locale("en-US"));
-
-        this.fullName = faker.name().fullName().replaceAll("\\.", "");
-        this.firstName = fullName.split(" ")[0];
-        this.lastName = fullName.split(" ")[fullName.split(" ").length - 1];
-
-        this.address = faker.address().streetAddress();
-        this.addressCont = faker.address().secondaryAddress();
-        this.city = faker.address().city();
-        this.state = faker.address().state();
-
-        this.company = faker.company().name();
-    }
-
-    public String getFullName() { return fullName; }
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
-
-    public String getAddress() { return address; }
-    public String getAddressCont() { return addressCont; }
-    public String getCity() { return city; }
-    public String getState() { return state; }
-
-    public String getEmail() { return firstName.toLowerCase() + "@" + "qca6z4pm.mailosaur.net"; }
-
-    public String getPhone() {
-        String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));
-        String centralOfficeCode = String.format("%03d", faker.number().numberBetween(100, 999));
-        String lineNumber = String.format("%04d", faker.number().numberBetween(1000, 9999));
-
-        return String.format("(%s) %s-%s", areaCode, centralOfficeCode, lineNumber);
-    }
-
-    public String getCompany() { return company; }
-    //---------------------------------------------------------------------------------------------//
 
     @BeforeSuite
     public static void launch_browser(){
@@ -166,12 +124,6 @@ public class BaseClass {
         js.executeScript("arguments[0].click();", element);
     }
 
-    public void select_Dropdown_Element(By locator, String text) {
-        WebElement element = wait_for_visibility(locator);
-
-        Select select = new Select(element);
-        select.selectByVisibleText(text);
-    }
     public void click_Radio_Element(By locator, String text) {
         List<WebElement> options = wait_for_presence_list(locator);
 
@@ -195,24 +147,6 @@ public class BaseClass {
         if (!element.isSelected()) {
             element.click();
         }
-    }
-
-    public void hover_And_Click(By locator_hover, By locator_click ){
-        Actions actions = new Actions(driver);
-
-        WebElement element = wait_for_visibility(locator_hover);
-        actions.moveToElement(element).perform();
-
-        click_Element(locator_click);
-    }
-
-    public void drag_And_Drop(By dragable, By dropable ){
-        Actions actions = new Actions(driver);
-
-        WebElement dragElement = wait_for_visibility(dragable);
-        WebElement dropElement = wait_for_visibility(dropable);
-
-        actions.dragAndDrop(dragElement, dropElement).build().perform();
     }
 
     public void write_Send_Keys(By locator, String txt) {
@@ -292,10 +226,6 @@ public class BaseClass {
         catch (Exception exp) {
             exp.printStackTrace();
         }
-    }
-
-    public void refreshPage(){
-        driver.navigate().refresh();
     }
 
     //---------------------------------------------------------------------------------------------//

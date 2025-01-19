@@ -66,6 +66,30 @@ public class CorporateSettings extends BaseClass {
     public void verifyCorporateSettingsDataEntry() throws InterruptedException {
         String[] corporateSettingInfo = corporateSettingData();
 
-        //logger.info("Successfully added data - {}", corporateSettingInfo[0]);
+        corporateSettingsPage.enterGeneralData(corporateSettingInfo[0],corporateSettingInfo[1],corporateSettingInfo[2]);
+
+        Scroll(0, 250);
+
+        logger.info("Successfully added Corporate Settings General data");
+
+        corporateSettingsPage.enterTransactionChargeData(corporateSettingInfo[3],corporateSettingInfo[4],corporateSettingInfo[5]);
+
+        Scroll(0, 750);
+
+        logger.info("Successfully added Corporate Settings Transaction Charge data");
+
+        corporateSettingsPage.enterTaxSettings(corporateSettingInfo[6],corporateSettingInfo[7],corporateSettingInfo[8]);
+
+        Scroll(0, 850);
+
+        logger.info("Successfully added Corporate Settings Tax data");
+
+        corporateSettingsPage.enterPOSSettings(corporateSettingInfo[9],corporateSettingInfo[10],corporateSettingInfo[11],corporateSettingInfo[12]);
+
+        logger.info("Successfully added Corporate Settings POS data");
+
+        corporateSettingsPage.enableCarryForward(corporateSettingInfo[13]);
+
+        logger.info("Successfully added Corporate Settings GiftCard data");
     }
 }

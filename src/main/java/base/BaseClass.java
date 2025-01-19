@@ -144,6 +144,11 @@ public class BaseClass {
     }
     public void selectCheckBox(By locator){
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        Boolean isSelected = (Boolean) js.executeScript("return arguments[0].checked;", element);
+
+        //System.out.println(element.isSelected());
+        System.out.println("Boolean Value: "+isSelected);
+
         if (!element.isSelected()) {
             element.click();
         }

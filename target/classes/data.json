@@ -7,6 +7,7 @@
   "tabURL": {
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
+    "corporateSettings": "/corporateSettings",
     "customerList": "/customers",
     "customerMaintenance": "/customers/create",
     "messageShortcut": "/messageShortcuts",

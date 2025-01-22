@@ -56,10 +56,13 @@ public class Home_Page extends BaseClass{
     private final By deliveryModesMenu = By.xpath("(.//span[text()='Delivery Modes'])[1]");
     private final By deliveryCodeMenu = By.xpath("(.//span[text()='Delivery Code'])[1]");
     private final By shortCodeMenu = By.xpath("(.//span[text()='Short Codes'])[1]");
+    private final By mapOptionSettingsMenu = By.xpath("(.//span[text()='Map Option Settings'])[1]");
 
     private final By vehiclesMenu = By.xpath("(.//span[text()='Vehicles'])[1]");
 
     private final By messageShortcutsMenu = By.xpath("(.//span[text()='Message ShortCuts'])[1]");
+
+    private final By creditCardSettingsMenu = By.xpath("(.//span[text()='Credit Card Settings'])[1]");
 
     private final By administrationMenu = By.xpath("(.//span[text()='Administration'])[1]");
 
@@ -156,6 +159,11 @@ public class Home_Page extends BaseClass{
         click_Element(deliveryMenu);
         click_Element(shortCodeMenu);
     }
+    public void clickMapOptionMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(mapOptionSettingsMenu);
+    }
 
     public void clickVehiclesMenu() {
         click_Element(settingsMenu);
@@ -165,6 +173,11 @@ public class Home_Page extends BaseClass{
     public void clickMessageShortcutsMenu() {
         click_Element(settingsMenu);
         click_Element(messageShortcutsMenu);
+    }
+
+    public void clickCreditCardSettingsMenu() {
+        click_Element(settingsMenu);
+        click_Element(creditCardSettingsMenu);
     }
 
     public void clickRolesMenu() {

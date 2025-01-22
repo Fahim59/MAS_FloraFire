@@ -25,7 +25,8 @@
     "deliveryMode": "/deliveryModes",
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
-    "roles": "/roles"
+    "roles": "/roles",
+    "mapSettings": "/deliveryMapOptionSettings"
   },
 
   "values": {

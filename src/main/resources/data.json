@@ -1,6 +1,6 @@
 {
   "login_info": {
-    "username": "testmustafizur+100@gmail.com",
+    "username": "jae@un8wyobg.mailosaur.net",
     "password": "11!!qqQQ"
   },
 
@@ -50,7 +50,9 @@
 
     "giftCardReason": "Gift Card Reason",
 
-    "tipCategory": "Tip Category"
+    "tipCategory": "Tip Category",
+    "miscIncome": "Misc Income Reason",
+    "paidOut": "Paid Out Reason"
   },
 
   "successMessage": {

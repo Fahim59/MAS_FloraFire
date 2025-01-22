@@ -2,18 +2,12 @@ package tests.Settings;
 
 import base.BaseClass;
 import base.DataSource;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 import pages.Settings.ValueTypeSettings_Page;
 import pages.Settings.Value_Page;
-import utils.ConfigLoader;
-import utils.ExcelReader;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.List;
 import java.util.Map;
 
 public class Value_Addition extends BaseClass {
@@ -33,7 +27,7 @@ public class Value_Addition extends BaseClass {
         message = jsonData.getJSONObject("successMessage").getString("value");
     }
 
-    @Test(description = "Verify that after successful login, the customer is successfully navigated to Value Types page", priority = 1, enabled = false)
+    @Test(description = "Verify that after successful login, the customer is successfully navigated to Value Types page", priority = 1)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(1000);
 
@@ -45,7 +39,7 @@ public class Value_Addition extends BaseClass {
     }
 
 
-    @Test(description = "Verify that user can add values successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
+    @Test(description = "Verify that user can add values successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
     @DataSource.SheetName("Value")
     public void verifyValueAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
@@ -78,9 +72,9 @@ public class Value_Addition extends BaseClass {
         return new String[] {value, childValue, orderNo, preSelected, flag};
     }
 
-    @Test(description = "Verify that user can add Account Class list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 3, enabled = false)
+    @Test(description = "Verify that user can add Account Class list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 3)
     public void verifyAccountClassValueListAddition(Map<String, String> valueData) throws InterruptedException {
-        SmallWait(1000);
+        SmallWait(2000);
 
         String[] data = valueListData("Account Class", valueData);
 
@@ -105,7 +99,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add AR Statement Invoice Type Id list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 4, enabled = false)
+    @Test(description = "Verify that user can add AR Statement Invoice Type Id list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 4)
     public void verifyARStatementInvoiceValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -132,7 +126,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Customer Status list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 5, enabled = false)
+    @Test(description = "Verify that user can add Customer Status list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 5)
     public void verifyCustomerStatusValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -159,7 +153,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Invoice PaymentSchedule list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 6, enabled = false)
+    @Test(description = "Verify that user can add Invoice PaymentSchedule list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 6)
     public void verifyInvoicePaymentScheduleValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -186,7 +180,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Payment Terms list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 7, enabled = false)
+    @Test(description = "Verify that user can add Payment Terms list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 7)
     public void verifyPaymentTermsValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -213,7 +207,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Price Sheet Type list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 8, enabled = false)
+    @Test(description = "Verify that user can add Price Sheet Type list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 8)
     public void verifyPriceSheetTypeValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -240,7 +234,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Referred By list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 9, enabled = false)
+    @Test(description = "Verify that user can add Referred By list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 9)
     public void verifyReferredByValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -267,7 +261,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Employee Department list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 10, enabled = false)
+    @Test(description = "Verify that user can add Employee Department list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 10)
     public void verifyEmployeeDepartmentValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -294,7 +288,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Employee Status list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 11, enabled = false)
+    @Test(description = "Verify that user can add Employee Status list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 11)
     public void verifyEmployeeStatusValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -321,7 +315,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add EmployeeContactPersonRelation list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 12, enabled = false)
+    @Test(description = "Verify that user can add EmployeeContactPersonRelation list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 12)
     public void verifyEmployeeContactPersonRelationValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -348,7 +342,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Gift Card Reason list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 13, enabled = false)
+    @Test(description = "Verify that user can add Gift Card Reason list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 13)
     public void verifyGiftCardReasonValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -375,7 +369,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Care Code list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 14, enabled = false)
+    @Test(description = "Verify that user can add Care Code list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 14)
     public void verifyCareCodeValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -402,7 +396,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add ProductDepartment list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 15, enabled = false)
+    @Test(description = "Verify that user can add ProductDepartment list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 15)
     public void verifyProductDepartmentValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -429,7 +423,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Product Type list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 16, enabled = false)
+    @Test(description = "Verify that user can add Product Type list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 16)
     public void verifyProductTypeValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -456,7 +450,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add VehicleStatus list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 17, enabled = false)
+    @Test(description = "Verify that user can add VehicleStatus list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 17)
     public void verifyVehicleStatusValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -483,7 +477,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-    @Test(description = "Verify that user can add Tips Category list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 18, enabled = false)
+    @Test(description = "Verify that user can add Tips Category list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 18)
     public void verifyTipsCategoryValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -510,12 +504,67 @@ public class Value_Addition extends BaseClass {
         logger.info("User added \"{}\" in the value list successfully.", data[1]);
     }
 
-
-    @Test(description = "Verify that user can map value type in the settings successfully", priority = 19, enabled = true)
-    public void verifyValueTypeSettingMap() throws InterruptedException {
+    @Test(description = "Verify that user can add Misc Income Reason list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 19)
+    public void verifyMiscIncomeReasonValueListAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
-        homePage.clickValueTypeSettingsMenu();
+        String[] data = valueListData("Misc Income Reason", valueData);
+
+        if(data[4].equalsIgnoreCase("1")){
+            valuePage.selectValue(data[0]);
+            SmallWait(2000);
+            valuePage.clickDetailsButton(data[0]);
+        }
+
+        valuePage.clickNewValueButton();
+
+        valuePage.enterValueListDetails(data[1], data[2], data[3]);
+
+        Assert.assertEquals(message, valuePage.getValueSuccessMessage());
+
+        SmallWait(1000);
+
+        if(data[4].equalsIgnoreCase("-1")){
+            valuePage.clickBackButton();
+        }
+
+        logger.info("User added \"{}\" in the value list successfully.", data[1]);
+    }
+
+    @Test(description = "Verify that user can add Paid Out Reason list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 20)
+    public void verifyPaidOutReasonValueListAddition(Map<String, String> valueData) throws InterruptedException {
+        SmallWait(1000);
+
+        String[] data = valueListData("Paid Out Reason", valueData);
+
+        if(data[4].equalsIgnoreCase("1")){
+            valuePage.selectValue(data[0]);
+            SmallWait(2000);
+            valuePage.clickDetailsButton(data[0]);
+        }
+
+        valuePage.clickNewValueButton();
+
+        valuePage.enterValueListDetails(data[1], data[2], data[3]);
+
+        Assert.assertEquals(message, valuePage.getValueSuccessMessage());
+
+        SmallWait(1000);
+
+        if(data[4].equalsIgnoreCase("-1")){
+            valuePage.clickBackButton();
+        }
+
+        logger.info("User added \"{}\" in the value list successfully.", data[1]);
+    }
+
+
+    @Test(description = "Verify that user can map value type in the settings successfully", priority = 21)
+    public void verifyValueTypeSettingMap() throws InterruptedException {
+        SmallWait(2000);
+
+        //homePage.clickValueTypeSettingsMenu();
+        homePage.clickValueTypeSettingsM();
 
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("valueTypeSettings"));
 
@@ -538,149 +587,56 @@ public class Value_Addition extends BaseClass {
          * setup of product data
          */
 
-//        String productType = jsonData.getJSONObject("values").getString("productType");
-//        String prodDepartment = jsonData.getJSONObject("values").getString("productDepartment");
-//        String careCode = jsonData.getJSONObject("values").getString("careCode");
-//
-//        valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
-//
-//        Scroll(0, 600);
-//        SmallWait(500);
+        String productType = jsonData.getJSONObject("values").getString("productType");
+        String prodDepartment = jsonData.getJSONObject("values").getString("productDepartment");
+        String careCode = jsonData.getJSONObject("values").getString("careCode");
+
+        valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
+
+        Scroll(0, 600);
+        SmallWait(500);
 
         /*
          * setup of employee data
          */
 
-//        String empStatus = jsonData.getJSONObject("values").getString("employeeStatus");
-//        String empDepartment = jsonData.getJSONObject("values").getString("empDepartment");
-//        String empRole = jsonData.getJSONObject("values").getString("empRole");
-//        String contactPersonRelation = jsonData.getJSONObject("values").getString("contactPersonRelation");
-//
-//        valueTypeSettingsPage.setEmployeeFields(empStatus, empDepartment, empRole, contactPersonRelation);
+        String empStatus = jsonData.getJSONObject("values").getString("employeeStatus");
+        String empDepartment = jsonData.getJSONObject("values").getString("empDepartment");
+        String empRole = jsonData.getJSONObject("values").getString("empRole");
+        String contactPersonRelation = jsonData.getJSONObject("values").getString("contactPersonRelation");
+
+        valueTypeSettingsPage.setEmployeeFields(empStatus, empDepartment, empRole, contactPersonRelation);
 
         /*
          * setup of vehicle data
          */
 
-//        String vehicleStatus = jsonData.getJSONObject("values").getString("vehicleStatus");
-//
-//        valueTypeSettingsPage.selectVehicleStatus(vehicleStatus);
+        String vehicleStatus = jsonData.getJSONObject("values").getString("vehicleStatus");
+
+        valueTypeSettingsPage.selectVehicleStatus(vehicleStatus);
 
         /*
          * setup of gift card data
          */
 
-//        String giftCardReason = jsonData.getJSONObject("values").getString("giftCardReason");
-//
-//        valueTypeSettingsPage.selectGiftCardReason(giftCardReason);
+        String giftCardReason = jsonData.getJSONObject("values").getString("giftCardReason");
+
+        valueTypeSettingsPage.selectGiftCardReason(giftCardReason);
 
         /*
          * setup of order data
          */
 
-//        String tipCategory = jsonData.getJSONObject("values").getString("tipCategory");
-//
-//        valueTypeSettingsPage.selectTipCategory(tipCategory);
-//
-//        Scroll(0, 500);
-//
-//        valueTypeSettingsPage.clickSaveBtn();
+        String tipCategory = jsonData.getJSONObject("values").getString("tipCategory");
+        String miscIncome = jsonData.getJSONObject("values").getString("miscIncome");
+        String paidOut = jsonData.getJSONObject("values").getString("paidOut");
+
+        valueTypeSettingsPage.setOrderFields(tipCategory, miscIncome, paidOut);
+
+        Scroll(0, 500);
+
+        valueTypeSettingsPage.clickSaveBtn();
 
         logger.info("User mapped value type settings successfully.");
     }
-
-//    private Object[][] testData;
-//
-//    @BeforeMethod
-//    public Object[][] loadData(Method method) throws IOException, InvalidFormatException {
-//        ExcelReader reader = new ExcelReader();
-//        List<Map<String, String>> allData = reader.getData(
-//                new ConfigLoader().initializeProperty().getProperty("dataFile"), "ValueList");
-//
-//        int startRow = 0;
-//        int endRow = 0;
-//
-//        if (method.getName().contains("AccountClass")) {
-//            startRow = 0;
-//            endRow = 2;
-//        }
-//        else if (method.getName().contains("ARStatementInvoice")) {
-//            startRow = 3;
-//            endRow = 5;
-//        }
-//        else if (method.getName().contains("CustomerStatus")) {
-//            startRow = 6;
-//            endRow = 9;
-//        }
-//        else if (method.getName().contains("InvoicePaymentSchedule")) {
-//            startRow = 10;
-//            endRow = 11;
-//        }
-//        else if (method.getName().contains("PaymentTerms")) {
-//            startRow = 12;
-//            endRow = 14;
-//        }
-//        else if (method.getName().contains("PriceSheetType")) {
-//            startRow = 15;
-//            endRow = 16;
-//        }
-//        else if (method.getName().contains("ReferredByValue")) {
-//            startRow = 17;
-//            endRow = 20;
-//        }
-//        else if (method.getName().contains("EmployeeDepartment")) {
-//            startRow = 21;
-//            endRow = 25;
-//        }
-//        else if (method.getName().contains("EmployeeStatus")) {
-//            startRow = 26;
-//            endRow = 29;
-//        }
-//        else if (method.getName().contains("EmployeeContactPersonRelation")) {
-//            startRow = 30;
-//            endRow = 33;
-//        }
-//        else if (method.getName().contains("GiftCardReason")) {
-//            startRow = 34;
-//            endRow = 35;
-//        }
-//        else if (method.getName().contains("CareCode")) {
-//            startRow = 36;
-//            endRow = 37;
-//        }
-//        else if (method.getName().contains("ProductDepartment")) {
-//            startRow = 38;
-//            endRow = 41;
-//        }
-//        else if (method.getName().contains("ProductType")) {
-//            startRow = 42;
-//            endRow = 45;
-//        }
-//        else if (method.getName().contains("VehicleStatus")) {
-//            startRow = 46;
-//            endRow = 49;
-//        }
-//        else if (method.getName().contains("TipsCategory")) {
-//            startRow = 50;
-//            endRow = 53;
-//        }
-//
-//        testData = new Object[endRow - startRow + 1][1];
-//        for (int i = startRow, j = 0; i <= endRow; i++, j++) {
-//            testData[j][0] = allData.get(i);
-//        }
-//        return testData;
-//    }
-//
-//    @Test
-//    public void verifyAccountClassValueList(Map<String, String> valueData) {
-////        for (Object[] dataRow : testData) {
-////            Map<String, String> rowData = (Map<String, String>) dataRow[0];
-////            System.out.println("Running testAccountClass with data: " + rowData);
-////        }
-//
-//        String[] data = valueListData("Account Class", valueData);
-//
-//        System.out.println(data[0]);
-//    }
 }

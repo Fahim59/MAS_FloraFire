@@ -45,6 +45,8 @@ public class ValueTypeSettings_Page extends BaseClass{
     private final By giftCardReasonField = By.xpath("(.//*[text()='Reason'])[1]");
 
     private final By tipField = By.xpath("(.//*[text()='Tip'])[1]");
+    private final By miscIncomeReasonField = By.xpath("(.//*[text()='Misc Income Reason'])[1]");
+    private final By paidOutReasonField = By.xpath("(.//*[text()='Paid Out Reason'])[1]");
 
     private final By saveBtn = By.xpath("//span[@class='mdc-button__label']");
 
@@ -201,10 +203,28 @@ public class ValueTypeSettings_Page extends BaseClass{
      * setup of order data
      */
 
-    public void selectTipCategory(String value) throws InterruptedException {
+    public ValueTypeSettings_Page selectTipCategory(String value) throws InterruptedException {
         click_Element(tipField);
         SmallWait(200);
         js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
+
+        return this;
+    }
+    public ValueTypeSettings_Page selectMiscIncomeReasonCategory(String value) throws InterruptedException {
+        click_Element(miscIncomeReasonField);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
+
+        return this;
+    }
+    public void selectPaidOutReasonCategory(String value) throws InterruptedException {
+        click_Element(paidOutReasonField);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+value+"']")));
+    }
+
+    public void setOrderFields(String tip, String misc, String paid) throws InterruptedException {
+        selectTipCategory(tip).selectMiscIncomeReasonCategory(misc).selectPaidOutReasonCategory(paid);
     }
 
     public void clickSaveBtn() {

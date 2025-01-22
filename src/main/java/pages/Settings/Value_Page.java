@@ -40,7 +40,7 @@ public class Value_Page extends BaseClass{
     private final String valueTable = "//mat-table[@role='table']";
     private final By valueTr = By.xpath(valueTable+"/mat-row");
 
-    private final By searchField = By.xpath("//div[@id='mat-select-value-3']");
+    private final By searchField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
     private final By detailsButton = By.xpath("//span[normalize-space()='Details']");
     private final By backButton = By.xpath("(//span[@class='mat-mdc-button-touch-target'])[1]");
 
@@ -66,15 +66,16 @@ public class Value_Page extends BaseClass{
         }
         return this;
     }
-    public void clickSaveButton(){
+    public void clickSaveButton() throws InterruptedException {
         click_Element(saveButton);
+        SmallWait(500);
     }
 
-    public void enterValueDetails(String name, String order){
+    public void enterValueDetails(String name, String order) throws InterruptedException {
         enterName(name).enterDisplayOrder(order).selectStatus().clickSaveButton();
     }
 
-    public void enterValueListDetails(String name, String order, String preselected){
+    public void enterValueListDetails(String name, String order, String preselected) throws InterruptedException {
         enterName(name).enterDisplayOrder(order).selectPreSelected(preselected).clickSaveButton();
     }
 
@@ -115,5 +116,8 @@ public class Value_Page extends BaseClass{
         }
     }
 
-    public void clickBackButton() { click_Element(backButton); }
+    public void clickBackButton() throws InterruptedException {
+        click_Element(backButton);
+        SmallWait(1000);
+    }
 }

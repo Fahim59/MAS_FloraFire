@@ -15,7 +15,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class DataSource {
-    int startRow, endRow;
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.METHOD)
@@ -23,30 +22,12 @@ public class DataSource {
         String value();
     }
 
-//    @DataProvider(name = "clientPortalData")
-//    public Object[][] getMemberData() throws IOException, InvalidFormatException {
-//        ExcelReader reader = new ExcelReader();
-//
-//        List<Map<String, String>> testData = reader.getData(
-//                new ConfigLoader().initializeProperty().getProperty("dataFile"), "Value");
-//
-//        List<Map<String, String>> filteredData = testData.stream()
-//                .filter(row -> row != null && !row.isEmpty())
-//                .filter(row -> row.values().stream().anyMatch(val -> val != null && !val.trim().isEmpty()))
-//                .collect(Collectors.toList());
-//
-//        Object[][] data = new Object[filteredData.size()][1];
-//        for (int i = 0; i < filteredData.size(); i++) {
-//            data[i][0] = filteredData.get(i);
-//        }
-//
-//        return data;
-//    }
-
     @DataProvider(name = "ValueListData")
     public Object[][] getClientPortalData(Method method) throws IOException, InvalidFormatException {
         ExcelReader reader = new ExcelReader();
-        List<Map<String, String>> testData = reader.getData(new ConfigLoader().initializeProperty().getProperty("dataFile"), "ValueList");
+        List<Map<String, String>> allData = reader.getData(new ConfigLoader().initializeProperty().getProperty("dataFile"), "ValueList");
+
+        int startRow = 0, endRow = 0;
 
         if (method.getName().contains("AccountClass")) { startRow = 0; endRow = 2; }
         else if (method.getName().contains("ARStatementInvoice")) { startRow = 3; endRow = 5; }
@@ -64,11 +45,16 @@ public class DataSource {
         else if (method.getName().contains("ProductType")) { startRow = 42; endRow = 45; }
         else if (method.getName().contains("VehicleStatus")) { startRow = 46; endRow = 49; }
         else if (method.getName().contains("TipsCategory")) { startRow = 50; endRow = 53; }
+        else if (method.getName().contains("MiscIncomeReason")) { startRow = 54; endRow = 55; }
+        else if (method.getName().contains("PaidOutReason")) { startRow = 56; endRow = 58; }
 
-        Object[][] data = new Object[endRow - startRow + 1][1];
-        for (int i = startRow, j = 0; i <= endRow; i++, j++) {
-            data[j][0] = testData.get(i);
+        List<Map<String, String>> filteredData = allData.subList(startRow, endRow + 1);
+
+        Object[][] data = new Object[filteredData.size()][1];
+        for (int i = 0; i < filteredData.size(); i++) {
+            data[i][0] = filteredData.get(i);
         }
+
         return data;
     }
 

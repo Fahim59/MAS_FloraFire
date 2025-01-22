@@ -111,6 +111,10 @@ public class Home_Page extends BaseClass{
         click_Element(valueTypeSettingsMenu);
     }
 
+    public void clickValueTypeSettingsM() {
+        click_Element(valueTypeSettingsMenu);
+    }
+
     public void clickCorporateSettingsMenu() {
         click_Element(settingsMenu);
         click_Element(corporateSettingsMenu);

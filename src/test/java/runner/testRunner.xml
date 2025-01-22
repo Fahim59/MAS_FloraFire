@@ -10,6 +10,7 @@
         <class name="tests.UserLogin"/>
 
         <class name="tests.Settings.Value_Addition"/>
+<!--        <class name="tests.Settings.Value_Addition_Test"/>-->
 <!--        <class name="tests.Customer_Maintenance"/>-->
 <!--        <class name="tests.Product_Maintenance"/>-->
 <!--        <class name="tests.GiftCards"/>-->

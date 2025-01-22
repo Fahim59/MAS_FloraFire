@@ -273,3 +273,8 @@
 2025-01-22 20:04:55.678 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-22 20:07:42.293 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-22 20:08:27.191 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 20:08:41.073 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 20:08:41.073 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 20:08:45.353 [main] INFO  tests.Settings.Delivery.MapOption_Settings - User successfully navigated to the Map Option Settings page
+2025-01-22 20:08:46.551 [main] INFO  tests.Settings.Delivery.MapOption_Settings - Successfully added API key data
+2025-01-22 20:08:46.553 [main] INFO  base.BaseClass - Browser quit successfully

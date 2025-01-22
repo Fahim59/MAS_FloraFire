@@ -22,7 +22,7 @@ public class ValueTypeSettings_Page extends BaseClass{
         actions = new Actions(driver);
     }
 
-    private final By customerStatusField = By.xpath("(.//*[text()='Status'])[1]");
+    private final By customerStatusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
     private final By accountClassField = By.xpath("(.//*[text()='Acct Class'])[1]");
     private final By referredByField = By.xpath("(.//*[text()='Referred By'])[1]");
     private final By accountManagerField = By.xpath("(.//*[text()='Acct Manager'])[1]");

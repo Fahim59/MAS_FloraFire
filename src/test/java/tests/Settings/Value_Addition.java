@@ -2,12 +2,18 @@ package tests.Settings;
 
 import base.BaseClass;
 import base.DataSource;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 import pages.Settings.ValueTypeSettings_Page;
 import pages.Settings.Value_Page;
+import utils.ConfigLoader;
+import utils.ExcelReader;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.List;
 import java.util.Map;
 
 public class Value_Addition extends BaseClass {
@@ -39,7 +45,8 @@ public class Value_Addition extends BaseClass {
     }
 
 
-    @Test(description = "Verify that user can add values successfully", dataProvider = "clientPortalData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
+    @Test(description = "Verify that user can add values successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
+    @DataSource.SheetName("Value")
     public void verifyValueAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
 
@@ -59,6 +66,7 @@ public class Value_Addition extends BaseClass {
         logger.info("User added values successfully.");
     }
 
+
     public static String[] valueListData(String name, Map<String, String> valueData) {
         value = name;
 
@@ -68,14 +76,6 @@ public class Value_Addition extends BaseClass {
         String flag = valueData.get("Flag");
 
         return new String[] {value, childValue, orderNo, preSelected, flag};
-
-        /*
-         * data[0] = value
-         * data[1] = childValue
-         * data[2] = orderNo
-         * data[3] = preSelected
-         * data[4] = flag
-        */
     }
 
     @Test(description = "Verify that user can add Account Class list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 3, enabled = false)
@@ -538,54 +538,149 @@ public class Value_Addition extends BaseClass {
          * setup of product data
          */
 
-        String productType = jsonData.getJSONObject("values").getString("productType");
-        String prodDepartment = jsonData.getJSONObject("values").getString("productDepartment");
-        String careCode = jsonData.getJSONObject("values").getString("careCode");
-
-        valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
-
-        Scroll(0, 600);
-        SmallWait(500);
+//        String productType = jsonData.getJSONObject("values").getString("productType");
+//        String prodDepartment = jsonData.getJSONObject("values").getString("productDepartment");
+//        String careCode = jsonData.getJSONObject("values").getString("careCode");
+//
+//        valueTypeSettingsPage.setProductFields(productType, prodDepartment, careCode);
+//
+//        Scroll(0, 600);
+//        SmallWait(500);
 
         /*
          * setup of employee data
          */
 
-        String empStatus = jsonData.getJSONObject("values").getString("employeeStatus");
-        String empDepartment = jsonData.getJSONObject("values").getString("empDepartment");
-        String empRole = jsonData.getJSONObject("values").getString("empRole");
-        String contactPersonRelation = jsonData.getJSONObject("values").getString("contactPersonRelation");
-
-        valueTypeSettingsPage.setEmployeeFields(empStatus, empDepartment, empRole, contactPersonRelation);
+//        String empStatus = jsonData.getJSONObject("values").getString("employeeStatus");
+//        String empDepartment = jsonData.getJSONObject("values").getString("empDepartment");
+//        String empRole = jsonData.getJSONObject("values").getString("empRole");
+//        String contactPersonRelation = jsonData.getJSONObject("values").getString("contactPersonRelation");
+//
+//        valueTypeSettingsPage.setEmployeeFields(empStatus, empDepartment, empRole, contactPersonRelation);
 
         /*
          * setup of vehicle data
          */
 
-        String vehicleStatus = jsonData.getJSONObject("values").getString("vehicleStatus");
-
-        valueTypeSettingsPage.selectVehicleStatus(vehicleStatus);
+//        String vehicleStatus = jsonData.getJSONObject("values").getString("vehicleStatus");
+//
+//        valueTypeSettingsPage.selectVehicleStatus(vehicleStatus);
 
         /*
          * setup of gift card data
          */
 
-        String giftCardReason = jsonData.getJSONObject("values").getString("giftCardReason");
-
-        valueTypeSettingsPage.selectGiftCardReason(giftCardReason);
+//        String giftCardReason = jsonData.getJSONObject("values").getString("giftCardReason");
+//
+//        valueTypeSettingsPage.selectGiftCardReason(giftCardReason);
 
         /*
          * setup of order data
          */
 
-        String tipCategory = jsonData.getJSONObject("values").getString("tipCategory");
-
-        valueTypeSettingsPage.selectTipCategory(tipCategory);
-
-        Scroll(0, 500);
-
-        valueTypeSettingsPage.clickSaveBtn();
+//        String tipCategory = jsonData.getJSONObject("values").getString("tipCategory");
+//
+//        valueTypeSettingsPage.selectTipCategory(tipCategory);
+//
+//        Scroll(0, 500);
+//
+//        valueTypeSettingsPage.clickSaveBtn();
 
         logger.info("User mapped value type settings successfully.");
     }
+
+//    private Object[][] testData;
+//
+//    @BeforeMethod
+//    public Object[][] loadData(Method method) throws IOException, InvalidFormatException {
+//        ExcelReader reader = new ExcelReader();
+//        List<Map<String, String>> allData = reader.getData(
+//                new ConfigLoader().initializeProperty().getProperty("dataFile"), "ValueList");
+//
+//        int startRow = 0;
+//        int endRow = 0;
+//
+//        if (method.getName().contains("AccountClass")) {
+//            startRow = 0;
+//            endRow = 2;
+//        }
+//        else if (method.getName().contains("ARStatementInvoice")) {
+//            startRow = 3;
+//            endRow = 5;
+//        }
+//        else if (method.getName().contains("CustomerStatus")) {
+//            startRow = 6;
+//            endRow = 9;
+//        }
+//        else if (method.getName().contains("InvoicePaymentSchedule")) {
+//            startRow = 10;
+//            endRow = 11;
+//        }
+//        else if (method.getName().contains("PaymentTerms")) {
+//            startRow = 12;
+//            endRow = 14;
+//        }
+//        else if (method.getName().contains("PriceSheetType")) {
+//            startRow = 15;
+//            endRow = 16;
+//        }
+//        else if (method.getName().contains("ReferredByValue")) {
+//            startRow = 17;
+//            endRow = 20;
+//        }
+//        else if (method.getName().contains("EmployeeDepartment")) {
+//            startRow = 21;
+//            endRow = 25;
+//        }
+//        else if (method.getName().contains("EmployeeStatus")) {
+//            startRow = 26;
+//            endRow = 29;
+//        }
+//        else if (method.getName().contains("EmployeeContactPersonRelation")) {
+//            startRow = 30;
+//            endRow = 33;
+//        }
+//        else if (method.getName().contains("GiftCardReason")) {
+//            startRow = 34;
+//            endRow = 35;
+//        }
+//        else if (method.getName().contains("CareCode")) {
+//            startRow = 36;
+//            endRow = 37;
+//        }
+//        else if (method.getName().contains("ProductDepartment")) {
+//            startRow = 38;
+//            endRow = 41;
+//        }
+//        else if (method.getName().contains("ProductType")) {
+//            startRow = 42;
+//            endRow = 45;
+//        }
+//        else if (method.getName().contains("VehicleStatus")) {
+//            startRow = 46;
+//            endRow = 49;
+//        }
+//        else if (method.getName().contains("TipsCategory")) {
+//            startRow = 50;
+//            endRow = 53;
+//        }
+//
+//        testData = new Object[endRow - startRow + 1][1];
+//        for (int i = startRow, j = 0; i <= endRow; i++, j++) {
+//            testData[j][0] = allData.get(i);
+//        }
+//        return testData;
+//    }
+//
+//    @Test
+//    public void verifyAccountClassValueList(Map<String, String> valueData) {
+////        for (Object[] dataRow : testData) {
+////            Map<String, String> rowData = (Map<String, String>) dataRow[0];
+////            System.out.println("Running testAccountClass with data: " + rowData);
+////        }
+//
+//        String[] data = valueListData("Account Class", valueData);
+//
+//        System.out.println(data[0]);
+//    }
 }

@@ -1,115 +1,295 @@
-2025-01-19 13:36:45.866 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:37:03.990 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:37:11.840 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:37:11.841 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:37:16.173 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:37:17.063 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:37:17.069 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:38:02.748 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:38:13.018 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:38:22.926 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:38:22.926 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:38:27.295 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:38:29.691 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:38:29.698 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:40:48.573 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:40:58.482 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:41:05.965 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:41:05.966 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:41:10.348 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:41:12.801 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:41:14.933 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:41:14.938 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:43:57.264 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:44:08.088 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:44:14.572 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:44:14.572 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:44:18.924 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:44:21.304 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:44:23.388 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:44:23.391 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:44:52.261 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:45:02.058 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:45:08.592 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:45:08.592 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:45:12.953 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:45:15.325 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:45:17.410 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:45:17.415 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:45:33.992 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:45:43.701 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:45:50.053 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:45:50.054 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:45:54.399 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:45:56.789 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:45:58.892 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:45:58.898 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:48:18.633 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:48:28.472 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:48:36.417 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:48:36.417 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:48:40.764 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:48:43.219 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:48:45.286 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:48:47.097 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 13:48:47.102 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:49:16.825 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:49:26.531 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:49:33.131 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:49:33.131 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:49:37.457 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:49:39.861 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:49:41.960 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:49:43.766 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 13:49:43.770 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 13:50:09.723 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 13:50:20.529 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 13:50:28.159 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 13:50:28.160 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 13:50:32.495 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 13:50:34.986 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 13:50:37.132 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 13:50:38.936 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 13:50:38.940 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 19:23:04.863 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 19:23:15.698 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 19:23:24.572 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 19:23:24.572 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 19:23:28.817 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 19:23:31.075 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 19:23:32.945 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 19:23:34.615 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 19:23:34.619 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 19:25:37.250 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 19:25:46.849 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 19:25:52.859 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 19:25:52.859 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 19:25:57.183 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 19:25:59.414 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 19:26:01.303 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 19:26:03.022 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 19:26:03.411 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-19 19:26:03.492 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
-2025-01-19 19:26:03.496 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 19:28:33.500 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 19:28:43.044 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 19:28:49.381 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 19:28:49.381 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 19:28:53.615 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 19:28:55.801 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 19:28:57.706 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 19:28:59.407 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 19:28:59.780 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-19 19:28:59.870 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
-2025-01-19 19:28:59.879 [main] INFO  base.BaseClass - Browser quit successfully
-2025-01-19 19:34:26.252 [main] INFO  base.BaseClass - Browser launched successfully
-2025-01-19 19:34:43.053 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-01-19 19:34:49.584 [main] INFO  base.BaseClass - The 'Home' menu is visible.
-2025-01-19 19:34:49.585 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-19 19:34:53.824 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-19 19:34:56.026 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-19 19:34:57.913 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-19 19:34:59.573 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-19 19:34:59.943 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-19 19:35:00.038 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
-2025-01-19 19:35:00.042 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 11:55:12.873 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 11:55:22.050 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 11:55:27.966 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 11:55:27.966 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 11:55:32.618 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 12:00:41.567 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 12:00:50.271 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 12:00:56.055 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 12:00:56.055 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 12:01:00.772 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:08:41.686 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:08:52.755 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:08:59.044 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:08:59.044 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:09:02.171 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-21 15:09:11.063 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-21 15:09:42.893 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:09:53.530 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:09:59.833 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:09:59.833 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:10:02.939 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-21 15:10:11.705 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-21 15:12:07.412 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:12:16.130 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:12:22.207 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:12:22.207 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:12:25.311 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-21 15:12:34.009 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-21 15:12:41.258 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2025-01-21 15:12:47.319 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-01-21 15:12:48.717 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-01-21 15:12:50.268 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Doe
+2025-01-21 15:12:58.180 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Maria Lopez
+2025-01-21 15:13:05.428 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Maria Lopez
+2025-01-21 15:13:11.001 [main] INFO  tests.Customer_Maintenance - Email added successfully for Maria Lopez
+2025-01-21 15:13:12.376 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Maria Lopez
+2025-01-21 15:13:13.935 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Maria Lopez
+2025-01-21 15:13:21.865 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Emily Johnson
+2025-01-21 15:13:29.085 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Emily Johnson
+2025-01-21 15:13:34.655 [main] INFO  tests.Customer_Maintenance - Email added successfully for Emily Johnson
+2025-01-21 15:13:36.017 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Emily Johnson
+2025-01-21 15:13:37.579 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Emily Johnson
+2025-01-21 15:13:45.423 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Linda Brown
+2025-01-21 15:13:56.813 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Michael Brown
+2025-01-21 15:14:08.327 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Smith William
+2025-01-21 15:14:15.531 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Smith William
+2025-01-21 15:14:21.040 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Smith William
+2025-01-21 15:14:22.395 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Smith William
+2025-01-21 15:14:23.941 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Smith William
+2025-01-21 15:14:23.944 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:19:12.091 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:19:20.826 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:19:26.623 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:19:26.623 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:19:30.740 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-01-21 15:19:51.397 [main] INFO  pages.ProductMaintenance_Page - Product GC found
+2025-01-21 15:19:51.397 [main] INFO  tests.Product_Maintenance - Gift Card added successfully
+2025-01-21 15:20:18.475 [main] INFO  pages.ProductMaintenance_Page - Product HC found
+2025-01-21 15:20:18.475 [main] INFO  tests.Product_Maintenance - Successfully added product - HC
+2025-01-21 15:20:44.228 [main] INFO  pages.ProductMaintenance_Page - Product DL found
+2025-01-21 15:20:44.229 [main] INFO  tests.Product_Maintenance - Successfully added product - DL
+2025-01-21 15:21:10.938 [main] INFO  pages.ProductMaintenance_Page - Product TL found
+2025-01-21 15:21:10.938 [main] INFO  tests.Product_Maintenance - Successfully added product - TL
+2025-01-21 15:21:37.754 [main] INFO  pages.ProductMaintenance_Page - Product F001 found
+2025-01-21 15:21:37.754 [main] INFO  tests.Product_Maintenance - Successfully added product - F001
+2025-01-21 15:22:06.421 [main] INFO  pages.ProductMaintenance_Page - Product F002 found
+2025-01-21 15:22:06.421 [main] INFO  tests.Product_Maintenance - Successfully added product - F002
+2025-01-21 15:22:32.954 [main] INFO  pages.ProductMaintenance_Page - Product F003 found
+2025-01-21 15:22:32.955 [main] INFO  tests.Product_Maintenance - Successfully added product - F003
+2025-01-21 15:22:59.456 [main] INFO  pages.ProductMaintenance_Page - Product F004 found
+2025-01-21 15:22:59.456 [main] INFO  tests.Product_Maintenance - Successfully added product - F004
+2025-01-21 15:23:25.607 [main] INFO  pages.ProductMaintenance_Page - Product F005 found
+2025-01-21 15:23:25.607 [main] INFO  tests.Product_Maintenance - Successfully added product - F005
+2025-01-21 15:23:52.408 [main] INFO  pages.ProductMaintenance_Page - Product F006 found
+2025-01-21 15:23:52.408 [main] INFO  tests.Product_Maintenance - Successfully added product - F006
+2025-01-21 15:24:19.067 [main] INFO  tests.Product_Maintenance - Successfully added product - F007
+2025-01-21 15:24:45.321 [main] INFO  tests.Product_Maintenance - Successfully added product - F008
+2025-01-21 15:25:11.694 [main] INFO  tests.Product_Maintenance - Successfully added product - F009
+2025-01-21 15:25:37.303 [main] INFO  tests.Product_Maintenance - Successfully added product - F010
+2025-01-21 15:25:37.306 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:26:00.199 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:26:08.612 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:26:14.310 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:26:14.311 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:26:18.433 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
+2025-01-21 15:29:41.499 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:29:50.678 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:29:56.402 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:29:56.402 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:30:00.506 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
+2025-01-21 15:30:11.958 [main] INFO  pages.DiscountMaintenance_Page - Discount SUMMER30 found
+2025-01-21 15:30:11.958 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
+2025-01-21 15:30:22.423 [main] INFO  pages.DiscountMaintenance_Page - Discount FLOWER10 found
+2025-01-21 15:30:22.423 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLOWER10
+2025-01-21 15:30:33.285 [main] INFO  pages.DiscountMaintenance_Page - Discount VALENTINE20 found
+2025-01-21 15:30:33.285 [main] INFO  tests.Discount_Maintenance - Successfully added data - VALENTINE20
+2025-01-21 15:30:43.816 [main] INFO  pages.DiscountMaintenance_Page - Discount FLASH5 found
+2025-01-21 15:30:43.818 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
+2025-01-21 15:30:54.155 [main] INFO  pages.DiscountMaintenance_Page - Discount SAVE50 found
+2025-01-21 15:30:54.156 [main] INFO  tests.Discount_Maintenance - Successfully added data - SAVE50
+2025-01-21 15:31:04.426 [main] INFO  pages.DiscountMaintenance_Page - Discount FIRSTORDER found
+2025-01-21 15:31:04.427 [main] INFO  tests.Discount_Maintenance - Successfully added data - FIRSTORDER
+2025-01-21 15:31:14.979 [main] INFO  pages.DiscountMaintenance_Page - Discount FREEDEL found
+2025-01-21 15:31:14.980 [main] INFO  tests.Discount_Maintenance - Successfully added data - FREEDEL
+2025-01-21 15:31:25.234 [main] INFO  pages.DiscountMaintenance_Page - Discount MIDNIGHT100 found
+2025-01-21 15:31:25.234 [main] INFO  tests.Discount_Maintenance - Successfully added data - MIDNIGHT100
+2025-01-21 15:31:25.237 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:31:34.218 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:31:43.740 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:31:49.296 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:31:49.296 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:31:53.423 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-21 15:33:19.365 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:33:31.238 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:33:36.950 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:33:36.950 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:33:41.073 [main] INFO  tests.Employees - User successfully navigated to the Employee list page page
+2025-01-21 15:34:04.214 [main] INFO  pages.Employee_Page - Employee 1001 found
+2025-01-21 15:34:04.214 [main] INFO  tests.Employees - Successfully added Employee - 1001
+2025-01-21 15:34:26.110 [main] INFO  pages.Employee_Page - Employee 1002 found
+2025-01-21 15:34:26.110 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-01-21 15:34:48.240 [main] INFO  pages.Employee_Page - Employee 1003 found
+2025-01-21 15:34:48.240 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-21 15:35:10.109 [main] INFO  pages.Employee_Page - Employee 1004 found
+2025-01-21 15:35:10.109 [main] INFO  tests.Employees - Successfully added Employee - 1004
+2025-01-21 15:35:32.050 [main] INFO  pages.Employee_Page - Employee 1005 found
+2025-01-21 15:35:32.050 [main] INFO  tests.Employees - Successfully added Employee - 1005
+2025-01-21 15:35:32.053 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:35:50.087 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:35:58.735 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:36:04.440 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:36:04.440 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:36:08.651 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-01-21 15:36:14.703 [main] INFO  tests.Settings.Employee_Settings - Successfully added Employee Settings data
+2025-01-21 15:36:14.706 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:37:31.998 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:37:42.812 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:37:48.525 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:37:48.525 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:37:52.817 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-21 15:41:18.440 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:41:26.883 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:41:32.395 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:41:32.395 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:41:36.706 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-21 15:41:52.734 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-01-21 15:41:57.811 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:43:33.804 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:43:49.946 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:43:57.008 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:43:57.008 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:44:01.311 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-01-21 15:44:18.693 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-01-21 15:44:28.796 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Zip
+2025-01-21 15:44:28.799 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:44:57.672 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:45:06.410 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:45:12.187 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:45:12.187 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:45:16.448 [main] INFO  tests.Settings.Delivery.Delivery_Slot - User successfully navigated to the Delivery Slot page
+2025-01-21 15:45:24.665 [main] INFO  tests.Settings.Delivery.Delivery_Slot - Successfully added data - DS-MORN
+2025-01-21 15:45:31.959 [main] INFO  tests.Settings.Delivery.Delivery_Slot - Successfully added data - DS-EVEN
+2025-01-21 15:45:31.963 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:46:40.858 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:46:51.642 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:46:58.302 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:46:58.302 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:47:02.575 [main] INFO  tests.Settings.Delivery.Delivery_Code - User successfully navigated to the Delivery Code page
+2025-01-21 15:47:12.480 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC001 found
+2025-01-21 15:47:12.482 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC001
+2025-01-21 15:47:21.571 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC002 found
+2025-01-21 15:47:21.571 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC002
+2025-01-21 15:47:30.550 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC003 found
+2025-01-21 15:47:30.550 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC003
+2025-01-21 15:47:39.611 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC004 found
+2025-01-21 15:47:39.611 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC004
+2025-01-21 15:47:48.691 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC005 found
+2025-01-21 15:47:48.691 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC005
+2025-01-21 15:47:57.736 [main] INFO  pages.Settings.Delivery.DeliveryCode_Page - Delivery Code DC006 found
+2025-01-21 15:47:57.736 [main] INFO  tests.Settings.Delivery.Delivery_Code - Successfully added Delivery Code - DC006
+2025-01-21 15:47:57.739 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:48:07.559 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:48:16.947 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:48:24.404 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:48:24.404 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:48:28.679 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-01-21 15:48:49.048 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Flower Haven found
+2025-01-21 15:48:49.048 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
+2025-01-21 15:49:08.796 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Elegant Petals found
+2025-01-21 15:49:08.796 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Elegant Petals
+2025-01-21 15:49:28.426 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Sunshine Florals found
+2025-01-21 15:49:28.426 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Sunshine Florals
+2025-01-21 15:49:47.929 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Blooming Gardens found
+2025-01-21 15:49:47.929 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Blooming Gardens
+2025-01-21 15:50:07.464 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Petal Place found
+2025-01-21 15:50:07.465 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Petal Place
+2025-01-21 15:50:07.468 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:50:19.078 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:50:28.260 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:50:35.718 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:50:35.718 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:50:39.937 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-01-21 15:50:47.782 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 found
+2025-01-21 15:50:47.783 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
+2025-01-21 15:50:54.332 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 not found
+2025-01-21 15:50:54.357 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-5678 found
+2025-01-21 15:50:54.357 [main] INFO  tests.Settings.Vehicle - Vehicle BD-5678 added successfully
+2025-01-21 15:51:01.371 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-21 15:51:01.390 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 not found
+2025-01-21 15:51:01.414 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-9101 found
+2025-01-21 15:51:01.414 [main] INFO  tests.Settings.Vehicle - Vehicle BD-9101 added successfully
+2025-01-21 15:51:08.447 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1123 found
+2025-01-21 15:51:08.448 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1123 added successfully
+2025-01-21 15:51:14.954 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-21 15:51:14.975 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 not found
+2025-01-21 15:51:14.996 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-3145 found
+2025-01-21 15:51:14.997 [main] INFO  tests.Settings.Vehicle - Vehicle BD-3145 added successfully
+2025-01-21 15:51:21.538 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-21 15:51:21.559 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-21 15:51:21.585 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-21 15:51:21.610 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 not found
+2025-01-21 15:51:21.638 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-6178 found
+2025-01-21 15:51:21.638 [main] INFO  tests.Settings.Vehicle - Vehicle BD-6178 added successfully
+2025-01-21 15:51:21.641 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-21 15:51:32.077 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-21 15:51:42.920 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-21 15:51:48.924 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-21 15:51:48.925 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-21 15:51:53.124 [main] INFO  tests.Settings.Message_ShortCut - User clicked on the Message Shortcut menu and successfully navigated to the Message Shortcut page
+2025-01-21 15:51:57.640 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code AML found
+2025-01-21 15:51:57.640 [main] INFO  tests.Settings.Message_ShortCut - Short Code AML added successfully
+2025-01-21 15:52:01.470 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code AOL not found
+2025-01-21 15:52:01.492 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code AOL found
+2025-01-21 15:52:01.492 [main] INFO  tests.Settings.Message_ShortCut - Short Code AOL added successfully
+2025-01-21 15:52:05.316 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code ATB not found
+2025-01-21 15:52:05.340 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code ATB not found
+2025-01-21 15:52:05.365 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code ATB found
+2025-01-21 15:52:05.365 [main] INFO  tests.Settings.Message_ShortCut - Short Code ATB added successfully
+2025-01-21 15:52:09.198 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BR not found
+2025-01-21 15:52:09.218 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BR not found
+2025-01-21 15:52:09.238 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BR not found
+2025-01-21 15:52:09.260 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BR found
+2025-01-21 15:52:09.260 [main] INFO  tests.Settings.Message_ShortCut - Short Code BR added successfully
+2025-01-21 15:52:13.085 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BW not found
+2025-01-21 15:52:13.106 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BW not found
+2025-01-21 15:52:13.127 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BW not found
+2025-01-21 15:52:13.148 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BW not found
+2025-01-21 15:52:13.171 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code BW found
+2025-01-21 15:52:13.171 [main] INFO  tests.Settings.Message_ShortCut - Short Code BW added successfully
+2025-01-21 15:52:16.983 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG not found
+2025-01-21 15:52:17.001 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG not found
+2025-01-21 15:52:17.019 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG not found
+2025-01-21 15:52:17.038 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG not found
+2025-01-21 15:52:17.059 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG not found
+2025-01-21 15:52:17.081 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code CG found
+2025-01-21 15:52:17.081 [main] INFO  tests.Settings.Message_ShortCut - Short Code CG added successfully
+2025-01-21 15:52:20.913 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:20.932 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:20.950 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:20.967 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:20.986 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:21.006 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS not found
+2025-01-21 15:52:21.028 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code DS found
+2025-01-21 15:52:21.028 [main] INFO  tests.Settings.Message_ShortCut - Short Code DS added successfully
+2025-01-21 15:52:24.874 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.896 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.917 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.937 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.958 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.977 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:24.995 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS not found
+2025-01-21 15:52:25.017 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code FBS found
+2025-01-21 15:52:25.019 [main] INFO  tests.Settings.Message_ShortCut - Short Code FBS added successfully
+2025-01-21 15:52:28.861 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.881 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.900 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.922 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.941 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.963 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.980 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:28.998 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY not found
+2025-01-21 15:52:29.019 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GBY found
+2025-01-21 15:52:29.020 [main] INFO  tests.Settings.Message_ShortCut - Short Code GBY added successfully
+2025-01-21 15:52:32.816 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.836 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.854 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.873 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.893 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.911 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.930 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.949 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.969 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL not found
+2025-01-21 15:52:32.992 [main] INFO  pages.Settings.MessageShortCut_Page - Short Code GL found
+2025-01-21 15:52:32.992 [main] INFO  tests.Settings.Message_ShortCut - Short Code GL added successfully
+2025-01-21 15:52:32.995 [main] INFO  base.BaseClass - Browser quit successfully

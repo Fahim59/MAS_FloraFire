@@ -23,51 +23,25 @@ public class DataSource {
         String value();
     }
 
-    @DataProvider(name = "clientPortalData")
-    public Object[][] getMemberData() throws IOException, InvalidFormatException {
-        ExcelReader reader = new ExcelReader();
-
-        List<Map<String, String>> testData = reader.getData(
-                new ConfigLoader().initializeProperty().getProperty("dataFile"), "Value");
-
-        List<Map<String, String>> filteredData = testData.stream()
-                .filter(row -> row != null && !row.isEmpty())
-                .filter(row -> row.values().stream().anyMatch(val -> val != null && !val.trim().isEmpty()))
-                .collect(Collectors.toList());
-
-        Object[][] data = new Object[filteredData.size()][1];
-        for (int i = 0; i < filteredData.size(); i++) {
-            data[i][0] = filteredData.get(i);
-        }
-
-        return data;
-    }
-
-    @DataProvider(name = "excelData")
-    public Object[][] getExcelData(Method method) throws IOException, InvalidFormatException {
-        ExcelReader reader = new ExcelReader();
-
-        SheetName sheetNameAnnotation = method.getAnnotation(SheetName.class);
-        if (sheetNameAnnotation == null) {
-            throw new IllegalArgumentException("Missing @SheetName annotation for method: " + method.getName());
-        }
-        String sheetName = sheetNameAnnotation.value();
-
-        List<Map<String, String>> testData = reader.getData(
-                new ConfigLoader().initializeProperty().getProperty("dataFile"), sheetName);
-
-        List<Map<String, String>> filteredData = testData.stream()
-                .filter(row -> row != null && !row.isEmpty())
-                .filter(row -> row.values().stream().anyMatch(val -> val != null && !val.trim().isEmpty()))
-                .collect(Collectors.toList());
-
-        Object[][] data = new Object[filteredData.size()][1];
-        for (int i = 0; i < filteredData.size(); i++) {
-            data[i][0] = filteredData.get(i);
-        }
-
-        return data;
-    }
+//    @DataProvider(name = "clientPortalData")
+//    public Object[][] getMemberData() throws IOException, InvalidFormatException {
+//        ExcelReader reader = new ExcelReader();
+//
+//        List<Map<String, String>> testData = reader.getData(
+//                new ConfigLoader().initializeProperty().getProperty("dataFile"), "Value");
+//
+//        List<Map<String, String>> filteredData = testData.stream()
+//                .filter(row -> row != null && !row.isEmpty())
+//                .filter(row -> row.values().stream().anyMatch(val -> val != null && !val.trim().isEmpty()))
+//                .collect(Collectors.toList());
+//
+//        Object[][] data = new Object[filteredData.size()][1];
+//        for (int i = 0; i < filteredData.size(); i++) {
+//            data[i][0] = filteredData.get(i);
+//        }
+//
+//        return data;
+//    }
 
     @DataProvider(name = "ValueListData")
     public Object[][] getClientPortalData(Method method) throws IOException, InvalidFormatException {
@@ -95,6 +69,32 @@ public class DataSource {
         for (int i = startRow, j = 0; i <= endRow; i++, j++) {
             data[j][0] = testData.get(i);
         }
+        return data;
+    }
+
+    @DataProvider(name = "excelData")
+    public Object[][] getExcelData(Method method) throws IOException, InvalidFormatException {
+        ExcelReader reader = new ExcelReader();
+
+        SheetName sheetNameAnnotation = method.getAnnotation(SheetName.class);
+        if (sheetNameAnnotation == null) {
+            throw new IllegalArgumentException("Missing @SheetName annotation for method: " + method.getName());
+        }
+        String sheetName = sheetNameAnnotation.value();
+
+        List<Map<String, String>> testData = reader.getData(
+                new ConfigLoader().initializeProperty().getProperty("dataFile"), sheetName);
+
+        List<Map<String, String>> filteredData = testData.stream()
+                .filter(row -> row != null && !row.isEmpty())
+                .filter(row -> row.values().stream().anyMatch(val -> val != null && !val.trim().isEmpty()))
+                .collect(Collectors.toList());
+
+        Object[][] data = new Object[filteredData.size()][1];
+        for (int i = 0; i < filteredData.size(); i++) {
+            data[i][0] = filteredData.get(i);
+        }
+
         return data;
     }
 }

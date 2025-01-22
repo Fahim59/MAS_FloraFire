@@ -9,13 +9,13 @@
     <classes>
         <class name="tests.UserLogin"/>
 
-<!--        <class name="tests.Settings.Value_Addition"/>-->
+        <class name="tests.Settings.Value_Addition"/>
 <!--        <class name="tests.Customer_Maintenance"/>-->
 <!--        <class name="tests.Product_Maintenance"/>-->
 <!--        <class name="tests.GiftCards"/>-->
 <!--        <class name="tests.Discount_Maintenance"/>-->
 <!--        <class name="tests.Employees"/>-->
-        <class name="tests.Settings.CorporateSettings"/>
+<!--        <class name="tests.Settings.CorporateSettings"/>-->
 <!--        <class name="tests.Settings.Employee_Settings"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Zone"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Slot"/>-->

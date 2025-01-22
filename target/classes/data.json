@@ -1,0 +1,77 @@
+{
+  "login_info": {
+    "username": "testmustafizur+100@gmail.com",
+    "password": "11!!qqQQ"
+  },
+
+  "tabURL": {
+    "valueTypes": "/valuetypes",
+    "valueTypeSettings": "/valuetypesettings",
+    "corporateSettings": "/corporateSettings",
+    "customerList": "/customers",
+    "customerMaintenance": "/customers/create",
+    "messageShortcut": "/messageShortcuts",
+    "vehicle": "/vehicles",
+    "employeeSettings": "/employee-settings",
+    "productList": "/products",
+    "productMaintenance": "/products/create",
+    "giftCardList": "/giftCards",
+    "discountList": "/discounts",
+    "discountMaintenance": "/discounts/create",
+    "employeeList": "/employees",
+    "employeeMaintenance": "/employees/create",
+    "deliveryZone": "/delivery-zones",
+    "deliverySlot": "/deliverySlots",
+    "deliveryMode": "/deliveryModes",
+    "deliveryCode": "/delivery-code",
+    "shortCode": "/delivery-short-code"
+  },
+
+  "values": {
+    "status": "Customer Status",
+    "accClass": "Account Class",
+    "referredBy": "Referred By",
+    "accManager": "Account Manager",
+    "invoicePayment": "Invoice Payment Schedule",
+    "term": "Payment Terms",
+    "statementInvoice": "AR Statement Invoice Type Id",
+    "priceSheet": "Price Sheet Type",
+
+    "productType": "Product Type",
+    "productDepartment": "Product Department",
+    "careCode": "Care Code",
+
+    "employeeStatus": "Employee Status",
+    "empDepartment": "Employee Department",
+    "empRole": "Employee Role",
+    "contactPersonRelation": "Employee Contact Person Relation",
+
+    "vehicleStatus": "Vehicle Status",
+
+    "giftCardReason": "Gift Card Reason",
+
+    "tipCategory": "Tip Category"
+  },
+
+  "successMessage": {
+    "valueType": "value type added successfully",
+    "value": "value added successfully",
+    "shortCut": "Message Shortcut Created Successfully",
+    "vehicle": "Vehicle Created Successfully",
+    "employeeSettings": "Employee settings saved successfully",
+    "productCreate": "Created Successfully",
+    "discountCreate": "Discount has been created successfully",
+    "employeeCreate": "Employee created successfully",
+    "addressValidationSuccessText": "Address validation is successful",
+    "addressValidationFailedText": "Address validation failed"
+  },
+
+  "giftCard": {
+    "category": "GiftCard",
+    "type": "Gift Card",
+    "description": "A versatile gift card, redeemable for any of our products—perfect for any occasion!",
+    "flag": "No",
+    "url": "",
+    "fileName": "gc.png"
+  }
+}

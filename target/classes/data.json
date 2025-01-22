@@ -24,7 +24,8 @@
     "deliverySlot": "/deliverySlots",
     "deliveryMode": "/deliveryModes",
     "deliveryCode": "/delivery-code",
-    "shortCode": "/delivery-short-code"
+    "shortCode": "/delivery-short-code",
+    "roles": "/roles"
   },
 
   "values": {

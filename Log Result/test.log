@@ -207,3 +207,66 @@
 2025-01-22 18:13:35.149 [main] INFO  tests.Settings.Value_Addition - User clicked on the value menu and successfully navigated to the Value Types page
 2025-01-22 18:13:49.369 [main] INFO  tests.Settings.Value_Addition - User mapped value type settings successfully.
 2025-01-22 18:13:49.373 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 19:24:11.046 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:24:23.834 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:24:33.003 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:24:33.004 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:24:37.343 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:24:47.157 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:24:51.240 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:24:55.330 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:24:59.417 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:25:03.510 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:25:03.513 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 19:30:43.501 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:30:56.303 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:31:02.194 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:31:02.194 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:31:06.560 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:31:16.773 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:31:16.777 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 19:32:08.548 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:32:17.813 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:32:24.958 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:32:24.959 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:32:29.285 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:32:37.983 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:32:47.011 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:32:54.301 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:32:54.301 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:32:58.613 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:33:07.747 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:33:07.749 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 19:34:19.536 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:34:29.548 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:34:35.397 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:34:35.397 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:34:39.762 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:34:45.843 [main] INFO  pages.Roles_Page - Role employee found
+2025-01-22 19:34:45.844 [main] INFO  tests.Employees - User successfully created new role - employee
+2025-01-22 19:34:49.954 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:34:49.958 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 19:35:47.978 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:35:57.975 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:36:05.914 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:36:05.915 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:36:10.233 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:36:24.452 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 19:36:37.180 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-22 19:36:42.722 [main] INFO  base.BaseClass - The 'Home' menu is visible.
+2025-01-22 19:36:42.723 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-22 19:36:47.046 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-01-22 19:36:53.103 [main] INFO  pages.Roles_Page - Role employee found
+2025-01-22 19:36:53.103 [main] INFO  tests.Employees - User successfully created new role - employee
+2025-01-22 19:36:57.215 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-01-22 19:37:20.652 [main] INFO  pages.Employee_Page - Employee 1001 found
+2025-01-22 19:37:20.652 [main] INFO  tests.Employees - Successfully added Employee - 1001
+2025-01-22 19:37:42.777 [main] INFO  pages.Employee_Page - Employee 1002 found
+2025-01-22 19:37:42.777 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-01-22 19:38:06.275 [main] INFO  pages.Employee_Page - Employee 1003 found
+2025-01-22 19:38:06.275 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-01-22 19:38:28.446 [main] INFO  pages.Employee_Page - Employee 1004 found
+2025-01-22 19:38:28.446 [main] INFO  tests.Employees - Successfully added Employee - 1004
+2025-01-22 19:38:50.927 [main] INFO  pages.Employee_Page - Employee 1005 found
+2025-01-22 19:38:50.928 [main] INFO  tests.Employees - Successfully added Employee - 1005
+2025-01-22 19:38:50.931 [main] INFO  base.BaseClass - Browser quit successfully

@@ -61,6 +61,12 @@ public class Home_Page extends BaseClass{
 
     private final By messageShortcutsMenu = By.xpath("(.//span[text()='Message ShortCuts'])[1]");
 
+    private final By administrationMenu = By.xpath("(.//span[text()='Administration'])[1]");
+
+    private final By identityManagementMenu = By.xpath("(.//span[text()='Identity management'])[1]");
+    private final By rolesMenu = By.xpath("(.//span[text()='Roles'])[1]");
+    private final By userMenu = By.xpath("(.//span[text()='Users'])[1]");
+
     public String getStoreName(){
         return get_Text(storeDropdown);
     }
@@ -159,5 +165,16 @@ public class Home_Page extends BaseClass{
     public void clickMessageShortcutsMenu() {
         click_Element(settingsMenu);
         click_Element(messageShortcutsMenu);
+    }
+
+    public void clickRolesMenu() {
+        click_Element(administrationMenu);
+        click_Element(identityManagementMenu);
+        click_Element(rolesMenu);
+    }
+    public void clickUsersMenu() {
+        click_Element(administrationMenu);
+        click_Element(identityManagementMenu);
+        click_Element(userMenu);
     }
 }

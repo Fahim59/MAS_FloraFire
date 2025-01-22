@@ -11,23 +11,40 @@ import java.util.Map;
 public class Employees extends BaseClass {
     private Home_Page homePage;
     private Employee_Page employeePage;
+    private Roles_Page rolesPage;
 
     @BeforeMethod
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
         employeePage = new Employee_Page(driver);
+        rolesPage = new Roles_Page(driver);
     }
 
-    @Test(description = "Verify that after successful login, the customer is successfully navigated to Employee list page", priority = 1)
+    @Test(description = "Verify that after successful login, the user is successfully navigated to Role list page", priority = 1)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(1000);
 
-        homePage.clickEmployeesMenu();
+        homePage.clickRolesMenu();
 
         SmallWait(1000);
-        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("employeeList"));
+        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("roles"));
 
-        logger.info("User successfully navigated to the Employee list page page");
+        logger.info("User successfully navigated to the Role list page");
+    }
+
+    @Test(description = "Verify that after successful login, the user can create a new role", priority = 2)
+    public void verifyNewRoleCreation() throws InterruptedException {
+        SmallWait(1000);
+
+        String role = "employee";
+
+        rolesPage.clickNewRoleButton();
+
+        rolesPage.createNewRole(role);
+
+        rolesPage.verifyRoleAddition(role);
+
+        logger.info("User successfully created new role - {}", role);
     }
 
     public static String[] employeeData(Map<String, String> valueData) {
@@ -82,10 +99,22 @@ public class Employees extends BaseClass {
         String relation = valueData.get("Relation");
 
         return new String[] {firstname, lastname, address, address_cont, country, state, city, zip, pType, phone, email, hireDate, status, role,
-        department, review, username, password, empId, pin, contact, cPhone, relation};
+                department, review, username, password, empId, pin, contact, cPhone, relation};
     }
 
-    @Test(description = "Verify that the user can add Employee data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
+    @Test(description = "Verify that after successful role creation, the user is successfully navigated to Employee list page", priority = 3)
+    public void verifyCustomerNavigationAfterRoleCreation() throws InterruptedException {
+        SmallWait(1000);
+
+        homePage.clickEmployeesMenu();
+
+        SmallWait(1000);
+        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("employeeList"));
+
+        logger.info("User successfully navigated to the Employee list page");
+    }
+
+    @Test(description = "Verify that the user can add Employee data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 4)
     @DataSource.SheetName("Employee")
     public void verifyEmployeeDataEntry(Map<String, String> data) throws InterruptedException {
         String[] employeeInfo = employeeData(data);

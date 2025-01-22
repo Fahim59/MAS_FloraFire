@@ -270,3 +270,5 @@
 2025-01-22 19:38:50.927 [main] INFO  pages.Employee_Page - Employee 1005 found
 2025-01-22 19:38:50.928 [main] INFO  tests.Employees - Successfully added Employee - 1005
 2025-01-22 19:38:50.931 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-22 20:04:55.678 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-22 20:07:42.293 [main] INFO  base.BaseClass - Browser launched successfully

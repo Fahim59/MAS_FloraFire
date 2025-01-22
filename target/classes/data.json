@@ -25,7 +25,8 @@
     "deliveryMode": "/deliveryModes",
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
-    "roles": "/roles"
+    "roles": "/roles",
+    "mapSettings": "/deliveryMapOptionSettings"
   },
 
   "values": {
@@ -66,7 +67,8 @@
     "discountCreate": "Discount has been created successfully",
     "employeeCreate": "Employee created successfully",
     "addressValidationSuccessText": "Address validation is successful",
-    "addressValidationFailedText": "Address validation failed"
+    "addressValidationFailedText": "Address validation failed",
+    "mapOptionSettings": "Map settings saved successfully"
   },
 
   "giftCard": {

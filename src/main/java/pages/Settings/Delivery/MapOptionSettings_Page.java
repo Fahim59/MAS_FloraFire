@@ -1,4 +1,4 @@
-package pages.Settings;
+package pages.Settings.Delivery;
 
 import base.BaseClass;
 import org.openqa.selenium.By;
@@ -26,6 +26,8 @@ public class MapOptionSettings_Page extends BaseClass{
 
     private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
 
+    private final By successMessage = By.xpath("//p[@class='abp-toast-message']");
+
     public MapOptionSettings_Page enterAPIKey(String key){
         write_Send_Keys(apiKeyField, key);
         return this;
@@ -37,5 +39,9 @@ public class MapOptionSettings_Page extends BaseClass{
 
     public void enterAPIKeySettings(String key){
         enterAPIKey(key).clickSaveButton();
+    }
+
+    public String getSuccessMessage(){
+        return get_Text(successMessage);
     }
 }

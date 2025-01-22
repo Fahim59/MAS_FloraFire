@@ -1,11 +1,10 @@
-package tests.Settings;
+package tests.Settings.Delivery;
 
 import base.BaseClass;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.Home_Page;
-import pages.Settings.MapOptionSettings_Page;
-
-import java.util.Map;
+import pages.Settings.Delivery.MapOptionSettings_Page;
 
 public class MapOption_Settings extends BaseClass {
     private Home_Page homePage;
@@ -31,10 +30,13 @@ public class MapOption_Settings extends BaseClass {
 
     @Test(description = "Verify that the user can add Map Option Settings data successfully", priority = 2)
     public void verifyMapOptionSettingsDataEntry() {
+        String message = jsonData.getJSONObject("successMessage").getString("mapOptionSettings");
 
         String key = "7rxmANLpTlwNV5DLJYfPamojRZ4OJvnC";
 
         mapOptionSettingsPage.enterAPIKeySettings(key);
+
+        Assert.assertEquals(message, mapOptionSettingsPage.getSuccessMessage());
 
         logger.info("Successfully added API key data");
     }

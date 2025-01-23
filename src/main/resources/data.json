@@ -26,7 +26,8 @@
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
     "roles": "/roles",
-    "mapSettings": "/deliveryMapOptionSettings"
+    "mapSettings": "/deliveryMapOptionSettings",
+    "creditCardSettings": "/credit-card-settings"
   },
 
   "values": {
@@ -68,7 +69,8 @@
     "employeeCreate": "Employee created successfully",
     "addressValidationSuccessText": "Address validation is successful",
     "addressValidationFailedText": "Address validation failed",
-    "mapOptionSettings": "Map settings saved successfully"
+    "mapOptionSettings": "Map settings saved successfully",
+    "creditCard": "Saved successfully"
   },
 
   "giftCard": {
@@ -78,5 +80,13 @@
     "flag": "No",
     "url": "",
     "fileName": "gc.png"
+  },
+
+  "creditCard": {
+    "publicKey": "pkapi_cert_P6dRqs1LzfWJ6HgGVZ",
+    "secretKey": "skapi_cert_MYl2AQAowiQAbLp5JesGKh7QFkcizOP2jcX9BrEMqQ",
+    "developerId": "000000",
+    "versionNumber": "0000",
+    "url": "https://cert.api2.heartlandportico.com"
   }
 }

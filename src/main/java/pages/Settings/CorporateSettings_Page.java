@@ -1,14 +1,9 @@
 package pages.Settings;
 
 import base.BaseClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.Settings.Delivery.DeliveryCode_Page;
-import pages.Settings.Delivery.ShortCode_Page;
-
 import java.time.Duration;
 
 public class CorporateSettings_Page extends BaseClass{
@@ -110,23 +105,54 @@ public class CorporateSettings_Page extends BaseClass{
         clickTaxOnDelivery(flag).clickTaxOnRelay(relayFlag).enterSalesTaxPercentage(salesTax);
     }
 
+    /* * Recipe Inventory Manage Type */
+
+    private final By recipeTypeField = By.xpath("//mat-radio-group[@formcontrolname='recipeInventoryManageType']//input[contains(@name, 'mat-radio-group')]");
+
+    public void clickRecipeType(String type) {
+        if(type.equalsIgnoreCase("Single")){
+            click_Radio_Element(recipeTypeField, "1");
+        }
+        else {
+            click_Radio_Element(recipeTypeField, "2");
+        }
+    }
+
     /* * POS */
 
-    private final By enableDiscountOnOrderField = By.xpath("//mat-checkbox[@formcontrolname='enableDiscountOnOrderItemSubtotal']//label[normalize-space()='Enable Discount On Order Items']");
-    private final By allowPartialPaymentField = By.xpath("//mat-checkbox[@formcontrolname='allowPartialPayment']//label[normalize-space()='Allow Partial Payment']");
+    private final By enableDiscountOnOrderField = By.xpath("//mat-checkbox[@formcontrolname='enableDiscountOnOrderItemSubtotal']/div/div/input");
+    private final By allowPartialPaymentField = By.xpath("//mat-checkbox[@formcontrolname='allowPartialPayment']/div/div/input");
     private final By creditCardFeeField = By.xpath("//input[@formcontrolname='creditCardFee']");
-    private final By enableCCFeeOnOrderField = By.xpath("//mat-checkbox[@formcontrolname='enabledCreditCardFeeOnPosOrder']//label[normalize-space()='Enable Credit Card Fee on POS orders']");
+    private final By enableCCFeeOnOrderField = By.xpath("//mat-checkbox[@formcontrolname='enabledCreditCardFeeOnPosOrder']/div/div/input");
 
     public CorporateSettings_Page enableDiscountOnOrder(String discountFlag) {
-        if(discountFlag.equalsIgnoreCase("Yes")){
-            selectCheckBox(enableDiscountOnOrderField);
+        WebElement element = wait_for_presence(enableDiscountOnOrderField);
+        String isChecked = element.getAttribute("class");
+
+        boolean shouldEnable = discountFlag.equalsIgnoreCase("Yes");
+        boolean isCurrentlySelected = isChecked.contains("selected");
+
+        if (shouldEnable && !isCurrentlySelected) {
+            element.click();
+        }
+        else if (!shouldEnable && isCurrentlySelected) {
+            element.click();
         }
         return this;
     }
 
     public CorporateSettings_Page allowPartialPayment(String paymentFlag) {
-        if(paymentFlag.equalsIgnoreCase("Yes")){
-            selectCheckBox(allowPartialPaymentField);
+        WebElement element = wait_for_presence(allowPartialPaymentField);
+        String isChecked = element.getAttribute("class");
+
+        boolean shouldEnable = paymentFlag.equalsIgnoreCase("Yes");
+        boolean isCurrentlySelected = isChecked.contains("selected");
+
+        if (shouldEnable && !isCurrentlySelected) {
+            element.click();
+        }
+        else if (!shouldEnable && isCurrentlySelected) {
+            element.click();
         }
         return this;
     }
@@ -137,8 +163,17 @@ public class CorporateSettings_Page extends BaseClass{
     }
 
     public void enableCCFeeOnOrder(String ccFlag) {
-        if(ccFlag.equalsIgnoreCase("Yes")){
-            selectCheckBox(enableCCFeeOnOrderField);
+        WebElement element = wait_for_presence(enableCCFeeOnOrderField);
+        String isChecked = element.getAttribute("class");
+
+        boolean shouldEnable = ccFlag.equalsIgnoreCase("Yes");
+        boolean isCurrentlySelected = isChecked.contains("selected");
+
+        if (shouldEnable && !isCurrentlySelected) {
+            element.click();
+        }
+        else if (!shouldEnable && isCurrentlySelected) {
+            element.click();
         }
     }
 
@@ -154,5 +189,38 @@ public class CorporateSettings_Page extends BaseClass{
         if(flag.equalsIgnoreCase("Yes")){
             selectCheckBox(enableCarryForwardField);
         }
+    }
+
+    /* * Corporate Customers */
+
+    private final By customerField = By.xpath("(//div[contains(@id,'mat-select-value')])[7]");
+
+    public CorporateSettings_Page selectCustomerField() throws InterruptedException {
+        click_Element(customerField);
+        SmallWait(200);
+
+        return this;
+    }
+
+    public CorporateSettings_Page selectCustomer(String customer) {
+        WebElement customerName = driver.findElement(By.xpath("//mat-option[@role='option']/span[text()='"+customer+"']"));
+        customerName.click();
+
+        return this;
+    }
+
+    public void selectCorporateCustomers(String cusOne, String cusTwo, String cusThree) throws InterruptedException {
+        selectCustomerField().selectCustomer(cusOne).selectCustomer(cusTwo).selectCustomer(cusThree).clickEscButton();
+    }
+
+    /*
+      * Buttons
+    */
+
+    private final By saveBtn = By.xpath("//span[contains(text(),'Save')]");
+
+    public void clickSaveButton() throws InterruptedException {
+        SmallWait(500);
+        click_Element_Js(saveBtn);
     }
 }

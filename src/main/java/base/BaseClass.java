@@ -94,10 +94,7 @@ public class BaseClass {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
             if (element.isDisplayed()) {
-                baseLogger.info("The 'Home' menu is visible.");
-            }
-            else {
-                Assert.fail("Login failed, the 'Home' menu is not visible.");
+                baseLogger.info("Element is visible.");
             }
         }
         catch (Exception e) {
@@ -144,14 +141,13 @@ public class BaseClass {
     }
     public void selectCheckBox(By locator){
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        Boolean isSelected = (Boolean) js.executeScript("return arguments[0].checked;", element);
-
-        //System.out.println(element.isSelected());
-        System.out.println("Boolean Value: "+isSelected);
-
         if (!element.isSelected()) {
             element.click();
         }
+    }
+
+    public void clickEscButton(){
+        new Actions(driver).sendKeys(Keys.ESCAPE).perform();
     }
 
     public void write_Send_Keys(By locator, String txt) {

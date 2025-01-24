@@ -1,6 +1,6 @@
 {
   "login_info": {
-    "username": "jae@un8wyobg.mailosaur.net",
+    "username": "mark",
     "password": "11!!qqQQ"
   },
 
@@ -70,7 +70,7 @@
     "addressValidationSuccessText": "Address validation is successful",
     "addressValidationFailedText": "Address validation failed",
     "mapOptionSettings": "Map settings saved successfully",
-    "creditCard": "Saved Successfully"
+    "creditCard": "Saved successfully"
   },
 
   "giftCard": {

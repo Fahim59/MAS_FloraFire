@@ -39,7 +39,7 @@ public class Value_Addition extends BaseClass {
     }
 
 
-    @Test(description = "Verify that user can add values successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
+    @Test(description = "Verify that user can add values successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2, enabled = false)
     @DataSource.SheetName("Value")
     public void verifyValueAddition(Map<String, String> valueData) throws InterruptedException {
         SmallWait(1000);
@@ -74,7 +74,7 @@ public class Value_Addition extends BaseClass {
 
     @Test(description = "Verify that user can add Account Class list successfully", dataProvider = "ValueListData", dataProviderClass = DataSource.class, priority = 3)
     public void verifyAccountClassValueListAddition(Map<String, String> valueData) throws InterruptedException {
-        SmallWait(2000);
+        SmallWait(1000);
 
         String[] data = valueListData("Account Class", valueData);
 

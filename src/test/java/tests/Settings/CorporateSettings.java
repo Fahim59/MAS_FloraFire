@@ -30,36 +30,46 @@ public class CorporateSettings extends BaseClass {
     public static String[] corporateSettingData() {
         /* * General */
 
-        String geocodingPreference = "Tomtom";
-        String passwordResetDays = "90";
-        String auditLogEmail = "testmustafizur@gmail.com";
+        String geocodingPreference = "Tomtom"; //0
+        String passwordResetDays = "90"; //1
+        String auditLogEmail = "testmustafizur@gmail.com"; //2
 
         /* * Transaction Charges */
 
-        String relayFee = "100";
-        String overSeasRelayFee = "150";
-        String wireOutDeliveryFee = "200";
+        String relayFee = "100"; //3
+        String overSeasRelayFee = "150"; //4
+        String wireOutDeliveryFee = "200"; //5
 
         /* * Tax */
 
-        String taxOnDelivery = "No";
-        String taxOnRelay = "No";
-        String salesTax = "7";
+        String taxOnDelivery = "No"; //6
+        String taxOnRelay = "No"; //7
+        String salesTax = "7"; //8
+
+        /* * Recipe Inventory Manage Type */
+
+        String recipeType = "Bundle";  //9    //Single or Bundle
 
         /* * POS */
 
-        String enableDiscountOnOrder = "Yes";
-        String allowPartialPayment = "Yes";
-        String creditCardFee = "5";
-        String enableCCFeeOnOrder = "Yes";
+        String enableDiscountOnOrder = "Yes"; //10
+        String allowPartialPayment = "Yes"; //11
+        String creditCardFee = "5"; //12
+        String enableCCFeeOnOrder = "Yes"; //13
 
         /* * Gift Card */
 
-        String enableCarryForward = "Yes";
+        String enableCarryForward = "Yes"; //14
+
+        /* * Corporate Customers */
+
+        String customerOne = "Maria Lopez"; //15
+        String customerTwo = "Emily Johnson"; //16
+        String customerThree = "Linda Brown"; //17
 
         return new String[] {geocodingPreference, passwordResetDays, auditLogEmail, relayFee, overSeasRelayFee, wireOutDeliveryFee,
-                taxOnDelivery, taxOnRelay, salesTax, enableDiscountOnOrder, allowPartialPayment, creditCardFee, enableCCFeeOnOrder,
-                enableCarryForward};
+                taxOnDelivery, taxOnRelay, salesTax, recipeType, enableDiscountOnOrder, allowPartialPayment, creditCardFee, enableCCFeeOnOrder,
+                enableCarryForward, customerOne, customerTwo, customerThree};
     }
 
     @Test(description = "Verify that the user can add  data successfully", priority = 2)
@@ -67,29 +77,34 @@ public class CorporateSettings extends BaseClass {
         String[] corporateSettingInfo = corporateSettingData();
 
         corporateSettingsPage.enterGeneralData(corporateSettingInfo[0],corporateSettingInfo[1],corporateSettingInfo[2]);
+        logger.info("Successfully added Corporate Settings General data");
 
         Scroll(0, 250);
 
-        logger.info("Successfully added Corporate Settings General data");
-
         corporateSettingsPage.enterTransactionChargeData(corporateSettingInfo[3],corporateSettingInfo[4],corporateSettingInfo[5]);
+        logger.info("Successfully added Corporate Settings Transaction Charge data");
 
         Scroll(0, 750);
 
-        logger.info("Successfully added Corporate Settings Transaction Charge data");
-
         corporateSettingsPage.enterTaxSettings(corporateSettingInfo[6],corporateSettingInfo[7],corporateSettingInfo[8]);
+        logger.info("Successfully added Corporate Settings Tax data");
 
         Scroll(0, 850);
 
-        logger.info("Successfully added Corporate Settings Tax data");
+        corporateSettingsPage.clickRecipeType(corporateSettingInfo[9]);
+        logger.info("Successfully added Corporate Settings Recipe Inventory Manage Type data");
 
-        corporateSettingsPage.enterPOSSettings(corporateSettingInfo[9],corporateSettingInfo[10],corporateSettingInfo[11],corporateSettingInfo[12]);
-
+        corporateSettingsPage.enterPOSSettings(corporateSettingInfo[10],corporateSettingInfo[11],corporateSettingInfo[12],corporateSettingInfo[13]);
         logger.info("Successfully added Corporate Settings POS data");
 
-        corporateSettingsPage.enableCarryForward(corporateSettingInfo[13]);
-
+        corporateSettingsPage.enableCarryForward(corporateSettingInfo[14]);
         logger.info("Successfully added Corporate Settings GiftCard data");
+
+        Scroll(0, 500);
+
+        corporateSettingsPage.selectCorporateCustomers(corporateSettingInfo[15], corporateSettingInfo[16], corporateSettingInfo[17]);
+        logger.info("Successfully added Corporate Customer data");
+
+        corporateSettingsPage.clickSaveButton();
     }
 }

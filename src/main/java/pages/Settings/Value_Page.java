@@ -103,7 +103,7 @@ public class Value_Page extends BaseClass{
             WebElement actionButton = driver.findElement(By.xpath(valueTable+ "/mat-row["+l+"]/mat-cell[1]"));
 
             if(name.equalsIgnoreCase(valueName)){
-                SmallWait(1000);
+                SmallWait(2000);
 
                 wait.until(ExpectedConditions.elementToBeClickable(actionButton)).click();
                 click_Element(detailsButton);

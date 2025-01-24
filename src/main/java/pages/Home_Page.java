@@ -48,6 +48,8 @@ public class Home_Page extends BaseClass{
 
     private final By corporateSettingsMenu = By.xpath("(.//span[text()='Corporate Settings'])[1]");
 
+    private final By storeSettingsMenu = By.xpath("(.//span[text()='Stores'])[1]");
+
     private final By employeeSettingsMenu = By.xpath("(.//span[text()='Employee Settings'])[1]");
 
     private final By deliveryMenu = By.xpath("(.//span[text()='Deliveries'])[1]");
@@ -127,6 +129,11 @@ public class Home_Page extends BaseClass{
     public void clickCorporateSettingsMenu() {
         click_Element(settingsMenu);
         click_Element(corporateSettingsMenu);
+    }
+
+    public void clickStoreSettingsMenu() {
+        click_Element(settingsMenu);
+        click_Element(storeSettingsMenu);
     }
 
     public void clickEmployeeSettingsMenu() {

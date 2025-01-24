@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 import pages.Home_Page;
 import pages.Settings.CorporateSettings_Page;
 
-public class CorporateSettings extends BaseClass {
+public class Corporate_Settings extends BaseClass {
     private Home_Page homePage;
     private CorporateSettings_Page corporateSettingsPage;
 

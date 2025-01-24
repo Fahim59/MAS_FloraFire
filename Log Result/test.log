@@ -2,376 +2,396 @@
 2025-01-24 15:37:26.709 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 15:37:36.888 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 15:37:36.888 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 15:37:41.078 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 15:37:43.241 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 15:37:45.037 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 15:37:46.689 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 15:37:47.011 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 15:37:41.078 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 15:37:43.241 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 15:37:45.037 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 15:37:46.689 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 15:37:47.011 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 15:37:47.014 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 15:47:03.518 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 15:47:12.104 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 15:47:18.026 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 15:47:18.026 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 15:47:22.238 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 15:47:24.341 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 15:47:26.159 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 15:47:27.822 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 15:47:27.869 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 15:47:28.217 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 15:47:22.238 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 15:47:24.341 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 15:47:26.159 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 15:47:27.822 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 15:47:27.869 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 15:47:28.217 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 15:47:28.220 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:16:52.561 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:17:01.098 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:17:07.296 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:17:07.296 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:17:11.478 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:17:13.567 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:17:15.406 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:17:17.080 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:17:17.114 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:17:17.443 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:17:11.478 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:17:13.567 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:17:15.406 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:17:17.080 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:17:17.114 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:17:17.443 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:17:17.445 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:20:32.886 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:20:41.953 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:20:47.927 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:20:47.927 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:20:52.142 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:20:54.249 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:20:56.068 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:20:57.731 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:20:57.761 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:20:58.009 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:20:52.142 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:20:54.249 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:20:56.068 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:20:57.731 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:20:57.761 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:20:58.009 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:20:58.012 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:21:41.607 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:21:49.891 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:21:55.596 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:21:55.597 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:21:59.773 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:22:01.845 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:22:03.663 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:22:05.320 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:22:05.354 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:22:05.551 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:21:59.773 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:22:01.845 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:22:03.663 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:22:05.320 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:22:05.354 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:22:05.551 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:22:05.555 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:22:26.261 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:22:34.791 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:22:40.560 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:22:40.560 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:22:44.733 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:22:46.808 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:22:48.613 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:22:50.274 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:22:50.306 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:22:50.470 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:22:44.733 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:22:46.808 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:22:48.613 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:22:50.274 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:22:50.306 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:22:50.470 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:22:50.473 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:42:25.370 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:42:34.937 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:42:42.538 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:42:42.538 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:42:46.731 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:42:48.820 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:42:50.629 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:42:52.293 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:42:52.334 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:42:52.567 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:42:46.731 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:42:48.820 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:42:50.629 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:42:52.293 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:42:52.334 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:42:52.567 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:42:52.571 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:44:29.735 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:44:38.956 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:44:45.445 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:44:45.447 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:44:49.641 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:44:51.734 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:44:53.555 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:44:55.232 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:44:55.263 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:44:55.591 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:44:49.641 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:44:51.734 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:44:53.555 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:44:55.232 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:44:55.263 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:44:55.591 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:44:55.594 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:45:11.646 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:45:20.182 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:45:25.875 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:45:25.875 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:45:30.056 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:45:32.144 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:45:33.951 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:45:35.615 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:45:35.644 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:45:35.838 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
+2025-01-24 16:45:30.056 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:45:32.144 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:45:33.951 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:45:35.615 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:45:35.644 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:45:35.838 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
 2025-01-24 16:45:35.841 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:46:05.743 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:46:14.252 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:46:19.991 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:46:19.992 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:46:24.190 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:46:26.328 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:46:28.150 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:46:29.818 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:46:29.850 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:46:30.050 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 16:46:30.129 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 16:46:24.190 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:46:26.328 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:46:28.150 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:46:29.818 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:46:29.850 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:46:30.050 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 16:46:30.129 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 16:46:30.133 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 16:50:53.884 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 16:51:02.673 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 16:51:09.115 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 16:51:09.115 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 16:51:13.328 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 16:51:13.895 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 16:51:15.723 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 16:51:17.390 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 16:51:18.946 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 16:51:19.152 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 16:51:19.235 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 16:51:13.328 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 16:51:13.895 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 16:51:15.723 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 16:51:17.390 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 16:51:18.946 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 16:51:19.152 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 16:51:19.235 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 16:51:20.753 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:16:48.686 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:16:58.342 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:17:04.700 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 17:17:04.700 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:17:08.885 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:17:09.448 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:17:11.276 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:17:12.940 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:17:14.492 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:17:14.697 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:17:14.770 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:17:08.885 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:17:09.448 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:17:11.276 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:17:12.940 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:17:14.492 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:17:14.697 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:17:14.770 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:17:16.308 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:17:54.275 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:18:03.040 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:18:09.286 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 17:18:09.286 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:18:13.497 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:18:14.077 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:18:15.919 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:18:17.589 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:18:19.143 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:18:19.330 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:18:19.402 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:18:13.497 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:18:14.077 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:18:15.919 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:18:17.589 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:18:19.143 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:18:19.330 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:18:19.402 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:18:21.266 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:20:59.499 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:21:08.130 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:21:13.900 [main] INFO  base.BaseClass - The 'Home' menu is visible.
 2025-01-24 17:21:13.901 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:21:18.094 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:21:18.661 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:21:20.482 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:21:22.157 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:21:23.703 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:21:23.908 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:21:23.980 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:21:18.094 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:21:18.661 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:21:20.482 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:21:22.157 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:21:23.703 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:21:23.908 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:21:23.980 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:21:26.969 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:30:34.045 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:30:43.490 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:30:49.543 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:30:49.543 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:30:53.745 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:30:54.298 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:30:56.120 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:30:57.782 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:30:59.338 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:30:59.530 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:30:59.601 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:30:53.745 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:30:54.298 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:30:56.120 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:30:57.782 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:30:59.338 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:30:59.530 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:30:59.601 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:31:01.587 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:33:32.831 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:33:41.459 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:33:47.164 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:33:47.164 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:33:51.348 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:33:51.908 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:33:53.739 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:33:55.396 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:33:56.959 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:33:57.158 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:33:57.228 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:33:51.348 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:33:51.908 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:33:53.739 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:33:55.396 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:33:56.959 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:33:57.158 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:33:57.228 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:33:59.272 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:35:14.539 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:35:24.064 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:35:29.927 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:35:29.928 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:35:34.132 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:35:34.696 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:35:36.564 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:35:38.238 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:35:39.792 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:35:39.984 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:35:40.065 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:35:34.132 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:35:34.696 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:35:36.564 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:35:38.238 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:35:39.792 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:35:39.984 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:35:40.065 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:35:42.086 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:36:44.440 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:36:53.145 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:36:59.898 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:36:59.898 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:37:04.132 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:37:04.757 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:37:06.572 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:37:08.240 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:37:09.791 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:37:09.944 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:37:10.017 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:37:04.132 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:37:04.757 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:37:06.572 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:37:08.240 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:37:09.791 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:37:09.944 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:37:10.017 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:37:12.042 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:38:31.346 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:38:40.356 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:38:46.078 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:38:46.078 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:38:50.290 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:38:50.884 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:38:52.722 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:38:54.387 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:38:55.935 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:38:56.082 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:38:56.157 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:38:50.290 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:38:50.884 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:38:52.722 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:38:54.387 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:38:55.935 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:38:56.082 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:38:56.157 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:38:58.303 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:39:14.121 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:39:23.480 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:39:29.178 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:39:29.178 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:39:33.374 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:39:33.958 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:39:35.769 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:39:37.425 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:39:38.985 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:39:39.112 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:39:39.177 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:39:33.374 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:39:33.958 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:39:35.769 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:39:37.425 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:39:38.985 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:39:39.112 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:39:39.177 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:39:41.151 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:43:24.470 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:43:39.723 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:43:48.206 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:43:53.916 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:43:53.917 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:43:58.101 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:43:58.685 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:44:00.526 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:44:02.192 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:44:03.746 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:44:03.946 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:44:04.018 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:43:58.101 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:43:58.685 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:44:00.526 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:44:02.192 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:44:03.746 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:44:03.946 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:44:04.018 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:44:06.058 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 17:45:33.604 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 17:45:42.434 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 17:45:48.117 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 17:45:48.117 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 17:45:52.314 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 17:45:52.895 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 17:45:54.724 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 17:45:56.394 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 17:45:57.948 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 17:45:58.139 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 17:45:58.218 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 17:45:52.314 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 17:45:52.895 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 17:45:54.724 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 17:45:56.394 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 17:45:57.948 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 17:45:58.139 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 17:45:58.218 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 17:46:00.416 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:00:13.281 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:00:26.866 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:00:32.702 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:00:32.702 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:00:36.903 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:00:37.483 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:00:39.310 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:00:40.976 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:00:42.532 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:00:42.721 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:00:42.799 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:00:36.903 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:00:37.483 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:00:39.310 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:00:40.976 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:00:42.532 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:00:42.721 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:00:42.799 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:00:46.084 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:02:16.002 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:02:24.774 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:02:30.211 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:02:30.212 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:02:34.425 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:02:35.018 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:02:36.831 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:02:38.505 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:02:40.068 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:02:40.278 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:02:40.373 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:02:34.425 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:02:35.018 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:02:36.831 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:02:38.505 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:02:40.068 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:02:40.278 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:02:40.373 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:02:43.714 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:13:01.066 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:13:09.913 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:13:15.611 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:13:15.612 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:13:19.813 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:13:20.376 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:13:22.197 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:13:23.857 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:13:25.407 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:13:25.611 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:13:25.694 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:13:19.813 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:13:20.376 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:13:22.197 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:13:23.857 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:13:25.407 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:13:25.611 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:13:25.694 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:13:27.914 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:13:59.514 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:14:08.583 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:14:14.575 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:14:14.575 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:14:18.772 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:14:19.373 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:14:21.200 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:14:22.863 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:14:24.419 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:14:24.620 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:14:24.695 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:14:18.772 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:14:19.373 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:14:21.200 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:14:22.863 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:14:24.419 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:14:24.620 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:14:24.695 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:14:28.729 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:15:55.136 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:16:03.697 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:16:09.416 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:16:09.416 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:16:13.608 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:16:14.200 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:16:16.011 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:16:17.691 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:16:19.254 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:16:19.472 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:16:19.546 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:16:13.608 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:16:14.200 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:16:16.011 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:16:17.691 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:16:19.254 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:16:19.472 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:16:19.546 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:16:23.535 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:18:59.887 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:19:18.707 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:19:29.266 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:19:29.266 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:19:33.473 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:19:34.098 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:19:35.976 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:19:37.682 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:19:39.232 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:19:39.448 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:19:39.542 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:19:33.473 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:19:34.098 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:19:35.976 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:19:37.682 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:19:39.232 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:19:39.448 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:19:39.542 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:19:43.586 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:21:36.456 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:21:46.850 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:21:53.196 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:21:53.196 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:21:57.374 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:21:57.955 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:21:59.773 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:22:01.429 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:22:02.982 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:22:03.117 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:22:03.185 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:21:57.374 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:21:57.955 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:21:59.773 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:22:01.429 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:22:02.982 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:22:03.117 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:22:03.185 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:22:07.254 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:24:33.086 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:24:41.504 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:24:47.273 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:24:47.274 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:24:51.520 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:24:52.208 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:24:54.071 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:24:55.759 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:24:57.319 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:24:57.466 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:24:57.546 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:24:51.520 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:24:52.208 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:24:54.071 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:24:55.759 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:24:57.319 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:24:57.466 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:24:57.546 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
 2025-01-24 18:25:01.590 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:27:02.220 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:27:12.389 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:27:19.601 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:27:19.601 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:27:23.828 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:27:24.466 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:27:26.282 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:27:27.953 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:27:29.508 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:27:29.642 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:27:29.728 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
-2025-01-24 18:27:31.769 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Customer data
+2025-01-24 18:27:23.828 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:27:24.466 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:27:26.282 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:27:27.953 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:27:29.508 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:27:29.642 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:27:29.728 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:27:31.769 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Customer data
 2025-01-24 18:27:31.773 [main] INFO  base.BaseClass - Browser quit successfully
 2025-01-24 18:30:09.182 [main] INFO  base.BaseClass - Browser launched successfully
 2025-01-24 18:30:18.842 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-01-24 18:30:26.299 [main] INFO  base.BaseClass - Element is visible.
 2025-01-24 18:30:26.299 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-01-24 18:30:30.545 [main] INFO  tests.Settings.CorporateSettings - User successfully navigated to the Corporate Settings page
-2025-01-24 18:30:31.143 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings General data
-2025-01-24 18:30:32.974 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Transaction Charge data
-2025-01-24 18:30:34.630 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Tax data
-2025-01-24 18:30:36.179 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-01-24 18:30:36.321 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings POS data
-2025-01-24 18:30:36.394 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Settings GiftCard data
-2025-01-24 18:30:38.390 [main] INFO  tests.Settings.CorporateSettings - Successfully added Corporate Customer data
+2025-01-24 18:30:30.545 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
+2025-01-24 18:30:31.143 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
+2025-01-24 18:30:32.974 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
+2025-01-24 18:30:34.630 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
+2025-01-24 18:30:36.179 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
+2025-01-24 18:30:36.321 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
+2025-01-24 18:30:36.394 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
+2025-01-24 18:30:38.390 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Customer data
 2025-01-24 18:30:38.941 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-24 19:34:16.493 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-24 19:34:25.364 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-24 19:34:31.570 [main] INFO  base.BaseClass - Element is visible.
+2025-01-24 19:34:31.570 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-24 19:34:35.789 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
+2025-01-24 19:34:35.808 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-24 19:36:58.497 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-24 19:37:08.480 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-24 19:37:14.500 [main] INFO  base.BaseClass - Element is visible.
+2025-01-24 19:37:14.500 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-24 19:37:18.705 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
+2025-01-24 19:37:24.077 [main] INFO  tests.Settings.Store_Settings - Successfully added data - Mark
+2025-01-24 19:37:24.080 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-24 19:49:44.062 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-24 19:49:55.646 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-24 19:50:01.631 [main] INFO  base.BaseClass - Element is visible.
+2025-01-24 19:50:01.632 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-24 19:50:05.826 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
+2025-01-24 19:50:12.270 [main] INFO  tests.Settings.Store_Settings - Successfully added data - Mark
+2025-01-24 19:50:12.273 [main] INFO  base.BaseClass - Browser quit successfully

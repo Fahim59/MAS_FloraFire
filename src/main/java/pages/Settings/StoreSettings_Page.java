@@ -4,9 +4,9 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.ProductMaintenance_Page;
 
 import java.time.Duration;
 
@@ -22,6 +22,10 @@ public class StoreSettings_Page extends BaseClass{
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
     }
+
+    /*
+     * Store Details
+     */
 
     private final By managerField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
 
@@ -72,13 +76,16 @@ public class StoreSettings_Page extends BaseClass{
         return this;
     }
 
-    public StoreSettings_Page selectDateFormat(String dateFormat) {
+    public StoreSettings_Page selectDateFormat(String dateFormat) throws InterruptedException {
         if(dateFormat.equalsIgnoreCase("MM/DD/YYYY")){
             click_Radio_Element(dateFormatField, "MM/DD/YYYY");
         }
         else {
             click_Radio_Element(dateFormatField, "YYYY/MM/DD");
         }
+
+        Scroll(0, 450);
+
         return this;
     }
 
@@ -98,7 +105,7 @@ public class StoreSettings_Page extends BaseClass{
     public void uploadStoreImage(String fileName) throws InterruptedException {
         SmallWait(1000);
         upload_file(imageUploadField, fileName);
-        SmallWait(2000);
+        SmallWait(3000);
     }
 
     public void enterStoreDetails(String name, String tax, String flag, String timeFormat, String dateFormat, String fbUrl,
@@ -106,5 +113,52 @@ public class StoreSettings_Page extends BaseClass{
 
         selectManager(name).enterSalesTax(tax).clickIsTrackInventory(flag).selectTimeFormat(timeFormat).selectDateFormat(dateFormat).
                 enterFacebookUrl(fbUrl).enterTwitterUrl(twitterUrl).enterPinterestUrl(pinterestUrl).uploadStoreImage(fileName);
+    }
+
+    /*
+     * Hours
+     */
+
+    private final By isClosedSundayField = By.xpath("//mat-radio-group[@formcontrolname='isClose']//input[contains(@name, 'mat-radio-group-15')]");
+    private final By isClosedSaturdayField = By.xpath("//mat-radio-group[@formcontrolname='isClose']//input[contains(@name, 'mat-radio-group-33')]");
+
+    public StoreSettings_Page enterOpenTime(String[] openTime){
+        for(int l = 2; l < 7; l++){
+            WebElement startTimeField = driver.findElement(By.xpath("(//input[@formcontrolname='startTime'])["+l+"]"));
+            startTimeField.sendKeys(openTime[l - 2]);
+        }
+
+        return this;
+    }
+
+    public StoreSettings_Page enterCloseTime(String[] closeTime){
+        for(int l = 2; l < 7; l++){
+            WebElement endTimeField = driver.findElement(By.xpath("(//input[@formcontrolname='endTime'])["+l+"]"));
+            endTimeField.sendKeys(closeTime[l - 2]);
+        }
+
+        return this;
+    }
+
+    public StoreSettings_Page isStoreClosed() {
+        click_Radio_Element(isClosedSundayField, "true");
+        click_Radio_Element(isClosedSaturdayField, "true");
+
+        return this;
+    }
+
+    public void enterStoreHoursDetails(String[] openTime, String[] closeTime) throws InterruptedException {
+        enterOpenTime(openTime).enterCloseTime(closeTime).isStoreClosed().clickSaveButton();
+    }
+
+    /*
+     * Buttons
+     */
+
+    private final By saveButton = By.xpath("//span[contains(text(),'Save')]");
+
+    public void clickSaveButton() throws InterruptedException {
+        SmallWait(1000);
+        click_Element_Js(saveButton);
     }
 }

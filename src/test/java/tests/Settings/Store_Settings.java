@@ -1,12 +1,9 @@
 package tests.Settings;
 
 import base.BaseClass;
-import base.DataSource;
 import org.testng.annotations.*;
 import pages.Home_Page;
 import pages.Settings.StoreSettings_Page;
-
-import java.util.Map;
 
 public class Store_Settings extends BaseClass {
     private Home_Page homePage;
@@ -51,9 +48,16 @@ public class Store_Settings extends BaseClass {
     public void verifyStoreSettingsDataEntry() throws InterruptedException {
         String[] storeSettingsInfo = storeSettingsData();
 
+        String[] startTimes = {"10:00:AM", "10:30:AM", "10:00:AM", "11:00:AM", "12:00:AM"};
+        String[] endTimes = {"08:00:PM", "08:30:PM", "08:00:PM", "09:00:PM", "10:00:PM"};
+
         storeSettingsPage.enterStoreDetails(storeSettingsInfo[0], storeSettingsInfo[1], storeSettingsInfo[2], storeSettingsInfo[3],
                 storeSettingsInfo[4], storeSettingsInfo[5], storeSettingsInfo[6], storeSettingsInfo[7], storeSettingsInfo[8]);
 
-        logger.info("Successfully added data - {}", storeSettingsInfo[0]);
+        Scroll(0, 650);
+
+        storeSettingsPage.enterStoreHoursDetails(startTimes, endTimes);
+
+        logger.info("Successfully added Store Settings data");
     }
 }

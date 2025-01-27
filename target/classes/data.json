@@ -23,6 +23,7 @@
     "deliveryZone": "/delivery-zones",
     "deliverySlot": "/deliverySlots",
     "deliveryMode": "/deliveryModes",
+    "calendar": "/calendar",
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
     "roles": "/roles",

@@ -24,6 +24,15 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By newCustomerButton = By.xpath("//span[contains(text(),'New Customer')]");
 
+    public void clickNewCustomerButton() throws InterruptedException {
+        SmallWait(2000);
+        click_Element(newCustomerButton);
+    }
+
+    /*
+     * Personal Details
+     */
+
     private final By manualIdType = By.xpath("(.//*[@type='radio'])[1]");
     private final By autoIdType = By.xpath("(.//*[@type='radio'])[2]");
 
@@ -39,43 +48,6 @@ public class CustomerMaintenance_Page extends BaseClass{
     private final By zipField = By.xpath("//input[@formcontrolname='zip']");
 
     private final By faxField = By.xpath("//input[@formcontrolname='fax']");
-
-    private final By customerStatusField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[2]");
-    private final By customerTypeField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[3]");
-    private final By customerAccountClassField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[4]");
-    private final By storeField = By.xpath("(//span[contains(@class,'mat-mdc-select-min-line ng')])[6]");
-
-    private final By taxYesField = By.xpath("(//input[@type='radio' and @value='true'])[4]");
-    private final By taxNoField = By.xpath("(//input[@type='radio' and @value='false'])[4]");
-    private final By taxNumberField = By.xpath("//input[@formcontrolname='taxCertificate']");
-
-    private final By deliveryField = By.xpath("//*[@class='mdc-checkbox__native-control' and @type='checkbox']");
-    private final By deliveryChargeField = By.xpath("//input[@formcontrolname='deliveryCharge']");
-
-    private final By discountField = By.xpath("//input[@formcontrolname='discount']");
-
-    private final By wireOutDiscountField = By.xpath("//input[@formcontrolname='discountOnWireout']");
-
-    private final By referenceField = By.xpath("//input[@formcontrolname='customerReference']");
-    private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
-
-    private final By newEmailButton = By.xpath("//span[contains(text(),'New Email')]");
-    private final By emailField = By.xpath("//input[@formcontrolname='email']");
-    private final By isPrimaryEmailField = By.xpath("(.//*[@type='checkbox'])[2]");
-    private final By saveEmailBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
-
-    private final By newPhoneButton = By.xpath("//span[contains(text(),'New Phone Number')]");
-    private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
-    private final By isPrimaryPhoneField = By.xpath("(.//*[@type='checkbox'])[2]");
-    private final By savePhoneBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
-
-    private final By saveAndContBtn = By.xpath("//span[contains(text(),'Save And Continue')]");
-    private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
-
-    public void clickNewCustomerButton() throws InterruptedException {
-        SmallWait(2000);
-        click_Element(newCustomerButton);
-    }
 
     public CustomerMaintenance_Page enterCustomerId(String flag, String id){
         if(flag.equalsIgnoreCase("Yes")){
@@ -135,6 +107,80 @@ public class CustomerMaintenance_Page extends BaseClass{
         write_Send_Keys(faxField, "+1-212-555-1234");
     }
 
+    public void enterCustomerPersonalDetails(String flag, String id, String name, String address, String addressCont, String country,
+                                             String state, String city, String zip) throws InterruptedException {
+
+        enterCustomerId(flag, id).enterCustomerName(name).enterCustomerAddress(address).enterCustomerAddressCont(addressCont).
+                selectCustomerCountry(country).selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).
+                enterCustomerFax();
+    }
+
+    private final By newEmailButton = By.xpath("//span[contains(text(),'New Email')]");
+    private final By emailField = By.xpath("//input[@formcontrolname='email']");
+    private final By isPrimaryEmailField = By.xpath("(.//*[@type='checkbox'])[2]");
+    private final By saveEmailBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
+
+    private final By newPhoneButton = By.xpath("//span[contains(text(),'New Phone Number')]");
+    private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
+    private final By isPrimaryPhoneField = By.xpath("(.//*[@type='checkbox'])[2]");
+    private final By savePhoneBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
+
+    public CustomerMaintenance_Page clickEmailButton() {
+        click_Element(newEmailButton);
+        return this;
+    }
+    public void enterEmail(String email) throws InterruptedException {
+        write_Send_Keys(emailField, email);
+        selectCheckBox(isPrimaryEmailField);
+
+        SmallWait(500);
+        click_Element(saveEmailBtn);
+    }
+
+    public void enterCustomerEmail(String email) throws InterruptedException {
+        SmallWait(1000);
+        clickEmailButton().enterEmail(email);
+    }
+
+    public CustomerMaintenance_Page clickPhoneButton() {
+        click_Element(newPhoneButton);
+        return this;
+    }
+    public void enterPhone(String phone) throws InterruptedException {
+        write_Send_Keys(phoneField, phone);
+        selectCheckBox(isPrimaryPhoneField);
+
+        SmallWait(500);
+        click_Element(savePhoneBtn);
+    }
+
+    public void enterCustomerPhone(String phone) throws InterruptedException {
+        SmallWait(1000);
+        clickPhoneButton().enterPhone(phone);
+    }
+
+    /*
+     * Other Details
+     */
+
+    private final By customerStatusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
+    private final By customerTypeField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
+    private final By customerAccountClassField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
+    private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
+
+    private final By taxExemptField = By.xpath("//mat-radio-group[@formcontrolname='taxExempt']//input[contains(@name, 'mat-radio-group')]");
+    private final By taxNumberField = By.xpath("//input[@formcontrolname='taxCertificate']");
+
+    private final By deliveryField = By.xpath("//mat-checkbox[@formcontrolname='hasDeliveryCharge']/div/div/input");
+    private final By deliveryChargeField = By.xpath("//input[@formcontrolname='deliveryCharge']");
+
+    private final By discountField = By.xpath("//input[@formcontrolname='discount']");
+
+    private final By wireOutDiscountField = By.xpath("//input[@formcontrolname='discountOnWireout']");
+
+    private final By referenceField = By.xpath("//input[@formcontrolname='customerReference']");
+    private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
+
     public CustomerMaintenance_Page selectCustomerStatus(String status) throws InterruptedException {
         if(!get_Text(customerStatusField).equals(status)){
             click_Element(customerStatusField);
@@ -147,8 +193,9 @@ public class CustomerMaintenance_Page extends BaseClass{
     public CustomerMaintenance_Page selectCustomerType(String type) throws InterruptedException {
         if(!get_Text(customerTypeField).equals(type)){
             click_Element(customerTypeField);
+
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+type+"')]")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+type+"', ' ')]")));
         }
 
         return this;
@@ -175,10 +222,11 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     public CustomerMaintenance_Page enterTaxDetails(String flag) throws InterruptedException {
         if(flag.equalsIgnoreCase("No")){
-            click_Radio_Element(taxNoField, "false");
+            click_Radio_Element(taxExemptField, "false");
         }
         else{
-            click_Radio_Element(taxYesField, "true");
+            click_Radio_Element(taxExemptField, "true");
+
             SmallWait(500);
             write_Send_Keys(taxNumberField, "9xx-xx-xxxx");
         }
@@ -193,6 +241,7 @@ public class CustomerMaintenance_Page extends BaseClass{
     public CustomerMaintenance_Page addDeliveryCharge(String flag, String charge) throws InterruptedException {
         if(flag.equalsIgnoreCase("Yes")){
             selectCheckBox(deliveryField);
+
             SmallWait(500);
             write_Send_Keys(deliveryChargeField, charge);
         }
@@ -219,14 +268,6 @@ public class CustomerMaintenance_Page extends BaseClass{
         Scroll(0, 500);
     }
 
-    public void enterCustomerPersonalDetails(String flag, String id, String name, String address, String addressCont, String country,
-                                             String state, String city, String zip) throws InterruptedException {
-
-        enterCustomerId(flag, id).enterCustomerName(name).enterCustomerAddress(address).enterCustomerAddressCont(addressCont).
-                selectCustomerCountry(country).selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).
-                enterCustomerFax();
-    }
-
     public void enterCustomerOtherDetails(String status, String type, String accClass, String store, String flag, String deliveryFlag,
                                           String charge, String discount, String wireDiscount, String reference, String comment) throws InterruptedException {
 
@@ -235,41 +276,16 @@ public class CustomerMaintenance_Page extends BaseClass{
                 enterWireOutDiscount(wireDiscount).enterCustomerReference(reference).enterComment(comment);
     }
 
+    /*
+     * Buttons
+     */
+
+    private final By saveAndContBtn = By.xpath("//span[contains(text(),'Save And Continue')]");
+    private final By saveBtn = By.xpath("(//span[contains(text(),'Save')])[1]");
+
     public void clickSaveAndContButton() throws InterruptedException {
         SmallWait(2000);
         click_Element(saveAndContBtn);
-    }
-
-    public CustomerMaintenance_Page clickEmailButton() {
-        click_Element(newEmailButton);
-        return this;
-    }
-    public void enterEmail(String email) throws InterruptedException {
-        write_Send_Keys(emailField, email);
-        selectCheckBox(isPrimaryEmailField);
-        SmallWait(500);
-        click_Element(saveEmailBtn);
-    }
-
-    public void enterCustomerEmail(String email) throws InterruptedException {
-        SmallWait(500);
-        clickEmailButton().enterEmail(email);
-    }
-
-    public CustomerMaintenance_Page clickPhoneButton() {
-        click_Element(newPhoneButton);
-        return this;
-    }
-    public void enterPhone(String phone) throws InterruptedException {
-        write_Send_Keys(phoneField, phone);
-        selectCheckBox(isPrimaryPhoneField);
-        SmallWait(500);
-        click_Element(savePhoneBtn);
-    }
-
-    public void enterCustomerPhone(String phone) throws InterruptedException {
-        SmallWait(500);
-        clickPhoneButton().enterPhone(phone);
     }
 
     public void clickSaveButton() {

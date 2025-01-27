@@ -462,3 +462,23 @@
 2025-01-27 16:30:58.344 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 found on the calendar
 2025-01-27 16:30:58.344 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
 2025-01-27 16:30:58.348 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 17:26:17.664 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 17:26:28.917 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 17:26:38.510 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 17:26:38.511 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 17:26:41.622 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-27 17:26:50.421 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-27 17:39:40.535 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 17:39:49.665 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 17:39:55.498 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 17:39:55.498 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 17:39:58.639 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-27 17:40:07.393 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-27 18:02:10.184 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 18:02:19.322 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 18:02:25.657 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 18:02:25.657 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 18:02:28.762 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-01-27 18:02:37.457 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-01-27 18:02:45.050 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2025-01-27 18:04:19.918 [main] INFO  base.BaseClass - Browser quit successfully

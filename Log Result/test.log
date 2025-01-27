@@ -138,3 +138,327 @@
 2025-01-27 13:27:53.004 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
 2025-01-27 13:28:04.423 [main] INFO  tests.Settings.Store_Settings - Successfully added Store Settings data
 2025-01-27 13:28:04.426 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:12:38.738 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:12:50.258 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:12:57.639 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:12:57.639 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:13:01.901 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:13:05.461 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:13:05.485 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:13:05.509 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:13:05.534 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:13:05.557 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:13:05.564 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:13:05.567 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:13:35.561 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:13:44.659 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:13:50.620 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:13:50.620 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:13:54.939 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:13:58.494 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:13:58.517 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:13:58.540 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:13:58.562 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:13:58.586 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:13:58.594 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:13:58.597 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:14:40.230 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:14:52.635 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:14:59.206 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:14:59.206 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:15:03.473 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:15:07.019 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:15:07.044 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:15:07.069 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:15:07.095 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:15:07.120 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:15:07.129 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:15:07.132 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:35:57.924 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:36:07.614 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:36:14.481 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:36:14.481 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:36:18.768 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:36:22.540 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:38:34.992 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:38:45.030 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:38:51.748 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:38:51.748 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:38:56.041 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:38:59.865 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:42:10.067 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:42:19.198 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:42:26.453 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:42:26.454 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:42:30.727 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:42:34.917 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:42:34.920 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:43:21.224 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:43:30.266 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:43:37.082 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:43:37.082 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:43:41.375 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:43:44.944 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:44.961 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:44.977 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:44.996 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.014 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.031 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.048 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.084 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.101 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.119 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.139 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.164 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.182 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.200 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.234 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.252 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.270 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.288 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.305 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.322 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.341 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.381 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.400 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.419 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.437 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.456 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.474 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.490 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.526 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.543 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.560 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.579 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.595 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.612 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.630 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date  7  not found on the calendar
+2025-01-27 15:43:45.637 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:43:45.640 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:44:17.581 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:44:28.754 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:44:34.779 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:44:34.779 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:44:39.071 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:44:42.642 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.658 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.675 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.691 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.710 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.729 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.746 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.782 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:42.800 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 7 not found on the calendar
+2025-01-27 15:44:43.913 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:46:49.337 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:47:00.528 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:47:06.565 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:47:06.566 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:47:10.849 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:47:14.413 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.429 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.446 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.461 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.484 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 found on the calendar
+2025-01-27 15:47:14.518 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.543 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.560 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.579 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.593 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.610 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.627 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.659 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.675 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.690 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.706 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.721 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.738 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.753 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.787 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.803 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.819 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.895 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.912 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.929 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.944 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.977 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:14.994 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.009 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.026 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.042 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.058 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.074 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:47:15.080 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:47:15.084 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:51:24.639 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:51:34.124 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:51:40.680 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:51:40.680 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:51:45.029 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:51:48.595 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:51:48.615 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:51:48.633 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:51:48.649 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:51:48.688 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 found on the calendar
+2025-01-27 15:51:48.688 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:51:48.691 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:53:22.856 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:53:42.073 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:53:47.756 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:53:47.758 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:53:52.028 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:53:55.597 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:53:55.621 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:53:55.645 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:53:55.678 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 not found on the calendar
+2025-01-27 15:53:55.783 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 2 found on the calendar
+2025-01-27 15:53:55.783 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:53:55.787 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 15:55:19.781 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 15:55:30.301 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 15:55:36.331 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 15:55:36.331 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 15:55:40.619 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 15:55:44.201 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.227 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.251 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.275 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.300 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.329 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.362 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.407 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.434 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.461 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.487 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 15:55:44.590 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-01-27 15:55:44.591 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 15:55:44.594 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:12:42.805 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:12:57.834 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:13:04.201 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:13:04.201 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:13:08.492 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:13:12.072 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.096 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.120 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.146 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.172 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.201 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.227 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.267 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.292 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.317 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:12.342 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:13:13.251 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:13:46.729 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:13:57.391 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:14:03.357 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:14:03.359 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:14:07.626 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:14:11.204 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.228 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.251 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.285 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.313 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.338 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.364 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.406 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.431 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.457 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:11.483 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:14:13.455 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-01-27 16:14:13.455 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 16:14:13.457 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:20:04.664 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:20:19.931 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:20:26.239 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:20:26.239 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:20:30.503 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:20:34.080 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.108 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.137 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.164 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.192 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.220 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.252 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.296 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.324 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.352 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:34.380 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:20:36.381 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-01-27 16:20:36.382 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 16:20:36.385 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:22:13.501 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:22:23.811 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:22:31.130 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:22:31.132 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:22:35.392 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:22:38.979 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.004 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.030 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.065 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.091 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.117 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.143 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.184 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.210 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.235 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:39.261 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:22:42.278 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:23:42.102 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:23:52.339 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:23:58.579 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:23:58.579 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:24:02.869 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:24:06.459 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.488 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.524 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.573 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.604 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.635 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.663 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.726 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.755 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.784 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:06.810 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:24:10.862 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-01-27 16:24:10.862 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 16:24:10.865 [main] INFO  base.BaseClass - Browser quit successfully
+2025-01-27 16:30:23.424 [main] INFO  base.BaseClass - Browser launched successfully
+2025-01-27 16:30:31.960 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-01-27 16:30:37.510 [main] INFO  base.BaseClass - Element is visible.
+2025-01-27 16:30:37.510 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-01-27 16:30:41.803 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-01-27 16:30:46.163 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.190 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.214 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.240 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.264 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.290 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.313 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.354 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.389 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.421 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:46.446 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-01-27 16:30:50.460 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-01-27 16:30:50.461 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 16:30:54.008 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.027 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.046 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.066 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.084 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.103 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.122 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.154 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.172 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.191 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.211 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.234 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.259 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.284 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.325 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.349 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:54.379 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-01-27 16:30:58.344 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 found on the calendar
+2025-01-27 16:30:58.344 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-01-27 16:30:58.348 [main] INFO  base.BaseClass - Browser quit successfully

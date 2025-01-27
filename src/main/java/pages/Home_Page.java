@@ -56,6 +56,7 @@ public class Home_Page extends BaseClass{
     private final By deliveryZonesMenu = By.xpath("(.//span[text()='Delivery Zones'])[1]");
     private final By deliverySlotMenu = By.xpath("(.//span[text()='Delivery Slot'])[1]");
     private final By deliveryModesMenu = By.xpath("(.//span[text()='Delivery Modes'])[1]");
+    private final By calendarMenu = By.xpath("(.//span[text()='Calendar'])[1]");
     private final By deliveryCodeMenu = By.xpath("(.//span[text()='Delivery Code'])[1]");
     private final By shortCodeMenu = By.xpath("(.//span[text()='Short Codes'])[1]");
     private final By mapOptionSettingsMenu = By.xpath("(.//span[text()='Map Option Settings'])[1]");
@@ -155,6 +156,11 @@ public class Home_Page extends BaseClass{
         click_Element(settingsMenu);
         click_Element(deliveryMenu);
         click_Element(deliveryModesMenu);
+    }
+    public void clickCalendarMenu() {
+        click_Element(settingsMenu);
+        click_Element(deliveryMenu);
+        click_Element(calendarMenu);
     }
     public void clickDeliveryCodeMenu() {
         click_Element(settingsMenu);

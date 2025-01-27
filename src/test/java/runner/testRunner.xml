@@ -16,12 +16,13 @@
 <!--        <class name="tests.GiftCards"/>-->
 <!--        <class name="tests.Employees"/>-->
 <!--        <class name="tests.Settings.Corporate_Settings"/>-->
-        <class name="tests.Settings.Store_Settings"/>
+<!--        <class name="tests.Settings.Store_Settings"/>-->
 <!--        <class name="tests.Settings.Employee_Settings"/>-->
 <!--        <class name="tests.Settings.Delivery.MapOption_Settings"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Zone"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Slot"/>-->
 <!--        <class name="tests.Settings.Delivery.Delivery_Mode"/>-->
+        <class name="tests.Settings.Delivery.Calendar"/>
 <!--        <class name="tests.Settings.Delivery.Delivery_Code"/>-->
 <!--        <class name="tests.Settings.Delivery.Short_Code"/>-->
 <!--        <class name="tests.Settings.Vehicle"/>-->

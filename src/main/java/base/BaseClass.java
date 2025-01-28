@@ -85,7 +85,7 @@ public class BaseClass {
     public String getCity() { return city; }
     public String getState() { return state; }
 
-    public String getEmail() { return firstName.toLowerCase() + "@" + "qca6z4pm.mailosaur.net"; }
+    public String getEmail() { return firstName.toLowerCase() + "@" + "lpyj6zdj.mailosaur.net"; }
 
     public String getPhone() {
         String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));

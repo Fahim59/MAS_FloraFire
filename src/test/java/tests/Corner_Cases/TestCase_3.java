@@ -63,7 +63,7 @@ public class TestCase_3 extends BaseClass {
 
         locationAndUserPage.enterSeasonalLicenseAndMonth(seasonalLicenseCount, seasonalMonth);
 
-        Scroll_Down();
+        Scroll(0,500);
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer upgraded additional and seasonal license/s successfully and clicked on save button.");
@@ -77,7 +77,7 @@ public class TestCase_3 extends BaseClass {
         paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
         paymentPage.clickTermsBtn();
-        Scroll_Down();
+        Scroll(0,500);
 
         customerName = paymentPage.fetchNameValue();
 
@@ -99,11 +99,11 @@ public class TestCase_3 extends BaseClass {
     public void verifyCustomerReceiptPageWithProratedAndRecurringOrderDetails() throws InterruptedException {
         receiptPage.verifyProratedOrderTable();
 
-        Scroll_Down();
+        Scroll(0,500);
 
         receiptPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
-        Scroll_Up();
+        Scroll(0,-500);
 
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }

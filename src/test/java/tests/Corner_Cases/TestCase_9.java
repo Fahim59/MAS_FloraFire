@@ -56,7 +56,7 @@ public class TestCase_9 extends BaseClass {
 
         locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
 
-        Scroll_Down();
+        Scroll(0,500);
         locationAndUserPage.clickSaveBtn();
 
         /*
@@ -66,7 +66,7 @@ public class TestCase_9 extends BaseClass {
         paymentPage.verifyRecurringOrderTable(upgradedPackagePrice, upgradedLicenseCount);
 
         paymentPage.clickTermsBtn();
-        Scroll_Down();
+        Scroll(0,500);
 
         customerName = paymentPage.fetchNameValue();
 

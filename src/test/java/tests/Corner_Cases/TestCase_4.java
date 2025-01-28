@@ -44,7 +44,7 @@ public class TestCase_4 extends BaseClass {
 
         locationAndUserPage.enterAdditionalLicense(upgradedLicenseCount);
 
-        Scroll_Down();
+        Scroll(0,500);
         locationAndUserPage.clickSaveBtn();
 
         logger.info("Customer downgraded additional license/s successfully and clicked on save button.");
@@ -56,7 +56,7 @@ public class TestCase_4 extends BaseClass {
         paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
 
         paymentPage.clickTermsBtn();
-        Scroll_Down();
+        Scroll(0,500);
 
         customerName = paymentPage.fetchNameValue();
 

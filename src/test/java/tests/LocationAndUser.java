@@ -30,7 +30,7 @@ public class LocationAndUser extends BaseClass {
         SmallWait(500);
         locationAndUserPage.clickAddNewStoreBtn();
 
-        Scroll_Down();
+        Scroll(0,500);
 
         locationAndUserPage.enterAdditionalStoreInfoDetails(secondStore, getFullName(), getEmail(), getAddress(),
                 getAddressCont(), country, getState(), getCity(), zip, timeZone, businessPhone, fax);

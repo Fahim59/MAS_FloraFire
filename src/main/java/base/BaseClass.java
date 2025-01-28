@@ -17,12 +17,6 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import utils.*;
 
-import javax.activation.*;
-import javax.mail.*;
-import javax.mail.internet.*;
-import java.awt.*;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.*;
 import java.text.*;
 import java.time.*;
@@ -152,75 +146,12 @@ public class BaseClass {
 
     public static void SmallWait(int milliSecond) throws InterruptedException {Thread.sleep(milliSecond);}
 
-    public static void Scroll_Down() throws InterruptedException {
+    public static void Scroll(int xOffset, int yOffset) throws InterruptedException {
         SmallWait(1000);
         JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
-        js.executeScript("window.scrollBy(0,500)", "");
-    }
+        js.executeScript("window.scrollBy(arguments[0], arguments[1]);", xOffset, yOffset);
 
-    public static void Scroll_Up() throws InterruptedException {
-        SmallWait(1000);
-        JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getDriver();
-        js.executeScript("window.scrollBy(0,-500)", "");
-    }
-
-    public static void SendEmail() throws InterruptedException {
-        SmallWait(2000);
-
-        String decode_pass = "aWl1bXJmdHRmd3VldGdjdQ==";
-        String password = new String(Base64.getDecoder().decode(decode_pass.getBytes()));
-
-        final String from = "testmustafizur@gmail.com"; //For Yahoo, it should be a yahoo mail
-
-        final String p1 = "mrahaman59@yahoo.com";
-
-        String host = "smtp.gmail.com"; //smtp.mail.yahoo.com
-        Properties properties = System.getProperties();
-
-        properties.put("mail.smtp.host", host);
-        properties.put("mail.smtp.port", "587");
-        properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.auth", "true");
-
-        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("testmustafizur", password);
-            }
-        });
-
-        session.setDebug(true);
-        try {
-            MimeMessage message = new MimeMessage(session);
-            Multipart multipartObject = new MimeMultipart();
-
-            message.setFrom(new InternetAddress(from));
-
-            message.addRecipient(Message.RecipientType.BCC, new InternetAddress(p1));
-
-            message.setSubject("Test Execution Result Report"); //Mail Subject
-
-            BodyPart emailBody = new MimeBodyPart();
-            emailBody.setText("Dear Sir/Ma'am, " + "\n" + "Here is test result execution report." + "\n" + "\n" + "Test Executed By-" + "\n" + "Mustafizur Rahman");
-
-            BodyPart attachment = new MimeBodyPart();
-            String filename = new ConfigLoader().initializeProperty().getProperty("reportFile");
-            DataSource source = new FileDataSource(filename);
-            attachment.setDataHandler(new DataHandler(source));
-            attachment.setFileName(filename);
-
-            multipartObject.addBodyPart(emailBody); //Mail Body
-            multipartObject.addBodyPart(attachment); // Attachment
-
-            message.setContent(multipartObject);
-
-            System.out.println("Sending............");
-            Transport.send(message);
-            System.out.println("Email Sent Successfully....");
-        }
-        catch (MessagingException mex) {
-            mex.printStackTrace();
-            System.out.println("Email Sent Failed....");
-        }
+        SmallWait(500);
     }
 
     public void checkReceipt(String subject) {
@@ -319,24 +250,6 @@ public class BaseClass {
         }
     }
 
-    public void hover_And_Click(By locator_hover, By locator_click ){
-        Actions actions = new Actions(driver);
-
-        WebElement element = wait_for_visibility(locator_hover);
-        actions.moveToElement(element).perform();
-
-        click_Element(locator_click);
-    }
-
-    public void drag_And_Drop(By dragable, By dropable ){
-        Actions actions = new Actions(driver);
-
-        WebElement dragElement = wait_for_visibility(dragable);
-        WebElement dropElement = wait_for_visibility(dropable);
-
-        actions.dragAndDrop(dragElement, dropElement).build().perform();
-    }
-
     public void write_Send_Keys(By locator, String txt) {
         WebElement element = wait_for_presence(locator);
         String text = element.getAttribute("value");
@@ -388,34 +301,6 @@ public class BaseClass {
         List<WebElement> elements = wait_for_presence_list(locator);
         return elements.size();
     }
-
-    public void upload_file(By locator, String path) throws InterruptedException {
-        Actions action = new Actions(driver);
-
-        WebElement element = wait_for_presence(locator);
-        action.moveToElement(element).click().build().perform();
-
-        SmallWait(1000);
-
-        try {
-            StringSelection filePath = new StringSelection(path);
-            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
-
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-
-            SmallWait(1000);
-
-            robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
-        }
-        catch (Exception exp) {
-            exp.printStackTrace();
-        }
-    }
     //---------------------------------------------------------------------------------------------//
     @AfterTest
     public static void SaveLogFile(){
@@ -430,7 +315,6 @@ public class BaseClass {
     @AfterSuite
     public static void QuitBrowser() throws InterruptedException {
         //driver.quit();
-        //SendEmail();
 
         baseLogger.info("Browser quit and Send Report successfully");
     }

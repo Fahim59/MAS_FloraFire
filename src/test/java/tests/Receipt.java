@@ -35,7 +35,7 @@ public class Receipt extends BaseClass {
         receiptPage.verifyTotalPurchaseAmount();
         receiptPage.verifyCardTypeAndEnding(cardNumber);
 
-        Scroll_Down();
+        Scroll(0,500);
 
         receiptPage.verifyRecurringOrderTable_(packagePrice, licenseCount);
 
@@ -44,7 +44,7 @@ public class Receipt extends BaseClass {
 
     @Test(description = "Verify that a customer can download the receipt and validate the data within it", priority = 2)
     public void verifyCustomerReceiptDownloadAndDataValidation() throws InterruptedException {
-        Scroll_Up();
+        Scroll(0,-500);
 
         receiptPage.clickDownloadBtn();
 

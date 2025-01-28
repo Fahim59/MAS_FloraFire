@@ -59,7 +59,7 @@ public class TestCase_8 extends BaseClass {
         paymentPage.verifyRecurringOrderTable(upgradedPackagePrice, licenseCount);
 
         paymentPage.clickTermsBtn();
-        Scroll_Down();
+        Scroll(0,500);
 
         customerName = paymentPage.fetchNameValue();
 

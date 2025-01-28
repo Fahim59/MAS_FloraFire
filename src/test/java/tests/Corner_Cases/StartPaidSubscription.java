@@ -55,7 +55,7 @@ public class StartPaidSubscription extends BaseClass {
 
         paymentPage.clickTermsBtn();
 
-        Scroll_Down();
+        Scroll(0,500);
 
         customerName = paymentPage.fetchNameValue();
 
@@ -79,11 +79,11 @@ public class StartPaidSubscription extends BaseClass {
         SmallWait(1000);
         receiptPage.verifyProratedOrderTable_Manual();
 
-        Scroll_Down();
+        Scroll(0,500);
 
         receiptPage.verifyRecurringOrderTable_Manual();
 
-        Scroll_Up();
+        Scroll(0,-500);
 
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }

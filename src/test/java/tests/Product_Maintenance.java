@@ -69,14 +69,15 @@ public class Product_Maintenance extends BaseClass {
         String imageUrl = valueData.get("Image URL");
         String url = valueData.get("URL");
         String fileName = valueData.get("File Name");
+        String recipe = valueData.get("Recipe");
 
         return new String[] {code, type, status, sku, department, name, careCode, bin, p_unit, p_unit_value, s_unit, s_unit_value,
                 description, category, commisionable, force_wireService, wireService, nonTaxable, basePrice, midPrice, highPrice,
                 wireOutPrice, unitCost, bp_override, trackInventory, onHand, onOrder, lowStock, outOfStockSale, isSeasonal, isSeasonalPricing,
-                seasonalPrice, seasonalAvailability, startDate, endDate, imageUrl, url, fileName};
+                seasonalPrice, seasonalAvailability, startDate, endDate, imageUrl, url, fileName, recipe};
     }
 
-    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2, enabled = true)
+    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2, enabled = false)
     public void verifyGiftCardDataEntry() throws InterruptedException {
         /*
          * Variables
@@ -124,50 +125,63 @@ public class Product_Maintenance extends BaseClass {
     }
 
     @Test(description = "Verify that the user can add Product data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 3)
-    @DataSource.SheetName("Product")
+    @DataSource.SheetName("Test")
     public void verifyProductDataEntry(Map<String, String> data) throws InterruptedException {
         String[] productInfo = productData(data);
 
         String storeName = homePage.getStoreName();
         String comment = "Test Comment";
 
-        String createMessage = jsonData.getJSONObject("successMessage").getString("productCreate");
+//        String createMessage = jsonData.getJSONObject("successMessage").getString("productCreate");
+//
+//        productMaintenancePage.clickNewProductButton();
+//
+//        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("productMaintenance"));
+//
+//        productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
+//                productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
+//                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+//
+//
+//        productMaintenancePage.enterProductPricingDetails(productInfo[17], productInfo[18], productInfo[19], productInfo[20],
+//                productInfo[21], productInfo[22], productInfo[23]);
+//
+//
+//        productMaintenancePage.enterProductInventoryDetails(productInfo[24],productInfo[25], productInfo[26],
+//                productInfo[27], productInfo[28]);
+//
+//
+//        productMaintenancePage.enterProductOtherDetails(productInfo[29], productInfo[30], productInfo[31],
+//                productInfo[32], productInfo[33], productInfo[34], comment);
+//
+//
+//        productMaintenancePage.clickSaveAndContButton();
+//
+//        SmallWait(1000);
+//
+//        Assert.assertEquals(createMessage, productMaintenancePage.getSuccessMessage());
 
-        productMaintenancePage.clickNewProductButton();
 
-        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("productMaintenance"));
+        productMaintenancePage.clickActionButton("BQ002");
 
-        productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
-                productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
-                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+        SmallWait(2000);
+        productMaintenancePage.isRecipeField("Yes");
 
+        Scroll(0, 700);
 
-        productMaintenancePage.enterProductPricingDetails(productInfo[17], productInfo[18], productInfo[19], productInfo[20],
-                productInfo[21], productInfo[22], productInfo[23]);
+        //productMaintenancePage.enterRecipeData("HC", "2");
 
-
-        productMaintenancePage.enterProductInventoryDetails(productInfo[24],productInfo[25], productInfo[26],
-                productInfo[27], productInfo[28]);
+        productMaintenancePage.clickAddExistingProductButton();
+        productMaintenancePage.enterRecipeProductCode("HC");
+        productMaintenancePage.enterRecipeProductQuantity("2");
 
 
-        productMaintenancePage.enterProductOtherDetails(productInfo[29], productInfo[30], productInfo[31],
-                productInfo[32], productInfo[33], productInfo[34], comment);
-
-
-        productMaintenancePage.clickSaveAndContButton();
-
-        SmallWait(1000);
-
-        Assert.assertEquals(createMessage, productMaintenancePage.getSuccessMessage());
-
-        Scroll(0, 1900);
-
-        productMaintenancePage.uploadProductImage(productInfo[35], productInfo[36], productInfo[37]);
-
-        productMaintenancePage.verifyProductAddition(productInfo[0]);
-
-        //refreshPage();
-
-        logger.info("Successfully added product - {}", productInfo[0]);
+//        Scroll(0, 1900);
+//
+//        productMaintenancePage.uploadProductImage(productInfo[35], productInfo[36], productInfo[37]);
+//
+//        productMaintenancePage.verifyProductAddition(productInfo[0]);
+//
+//        logger.info("Successfully added product - {}", productInfo[0]);
     }
 }

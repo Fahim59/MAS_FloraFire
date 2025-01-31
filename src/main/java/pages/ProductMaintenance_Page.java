@@ -4,6 +4,7 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,9 +58,9 @@ public class ProductMaintenance_Page extends BaseClass{
 
     private final By productCategoryField = By.xpath("(//div[contains(@id,'mat-select-value')])[9]");
 
-    private final By commisionableField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[1]");
+    private final By commisionableField = By.xpath("//mat-checkbox[@formcontrolname='isCommisionable']/div/div/input");
 
-    private final By forceWireServiceField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[2]");
+    private final By forceWireServiceField = By.xpath("//mat-checkbox[@formcontrolname='isForceWireServiceEnabled']/div/div/input");
     private final By wireServiceField = By.xpath("(//div[contains(@id,'mat-select-value')])[10]");
 
     public ProductMaintenance_Page enterProductCode(String code){
@@ -216,7 +217,7 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Pricing Details
      */
 
-    private final By nonTaxableField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[3]");
+    private final By nonTaxableField = By.xpath("//mat-checkbox[@formcontrolname='isNonTaxable']/div/div/input");
 
     private final By basePriceField = By.xpath("//input[@formcontrolname='basePrice']");
     private final By midPriceField = By.xpath("//input[@formcontrolname='midPrice']");
@@ -225,7 +226,7 @@ public class ProductMaintenance_Page extends BaseClass{
     private final By wireOutField = By.xpath("//input[@formcontrolname='wireOut']");
     private final By unitCostField = By.xpath("//input[@formcontrolname='unitCost']");
 
-    private final By basePriceOverriddenField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[4]");
+    private final By basePriceOverriddenField = By.xpath("//mat-checkbox[@formcontrolname='isBasePriceOverriden']/div/div/input");
 
     public ProductMaintenance_Page isNonTaxable(String flag) {
         if(flag.equalsIgnoreCase("Yes")){
@@ -278,14 +279,13 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Inventory Details
      */
 
-    //private final By trackInventoryField = By.xpath("//input[@id='mat-mdc-checkbox-5-input']");
-    private final By trackInventoryField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[5]");
+    private final By trackInventoryField = By.xpath("//mat-checkbox[@formcontrolname='isTrackingInventoryEnabled']/div/div/input");
 
     private final By onHandField = By.xpath("//input[@formcontrolname='onHandQuantity']");
     private final By onOrderField = By.xpath("//input[@formcontrolname='onOrderQuantity']");
     private final By lowStockField = By.xpath("//input[@formcontrolname='lowStockQuantiy']");
 
-    private final By ouOfStockSalesField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[6]");
+    private final By ouOfStockSalesField = By.xpath("//mat-checkbox[@formcontrolname='isOutOfStockSalesEnabled']/div/div/input");
 
     public ProductMaintenance_Page isTrackInventory(String trackFlag) throws InterruptedException {
         Scroll(0, 400);
@@ -331,13 +331,13 @@ public class ProductMaintenance_Page extends BaseClass{
      * Product Other Details
      */
 
-    private final By isSeasonalField = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[7]");
+    private final By isSeasonalField = By.xpath("//mat-checkbox[@formcontrolname='isSeasonal']/div/div/input");
 
-    private final By isSeasonalPricing = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[8]");
+    private final By isSeasonalPricing = By.xpath("//mat-checkbox[@formcontrolname='isSeasonalPricingEnabled']/div/div/input");
 
     private final By seasonalPriceField = By.xpath("//input[@formcontrolname='seasonalPrice']");
 
-    private final By isSeasonalAvailability = By.xpath("(//input[contains(@id,'mat-mdc-checkbox')])[9]");
+    private final By isSeasonalAvailability = By.xpath("//mat-checkbox[@formcontrolname='isSeasonalAvailabilityEnabled']/div/div/input");
 
     private final By startDateField = By.xpath("//input[@formcontrolname='seasonalAvailabilityStartDate']");
 
@@ -445,6 +445,65 @@ public class ProductMaintenance_Page extends BaseClass{
     }
 
     /*
+     * Recipe Info
+     */
+
+    private final By recipeBtn = By.xpath("//mat-checkbox[@formcontrolname='hasRecipes']/div/div/input");
+
+    private final By addExistingProductBtn = By.xpath("//span[contains(text(),'Add Existing Product')]");
+
+    private final By productCodeField = By.xpath("//input[@formcontrolname='productCode']");
+
+    private final By productQuantityField = By.xpath("//input[@formcontrolname='quantity']");
+
+    private final By recipeSaveBtn = By.xpath("(//span[contains(text(),'Save')])[3]");
+
+    public ProductMaintenance_Page isRecipeField(String flag) {
+        if(flag.equalsIgnoreCase("Yes")){
+            selectCheckBox(recipeBtn);
+        }
+
+        return this;
+    }
+
+    public ProductMaintenance_Page clickAddExistingProductButton() throws InterruptedException {
+        SmallWait(1000);
+        click_Element(addExistingProductBtn);
+
+        return this;
+    }
+
+    public ProductMaintenance_Page enterRecipeProductCode(String code) throws InterruptedException {
+        SmallWait(3000);
+        //write_Send_Keys(productCodeField, code);
+        //write_ActionClass(productCodeField, code);
+
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(productCodeField));
+        js.executeScript("arguments[0].value = arguments[1];", element, code);
+
+        SmallWait(1500);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+code+"', ' ')]")));
+
+        return this;
+    }
+
+    public ProductMaintenance_Page enterRecipeProductQuantity(String quantity) {
+        write_Send_Keys(productQuantityField, quantity);
+
+        return this;
+    }
+
+    public void clickRecipeSaveButton() throws InterruptedException {
+        SmallWait(500);
+        click_Element(recipeSaveBtn);
+    }
+
+    public void enterRecipeData(String code, String quantity) throws InterruptedException {
+        clickAddExistingProductButton().enterRecipeProductCode(code).enterRecipeProductQuantity(quantity).
+                clickRecipeSaveButton();
+    }
+
+    /*
      * Button and Message
      */
 
@@ -479,7 +538,10 @@ public class ProductMaintenance_Page extends BaseClass{
         }
     }
 
+    private final By searchField = By.xpath("//input[@placeholder='Search by Product Code / Item Name or SKU']");
+
     public void clickActionButton(String code) throws InterruptedException {
+        write_Send_Keys(searchField, code);
         SmallWait(1500);
 
         for(int l = 1; l<= get_Size(rows); l++){

@@ -27,6 +27,7 @@
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
     "roles": "/roles",
+    "users": "/users",
     "mapSettings": "/deliveryMapOptionSettings",
     "creditCardSettings": "/credit-card-settings",
     "stores": "/stores"

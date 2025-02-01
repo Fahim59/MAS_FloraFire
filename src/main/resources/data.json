@@ -5,32 +5,41 @@
   },
 
   "tabURL": {
-    "valueTypes": "/valuetypes",
-    "valueTypeSettings": "/valuetypesettings",
-    "corporateSettings": "/corporateSettings",
     "customerList": "/customers",
     "customerMaintenance": "/customers/create",
-    "messageShortcut": "/messageShortcuts",
-    "vehicle": "/vehicles",
-    "employeeSettings": "/employee-settings",
+
     "productList": "/products",
     "productMaintenance": "/products/create",
-    "giftCardList": "/giftCards",
+
     "discountList": "/discounts",
     "discountMaintenance": "/discounts/create",
+
+    "giftCardList": "/giftCards",
+
     "employeeList": "/employees",
     "employeeMaintenance": "/employees/create",
+
+    "valueTypes": "/valuetypes",
+    "valueTypeSettings": "/valuetypesettings",
+
+    "corporateSettings": "/corporateSettings",
+    "stores": "/stores",
+    "employeeSettings": "/employee-settings",
+
     "deliveryZone": "/delivery-zones",
     "deliverySlot": "/deliverySlots",
     "deliveryMode": "/deliveryModes",
     "calendar": "/calendar",
     "deliveryCode": "/delivery-code",
     "shortCode": "/delivery-short-code",
-    "roles": "/roles",
-    "users": "/users",
     "mapSettings": "/deliveryMapOptionSettings",
+
+    "vehicle": "/vehicles",
+    "messageShortcut": "/messageShortcuts",
     "creditCardSettings": "/credit-card-settings",
-    "stores": "/stores"
+
+    "roles": "/roles",
+    "users": "/users"
   },
 
   "values": {
@@ -62,18 +71,24 @@
   },
 
   "successMessage": {
+    "productCreate": "Created Successfully",
+
+    "discountCreate": "Discount has been created successfully",
+
+    "employeeCreate": "Employee created successfully",
+
     "valueType": "value type added successfully",
     "value": "value added successfully",
-    "shortCut": "Message Shortcut Created Successfully",
-    "vehicle": "Vehicle Created Successfully",
+
     "employeeSettings": "Employee settings saved successfully",
-    "productCreate": "Created Successfully",
-    "discountCreate": "Discount has been created successfully",
-    "employeeCreate": "Employee created successfully",
+
+    "vehicle": "Vehicle Created Successfully",
+    "shortCut": "Message Shortcut Created Successfully",
+    "creditCard": "Saved successfully",
+
     "addressValidationSuccessText": "Address validation is successful",
     "addressValidationFailedText": "Address validation failed",
-    "mapOptionSettings": "Map settings saved successfully",
-    "creditCard": "Saved successfully"
+    "mapOptionSettings": "Map settings saved successfully"
   },
 
   "giftCard": {

@@ -2,9 +2,8 @@ package tests;
 
 import base.BaseClass;
 import base.DataSource;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.Home_Page;
+import org.testng.annotations.*;
+import pages.*;
 
 import java.util.Map;
 
@@ -15,28 +14,6 @@ public class Order_Entry extends BaseClass {
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
     }
-
-    @Test(description = "Verify that after successful login, the user is successfully navigated to User list page", priority = 1)
-    public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
-        SmallWait(1000);
-
-        homePage.clickUsersMenu();
-
-        SmallWait(1000);
-        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("users"));
-
-        logger.info("User successfully navigated to the User list page");
-    }
-
-    @Test(description = "Verify that after successful login, the user can create a new role", priority = 2)
-    public void verifyNewRoleCreation() throws InterruptedException {
-        SmallWait(1000);
-
-        String role = "employee";
-
-        logger.info("User successfully created new role - {}", role);
-    }
-
 
     @Test(description = "Verify that after successful login, the customer is successfully navigated to Order Entry page", priority = 1, enabled = false)
     public void verifyCustomerNavigation() throws InterruptedException {

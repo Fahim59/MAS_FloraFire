@@ -29,7 +29,8 @@
 <!--        <class name="tests.Settings.Message_ShortCut"/>-->
 <!--        <class name="tests.Settings.CreditCard_Settings"/>-->
 
-        <class name="tests.Order_Entry"/>
+        <class name="tests.Employee_Feature_Permission"/>
+<!--        <class name="tests.Order_Entry"/>-->
     </classes>
 </test>
 </suite>

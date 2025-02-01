@@ -1,8 +1,9 @@
-package tests;
+package tests.Administration;
 
 import base.BaseClass;
 import org.testng.annotations.*;
 import pages.*;
+import pages.Administration.Users_Page;
 
 public class Employee_Feature_Permission extends BaseClass {
     private Home_Page homePage;

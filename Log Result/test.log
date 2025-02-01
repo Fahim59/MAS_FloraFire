@@ -132,7 +132,7 @@
 2025-02-01 23:54:17.387 [main] INFO  base.BaseClass - Element is visible.
 2025-02-01 23:54:17.387 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2025-02-01 23:54:21.730 [main] INFO  tests.Order_Entry - User successfully navigated to the User list page
-2025-02-01 23:54:26.630 [main] INFO  pages.Users_Page - User jhon found
+2025-02-01 23:54:26.630 [main] INFO  pages.Administration.Users_Page - User jhon found
 2025-02-01 23:54:26.637 [main] INFO  tests.Order_Entry - User successfully give feature permission to - jhon
 2025-02-01 23:54:26.639 [main] INFO  base.BaseClass - Browser quit successfully
 2025-02-01 23:54:46.294 [main] INFO  base.BaseClass - Browser launched successfully
@@ -140,6 +140,6 @@
 2025-02-01 23:55:04.124 [main] INFO  base.BaseClass - Element is visible.
 2025-02-01 23:55:04.124 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2025-02-01 23:55:08.435 [main] INFO  tests.Order_Entry - User successfully navigated to the User list page
-2025-02-01 23:55:14.386 [main] INFO  pages.Users_Page - User jhon found
+2025-02-01 23:55:14.386 [main] INFO  pages.Administration.Users_Page - User jhon found
 2025-02-01 23:55:14.386 [main] INFO  tests.Order_Entry - User successfully give feature permission to - jhon
 2025-02-01 23:55:14.389 [main] INFO  base.BaseClass - Browser quit successfully

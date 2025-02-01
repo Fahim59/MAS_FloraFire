@@ -11,7 +11,7 @@
 
 <!--        <class name="tests.Settings.Value_Addition"/>-->
 <!--        <class name="tests.Customer_Maintenance"/>-->
-<!--        <class name="tests.Product_Maintenance"/>-->
+        <class name="tests.Product_Maintenance"/>
 <!--        <class name="tests.Discount_Maintenance"/>-->
 <!--        <class name="tests.GiftCards"/>-->
 <!--        <class name="tests.Employees"/>-->
@@ -29,7 +29,7 @@
 <!--        <class name="tests.Settings.Message_ShortCut"/>-->
 <!--        <class name="tests.Settings.CreditCard_Settings"/>-->
 
-        <class name="tests.Employee_Feature_Permission"/>
+<!--        <class name="tests.Administration.Employee_Feature_Permission"/>-->
 <!--        <class name="tests.Order_Entry"/>-->
     </classes>
 </test>

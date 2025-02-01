@@ -23,8 +23,6 @@ public class Employee_Page extends BaseClass {
         actions = new Actions(driver);
     }
 
-    private final By Field = By.xpath("");
-
     private final By newEmployeeButton = By.xpath("//span[contains(text(),'New Employee')]");
 
     public void clickNewEmployeeButton() throws InterruptedException {

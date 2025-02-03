@@ -25,7 +25,11 @@ public class LocationAndUser extends BaseClass {
         String fax = jsonData.getJSONObject("storeInfo").getString("fax");
         String secondStore = faker.company().name();
 
+        locationAndUserPage.clickLocationAndUserTab();
+
         locationAndUserPage.enterPrimaryStoreInfoDetails(getCompany(), getFullName(), timeZone, fax);
+
+        locationAndUserPage.validateAddress(0);
 
         SmallWait(500);
         locationAndUserPage.clickAddNewStoreBtn();
@@ -34,6 +38,8 @@ public class LocationAndUser extends BaseClass {
 
         locationAndUserPage.enterAdditionalStoreInfoDetails(secondStore, getFullName(), getEmail(), getAddress(),
                 getAddressCont(), country, getState(), getCity(), zip, timeZone, businessPhone, fax);
+
+        locationAndUserPage.validateAddress(1);
 
         SmallWait(1500);
         locationAndUserPage.clickSaveBtn();

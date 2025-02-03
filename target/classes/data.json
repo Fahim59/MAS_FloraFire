@@ -1,7 +1,7 @@
 {
   "mailosaur": {
-    "apiKey": "XJJDMGvh5N3Q2e3iSe26hyhv81cwwGXk",
-    "serverId": "qca6z4pm"
+    "apiKey": "kXFc3SVB21xpyzbCTLENXUrOQ3EYuSBb",
+    "serverId": "lpyj6zdj"
   },
   "registration_info": {
     "sec.question1": "What is your favorite color?",
@@ -40,7 +40,7 @@
     "answer": "I heard about you from the newspaper"
   },
   "storeInfo": {
-    "timeZone": "(UTC+06:00) Dhaka",
+    "timeZone": "(UTC-06:00) Central Time (US & Canada)",
     "fax": "+12124567890",
     "licenseCount": "8"
   },

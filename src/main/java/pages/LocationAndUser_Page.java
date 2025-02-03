@@ -1,10 +1,7 @@
 package pages;
 
 import base.BaseClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,6 +35,8 @@ public class LocationAndUser_Page extends BaseClass{
     private final By contactNameField = By.cssSelector("#StoreModels_0__ContactName");
     private final By timeZoneField = By.cssSelector("#StoreModels_0__TimeZoneId");
     private final By faxField = By.cssSelector("#StoreModels_0__FaxNumber");
+
+    private final By suggestionText = By.xpath("//ul[@id='suggestionsList']/li[1]/strong");
 
     private final By includeMASField = By.cssSelector("#IncludeStoreOnMasDirectory");
 
@@ -159,6 +158,33 @@ public class LocationAndUser_Page extends BaseClass{
         return enterAdditionalStoreName(storeName).enterAdditionalStoreContactPersonName(name).enterEmail(email).enterAddress(address).
                 enterContAddress(addressCont).selectCountry(country).selectState(state).enterCity(city).enterZip(zip).
                 selectAdditionalStoreTimeZone(timeZone).enterAdditionalStorePhone(phone).enterAdditionalStoreFaxNumber(fax);
+    }
+
+    public void validateAddress(int store) throws InterruptedException {
+        SmallWait(500);
+
+        WebElement validateIcon = driver.findElement(By.xpath("//div[@id='store-form-" +store+ "']//i[contains(@id,'StoreModels')]"));
+        validateIcon.click();
+
+        SmallWait(500);
+        String alertText = driver.switchTo().alert().getText();
+
+        while (!alertText.contains("successfully")) {
+            if (alertText.contains("failed")) {
+                System.out.println("Validation Failed. Retrying...");
+
+                driver.switchTo().alert().accept();
+
+                SmallWait(1500);
+                click_Element(suggestionText);
+
+                SmallWait(1000);
+                validateIcon.click();
+            }
+
+            alertText = driver.switchTo().alert().getText();
+        }
+        driver.switchTo().alert().accept();
     }
 
     //-------------------------------------------------------------------------------------------------------------------//

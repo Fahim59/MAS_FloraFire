@@ -25,8 +25,6 @@ public class LocationAndUser extends BaseClass {
         String fax = jsonData.getJSONObject("storeInfo").getString("fax");
         String secondStore = faker.company().name();
 
-        locationAndUserPage.clickLocationAndUserTab();
-
         locationAndUserPage.enterPrimaryStoreInfoDetails(getCompany(), getFullName(), timeZone, fax);
 
         locationAndUserPage.validateAddress(0);

@@ -36,8 +36,6 @@ public class LocationAndUser_Page extends BaseClass{
     private final By timeZoneField = By.cssSelector("#StoreModels_0__TimeZoneId");
     private final By faxField = By.cssSelector("#StoreModels_0__FaxNumber");
 
-    private final By suggestionText = By.xpath("//ul[@id='suggestionsList']/li[1]/strong");
-
     private final By includeMASField = By.cssSelector("#IncludeStoreOnMasDirectory");
 
     private final By addNewStoreBtn = By.cssSelector("button[onclick='addNewStore()']");
@@ -160,6 +158,20 @@ public class LocationAndUser_Page extends BaseClass{
                 selectAdditionalStoreTimeZone(timeZone).enterAdditionalStorePhone(phone).enterAdditionalStoreFaxNumber(fax);
     }
 
+    public void clickSuggestionText(){
+        List<WebElement> suggestions = driver.findElements(By.xpath("//ul[@id='suggestionsList']/li/span"));
+
+        for (WebElement suggestion : suggestions) {
+
+            String text = suggestion.getText();
+
+            if (!text.contains("null")) {
+                suggestion.click();
+                break;
+            }
+        }
+    }
+
     public void validateAddress(int store) throws InterruptedException {
         SmallWait(500);
 
@@ -176,7 +188,7 @@ public class LocationAndUser_Page extends BaseClass{
                 driver.switchTo().alert().accept();
 
                 SmallWait(1500);
-                click_Element(suggestionText);
+                clickSuggestionText();
 
                 SmallWait(1000);
                 validateIcon.click();

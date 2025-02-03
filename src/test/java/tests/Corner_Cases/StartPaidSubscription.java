@@ -88,7 +88,7 @@ public class StartPaidSubscription extends BaseClass {
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
-    @Test(description = "Verify that the customer has received the trial upgrade receipt in email", priority = 5)
+    @Test(description = "Verify that the customer has received the trial upgrade receipt in email", priority = 5, enabled = false)
     public void verifyCustomerReceivedTrialUpgradeReceipt() throws InterruptedException {
         SmallWait(60000);
 

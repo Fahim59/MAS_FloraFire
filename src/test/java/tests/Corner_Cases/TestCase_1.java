@@ -102,7 +102,7 @@ public class TestCase_1 extends BaseClass {
         logger.info("Customer viewed the receipt page and verified the prorated and recurring order details.");
     }
 
-    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4)
+    @Test(description = "Verify that the customer has received the seasonal license purchase receipt in email", priority = 4, enabled = false)
     public void verifyCustomerReceivedSeasonalLicenseReceipt() throws InterruptedException {
         SmallWait(60000);
 

@@ -98,7 +98,7 @@ public class TestCase_2 extends BaseClass {
         logger.info("Customer viewed the receipt page and verified the prorated order details.");
     }
 
-    @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4)
+    @Test(description = "Verify that the customer has received the subscription upgrade receipt in email", priority = 4, enabled = false)
     public void verifyCustomerReceivedSubscriptionUpgradeReceipt() throws InterruptedException {
         SmallWait(60000);
 

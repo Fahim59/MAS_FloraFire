@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseClass;
+import com.mailosaur.MailosaurException;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -96,10 +97,11 @@ public class Receipt extends BaseClass {
     }
 
     @Test(description = "Verify that the customer has received the trial receipt in email", priority = 3)
-    public void verifyCustomerReceivedTrialReceipt() throws InterruptedException {
+    public void verifyCustomerReceivedTrialReceipt() throws InterruptedException, MailosaurException, IOException {
         SmallWait(60000);
 
         checkReceipt("trialReceiptEmailSubject");
+        getTenantLink();
 
         logger.info("Customer successfully received the trial receipt.");
     }

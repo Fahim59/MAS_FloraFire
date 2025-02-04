@@ -1,6 +1,11 @@
 package base;
 
 import com.github.javafaker.Faker;
+import com.mailosaur.MailosaurClient;
+import com.mailosaur.MailosaurException;
+import com.mailosaur.models.Message;
+import com.mailosaur.models.MessageSearchParams;
+import com.mailosaur.models.SearchCriteria;
 import factory.DriverFactory;
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
@@ -22,6 +27,8 @@ import java.text.*;
 import java.time.*;
 import java.util.*;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -60,6 +67,8 @@ public class BaseClass {
     private final Faker faker;
     private final String fullName, firstName, lastName, address, addressCont, city, state, company;
 
+    public static String clientId, tenantLink;
+
     //---------------------------------------------------------------------------------------------//
     public BaseClass() {
         faker = new Faker(new Locale("en-US"));
@@ -85,7 +94,7 @@ public class BaseClass {
     public String getCity() { return city; }
     public String getState() { return state; }
 
-    public String getEmail() { return firstName.toLowerCase() + "@" + "lpyj6zdj.mailosaur.net"; }
+    public String getEmail() { return firstName.toLowerCase() + "@" + "un8wyobg.mailosaur.net"; }
 
     public String getPhone() {
         String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));
@@ -201,6 +210,40 @@ public class BaseClass {
         else {
             baseLogger.info("No emails found.");
         }
+    }
+
+    public void getTenantLink() throws MailosaurException, IOException {
+        String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
+        String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
+        String serverDomain = serverId + ".mailosaur.net";
+
+        MailosaurClient mailosaurClient = new MailosaurClient(apiKey);
+
+        MessageSearchParams params = new MessageSearchParams();
+        params.withServer(serverId);
+
+        SearchCriteria criteria = new SearchCriteria();
+        //criteria.withSentTo("thing-rope@" + serverDomain);
+        criteria.withSentTo(userName);
+
+        Message message = mailosaurClient.messages().get(params, criteria);
+
+        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
+        Matcher matcher = pattern.matcher(message.text().body());
+
+        if (matcher.find()) {
+            clientId = matcher.group(1);
+
+            baseLogger.info("Client Id: {}", clientId);
+        }
+        else {
+            baseLogger.info("Client Id not found");
+        }
+
+        tenantLink = message.text().links().get(0).href();
+
+        baseLogger.info("User Name: {}", userName);
+        baseLogger.info("Tenant Link: {}", tenantLink);
     }
 
     public void verifyCurrentUrl(String expectedText) {

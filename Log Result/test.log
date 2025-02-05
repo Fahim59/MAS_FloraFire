@@ -1,159 +1,502 @@
-2025-02-04 17:08:01.483 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-04 17:08:07.468 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-04 17:08:08.411 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-04 17:08:11.520 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-04 17:08:12.916 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-04 17:08:13.864 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-04 17:10:32.769 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-04 17:10:36.255 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-04 17:10:37.495 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-04 17:10:40.613 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-04 17:10:42.071 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-04 17:10:43.264 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-04 17:11:44.842 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2025-02-04 17:11:45.299 [main] INFO  tests.CustomerRegistration - Customer Name: Laila Sporer
-2025-02-04 17:11:45.299 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=622dc377-c249-44be-87fe-6d3f7225a6b4&guid=5742a6b8-5746-498e-94c7-4c2a34b7cc5e
-2025-02-04 17:11:46.435 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2025-02-04 17:11:48.795 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-02-04 17:11:50.110 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-02-04 17:11:53.313 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-02-04 17:11:54.631 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-02-04 17:11:58.551 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-02-04 17:11:59.891 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-02-04 17:12:47.649 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-02-04 17:12:49.062 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-02-04 17:12:49.928 [main] INFO  pages.Payment_Page - 
+2025-02-05 13:20:34.180 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 13:20:39.479 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 13:20:40.936 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 13:20:51.420 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer clicked on start paid subscription button and successfully navigated to the Payment page
+2025-02-05 13:20:53.426 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table (Manual) in Payment Page - 
+
+2025-02-05 13:20:53.453 [main] INFO  pages.Payment_Page - Get Package Net Due: 8.57 and Package Remaining Amount: 8.57
+2025-02-05 13:20:53.471 [main] INFO  pages.Payment_Page - Get License Net Due: 34.29 and License Remaining Amount: 34.29
+2025-02-05 13:20:53.490 [main] INFO  pages.Payment_Page - Get Total Due: 42.86 and Total Due: 42.86
+2025-02-05 13:20:53.490 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table (Manual) in Payment Page - 
+
+2025-02-05 13:20:53.506 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 13:20:53.524 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 13:20:53.525 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 13:20:53.525 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8
+2025-02-05 13:20:53.543 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 13:20:53.559 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 13:21:06.101 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer verified prorated and recurring payment details and submitted the order.
+2025-02-05 13:21:08.623 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer successfully navigated to the Receipt page
+2025-02-05 13:21:10.590 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table (Manual) in Receipt Page - 
+
+2025-02-05 13:21:10.611 [main] INFO  pages.Receipt_Page - Get Package Net Due: 8.57 and Package Remaining Amount: 8.57
+2025-02-05 13:21:10.631 [main] INFO  pages.Receipt_Page - Get License Net Due: 34.29 and License Remaining Amount: 34.29
+2025-02-05 13:21:10.650 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 0.0 and Seasonal License Total Amount: 0.0
+2025-02-05 13:21:10.670 [main] INFO  pages.Receipt_Page - Get Total Due: 42.86 and Total Due: 42.86
+2025-02-05 13:21:12.200 [main] INFO  pages.Receipt_Page - 
+Verifying Recurring Order Table (Manual) in Receipt Page - 
+
+2025-02-05 13:21:12.219 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 13:21:12.239 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 13:21:12.239 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 13:21:12.239 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8
+2025-02-05 13:21:12.258 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 13:21:12.277 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 13:21:12.294 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 13:21:13.823 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 13:21:20.031 [main] INFO  tests.Corner_Cases.StartPaidSubscription - Customer navigated to the package page and verified the subscription data.
+2025-02-05 13:21:20.034 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:13:41.090 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:13:46.502 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:13:47.972 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:13:52.326 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
+2025-02-05 14:13:56.982 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer purchased new seasonal license/s successfully and clicked on save button.
+2025-02-05 14:13:56.982 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:13:57.006 [main] INFO  pages.Payment_Page - Get Package Net Due: 0.0 and Package Adjustment: 0.0
+2025-02-05 14:13:57.026 [main] INFO  pages.Payment_Page - Get License Net Due: 0.0 and License Adjustment: 0.0
+2025-02-05 14:13:57.044 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
+2025-02-05 14:13:57.061 [main] INFO  pages.Payment_Page - Get Total Due: 10.0 and Total Due: 10.0
+2025-02-05 14:13:57.061 [main] INFO  pages.Payment_Page - 
 Verifying Recurring Order Table in Payment Page - 
 
-2025-02-04 17:12:49.947 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:15:35.494 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-02-04 17:15:35.500 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-02-04 17:15:37.124 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-02-04 17:15:37.153 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-02-04 17:15:38.681 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
+2025-02-05 14:13:57.079 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:13:57.096 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 14:13:57.096 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 14:13:57.096 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-05 14:13:57.115 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 14:13:57.132 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 14:14:01.396 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:14:03.381 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer successfully navigated to the Receipt page
+2025-02-05 14:14:04.324 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
 
-2025-02-04 17:15:38.698 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:15:42.981 [main] INFO  tests.Receipt - File downloaded successfully
-2025-02-04 17:15:42.983 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (8).pdf
-2025-02-04 17:16:48.862 [main] INFO  base.BaseClass - Email Subject: Activation of Trial Receipt
-2025-02-04 17:16:50.801 [main] INFO  base.BaseClass - Client Id: USWV000199
-2025-02-04 17:16:50.801 [main] INFO  base.BaseClass - User Name: laila@un8wyobg.mailosaur.net
-2025-02-04 17:16:50.802 [main] INFO  base.BaseClass - Tenant Link: https://USWV000199.florafiredev.com
-2025-02-04 17:16:50.802 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
-2025-02-04 17:16:53.852 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-02-04 17:16:53.855 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2025-02-04 17:36:36.875 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-04 17:36:42.410 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-04 17:36:43.904 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-04 17:36:47.311 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-04 17:36:48.725 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-04 17:36:49.689 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-04 17:37:51.165 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2025-02-04 17:37:51.614 [main] INFO  tests.CustomerRegistration - Customer Name: Mr Hodkiewicz
-2025-02-04 17:37:51.614 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=e621d23a-473b-4e0c-b2e4-ec85387b86e3&guid=e3e2c27f-f1eb-4253-aef4-16bf8696c70e
-2025-02-04 17:37:52.650 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2025-02-04 17:37:54.881 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-02-04 17:37:56.223 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-02-04 17:37:59.448 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-02-04 17:38:00.774 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-02-04 17:38:04.776 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-02-04 17:38:06.132 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-02-04 17:38:24.527 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-02-04 17:38:30.576 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-02-04 17:38:31.928 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-02-04 17:38:33.889 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-02-04 17:38:35.209 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-02-04 17:38:36.060 [main] INFO  pages.Payment_Page - 
+2025-02-05 14:14:04.341 [main] INFO  pages.Receipt_Page - Get Package Net Due: 0.0 and Package Remaining Amount: 0.0
+2025-02-05 14:14:04.357 [main] INFO  pages.Receipt_Page - Get License Net Due: 0.0 and License Remaining Amount: 0.0
+2025-02-05 14:14:04.373 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 10.0 and Seasonal License Total Amount: 10.0
+2025-02-05 14:14:04.389 [main] INFO  pages.Receipt_Page - Get Total Due: 10.0 and Total Due: 10.0
+2025-02-05 14:14:05.912 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:14:05.930 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:14:05.945 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 14:14:05.946 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 14:14:05.946 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-02-05 14:14:05.961 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 14:14:05.977 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:14:05.993 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 14:14:07.520 [main] INFO  tests.Corner_Cases.TestCase_1 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:14:07.523 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:15:51.963 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:15:57.127 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:15:58.585 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:16:03.063 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Prior Package Prepaid Data - 
+
+2025-02-05 14:16:03.162 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.35714285714285715
+2025-02-05 14:16:03.163 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 8.57
+2025-02-05 14:16:03.163 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 5.0
+2025-02-05 14:16:03.163 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 1.4285714285714286
+2025-02-05 14:16:03.163 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 34.29
+2025-02-05 14:16:03.163 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Today's Package Change - 
+
+2025-02-05 14:16:03.253 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.0
+2025-02-05 14:16:03.253 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 0.0
+2025-02-05 14:16:03.255 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 10.0
+2025-02-05 14:16:03.255 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 3.5714285714285716
+2025-02-05 14:16:03.255 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 85.71
+2025-02-05 14:16:07.642 [main] INFO  tests.Corner_Cases.TestCase_2 - Customer upgraded additional license/s successfully and clicked on save button.
+2025-02-05 14:16:07.642 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:16:07.666 [main] INFO  pages.Payment_Page - Get Package Net Due: 0.0 and Package Adjustment: 0.0
+2025-02-05 14:16:07.687 [main] INFO  pages.Payment_Page - Get License Net Due: 51.42 and License Adjustment: 51.42
+2025-02-05 14:16:07.710 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 0.0 and Seasonal Fee: 0.0
+2025-02-05 14:16:07.729 [main] INFO  pages.Payment_Page - Get Total Due: 51.42 and Total Due: 51.42
+2025-02-05 14:16:07.731 [main] INFO  pages.Payment_Page - 
 Verifying Recurring Order Table in Payment Page - 
 
-2025-02-04 17:38:36.079 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:38:36.096 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-04 17:38:36.096 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-04 17:38:36.097 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-02-04 17:38:36.115 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-04 17:38:36.133 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-04 17:38:37.314 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-02-04 17:40:48.338 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-02-04 17:40:48.344 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-02-04 17:40:49.972 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-02-04 17:40:50.002 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-02-04 17:40:51.531 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
+2025-02-05 14:16:07.749 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:16:07.768 [main] INFO  pages.Payment_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:16:07.769 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:16:07.769 [main] INFO  pages.Payment_Page - Get License Count: 10.0 and License Count: 10.0
+2025-02-05 14:16:07.786 [main] INFO  pages.Payment_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:16:07.804 [main] INFO  pages.Payment_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:16:12.075 [main] INFO  tests.Corner_Cases.TestCase_2 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:16:14.180 [main] INFO  tests.Corner_Cases.TestCase_2 - Customer successfully navigated to the Receipt page
+2025-02-05 14:16:15.165 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
 
-2025-02-04 17:40:51.549 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:40:51.564 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-04 17:40:51.564 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-04 17:40:51.564 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-02-04 17:40:51.579 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-04 17:40:51.595 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-02-04 17:40:51.610 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-04 17:40:51.610 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-02-04 17:40:55.812 [main] INFO  tests.Receipt - File downloaded successfully
-2025-02-04 17:40:55.814 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (9).pdf
-2025-02-04 17:40:59.164 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-02-04 17:42:00.569 [main] INFO  base.BaseClass - Email Subject: Activation of Trial Receipt
-2025-02-04 17:42:14.564 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-02-04 17:42:34.233 [main] INFO  pages.Login_Page - Test Failed: An exception occurred - Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Home'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\BS01361\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55449/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dfbefeda7e84027edbb0e0342e48e0bf
-2025-02-04 17:42:34.234 [main] INFO  tests.ClientPortalLogin - User successfully navigated to the Home page
-2025-02-04 17:42:34.236 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2025-02-04 17:45:21.477 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-04 17:45:24.877 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-04 17:45:26.353 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-04 17:45:27.810 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-04 17:45:45.055 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-04 17:45:48.391 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-04 17:45:49.412 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-04 17:45:51.579 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-04 17:45:52.944 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-04 17:45:53.941 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-04 17:46:55.391 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2025-02-04 17:46:55.832 [main] INFO  tests.CustomerRegistration - Customer Name: Glady Yost
-2025-02-04 17:46:55.832 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=a98dfd8b-6f4d-4c69-8f72-394b4c2578c5&guid=b78ba512-b357-46e1-aa79-0a109fdae0e7
-2025-02-04 17:46:56.967 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2025-02-04 17:47:00.173 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-02-04 17:47:01.529 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-02-04 17:47:07.046 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-02-04 17:47:08.450 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-02-04 17:47:12.196 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-02-04 17:47:13.541 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-02-04 17:47:31.760 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-02-04 17:47:37.856 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-02-04 17:47:39.195 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-02-04 17:47:41.245 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-02-04 17:47:42.565 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-02-04 17:47:43.424 [main] INFO  pages.Payment_Page - 
+2025-02-05 14:16:15.184 [main] INFO  pages.Receipt_Page - Get Package Net Due: 0.0 and Package Remaining Amount: 0.0
+2025-02-05 14:16:15.202 [main] INFO  pages.Receipt_Page - Get License Net Due: 51.42 and License Remaining Amount: 51.42
+2025-02-05 14:16:15.220 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 0.0 and Seasonal License Total Amount: 0.0
+2025-02-05 14:16:15.239 [main] INFO  pages.Receipt_Page - Get Total Due: 51.42 and Total Due: 51.42
+2025-02-05 14:16:16.762 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:16:16.784 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:16:16.804 [main] INFO  pages.Receipt_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:16:16.804 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:16:16.804 [main] INFO  pages.Receipt_Page - Get License Count: 10 and License Count: 10.0
+2025-02-05 14:16:16.825 [main] INFO  pages.Receipt_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:16:16.845 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:16:16.865 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:16:18.382 [main] INFO  tests.Corner_Cases.TestCase_2 - Customer viewed the receipt page and verified the prorated order details.
+2025-02-05 14:16:18.385 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:31:27.931 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:31:33.059 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:31:34.544 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:31:39.060 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Prior Package Prepaid Data - 
+
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.35714285714285715
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 8.57
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 10.0
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 3.5714285714285716
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 85.71
+2025-02-05 14:31:39.161 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
+2025-02-05 14:31:39.162 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Today's Package Change - 
+
+2025-02-05 14:31:39.238 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.0
+2025-02-05 14:31:39.239 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 0.0
+2025-02-05 14:31:39.239 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 10.0
+2025-02-05 14:31:39.239 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 4.285714285714286
+2025-02-05 14:31:39.239 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 102.86
+2025-02-05 14:31:43.822 [main] INFO  tests.Corner_Cases.TestCase_3 - Customer upgraded additional and seasonal license/s successfully and clicked on save button.
+2025-02-05 14:31:43.822 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:31:43.847 [main] INFO  pages.Payment_Page - Get Package Net Due: 0.0 and Package Adjustment: 0.0
+2025-02-05 14:31:43.867 [main] INFO  pages.Payment_Page - Get License Net Due: 17.15 and License Adjustment: 17.15
+2025-02-05 14:31:43.888 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
+2025-02-05 14:31:43.907 [main] INFO  pages.Payment_Page - Get Total Due: 27.15 and Total Due: 27.15
+2025-02-05 14:31:43.907 [main] INFO  pages.Payment_Page - 
 Verifying Recurring Order Table in Payment Page - 
 
-2025-02-04 17:47:43.442 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:47:43.457 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-04 17:47:43.458 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-04 17:47:43.458 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-02-04 17:47:43.473 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-04 17:47:43.488 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-04 17:47:44.659 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-02-04 17:50:29.452 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-02-04 17:50:29.459 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-02-04 17:50:31.209 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-02-04 17:50:31.242 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-02-04 17:50:32.762 [main] INFO  pages.Receipt_Page - 
+2025-02-05 14:31:43.925 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:31:43.944 [main] INFO  pages.Payment_Page - Get Total License Price: 120.0 and Total License Price: 120.0
+2025-02-05 14:31:43.946 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:31:43.946 [main] INFO  pages.Payment_Page - Get License Count: 12.0 and License Count: 12.0
+2025-02-05 14:31:43.963 [main] INFO  pages.Payment_Page - Get Sub Total: 130.0 and Sub Total: 130.0
+2025-02-05 14:31:43.981 [main] INFO  pages.Payment_Page - Get Recurring Fee: 115.0 and Recurring Fee: 115.0
+2025-02-05 14:31:49.218 [main] INFO  tests.Corner_Cases.TestCase_3 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:31:51.265 [main] INFO  tests.Corner_Cases.TestCase_3 - Customer successfully navigated to the Receipt page
+2025-02-05 14:31:52.443 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:31:52.463 [main] INFO  pages.Receipt_Page - Get Package Net Due: 0.0 and Package Remaining Amount: 0.0
+2025-02-05 14:31:52.480 [main] INFO  pages.Receipt_Page - Get License Net Due: 17.15 and License Remaining Amount: 17.15
+2025-02-05 14:31:52.499 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 10.0 and Seasonal License Total Amount: 10.0
+2025-02-05 14:31:52.518 [main] INFO  pages.Receipt_Page - Get Total Due: 27.15 and Total Due: 27.15
+2025-02-05 14:31:54.044 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:31:54.064 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:31:54.095 [main] INFO  pages.Receipt_Page - Get Total License Price: 120.0 and Total License Price: 120.0
+2025-02-05 14:31:54.096 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:31:54.096 [main] INFO  pages.Receipt_Page - Get License Count: 12 and License Count: 12.0
+2025-02-05 14:31:54.114 [main] INFO  pages.Receipt_Page - Get Sub Total: 130.0 and Sub Total: 130.0
+2025-02-05 14:31:54.131 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:31:54.150 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 115.0 and Recurring Fee: 115.0
+2025-02-05 14:31:55.662 [main] INFO  tests.Corner_Cases.TestCase_3 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:31:55.666 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:34:18.979 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:35:20.450 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:35:26.808 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:35:28.249 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:35:37.276 [main] INFO  tests.Corner_Cases.TestCase_4 - Customer downgraded additional license/s successfully and clicked on save button.
+2025-02-05 14:35:37.276 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:35:37.300 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:35:37.322 [main] INFO  pages.Payment_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:35:37.323 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:35:37.323 [main] INFO  pages.Payment_Page - Get License Count: 10.0 and License Count: 10.0
+2025-02-05 14:35:37.343 [main] INFO  pages.Payment_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:35:37.360 [main] INFO  pages.Payment_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:35:40.320 [main] INFO  tests.Corner_Cases.TestCase_4 - Customer verifies recurring order price and submit the order
+2025-02-05 14:35:42.422 [main] INFO  tests.Corner_Cases.TestCase_4 - Customer successfully navigated to the Receipt page
+2025-02-05 14:35:43.430 [main] INFO  pages.Receipt_Page - 
 Verifying Recurring Order Table in Receipt Page - 
 
-2025-02-04 17:50:32.782 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-04 17:50:32.799 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-04 17:50:32.799 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-04 17:50:32.799 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-02-04 17:50:32.816 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-04 17:50:32.832 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-02-04 17:50:32.849 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-04 17:50:32.849 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-02-04 17:50:37.112 [main] INFO  tests.Receipt - File downloaded successfully
-2025-02-04 17:50:37.114 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (10).pdf
-2025-02-04 17:50:40.521 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-02-04 17:51:41.975 [main] INFO  base.BaseClass - Email Subject: Activation of Trial Receipt
-2025-02-04 17:51:43.835 [main] INFO  base.BaseClass - Client Id not found
+2025-02-05 14:35:43.450 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:35:43.469 [main] INFO  pages.Receipt_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:35:43.470 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:35:43.470 [main] INFO  pages.Receipt_Page - Get License Count: 10 and License Count: 10.0
+2025-02-05 14:35:43.487 [main] INFO  pages.Receipt_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:35:43.504 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:35:43.522 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:35:43.522 [main] INFO  tests.Corner_Cases.TestCase_4 - Customer viewed the receipt page and verified the recurring order details.
+2025-02-05 14:35:43.525 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:38:39.946 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:38:45.868 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:38:47.292 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:38:51.696 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 10.0
+2025-02-05 14:38:56.512 [main] INFO  tests.Corner_Cases.TestCase_5 - Customer downgraded additional license/s, purchase seasonal license successfully and clicked on save button.
+2025-02-05 14:38:56.512 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:38:56.536 [main] INFO  pages.Payment_Page - Get Package Net Due: 0.0 and Package Adjustment: 0.0
+2025-02-05 14:38:56.555 [main] INFO  pages.Payment_Page - Get License Net Due: 0.0 and License Adjustment: 0.0
+2025-02-05 14:38:56.572 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 10.0 and Seasonal Fee: 10.0
+2025-02-05 14:38:56.590 [main] INFO  pages.Payment_Page - Get Total Due: 10.0 and Total Due: 10.0
+2025-02-05 14:38:56.590 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:38:56.608 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:38:56.626 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 14:38:56.626 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 14:38:56.626 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-05 14:38:56.642 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 14:38:56.661 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 14:39:02.233 [main] INFO  tests.Corner_Cases.TestCase_5 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:39:04.351 [main] INFO  tests.Corner_Cases.TestCase_5 - Customer successfully navigated to the Receipt page
+2025-02-05 14:39:05.337 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:39:05.356 [main] INFO  pages.Receipt_Page - Get Package Net Due: 0.0 and Package Remaining Amount: 0.0
+2025-02-05 14:39:05.372 [main] INFO  pages.Receipt_Page - Get License Net Due: 0.0 and License Remaining Amount: 0.0
+2025-02-05 14:39:05.388 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 10.0 and Seasonal License Total Amount: 10.0
+2025-02-05 14:39:05.404 [main] INFO  pages.Receipt_Page - Get Total Due: 10.0 and Total Due: 10.0
+2025-02-05 14:39:06.924 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:39:06.942 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:39:06.961 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-05 14:39:06.961 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-05 14:39:06.961 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-02-05 14:39:06.976 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-05 14:39:06.992 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:39:07.008 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-05 14:39:08.529 [main] INFO  tests.Corner_Cases.TestCase_5 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:39:08.533 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:41:18.358 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:41:26.077 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:41:27.493 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:41:32.218 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Prior Package Prepaid Data - 
+
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.35714285714285715
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 8.57
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 5.0
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 1.4285714285714286
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 34.29
+2025-02-05 14:41:32.279 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 30.0
+2025-02-05 14:41:41.006 [main] INFO  tests.Corner_Cases.TestCase_6 - Customer upgraded package to: Silver level
+2025-02-05 14:41:44.280 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Today's Package Change - 
+
+2025-02-05 14:41:44.318 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.5
+2025-02-05 14:41:44.318 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 12.0
+2025-02-05 14:41:44.318 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 10.0
+2025-02-05 14:41:44.318 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 2.857142857142857
+2025-02-05 14:41:44.318 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 68.57
+2025-02-05 14:41:44.318 [main] INFO  tests.Corner_Cases.TestCase_6 - Seasonal License Total Price: 0.0
+2025-02-05 14:41:46.695 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:41:46.720 [main] INFO  pages.Payment_Page - Get Package Net Due: 3.43 and Package Adjustment: 3.43
+2025-02-05 14:41:46.742 [main] INFO  pages.Payment_Page - Get License Net Due: 34.28 and License Adjustment: 34.28
+2025-02-05 14:41:46.765 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 30.0 and Seasonal Fee: 30.0
+2025-02-05 14:41:46.785 [main] INFO  pages.Payment_Page - Get Total Due: 67.71 and Total Due: 67.71
+2025-02-05 14:41:46.785 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:41:46.804 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:41:46.821 [main] INFO  pages.Payment_Page - Get Total License Price: 80.0 and Total License Price: 80.0
+2025-02-05 14:41:46.821 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:41:46.822 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-05 14:41:46.840 [main] INFO  pages.Payment_Page - Get Sub Total: 94.0 and Sub Total: 94.0
+2025-02-05 14:41:46.858 [main] INFO  pages.Payment_Page - Get Recurring Fee: 79.0 and Recurring Fee: 79.0
+2025-02-05 14:41:51.181 [main] INFO  tests.Corner_Cases.TestCase_6 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:41:53.594 [main] INFO  tests.Corner_Cases.TestCase_6 - Customer successfully navigated to the Receipt page
+2025-02-05 14:41:55.016 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:41:55.037 [main] INFO  pages.Receipt_Page - Get Package Net Due: 3.43 and Package Remaining Amount: 3.43
+2025-02-05 14:41:55.056 [main] INFO  pages.Receipt_Page - Get License Net Due: 34.28 and License Remaining Amount: 34.28
+2025-02-05 14:41:55.078 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 30.0 and Seasonal License Total Amount: 30.0
+2025-02-05 14:41:55.101 [main] INFO  pages.Receipt_Page - Get Total Due: 67.71 and Total Due: 67.71
+2025-02-05 14:41:56.623 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:41:56.642 [main] INFO  pages.Receipt_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:41:56.661 [main] INFO  pages.Receipt_Page - Get Total License Price: 80.0 and Total License Price: 80.0
+2025-02-05 14:41:56.661 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:41:56.661 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-02-05 14:41:56.678 [main] INFO  pages.Receipt_Page - Get Sub Total: 94.0 and Sub Total: 94.0
+2025-02-05 14:41:56.695 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:41:56.713 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 79.0 and Recurring Fee: 79.0
+2025-02-05 14:41:58.240 [main] INFO  tests.Corner_Cases.TestCase_6 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:41:58.244 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:44:10.548 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:44:16.942 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:44:18.378 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:44:23.072 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Prior Package Prepaid Data - 
+
+2025-02-05 14:44:23.138 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.5
+2025-02-05 14:44:23.138 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 12.0
+2025-02-05 14:44:23.138 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 10.0
+2025-02-05 14:44:23.139 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 2.857142857142857
+2025-02-05 14:44:23.139 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 68.57
+2025-02-05 14:44:23.139 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 30.0
+2025-02-05 14:44:31.652 [main] INFO  tests.Corner_Cases.TestCase_7 - Customer upgraded package to: Gold level
+2025-02-05 14:44:34.909 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Today's Package Change - 
+
+2025-02-05 14:44:34.948 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.6428571428571429
+2025-02-05 14:44:34.948 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 15.43
+2025-02-05 14:44:34.949 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 15.0
+2025-02-05 14:44:34.949 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 4.285714285714286
+2025-02-05 14:44:34.949 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 102.86
+2025-02-05 14:44:34.949 [main] INFO  tests.Corner_Cases.TestCase_7 - Seasonal License Total Price: 30.0
+2025-02-05 14:44:39.692 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:44:39.717 [main] INFO  pages.Payment_Page - Get Package Net Due: 3.43 and Package Adjustment: 3.43
+2025-02-05 14:44:39.739 [main] INFO  pages.Payment_Page - Get License Net Due: 34.29 and License Adjustment: 34.29
+2025-02-05 14:44:39.760 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 60.0 and Seasonal Fee: 60.0
+2025-02-05 14:44:39.781 [main] INFO  pages.Payment_Page - Get Total Due: 97.72 and Total Due: 97.72
+2025-02-05 14:44:39.781 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:44:39.798 [main] INFO  pages.Payment_Page - Get Package Price: 18.0 and Package Price: 18.0
+2025-02-05 14:44:39.817 [main] INFO  pages.Payment_Page - Get Total License Price: 120.0 and Total License Price: 120.0
+2025-02-05 14:44:39.817 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2025-02-05 14:44:39.817 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-05 14:44:39.836 [main] INFO  pages.Payment_Page - Get Sub Total: 138.0 and Sub Total: 138.0
+2025-02-05 14:44:39.853 [main] INFO  pages.Payment_Page - Get Recurring Fee: 123.0 and Recurring Fee: 123.0
+2025-02-05 14:44:45.596 [main] INFO  tests.Corner_Cases.TestCase_7 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:44:48.151 [main] INFO  tests.Corner_Cases.TestCase_7 - Customer successfully navigated to the Receipt page
+2025-02-05 14:44:49.727 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:44:49.746 [main] INFO  pages.Receipt_Page - Get Package Net Due: 3.43 and Package Remaining Amount: 3.43
+2025-02-05 14:44:49.763 [main] INFO  pages.Receipt_Page - Get License Net Due: 34.29 and License Remaining Amount: 34.29
+2025-02-05 14:44:49.779 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 60.0 and Seasonal License Total Amount: 60.0
+2025-02-05 14:44:49.795 [main] INFO  pages.Receipt_Page - Get Total Due: 97.72 and Total Due: 97.72
+2025-02-05 14:44:51.320 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:44:51.340 [main] INFO  pages.Receipt_Page - Get Package Price: 18.0 and Package Price: 18.0
+2025-02-05 14:44:51.355 [main] INFO  pages.Receipt_Page - Get Total License Price: 120.0 and Total License Price: 120.0
+2025-02-05 14:44:51.356 [main] INFO  pages.Receipt_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2025-02-05 14:44:51.356 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-02-05 14:44:51.371 [main] INFO  pages.Receipt_Page - Get Sub Total: 138.0 and Sub Total: 138.0
+2025-02-05 14:44:51.387 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:44:51.403 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 123.0 and Recurring Fee: 123.0
+2025-02-05 14:44:52.924 [main] INFO  tests.Corner_Cases.TestCase_7 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:44:52.927 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:46:14.420 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:46:19.630 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:46:21.127 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:46:26.805 [main] INFO  tests.Corner_Cases.TestCase_8 - Customer downgraded package to: Silver level
+2025-02-05 14:46:32.585 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:46:32.608 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:46:32.631 [main] INFO  pages.Payment_Page - Get Total License Price: 80.0 and Total License Price: 80.0
+2025-02-05 14:46:32.631 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:46:32.631 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-05 14:46:32.651 [main] INFO  pages.Payment_Page - Get Sub Total: 94.0 and Sub Total: 94.0
+2025-02-05 14:46:32.670 [main] INFO  pages.Payment_Page - Get Recurring Fee: 79.0 and Recurring Fee: 79.0
+2025-02-05 14:46:35.511 [main] INFO  tests.Corner_Cases.TestCase_8 - Customer verifies recurring order price and submit the order
+2025-02-05 14:46:37.942 [main] INFO  tests.Corner_Cases.TestCase_8 - Customer successfully navigated to the Receipt page
+2025-02-05 14:46:39.342 [main] INFO  pages.Receipt_Page - 
+Verifying Recurring Order Table in Receipt Page - 
+
+2025-02-05 14:46:39.363 [main] INFO  pages.Receipt_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:46:39.381 [main] INFO  pages.Receipt_Page - Get Total License Price: 80.0 and Total License Price: 80.0
+2025-02-05 14:46:39.381 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:46:39.381 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-02-05 14:46:39.399 [main] INFO  pages.Receipt_Page - Get Sub Total: 94.0 and Sub Total: 94.0
+2025-02-05 14:46:39.419 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:46:39.437 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 79.0 and Recurring Fee: 79.0
+2025-02-05 14:46:39.437 [main] INFO  tests.Corner_Cases.TestCase_8 - Customer viewed the receipt page and verified the recurring order details.
+2025-02-05 14:46:39.440 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:50:21.240 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:50:27.648 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:50:29.061 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:50:44.098 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:50:50.183 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:50:51.667 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:50:55.976 [main] INFO  tests.Corner_Cases.TestCase_9 - Customer downgraded package to: Bronze level
+2025-02-05 14:51:03.481 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:51:03.503 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:51:03.523 [main] INFO  pages.Payment_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:51:03.523 [main] INFO  pages.Payment_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:51:03.523 [main] INFO  pages.Payment_Page - Get License Count: 10.0 and License Count: 10.0
+2025-02-05 14:51:03.542 [main] INFO  pages.Payment_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:51:03.560 [main] INFO  pages.Payment_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:51:06.474 [main] INFO  tests.Corner_Cases.TestCase_9 - Customer verifies recurring order price and submit the order
+2025-02-05 14:51:08.899 [main] INFO  tests.Corner_Cases.TestCase_9 - Customer successfully navigated to the Receipt page
+2025-02-05 14:51:10.272 [main] INFO  pages.Receipt_Page - 
+Verifying Recurring Order Table in Receipt Page - 
+
+2025-02-05 14:51:10.293 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-05 14:51:10.311 [main] INFO  pages.Receipt_Page - Get Total License Price: 100.0 and Total License Price: 100.0
+2025-02-05 14:51:10.311 [main] INFO  pages.Receipt_Page - Get Per User License Price: 10.0 and Per User License Price: 10.0
+2025-02-05 14:51:10.311 [main] INFO  pages.Receipt_Page - Get License Count: 10 and License Count: 10.0
+2025-02-05 14:51:10.330 [main] INFO  pages.Receipt_Page - Get Sub Total: 110.0 and Sub Total: 110.0
+2025-02-05 14:51:10.350 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:51:10.368 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 95.0 and Recurring Fee: 95.0
+2025-02-05 14:51:10.369 [main] INFO  tests.Corner_Cases.TestCase_9 - Customer viewed the receipt page and verified the recurring order details.
+2025-02-05 14:51:10.372 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-05 14:54:08.349 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-05 14:54:15.132 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-05 14:54:16.544 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-05 14:54:21.294 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Prior Package Prepaid Data - 
+
+2025-02-05 14:54:21.368 [main] INFO  pages.LocationAndUser_Page - Per Day Package Price: 0.35714285714285715
+2025-02-05 14:54:21.368 [main] INFO  pages.LocationAndUser_Page - Package Remaining Price: 8.57
+2025-02-05 14:54:21.369 [main] INFO  pages.LocationAndUser_Page - Per User License Price: 5.0
+2025-02-05 14:54:21.369 [main] INFO  pages.LocationAndUser_Page - Per Day License Price: 1.4285714285714286
+2025-02-05 14:54:21.369 [main] INFO  pages.LocationAndUser_Page - License Remaining Price: 34.29
+2025-02-05 14:54:21.369 [main] INFO  pages.LocationAndUser_Page - Seasonal License Price: 0.0
+2025-02-05 14:54:28.552 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer upgraded package to: Silver level
+2025-02-05 14:54:31.825 [main] INFO  pages.LocationAndUser_Page - 
+Calculating Today's Package Change - 
+
+2025-02-05 14:54:31.917 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day Package Price: 0.5
+2025-02-05 14:54:31.917 [main] INFO  pages.LocationAndUser_Page - Package Need to Pay: 12.0
+2025-02-05 14:54:31.917 [main] INFO  pages.LocationAndUser_Page - Upgraded Per User License Price: 15.0
+2025-02-05 14:54:31.917 [main] INFO  pages.LocationAndUser_Page - Upgraded Per Day License Price: 5.357142857142857
+2025-02-05 14:54:31.917 [main] INFO  pages.LocationAndUser_Page - License Need to Pay: 128.57
+2025-02-05 14:54:31.918 [main] INFO  tests.Corner_Cases.TestCase_10 - Seasonal License Total Price: 0.0
+2025-02-05 14:54:36.571 [main] INFO  pages.Payment_Page - 
+Verifying Prorated Order Table in Payment Page - 
+
+2025-02-05 14:54:36.595 [main] INFO  pages.Payment_Page - Get Package Net Due: 3.43 and Package Adjustment: 3.43
+2025-02-05 14:54:36.614 [main] INFO  pages.Payment_Page - Get License Net Due: 94.28 and License Adjustment: 94.28
+2025-02-05 14:54:36.631 [main] INFO  pages.Payment_Page - Get Seasonal Fee: 0.0 and Seasonal Fee: 0.0
+2025-02-05 14:54:36.649 [main] INFO  pages.Payment_Page - Get Total Due: 97.71 and Total Due: 97.71
+2025-02-05 14:54:36.649 [main] INFO  pages.Payment_Page - 
+Verifying Recurring Order Table in Payment Page - 
+
+2025-02-05 14:54:36.665 [main] INFO  pages.Payment_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:54:36.684 [main] INFO  pages.Payment_Page - Get Total License Price: 150.0 and Total License Price: 150.0
+2025-02-05 14:54:36.684 [main] INFO  pages.Payment_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2025-02-05 14:54:36.684 [main] INFO  pages.Payment_Page - Get License Count: 10.0 and License Count: 10.0
+2025-02-05 14:54:36.702 [main] INFO  pages.Payment_Page - Get Sub Total: 164.0 and Sub Total: 164.0
+2025-02-05 14:54:36.720 [main] INFO  pages.Payment_Page - Get Recurring Fee: 149.0 and Recurring Fee: 149.0
+2025-02-05 14:54:43.638 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer verifies prorated and recurring order price and submit the order
+2025-02-05 14:54:45.926 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer successfully navigated to the Receipt page
+2025-02-05 14:54:47.256 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:54:47.275 [main] INFO  pages.Receipt_Page - Get Package Net Due: 3.43 and Package Remaining Amount: 3.43
+2025-02-05 14:54:47.292 [main] INFO  pages.Receipt_Page - Get License Net Due: 94.28 and License Remaining Amount: 94.28
+2025-02-05 14:54:47.308 [main] INFO  pages.Receipt_Page - Get Seasonal License Net Due: 0.0 and Seasonal License Total Amount: 0.0
+2025-02-05 14:54:47.324 [main] INFO  pages.Receipt_Page - Get Total Due: 97.71 and Total Due: 97.71
+2025-02-05 14:54:48.857 [main] INFO  pages.Receipt_Page - 
+Verifying Prorated Order Table in Receipt Page - 
+
+2025-02-05 14:54:48.874 [main] INFO  pages.Receipt_Page - Get Package Price: 14.0 and Package Price: 14.0
+2025-02-05 14:54:48.890 [main] INFO  pages.Receipt_Page - Get Total License Price: 150.0 and Total License Price: 150.0
+2025-02-05 14:54:48.890 [main] INFO  pages.Receipt_Page - Get Per User License Price: 15.0 and Per User License Price: 15.0
+2025-02-05 14:54:48.891 [main] INFO  pages.Receipt_Page - Get License Count: 10 and License Count: 10.0
+2025-02-05 14:54:48.905 [main] INFO  pages.Receipt_Page - Get Sub Total: 164.0 and Sub Total: 164.0
+2025-02-05 14:54:48.922 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-02-05 14:54:48.937 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 149.0 and Recurring Fee: 149.0
+2025-02-05 14:54:50.463 [main] INFO  tests.Corner_Cases.TestCase_10 - Customer viewed the receipt page and verified the prorated and recurring order details.
+2025-02-05 14:54:50.467 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

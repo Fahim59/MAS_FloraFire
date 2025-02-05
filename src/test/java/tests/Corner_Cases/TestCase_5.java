@@ -8,16 +8,22 @@ import base.BaseClass;
 import org.testng.annotations.*;
 import pages.*;
 
+import java.io.IOException;
+
 public class TestCase_5 extends BaseClass {
     private LocationAndUser_Page locationAndUserPage;
     private Payment_Page paymentPage;
     private Receipt_Page receiptPage;
+
+    private String className;
 
     @BeforeMethod
     public void initializePageObjects() {
         locationAndUserPage = new LocationAndUser_Page(driver);
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
+
+        className = new Object(){}.getClass().getEnclosingClass().getSimpleName();
 
         packagePrice = 10.0;                       //Package Price
 
@@ -32,7 +38,7 @@ public class TestCase_5 extends BaseClass {
     }
 
     @Test(description = "Verify that the customer can downgrade additional license(s), buys seasonal license and confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)
-    public void verifyCustomerAdditionalLicenseDowngradeAndSeasonalPurchase() throws InterruptedException {
+    public void verifyCustomerAdditionalLicenseDowngradeAndSeasonalPurchase() throws InterruptedException, IOException {
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
@@ -71,6 +77,8 @@ public class TestCase_5 extends BaseClass {
         paymentPage.verifyProratedOrderTable();
 
         paymentPage.verifyRecurringOrderTable(packagePrice, upgradedLicenseCount);
+
+        takeScreenshot(className);
 
         paymentPage.clickTermsBtn();
         Scroll(0,500);

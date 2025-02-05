@@ -8,11 +8,15 @@ import base.BaseClass;
 import org.testng.annotations.*;
 import pages.*;
 
+import java.io.IOException;
+
 public class TestCase_6 extends BaseClass {
     private PackageSelection_Page packageSelectionPage;
     private LocationAndUser_Page locationAndUserPage;
     private Payment_Page paymentPage;
     private Receipt_Page receiptPage;
+
+    private String className;
 
     @BeforeMethod
     public void initializePageObjects() {
@@ -20,6 +24,8 @@ public class TestCase_6 extends BaseClass {
         locationAndUserPage = new LocationAndUser_Page(driver);
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
+
+        className = new Object(){}.getClass().getEnclosingClass().getSimpleName();
 
         upgradedPackageName = "Silver";
 
@@ -37,7 +43,7 @@ public class TestCase_6 extends BaseClass {
     }
 
     @Test(description = "Verify that the customer can upgrade package, confirm the accuracy of recurring and prorated payment details and successfully submit the order.", priority = 1)
-    public void verifyCustomerPackageUpgrade() throws InterruptedException {
+    public void verifyCustomerPackageUpgrade() throws InterruptedException, IOException {
         locationAndUserPage.clickLocationTab();
 
         SmallWait(1000);
@@ -87,6 +93,8 @@ public class TestCase_6 extends BaseClass {
         paymentPage.verifyProratedOrderTable();
 
         paymentPage.verifyRecurringOrderTable(upgradedPackagePrice, upgradedLicenseCount);
+
+        takeScreenshot(className);
 
         paymentPage.clickTermsBtn();
         Scroll(0,500);

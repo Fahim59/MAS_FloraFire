@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -22,11 +23,15 @@ public class StartPaidSubscription extends BaseClass {
     private Payment_Page paymentPage;
     private Receipt_Page receiptPage;
 
+    private String className;
+
     @BeforeMethod
     public void initializePageObjects() {
         packageSelectionPage = new PackageSelection_Page(driver);
         paymentPage = new Payment_Page(driver);
         receiptPage = new Receipt_Page(driver);
+
+        className = new Object(){}.getClass().getEnclosingClass().getSimpleName();
 
         packagePrice = 10.0;                       //Package Price
 
@@ -45,11 +50,13 @@ public class StartPaidSubscription extends BaseClass {
     }
 
     @Test(description = "Verify the prorated and recurring payment details and submit an order", priority = 2)
-    public void verifyProratedAndRecurringPaymentDetails() throws InterruptedException {
+    public void verifyProratedAndRecurringPaymentDetails() throws InterruptedException, IOException {
         SmallWait(1000);
         paymentPage.verifyProratedOrderTable_Manual();
 
         paymentPage.verifyRecurringOrderTable_Manual();
+
+        takeScreenshot(className);
 
         SmallWait(500);
 

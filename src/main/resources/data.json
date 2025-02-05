@@ -1,4 +1,7 @@
 {
+  "defaultUser": {
+    "user": "mr@un8wyobg.mailosaur.net"
+  },
   "mailosaur": {
     "apiKey": "4hvwMgKIOKVPK7X7F8SH32rRXMrEsjSl",
     "serverId": "un8wyobg"

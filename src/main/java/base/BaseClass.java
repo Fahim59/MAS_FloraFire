@@ -11,6 +11,7 @@ import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
 import org.json.*;
 
@@ -249,6 +250,18 @@ public class BaseClass {
     public void verifyCurrentUrl(String expectedText) {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
+    }
+
+    public static void takeScreenshot(String className) throws IOException {
+        File directory = new File("Images");
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+
+        String filename = "Images/" + className + ".png";
+
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, new File(filename));
     }
     //---------------------------------------------------------------------------------------//
     public WebElement wait_for_visibility(By locator) {

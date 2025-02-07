@@ -229,17 +229,17 @@ public class BaseClass {
 
         Message message = mailosaurClient.messages().get(params, criteria);
 
-        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
-        Matcher matcher = pattern.matcher(message.text().body());
-
-        if (matcher.find()) {
-            clientId = matcher.group(1);
-
-            baseLogger.info("Client Id: {}", clientId);
-        }
-        else {
-            baseLogger.info("Client Id not found");
-        }
+//        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
+//        Matcher matcher = pattern.matcher(message.text().body());
+//
+//        if (matcher.find()) {
+//            clientId = matcher.group(1);
+//
+//            baseLogger.info("Client Id: {}", clientId);
+//        }
+//        else {
+//            baseLogger.info("Client Id not found");
+//        }
 
         tenantLink = message.text().links().get(0).href();
 

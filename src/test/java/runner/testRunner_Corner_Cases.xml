@@ -9,8 +9,8 @@
     <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_EcomPortal/Corner Cases">
         <classes>
             <class name="tests.CustomerLogin"/>
-            <class name="tests.Corner_Cases.StartPaidSubscription"/>
-<!--            <class name="tests.Corner_Cases.TestCase_1"/>-->
+<!--            <class name="tests.Corner_Cases.StartPaidSubscription"/>-->
+            <class name="tests.Corner_Cases.TestCase_1"/>
 <!--            <class name="tests.Corner_Cases.TestCase_2"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_3"/>-->
 <!--            <class name="tests.Corner_Cases.TestCase_4"/>-->
@@ -29,3 +29,16 @@
         </classes>
     </test>
 </suite>
+
+        <!--
+        Manual Subscription
+        Test Case 2
+        Test Case 3
+        Test Case 5
+        Test Case 6
+        Test Case 7
+        Test Case 10
+        Test Case 11
+        Test Case 13
+        Test Case 14
+        -->

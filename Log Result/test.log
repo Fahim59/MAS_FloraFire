@@ -841,3 +841,19 @@ Verifying Prorated Order Table in Receipt Page -
 2025-02-07 14:22:02.910 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 78.0 and Recurring Fee: 78.0
 2025-02-07 14:22:04.431 [main] INFO  tests.Corner_Cases.TestCase_14 - Customer viewed the receipt page and verified the prorated and recurring order details.
 2025-02-07 14:22:04.435 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-07 19:38:50.537 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-07 19:38:58.874 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2025-02-07 19:39:00.112 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2025-02-07 19:39:04.198 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2025-02-07 19:39:05.650 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
+2025-02-07 19:39:06.681 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
+2025-02-07 19:40:08.114 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
+2025-02-07 19:40:08.556 [main] INFO  tests.CustomerRegistration - Customer Name: Rebbeca Armstrong
+2025-02-07 19:40:08.557 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop-stage.azurewebsites.net/customer/activation?token=742b5ddb-f791-485a-b6fb-6b80585c50bc&guid=dcfce141-8e90-478e-b40b-d64cd29aa48d
+2025-02-07 19:40:09.795 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
+2025-02-07 19:40:16.326 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-07 19:40:17.793 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-07 19:40:22.185 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2025-02-07 19:40:23.548 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2025-02-07 19:40:28.750 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2025-02-07 19:40:30.187 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page

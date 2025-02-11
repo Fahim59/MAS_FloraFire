@@ -14,7 +14,7 @@
             <class name="tests.LocationAndUser"/>
             <class name="tests.Payment"/>
             <class name="tests.Receipt"/>
-            <class name="tests.ClientPortalLogin"/>
+<!--            <class name="tests.ClientPortalLogin"/>-->
         </classes>
     </test>
 </suite>

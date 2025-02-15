@@ -147,3 +147,26 @@
 2025-02-12 11:29:52.243 [main] INFO  pages.Administration.Users_Page - User mustafiz found
 2025-02-12 11:29:52.243 [main] INFO  tests.Administration.Employee_Feature_Permission - User successfully gives feature permission to - mustafiz
 2025-02-12 11:29:52.247 [main] INFO  base.BaseClass - Browser quit successfully
+2025-02-15 21:56:16.897 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-15 21:56:26.398 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-02-15 21:56:35.473 [main] INFO  base.BaseClass - Element is visible.
+2025-02-15 21:56:35.473 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-02-15 21:56:38.618 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-02-15 21:56:48.666 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-02-15 21:57:49.541 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-15 21:58:08.210 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-02-15 21:58:15.235 [main] INFO  base.BaseClass - Element is visible.
+2025-02-15 21:58:15.235 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-02-15 21:58:18.404 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-02-15 21:58:28.770 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-02-15 21:58:36.981 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2025-02-15 21:59:03.276 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-15 21:59:27.305 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-02-15 21:59:34.249 [main] INFO  base.BaseClass - Element is visible.
+2025-02-15 21:59:34.249 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-02-15 21:59:37.409 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-02-15 21:59:48.061 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-02-15 21:59:56.151 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2025-02-15 22:00:02.673 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-02-15 22:00:05.091 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-02-15 22:00:06.669 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Doe

@@ -178,6 +178,8 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By wireOutDiscountField = By.xpath("//input[@formcontrolname='discountOnWireout']");
 
+    private final By invoicePaymentScheduleField = By.xpath("(//div[contains(@id,'mat-select-value')])[8]");
+
     private final By referenceField = By.xpath("//input[@formcontrolname='customerReference']");
     private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");
 
@@ -257,6 +259,16 @@ public class CustomerMaintenance_Page extends BaseClass{
         return this;
     }
 
+    public CustomerMaintenance_Page selectInvoicePaymentSchedule(String schedule) throws InterruptedException {
+        if(!get_Text(invoicePaymentScheduleField).equals(schedule)){
+            click_Element(invoicePaymentScheduleField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+schedule+"', ' ')]")));
+        }
+
+        return this;
+    }
+
     public CustomerMaintenance_Page enterCustomerReference(String reference){
         write_Send_Keys(referenceField, reference);
         return this;
@@ -269,11 +281,11 @@ public class CustomerMaintenance_Page extends BaseClass{
     }
 
     public void enterCustomerOtherDetails(String status, String type, String accClass, String store, String flag, String deliveryFlag,
-                                          String charge, String discount, String wireDiscount, String reference, String comment) throws InterruptedException {
+                                          String charge, String discount, String wireDiscount, String schedule, String reference, String comment) throws InterruptedException {
 
         selectCustomerStatus(status).selectCustomerType(type).selectCustomerClass(accClass).selectStore(store).
                 enterTaxDetails(flag).addDeliveryCharge(deliveryFlag, charge).enterCustomerDiscount(discount).
-                enterWireOutDiscount(wireDiscount).enterCustomerReference(reference).enterComment(comment);
+                enterWireOutDiscount(wireDiscount).selectInvoicePaymentSchedule(schedule).enterCustomerReference(reference).enterComment(comment);
     }
 
     /*

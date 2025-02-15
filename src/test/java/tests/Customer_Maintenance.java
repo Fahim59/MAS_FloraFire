@@ -83,6 +83,7 @@ public class Customer_Maintenance extends BaseClass {
         String[] customerInfo = customerData(data);
 
         String storeName = homePage.getStoreName();
+        String schedule = "Month End only";
 
         customerMaintenancePage.clickNewCustomerButton();
 
@@ -99,7 +100,7 @@ public class Customer_Maintenance extends BaseClass {
 
         customerMaintenancePage.enterCustomerOtherDetails(customerInfo[9], customerInfo[10], customerInfo[11],
                 storeName, customerInfo[12], customerInfo[13], customerInfo[14], customerInfo[15], customerInfo[15],
-                customerInfo[16], customerInfo[17]);
+                schedule, customerInfo[16], customerInfo[17]);
 
         logger.info("Other details added successfully for {}", customerInfo[2]);
 

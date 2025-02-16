@@ -56,10 +56,12 @@ public class Vehicle_Page extends BaseClass{
     }
     public Vehicle_Page selectStatus(String status) throws InterruptedException {
         SmallWait(1500);
-        click_Element(statusField);
 
-        SmallWait(500);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+status+"')]")));
+        if(!get_Text(statusField).equals(status)){
+            click_Element(statusField);
+            SmallWait(500);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+status+"')]")));
+        }
         return this;
     }
     public Vehicle_Page enterExpirationDate(String date) throws InterruptedException {

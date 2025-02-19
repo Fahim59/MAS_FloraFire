@@ -31,7 +31,7 @@ public class Employee_Feature_Permission extends BaseClass {
     public void verifyGivingFeaturePermission() throws InterruptedException {
         SmallWait(1000);
 
-        String employee = "mustafiz";
+        String employee = "ana";
 
         usersPage.giveUserFeaturePermission(employee);
 

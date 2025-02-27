@@ -17,13 +17,9 @@ public class ClientPortalLogin extends BaseClass {
         SmallWait(2000);
 
         driver.switchTo().newWindow(org.openqa.selenium.WindowType.TAB);
-        Open_Website(tenantLink);
+        driver.get(tenantLink);
 
         if (userName != null && !userName.isEmpty()) {
-            loginPage.enterLoginData(userName, jsonData.getJSONObject("registration_info").getString("password"));
-        }
-        else {
-            userName = "testmustafizur+103@gmail.com";
             loginPage.enterLoginData(userName, jsonData.getJSONObject("registration_info").getString("password"));
         }
 

@@ -100,6 +100,9 @@ public class Receipt extends BaseClass {
     public void verifyCustomerReceivedTrialReceipt() throws InterruptedException, MailosaurException, IOException {
         SmallWait(60000);
 
+        //SmallWait(1000);
+        //customerName = "Sunshine Balistreri";
+
         checkReceipt("trialReceiptEmailSubject");
         getTenantLink();
 

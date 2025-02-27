@@ -1,9 +1,16 @@
 package tests;
 
 import base.BaseClass;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.*;
+
+import java.time.Duration;
 
 public class Payment extends BaseClass {
     private Payment_Page paymentPage;
@@ -72,12 +79,33 @@ public class Payment extends BaseClass {
 
     @Test(description = "Verify that after successful payment, the customer is successfully navigated to Receipt page", priority = 3)
     public void verifyCustomerNavigationAfterPayment() throws InterruptedException {
-        SmallWait(15000);
+        Wait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(15)).pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
 
-        paymentPage.checkPaymentFailedMessage();
+        try {
+            wait.until(driver -> {
+                if (paymentPage.isPaymentFailed()) {
+                    Assert.fail("Payment failed. Test stopped.");
+                    return true;
+                }
+                else if (isNextPageLoaded("receipt")) {
+                    return true;
+                }
+                return false;
+            });
 
-        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("receipt"));
+            logger.info("Customer successfully navigated to the Receipt page");
+        }
+        catch (TimeoutException e) {
+            Assert.fail("Timeout: Payment neither failed nor navigated to receipt page.");
+        }
 
-        logger.info("Customer successfully navigated to the Receipt page");
+//        SmallWait(15000);
+//
+//        paymentPage.checkPaymentFailedMessage();
+//
+//        verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("receipt"));
+//
+//        logger.info("Customer successfully navigated to the Receipt page");
     }
 }

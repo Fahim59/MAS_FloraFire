@@ -3,6 +3,9 @@ package tests;
 import com.mailosaur.MailosaurClient;
 import com.mailosaur.MailosaurException;
 import com.mailosaur.models.*;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 import java.util.regex.Matcher;
@@ -14,9 +17,9 @@ public class Mail {
     }
 
     public static void getEmailBodyData() throws MailosaurException, IOException {
-        String apiKey = "4hvwMgKIOKVPK7X7F8SH32rRXMrEsjSl";
-        String serverId = "un8wyobg";
-        String serverDomain = "un8wyobg.mailosaur.net";
+        String apiKey = "cHZ59nRRyktWAp7Wj3E1Sneh1rNHhrKl";
+        String serverId = "hufctr7p";
+        String serverDomain = "hufctr7p.mailosaur.net";
 
         MailosaurClient mailosaurClient = new MailosaurClient(apiKey);
 
@@ -24,7 +27,7 @@ public class Mail {
         params.withServer(serverId);
 
         SearchCriteria criteria = new SearchCriteria();
-        criteria.withSentTo("thing-rope@" + serverDomain);
+        criteria.withSentTo("armandina@" + serverDomain);
 
         Message message = mailosaurClient.messages().get(params, criteria);
 
@@ -32,22 +35,44 @@ public class Mail {
         System.out.println("Recipient Name: " +message.to().get(0).name());
 
         //System.out.println("Body: " +message.text().body());
-        String emailBody = message.text().body();
+        //String emailBody = message.text().body();
 
-        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
-        Matcher matcher = pattern.matcher(emailBody);
+        //System.out.println(message.html().body());
+        String emailBody = message.html().body();
+//
+//        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
+//        Matcher matcher = pattern.matcher(emailBody);
+//
+//        if (matcher.find()) {
+//            String clientId = matcher.group(1);
+//            System.out.println("Extracted Client Id: " + clientId);
+//        }
+//        else {
+//            System.out.println("Client Id not found.");
+//        }
 
-        if (matcher.find()) {
-            String clientId = matcher.group(1);
-            System.out.println("Extracted Client Id: " + clientId);
+//        Link link = message.text().links().get(0);
+//
+//        String loginUrl = link.href();
+//        System.out.println("Login Url is: " +loginUrl);
+
+        Document doc = Jsoup.parse(emailBody);
+        Element loginElement = doc.selectFirst("strong:contains(Login URL)");
+
+        Element clientId = doc.selectFirst("strong:contains(Client Id)");
+
+        if (loginElement != null) {
+            String loginUrl = loginElement.parent().ownText().trim();
+            System.out.println("Login URL: " + loginUrl);
+        } else {
+            System.out.println("No Login URL found.");
         }
-        else {
-            System.out.println("Client Id not found.");
+
+        if (clientId != null) {
+            String id = clientId.parent().ownText().trim();
+            System.out.println("Client Id: " + id);
+        } else {
+            System.out.println("No Id found.");
         }
-
-        Link link = message.text().links().get(0);
-
-        String loginUrl = link.href();
-        System.out.println("Login Url is: " +loginUrl);
     }
 }

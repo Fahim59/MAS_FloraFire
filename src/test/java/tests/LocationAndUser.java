@@ -18,6 +18,8 @@ public class LocationAndUser extends BaseClass {
     public void verifyCustomerStoreInfoEntry() throws InterruptedException {
         SmallWait(1000);
 
+        //locationAndUserPage.clickLocationAndUserTab();
+
         String country = jsonData.getJSONObject("contactInfo").getString("country");
         String zip = jsonData.getJSONObject("contactInfo").getString("zip");
         String businessPhone = jsonData.getJSONObject("contactInfo").getString("businessPhone");

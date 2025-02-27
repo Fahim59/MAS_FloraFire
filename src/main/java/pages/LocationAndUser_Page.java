@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -59,6 +60,8 @@ public class LocationAndUser_Page extends BaseClass{
     private final By additionalStoreFaxField = By.cssSelector("#StoreModels_1__FaxNumber");
 
     private final By saveBtn = By.xpath("//button[normalize-space()='Save And Next']");
+
+    private final By validationMessage = By.xpath("//div[@class='toast-message']");
 
     public LocationAndUser_Page clickSameAsBillingBtn(){
         click_CheckBox(sameAsBillingField);
@@ -164,8 +167,9 @@ public class LocationAndUser_Page extends BaseClass{
         for (WebElement suggestion : suggestions) {
 
             String text = suggestion.getText();
+            String[] parts = text.split(", ");
 
-            if (!text.contains("null")) {
+            if (parts.length == 3) {
                 suggestion.click();
                 break;
             }
@@ -175,28 +179,30 @@ public class LocationAndUser_Page extends BaseClass{
     public void validateAddress(int store) throws InterruptedException {
         SmallWait(500);
 
-        WebElement validateIcon = driver.findElement(By.xpath("//div[@id='store-form-" +store+ "']//i[contains(@id,'StoreModels')]"));
-        validateIcon.click();
+        if(store == 0){
+            WebElement validateBtn = driver.findElement(By.xpath("//button[@id='StoreModels[" +store+ "].ZipCodeButton']"));
+            validateBtn.click();
+        }
 
         SmallWait(500);
-        String alertText = driver.switchTo().alert().getText();
 
-        while (!alertText.contains("successfully")) {
-            if (alertText.contains("failed")) {
-                System.out.println("Validation Failed. Retrying...");
+        try {
+            //WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#suggestionModalMessage")));
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@class='ui-dialog-title'])[1]")));
 
-                driver.switchTo().alert().accept();
+            while(element.isDisplayed()){
+                logger.info("Validation Failed. Retrying...");
 
-                SmallWait(1500);
+                SmallWait(500);
                 clickSuggestionText();
 
-                SmallWait(1000);
-                validateIcon.click();
+                SmallWait(200);
+                Assert.assertEquals("Address validate successfully.", get_Text(validationMessage));
             }
-
-            alertText = driver.switchTo().alert().getText();
         }
-        driver.switchTo().alert().accept();
+        catch (Exception e) {
+            logger.info("Validation Message not found - {}", e.getMessage());
+        }
     }
 
     //-------------------------------------------------------------------------------------------------------------------//

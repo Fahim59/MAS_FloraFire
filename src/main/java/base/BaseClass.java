@@ -15,6 +15,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
 import org.json.*;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -26,6 +29,7 @@ import utils.*;
 import java.io.*;
 import java.text.*;
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -95,7 +99,10 @@ public class BaseClass {
     public String getCity() { return city; }
     public String getState() { return state; }
 
-    public String getEmail() { return firstName.toLowerCase() + "@" + "un8wyobg.mailosaur.net"; }
+    public String getEmail() {
+        String server = jsonData.getJSONObject("mailosaur").getString("serverId");
+        return firstName.toLowerCase() + "@" +server+ ".mailosaur.net";
+    }
 
     public String getPhone() {
         String areaCode = String.format("%03d", faker.number().numberBetween(100, 999));
@@ -216,32 +223,47 @@ public class BaseClass {
     public void getTenantLink() throws MailosaurException, IOException {
         String apiKey = jsonData.getJSONObject("mailosaur").getString("apiKey");
         String serverId = jsonData.getJSONObject("mailosaur").getString("serverId");
-        String serverDomain = serverId + ".mailosaur.net";
 
         MailosaurClient mailosaurClient = new MailosaurClient(apiKey);
 
         MessageSearchParams params = new MessageSearchParams();
         params.withServer(serverId);
 
+        long receivedAfter = Instant.now().minus(24, ChronoUnit.HOURS).toEpochMilli();
+        params.withReceivedAfter(receivedAfter);
+
         SearchCriteria criteria = new SearchCriteria();
-        //criteria.withSentTo("thing-rope@" + serverDomain);
+
+        //userName = "sunshine@hufctr7p.mailosaur.net";
         criteria.withSentTo(userName);
 
         Message message = mailosaurClient.messages().get(params, criteria);
 
-//        Pattern pattern = Pattern.compile("Client Id:\\s*(\\S+)");
-//        Matcher matcher = pattern.matcher(message.text().body());
-//
-//        if (matcher.find()) {
-//            clientId = matcher.group(1);
-//
-//            baseLogger.info("Client Id: {}", clientId);
-//        }
-//        else {
-//            baseLogger.info("Client Id not found");
-//        }
+        String emailBody = message.html().body();
 
-        tenantLink = message.text().links().get(0).href();
+        Document doc = Jsoup.parse(emailBody);
+
+        Element url = doc.selectFirst("strong:contains(Login URL)");
+
+        if (url != null) {
+            String loginUrl = url.parent().ownText().trim();
+            System.out.println("Login URL: " +loginUrl);
+
+            tenantLink = url.parent().ownText().trim();
+        }
+        else {
+            baseLogger.info("No Login URL found in the email body");
+        }
+
+        Element id = doc.selectFirst("strong:contains(Client Id)");
+
+        if (id != null) {
+            String clientId = id.parent().ownText().trim();
+            System.out.println("Client Id: " + clientId);
+        }
+        else {
+            baseLogger.info("No Client Id found in the email body");
+        }
 
         baseLogger.info("User Name: {}", userName);
         baseLogger.info("Tenant Link: {}", tenantLink);
@@ -250,6 +272,10 @@ public class BaseClass {
     public void verifyCurrentUrl(String expectedText) {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
+    }
+
+    protected boolean isNextPageLoaded(String expectedText) {
+        return driver.getCurrentUrl().contains(jsonData.getJSONObject("tabURL").getString(expectedText));
     }
 
     public static void takeScreenshot(String className) throws IOException {

@@ -121,6 +121,17 @@ public class Payment_Page extends BaseClass{
         }
     }
 
+    public boolean isPaymentFailed() {
+        try {
+            WebElement message = wait.until(ExpectedConditions.presenceOfElementLocated(paymentFailedMessage));
+            return message.isDisplayed();
+        }
+        catch (Exception e) {
+            logger.info("Payment failed message not found. Test continues.");
+            return false;
+        }
+    }
+
     public double fetchRecurringPackagePrice(){
         String text = get_Text(recurringPackagePrice);
         String priceText = text.replaceAll(".*\\$(\\d+\\.\\d+).*", "$1");

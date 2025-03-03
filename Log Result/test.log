@@ -1,120 +1,34 @@
-2025-02-26 12:11:34.259 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-26 12:11:37.510 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-26 12:11:38.518 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-26 12:11:41.137 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-26 12:11:42.582 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-26 12:11:43.545 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-26 12:12:44.896 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2025-02-26 12:12:45.366 [main] INFO  tests.CustomerRegistration - Customer Name: Dannie Halvorson
-2025-02-26 12:12:45.366 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=088a9b3a-c7cf-4af2-8447-896a3fe8a345&guid=24389253-a691-4984-8c53-2214513174d9
-2025-02-26 12:12:46.476 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2025-02-26 12:12:48.904 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-02-26 12:12:50.335 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-02-26 12:12:53.547 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-02-26 12:12:54.889 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-02-26 12:13:00.071 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-02-26 12:13:01.413 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-02-26 12:13:05.268 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-02-26 12:13:12.250 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-02-26 12:13:16.886 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-02-26 12:13:23.447 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-02-26 12:13:24.788 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-02-26 12:13:26.914 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-02-26 12:13:28.207 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-02-26 12:13:29.086 [main] INFO  pages.Payment_Page - 
+2025-02-28 18:45:28.501 [main] INFO  base.BaseClass - Browser launched successfully
+2025-02-28 18:45:31.843 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
+2025-02-28 18:45:33.273 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
+2025-02-28 18:45:36.106 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
+2025-02-28 18:45:37.731 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
+2025-02-28 18:45:38.701 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
+2025-02-28 18:46:40.225 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
+2025-02-28 18:46:40.965 [main] INFO  tests.CustomerRegistration - Customer Name: Karan Cronin
+2025-02-28 18:46:40.965 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=479760b6-a5aa-4828-b594-e6d7e87b6b76&guid=e8b19524-12d7-4483-97d5-2ef040c1bae6
+2025-02-28 18:46:42.005 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
+2025-02-28 18:46:44.819 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-02-28 18:46:46.353 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-02-28 18:46:49.552 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2025-02-28 18:46:50.957 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2025-02-28 18:46:56.156 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2025-02-28 18:46:57.616 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2025-02-28 18:47:01.519 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-02-28 18:47:08.535 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-02-28 18:47:13.076 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
+2025-02-28 18:47:19.836 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
+2025-02-28 18:47:21.257 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
+2025-02-28 18:47:23.319 [main] INFO  tests.Payment - Promo Code applied successfully
+2025-02-28 18:47:24.641 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
+2025-02-28 18:47:25.553 [main] INFO  pages.Payment_Page - 
 Verifying Recurring Order Table in Payment Page - 
 
-2025-02-26 12:13:29.101 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-26 12:13:29.114 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-26 12:13:29.116 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-26 12:13:29.116 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-02-26 12:13:29.129 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-26 12:13:29.144 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-26 12:13:30.313 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-02-26 12:13:40.954 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-02-26 12:13:40.957 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-02-26 12:13:42.604 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-02-26 12:13:42.631 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-02-26 12:13:44.151 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
-
-2025-02-26 12:13:44.168 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-26 12:13:44.183 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-26 12:13:44.183 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-26 12:13:44.183 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-02-26 12:13:44.197 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-26 12:13:44.210 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-02-26 12:13:44.225 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-26 12:13:44.225 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-02-26 12:13:48.414 [main] INFO  tests.Receipt - File downloaded successfully
-2025-02-26 12:13:48.416 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt.pdf
-2025-02-26 12:13:51.823 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-02-26 12:14:53.240 [main] INFO  base.BaseClass - Email Subject: Activation of Trial Receipt
-2025-02-26 12:14:55.041 [main] INFO  base.BaseClass - User Name: dannie@hufctr7p.mailosaur.net
-2025-02-26 12:14:55.041 [main] INFO  base.BaseClass - Tenant Link: https://USMA000220.florafiredev.com
-2025-02-26 12:14:55.041 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
-2025-02-26 12:14:58.285 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-02-26 19:54:26.251 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-26 19:54:29.211 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-26 19:54:30.300 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-26 19:54:31.775 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-26 19:54:43.721 [main] INFO  base.BaseClass - Browser launched successfully
-2025-02-26 19:54:46.499 [main] INFO  tests.CustomerRegistration - Customer navigated to the registration page.
-2025-02-26 19:54:47.431 [main] INFO  tests.CustomerRegistration - Customer entered registration details in the registration form.
-2025-02-26 19:54:50.059 [main] INFO  tests.CustomerRegistration - Customer clicked on the register button to submit the form.
-2025-02-26 19:54:51.479 [main] INFO  tests.CustomerRegistration - Registration message verification successful.
-2025-02-26 19:54:52.482 [main] INFO  tests.CustomerRegistration - Customer navigated to the login page.
-2025-02-26 19:55:54.136 [main] INFO  tests.CustomerRegistration - Email Subject: Activate the User Account
-2025-02-26 19:55:54.613 [main] INFO  tests.CustomerRegistration - Customer Name: Lanny Beier
-2025-02-26 19:55:54.615 [main] INFO  tests.CustomerRegistration - Confirmation link: https://ecom-admin-nop.azurewebsites.net/customer/activation?token=ce85c8ca-9032-4fb4-965b-d191a8962b0e&guid=c51c428b-4023-4337-8559-1cc84104f9b7
-2025-02-26 19:55:55.621 [main] INFO  tests.CustomerRegistration - Customer checked email and clicked on the activation link.
-2025-02-26 19:55:57.915 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-02-26 19:55:59.324 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-02-26 19:56:02.725 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-02-26 19:56:04.237 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-02-26 19:56:09.750 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-02-26 19:56:11.134 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-02-26 19:56:14.907 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-02-26 19:56:21.465 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-02-26 19:56:25.935 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-02-26 19:56:32.756 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-02-26 19:56:34.203 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-02-26 19:56:36.207 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-02-26 19:56:37.520 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-02-26 19:56:38.476 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2025-02-26 19:56:38.492 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-26 19:56:38.511 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-26 19:56:38.512 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-26 19:56:38.512 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-02-26 19:56:38.530 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-26 19:56:38.551 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-26 19:56:39.761 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-02-26 19:58:33.696 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-02-26 19:58:33.702 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-02-26 19:58:35.385 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-02-26 19:58:35.418 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-02-26 19:58:36.930 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
-
-2025-02-26 19:58:36.949 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-02-26 19:58:36.962 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-02-26 19:58:36.962 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-02-26 19:58:36.962 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-02-26 19:58:36.976 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-02-26 19:58:36.986 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-02-26 19:58:36.999 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-02-26 19:58:36.999 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-02-26 19:58:41.205 [main] INFO  tests.Receipt - File downloaded successfully
-2025-02-26 19:58:41.205 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt.pdf
-2025-02-26 19:58:44.586 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-02-26 19:59:46.102 [main] INFO  base.BaseClass - Email Subject: Activation of Trial Receipt
-2025-02-26 19:59:48.183 [main] INFO  base.BaseClass - User Name: lanny@hufctr7p.mailosaur.net
-2025-02-26 19:59:48.184 [main] INFO  base.BaseClass - Tenant Link: https://USTX000221.florafiredev.com
-2025-02-26 19:59:48.184 [main] INFO  tests.Receipt - Customer successfully received the trial receipt.
-2025-02-26 19:59:53.518 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-02-26 20:00:05.485 [main] INFO  tests.ClientPortalLogin - Customer logged in successfully.
-2025-02-26 20:00:13.285 [main] INFO  pages.Login_Page - Element is visible.
-2025-02-26 20:00:13.285 [main] INFO  tests.ClientPortalLogin - User successfully navigated to the Home page
-2025-02-26 20:00:13.288 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-02-28 18:47:25.571 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-02-28 18:47:25.589 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-02-28 18:47:25.589 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-02-28 18:47:25.589 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-02-28 18:47:25.609 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-02-28 18:47:25.649 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-02-28 18:47:26.855 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
+2025-02-28 18:47:47.293 [main] INFO  pages.Receipt_Page - Trial Text is not visible

@@ -23,4 +23,6 @@ public class OrderEntry_Page extends BaseClass{
     }
 
     private final By Field = By.xpath("");
+
+    private final By searchProductField = By.xpath("(.//*[@placeholder='Search Keyword (Product Name, Code)'])[1]");
 }

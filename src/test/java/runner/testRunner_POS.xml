@@ -31,6 +31,7 @@
 <!--        <class name="tests.Settings.CreditCard_Settings"/>-->
 
 <!--        <class name="tests.Administration.Employee_Feature_Permission"/>-->
+<!--        <class name="tests.Order_Entry"/>-->
     </classes>
 </test>
 </suite>

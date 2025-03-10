@@ -25,4 +25,14 @@ public class OrderEntry_Page extends BaseClass{
     private final By Field = By.xpath("");
 
     private final By searchProductField = By.xpath("(.//*[@placeholder='Search Keyword (Product Name, Code)'])[1]");
+    private final By searchProductIconField = By.xpath("(.//mat-icon[text()='search'])[1]");
+
+    private final By searchProductField2 = By.xpath("(.//*[@placeholder='Search Keyword (Product Name, Code or Description)'])[1]");
+    private final By sortProductDropdown = By.xpath("(//div[contains(@id,'mat-select-value')])[7]");
+
+    private final By productCode = By.xpath("(.//div[@class='info text-truncate']/span)[1]");
+    private final By productQuantity = By.xpath("(.//div[@class='stock ng-star-inserted'])[1]");
+    private final By addToOrderBtn = By.xpath("//span[contains(text(),'Add To Order')]");
+
+    private final By searchCustomerIconField = By.xpath("(.//mat-icon[text()='search'])[2]");
 }

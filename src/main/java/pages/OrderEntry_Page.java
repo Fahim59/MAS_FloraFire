@@ -41,7 +41,7 @@ public class OrderEntry_Page extends BaseClass{
     private final By addToOrderBtn = By.xpath("//span[contains(text(),'Add To Order')]");
     private final By closeBtn = By.xpath("//span[contains(text(),'Close')]");
 
-    public OrderEntry_Page searchProductEnter(String code) throws InterruptedException {
+    public void searchProductEnter(String code) throws InterruptedException {
         SmallWait(1000);
 
         WebElement searchField = wait_for_presence(searchProductField);
@@ -50,23 +50,21 @@ public class OrderEntry_Page extends BaseClass{
         searchField.sendKeys(Keys.ENTER);
 
         SmallWait(2000);
-
-        return this;
     }
 
-    public OrderEntry_Page clickProductSearchIcon() throws InterruptedException {
+    public void searchProductIcon(String code) throws InterruptedException {
         SmallWait(1000);
+
         click_Element_Js(searchProductIconField);
 
-        return this;
-    }
-    public OrderEntry_Page enterProductInfo(String code) throws InterruptedException {
-        SmallWait(500);
-        write_Send_Keys(searchProductField2, code);
-
+        WebElement searchField = wait_for_presence(searchProductField2);
+        searchField.clear();
+        searchField.sendKeys(code);
         SmallWait(2000);
 
-        return this;
+        clickAddToOrderBtn(code);
+
+        SmallWait(2000);
     }
     public void clickAddToOrderBtn(String code) throws InterruptedException {
         SmallWait(500);
@@ -96,12 +94,6 @@ public class OrderEntry_Page extends BaseClass{
 
         click_Element_Js(closeBtn);
     }
-
-    public OrderEntry_Page searchProductIcon(String code) throws InterruptedException {
-        clickProductSearchIcon().enterProductInfo(code).clickAddToOrderBtn(code);
-        return this;
-    }
-
     public void sortProduct(String type) throws InterruptedException {
         SmallWait(2000);
 
@@ -239,6 +231,30 @@ public class OrderEntry_Page extends BaseClass{
     /*
      * Moneybox
      */
+
+    private final By subTotalField = By.cssSelector("#mat-input-1");
+    private final By deliveryChargeField = By.cssSelector("#mat-input-2");
+    private final By discountField = By.cssSelector("#mat-input-3");
+    private final By taxField = By.cssSelector("#mat-input-4");
+
+    public void moneyboxData() throws InterruptedException {
+        SmallWait(1000);
+
+        WebElement subTotal = wait_for_visibility(subTotalField);
+        WebElement deliveryCharge = wait_for_visibility(deliveryChargeField);
+        WebElement discount = wait_for_visibility(discountField);
+        WebElement tax = wait_for_visibility(taxField);
+
+        String subTotalValue = subTotal.getAttribute("value");
+        String deliveryChargeValue = deliveryCharge.getAttribute("value");
+        String discountValue = discount.getAttribute("value");
+        String taxValue = tax.getAttribute("value");
+
+        logger.info("SubTotal is:{}", subTotalValue);
+        logger.info("Delivery Charge is:{}", deliveryChargeValue);
+        logger.info("Discount is:{}", discountValue);
+        logger.info("Tax is:{}", taxValue);
+    }
 
     /*
      *  Whole Order Discount or Delivery Discount

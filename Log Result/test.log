@@ -73,3 +73,50 @@
 2025-03-14 12:29:30.670 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
 2025-03-14 12:29:35.791 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
 2025-03-14 12:29:39.219 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 14:55:06.826 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 14:55:15.041 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 14:55:20.745 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 14:55:20.745 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 14:55:25.061 [main] INFO  tests.Employees - User successfully navigated to the Role list page
+2025-03-14 14:55:31.044 [main] INFO  pages.Administration.Roles_Page - Role employee found
+2025-03-14 14:55:31.044 [main] INFO  tests.Employees - User successfully created new role - employee
+2025-03-14 14:55:35.135 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
+2025-03-14 14:55:58.593 [main] INFO  pages.Employee_Page - Employee 1001 found
+2025-03-14 14:55:58.594 [main] INFO  tests.Employees - Successfully added Employee - 1001
+2025-03-14 14:56:20.568 [main] INFO  pages.Employee_Page - Employee 1002 found
+2025-03-14 14:56:20.568 [main] INFO  tests.Employees - Successfully added Employee - 1002
+2025-03-14 14:56:42.678 [main] INFO  pages.Employee_Page - Employee 1003 found
+2025-03-14 14:56:42.678 [main] INFO  tests.Employees - Successfully added Employee - 1003
+2025-03-14 14:57:04.608 [main] INFO  pages.Employee_Page - Employee 1004 found
+2025-03-14 14:57:04.608 [main] INFO  tests.Employees - Successfully added Employee - 1004
+2025-03-14 14:57:26.541 [main] INFO  pages.Employee_Page - Employee 1005 found
+2025-03-14 14:57:26.541 [main] INFO  tests.Employees - Successfully added Employee - 1005
+2025-03-14 14:57:26.545 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 15:34:32.542 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 15:34:40.926 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 15:34:47.360 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 15:34:47.360 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 15:34:52.484 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 15:34:55.902 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 15:40:27.097 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 15:40:36.728 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 15:40:42.553 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 15:40:42.553 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 15:40:47.668 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 15:40:55.492 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 15:50:20.190 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 15:50:28.734 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 15:50:34.427 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 15:50:34.427 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 15:50:39.542 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 15:50:39.546 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 15:56:35.643 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 15:56:44.191 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 15:56:50.705 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 15:56:50.706 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 15:56:55.818 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-14 15:57:03.717 [main] INFO  base.BaseClass - Browser quit successfully

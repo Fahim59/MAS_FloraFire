@@ -75,9 +75,11 @@ public class Test_Case_1 extends BaseClass {
         //orderEntryPage.setProductDiscount(discounts);
         //orderEntryPage.selectWholeOrderDiscount("FLASH5");
 
-        //orderEntryPage.searchProductIcon("f003");
+        orderEntryPage.searchProductIcon("f003");
 
-        orderEntryPage.clickProductSearchIcon();
-        orderEntryPage.sortProduct("Product Code");
+        //orderEntryPage.clickProductSearchIcon();
+        //orderEntryPage.sortProduct("Product Code");
+
+        orderEntryPage.moneyboxData();
     }
 }

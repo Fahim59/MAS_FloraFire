@@ -1,10 +1,12 @@
 {
   "login_info": {
-    "username": "karan@hufctr7p.mailosaur.net",
+    "username": "mustafiz",
     "password": "11!!qqQQ"
   },
 
   "tabURL": {
+    "orderEntry": "/pos",
+
     "customerList": "/customers",
     "customerMaintenance": "/customers/create",
 

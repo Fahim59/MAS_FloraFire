@@ -32,6 +32,9 @@ public class BaseClass {
 
     protected JSONObject jsonData;
 
+    public String customerType, discount, deliveryCharge, taxExempt;
+    public boolean tip = false;
+
     @BeforeSuite
     public static void launch_browser(){
         driver = DriverFactory.initializeDriver(System.getProperty("browser",

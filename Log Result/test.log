@@ -1,19 +1,75 @@
-2025-03-03 11:24:33.160 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-03 11:24:43.042 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-03 11:24:49.775 [main] INFO  base.BaseClass - Element is visible.
-2025-03-03 11:24:49.775 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-03 11:24:54.073 [main] INFO  tests.Employees - User successfully navigated to the Role list page
-2025-03-03 11:25:00.029 [main] INFO  pages.Administration.Roles_Page - Role employee found
-2025-03-03 11:25:00.029 [main] INFO  tests.Employees - User successfully created new role - employee
-2025-03-03 11:25:04.129 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-03-03 11:25:26.883 [main] INFO  pages.Employee_Page - Employee 1001 found
-2025-03-03 11:25:26.883 [main] INFO  tests.Employees - Successfully added Employee - 1001
-2025-03-03 11:25:48.590 [main] INFO  pages.Employee_Page - Employee 1002 found
-2025-03-03 11:25:48.591 [main] INFO  tests.Employees - Successfully added Employee - 1002
-2025-03-03 11:26:10.526 [main] INFO  pages.Employee_Page - Employee 1003 found
-2025-03-03 11:26:10.526 [main] INFO  tests.Employees - Successfully added Employee - 1003
-2025-03-03 11:26:32.189 [main] INFO  pages.Employee_Page - Employee 1004 found
-2025-03-03 11:26:32.189 [main] INFO  tests.Employees - Successfully added Employee - 1004
-2025-03-03 11:26:53.897 [main] INFO  pages.Employee_Page - Employee 1005 found
-2025-03-03 11:26:53.897 [main] INFO  tests.Employees - Successfully added Employee - 1005
-2025-03-03 11:26:53.900 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 11:44:01.333 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 11:44:09.621 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 11:44:15.397 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 11:44:15.397 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 11:44:20.531 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 11:44:24.735 [main] INFO  pages.OrderEntry_Page - Insufficient Stock
+2025-03-14 11:44:26.821 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 11:45:32.180 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 11:45:40.345 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 11:45:45.725 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 11:45:45.726 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 11:45:50.845 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 11:45:55.032 [main] INFO  pages.OrderEntry_Page - Insufficient Stock
+2025-03-14 11:45:57.105 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 11:52:30.004 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 11:52:38.447 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 11:52:44.547 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 11:52:44.548 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 11:52:49.662 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 11:52:57.047 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 11:55:36.615 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 11:55:44.970 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 11:55:50.924 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 11:55:50.924 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 11:55:56.043 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 11:56:03.922 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:06:28.999 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:06:37.661 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:06:44.507 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:06:44.508 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:06:49.621 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:06:59.519 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:11:07.136 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:11:15.823 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:11:21.176 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:11:21.176 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:11:26.276 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:11:33.580 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:12:13.859 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:12:34.181 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:12:42.598 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:12:47.944 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:12:47.944 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:12:53.042 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:12:59.322 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:18:10.065 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:18:18.825 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:18:24.374 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:18:24.374 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:18:29.494 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:18:35.826 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:25:44.378 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:25:53.969 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:25:59.530 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:25:59.530 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:26:04.651 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:26:07.845 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:26:34.088 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:26:42.360 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:26:48.337 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:26:48.337 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:26:53.460 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:27:10.978 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:28:27.000 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:28:35.230 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:28:41.682 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:28:41.682 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:28:46.794 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:28:49.212 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-14 12:29:16.577 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-14 12:29:25.050 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-14 12:29:30.670 [main] INFO  base.BaseClass - Element is visible.
+2025-03-14 12:29:30.670 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-14 12:29:35.791 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-14 12:29:39.219 [main] INFO  base.BaseClass - Browser quit successfully

@@ -35,25 +35,6 @@ public class Test_Case_1 extends BaseClass {
         logger.info("User successfully navigated to the Order Entry page");
     }
 
-    public static String[] xData(Map<String, String> valueData) {
-        /*
-         * data[0] = flag
-         * data[1] = id
-         * data[2] = name
-         * data[3] = address
-         * data[4] = address cont
-         * data[5] = country
-         */
-
-        String flag = valueData.get("Flag");
-        String id = valueData.get("Id");
-        String name = valueData.get("Name");
-        String address = valueData.get("Address");
-        String address_cont = valueData.get("Address Cont.");
-
-        return new String[] {flag, id, name, address, address_cont};
-    }
-
     @Test(description = "Verify that the user can add  data successfully", priority = 2)
     public void verifyXDataEntry() throws InterruptedException {
         List<String> types = Arrays.asList("MP", "BP", "HP");
@@ -81,5 +62,9 @@ public class Test_Case_1 extends BaseClass {
         //orderEntryPage.sortProduct("Product Code");
 
         orderEntryPage.moneyboxData();
+
+        //orderEntryPage.carryOutDelivery("true","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+        //orderEntryPage.willCallDelivery(homePage.getStoreName());
+        orderEntryPage.recipientDelivery("old","system", "Kristi");
     }
 }

@@ -5,7 +5,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -151,6 +155,226 @@ public class OrderEntry_Page extends BaseClass{
             discountField.click();
             SmallWait(200);
             js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+discount+"']")));
+        }
+    }
+
+    /*
+     * Delivery Method
+     */
+
+    // * Carryout
+
+    private final By occasionDropdown = By.xpath("//mat-select[@formcontrolname='occasion']");
+
+    private final By recipientNameField = By.xpath("//input[@formcontrolname='recipientName']");
+    private final By shortCodeDropdown = By.xpath("//mat-select[@formcontrolname='shortCodeId']");
+
+    private final By saveBtn = By.xpath("(.//span[contains(text(),'Save')])[2]");
+
+    public void selectOccasion(String occasion) throws InterruptedException {
+        SmallWait(1000);
+
+        click_Element(occasionDropdown);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+occasion+"', ' ')]")));
+    }
+
+    public void enterRecipientName(String name){
+        write_Send_Keys(recipientNameField, name);
+    }
+    public void selectShortCode(String code) throws InterruptedException {
+        SmallWait(1000);
+
+        click_Element(shortCodeDropdown);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+code+"', ' ')]")));
+    }
+
+    public void carryOutDelivery(String flag, String occasion, String name, String code) throws InterruptedException {
+        SmallWait(1000);
+
+        for(int l = 1; l<= get_Size(productRows); l++){
+            WebElement carryOutBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[1]"));
+
+            if(flag.equalsIgnoreCase("true")){
+                carryOutBtn.click();
+            }
+
+            SmallWait(500);
+
+            selectOccasion(occasion);
+            enterRecipientName(name);
+            selectShortCode(code);
+            click_Element_Js(saveBtn);
+        }
+    }
+
+    // * WillCall
+
+    private final By deliveryFromField = By.xpath("//input[@formcontrolname='deliveryFromDate']");
+    private final By deliveryToField = By.xpath("//input[@formcontrolname='deliveryToDate']");
+
+    private final By pickUpLocationDropdown = By.xpath("//mat-select[@formcontrolname='pickupLocationId']");
+
+    private final By personPickUpField = By.xpath("//input[@formcontrolname='personPickingUp']");
+
+    private final By timeReqField = By.xpath("(.//*[@type='checkbox'])[3]");
+
+    private final By hourField = By.xpath("//input[@formcontrolname='deliveryTimeHour']");
+    private final By minuteField = By.xpath("//input[@formcontrolname='defaultDeliveryMinute']");
+    private final By timingDropdown = By.xpath("//mat-select[@formcontrolname='deliveryTimeType']");
+
+    private final By specialInstructionField = By.xpath("//textarea[@formcontrolname='specialInstruction']");
+
+    private final By nextBtn = By.xpath("(.//span[contains(text(),'Next')])[1]");
+
+    public void enterDeliveryFromDate(String fromDate){
+        write_Send_Keys(deliveryFromField, fromDate);
+    }
+    public void enterDeliveryToDate(String toDate){
+        write_Send_Keys(deliveryToField, toDate);
+    }
+
+    public void selectPickUpLocation(String location) throws InterruptedException {
+        SmallWait(500);
+
+        click_Element(pickUpLocationDropdown);
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()='"+location+"']")));
+    }
+
+    public void enterPersonPickingUp(String person){
+        write_Send_Keys(personPickUpField, person);
+    }
+
+    public void isTimeRequirement(String flag, String hour, String minute, String timing) throws InterruptedException {
+        if(flag.equalsIgnoreCase("true")){
+            selectCheckBox(timeReqField);
+            SmallWait(200);
+
+            write_Send_Keys(hourField, hour);
+            write_Send_Keys(minuteField, minute);
+
+            click_Element_Js(timingDropdown);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+timing+"', ' ')]")));
+        }
+    }
+
+    public void enterSpecialInstruction(String instruction){
+        write_Send_Keys(specialInstructionField, instruction);
+    }
+
+    public void willCallDelivery(String flag, String store) throws InterruptedException {
+        SmallWait(1000);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        String formattedDate = LocalDate.now().format(formatter);
+
+        for(int l = 1; l<= get_Size(productRows); l++){
+            WebElement willCallBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[2]"));
+            willCallBtn.click();
+
+            if(flag.equalsIgnoreCase("true")){
+                willCallBtn.click();
+            }
+
+            SmallWait(500);
+            enterDeliveryFromDate(formattedDate);
+            enterDeliveryToDate(formattedDate);
+
+            selectPickUpLocation(store);
+
+            enterPersonPickingUp("Mustafizur Rahman");
+
+            isTimeRequirement("true","03","30", "Before");
+
+            enterSpecialInstruction("Call before coming");
+
+            click_Element_Js(nextBtn);
+
+            SmallWait(200);
+
+            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+        }
+    }
+
+    // * Recipient
+
+    private final By recipientRows = By.xpath("(.//table[@role='table']/tbody/tr)[2]");
+
+    private final By systemResourceTab = By.xpath("//span[contains(text(),'System Resources')]");
+
+    private final By validationMessage = By.xpath("//p[@class='abp-toast-message']");
+    private final By validateBtn = By.xpath("//span[normalize-space()='Validate']");
+    public void recipientDelivery(String type, String source, String name) throws InterruptedException {
+        SmallWait(1000);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        String formattedDate = LocalDate.now().format(formatter);
+
+        for(int l = 1; l<= get_Size(productRows); l++){
+            WebElement recipientBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[3]"));
+            recipientBtn.click();
+
+            if(type.equalsIgnoreCase("old")){
+                if(source.equalsIgnoreCase("system")){
+                    click_Element(systemResourceTab);
+
+                    for(int r = 1; r <= get_Size(recipientRows); l++){
+                        WebElement recipientName = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[1])[2]"));
+                        WebElement actionBtn = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[5])[2]"));
+
+                        if(recipientName.getText().equalsIgnoreCase(name)){
+                            actionBtn.click();
+
+                            click_Element(validateBtn);
+
+                            //String text = wait_for_visibility(validationMessage).getText();
+
+                            while(!wait_for_visibility(validationMessage).getText().contains("successfully")){
+                                click_Element(validateBtn);
+                            }
+
+                            click_Element_Js(nextBtn);
+
+                            SmallWait(500);
+                            enterDeliveryFromDate(formattedDate);
+                            enterDeliveryToDate(formattedDate);
+
+                            isTimeRequirement("false","03","30", "Before");
+
+                            enterSpecialInstruction("Call before coming");
+
+                            click_Element_Js(nextBtn);
+
+                            SmallWait(200);
+
+                            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+
+                            break;
+                        }
+                    }
+                }
+            }
+
+//            SmallWait(500);
+//            enterDeliveryFromDate(formattedDate);
+//            enterDeliveryToDate(formattedDate);
+//
+//            selectPickUpLocation(store);
+//
+//            enterPersonPickingUp("Mustafizur Rahman");
+//
+//            isTimeRequirement("true","03","30", "Before");
+//
+//            click_Element_Js(nextBtn);
+//
+//            SmallWait(200);
+//
+//            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+
+            break;
         }
     }
 

@@ -1,122 +1,354 @@
-2025-03-14 11:44:01.333 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 11:44:09.621 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 11:44:15.397 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 11:44:15.397 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 11:44:20.531 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 11:44:24.735 [main] INFO  pages.OrderEntry_Page - Insufficient Stock
-2025-03-14 11:44:26.821 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 11:45:32.180 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 11:45:40.345 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 11:45:45.725 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 11:45:45.726 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 11:45:50.845 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 11:45:55.032 [main] INFO  pages.OrderEntry_Page - Insufficient Stock
-2025-03-14 11:45:57.105 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 11:52:30.004 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 11:52:38.447 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 11:52:44.547 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 11:52:44.548 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 11:52:49.662 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 11:52:57.047 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 11:55:36.615 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 11:55:44.970 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 11:55:50.924 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 11:55:50.924 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 11:55:56.043 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 11:56:03.922 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:06:28.999 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:06:37.661 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:06:44.507 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:06:44.508 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:06:49.621 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:06:59.519 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:11:07.136 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:11:15.823 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:11:21.176 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:11:21.176 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:11:26.276 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:11:33.580 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:12:13.859 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:12:34.181 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:12:42.598 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:12:47.944 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:12:47.944 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:12:53.042 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:12:59.322 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:18:10.065 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:18:18.825 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:18:24.374 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:18:24.374 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:18:29.494 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:18:35.826 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:25:44.378 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:25:53.969 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:25:59.530 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:25:59.530 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:26:04.651 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:26:07.845 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:26:34.088 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:26:42.360 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:26:48.337 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:26:48.337 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:26:53.460 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:27:10.978 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:28:27.000 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:28:35.230 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:28:41.682 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:28:41.682 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:28:46.794 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:28:49.212 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 12:29:16.577 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 12:29:25.050 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 12:29:30.670 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 12:29:30.670 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 12:29:35.791 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 12:29:39.219 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 14:55:06.826 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 14:55:15.041 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 14:55:20.745 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 14:55:20.745 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 14:55:25.061 [main] INFO  tests.Employees - User successfully navigated to the Role list page
-2025-03-14 14:55:31.044 [main] INFO  pages.Administration.Roles_Page - Role employee found
-2025-03-14 14:55:31.044 [main] INFO  tests.Employees - User successfully created new role - employee
-2025-03-14 14:55:35.135 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-03-14 14:55:58.593 [main] INFO  pages.Employee_Page - Employee 1001 found
-2025-03-14 14:55:58.594 [main] INFO  tests.Employees - Successfully added Employee - 1001
-2025-03-14 14:56:20.568 [main] INFO  pages.Employee_Page - Employee 1002 found
-2025-03-14 14:56:20.568 [main] INFO  tests.Employees - Successfully added Employee - 1002
-2025-03-14 14:56:42.678 [main] INFO  pages.Employee_Page - Employee 1003 found
-2025-03-14 14:56:42.678 [main] INFO  tests.Employees - Successfully added Employee - 1003
-2025-03-14 14:57:04.608 [main] INFO  pages.Employee_Page - Employee 1004 found
-2025-03-14 14:57:04.608 [main] INFO  tests.Employees - Successfully added Employee - 1004
-2025-03-14 14:57:26.541 [main] INFO  pages.Employee_Page - Employee 1005 found
-2025-03-14 14:57:26.541 [main] INFO  tests.Employees - Successfully added Employee - 1005
-2025-03-14 14:57:26.545 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 15:34:32.542 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 15:34:40.926 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 15:34:47.360 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 15:34:47.360 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 15:34:52.484 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 15:34:55.902 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 15:40:27.097 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 15:40:36.728 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 15:40:42.553 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 15:40:42.553 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 15:40:47.668 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 15:40:55.492 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 15:50:20.190 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 15:50:28.734 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 15:50:34.427 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 15:50:34.427 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 15:50:39.542 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 15:50:39.546 [main] INFO  base.BaseClass - Browser quit successfully
-2025-03-14 15:56:35.643 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-14 15:56:44.191 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-03-14 15:56:50.705 [main] INFO  base.BaseClass - Element is visible.
-2025-03-14 15:56:50.706 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-03-14 15:56:55.818 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
-2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
-2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
-2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
-2025-03-14 15:57:03.715 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
-2025-03-14 15:57:03.717 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 12:34:02.847 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 12:34:13.200 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 12:34:20.054 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 12:34:20.054 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 12:34:36.186 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 12:34:36.186 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 12:34:36.186 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 12:34:36.186 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 12:34:36.189 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 12:55:02.391 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 12:55:10.812 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 12:55:16.249 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 12:55:16.249 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 12:55:21.383 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 12:55:30.359 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 12:55:30.359 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 12:55:30.359 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 12:55:30.359 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 12:55:31.512 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:11:30.318 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:11:39.378 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:11:46.056 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:11:46.056 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:11:51.184 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:12:00.149 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:12:00.150 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:12:00.150 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:12:00.150 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:12:03.160 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:33:22.427 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:33:41.467 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:33:48.839 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:33:48.841 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:33:53.958 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:34:02.879 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:34:02.879 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:34:02.879 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:34:02.879 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:34:07.322 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:38:02.745 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:38:11.190 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:38:17.432 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:38:17.432 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:38:31.502 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:38:31.502 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:38:31.502 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:38:31.502 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:38:37.056 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:39:29.228 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:39:38.212 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:39:44.162 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:39:44.162 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:39:49.273 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:39:58.218 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:39:58.218 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:39:58.218 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:39:58.218 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:40:02.810 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:40:55.422 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:41:04.105 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:41:09.879 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:41:09.879 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:41:15.007 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:41:23.962 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:41:23.962 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:41:23.962 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:41:23.962 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:41:28.452 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:44:07.319 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:44:17.068 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:44:23.574 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:44:23.574 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:44:28.708 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:44:32.407 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 13:44:58.153 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 13:45:07.106 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 13:45:13.398 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 13:45:13.399 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 13:45:18.503 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 13:45:27.412 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 13:45:27.412 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 13:45:27.412 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 13:45:27.412 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 13:45:29.074 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:37:32.142 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:37:41.138 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:37:47.619 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:37:47.620 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:37:52.735 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:38:01.683 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:38:01.683 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:38:01.683 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:38:01.683 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:38:03.571 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:46:55.372 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:47:03.556 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:47:11.837 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:47:11.837 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:47:16.947 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:47:25.869 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:47:25.869 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:47:25.869 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:47:25.869 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:47:27.797 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:50:52.776 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:51:01.571 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:51:08.531 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:51:08.532 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:51:13.638 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:51:22.562 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:51:22.563 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:51:22.563 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:51:22.563 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:51:25.302 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:54:18.385 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:54:26.782 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:54:32.758 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:54:32.759 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:54:37.869 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:54:46.817 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:54:46.817 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:54:46.817 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:54:46.817 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:54:49.566 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:55:39.920 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:55:48.161 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:55:54.127 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:55:54.127 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:55:59.248 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:56:08.168 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:56:08.169 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:56:08.169 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:56:08.169 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:56:10.906 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:56:38.340 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:56:48.015 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:56:55.092 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:56:55.092 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:57:09.191 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:57:09.192 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:57:09.192 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:57:09.192 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:57:12.194 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 14:59:16.799 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 14:59:25.069 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 14:59:31.995 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 14:59:31.995 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 14:59:37.105 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 14:59:46.053 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 14:59:46.053 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 14:59:46.053 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 14:59:46.053 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 14:59:50.437 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:01:02.029 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:01:11.628 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:01:18.255 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:01:18.255 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:01:23.381 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:01:32.300 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:01:32.301 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:01:32.301 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:01:32.301 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:01:36.686 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:02:25.294 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:02:33.835 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:02:39.813 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:02:39.813 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:02:44.919 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:02:53.837 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:02:53.837 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:02:53.837 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:02:53.837 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:02:59.227 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:05:14.891 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:05:23.306 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:05:29.006 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:05:29.006 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:05:34.143 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:05:43.111 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:05:43.111 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:05:43.111 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:05:43.111 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:05:47.671 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:06:28.581 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:06:36.973 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:06:42.979 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:06:42.979 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:06:48.093 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:06:57.003 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:06:57.003 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:06:57.003 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:06:57.003 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:07:00.800 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:10:56.377 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:11:05.364 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:11:12.603 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:11:12.603 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:11:26.669 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:11:26.670 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:11:26.670 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:11:26.670 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:11:32.679 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:13:50.433 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:13:58.754 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:14:05.692 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:14:05.692 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:14:10.812 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:14:19.703 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:14:19.703 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:14:19.703 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:14:19.703 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:14:41.670 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:17:55.124 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:18:07.721 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:18:14.354 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:18:14.354 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:18:19.468 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:18:28.411 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:18:28.412 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:18:28.412 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:18:28.412 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:18:36.842 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:20:36.000 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:20:45.600 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:20:52.012 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:20:52.012 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:20:57.125 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:21:06.093 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:21:06.093 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:21:06.093 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:21:06.093 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:21:10.595 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:24:45.372 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:24:54.213 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:25:00.109 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:25:00.109 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:25:05.242 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:25:14.174 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:25:14.174 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:25:14.174 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:25:14.175 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:25:15.336 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:33:15.730 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:33:24.255 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:33:29.810 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:33:29.811 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:33:34.911 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:33:43.850 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:33:43.850 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:33:43.850 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:33:43.850 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:33:45.127 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 15:59:21.444 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 15:59:30.367 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 15:59:37.810 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 15:59:37.810 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 15:59:42.917 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 15:59:51.828 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 15:59:51.829 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 15:59:51.829 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 15:59:51.829 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 15:59:54.709 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:01:07.439 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:01:19.749 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:01:25.721 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:01:25.721 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:01:30.833 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:01:39.803 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:01:39.803 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:01:39.803 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:01:39.803 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:01:44.101 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:02:08.211 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:02:17.120 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:02:22.834 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:02:22.834 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:02:27.945 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:02:36.876 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:02:36.876 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:02:36.876 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:02:36.876 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:02:39.272 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:04:05.914 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:04:16.070 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:04:25.241 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:04:25.241 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:04:30.359 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:04:39.322 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:04:39.322 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:04:39.322 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:04:39.322 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:04:41.725 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:12:02.036 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:12:11.824 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:12:22.703 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:12:22.703 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:12:27.813 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:12:36.739 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:12:36.739 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:12:36.740 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:12:36.740 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:12:40.209 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:16:28.721 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:16:36.970 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:16:43.066 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:16:43.066 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:16:48.175 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:16:57.115 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:16:57.116 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:16:57.116 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:16:57.116 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:17:07.928 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:21:41.869 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:21:52.264 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:21:58.603 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:21:58.603 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:22:03.716 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:22:12.610 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:22:12.610 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:22:12.610 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:22:12.610 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:22:22.346 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:23:04.540 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:23:13.729 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:25:54.998 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:26:03.412 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:26:09.175 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:26:09.175 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:26:14.288 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:26:23.204 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:26:23.204 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:26:23.204 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:26:23.204 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:26:32.945 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:29:04.397 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:29:12.772 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:29:18.268 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:29:18.268 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:29:23.408 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:29:32.336 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:29:32.336 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:29:32.336 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:29:32.336 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:29:59.783 [main] INFO  base.BaseClass - Browser quit successfully
+2025-03-19 16:31:15.239 [main] INFO  base.BaseClass - Browser launched successfully
+2025-03-19 16:31:24.464 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-03-19 16:31:31.179 [main] INFO  base.BaseClass - Element is visible.
+2025-03-19 16:31:31.180 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-03-19 16:31:36.298 [main] INFO  tests.POS.Test_Case_1 - User successfully navigated to the Order Entry page
+2025-03-19 16:31:45.305 [main] INFO  pages.OrderEntry_Page - SubTotal is:5.99
+2025-03-19 16:31:45.305 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:0.00
+2025-03-19 16:31:45.305 [main] INFO  pages.OrderEntry_Page - Discount is:0.00
+2025-03-19 16:31:45.305 [main] INFO  pages.OrderEntry_Page - Tax is:0.30
+2025-03-19 16:32:11.076 [main] INFO  base.BaseClass - Browser quit successfully

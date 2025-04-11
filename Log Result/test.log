@@ -1,134 +1,53 @@
-2025-03-27 11:54:24.195 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-27 11:54:29.038 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-03-27 11:54:45.643 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-27 11:54:50.945 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-03-27 11:54:52.280 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-03-27 11:54:53.959 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-03-27 11:54:55.345 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-03-27 11:55:01.020 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-03-27 11:55:02.337 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-03-27 11:55:06.152 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 11:55:13.463 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 11:55:17.999 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-03-27 11:55:24.764 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-03-27 11:55:26.164 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-03-27 11:55:28.434 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-03-27 11:55:29.742 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-03-27 11:55:30.595 [main] INFO  pages.Payment_Page - 
+2025-04-11 15:41:22.140 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-11 15:41:25.599 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-04-11 15:41:27.047 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-04-11 15:41:30.379 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2025-04-11 15:41:31.738 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2025-04-11 15:41:39.160 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2025-04-11 15:41:40.583 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2025-04-11 15:41:44.479 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-04-11 15:41:51.325 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-04-11 15:42:07.594 [main] INFO  pages.LocationAndUser_Page - Validation Message not found - Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='toast-message'] (tried for 15 second(s) with 500 milliseconds interval)
+2025-04-11 15:42:28.678 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-11 15:42:32.013 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
+2025-04-11 15:42:33.515 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
+2025-04-11 15:42:35.195 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
+2025-04-11 15:42:36.725 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
+2025-04-11 15:42:42.098 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
+2025-04-11 15:42:43.487 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
+2025-04-11 15:42:47.334 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-04-11 15:42:54.351 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
+2025-04-11 15:42:59.584 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
+2025-04-11 15:43:06.303 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
+2025-04-11 15:43:07.676 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
+2025-04-11 15:43:09.888 [main] INFO  tests.Payment - Promo Code applied successfully
+2025-04-11 15:43:11.215 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
+2025-04-11 15:43:12.098 [main] INFO  pages.Payment_Page - 
 Verifying Recurring Order Table in Payment Page - 
 
-2025-03-27 11:55:30.613 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 11:55:30.630 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 11:55:30.630 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 11:55:30.630 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-03-27 11:55:30.646 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 11:55:30.662 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 11:55:31.850 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-03-27 11:57:17.819 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-03-27 11:57:17.826 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-03-27 11:57:19.558 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-03-27 11:57:19.588 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-03-27 11:57:21.113 [main] INFO  pages.Receipt_Page - 
+2025-04-11 15:43:12.116 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-04-11 15:43:12.131 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-04-11 15:43:12.131 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-04-11 15:43:12.131 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
+2025-04-11 15:43:12.148 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-04-11 15:43:12.165 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-04-11 15:43:13.361 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
+2025-04-11 15:45:31.407 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
+2025-04-11 15:45:31.415 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
+2025-04-11 15:45:33.127 [main] INFO  pages.Receipt_Page - Trial Text is visible
+2025-04-11 15:45:33.156 [main] INFO  pages.Receipt_Page - Amex type card details matched
+2025-04-11 15:45:34.682 [main] INFO  pages.Receipt_Page - 
 Verifying Recurring Order Table in Receipt Page - 
 
-2025-03-27 11:57:21.131 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 11:57:21.146 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 11:57:21.147 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 11:57:21.147 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-03-27 11:57:21.161 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 11:57:21.175 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-03-27 11:57:21.190 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 11:57:21.190 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-03-27 11:57:25.400 [main] INFO  tests.Receipt - File downloaded successfully
-2025-03-27 11:57:25.403 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (4).pdf
-2025-03-27 11:57:28.802 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-03-27 11:58:33.535 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-03-27 11:58:33.538 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2025-03-27 12:16:36.422 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-27 12:16:41.606 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-03-27 12:16:43.082 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-03-27 12:16:44.905 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-03-27 12:16:46.380 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-03-27 12:16:51.982 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-03-27 12:16:53.353 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-03-27 12:16:57.143 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 12:17:07.067 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 12:17:11.422 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-03-27 12:17:18.853 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-03-27 12:17:20.209 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-03-27 12:17:22.137 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-03-27 12:17:23.435 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-03-27 12:17:24.302 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2025-03-27 12:17:24.320 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 12:17:24.335 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 12:17:24.335 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 12:17:24.335 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-03-27 12:17:24.353 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 12:17:24.373 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 12:17:25.559 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-03-27 12:19:17.898 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-03-27 12:19:17.904 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-03-27 12:19:19.730 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-03-27 12:19:19.760 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-03-27 12:19:21.282 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
-
-2025-03-27 12:19:21.302 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 12:19:21.319 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 12:19:21.319 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 12:19:21.319 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-03-27 12:19:21.336 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 12:19:21.354 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-03-27 12:19:21.370 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 12:19:21.370 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-03-27 12:19:25.667 [main] INFO  tests.Receipt - File downloaded successfully
-2025-03-27 12:19:25.669 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (5).pdf
-2025-03-27 12:19:29.059 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-03-27 12:20:35.018 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-03-27 12:20:35.021 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
-2025-03-27 12:20:57.914 [main] INFO  base.BaseClass - Browser launched successfully
-2025-03-27 12:21:02.654 [main] INFO  tests.CustomerLogin - Customer logged in successfully.
-2025-03-27 12:21:04.048 [main] INFO  tests.CustomerLogin - Customer successfully navigated to the Package Selection page
-2025-03-27 12:21:05.741 [main] INFO  tests.PackageSelection - Customer selected the preferred package and clicked on save button.
-2025-03-27 12:21:07.108 [main] INFO  tests.PackageSelection - Customer successfully navigated to the Contact Info page
-2025-03-27 12:21:12.757 [main] INFO  tests.ContactInfo - Customer entered all the basic information and clicked on save button.
-2025-03-27 12:21:14.150 [main] INFO  tests.ContactInfo - Customer successfully navigated to the Store Info page
-2025-03-27 12:21:17.948 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 12:21:27.632 [main] INFO  pages.LocationAndUser_Page - Validation Failed. Retrying...
-2025-03-27 12:21:31.845 [main] INFO  tests.LocationAndUser - Customer entered all the required store information and clicked on save button.
-2025-03-27 12:21:39.161 [main] INFO  tests.LocationAndUser - Customer entered the required license count and clicked on save button.
-2025-03-27 12:21:40.487 [main] INFO  tests.LocationAndUser - Customer successfully navigated to the Checkout page
-2025-03-27 12:21:42.435 [main] INFO  tests.Payment - Promo Code applied successfully
-2025-03-27 12:21:43.742 [main] INFO  tests.Payment - Customer applied promo and entered credit card information.
-2025-03-27 12:21:44.604 [main] INFO  pages.Payment_Page - 
-Verifying Recurring Order Table in Payment Page - 
-
-2025-03-27 12:21:44.623 [main] INFO  pages.Payment_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 12:21:44.640 [main] INFO  pages.Payment_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 12:21:44.640 [main] INFO  pages.Payment_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 12:21:44.640 [main] INFO  pages.Payment_Page - Get License Count: 8.0 and License Count: 8.0
-2025-03-27 12:21:44.655 [main] INFO  pages.Payment_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 12:21:44.669 [main] INFO  pages.Payment_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 12:21:45.857 [main] INFO  tests.Payment - Customer verified recurring payment details and submitted the order.
-2025-03-27 12:23:26.805 [main] INFO  pages.Payment_Page - Payment failed message not found. Test continues.
-2025-03-27 12:23:26.811 [main] INFO  tests.Payment - Customer successfully navigated to the Receipt page
-2025-03-27 12:23:28.502 [main] INFO  pages.Receipt_Page - Trial Text is visible
-2025-03-27 12:23:28.531 [main] INFO  pages.Receipt_Page - Amex type card details matched
-2025-03-27 12:23:30.049 [main] INFO  pages.Receipt_Page - 
-Verifying Recurring Order Table in Receipt Page - 
-
-2025-03-27 12:23:30.068 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
-2025-03-27 12:23:30.083 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
-2025-03-27 12:23:30.083 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
-2025-03-27 12:23:30.083 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
-2025-03-27 12:23:30.098 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
-2025-03-27 12:23:30.114 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
-2025-03-27 12:23:30.129 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
-2025-03-27 12:23:30.130 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
-2025-03-27 12:23:34.394 [main] INFO  tests.Receipt - File downloaded successfully
-2025-03-27 12:23:34.396 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt (6).pdf
-2025-03-27 12:23:37.782 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
-2025-03-27 12:24:42.307 [main] INFO  tests.Receipt - Customer navigated back to the package page and verified the subscription data.
-2025-03-27 12:24:42.309 [main] INFO  base.BaseClass - Browser quit and Send Report successfully
+2025-04-11 15:45:34.700 [main] INFO  pages.Receipt_Page - Get Package Price: 10.0 and Package Price: 10.0
+2025-04-11 15:45:34.716 [main] INFO  pages.Receipt_Page - Get Total License Price: 40.0 and Total License Price: 40.0
+2025-04-11 15:45:34.716 [main] INFO  pages.Receipt_Page - Get Per User License Price: 5.0 and Per User License Price: 5.0
+2025-04-11 15:45:34.717 [main] INFO  pages.Receipt_Page - Get License Count: 8 and License Count: 8.0
+2025-04-11 15:45:34.731 [main] INFO  pages.Receipt_Page - Get Sub Total: 50.0 and Sub Total: 50.0
+2025-04-11 15:45:34.746 [main] INFO  pages.Receipt_Page - Get Promo: 15.0 and Promo: 15.0
+2025-04-11 15:45:34.761 [main] INFO  pages.Receipt_Page - Get Recurring Fee: 35.0 and Recurring Fee: 35.0
+2025-04-11 15:45:34.761 [main] INFO  tests.Receipt - Customer viewed the receipt page and verified the recurring order details.
+2025-04-11 15:45:39.009 [main] INFO  tests.Receipt - File downloaded successfully
+2025-04-11 15:45:39.012 [main] INFO  pages.Receipt_Page - Opening file URL: file:///C:/Users/BS01361/Downloads/FloraFire-Receipt.pdf
+2025-04-11 15:45:42.487 [main] INFO  tests.Receipt - Customer downloaded the receipt and validated the data successfully.
+2025-04-11 15:45:46.818 [main] INFO  base.BaseClass - Browser quit and Send Report successfully

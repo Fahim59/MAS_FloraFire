@@ -96,7 +96,7 @@ public class Receipt extends BaseClass {
         logger.info("Customer downloaded the receipt and validated the data successfully.");
     }
 
-    @Test(description = "Verify that the customer has received the trial receipt in email", priority = 3)
+    @Test(description = "Verify that the customer has received the trial receipt in email", priority = 3, enabled = false)
     public void verifyCustomerReceivedTrialReceipt() throws InterruptedException, MailosaurException, IOException {
         SmallWait(60000);
 

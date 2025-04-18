@@ -39,12 +39,12 @@ public class Employee_Page extends BaseClass {
 
     private final By addressField = By.xpath("//input[@formcontrolname='address1']");
     private final By addressContField = By.xpath("//input[@formcontrolname='address2']");
-    private final By countryField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
-    private final By stateField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
+    private final By countryField = By.xpath("(//input[contains(@role, 'combobox')])[1]");
+    private final By stateField = By.xpath("(//input[contains(@role, 'combobox')])[2]");
     private final By cityField = By.xpath("//input[@formcontrolname='city']");
     private final By zipField = By.xpath("//input[@formcontrolname='zipcode']");
 
-    private final By phoneTypeField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
+    private final By phoneTypeField = By.xpath("//mat-select[@formcontrolname='phoneNumberType']");
     private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
 
     private final By emailField = By.xpath("//input[@formcontrolname='email']");
@@ -150,11 +150,11 @@ public class Employee_Page extends BaseClass {
      * Employee Other Details
      */
 
-    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
-    private final By roleField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
+    private final By statusField = By.xpath("//mat-select[@formcontrolname='statusValueId']");
+    private final By roleField = By.xpath("//mat-select[@formcontrolname='roleValueId']");
 
-    private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[7]");
-    private final By departmentField = By.xpath("(//div[contains(@id,'mat-select-value')])[8]");
+    private final By storeField = By.xpath("//mat-select[@formcontrolname='locationId']");
+    private final By departmentField = By.xpath("//mat-select[@formcontrolname='departmentValueId']");
 
     private final By reviewField = By.xpath("//*[@class='mdc-checkbox__native-control' and @type='checkbox']");
 
@@ -230,7 +230,7 @@ public class Employee_Page extends BaseClass {
 
     private final By contactPersonField = By.xpath("//input[@formcontrolname='contactPersonName']");
     private final By contactPersonPhoneField = By.xpath("//input[@formcontrolname='contactPersonPhone']");
-    private final By contactPersonRelationField = By.xpath("(//div[contains(@id,'mat-select-value')])[9]");
+    private final By contactPersonRelationField = By.xpath("//mat-select[@formcontrolname='contactPersonRelationValueId']");
 
     public Employee_Page enterUserName(String uname) {
         write_Send_Keys(usernameField, uname);

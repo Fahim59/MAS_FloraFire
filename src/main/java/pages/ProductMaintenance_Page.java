@@ -36,32 +36,32 @@ public class ProductMaintenance_Page extends BaseClass{
      */
 
     private final By codeField = By.xpath("//input[@formcontrolname='productCode']");
-    private final By typeField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
+    private final By typeField = By.xpath("(//input[contains(@role, 'combobox')])[1]");
 
-    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
+    private final By statusField = By.xpath("//mat-select[@formcontrolname='status']");
     private final By productSKUField = By.xpath("//input[@formcontrolname='sku']");
 
-    private final By departmentField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
+    private final By departmentField = By.xpath("(//input[contains(@role, 'combobox')])[2]");
     private final By itemNameField = By.xpath("//input[@formcontrolname='name']");
 
-    private final By careCodeField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
+    private final By careCodeField = By.xpath("//mat-select[@formcontrolname='careCodeValueId']");
     private final By binLocationField = By.xpath("//input[@formcontrolname='binLocation']");
 
-    private final By purchaseUnitField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
+    private final By purchaseUnitField = By.xpath("//mat-select[@formcontrolname='purchasedUnitOfMeasure']");
     private final By purchaseUnitValueField = By.xpath("//input[@formcontrolname='purchasedUnitOfMeasureValue']");
 
-    private final By sellingUnitField = By.xpath("(//div[contains(@id,'mat-select-value')])[7]");
+    private final By sellingUnitField = By.xpath("//mat-select[@formcontrolname='sellingUnitOfMeasure']");
     private final By sellingUnitValueField = By.xpath("//input[@formcontrolname='sellingUnitOfMeasureValue']");
 
     private final By descriptionField = By.xpath("//textarea[@formcontrolname='description']");
-    private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[8]");
+    private final By storeField = By.xpath("//mat-select[@formcontrolname='storeId']");
 
-    private final By productCategoryField = By.xpath("(//div[contains(@id,'mat-select-value')])[9]");
+    private final By productCategoryField = By.xpath("//mat-select[@formcontrolname='productCategoryType']");
 
     private final By commisionableField = By.xpath("//mat-checkbox[@formcontrolname='isCommisionable']/div/div/input");
 
     private final By forceWireServiceField = By.xpath("//mat-checkbox[@formcontrolname='isForceWireServiceEnabled']/div/div/input");
-    private final By wireServiceField = By.xpath("(//div[contains(@id,'mat-select-value')])[10]");
+    private final By wireServiceField = By.xpath("//mat-select[@formcontrolname='wireServiceId']");
 
     public ProductMaintenance_Page enterProductCode(String code){
         write_Send_Keys(codeField, code);

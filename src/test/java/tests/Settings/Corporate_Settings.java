@@ -42,8 +42,10 @@ public class Corporate_Settings extends BaseClass {
 
         /* * Tax */
 
-        String taxOnDelivery = "No"; //6
+        String taxOnBusiness = "Yes"; //18
+        String taxOnDelivery = "Yes"; //6
         String taxOnRelay = "No"; //7
+        String taxOnMerchandise = "Yes"; //19
         String salesTax = "7"; //8
 
         /* * Recipe Inventory Manage Type */
@@ -67,9 +69,17 @@ public class Corporate_Settings extends BaseClass {
         String customerTwo = "Emily Johnson"; //16
         String customerThree = "Linda Brown"; //17
 
+        /* * Idle Time */
+
+        String time = "3600"; //20
+
+        /* * Country */
+
+        String country = "United States of America"; //21
+
         return new String[] {geocodingPreference, passwordResetDays, auditLogEmail, relayFee, overSeasRelayFee, wireOutDeliveryFee,
                 taxOnDelivery, taxOnRelay, salesTax, recipeType, enableDiscountOnOrder, allowPartialPayment, creditCardFee, enableCCFeeOnOrder,
-                enableCarryForward, customerOne, customerTwo, customerThree};
+                enableCarryForward, customerOne, customerTwo, customerThree, taxOnBusiness, taxOnMerchandise, time, country};
     }
 
     @Test(description = "Verify that the user can add  data successfully", priority = 2)
@@ -84,9 +94,10 @@ public class Corporate_Settings extends BaseClass {
         corporateSettingsPage.enterTransactionChargeData(corporateSettingInfo[3],corporateSettingInfo[4],corporateSettingInfo[5]);
         logger.info("Successfully added Corporate Settings Transaction Charge data");
 
-        Scroll(0, 750);
+        Scroll(0, 950);
 
-        corporateSettingsPage.enterTaxSettings(corporateSettingInfo[6],corporateSettingInfo[7],corporateSettingInfo[8]);
+        corporateSettingsPage.enterTaxSettings(corporateSettingInfo[18], corporateSettingInfo[6],corporateSettingInfo[7],
+                corporateSettingInfo[19], corporateSettingInfo[8]);
         logger.info("Successfully added Corporate Settings Tax data");
 
         Scroll(0, 850);
@@ -100,10 +111,14 @@ public class Corporate_Settings extends BaseClass {
         corporateSettingsPage.enableCarryForward(corporateSettingInfo[14]);
         logger.info("Successfully added Corporate Settings GiftCard data");
 
-        Scroll(0, 500);
+        Scroll(0, 600);
 
         corporateSettingsPage.selectCorporateCustomers(corporateSettingInfo[15], corporateSettingInfo[16], corporateSettingInfo[17]);
         logger.info("Successfully added Corporate Customer data");
+
+        corporateSettingsPage.enterIdleTime(corporateSettingInfo[20]);
+
+        corporateSettingsPage.selectDefaultCountry(corporateSettingInfo[21]);
 
         corporateSettingsPage.clickSaveButton();
     }

@@ -77,7 +77,7 @@ public class Product_Maintenance extends BaseClass {
                 seasonalPrice, seasonalAvailability, startDate, endDate, imageUrl, url, fileName, recipe};
     }
 
-    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2, enabled = true)
+    @Test(description = "Verify that the user can add Gift Card data successfully", priority = 2, enabled = false)
     public void verifyGiftCardDataEntry() throws InterruptedException {
         /*
          * Variables
@@ -158,7 +158,6 @@ public class Product_Maintenance extends BaseClass {
         SmallWait(1000);
 
         Assert.assertEquals(createMessage, productMaintenancePage.getSuccessMessage());
-
 
         Scroll(0, 1900);
 

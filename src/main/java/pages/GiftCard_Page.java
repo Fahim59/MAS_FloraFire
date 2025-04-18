@@ -27,10 +27,10 @@ public class GiftCard_Page extends BaseClass{
     private final By typeField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
     private final By numberField = By.xpath("//input[@formcontrolname='cardNumber']");
 
-    private final By reasonField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
+    private final By reasonField = By.xpath("//mat-select[@formcontrolname='reasonValueId']");
     private final By expiryField = By.xpath("//input[@formcontrolname='expirationDate']");
 
-    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
+    private final By statusField = By.xpath("(//mat-select[@formcontrolname='giftCardStatus'])[2]");
     private final By balanceField = By.xpath("//input[@formcontrolname='balance']");
 
     private final By customerField = By.xpath("//input[@formcontrolname='customerName']");
@@ -80,10 +80,11 @@ public class GiftCard_Page extends BaseClass{
     }
 
     public GiftCard_Page selectGiftCardStatus(String status) throws InterruptedException {
-        SmallWait(500);
+        SmallWait(1000);
 
         if(!get_Text(statusField).equals(status)){
-            click_Element(statusField);
+            //click_Element(statusField);
+            click_Element_Js(statusField);
             SmallWait(200);
             js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', '"+status+"', ' ')]")));
         }

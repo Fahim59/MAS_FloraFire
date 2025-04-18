@@ -30,15 +30,6 @@ public class GiftCards extends BaseClass {
     }
 
     public static String[] giftCardData(Map<String, String> valueData) {
-        /*
-         * data[0] = type
-         * data[1] = number
-         * data[2] = reason
-         * data[3] = expiry
-         * data[4] = status
-         * data[5] = balance
-         * data[6] = customer
-         */
 
         String type = valueData.get("Type");
         String number = valueData.get("Number");

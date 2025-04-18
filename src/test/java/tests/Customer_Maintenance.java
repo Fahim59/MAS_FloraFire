@@ -29,28 +29,6 @@ public class Customer_Maintenance extends BaseClass {
     }
 
     public static String[] customerData(Map<String, String> valueData) {
-        /*
-         * data[0] = flag
-         * data[1] = id
-         * data[2] = name
-         * data[3] = address
-         * data[4] = address cont
-         * data[5] = country
-         * data[6] = state
-         * data[7] = city
-         * data[8] = zip
-         * data[9] = status
-         * data[10] = customer type
-         * data[11] = class
-         * data[12] = tax flag
-         * data[13] = delivery flag
-         * data[14] = charge
-         * data[15] = discount
-         * data[16] = reference
-         * data[17] = comment
-         * data[18] = email
-         * data[19] = phone
-         */
 
         String flag = valueData.get("Flag");
         String id = valueData.get("Id");
@@ -98,6 +76,16 @@ public class Customer_Maintenance extends BaseClass {
 
         SmallWait(500);
 
+        customerMaintenancePage.enterCustomerEmail(customerInfo[18]);
+        logger.info("Email added successfully for {}", customerInfo[2]);
+
+        customerMaintenancePage.enterCustomerPhone(customerInfo[19]);
+        logger.info("Phone number added successfully for {}", customerInfo[2]);
+
+        Scroll(0, 800);
+
+        SmallWait(500);
+
         customerMaintenancePage.enterCustomerOtherDetails(customerInfo[9], customerInfo[10], customerInfo[11],
                 storeName, customerInfo[12], customerInfo[13], customerInfo[14], customerInfo[15], customerInfo[15],
                 schedule, customerInfo[16], customerInfo[17]);
@@ -106,17 +94,7 @@ public class Customer_Maintenance extends BaseClass {
 
         SmallWait(500);
 
-        customerMaintenancePage.clickSaveAndContButton();
-
-        Scroll(0, -600);
-
-        customerMaintenancePage.enterCustomerEmail(customerInfo[18]);
-        logger.info("Email added successfully for {}", customerInfo[2]);
-
-        customerMaintenancePage.enterCustomerPhone(customerInfo[19]);
-        logger.info("Phone number added successfully for {}", customerInfo[2]);
-
-        Scroll(0, 900);
+        Scroll(0, 300);
 
         customerMaintenancePage.clickSaveButton();
 

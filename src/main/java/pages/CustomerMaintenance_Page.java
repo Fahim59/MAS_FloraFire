@@ -233,7 +233,7 @@ public class CustomerMaintenance_Page extends BaseClass{
             write_Send_Keys(taxNumberField, "9xx-xx-xxxx");
         }
 
-        Scroll(0, 500);
+        //Scroll(0, 500);
 
         SmallWait(500);
 

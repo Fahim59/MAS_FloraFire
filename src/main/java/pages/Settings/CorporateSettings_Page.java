@@ -4,6 +4,8 @@ import base.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.CustomerMaintenance_Page;
+
 import java.time.Duration;
 
 public class CorporateSettings_Page extends BaseClass{
@@ -73,27 +75,58 @@ public class CorporateSettings_Page extends BaseClass{
 
     /* * Tax */
 
+    private final By taxOnBusinessField = By.xpath("//mat-radio-group[@formcontrolname='taxOnBusinessLocation']//input[contains(@name, 'mat-radio-group')]");
     private final By taxOnDeliveryField = By.xpath("//mat-radio-group[@formcontrolname='taxOnDelivery']//input[contains(@name, 'mat-radio-group')]");
     private final By taxOnRelayField = By.xpath("//mat-radio-group[@formcontrolname='taxOnRelay']//input[contains(@name, 'mat-radio-group')]");
+    private final By taxOnMerchandiseField = By.xpath("//mat-radio-group[@formcontrolname='taxOnMerchandise']//input[contains(@name, 'mat-radio-group')]");
     private final By salesTaxField = By.xpath("//input[@formcontrolname='salesTaxPercentage']");
 
-    public CorporateSettings_Page clickTaxOnDelivery(String flag) {
+    public CorporateSettings_Page clickTaxOnBusiness(String flag) {
         if(flag.equalsIgnoreCase("Yes")){
-            click_Radio_Element(taxOnDeliveryField, "true");
+            click_Radio_Element(taxOnBusinessField, "true");
         }
         else {
-            click_Radio_Element(taxOnDeliveryField, "false");
+            click_Radio_Element(taxOnBusinessField, "false");
         }
         return this;
     }
 
-    public CorporateSettings_Page clickTaxOnRelay(String relayFlag) {
-        if(relayFlag.equalsIgnoreCase("Yes")){
-            click_Radio_Element(taxOnRelayField, "true");
+    public CorporateSettings_Page clickTaxOnDelivery(String businessFlag, String flag) {
+        if(businessFlag.equalsIgnoreCase("Yes")){
+            if(flag.equalsIgnoreCase("Yes")){
+                click_Radio_Element(taxOnDeliveryField, "true");
+            }
+            else {
+                click_Radio_Element(taxOnDeliveryField, "false");
+            }
         }
-        else {
-            click_Radio_Element(taxOnRelayField, "false");
+
+        return this;
+    }
+
+    public CorporateSettings_Page clickTaxOnRelay(String businessFlag, String relayFlag) {
+        if(businessFlag.equalsIgnoreCase("Yes")){
+            if(relayFlag.equalsIgnoreCase("Yes")){
+                click_Radio_Element(taxOnRelayField, "true");
+            }
+            else {
+                click_Radio_Element(taxOnRelayField, "false");
+            }
         }
+
+        return this;
+    }
+
+    public CorporateSettings_Page clickTaxOnMerchandise(String businessFlag, String merchandiseFlag) {
+        if(businessFlag.equalsIgnoreCase("Yes")){
+            if(merchandiseFlag.equalsIgnoreCase("Yes")){
+                click_Radio_Element(taxOnMerchandiseField, "true");
+            }
+            else {
+                click_Radio_Element(taxOnMerchandiseField, "false");
+            }
+        }
+
         return this;
     }
 
@@ -101,8 +134,8 @@ public class CorporateSettings_Page extends BaseClass{
         write_Send_Keys(salesTaxField, salesTax);
     }
 
-    public void enterTaxSettings(String flag, String relayFlag, String salesTax) {
-        clickTaxOnDelivery(flag).clickTaxOnRelay(relayFlag).enterSalesTaxPercentage(salesTax);
+    public void enterTaxSettings(String businessFlag, String flag, String relayFlag, String merchandiseFlag, String salesTax) {
+        clickTaxOnBusiness(businessFlag).clickTaxOnDelivery(businessFlag, flag).clickTaxOnRelay(businessFlag, relayFlag).clickTaxOnMerchandise(businessFlag, merchandiseFlag).enterSalesTaxPercentage(salesTax);
     }
 
     /* * Recipe Inventory Manage Type */
@@ -183,7 +216,7 @@ public class CorporateSettings_Page extends BaseClass{
 
     /* * Gift Card */
 
-    private final By enableCarryForwardField = By.xpath("//mat-checkbox[@formcontrolname='enableCarryForwardNormalGiftCardBalance']//label[normalize-space()='Enable Carry Forward Normal GiftCard Balance']");
+    private final By enableCarryForwardField = By.xpath("//mat-checkbox[@formcontrolname='enableCarryForwardNormalGiftCardBalance']//label[normalize-space()='Enable Carry Forward Normal Gift Card Balance']");
 
     public void enableCarryForward(String flag) {
         if(flag.equalsIgnoreCase("Yes")){
@@ -211,6 +244,28 @@ public class CorporateSettings_Page extends BaseClass{
 
     public void selectCorporateCustomers(String cusOne, String cusTwo, String cusThree) throws InterruptedException {
         selectCustomerField().selectCustomer(cusOne).selectCustomer(cusTwo).selectCustomer(cusThree).clickEscButton();
+    }
+
+    /* * Idle Time */
+
+    private final By idleTimeField = By.xpath("//input[@formcontrolname='maxIdleTimeBeforeSessionTimeout']");
+
+    public CorporateSettings_Page enterIdleTime(String time){
+        write_Send_Keys(idleTimeField, time);
+        return this;
+    }
+
+    /* * Country */
+
+    private final By countryField = By.xpath("(//input[contains(@role, 'combobox')])[1]");
+
+    public CorporateSettings_Page selectDefaultCountry(String country) throws InterruptedException {
+        click_Element(countryField);
+        write_Send_Keys(countryField, country);
+
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+country+"')]")));
+        return this;
     }
 
     /*

@@ -39,6 +39,7 @@ public class Vehicle extends BaseClass {
          * data[3] = status
          * data[4] = expDate
          * data[5] = mainDate
+         * data[6] = name
          */
 
         String license = valueData.get("License");
@@ -47,8 +48,9 @@ public class Vehicle extends BaseClass {
         String status = valueData.get("Status");
         String expDate = valueData.get("Expiration Date");
         String mainDate = valueData.get("Maintenance Due");
+        String name = valueData.get("Name");
 
-        return new String[] {license, vin, model, status, expDate, mainDate};
+        return new String[] {license, vin, model, status, expDate, mainDate, name};
     }
 
     @Test(description = "Verify that the user can add vehicle data successfully", dataProvider = "excelData", dataProviderClass = DataSource.class, priority = 2)
@@ -60,7 +62,7 @@ public class Vehicle extends BaseClass {
 
         vehiclePage.clickNewVehicleButton();
 
-        vehiclePage.enterVehicleInformation(vehicleInfo[0], vehicleInfo[1], vehicleInfo[2], vehicleInfo[3], vehicleInfo[4], vehicleInfo[5]);
+        vehiclePage.enterVehicleInformation(vehicleInfo[0], vehicleInfo[6], vehicleInfo[1], vehicleInfo[2], vehicleInfo[3], vehicleInfo[4], vehicleInfo[5]);
 
         SmallWait(1000);
 

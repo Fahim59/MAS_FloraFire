@@ -79,11 +79,12 @@ public class ShortCode_Page extends BaseClass{
     }
 
     public ShortCode_Page selectCountry(String country) throws InterruptedException {
-        click_Element(countryField);
-        //write_Send_Keys(countryField, country);
+        if(!get_Text(countryField).equals(country)){
+            click_Element(countryField);
 
-        SmallWait(1500);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+country+"')]")));
+            SmallWait(1500);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+country+"')]")));
+        }
         return this;
     }
     public ShortCode_Page selectState(String state) throws InterruptedException {

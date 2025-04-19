@@ -31,22 +31,6 @@ public class Short_Code extends BaseClass {
     }
 
     public static String[] shortCodeData(Map<String, String> valueData) {
-        /*
-         * data[0] = code
-         * data[1] = location
-         * data[2] = address
-         * data[3] = address cont
-         * data[4] = country
-         * data[5] = state
-         * data[6] = city
-         * data[7] = zip
-         * data[8] = phone
-         * data[9] = instruction
-         * data[10] = type
-         * data[11] = zone
-         * data[12] = flag
-         * data[13] = charge
-         */
 
         String code = valueData.get("Short Code");
         String location = valueData.get("Location");

@@ -26,6 +26,7 @@ public class Vehicle_Page extends BaseClass{
     private final By newVehicleButton = By.xpath("//span[contains(text(),'NewVehicle')]");
 
     private final By licensePlateField = By.xpath("//input[@formcontrolname='licensePlate']");
+    private final By nameField = By.xpath("//input[@formcontrolname='name']");
     private final By vinField = By.xpath("//input[@formcontrolname='vin']");
     private final By modelField = By.xpath("//input[@formcontrolname='model']");
     private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
@@ -42,6 +43,10 @@ public class Vehicle_Page extends BaseClass{
 
     public Vehicle_Page enterLicensePlate(String license){
         write_Send_Keys(licensePlateField, license);
+        return this;
+    }
+    public Vehicle_Page enterVehicleName(String name){
+        write_Send_Keys(nameField, name);
         return this;
     }
     public Vehicle_Page enterVIN(String vin) throws InterruptedException {
@@ -75,8 +80,8 @@ public class Vehicle_Page extends BaseClass{
         return this;
     }
 
-    public void enterVehicleInformation(String license, String vin, String model, String status, String exDate, String mainDate) throws InterruptedException {
-        enterLicensePlate(license).enterVIN(vin).enterModel(model).selectStatus(status).
+    public void enterVehicleInformation(String license, String name, String vin, String model, String status, String exDate, String mainDate) throws InterruptedException {
+        enterLicensePlate(license).enterVehicleName(name).enterVIN(vin).enterModel(model).selectStatus(status).
                 enterExpirationDate(exDate).enterMaintenanceDate(mainDate).clickSaveButton();
     }
 

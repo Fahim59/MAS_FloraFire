@@ -5,11 +5,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,6 +27,11 @@ public class OrderEntry_Page extends BaseClass{
 
     private final String cartTable = "//table[@role='table']/tbody";
     private final By productRows = By.xpath(cartTable+"/tr");
+
+    public void setZoom80Percent() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.body.style.zoom='80%'");
+    }
 
     /*
      * Product Addition in Cart
@@ -388,15 +391,25 @@ public class OrderEntry_Page extends BaseClass{
     private final String customerTable = "//table[@role='table']/tbody";
     private final By rows = By.xpath(customerTable+"/tr");
 
+    private final By addCustomerBtn = By.xpath("//span[contains(text(),'Add New Customer')]");
+
+    private final By nameField = By.xpath("//input[@formcontrolname='name']");
+    private final By addressField = By.xpath("//input[@formcontrolname='address1']");
+    private final By countryField = By.xpath("(//input[contains(@role, 'combobox')])[2]");
+    private final By stateField = By.xpath("(//input[contains(@role, 'combobox')])[3]");
+    private final By cityField = By.xpath("//input[@formcontrolname='city']");
+    private final By zipField = By.xpath("//input[@formcontrolname='zip']");
+    private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
+    private final By emailField = By.xpath("//input[@formcontrolname='email']");
+
+    private final By taxExemptField = By.xpath("//mat-radio-group[@formcontrolname='taxExempt']//input[contains(@name, 'mat-radio-group')]");
+    private final By taxNumberField = By.xpath("//input[@formcontrolname='taxCertificate']");
+
+    private final By customerSaveBtn = By.xpath("(//span[contains(text(),'Save')])[2]");
+
     public OrderEntry_Page clickCustomerSearchIcon() throws InterruptedException {
         SmallWait(1000);
         click_Element_Js(searchCustomerIconField);
-
-        return this;
-    }
-    public OrderEntry_Page enterCustomerName(String name) throws InterruptedException {
-        SmallWait(1000);
-        write_Send_Keys(searchCustomerField, name);
 
         return this;
     }
@@ -413,14 +426,14 @@ public class OrderEntry_Page extends BaseClass{
                 SmallWait(2000);
 
                 customerType = driver.findElement(By.xpath("//div[span[1][contains(text(), 'Type')]]/span[2]")).getText();
-                discount = driver.findElement(By.xpath("//div[span[1][contains(text(), 'Discount')]]/span[2]")).getText();
+                discount = driver.findElement(By.xpath("//div[span[1][contains(text(), 'Discount')]]/span[2]")).getText().replaceAll("[^0-9.]", "");
                 deliveryCharge = driver.findElement(By.xpath("//div[span[1][contains(text(), 'Delivery Charge')]]/span[2]")).getText().replaceAll("[^0-9.]", "");
                 taxExempt = driver.findElement(By.xpath("//div[span[1][contains(text(), 'Tax Exempt')]]/span[2]")).getText();
 
                 logger.info("Customer Type: {} \nDiscount Amount: {} \nDelivery Charge: {} \nTax Exempt: {}",
                         customerType, discount, deliveryCharge, taxExempt);
 
-                WebElement addBtn = driver.findElement(By.xpath("(//span[contains(text(),'Add')])[3]"));
+                WebElement addBtn = driver.findElement(By.xpath("(//div[@class='customer-details']//span[contains(text(),'Add')])[2]"));
                 addBtn.click();
 
                 logger.info("Customer {} added", id);
@@ -430,15 +443,104 @@ public class OrderEntry_Page extends BaseClass{
         }
     }
 
-    public void selectCustomer(String name, String id) throws InterruptedException {
-        clickCustomerSearchIcon().enterCustomerName(name).customerInfo(id);
+    public void selectCustomer(String id) throws InterruptedException {
+        clickCustomerSearchIcon().customerInfo(id);
+    }
+
+    public OrderEntry_Page clickAddCustomerButton() {
+        click_Element(addCustomerBtn);
+        return this;
+    }
+
+    public OrderEntry_Page enterCustomerName(String name){
+        write_Send_Keys(nameField, name);
+        return this;
+    }
+
+    public OrderEntry_Page enterCustomerAddress(String address){
+        write_Send_Keys(addressField, address);
+        return this;
+    }
+
+    public OrderEntry_Page selectCustomerCountry(String country) throws InterruptedException {
+        SmallWait(4000);
+
+        if(!get_Text(countryField).equals(country)){
+            click_Element(countryField);
+            write_Send_Keys(countryField, country);
+
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+country+"')]")));
+        }
+
+        return this;
+    }
+    public OrderEntry_Page selectCustomerState(String state) throws InterruptedException {
+        SmallWait(2000);
+
+        click_Element(stateField);
+        write_Send_Keys(stateField, state);
+
+        SmallWait(500);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+state+"')]")));
+        return this;
+    }
+    public OrderEntry_Page enterCustomerCity(String city){
+        write_Send_Keys(cityField, city);
+        return this;
+    }
+    public OrderEntry_Page enterCustomerZip(String zip){
+        write_Send_Keys(zipField, zip);
+        return this;
+    }
+
+    public OrderEntry_Page enterCustomerPhone(String phone){
+        write_Send_Keys(phoneField, phone);
+        return this;
+    }
+    public OrderEntry_Page enterCustomerEmail(String email){
+        write_Send_Keys(emailField, email);
+        return this;
+    }
+
+    public OrderEntry_Page enterTaxDetails(String flag) throws InterruptedException {
+        if(flag.equalsIgnoreCase("No")){
+            click_Radio_Element(taxExemptField, "false");
+        }
+        else{
+            click_Radio_Element(taxExemptField, "true");
+
+            SmallWait(500);
+            write_Send_Keys(taxNumberField, "9xx-xx-xxxx");
+        }
+
+        SmallWait(500);
+
+        return this;
+    }
+
+    public void clickCustomerSaveBtn() throws InterruptedException {
+        SmallWait(1000);
+        click_Element_Js(customerSaveBtn);
+    }
+
+//    public void addNewCustomer(String name, String address, String country, String state, String city, String zip, String phone, String email, String flag) throws InterruptedException {
+//        clickCustomerSearchIcon().clickAddCustomerButton().enterCustomerName(name).enterCustomerAddress(address).selectCustomerCountry(country).
+//                selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).enterCustomerPhone(phone).enterCustomerEmail(email).
+//        enterTaxDetails(flag).clickCustomerSaveBtn();
+//    }
+
+    public void addNewCustomer(String name, String address, String state, String city, String zip, String phone, String email, String flag) throws InterruptedException {
+        clickCustomerSearchIcon().clickAddCustomerButton().enterCustomerName(name).enterCustomerAddress(address).
+                selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).enterCustomerPhone(phone).enterCustomerEmail(email).
+                enterTaxDetails(flag).clickCustomerSaveBtn();
     }
 
     /*
      * Order Type
      */
 
-    private final By orderTypeField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
+    private final By orderTypeField = By.xpath("(//mat-select[contains(@role, 'combobox')])[4]");
 
     public OrderEntry_Page selectOrderType(String type) throws InterruptedException {
         SmallWait(1000);
@@ -461,6 +563,11 @@ public class OrderEntry_Page extends BaseClass{
     private final By discountField = By.cssSelector("#mat-input-3");
     private final By taxField = By.cssSelector("#mat-input-4");
 
+    private final By amountPayableField = By.xpath("//div[@class='amount-payable']//div[2]");
+    private final By amountPaidField = By.xpath("//div[@class='amount-pay']//div[2]");
+    private final By amountDueField = By.xpath("//div[@class='amount-due']//div[2]");
+    private final By changeDueField = By.xpath("//div[@class='change-due']//div[2]");
+
     public void moneyboxData() throws InterruptedException {
         SmallWait(1000);
 
@@ -469,15 +576,30 @@ public class OrderEntry_Page extends BaseClass{
         WebElement discount = wait_for_visibility(discountField);
         WebElement tax = wait_for_visibility(taxField);
 
-        String subTotalValue = subTotal.getAttribute("value");
-        String deliveryChargeValue = deliveryCharge.getAttribute("value");
-        String discountValue = discount.getAttribute("value");
-        String taxValue = tax.getAttribute("value");
+        subTotalAmount = subTotal.getAttribute("value");
+        deliveryAmount = deliveryCharge.getAttribute("value");
+        discountAmount = discount.getAttribute("value");
+        taxAmount = tax.getAttribute("value");
 
-        logger.info("SubTotal is:{}", subTotalValue);
-        logger.info("Delivery Charge is:{}", deliveryChargeValue);
-        logger.info("Discount is:{}", discountValue);
-        logger.info("Tax is:{}", taxValue);
+        logger.info("SubTotal is:{}", subTotalAmount);
+        logger.info("Delivery Charge is:{}", deliveryAmount);
+        logger.info("Discount is:{}", discountAmount);
+        logger.info("Tax is:{}", taxAmount);
+
+        WebElement amountPayableAmount = wait_for_visibility(amountPayableField);
+        WebElement amountPaidAmount = wait_for_visibility(amountPaidField);
+        WebElement amountDueAmount = wait_for_visibility(amountDueField);
+        WebElement changeDueAmount = wait_for_visibility(changeDueField);
+
+        amountPayable = amountPayableAmount.getText().replaceAll("[^0-9.]", "");
+        amountPaid = amountPaidAmount.getText().replaceAll("[^0-9.]", "");
+        amountDue = amountDueAmount.getText().replaceAll("[^0-9.]", "");
+        changeDue = changeDueAmount.getText().replaceAll("[^0-9.]", "");
+
+        logger.info("Amount Payable is:{}", amountPayable);
+        logger.info("Amount Paid is:{}", amountPaid);
+        logger.info("Amount Due is:{}", amountDue);
+        logger.info("Change Due is:{}", changeDue);
     }
 
     /*
@@ -486,14 +608,12 @@ public class OrderEntry_Page extends BaseClass{
 
     private final By wholeOrderDiscount = By.xpath("(.//mat-label[text()='Discount Code'])[1]");
 
-    public OrderEntry_Page selectWholeOrderDiscount(String discount) throws InterruptedException {
+    public void selectWholeOrderDiscount(String discount) throws InterruptedException {
         SmallWait(1000);
 
         click_Element(wholeOrderDiscount);
         SmallWait(200);
         js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+discount+"']")));
-
-        return this;
     }
 
     /*
@@ -545,4 +665,50 @@ public class OrderEntry_Page extends BaseClass{
     /*
      * Payment
      */
+
+    private final By paymentBtn = By.xpath("//div[@class='mat-ripple pos-payment mb-2']");
+    private final By paymentOptionsField = By.xpath("(//mat-select[contains(@role, 'combobox')])[7]");
+
+    private final By acceptBtn = By.xpath("//span[contains(text(),'Accept')]");
+    private final By doneBtn = By.xpath("//span[contains(text(),'Done')]");
+
+    public OrderEntry_Page clickPaymentBtn() throws InterruptedException {
+        SmallWait(1000);
+        click_Element_Js(paymentBtn);
+
+        return this;
+    }
+
+    public void selectPaymentOption(String option) throws InterruptedException {
+        SmallWait(1500);
+
+        if(!get_Text(paymentOptionsField).equals(option)){
+            click_Element(paymentOptionsField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+option+"']")));
+        }
+
+        SmallWait(1000);
+
+        switch (option) {
+            case "Cash":
+                WebElement cashPaidField = driver.findElement(By.xpath("(//input[@type='number'])[5]"));
+                cashPaidField.sendKeys(amountPayable);
+
+                SmallWait(1000);
+                click_Element(acceptBtn);
+
+                SmallWait(1000);
+                click_Element(doneBtn);
+                break;
+
+            default:
+                // Code to execute if no case matches
+                break;
+        }
+    }
+
+    public void makePayment(String option) throws InterruptedException {
+        clickPaymentBtn().selectPaymentOption(option);
+    }
 }

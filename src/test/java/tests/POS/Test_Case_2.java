@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class Test_Case_1 extends BaseClass {
+public class Test_Case_2 extends BaseClass {
     private Home_Page homePage;
     private OrderEntry_Page orderEntryPage;
 
@@ -41,27 +41,48 @@ public class Test_Case_1 extends BaseClass {
     }
 
     @Test(description = "Verify that the user can perform an Order", priority = 2)
-    public void testCaseOne() throws InterruptedException, IOException {
-        List<String> types = Arrays.asList("MP", "BP", "HP");
-        List<String> quantities = Arrays.asList("2", "3", "5");
-        List<String> discounts = Arrays.asList("FLOWER10", "SUMMER30", "");
+    public void testCaseTwo() throws InterruptedException, IOException {
+        List<String> types = Arrays.asList("HP", "BP", "MP");
+        List<String> quantities = Arrays.asList("3", "4", "5");
+        String discount = "FIRSTORDER";
 
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f001");
+        orderEntryPage.searchProductIcon("f003");
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
-        orderEntryPage.setProductDiscount(discounts);
+        orderEntryPage.selectWholeOrderDiscount(discount);
 
 
-        orderEntryPage.selectCustomer("0000000010");
 
-        orderEntryPage.selectOrderType("Sales Walk-In");
+        orderEntryPage.clickCustomerSearchIcon();
+        orderEntryPage.clickAddCustomerButton();
+        SmallWait(2000);
+        orderEntryPage.enterCustomerName(getFullName());
+        orderEntryPage.enterCustomerAddress(getAddress());
 
-        orderEntryPage.carryOutDelivery("true","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+        orderEntryPage.selectCustomerState(getState());
+        orderEntryPage.enterCustomerCity(getCity());
+        orderEntryPage.enterCustomerZip("54789");
+
+        orderEntryPage.enterCustomerPhone(getPhone());
+        orderEntryPage.enterCustomerEmail(getEmail());
+
+        orderEntryPage.enterTaxDetails("Yes");
+
+        orderEntryPage.clickCustomerSaveBtn();
+
+
+
+
+//        orderEntryPage.addNewCustomer(getFullName(), getAddress(), "United States of America", getState(), getCity(), "54789", getPhone(), getEmail(), "Yes");
+
+        orderEntryPage.selectOrderType("Sales Order");
+
+        orderEntryPage.willCallDelivery("false", homePage.getStoreName());
 
         orderEntryPage.moneyboxData();
 
@@ -69,6 +90,6 @@ public class Test_Case_1 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Cash");
+//        orderEntryPage.makePayment("Cash");
     }
 }

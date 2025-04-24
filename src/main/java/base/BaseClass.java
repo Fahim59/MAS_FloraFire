@@ -1,7 +1,9 @@
 package base;
 
+import com.github.javafaker.Faker;
 import factory.DriverFactory;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
 import org.json.*;
 
@@ -33,7 +35,38 @@ public class BaseClass {
     protected JSONObject jsonData;
 
     public String customerType, discount, deliveryCharge, taxExempt;
+    public String subTotalAmount, deliveryAmount, discountAmount, taxAmount, amountPayable, amountPaid, amountDue, changeDue;
     public boolean tip = false;
+
+    private final Faker faker;
+    private final String fullName, firstName, lastName, address, city, state, number;
+
+    public BaseClass() {
+        faker = new Faker(new Locale("en-US"));
+
+        this.fullName = faker.name().fullName().replaceAll("\\.", "");
+        this.firstName = fullName.split(" ")[0];
+        this.lastName = fullName.split(" ")[fullName.split(" ").length - 1];
+
+        this.address = faker.address().streetAddress();
+        this.city = faker.address().city();
+        this.state = faker.address().state();
+
+        this.number = faker.phoneNumber().subscriberNumber(10);
+    }
+
+    public String getFullName() { return fullName; }
+    public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
+
+    public String getAddress() { return address; }
+    public String getCity() { return city; }
+    public String getState() { return state; }
+
+    public String getPhone() { return number; }
+    public String getEmail() {
+        return firstName.toLowerCase() + "@mailosaur.net";
+    }
 
     @BeforeSuite
     public static void launch_browser(){
@@ -230,6 +263,18 @@ public class BaseClass {
         catch (Exception exp) {
             exp.printStackTrace();
         }
+    }
+
+    public static void takeScreenshot(String className) throws IOException {
+        File directory = new File("Images");
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+
+        String filename = "Images/" + className + ".png";
+
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, new File(filename));
     }
 
     //---------------------------------------------------------------------------------------------//

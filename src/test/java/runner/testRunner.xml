@@ -29,7 +29,7 @@
 <!--        <class name="tests.Settings.Delivery.Calendar"/>-->
 <!--        <class name="tests.Settings.Delivery.Short_Code"/>-->
 <!--        <class name="tests.Settings.Vehicle"/>-->
-<!--        <class name="tests.Settings.CreditCard_Settings"/>-->
+        <class name="tests.Settings.CreditCard_Settings"/>
 
 <!--        <class name="tests.Administration.Employee_Feature_Permission"/>-->
     </classes>

@@ -42,8 +42,8 @@ public class Home_Page extends BaseClass{
 
     private final By settingsMenu = By.xpath("(.//span[text()='Settings'])[1]");
 
-    private final By valueSettingMenu = By.xpath("(.//span[text()='Value Settings'])[1]");
-    private final By valueMenu = By.xpath("(.//span[text()='Value'])[1]");
+    private final By valueSettingMenu = By.xpath("(.//span[text()='Value List'])[1]");
+    private final By valueMenu = By.xpath("(.//span[text()='Value Type Mapping'])[1]");
     private final By valueTypeSettingsMenu = By.xpath("(.//span[text()='Value Type Settings'])[1]");
 
     private final By corporateSettingsMenu = By.xpath("(.//span[text()='Corporate Settings'])[1]");

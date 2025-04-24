@@ -50,35 +50,13 @@ public class Test_Case_2 extends BaseClass {
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductIcon("f003");
+        orderEntryPage.searchProductIcon("f005");
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
         orderEntryPage.selectWholeOrderDiscount(discount);
 
-
-
-        orderEntryPage.clickCustomerSearchIcon();
-        orderEntryPage.clickAddCustomerButton();
-        SmallWait(2000);
-        orderEntryPage.enterCustomerName(getFullName());
-        orderEntryPage.enterCustomerAddress(getAddress());
-
-        orderEntryPage.selectCustomerState(getState());
-        orderEntryPage.enterCustomerCity(getCity());
-        orderEntryPage.enterCustomerZip("54789");
-
-        orderEntryPage.enterCustomerPhone(getPhone());
-        orderEntryPage.enterCustomerEmail(getEmail());
-
-        orderEntryPage.enterTaxDetails("Yes");
-
-        orderEntryPage.clickCustomerSaveBtn();
-
-
-
-
-//        orderEntryPage.addNewCustomer(getFullName(), getAddress(), "United States of America", getState(), getCity(), "54789", getPhone(), getEmail(), "Yes");
+        orderEntryPage.addNewCustomer(getFullName(), getAddress(), getState(), getCity(), "54789", getPhone(), getEmail(), "Yes");
 
         orderEntryPage.selectOrderType("Sales Order");
 
@@ -90,6 +68,6 @@ public class Test_Case_2 extends BaseClass {
 
         Scroll(0, 500);
 
-//        orderEntryPage.makePayment("Cash");
+        orderEntryPage.makePayment("Check");
     }
 }

@@ -4,6 +4,7 @@ import base.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -67,8 +68,8 @@ public class OrderEntry_Page extends BaseClass{
         WebElement searchField = wait_for_presence(searchProductField2);
         searchField.clear();
         searchField.sendKeys(code);
-        SmallWait(2000);
 
+        SmallWait(2000);
         clickAddToOrderBtn(code);
 
         SmallWait(2000);
@@ -91,6 +92,7 @@ public class OrderEntry_Page extends BaseClass{
             }
             else{
                 logger.info("Insufficient Stock");
+                Assert.fail("Insufficient Stock");
             }
         }
         else{
@@ -396,7 +398,7 @@ public class OrderEntry_Page extends BaseClass{
     private final By nameField = By.xpath("//input[@formcontrolname='name']");
     private final By addressField = By.xpath("//input[@formcontrolname='address1']");
     private final By countryField = By.xpath("(//input[contains(@role, 'combobox')])[2]");
-    private final By stateField = By.xpath("(//input[contains(@role, 'combobox')])[3]");
+    private final By stateField = By.xpath("//input[@formcontrolname='city']/preceding::input[1]");
     private final By cityField = By.xpath("//input[@formcontrolname='city']");
     private final By zipField = By.xpath("//input[@formcontrolname='zip']");
     private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
@@ -447,8 +449,9 @@ public class OrderEntry_Page extends BaseClass{
         clickCustomerSearchIcon().customerInfo(id);
     }
 
-    public OrderEntry_Page clickAddCustomerButton() {
+    public OrderEntry_Page clickAddCustomerButton() throws InterruptedException {
         click_Element(addCustomerBtn);
+        SmallWait(2000);
         return this;
     }
 
@@ -478,11 +481,12 @@ public class OrderEntry_Page extends BaseClass{
     public OrderEntry_Page selectCustomerState(String state) throws InterruptedException {
         SmallWait(2000);
 
-        click_Element(stateField);
-        write_Send_Keys(stateField, state);
+        if(!get_Text(stateField).equals(state)){
+            click_Element(stateField);
 
-        SmallWait(500);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+state+"')]")));
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[contains(text(),'"+state+"')]")));
+        }
         return this;
     }
     public OrderEntry_Page enterCustomerCity(String city){
@@ -694,6 +698,17 @@ public class OrderEntry_Page extends BaseClass{
             case "Cash":
                 WebElement cashPaidField = driver.findElement(By.xpath("(//input[@type='number'])[5]"));
                 cashPaidField.sendKeys(amountPayable);
+
+                SmallWait(1000);
+                click_Element(acceptBtn);
+
+                SmallWait(1000);
+                click_Element(doneBtn);
+                break;
+
+            case "Check":
+                WebElement checkNumberField = driver.findElement(By.xpath("//input[@formcontrolname='checkNumber']"));
+                checkNumberField.sendKeys("547859");
 
                 SmallWait(1000);
                 click_Element(acceptBtn);

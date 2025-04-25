@@ -404,44 +404,46 @@ public class OrderEntry_Page extends BaseClass{
             }
         }
     }
-    public void enterRecipientDeliveryAddress() throws InterruptedException, IOException {
+    public void enterRecipientDeliveryAddress(String type) throws InterruptedException, IOException {
         SmallWait(1000);
 
-        WebElement firstNameField = driver.findElement(By.xpath("//input[@formcontrolname='firstName']"));
-        WebElement lastNameField = driver.findElement(By.xpath("//input[@formcontrolname='lastName']"));
+        if(type.equalsIgnoreCase("new")){
+            WebElement firstNameField = driver.findElement(By.xpath("//input[@formcontrolname='firstName']"));
+            WebElement lastNameField = driver.findElement(By.xpath("//input[@formcontrolname='lastName']"));
 
-        WebElement addressField = driver.findElement(By.xpath("//input[@formcontrolname='address1']"));
-        WebElement countryField = driver.findElement(By.xpath("//input[@formcontrolname='address2']/following::input[1]"));
-        WebElement stateField = driver.findElement(By.xpath("//input[@formcontrolname='city']/preceding::input[1]"));
-        WebElement cityField = driver.findElement(By.xpath("//input[@formcontrolname='city']"));
-        WebElement zipField = driver.findElement(By.xpath("//input[@formcontrolname='zipCode']"));
+            WebElement addressField = driver.findElement(By.xpath("//input[@formcontrolname='address1']"));
+            WebElement countryField = driver.findElement(By.xpath("//input[@formcontrolname='address2']/following::input[1]"));
+            WebElement stateField = driver.findElement(By.xpath("//input[@formcontrolname='city']/preceding::input[1]"));
+            WebElement cityField = driver.findElement(By.xpath("//input[@formcontrolname='city']"));
+            WebElement zipField = driver.findElement(By.xpath("//input[@formcontrolname='zipCode']"));
 
-        WebElement locationTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='locationType']"));
+            WebElement locationTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='locationType']"));
 
-        WebElement emailField = driver.findElement(By.xpath("//input[@formcontrolname='email']"));
-        WebElement phoneField = driver.findElement(By.xpath("//input[@formcontrolname='phoneNumber']"));
+            WebElement emailField = driver.findElement(By.xpath("//input[@formcontrolname='email']"));
+            WebElement phoneField = driver.findElement(By.xpath("//input[@formcontrolname='phoneNumber']"));
 
-        firstNameField.sendKeys(getFirstName());
-        lastNameField.sendKeys(getLastName());
+            firstNameField.sendKeys(getFirstName());
+            lastNameField.sendKeys(getLastName());
 
-        addressField.sendKeys("10311 Garland Road"); //getAddress()
+            addressField.sendKeys("10311 Garland Road"); //getAddress()
 
-        //countryField.sendKeys();
+            //countryField.sendKeys();
 
-        stateField.click();  //getState()
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Texas', ' ')]")));
+            stateField.click();  //getState()
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Texas', ' ')]")));
 
-        cityField.sendKeys("Dallas"); //getCity()
+            cityField.sendKeys("Dallas"); //getCity()
 
-        zipField.sendKeys("75218");
+            zipField.sendKeys("75218");
 
-        locationTypeField.click();
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Home', ' ')]")));
+            locationTypeField.click();
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Home', ' ')]")));
 
-        emailField.sendKeys(getEmail());
-        phoneField.sendKeys(getPhone());
+            emailField.sendKeys(getEmail());
+            phoneField.sendKeys(getPhone());
+        }
 
         WebElement validateBtn = driver.findElement(By.xpath("//span[normalize-space()='Validate']"));
 
@@ -469,7 +471,7 @@ public class OrderEntry_Page extends BaseClass{
         takeScreenshot();
     }
 
-    public void enterRecipientDeliveryDetails(String store) throws InterruptedException, IOException {
+    public void enterRecipientDeliveryDetails(String type, String store) throws InterruptedException, IOException {
         SmallWait(1000);
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
@@ -480,23 +482,25 @@ public class OrderEntry_Page extends BaseClass{
 
         SmallWait(500);
 
-        WebElement deliveryTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryType']"));
+        if(type.equalsIgnoreCase("new")){
+            WebElement deliveryTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryType']"));
 
-        deliveryTypeField.click();
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Delivery', ' ')]")));
+            deliveryTypeField.click();
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Delivery', ' ')]")));
 
-        WebElement deliveryZoneField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryZoneId']"));
+            WebElement deliveryZoneField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryZoneId']"));
 
-        deliveryZoneField.click();
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), 'Garland Road')]")));
+            deliveryZoneField.click();
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), 'Garland Road')]")));
 
-        WebElement fulfillingStoreField = driver.findElement(By.xpath("//mat-select[@formcontrolname='fulfillingStoreId']"));
+            WebElement fulfillingStoreField = driver.findElement(By.xpath("//mat-select[@formcontrolname='fulfillingStoreId']"));
 
-        fulfillingStoreField.click();
-        SmallWait(200);
-        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
+            fulfillingStoreField.click();
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
+        }
 
         SmallWait(1000);
 
@@ -524,12 +528,60 @@ public class OrderEntry_Page extends BaseClass{
             WebElement newRecipientBtn = driver.findElement(By.xpath("//span[contains(text(),'Add New Recipient')]"));
             newRecipientBtn.click();
 
-            enterRecipientDeliveryAddress();
+            enterRecipientDeliveryAddress("new");
 
             WebElement nextBtn = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[1]"));
             nextBtn.click();
 
-            enterRecipientDeliveryDetails(store);
+            enterRecipientDeliveryDetails("new", store);
+
+            WebElement nextBtn2 = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[2]"));
+            nextBtn2.click();
+
+            enterOrderPersonalizationDetails();
+
+            click_Element_Js(saveBtn);
+
+            break;
+        }
+    }
+
+    public void addExistingRecipient(String name, String store) throws InterruptedException, IOException {
+        SmallWait(1000);
+
+        for(int l = 1; l<= get_Size(productRows); l++){
+            WebElement recipientBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[3]"));
+            recipientBtn.click();
+
+            SmallWait(1000);
+
+            click_Element(systemResourceTab);
+
+            SmallWait(1000);
+
+            WebElement searchBox = driver.findElement(By.xpath("//input[@placeholder='Enter Keyword (Search by Name or Phone Number)']"));
+            searchBox.sendKeys(name);
+
+            SmallWait(2000);
+
+            for(int r = 1; r <= get_Size(recipientRows); l++){
+                WebElement recipientName = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[1])[2]"));
+                WebElement actionBtn = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[5])[2]"));
+
+                if(recipientName.getText().equalsIgnoreCase(name)) {
+                    actionBtn.click();
+
+                    SmallWait(2000);
+                    break;
+                }
+            }
+
+            enterRecipientDeliveryAddress("old");
+
+            WebElement nextBtn = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[1]"));
+            nextBtn.click();
+
+            enterRecipientDeliveryDetails("old", store);
 
             WebElement nextBtn2 = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[2]"));
             nextBtn2.click();

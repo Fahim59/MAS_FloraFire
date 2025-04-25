@@ -1,5 +1,5 @@
 /*
-    * Product(Enter) - Customer(Select) - Order Type(SO) - Delivery Method(Carry Out) - Discount (Line Item) - Payment(Cash)
+    * Product(Icon) - Customer(Add) - Order Type(SO) - Delivery Method(Will Call) - Discount (Order) - Payment(Check)
  */
 
 package tests.POS;

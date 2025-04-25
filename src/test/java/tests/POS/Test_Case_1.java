@@ -5,10 +5,8 @@
 package tests.POS;
 
 import base.BaseClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import pages.Home_Page;
-import pages.OrderEntry_Page;
+import org.testng.annotations.*;
+import pages.*;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -55,7 +53,6 @@ public class Test_Case_1 extends BaseClass {
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
         orderEntryPage.setProductDiscount(discounts);
-
 
         orderEntryPage.selectCustomer("0000000010");
 

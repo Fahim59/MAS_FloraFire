@@ -3,9 +3,11 @@ package pages;
 import base.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -312,6 +314,7 @@ public class OrderEntry_Page extends BaseClass{
 
     private final By validationMessage = By.xpath("//p[@class='abp-toast-message']");
     private final By validateBtn = By.xpath("//span[normalize-space()='Validate']");
+
     public void recipientDelivery(String type, String source, String name) throws InterruptedException {
         SmallWait(1000);
 
@@ -330,6 +333,8 @@ public class OrderEntry_Page extends BaseClass{
                         WebElement recipientName = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[1])[2]"));
                         WebElement actionBtn = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[5])[2]"));
 
+                        System.out.println(recipientName.getText());
+
                         if(recipientName.getText().equalsIgnoreCase(name)){
                             actionBtn.click();
 
@@ -337,25 +342,25 @@ public class OrderEntry_Page extends BaseClass{
 
                             //String text = wait_for_visibility(validationMessage).getText();
 
-                            while(!wait_for_visibility(validationMessage).getText().contains("successfully")){
-                                click_Element(validateBtn);
-                            }
+//                            while(!wait_for_visibility(validationMessage).getText().contains("successfully")){
+//                                click_Element(validateBtn);
+//                            }
+//
+//                            click_Element_Js(nextBtn);
+//
+//                            SmallWait(500);
+//                            enterDeliveryFromDate(formattedDate);
+//                            enterDeliveryToDate(formattedDate);
 
-                            click_Element_Js(nextBtn);
-
-                            SmallWait(500);
-                            enterDeliveryFromDate(formattedDate);
-                            enterDeliveryToDate(formattedDate);
-
-                            isTimeRequirement("false","03","30", "Before");
-
-                            enterSpecialInstruction("Call before coming");
-
-                            click_Element_Js(nextBtn);
-
-                            SmallWait(200);
-
-                            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+//                            isTimeRequirement("false","03","30", "Before");
+//
+//                            enterSpecialInstruction("Call before coming");
+//
+//                            click_Element_Js(nextBtn);
+//
+//                            SmallWait(200);
+//
+//                            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
 
                             break;
                         }
@@ -378,6 +383,160 @@ public class OrderEntry_Page extends BaseClass{
 //            SmallWait(200);
 //
 //            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+
+            break;
+        }
+    }
+
+    public void clickSuggestionText(){
+        //List<WebElement> suggestions = driver.findElements(By.xpath("//h3[normalize-space()='Suggestions']//following::ul/li/br"));
+        List<WebElement> suggestions = driver.findElements(By.xpath("//div[@class='cdk-overlay-container']//li/strong"));
+
+        for (WebElement suggestion : suggestions) {
+
+            String text = suggestion.getText();
+            System.out.println(text);
+            String[] parts = text.split(", ");
+
+            if (parts.length == 3) {
+                suggestion.click();
+                break;
+            }
+        }
+    }
+    public void enterRecipientDeliveryAddress() throws InterruptedException, IOException {
+        SmallWait(1000);
+
+        WebElement firstNameField = driver.findElement(By.xpath("//input[@formcontrolname='firstName']"));
+        WebElement lastNameField = driver.findElement(By.xpath("//input[@formcontrolname='lastName']"));
+
+        WebElement addressField = driver.findElement(By.xpath("//input[@formcontrolname='address1']"));
+        WebElement countryField = driver.findElement(By.xpath("//input[@formcontrolname='address2']/following::input[1]"));
+        WebElement stateField = driver.findElement(By.xpath("//input[@formcontrolname='city']/preceding::input[1]"));
+        WebElement cityField = driver.findElement(By.xpath("//input[@formcontrolname='city']"));
+        WebElement zipField = driver.findElement(By.xpath("//input[@formcontrolname='zipCode']"));
+
+        WebElement locationTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='locationType']"));
+
+        WebElement emailField = driver.findElement(By.xpath("//input[@formcontrolname='email']"));
+        WebElement phoneField = driver.findElement(By.xpath("//input[@formcontrolname='phoneNumber']"));
+
+        firstNameField.sendKeys(getFirstName());
+        lastNameField.sendKeys(getLastName());
+
+        addressField.sendKeys("10311 Garland Road"); //getAddress()
+
+        //countryField.sendKeys();
+
+        stateField.click();  //getState()
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Texas', ' ')]")));
+
+        cityField.sendKeys("Dallas"); //getCity()
+
+        zipField.sendKeys("75218");
+
+        locationTypeField.click();
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Home', ' ')]")));
+
+        emailField.sendKeys(getEmail());
+        phoneField.sendKeys(getPhone());
+
+        WebElement validateBtn = driver.findElement(By.xpath("//span[normalize-space()='Validate']"));
+
+        validateBtn.click();
+        SmallWait(3000);
+
+        try{
+            String text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='abp-toast-message']"))).getText();
+            System.out.println(text);
+
+            while(!text.contains("successfully")){
+                logger.info("Validation Failed. Retrying...");
+
+                SmallWait(3000);
+                clickSuggestionText();
+            }
+
+        }
+        catch (Exception e) {
+            logger.info("Validation Message not found - {}", e.getMessage());
+        }
+
+        SmallWait(1000);
+
+        takeScreenshot();
+    }
+
+    public void enterRecipientDeliveryDetails(String store) throws InterruptedException, IOException {
+        SmallWait(1000);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        String formattedDate = LocalDate.now().format(formatter);
+
+        enterDeliveryFromDate(formattedDate);
+        enterDeliveryToDate(formattedDate);
+
+        SmallWait(500);
+
+        WebElement deliveryTypeField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryType']"));
+
+        deliveryTypeField.click();
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[text()=concat(' ', 'Delivery', ' ')]")));
+
+        WebElement deliveryZoneField = driver.findElement(By.xpath("//mat-select[@formcontrolname='deliveryZoneId']"));
+
+        deliveryZoneField.click();
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), 'Garland Road')]")));
+
+        WebElement fulfillingStoreField = driver.findElement(By.xpath("//mat-select[@formcontrolname='fulfillingStoreId']"));
+
+        fulfillingStoreField.click();
+        SmallWait(200);
+        js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[contains(text(), '"+store+"')]")));
+
+        SmallWait(1000);
+
+        takeScreenshot();
+    }
+
+    public void enterOrderPersonalizationDetails() throws InterruptedException, IOException {
+        selectOccasion("Business");
+        selectShortCode("BR - Best Regards");
+
+        SmallWait(1000);
+
+        takeScreenshot();
+    }
+
+    public void addNewRecipient(String store) throws InterruptedException, IOException {
+        SmallWait(1000);
+
+        for(int l = 1; l<= get_Size(productRows); l++){
+            WebElement recipientBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[3]"));
+            recipientBtn.click();
+
+            SmallWait(1000);
+
+            WebElement newRecipientBtn = driver.findElement(By.xpath("//span[contains(text(),'Add New Recipient')]"));
+            newRecipientBtn.click();
+
+            enterRecipientDeliveryAddress();
+
+            WebElement nextBtn = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[1]"));
+            nextBtn.click();
+
+            enterRecipientDeliveryDetails(store);
+
+            WebElement nextBtn2 = driver.findElement(By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Next'])[2]"));
+            nextBtn2.click();
+
+            enterOrderPersonalizationDetails();
+
+            click_Element_Js(saveBtn);
 
             break;
         }
@@ -527,12 +686,6 @@ public class OrderEntry_Page extends BaseClass{
         SmallWait(1000);
         click_Element_Js(customerSaveBtn);
     }
-
-//    public void addNewCustomer(String name, String address, String country, String state, String city, String zip, String phone, String email, String flag) throws InterruptedException {
-//        clickCustomerSearchIcon().clickAddCustomerButton().enterCustomerName(name).enterCustomerAddress(address).selectCustomerCountry(country).
-//                selectCustomerState(state).enterCustomerCity(city).enterCustomerZip(zip).enterCustomerPhone(phone).enterCustomerEmail(email).
-//        enterTaxDetails(flag).clickCustomerSaveBtn();
-//    }
 
     public void addNewCustomer(String name, String address, String state, String city, String zip, String phone, String email, String flag) throws InterruptedException {
         clickCustomerSearchIcon().clickAddCustomerButton().enterCustomerName(name).enterCustomerAddress(address).
@@ -714,6 +867,21 @@ public class OrderEntry_Page extends BaseClass{
                 click_Element(acceptBtn);
 
                 SmallWait(1000);
+                click_Element(doneBtn);
+                break;
+
+            case "Gift Card":
+                WebElement gcNumberField = driver.findElement(By.xpath("//span[contains(text(),'Accept')]/preceding::input[1]"));
+                gcNumberField.sendKeys("1001");
+
+                SmallWait(2000);
+                WebElement gcAmountField = driver.findElement(By.xpath("//span[contains(text(),'Accept')]/preceding::input[1]"));
+                gcAmountField.sendKeys(amountPayable);
+
+                SmallWait(1000);
+                click_Element(acceptBtn);
+
+                SmallWait(2000);
                 click_Element(doneBtn);
                 break;
 

@@ -277,6 +277,17 @@ public class BaseClass {
         FileUtils.copyFile(srcFile, new File(filename));
     }
 
+    public static void takeScreenshot() throws IOException {
+        String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
+        File directory = new File("Images");
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+        String filename = "Images/" + methodName + ".png";
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(srcFile, new File(filename));
+    }
+
     //---------------------------------------------------------------------------------------------//
     @AfterTest
     public static void SaveLogFile(){

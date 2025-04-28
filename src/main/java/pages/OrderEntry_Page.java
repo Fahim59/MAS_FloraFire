@@ -601,7 +601,7 @@ public class OrderEntry_Page extends BaseClass{
     private final By searchCustomerIconField = By.xpath("(.//mat-icon[text()='search'])[2]");
     private final By searchCustomerField = By.xpath("(.//*[contains(@placeholder, 'Search Keyword (Customer Name')])[2]");
 
-    private final String customerTable = "//table[@role='table']/tbody";
+    private final String customerTable = "//div[@class='customer-list']//table[@role='table']/tbody";
     private final By rows = By.xpath(customerTable+"/tr");
 
     private final By addCustomerBtn = By.xpath("//span[contains(text(),'Add New Customer')]");
@@ -620,16 +620,22 @@ public class OrderEntry_Page extends BaseClass{
 
     private final By customerSaveBtn = By.xpath("(//span[contains(text(),'Save')])[2]");
 
-    public OrderEntry_Page clickCustomerSearchIcon() throws InterruptedException {
+    public OrderEntry_Page clickCustomerSearchIcon(String... id) throws InterruptedException {
         SmallWait(1000);
+
+        WebElement searchField = driver.findElement(By.xpath("(//*[contains(@placeholder, 'Search Keyword')])[2]"));
+        searchField.sendKeys(id);
+
         click_Element_Js(searchCustomerIconField);
 
         return this;
     }
     public void customerInfo(String id) throws InterruptedException {
-        SmallWait(1500);
+        SmallWait(1000);
 
         for(int l = 1; l<= get_Size(rows); l++){
+
+            System.out.println(l);
 
             String customerId = driver.findElement(By.xpath(customerTable+ "/tr["+l+"]/td[2]")).getText();
             WebElement selectBtn = driver.findElement(By.xpath(customerTable+ "/tr["+l+"]/td[6]"));
@@ -657,7 +663,7 @@ public class OrderEntry_Page extends BaseClass{
     }
 
     public void selectCustomer(String id) throws InterruptedException {
-        clickCustomerSearchIcon().customerInfo(id);
+        clickCustomerSearchIcon(id).customerInfo(id);
     }
 
     public OrderEntry_Page clickAddCustomerButton() throws InterruptedException {
@@ -888,7 +894,7 @@ public class OrderEntry_Page extends BaseClass{
         return this;
     }
 
-    public void selectPaymentOption(String option) throws InterruptedException {
+    public void selectPaymentOption(String option, String... splitOptions) throws InterruptedException {
         SmallWait(1500);
 
         if(!get_Text(paymentOptionsField).equals(option)){
@@ -964,14 +970,61 @@ public class OrderEntry_Page extends BaseClass{
                     click_Element(doneBtn);
                 }
 
-                //SmallWait(5000);
+                break;
 
+            case "House":
+                SmallWait(1000);
+                click_Element(acceptBtn);
+
+                SmallWait(2000);
+                click_Element(doneBtn);
                 break;
 
             default:
-                // Code to execute if no case matches
+                logger.info("Invalid Payment Method...!");
                 break;
         }
+    }
+
+    public void splitPayment(String... splitOptions) throws InterruptedException {
+
+        if (splitOptions.length % 2 != 0) {                                                           //validating we have pairs of payment methods and amounts
+            logger.error("Invalid split options. Must provide payment method and amount pairs.");
+            return;
+        }
+
+        clickPaymentBtn();
+        SmallWait(2000);
+
+        for (int i = 0; i < splitOptions.length; i += 2) {
+            String method = splitOptions[i];
+            String amount = splitOptions[i+1];
+
+            click_Element(paymentOptionsField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='"+method+"']")));
+
+            SmallWait(1000);
+
+            switch (method) {
+                case "Cash":
+                    WebElement cashPaidField = driver.findElement(By.xpath("(//input[@type='number'])[5]"));
+                    cashPaidField.sendKeys(amount);
+
+                    click_Element(acceptBtn);
+
+                    SmallWait(1500);
+                    break;
+
+                case "House Account":
+                    click_Element(acceptBtn);
+
+                    break;
+            }
+        }
+
+        SmallWait(3000);
+        click_Element(doneBtn);
     }
 
     public void makePayment(String option) throws InterruptedException {

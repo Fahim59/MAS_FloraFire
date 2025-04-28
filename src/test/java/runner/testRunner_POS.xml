@@ -12,7 +12,8 @@
 <!--        <class name="tests.POS.Test_Case_1"/>-->
 <!--        <class name="tests.POS.Test_Case_2"/>-->
 <!--        <class name="tests.POS.Test_Case_3"/>-->
-        <class name="tests.POS.Test_Case_4"/>
+<!--        <class name="tests.POS.Test_Case_4"/>-->
+        <class name="tests.POS.Test_Case_5"/>
     </classes>
 </test>
 </suite>

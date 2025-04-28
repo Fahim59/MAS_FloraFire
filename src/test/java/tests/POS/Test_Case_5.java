@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class Test_Case_4 extends BaseClass {
+public class Test_Case_5 extends BaseClass {
     private Home_Page homePage;
     private OrderEntry_Page orderEntryPage;
 
@@ -39,16 +39,15 @@ public class Test_Case_4 extends BaseClass {
     }
 
     @Test(description = "Verify that the user can perform an Order", priority = 2)
-    public void testCaseFour() throws InterruptedException, IOException {
+    public void testCaseFive() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("MP", "HP", "BP");
         List<String> quantities = Arrays.asList("5", "4", "3");
-        String discount = "FREEDEL";
 
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f006");
+        orderEntryPage.searchProductEnter("f008");
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
@@ -57,15 +56,11 @@ public class Test_Case_4 extends BaseClass {
 
         SmallWait(1000);
 
-        orderEntryPage.selectCustomer("0000000010");
+        orderEntryPage.selectCustomer("0000000002");
 
         orderEntryPage.selectOrderType("Sales Walk-In");
 
-        orderEntryPage.selectWholeOrderDiscount(discount);
-
-        orderEntryPage.enterTip("Sales", "15");
-
-        SmallWait(1500);
+        orderEntryPage.enterTip("Design", "25");
 
         orderEntryPage.moneyboxData();
 
@@ -73,6 +68,6 @@ public class Test_Case_4 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Credit / Debit Card");
+        orderEntryPage.splitPayment("Cash", "5", "House Account", "");
     }
 }

@@ -830,7 +830,7 @@ public class OrderEntry_Page extends BaseClass{
      */
 
     private final By addTipBtn = By.xpath("//div[@class='mat-ripple add-tip mb-2 ng-star-inserted']");
-    private final By departmentField = By.xpath("(//div[contains(@id,'mat-select-value')])[5]");
+    private final By departmentField = By.xpath("//mat-select[@formcontrolname='tipValueTypeId']");
     private final By tipAmountField = By.xpath("//input[@formcontrolname='tipAmount']");
 
     private final By confirmBtn = By.xpath("//span[normalize-space()='Confirm']");
@@ -935,6 +935,37 @@ public class OrderEntry_Page extends BaseClass{
 
                 SmallWait(2000);
                 click_Element(doneBtn);
+                break;
+
+            case "Credit / Debit Card":
+                SmallWait(2000);
+
+                driver.switchTo().frame("heartland-frame-cardNumber");
+                WebElement cardNumberField = driver.findElement(By.xpath("//input[@name='cardNumber']"));
+                cardNumberField.sendKeys("3782 822463 10005");
+                driver.switchTo().defaultContent();
+
+                driver.switchTo().frame("heartland-frame-cardExpiration");
+                WebElement expirationField = driver.findElement(By.xpath("//input[@name='cardExpiration']"));
+                expirationField.sendKeys("01 / 2026");
+                driver.switchTo().defaultContent();
+
+                driver.switchTo().frame("heartland-frame-cardCvv");
+                WebElement cvvField = driver.findElement(By.xpath("//input[@name='cardCvv']"));
+                cvvField.sendKeys("1234");
+                driver.switchTo().defaultContent();
+
+                SmallWait(1000);
+                click_Element(acceptBtn);
+
+                WebElement paymentItems = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='payment-item']")));
+
+                if(paymentItems.isDisplayed()){
+                    click_Element(doneBtn);
+                }
+
+                //SmallWait(5000);
+
                 break;
 
             default:

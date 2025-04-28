@@ -1,5 +1,5 @@
 /*
-    * Product(Enter) - Customer(Select) - Order Type(SW) - Delivery Method(Existing Recipient) - Discount (Delivery) - Payment(Credit Card)
+    * Product(Enter) - Customer(Select) - Order Type(SW) - Delivery Method(Existing Recipient) - Discount (Delivery) - Tip - Payment(Credit Card)
  */
 
 package tests.POS;
@@ -39,7 +39,7 @@ public class Test_Case_4 extends BaseClass {
     }
 
     @Test(description = "Verify that the user can perform an Order", priority = 2)
-    public void testCaseTwo() throws InterruptedException, IOException {
+    public void testCaseFour() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("MP", "HP", "BP");
         List<String> quantities = Arrays.asList("5", "4", "3");
         String discount = "FREEDEL";
@@ -63,12 +63,14 @@ public class Test_Case_4 extends BaseClass {
 
         orderEntryPage.selectWholeOrderDiscount(discount);
 
+        orderEntryPage.enterTip("Sales", "15");
+
         orderEntryPage.moneyboxData();
 
         takeScreenshot(className);
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Gift Card");
+        orderEntryPage.makePayment("Credit / Debit Card");
     }
 }

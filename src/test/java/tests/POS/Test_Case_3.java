@@ -39,7 +39,7 @@ public class Test_Case_3 extends BaseClass {
     }
 
     @Test(description = "Verify that the user can perform an Order", priority = 2)
-    public void testCaseTwo() throws InterruptedException, IOException {
+    public void testCaseThree() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("BP", "HP", "MP");
         List<String> quantities = Arrays.asList("3", "4", "5");
         String discount = "SAVE50";

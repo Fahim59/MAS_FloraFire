@@ -42,13 +42,18 @@ public class Test_Case_3 extends BaseClass {
     public void testCaseThree() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("BP", "HP", "MP");
         List<String> quantities = Arrays.asList("3", "4", "5");
-        String discount = "SAVE50";
+        String discount = jsonData.getJSONObject("pos_tc3").getString("discount");
+
+        String productCode = jsonData.getJSONObject("pos_tc3").getString("product");
+        String customerId = jsonData.getJSONObject("pos_tc3").getString("customer");
+        String orderType = jsonData.getJSONObject("pos_tc3").getString("orderType");
+        String paymentMethod = jsonData.getJSONObject("pos_tc3").getString("payment_method");
 
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f005");
+        orderEntryPage.searchProductEnter(productCode);
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
@@ -57,9 +62,9 @@ public class Test_Case_3 extends BaseClass {
 
         SmallWait(1000);
 
-        orderEntryPage.selectCustomer("0000000010");
+        orderEntryPage.selectCustomer(customerId);
 
-        orderEntryPage.selectOrderType("Sales Order");
+        orderEntryPage.selectOrderType(orderType);
 
         orderEntryPage.selectWholeOrderDiscount(discount);
 
@@ -69,6 +74,6 @@ public class Test_Case_3 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Gift Card");
+        orderEntryPage.makePayment(paymentMethod);
     }
 }

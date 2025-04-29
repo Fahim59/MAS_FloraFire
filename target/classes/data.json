@@ -126,5 +126,12 @@
     "orderType": "Sales Order",
     "flag": "false",
     "payment_method": "Check"
+  },
+  "pos_tc3": {
+    "discount": "SAVE50",
+    "product": "f005",
+    "customer": "0000000010",
+    "orderType": "Sales Order",
+    "payment_method": "Gift Card"
   }
 }

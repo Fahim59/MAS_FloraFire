@@ -43,24 +43,31 @@ public class Test_Case_5 extends BaseClass {
         List<String> types = Arrays.asList("MP", "HP", "BP");
         List<String> quantities = Arrays.asList("5", "4", "3");
 
+        String productCode = jsonData.getJSONObject("pos_tc5").getString("product");
+        String recipientName = jsonData.getJSONObject("pos_tc5").getString("recipient");
+        String customerId = jsonData.getJSONObject("pos_tc5").getString("customer");
+        String orderType = jsonData.getJSONObject("pos_tc5").getString("orderType");
+        String tipDept = jsonData.getJSONObject("pos_tc5").getString("tipDepartment");
+        String tipAmount = jsonData.getJSONObject("pos_tc5").getString("tipAmount");
+
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f008");
+        orderEntryPage.searchProductEnter(productCode);
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
 
-        orderEntryPage.addExistingRecipient("Hobert", homePage.getStoreName());
+        orderEntryPage.addExistingRecipient(recipientName, homePage.getStoreName());
 
         SmallWait(1000);
 
-        orderEntryPage.selectCustomer("0000000002");
+        orderEntryPage.selectCustomer(customerId);
 
-        orderEntryPage.selectOrderType("Sales Walk-In");
+        orderEntryPage.selectOrderType(orderType);
 
-        orderEntryPage.enterTip("Design", "25");
+        orderEntryPage.enterTip(tipDept, tipAmount);
 
         orderEntryPage.moneyboxData();
 

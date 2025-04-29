@@ -100,3 +100,63 @@ Tax Exempt: No
 2025-04-29 14:35:18.923 [main] INFO  pages.OrderEntry_Page - Amount Due is:41.95
 2025-04-29 14:35:18.924 [main] INFO  pages.OrderEntry_Page - Change Due is:0.00
 2025-04-29 14:35:33.329 [main] INFO  base.BaseClass - Browser quit successfully
+2025-04-29 14:39:34.107 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-29 14:39:44.490 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-04-29 14:39:52.133 [main] INFO  base.BaseClass - Element is visible.
+2025-04-29 14:39:52.133 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-04-29 14:39:57.954 [main] INFO  tests.POS.Test_Case_5 - User successfully navigated to the Order Entry page
+2025-04-29 14:40:30.371 [main] INFO  pages.OrderEntry_Page - Customer Type: Normal 
+Discount Amount: 0.00 
+Delivery Charge: 0.00 
+Tax Exempt: No
+2025-04-29 14:40:30.434 [main] INFO  pages.OrderEntry_Page - Customer 0000000010 added
+2025-04-29 14:40:35.273 [main] INFO  base.BaseClass - Browser quit successfully
+2025-04-29 14:41:01.978 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-29 14:41:11.291 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-04-29 14:41:16.664 [main] INFO  base.BaseClass - Element is visible.
+2025-04-29 14:41:16.664 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-04-29 14:41:22.477 [main] INFO  tests.POS.Test_Case_5 - User successfully navigated to the Order Entry page
+2025-04-29 14:41:54.630 [main] INFO  pages.OrderEntry_Page - Customer Type: House 
+Discount Amount: 6.00 
+Delivery Charge: 25.00 
+Tax Exempt: No
+2025-04-29 14:41:54.690 [main] INFO  pages.OrderEntry_Page - Customer 0000000002 added
+2025-04-29 14:42:00.850 [main] INFO  pages.OrderEntry_Page - SubTotal is:179.95
+2025-04-29 14:42:00.851 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:25.00
+2025-04-29 14:42:00.851 [main] INFO  pages.OrderEntry_Page - Discount is:10.80
+2025-04-29 14:42:00.851 [main] INFO  pages.OrderEntry_Page - Tax is:15.53
+2025-04-29 14:42:00.971 [main] INFO  pages.OrderEntry_Page - Amount Payable is:234.68
+2025-04-29 14:42:00.971 [main] INFO  pages.OrderEntry_Page - Amount Paid is:0.00
+2025-04-29 14:42:00.971 [main] INFO  pages.OrderEntry_Page - Amount Due is:234.68
+2025-04-29 14:42:00.971 [main] INFO  pages.OrderEntry_Page - Change Due is:0.00
+2025-04-29 14:42:13.619 [main] INFO  base.BaseClass - Browser quit successfully
+2025-04-29 14:43:40.405 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-29 14:43:50.019 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-04-29 14:43:55.564 [main] INFO  base.BaseClass - Element is visible.
+2025-04-29 14:43:55.564 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-04-29 14:44:01.385 [main] INFO  tests.POS.Test_Case_5 - User successfully navigated to the Order Entry page
+2025-04-29 14:44:35.371 [main] INFO  pages.OrderEntry_Page - Customer Type: House 
+Discount Amount: 6.00 
+Delivery Charge: 25.00 
+Tax Exempt: No
+2025-04-29 14:44:35.429 [main] INFO  pages.OrderEntry_Page - Customer 0000000002 added
+2025-04-29 14:44:40.136 [main] INFO  base.BaseClass - Browser quit successfully
+2025-04-29 14:45:21.145 [main] INFO  base.BaseClass - Browser launched successfully
+2025-04-29 14:45:30.977 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-04-29 14:45:36.237 [main] INFO  base.BaseClass - Element is visible.
+2025-04-29 14:45:36.237 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-04-29 14:45:42.035 [main] INFO  tests.POS.Test_Case_5 - User successfully navigated to the Order Entry page
+2025-04-29 14:46:14.339 [main] INFO  pages.OrderEntry_Page - Customer Type: House 
+Discount Amount: 6.00 
+Delivery Charge: 25.00 
+Tax Exempt: No
+2025-04-29 14:46:14.395 [main] INFO  pages.OrderEntry_Page - Customer 0000000002 added
+2025-04-29 14:46:21.557 [main] INFO  pages.OrderEntry_Page - SubTotal is:179.95
+2025-04-29 14:46:21.557 [main] INFO  pages.OrderEntry_Page - Delivery Charge is:25.00
+2025-04-29 14:46:21.557 [main] INFO  pages.OrderEntry_Page - Discount is:10.80
+2025-04-29 14:46:21.557 [main] INFO  pages.OrderEntry_Page - Tax is:15.53
+2025-04-29 14:46:21.678 [main] INFO  pages.OrderEntry_Page - Amount Payable is:234.68
+2025-04-29 14:46:21.678 [main] INFO  pages.OrderEntry_Page - Amount Paid is:0.00
+2025-04-29 14:46:21.678 [main] INFO  pages.OrderEntry_Page - Amount Due is:234.68
+2025-04-29 14:46:21.678 [main] INFO  pages.OrderEntry_Page - Change Due is:0.00
+2025-04-29 14:46:34.539 [main] INFO  base.BaseClass - Browser quit successfully

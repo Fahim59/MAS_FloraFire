@@ -774,7 +774,7 @@ public class OrderEntry_Page extends BaseClass{
     }
 
     public OrderEntry_Page selectDepartment(String dept) throws InterruptedException {
-        SmallWait(1500);
+        SmallWait(2500);
 
         if(!get_Text(departmentField).equals(dept)){
             click_Element(departmentField);
@@ -819,7 +819,7 @@ public class OrderEntry_Page extends BaseClass{
         return this;
     }
 
-    public void selectPaymentOption(String option, String... splitOptions) throws InterruptedException, IOException {
+    public void selectPaymentOption(String option) throws InterruptedException, IOException {
         SmallWait(1500);
 
         if(!get_Text(paymentOptionsField).equals(option)){
@@ -915,7 +915,7 @@ public class OrderEntry_Page extends BaseClass{
         }
     }
 
-    public void splitPayment(String... splitOptions) throws InterruptedException {
+    public void splitPayment(String... splitOptions) throws InterruptedException, IOException {
 
         if (splitOptions.length % 2 != 0) {                                                           //validating we have pairs of payment methods and amounts
             logger.error("Invalid split options. Must provide payment method and amount pairs.");
@@ -953,6 +953,7 @@ public class OrderEntry_Page extends BaseClass{
         }
 
         SmallWait(3000);
+        takeScreenshot();
         click_Element(doneBtn);
     }
 

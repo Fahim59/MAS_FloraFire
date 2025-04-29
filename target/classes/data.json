@@ -143,5 +143,13 @@
     "tipDepartment": "Sales",
     "tipAmount": "15",
     "payment_method": "Credit / Debit Card"
+  },
+  "pos_tc5": {
+    "product": "f008",
+    "recipient": "Hobert",
+    "customer": "0000000002",
+    "orderType": "Sales Walk-In",
+    "tipDepartment": "Design",
+    "tipAmount": "25"
   }
 }

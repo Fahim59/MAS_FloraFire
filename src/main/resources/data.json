@@ -108,5 +108,16 @@
     "developerId": "000000",
     "versionNumber": "0000",
     "url": "https://cert.api2.heartlandportico.com"
+  },
+
+  "pos_tc1": {
+    "product": "f001",
+    "customer": "0000000010",
+    "orderType": "Sales Walk-In",
+    "flag": "true",
+    "occasion": "Holiday",
+    "name": "Mustafizur Rahman",
+    "short_code": "AOL - All Our Love",
+    "payment_method": "Cash"
   }
 }

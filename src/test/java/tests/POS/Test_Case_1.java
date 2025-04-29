@@ -44,21 +44,30 @@ public class Test_Case_1 extends BaseClass {
         List<String> quantities = Arrays.asList("2", "3", "5");
         List<String> discounts = Arrays.asList("FLOWER10", "SUMMER30", "");
 
+        String productCode = jsonData.getJSONObject("pos_tc1").getString("product");
+        String customerId = jsonData.getJSONObject("pos_tc1").getString("customer");
+        String orderType = jsonData.getJSONObject("pos_tc1").getString("orderType");
+        String flag = jsonData.getJSONObject("pos_tc1").getString("flag");
+        String occasion = jsonData.getJSONObject("pos_tc1").getString("occasion");
+        String name = jsonData.getJSONObject("pos_tc1").getString("name");
+        String shortCode = jsonData.getJSONObject("pos_tc1").getString("short_code");
+        String paymentMethod = jsonData.getJSONObject("pos_tc1").getString("payment_method");
+
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f001");
+        orderEntryPage.searchProductEnter(productCode);
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
         orderEntryPage.setProductDiscount(discounts);
 
-        orderEntryPage.selectCustomer("0000000010");
+        orderEntryPage.selectCustomer(customerId);
 
-        orderEntryPage.selectOrderType("Sales Walk-In");
+        orderEntryPage.selectOrderType(orderType);
 
-        orderEntryPage.carryOutDelivery("true","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
+        orderEntryPage.carryOutDelivery(flag,occasion, name, shortCode);
 
         orderEntryPage.moneyboxData();
 
@@ -66,6 +75,6 @@ public class Test_Case_1 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Cash");
+        orderEntryPage.makePayment(paymentMethod);
     }
 }

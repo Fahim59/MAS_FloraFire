@@ -8,12 +8,11 @@
 <test verbose="2" preserve-order="true" name="nopStation/MAS_FloraFire_ClientPortal">
     <classes>
         <class name="tests.UserLogin"/>
-<!--        <class name="tests.POS.Demo"/>-->
-<!--        <class name="tests.POS.Test_Case_1"/>-->
+        <class name="tests.POS.Test_Case_1"/>
 <!--        <class name="tests.POS.Test_Case_2"/>-->
 <!--        <class name="tests.POS.Test_Case_3"/>-->
 <!--        <class name="tests.POS.Test_Case_4"/>-->
-        <class name="tests.POS.Test_Case_5"/>
+<!--        <class name="tests.POS.Test_Case_5"/>-->
     </classes>
 </test>
 </suite>

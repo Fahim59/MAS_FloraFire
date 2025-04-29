@@ -315,81 +315,7 @@ public class OrderEntry_Page extends BaseClass{
     private final By validationMessage = By.xpath("//p[@class='abp-toast-message']");
     private final By validateBtn = By.xpath("//span[normalize-space()='Validate']");
 
-    public void recipientDelivery(String type, String source, String name) throws InterruptedException {
-        SmallWait(1000);
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        String formattedDate = LocalDate.now().format(formatter);
-
-        for(int l = 1; l<= get_Size(productRows); l++){
-            WebElement recipientBtn = driver.findElement(By.xpath(cartTable+ "/tr["+l+"]/td[9]//button[3]"));
-            recipientBtn.click();
-
-            if(type.equalsIgnoreCase("old")){
-                if(source.equalsIgnoreCase("system")){
-                    click_Element(systemResourceTab);
-
-                    for(int r = 1; r <= get_Size(recipientRows); l++){
-                        WebElement recipientName = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[1])[2]"));
-                        WebElement actionBtn = driver.findElement(By.xpath("(.//table[@role='table']/tbody/tr["+r+"]/td[5])[2]"));
-
-                        System.out.println(recipientName.getText());
-
-                        if(recipientName.getText().equalsIgnoreCase(name)){
-                            actionBtn.click();
-
-                            click_Element(validateBtn);
-
-                            //String text = wait_for_visibility(validationMessage).getText();
-
-//                            while(!wait_for_visibility(validationMessage).getText().contains("successfully")){
-//                                click_Element(validateBtn);
-//                            }
-//
-//                            click_Element_Js(nextBtn);
-//
-//                            SmallWait(500);
-//                            enterDeliveryFromDate(formattedDate);
-//                            enterDeliveryToDate(formattedDate);
-
-//                            isTimeRequirement("false","03","30", "Before");
-//
-//                            enterSpecialInstruction("Call before coming");
-//
-//                            click_Element_Js(nextBtn);
-//
-//                            SmallWait(200);
-//
-//                            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
-
-                            break;
-                        }
-                    }
-                }
-            }
-
-//            SmallWait(500);
-//            enterDeliveryFromDate(formattedDate);
-//            enterDeliveryToDate(formattedDate);
-//
-//            selectPickUpLocation(store);
-//
-//            enterPersonPickingUp("Mustafizur Rahman");
-//
-//            isTimeRequirement("true","03","30", "Before");
-//
-//            click_Element_Js(nextBtn);
-//
-//            SmallWait(200);
-//
-//            carryOutDelivery("false","Holiday", "Mustafizur Rahman", "AOL - All Our Love");
-
-            break;
-        }
-    }
-
     public void clickSuggestionText(){
-        //List<WebElement> suggestions = driver.findElements(By.xpath("//h3[normalize-space()='Suggestions']//following::ul/li/br"));
         List<WebElement> suggestions = driver.findElements(By.xpath("//div[@class='cdk-overlay-container']//li/strong"));
 
         for (WebElement suggestion : suggestions) {
@@ -634,9 +560,6 @@ public class OrderEntry_Page extends BaseClass{
         SmallWait(1000);
 
         for(int l = 1; l<= get_Size(rows); l++){
-
-            System.out.println(l);
-
             String customerId = driver.findElement(By.xpath(customerTable+ "/tr["+l+"]/td[2]")).getText();
             WebElement selectBtn = driver.findElement(By.xpath(customerTable+ "/tr["+l+"]/td[6]"));
 
@@ -894,7 +817,7 @@ public class OrderEntry_Page extends BaseClass{
         return this;
     }
 
-    public void selectPaymentOption(String option, String... splitOptions) throws InterruptedException {
+    public void selectPaymentOption(String option, String... splitOptions) throws InterruptedException, IOException {
         SmallWait(1500);
 
         if(!get_Text(paymentOptionsField).equals(option)){
@@ -914,6 +837,7 @@ public class OrderEntry_Page extends BaseClass{
                 click_Element(acceptBtn);
 
                 SmallWait(1000);
+                takeScreenshot();
                 click_Element(doneBtn);
                 break;
 
@@ -925,6 +849,7 @@ public class OrderEntry_Page extends BaseClass{
                 click_Element(acceptBtn);
 
                 SmallWait(1000);
+                takeScreenshot();
                 click_Element(doneBtn);
                 break;
 
@@ -940,6 +865,7 @@ public class OrderEntry_Page extends BaseClass{
                 click_Element(acceptBtn);
 
                 SmallWait(2000);
+                takeScreenshot();
                 click_Element(doneBtn);
                 break;
 
@@ -967,6 +893,7 @@ public class OrderEntry_Page extends BaseClass{
                 WebElement paymentItems = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='payment-item']")));
 
                 if(paymentItems.isDisplayed()){
+                    takeScreenshot();
                     click_Element(doneBtn);
                 }
 
@@ -1027,7 +954,7 @@ public class OrderEntry_Page extends BaseClass{
         click_Element(doneBtn);
     }
 
-    public void makePayment(String option) throws InterruptedException {
+    public void makePayment(String option) throws InterruptedException, IOException {
         clickPaymentBtn().selectPaymentOption(option);
     }
 }

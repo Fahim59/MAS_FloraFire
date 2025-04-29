@@ -549,8 +549,10 @@ public class OrderEntry_Page extends BaseClass{
     public OrderEntry_Page clickCustomerSearchIcon(String... id) throws InterruptedException {
         SmallWait(1000);
 
-        WebElement searchField = driver.findElement(By.xpath("(//*[contains(@placeholder, 'Search Keyword')])[2]"));
-        searchField.sendKeys(id);
+        if (id.length > 0) {
+            WebElement searchField = driver.findElement(By.xpath("(//*[contains(@placeholder, 'Search Keyword')])[2]"));
+            searchField.sendKeys(id);
+        }
 
         click_Element_Js(searchCustomerIconField);
 

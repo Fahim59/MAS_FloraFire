@@ -42,13 +42,18 @@ public class Test_Case_2 extends BaseClass {
     public void testCaseTwo() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("HP", "BP", "MP");
         List<String> quantities = Arrays.asList("3", "4", "5");
-        String discount = "FIRSTORDER";
+        String discount = jsonData.getJSONObject("pos_tc2").getString("discount");
+
+        String productCode = jsonData.getJSONObject("pos_tc2").getString("product");
+        String orderType = jsonData.getJSONObject("pos_tc2").getString("orderType");
+        String flag = jsonData.getJSONObject("pos_tc2").getString("flag");
+        String paymentMethod = jsonData.getJSONObject("pos_tc2").getString("payment_method");
 
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductIcon("f005");
+        orderEntryPage.searchProductIcon(productCode);
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
@@ -56,9 +61,9 @@ public class Test_Case_2 extends BaseClass {
 
         orderEntryPage.addNewCustomer(getFullName(), getAddress(), getState(), getCity(), "54789", getPhone(), getEmail(), "Yes");
 
-        orderEntryPage.selectOrderType("Sales Order");
+        orderEntryPage.selectOrderType(orderType);
 
-        orderEntryPage.willCallDelivery("false", homePage.getStoreName());
+        orderEntryPage.willCallDelivery(flag, homePage.getStoreName());
 
         orderEntryPage.moneyboxData();
 
@@ -66,6 +71,6 @@ public class Test_Case_2 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Check");
+        orderEntryPage.makePayment(paymentMethod);
     }
 }

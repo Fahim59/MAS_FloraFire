@@ -119,5 +119,12 @@
     "name": "Mustafizur Rahman",
     "short_code": "AOL - All Our Love",
     "payment_method": "Cash"
+  },
+  "pos_tc2": {
+    "discount": "FIRSTORDER",
+    "product": "f005",
+    "orderType": "Sales Order",
+    "flag": "false",
+    "payment_method": "Check"
   }
 }

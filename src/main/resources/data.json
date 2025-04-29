@@ -133,5 +133,15 @@
     "customer": "0000000010",
     "orderType": "Sales Order",
     "payment_method": "Gift Card"
+  },
+  "pos_tc4": {
+    "discount": "FREEDEL",
+    "product": "f006",
+    "recipient": "Hobert",
+    "customer": "0000000010",
+    "orderType": "Sales Walk-In",
+    "tipDepartment": "Sales",
+    "tipAmount": "15",
+    "payment_method": "Credit / Debit Card"
   }
 }

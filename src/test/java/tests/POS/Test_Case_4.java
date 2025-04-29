@@ -42,28 +42,36 @@ public class Test_Case_4 extends BaseClass {
     public void testCaseFour() throws InterruptedException, IOException {
         List<String> types = Arrays.asList("MP", "HP", "BP");
         List<String> quantities = Arrays.asList("5", "4", "3");
-        String discount = "FREEDEL";
+        String discount = jsonData.getJSONObject("pos_tc4").getString("discount");
+
+        String productCode = jsonData.getJSONObject("pos_tc4").getString("product");
+        String recipientName = jsonData.getJSONObject("pos_tc4").getString("recipient");
+        String customerId = jsonData.getJSONObject("pos_tc4").getString("customer");
+        String orderType = jsonData.getJSONObject("pos_tc4").getString("orderType");
+        String tipDept = jsonData.getJSONObject("pos_tc4").getString("tipDepartment");
+        String tipAmount = jsonData.getJSONObject("pos_tc4").getString("tipAmount");
+        String paymentMethod = jsonData.getJSONObject("pos_tc4").getString("payment_method");
 
         SmallWait(1000);
 
         orderEntryPage.setZoom80Percent();
 
-        orderEntryPage.searchProductEnter("f006");
+        orderEntryPage.searchProductEnter(productCode);
 
         orderEntryPage.setPriceType(types);
         orderEntryPage.setProductQuantity(quantities);
 
-        orderEntryPage.addExistingRecipient("Hobert", homePage.getStoreName());
+        orderEntryPage.addExistingRecipient(recipientName, homePage.getStoreName());
 
         SmallWait(1000);
 
-        orderEntryPage.selectCustomer("0000000010");
+        orderEntryPage.selectCustomer(customerId);
 
-        orderEntryPage.selectOrderType("Sales Walk-In");
+        orderEntryPage.selectOrderType(orderType);
 
         orderEntryPage.selectWholeOrderDiscount(discount);
 
-        orderEntryPage.enterTip("Sales", "15");
+        orderEntryPage.enterTip(tipDept, tipAmount);
 
         SmallWait(1500);
 
@@ -73,6 +81,6 @@ public class Test_Case_4 extends BaseClass {
 
         Scroll(0, 500);
 
-        orderEntryPage.makePayment("Credit / Debit Card");
+        orderEntryPage.makePayment(paymentMethod);
     }
 }

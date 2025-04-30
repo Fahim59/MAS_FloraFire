@@ -124,7 +124,6 @@ public class BaseClass {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains(expectedText), "The current URL does not contain the expected text: " + expectedText);
     }
-
     public void verifyElementVisibility(By locator) {
         try {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -276,7 +275,6 @@ public class BaseClass {
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, new File(filename));
     }
-
     public static void takeScreenshot() throws IOException {
         String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
         File directory = new File("Images");

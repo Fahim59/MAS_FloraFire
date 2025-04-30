@@ -94,9 +94,13 @@ public class Customer_Maintenance extends BaseClass {
 
         SmallWait(500);
 
+        customerMaintenancePage.enterHouseCreditLimit(customerInfo[10]);
+
         Scroll(0, 300);
 
-        customerMaintenancePage.clickSaveButton();
+        SmallWait(500);
+
+        //customerMaintenancePage.clickSaveButton();
 
         logger.info("Successfully added customer - {}", customerInfo[2]);
     }

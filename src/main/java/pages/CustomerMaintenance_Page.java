@@ -288,6 +288,25 @@ public class CustomerMaintenance_Page extends BaseClass{
                 enterWireOutDiscount(wireDiscount).selectInvoicePaymentSchedule(schedule).enterCustomerReference(reference).enterComment(comment);
     }
 
+
+    /*
+     * House Account
+     */
+
+    private final By houseAccountSpan = By.xpath("//span[text()=' House Account Details ']");
+
+    private final By creditLimitField = By.xpath("//input[@formcontrolname='creditLimit']");
+
+    public void enterHouseCreditLimit(String type) throws InterruptedException {
+        if(type.equalsIgnoreCase("House")){
+            click_Element(houseAccountSpan);
+
+            SmallWait(500);
+
+            write_Send_Keys(creditLimitField, "5000");
+        }
+    }
+
     /*
      * Buttons
      */

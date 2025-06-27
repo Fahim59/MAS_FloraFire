@@ -34,6 +34,8 @@ public class TestCase_9 extends BaseClass {
 
     @Test(description = "Verify that the customer can downgrade package, upgrade licence and confirm the accuracy of recurring payment details and successfully submit the order.", priority = 1)
     public void verifyCustomerPackageDowngradeAndLicensePurchase() throws InterruptedException, IOException {
+        String password = jsonData.getJSONObject("registration_info").getString("password");
+
         /*
          * package downgrade
          */
@@ -79,6 +81,10 @@ public class TestCase_9 extends BaseClass {
         customerName = paymentPage.fetchNameValue();
 
         paymentPage.clickSubmitOrderBtn();
+
+        SmallWait(1000);
+        paymentPage.enterPassword(password);
+        paymentPage.clickConfirmBtn();
 
         logger.info("Customer verifies recurring order price and submit the order");
     }

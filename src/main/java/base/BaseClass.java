@@ -32,8 +32,6 @@ import java.time.*;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -396,7 +394,7 @@ public class BaseClass {
 
     @AfterSuite
     public static void QuitBrowser() throws InterruptedException {
-        //driver.quit();
+        driver.quit();
 
         baseLogger.info("Browser quit and Send Report successfully");
     }

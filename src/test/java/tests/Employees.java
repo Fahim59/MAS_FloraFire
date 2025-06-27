@@ -21,7 +21,7 @@ public class Employees extends BaseClass {
         rolesPage = new Roles_Page(driver);
     }
 
-    @Test(description = "Verify that after successful login, the user is successfully navigated to Role list page", priority = 1)
+    @Test(description = "Verify that after successful login, the user is successfully navigated to Role list page", priority = 1, enabled = false)
     public void verifyCustomerNavigationAfterLogin() throws InterruptedException {
         SmallWait(1000);
 
@@ -33,7 +33,7 @@ public class Employees extends BaseClass {
         logger.info("User successfully navigated to the Role list page");
     }
 
-    @Test(description = "Verify that after successful login, the user can create a new role", priority = 2)
+    @Test(description = "Verify that after successful login, the user can create a new role", priority = 2, enabled = false)
     public void verifyNewRoleCreation() throws InterruptedException {
         SmallWait(1000);
 

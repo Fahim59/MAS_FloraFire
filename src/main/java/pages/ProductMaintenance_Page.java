@@ -198,18 +198,33 @@ public class ProductMaintenance_Page extends BaseClass{
         }
     }
 
-    public void enterGiftCardInfo(String categoryType, String type, String name, String description, String store) throws InterruptedException {
-        selectProductCategoryType(categoryType).selectProductType(type).enterProductName(name).enterDescription(description).selectStore(store);
+//    public void enterGiftCardInfo(String categoryType, String type, String name, String description, String store) throws InterruptedException {
+//        selectProductCategoryType(categoryType).selectProductType(type).enterProductName(name).enterDescription(description).selectStore(store);
+//    }
+
+    public void enterGiftCardInfo(String categoryType, String type, String name, String description) throws InterruptedException {
+        selectProductCategoryType(categoryType).selectProductType(type).enterProductName(name).enterDescription(description);
     }
+
+//    public void enterProductInfo(String code, String type, String status, String sku, String department, String name, String care,
+//                                 String bin, String purchaseUnit, String purchaseValue, String sellingUnit, String sellingValue,
+//                                 String description, String store, String categoryType, String flag, String wireFlag, String wireService) throws InterruptedException {
+//
+//        enterProductCode(code).selectProductType(type).selectProductStatus(status).enterProductSKU(sku).selectProductDepartment(department).
+//                enterProductName(name).selectProductCareCode(care).enterProductBinLocation(bin).selectPurchaseUnit(purchaseUnit).
+//                enterPurchaseUnitValue(purchaseValue).selectSellingUnit(sellingUnit).enterSellingUnitValue(sellingValue).
+//                enterDescription(description).selectStore(store).selectProductCategoryType(categoryType).isCommisionable(flag).
+//                isForceWireService(wireFlag, wireService);
+//    }
 
     public void enterProductInfo(String code, String type, String status, String sku, String department, String name, String care,
                                  String bin, String purchaseUnit, String purchaseValue, String sellingUnit, String sellingValue,
-                                 String description, String store, String categoryType, String flag, String wireFlag, String wireService) throws InterruptedException {
+                                 String description, String categoryType, String flag, String wireFlag, String wireService) throws InterruptedException {
 
         enterProductCode(code).selectProductType(type).selectProductStatus(status).enterProductSKU(sku).selectProductDepartment(department).
                 enterProductName(name).selectProductCareCode(care).enterProductBinLocation(bin).selectPurchaseUnit(purchaseUnit).
                 enterPurchaseUnitValue(purchaseValue).selectSellingUnit(sellingUnit).enterSellingUnitValue(sellingValue).
-                enterDescription(description).selectStore(store).selectProductCategoryType(categoryType).isCommisionable(flag).
+                enterDescription(description).selectProductCategoryType(categoryType).isCommisionable(flag).
                 isForceWireService(wireFlag, wireService);
     }
 
@@ -423,7 +438,7 @@ public class ProductMaintenance_Page extends BaseClass{
 
     private final By imageURLField = By.xpath("//input[@formcontrolname='imageUrl']");
 
-    private final By imageUploadField = By.xpath("(//*[@type='text' and @readonly='true'])[3]");
+    private final By imageUploadField = By.xpath("(//*[@type='text' and @readonly='true'])[1]");
 
     public void uploadProductImage(String flag, String url, String fileName) throws InterruptedException {
         SmallWait(1500);

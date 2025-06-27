@@ -100,7 +100,7 @@ public class Customer_Maintenance extends BaseClass {
 
         SmallWait(500);
 
-        //customerMaintenancePage.clickSaveButton();
+        customerMaintenancePage.clickSaveButton();
 
         logger.info("Successfully added customer - {}", customerInfo[2]);
     }

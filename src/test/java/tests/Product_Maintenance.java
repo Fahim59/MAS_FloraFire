@@ -103,7 +103,8 @@ public class Product_Maintenance extends BaseClass {
 
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("productMaintenance"));
 
-        productMaintenancePage.enterGiftCardInfo(category, type, type, description, storeName);
+        //productMaintenancePage.enterGiftCardInfo(category, type, type, description, storeName);
+        productMaintenancePage.enterGiftCardInfo(category, type, type, description);
 
         Scroll(0, 1600);
 
@@ -136,9 +137,13 @@ public class Product_Maintenance extends BaseClass {
 
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("productMaintenance"));
 
+//        productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
+//                productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
+//                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+
         productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
                 productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
-                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+                productInfo[12], productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
 
 
         productMaintenancePage.enterProductPricingDetails(productInfo[17], productInfo[18], productInfo[19], productInfo[20],
@@ -182,9 +187,13 @@ public class Product_Maintenance extends BaseClass {
 
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("productMaintenance"));
 
+//        productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
+//                productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
+//                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+
         productMaintenancePage.enterProductInfo(productInfo[0], productInfo[1], productInfo[2], productInfo[3], productInfo[4],
                 productInfo[5], productInfo[6], productInfo[7], productInfo[8], productInfo[9], productInfo[10], productInfo[11],
-                productInfo[12], storeName, productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
+                productInfo[12], productInfo[13], productInfo[14], productInfo[15], productInfo[16]);
 
 
         productMaintenancePage.enterProductPricingDetails(productInfo[17], productInfo[18], productInfo[19], productInfo[20],

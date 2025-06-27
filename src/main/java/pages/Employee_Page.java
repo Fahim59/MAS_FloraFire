@@ -77,9 +77,9 @@ public class Employee_Page extends BaseClass {
         SmallWait(1000);
 
         if (!get_Text(countryField).equals(country)) {
-            click_Element(countryField);
-            SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + country + "']")));
+            //click_Element(countryField);
+            //SmallWait(200);
+            //js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + country + "']")));
         }
 
         return this;

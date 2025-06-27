@@ -209,7 +209,7 @@ public class Payment_Page extends BaseClass{
          * validating package price
          */
 
-        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        getPackageNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[2]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertEquals(packageRemainingAmount, getPackageNetDue, "Package net due mismatch; should be: " +packageRemainingAmount+ " but displayed: " +getPackageNetDue);
 
         logger.info("Get Package Net Due: {} and Package Remaining Amount: {}", getPackageNetDue, packageRemainingAmount);
@@ -218,7 +218,7 @@ public class Payment_Page extends BaseClass{
          * validating license price
          */
 
-        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[3]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
+        getLicenseNetDue = Double.parseDouble(driver.findElement(By.xpath(proratedOrderTable + "/tr[3]/td[2]")).getText().replaceAll(".*\\$(\\d+\\.\\d+).*", "$1"));
         Assert.assertEquals(licenseRemainingAmount, getLicenseNetDue, "License net due mismatch; should be: " +licenseRemainingAmount+ " but displayed: " +getLicenseNetDue);
 
         logger.info("Get License Net Due: {} and License Remaining Amount: {}", getLicenseNetDue, licenseRemainingAmount);

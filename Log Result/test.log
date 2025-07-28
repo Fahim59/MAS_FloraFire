@@ -1,296 +1,70 @@
-2025-05-22 16:08:30.483 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:08:42.275 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:08:48.765 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:08:48.766 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:08:52.528 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-05-22 16:09:01.843 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2025-05-22 16:09:05.736 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
-2025-05-22 16:09:07.569 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
-2025-05-22 16:09:13.844 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
-2025-05-22 16:09:17.044 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Doe
-2025-05-22 16:09:51.078 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Emily Johnson
-2025-05-22 16:09:54.990 [main] INFO  tests.Customer_Maintenance - Email added successfully for Emily Johnson
-2025-05-22 16:09:56.840 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Emily Johnson
-2025-05-22 16:10:02.943 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Emily Johnson
-2025-05-22 16:10:05.485 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Emily Johnson
-2025-05-22 16:10:16.114 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Linda Brown
-2025-05-22 16:10:19.972 [main] INFO  tests.Customer_Maintenance - Email added successfully for Linda Brown
-2025-05-22 16:10:21.790 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Linda Brown
-2025-05-22 16:10:28.257 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Linda Brown
-2025-05-22 16:10:31.630 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Linda Brown
-2025-05-22 16:10:40.211 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Michael Brown
-2025-05-22 16:10:44.038 [main] INFO  tests.Customer_Maintenance - Email added successfully for Michael Brown
-2025-05-22 16:10:45.849 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Michael Brown
-2025-05-22 16:10:51.729 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Michael Brown
-2025-05-22 16:10:54.258 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Michael Brown
-2025-05-22 16:11:02.902 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Smith William
-2025-05-22 16:11:06.755 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Smith William
-2025-05-22 16:11:08.590 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Smith William
-2025-05-22 16:11:14.813 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Smith William
-2025-05-22 16:11:18.010 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Smith William
-2025-05-22 16:11:18.014 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 16:14:43.933 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:15:03.931 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:15:13.035 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:15:13.035 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:15:17.861 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
-2025-05-22 16:17:09.650 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:17:22.751 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:17:32.886 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:17:32.890 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:17:37.657 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
-2025-05-22 16:19:19.705 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:19:32.325 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:19:38.892 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:19:38.892 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:19:43.610 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
-2025-05-22 16:21:16.398 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:21:31.564 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:21:38.213 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:21:38.214 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:23:37.074 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:24:07.393 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:24:15.510 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:24:15.510 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:24:20.198 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
-2025-05-22 16:24:40.630 [main] INFO  pages.ProductMaintenance_Page - Product GC found
-2025-05-22 16:24:40.630 [main] INFO  tests.Product_Maintenance - Gift Card added successfully
-2025-05-22 16:28:11.740 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:28:24.752 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:28:33.198 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:28:33.198 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:28:38.088 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
-2025-05-22 16:29:05.693 [main] INFO  pages.ProductMaintenance_Page - Product SF001 found
-2025-05-22 16:29:05.693 [main] INFO  tests.Product_Maintenance - Successfully added product - SF001
-2025-05-22 16:29:32.720 [main] INFO  pages.ProductMaintenance_Page - Product SF002 found
-2025-05-22 16:29:32.720 [main] INFO  tests.Product_Maintenance - Successfully added product - SF002
-2025-05-22 16:30:00.459 [main] INFO  pages.ProductMaintenance_Page - Product F003 found
-2025-05-22 16:30:00.460 [main] INFO  tests.Product_Maintenance - Successfully added product - F003
-2025-05-22 16:30:27.934 [main] INFO  pages.ProductMaintenance_Page - Product F004 found
-2025-05-22 16:30:27.934 [main] INFO  tests.Product_Maintenance - Successfully added product - F004
-2025-05-22 16:30:55.825 [main] INFO  pages.ProductMaintenance_Page - Product F007 found
-2025-05-22 16:30:55.825 [main] INFO  tests.Product_Maintenance - Successfully added product - F007
-2025-05-22 16:31:23.232 [main] INFO  pages.ProductMaintenance_Page - Product F008 found
-2025-05-22 16:31:23.232 [main] INFO  tests.Product_Maintenance - Successfully added product - F008
-2025-05-22 16:31:49.418 [main] INFO  pages.ProductMaintenance_Page - Product F010 found
-2025-05-22 16:31:49.418 [main] INFO  tests.Product_Maintenance - Successfully added product - F010
-2025-05-22 16:32:17.984 [main] INFO  pages.ProductMaintenance_Page - Product WED001 found
-2025-05-22 16:32:17.985 [main] INFO  tests.Product_Maintenance - Successfully added product - WED001
-2025-05-22 16:32:44.289 [main] INFO  pages.ProductMaintenance_Page - Product WED002 found
-2025-05-22 16:32:44.289 [main] INFO  tests.Product_Maintenance - Successfully added product - WED002
-2025-05-22 16:33:18.586 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 16:37:59.819 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:38:11.479 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:38:16.990 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:38:16.990 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:38:21.704 [main] INFO  tests.Discount_Maintenance - User successfully navigated to the Discount Maintenance page
-2025-05-22 16:38:33.045 [main] INFO  pages.DiscountMaintenance_Page - Discount SUMMER30 found
-2025-05-22 16:38:33.045 [main] INFO  tests.Discount_Maintenance - Successfully added data - SUMMER30
-2025-05-22 16:38:44.021 [main] INFO  pages.DiscountMaintenance_Page - Discount FLOWER10 found
-2025-05-22 16:38:44.021 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLOWER10
-2025-05-22 16:38:55.364 [main] INFO  pages.DiscountMaintenance_Page - Discount VALENTINE20 found
-2025-05-22 16:38:55.364 [main] INFO  tests.Discount_Maintenance - Successfully added data - VALENTINE20
-2025-05-22 16:39:06.393 [main] INFO  pages.DiscountMaintenance_Page - Discount FLASH5 found
-2025-05-22 16:39:06.393 [main] INFO  tests.Discount_Maintenance - Successfully added data - FLASH5
-2025-05-22 16:39:17.147 [main] INFO  pages.DiscountMaintenance_Page - Discount SAVE50 found
-2025-05-22 16:39:17.147 [main] INFO  tests.Discount_Maintenance - Successfully added data - SAVE50
-2025-05-22 16:39:27.913 [main] INFO  pages.DiscountMaintenance_Page - Discount FIRSTORDER found
-2025-05-22 16:39:27.913 [main] INFO  tests.Discount_Maintenance - Successfully added data - FIRSTORDER
-2025-05-22 16:39:38.957 [main] INFO  pages.DiscountMaintenance_Page - Discount FREEDEL found
-2025-05-22 16:39:38.957 [main] INFO  tests.Discount_Maintenance - Successfully added data - FREEDEL
-2025-05-22 16:39:49.709 [main] INFO  pages.DiscountMaintenance_Page - Discount MIDNIGHT100 found
-2025-05-22 16:39:49.709 [main] INFO  tests.Discount_Maintenance - Successfully added data - MIDNIGHT100
-2025-05-22 16:39:49.712 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 16:42:26.728 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:42:36.342 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:42:44.027 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:42:44.027 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:42:48.837 [main] INFO  tests.GiftCards - User successfully navigated to the Gift Card List page
-2025-05-22 16:43:02.364 [main] INFO  pages.GiftCard_Page - Gift Card 1001 found
-2025-05-22 16:43:02.364 [main] INFO  tests.GiftCards - Successfully added data - 1001
-2025-05-22 16:43:12.181 [main] INFO  pages.GiftCard_Page - Gift Card 1002 found
-2025-05-22 16:43:12.181 [main] INFO  tests.GiftCards - Successfully added data - 1002
-2025-05-22 16:43:21.956 [main] INFO  pages.GiftCard_Page - Gift Card 1003 found
-2025-05-22 16:43:21.956 [main] INFO  tests.GiftCards - Successfully added data - 1003
-2025-05-22 16:43:21.956 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 16:43:41.046 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:43:52.501 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:44:00.605 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:44:00.605 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:44:05.947 [main] INFO  tests.Employees - User successfully navigated to the Role list page
-2025-05-22 16:44:12.923 [main] INFO  pages.Administration.Roles_Page - Role employee found
-2025-05-22 16:44:12.923 [main] INFO  tests.Employees - User successfully created new role - employee
-2025-05-22 16:44:46.064 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:44:59.302 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:45:06.318 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:45:06.318 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:45:11.688 [main] INFO  tests.Employees - User successfully navigated to the Role list page
-2025-05-22 16:45:16.759 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-05-22 16:47:08.254 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:47:17.712 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:47:26.205 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:47:26.205 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:49:26.164 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:49:35.236 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:49:41.736 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:49:41.736 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:49:46.806 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-05-22 16:51:20.618 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:51:30.065 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:51:37.596 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:51:37.596 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:51:42.769 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-05-22 16:53:39.955 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:53:49.482 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:53:55.493 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:53:55.493 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:54:00.924 [main] INFO  tests.Employees - User successfully navigated to the Employee list page
-2025-05-22 16:54:25.626 [main] INFO  pages.Employee_Page - Employee 1001 found
-2025-05-22 16:54:25.626 [main] INFO  tests.Employees - Successfully added Employee - 1001
-2025-05-22 16:54:48.225 [main] INFO  pages.Employee_Page - Employee 1002 found
-2025-05-22 16:54:48.226 [main] INFO  tests.Employees - Successfully added Employee - 1002
-2025-05-22 16:55:11.800 [main] INFO  pages.Employee_Page - Employee 1003 found
-2025-05-22 16:55:11.800 [main] INFO  tests.Employees - Successfully added Employee - 1003
-2025-05-22 16:55:34.552 [main] INFO  pages.Employee_Page - Employee 1004 found
-2025-05-22 16:55:34.553 [main] INFO  tests.Employees - Successfully added Employee - 1004
-2025-05-22 16:55:57.080 [main] INFO  pages.Employee_Page - Employee 1005 found
-2025-05-22 16:55:57.080 [main] INFO  tests.Employees - Successfully added Employee - 1005
-2025-05-22 16:56:19.241 [main] INFO  pages.Employee_Page - Employee 1006 found
-2025-05-22 16:56:19.241 [main] INFO  tests.Employees - Successfully added Employee - 1006
-2025-05-22 16:56:19.244 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 16:59:27.284 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 16:59:37.659 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 16:59:44.722 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 16:59:44.723 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 16:59:49.621 [main] INFO  tests.Settings.Corporate_Settings - User successfully navigated to the Corporate Settings page
-2025-05-22 16:59:50.881 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings General data
-2025-05-22 16:59:52.693 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Transaction Charge data
-2025-05-22 16:59:54.463 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Tax data
-2025-05-22 16:59:56.012 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings Recipe Inventory Manage Type data
-2025-05-22 16:59:56.211 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings POS data
-2025-05-22 16:59:56.294 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Settings GiftCard data
-2025-05-22 16:59:58.404 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Customer data
-2025-05-22 16:59:59.108 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:00:49.686 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:01:00.973 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:01:08.131 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:01:08.131 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:01:12.975 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
-2025-05-22 17:01:25.908 [main] INFO  tests.Settings.Store_Settings - Successfully added Store Settings data
-2025-05-22 17:01:25.911 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:03:46.636 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:03:57.161 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:04:09.354 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:04:09.354 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:04:14.241 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
-2025-05-22 17:04:27.340 [main] INFO  tests.Settings.Store_Settings - Successfully added Store Settings data
-2025-05-22 17:04:27.345 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:05:26.076 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:05:39.061 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:05:47.012 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:05:47.012 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:05:51.906 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
-2025-05-22 17:05:59.033 [main] INFO  tests.Settings.Employee_Settings - Successfully added Employee Settings data
-2025-05-22 17:05:59.037 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:06:08.382 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:06:23.645 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:06:40.411 [main] INFO  base.BaseClass - Test Failed: An exception occurred - Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Home'] (tried for 15 second(s) with 500 milliseconds interval)
-2025-05-22 17:06:40.411 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:06:47.146 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:07:00.273 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:07:08.420 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:07:08.420 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:07:13.461 [main] INFO  tests.Settings.Delivery.MapOption_Settings - User successfully navigated to the Map Option Settings page
-2025-05-22 17:07:15.430 [main] INFO  tests.Settings.Delivery.MapOption_Settings - Successfully added API key data
-2025-05-22 17:07:15.433 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:07:29.044 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:07:44.555 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:07:56.093 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:07:56.093 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:08:01.054 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
-2025-05-22 17:08:18.428 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
-2025-05-22 17:08:21.317 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:09:18.057 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:09:30.676 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:09:37.073 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:09:37.075 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:09:42.081 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
-2025-05-22 17:09:58.695 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
-2025-05-22 17:10:01.624 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:12:52.976 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:13:04.700 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:13:12.849 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:13:12.849 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:13:17.806 [main] INFO  tests.Settings.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
-2025-05-22 17:13:36.902 [main] INFO  pages.Settings.Delivery.DeliveryMode_Page - Slot DS-MORN found
-2025-05-22 17:13:38.987 [main] INFO  tests.Settings.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
-2025-05-22 17:13:57.508 [main] INFO  pages.Settings.Delivery.DeliveryMode_Page - Slot DS-EVE found
-2025-05-22 17:13:59.586 [main] INFO  tests.Settings.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
-2025-05-22 17:13:59.586 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:14:35.441 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:14:44.867 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:14:50.989 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:14:50.989 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:14:55.905 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
-2025-05-22 17:15:00.907 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:00.938 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:00.973 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:00.998 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.017 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.047 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.062 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.117 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.141 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.170 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.195 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:01.220 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
-2025-05-22 17:15:06.849 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.866 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.885 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.903 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.921 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.938 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.955 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:06.986 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.004 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.023 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.040 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.058 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.076 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.098 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.133 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.161 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.179 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:07.198 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
-2025-05-22 17:15:08.302 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:16:12.256 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:16:28.490 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:16:33.977 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:16:33.977 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:16:38.859 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
-2025-05-22 17:16:59.800 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Flower Haven found
-2025-05-22 17:16:59.800 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Flower Haven
-2025-05-22 17:19:40.144 [main] INFO  pages.Settings.Delivery.ShortCode_Page - Delivery Code Blooming Gardens found
-2025-05-22 17:19:40.144 [main] INFO  tests.Settings.Delivery.Short_Code - Successfully added Delivery Short Code - Blooming Gardens
-2025-05-22 17:20:23.138 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:20:33.164 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:20:44.183 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:20:49.940 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:20:49.940 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:20:54.815 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2025-05-22 17:21:09.624 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:21:24.359 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:21:36.818 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:21:43.559 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:21:43.559 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:21:48.402 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2025-05-22 17:21:55.929 [main] INFO  pages.Settings.Vehicle_Page - Vehicle BD-1234 not found
-2025-05-22 17:21:55.936 [main] INFO  tests.Settings.Vehicle - Vehicle BD-1234 added successfully
-2025-05-22 17:22:08.258 [main] INFO  base.BaseClass - Browser quit successfully
-2025-05-22 17:22:26.249 [main] INFO  base.BaseClass - Browser launched successfully
-2025-05-22 17:22:35.391 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-05-22 17:22:41.230 [main] INFO  base.BaseClass - Element is visible.
-2025-05-22 17:22:41.230 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-05-22 17:22:46.049 [main] INFO  tests.Settings.CreditCard_Settings - User successfully navigated to the Credit Card Settings page
-2025-05-22 17:22:48.707 [main] INFO  tests.Settings.CreditCard_Settings - Successfully added Credit Card Settings data
-2025-05-22 17:22:48.710 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-28 12:37:39.355 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 12:38:16.444 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 12:38:29.297 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-28 12:38:36.604 [main] INFO  base.BaseClass - Element is visible.
+2025-07-28 12:38:36.604 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-28 12:38:40.627 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-07-28 12:38:50.938 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-07-28 12:38:54.944 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-07-28 12:38:57.056 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-07-28 18:24:08.255 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 18:24:18.451 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-28 18:24:25.858 [main] INFO  base.BaseClass - Element is visible.
+2025-07-28 18:24:25.858 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-28 18:24:29.871 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-07-28 18:24:39.700 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-07-28 18:24:43.685 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-07-28 18:24:45.656 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-07-28 18:25:47.173 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 18:25:57.197 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-28 18:26:03.218 [main] INFO  base.BaseClass - Element is visible.
+2025-07-28 18:26:03.219 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-28 18:26:07.152 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-07-28 18:26:17.264 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-07-28 18:26:21.748 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-07-28 18:26:24.134 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-07-28 18:31:21.266 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 18:31:31.595 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-28 18:31:37.993 [main] INFO  base.BaseClass - Element is visible.
+2025-07-28 18:31:37.993 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-28 18:31:42.002 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-07-28 18:31:51.898 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
+2025-07-28 18:31:56.386 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
+2025-07-28 18:31:58.779 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
+2025-07-28 18:32:05.247 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
+2025-07-28 18:32:08.549 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Doe
+2025-07-28 18:32:19.436 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Maria Lopez
+2025-07-28 18:32:23.926 [main] INFO  tests.Customer_Maintenance - Email added successfully for Maria Lopez
+2025-07-28 18:32:26.323 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Maria Lopez
+2025-07-28 18:32:58.545 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-28 18:38:39.712 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-28 18:38:50.175 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-28 18:38:56.753 [main] INFO  base.BaseClass - Element is visible.
+2025-07-28 18:38:56.753 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-28 18:39:00.719 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
+2025-07-28 18:39:10.640 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Maria Lopez
+2025-07-28 18:39:15.160 [main] INFO  tests.Customer_Maintenance - Email added successfully for Maria Lopez
+2025-07-28 18:39:17.592 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Maria Lopez
+2025-07-28 18:39:24.083 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Maria Lopez
+2025-07-28 18:39:27.340 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Maria Lopez
+2025-07-28 18:39:36.342 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Emily Johnson
+2025-07-28 18:39:40.784 [main] INFO  tests.Customer_Maintenance - Email added successfully for Emily Johnson
+2025-07-28 18:39:43.177 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Emily Johnson
+2025-07-28 18:39:49.280 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Emily Johnson
+2025-07-28 18:39:51.854 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Emily Johnson
+2025-07-28 18:40:00.614 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Linda Brown
+2025-07-28 18:40:05.033 [main] INFO  tests.Customer_Maintenance - Email added successfully for Linda Brown
+2025-07-28 18:40:07.394 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Linda Brown
+2025-07-28 18:40:13.816 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Linda Brown
+2025-07-28 18:40:17.065 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Linda Brown
+2025-07-28 18:40:25.937 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Michael Brown
+2025-07-28 18:40:30.325 [main] INFO  tests.Customer_Maintenance - Email added successfully for Michael Brown
+2025-07-28 18:40:32.667 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Michael Brown
+2025-07-28 18:40:38.718 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Michael Brown
+2025-07-28 18:40:41.287 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Michael Brown
+2025-07-28 18:40:50.237 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Smith William
+2025-07-28 18:40:54.674 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Smith William
+2025-07-28 18:40:57.046 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Smith William
+2025-07-28 18:41:03.453 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Smith William
+2025-07-28 18:41:06.695 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Smith William
+2025-07-28 18:41:06.699 [main] INFO  base.BaseClass - Browser quit successfully

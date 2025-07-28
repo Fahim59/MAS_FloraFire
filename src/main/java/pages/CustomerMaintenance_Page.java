@@ -117,13 +117,15 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By newEmailButton = By.xpath("//span[contains(text(),'New Email')]");
     private final By emailField = By.xpath("//input[@formcontrolname='email']");
-    private final By isPrimaryEmailField = By.xpath("(.//*[@type='checkbox'])[2]");
+    //private final By isPrimaryEmailField = By.xpath("(.//*[@type='checkbox'])[2]");
     private final By saveEmailBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
 
     private final By newPhoneButton = By.xpath("//span[contains(text(),'New Phone Number')]");
     private final By phoneField = By.xpath("//input[@formcontrolname='phoneNumber']");
-    private final By isPrimaryPhoneField = By.xpath("(.//*[@type='checkbox'])[2]");
+    //private final By isPrimaryPhoneField = By.xpath("(.//*[@type='checkbox'])[2]");
     private final By savePhoneBtn = By.xpath("(//span[@class='mdc-button__label'][normalize-space()='Save'])[2]");
+
+    private final By isPrimaryField = By.xpath("//mat-checkbox[@formcontrolname='isPrimary']");
 
     public CustomerMaintenance_Page clickEmailButton() {
         click_Element(newEmailButton);
@@ -131,9 +133,9 @@ public class CustomerMaintenance_Page extends BaseClass{
     }
     public void enterEmail(String email) throws InterruptedException {
         write_Send_Keys(emailField, email);
-        selectCheckBox(isPrimaryEmailField);
+        selectCheckBox(isPrimaryField);
 
-        SmallWait(500);
+        SmallWait(1000);
         click_Element(saveEmailBtn);
     }
 
@@ -148,9 +150,9 @@ public class CustomerMaintenance_Page extends BaseClass{
     }
     public void enterPhone(String phone) throws InterruptedException {
         write_Send_Keys(phoneField, phone);
-        selectCheckBox(isPrimaryPhoneField);
+        selectCheckBox(isPrimaryField);
 
-        SmallWait(500);
+        SmallWait(1000);
         click_Element(savePhoneBtn);
     }
 
@@ -163,10 +165,10 @@ public class CustomerMaintenance_Page extends BaseClass{
      * Other Details
      */
 
-    private final By customerStatusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
-    private final By customerTypeField = By.xpath("(//div[contains(@id,'mat-select-value')])[3]");
-    private final By customerAccountClassField = By.xpath("(//div[contains(@id,'mat-select-value')])[4]");
-    private final By storeField = By.xpath("(//div[contains(@id,'mat-select-value')])[6]");
+    private final By customerStatusField = By.xpath("//mat-select[@formcontrolname='statusValueId']");
+    private final By customerTypeField = By.xpath("//mat-select[@formcontrolname='customerAccountType']");
+    private final By customerAccountClassField = By.xpath("//mat-select[@formcontrolname='acctClassValueId']");
+    private final By storeField = By.xpath("//mat-select[@formcontrolname='storeId']");
 
     private final By taxExemptField = By.xpath("//mat-radio-group[@formcontrolname='taxExempt']//input[contains(@name, 'mat-radio-group')]");
     private final By taxNumberField = By.xpath("//input[@formcontrolname='taxCertificate']");
@@ -178,7 +180,7 @@ public class CustomerMaintenance_Page extends BaseClass{
 
     private final By wireOutDiscountField = By.xpath("//input[@formcontrolname='discountOnWireout']");
 
-    private final By invoicePaymentScheduleField = By.xpath("(//div[contains(@id,'mat-select-value')])[8]");
+    private final By invoicePaymentScheduleField = By.xpath("//mat-select[@formcontrolname='invoicePaymentSchedulerValueId']");
 
     private final By referenceField = By.xpath("//input[@formcontrolname='customerReference']");
     private final By commentField = By.xpath("//textarea[@formcontrolname='comment']");

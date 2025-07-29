@@ -31,16 +31,6 @@ public class Discount_Maintenance extends BaseClass {
     }
 
     public static String[] discountData(Map<String, String> valueData) {
-        /*
-         * data[0] = code
-         * data[1] = type
-         * data[2] = amount
-         * data[3] = status
-         * data[4] = endDate
-         * data[5] = applies_on
-         * data[6] = description
-         */
-
         String code = valueData.get("Code");
         String type = valueData.get("Type");
         String amount = valueData.get("Amount");

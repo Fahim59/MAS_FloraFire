@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CustomerMaintenance_Page;
+import pages.ProductMaintenance_Page;
 
 import java.time.Duration;
 
@@ -26,6 +27,7 @@ public class CorporateSettings_Page extends BaseClass{
     private final By geocodingPreferenceField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
     private final By passwordResetDaysField = By.xpath("//input[@formcontrolname='passwordResetDays']");
     private final By auditLogEmailField = By.xpath("//input[@formcontrolname='auditLogEmails']");
+    private final By hotOrderThreshold = By.xpath("//input[@formcontrolname='hotOrderThresholdInHour']");
 
     public CorporateSettings_Page selectGeocodingPreference(String preference) throws InterruptedException {
         click_Element(geocodingPreferenceField);
@@ -41,12 +43,17 @@ public class CorporateSettings_Page extends BaseClass{
         return this;
     }
 
-    public void enterAuditLogEmail(String email){
+    public CorporateSettings_Page enterAuditLogEmail(String email){
         write_Send_Keys(auditLogEmailField, email);
+        return this;
     }
 
-    public void enterGeneralData(String preference, String day, String email) throws InterruptedException {
-        selectGeocodingPreference(preference).enterPasswordResetDays(day).enterAuditLogEmail(email);
+    public void enterHotOrderThresholdTime(String time){
+        write_Send_Keys(hotOrderThreshold, time);
+    }
+
+    public void enterGeneralData(String preference, String day, String email, String time) throws InterruptedException {
+        selectGeocodingPreference(preference).enterPasswordResetDays(day).enterAuditLogEmail(email).enterHotOrderThresholdTime(time);
     }
 
     /* * Transaction Charges */
@@ -71,6 +78,20 @@ public class CorporateSettings_Page extends BaseClass{
 
     public void enterTransactionChargeData(String relayFee, String overSeasRelayFee, String wireOutDeliveryFee) {
         enterRelayFee(relayFee).enterOverSeasRelayFee(overSeasRelayFee).enterWireOutDeliveryFee(wireOutDeliveryFee);
+    }
+
+    /* * Sales */
+
+    private final By inventoryTracking = By.xpath("//mat-select[@formcontrolname='inventoryTrackingType']");
+
+    public CorporateSettings_Page selectInventoryTracking(String type) throws InterruptedException {
+        if(!get_Text(inventoryTracking).equals(type)){
+            click_Element(inventoryTracking);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option[.//span[normalize-space()='"+type+"']]")));
+        }
+
+        return this;
     }
 
     /* * Tax */
@@ -268,14 +289,89 @@ public class CorporateSettings_Page extends BaseClass{
         return this;
     }
 
+    /* * Terms And Conditions */
+
+    private final By termField = By.xpath("//textarea[@formcontrolname='termsAndConditions']");
+
+    public CorporateSettings_Page enterTermsAndConditions(String term) {
+        write_Send_Keys(termField, term);
+        return this;
+    }
+
+    /* * Default Print Message */
+
+    private final By receiptMessage = By.xpath("//input[@formcontrolname='printReceiptMessage']");
+    private final By invoiceMessage = By.xpath("//input[@formcontrolname='printInvoiceMessage']");
+
+    public CorporateSettings_Page enterReceiptMessage(String recMsg) {
+        write_Send_Keys(receiptMessage, recMsg);
+        return this;
+    }
+
+    public void enterInvoiceMessage(String invMsg) {
+        write_Send_Keys(invoiceMessage, invMsg);
+    }
+
+    public void setPrintMessage(String recMsg, String invMsg){
+        enterReceiptMessage(recMsg).enterInvoiceMessage(invMsg);
+    }
+
+    /* * Design Module */
+
+    private final By cutoffField = By.xpath("//input[@formcontrolname='cutOffTime']");
+
+    public CorporateSettings_Page enterCutOffTime(String time) {
+        write_Send_Keys(cutoffField, time);
+        return this;
+    }
+
+    /* * Email Service Type */
+
+    private final By emailTypeField = By.xpath("//mat-radio-group[@formcontrolname='emailServiceType']//input[contains(@name, 'mat-radio-group')]");
+
+    public void clickEmailType(String type) {
+        if(type.equalsIgnoreCase("ClickSend")){
+            click_Radio_Element(emailTypeField, "1");
+        }
+        else {
+            click_Radio_Element(emailTypeField, "2");
+        }
+    }
+
+    /* * Sms Settings */
+
+    private final By sendSmsField = By.xpath("//mat-checkbox[@formcontrolname='sendSmsAfterOrderCompletion']//label[normalize-space()='Send Sms After Order Completion']");
+
+    public void sendSmsAfterOrder(String flag) {
+        if(flag.equalsIgnoreCase("Yes")){
+            selectCheckBox(sendSmsField);
+        }
+    }
+
+    /* * Invoice Email policy */
+
+    private final By sendInvoiceField = By.xpath("//mat-checkbox[@formcontrolname='sendInvoiceInMailAfterOrderProcess']//label[normalize-space()='Send Invoice Email After Order Process']");
+
+    public void sendInvoiceAfterOrder(String flag) {
+        if(flag.equalsIgnoreCase("Yes")){
+            selectCheckBox(sendInvoiceField);
+        }
+    }
+
     /*
       * Buttons
     */
 
     private final By saveBtn = By.xpath("//span[contains(text(),'Save')]");
 
+    private final By successMessage = By.xpath("//p[@class='abp-toast-message']");
+
     public void clickSaveButton() throws InterruptedException {
         SmallWait(500);
         click_Element_Js(saveBtn);
+    }
+
+    public String getSuccessMessage(){
+        return get_Text(successMessage);
     }
 }

@@ -191,7 +191,8 @@ public class BaseClass {
 
         if (text.isEmpty()) {
             element.sendKeys(txt);
-        } else {
+        }
+        else {
             element.clear();
             element.sendKeys(txt);
         }

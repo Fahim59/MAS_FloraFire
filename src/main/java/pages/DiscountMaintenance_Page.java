@@ -4,6 +4,7 @@ import base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -83,7 +84,9 @@ public class DiscountMaintenance_Page extends BaseClass{
     }
 
     public DiscountMaintenance_Page enterEndDate(String date){
-        write_JS_Executor(endDateField, date);
+        WebElement element = wait_for_presence(endDateField);
+        js.executeScript("arguments[0].value = '';", element);
+        write_Send_Keys(endDateField, date);
 
         return this;
     }

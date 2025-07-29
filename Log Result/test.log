@@ -1,70 +1,15 @@
-2025-07-28 12:37:39.355 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 12:38:16.444 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 12:38:29.297 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-28 12:38:36.604 [main] INFO  base.BaseClass - Element is visible.
-2025-07-28 12:38:36.604 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-28 12:38:40.627 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-07-28 12:38:50.938 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2025-07-28 12:38:54.944 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
-2025-07-28 12:38:57.056 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
-2025-07-28 18:24:08.255 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 18:24:18.451 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-28 18:24:25.858 [main] INFO  base.BaseClass - Element is visible.
-2025-07-28 18:24:25.858 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-28 18:24:29.871 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-07-28 18:24:39.700 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2025-07-28 18:24:43.685 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
-2025-07-28 18:24:45.656 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
-2025-07-28 18:25:47.173 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 18:25:57.197 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-28 18:26:03.218 [main] INFO  base.BaseClass - Element is visible.
-2025-07-28 18:26:03.219 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-28 18:26:07.152 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-07-28 18:26:17.264 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2025-07-28 18:26:21.748 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
-2025-07-28 18:26:24.134 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
-2025-07-28 18:31:21.266 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 18:31:31.595 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-28 18:31:37.993 [main] INFO  base.BaseClass - Element is visible.
-2025-07-28 18:31:37.993 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-28 18:31:42.002 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-07-28 18:31:51.898 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Doe
-2025-07-28 18:31:56.386 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Doe
-2025-07-28 18:31:58.779 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Doe
-2025-07-28 18:32:05.247 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Doe
-2025-07-28 18:32:08.549 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Doe
-2025-07-28 18:32:19.436 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Maria Lopez
-2025-07-28 18:32:23.926 [main] INFO  tests.Customer_Maintenance - Email added successfully for Maria Lopez
-2025-07-28 18:32:26.323 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Maria Lopez
-2025-07-28 18:32:58.545 [main] INFO  base.BaseClass - Browser quit successfully
-2025-07-28 18:38:39.712 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-28 18:38:50.175 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-28 18:38:56.753 [main] INFO  base.BaseClass - Element is visible.
-2025-07-28 18:38:56.753 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-28 18:39:00.719 [main] INFO  tests.Customer_Maintenance - User clicked on the customer menu and successfully navigated to the Customer List page
-2025-07-28 18:39:10.640 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Maria Lopez
-2025-07-28 18:39:15.160 [main] INFO  tests.Customer_Maintenance - Email added successfully for Maria Lopez
-2025-07-28 18:39:17.592 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Maria Lopez
-2025-07-28 18:39:24.083 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Maria Lopez
-2025-07-28 18:39:27.340 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Maria Lopez
-2025-07-28 18:39:36.342 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Emily Johnson
-2025-07-28 18:39:40.784 [main] INFO  tests.Customer_Maintenance - Email added successfully for Emily Johnson
-2025-07-28 18:39:43.177 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Emily Johnson
-2025-07-28 18:39:49.280 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Emily Johnson
-2025-07-28 18:39:51.854 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Emily Johnson
-2025-07-28 18:40:00.614 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Linda Brown
-2025-07-28 18:40:05.033 [main] INFO  tests.Customer_Maintenance - Email added successfully for Linda Brown
-2025-07-28 18:40:07.394 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Linda Brown
-2025-07-28 18:40:13.816 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Linda Brown
-2025-07-28 18:40:17.065 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Linda Brown
-2025-07-28 18:40:25.937 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for Michael Brown
-2025-07-28 18:40:30.325 [main] INFO  tests.Customer_Maintenance - Email added successfully for Michael Brown
-2025-07-28 18:40:32.667 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for Michael Brown
-2025-07-28 18:40:38.718 [main] INFO  tests.Customer_Maintenance - Other details added successfully for Michael Brown
-2025-07-28 18:40:41.287 [main] INFO  tests.Customer_Maintenance - Successfully added customer - Michael Brown
-2025-07-28 18:40:50.237 [main] INFO  tests.Customer_Maintenance - Personal details added successfully for John Smith William
-2025-07-28 18:40:54.674 [main] INFO  tests.Customer_Maintenance - Email added successfully for John Smith William
-2025-07-28 18:40:57.046 [main] INFO  tests.Customer_Maintenance - Phone number added successfully for John Smith William
-2025-07-28 18:41:03.453 [main] INFO  tests.Customer_Maintenance - Other details added successfully for John Smith William
-2025-07-28 18:41:06.695 [main] INFO  tests.Customer_Maintenance - Successfully added customer - John Smith William
-2025-07-28 18:41:06.699 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 12:30:13.649 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 12:30:24.059 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 12:30:30.336 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 12:30:30.336 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 12:30:35.148 [main] INFO  tests.Settings.Employee_Settings - User successfully navigated to the Employee Settings page
+2025-07-29 12:30:42.180 [main] INFO  tests.Settings.Employee_Settings - Successfully added Employee Settings data
+2025-07-29 12:30:42.183 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 12:49:44.309 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 12:49:54.066 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 12:50:01.274 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 12:50:01.274 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 12:50:06.248 [main] INFO  tests.Product_Maintenance - User successfully navigated to the Product Maintenance page
+2025-07-29 12:50:21.627 [main] INFO  tests.Product_Maintenance - Successfully added product - ADD001
+2025-07-29 12:50:36.347 [main] INFO  tests.Product_Maintenance - Successfully added product - ADD002
+2025-07-29 12:50:36.351 [main] INFO  base.BaseClass - Browser quit successfully

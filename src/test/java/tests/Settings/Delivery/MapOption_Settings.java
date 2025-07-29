@@ -32,7 +32,7 @@ public class MapOption_Settings extends BaseClass {
     public void verifyMapOptionSettingsDataEntry() {
         String message = jsonData.getJSONObject("successMessage").getString("mapOptionSettings");
 
-        String key = "7rxmANLpTlwNV5DLJYfPamojRZ4OJvnC";
+        String key = "VC_CuXWJMwOjjNozD5MMR2VI_nJH0D1ynQy6q2jdQnY";
 
         mapOptionSettingsPage.enterAPIKeySettings(key);
 

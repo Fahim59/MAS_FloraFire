@@ -31,31 +31,6 @@ public class Delivery_Zone extends BaseClass {
     }
 
     public static String[] zoneData(Map<String, String> valueData) {
-        /*
-         * data[0] = name
-         * data[1] = description
-         * data[2] = type
-         * data[3] = area
-         * data[4] = lat1
-         * data[5] = long1
-         * data[6] = lat2
-         * data[7] = long2
-         * data[8] = lat3
-         * data[9] = long3
-         * data[10] = zip
-         * data[11] = zoneFee
-         * data[12] = withInTwo
-         * data[13] = withInThree
-         * data[14] = withInThree
-         * data[15] = express
-         * data[16] = wedding
-         * data[17] = futureWithInTwo
-         * data[18] = futureWithInThree
-         * data[19] = futureWithInFour
-         * data[20] = salesTax
-         * data[21] = sunday
-         */
-
         String name = valueData.get("Zone Name");
         String description = valueData.get("Description");
         String type = valueData.get("Type");
@@ -112,6 +87,8 @@ public class Delivery_Zone extends BaseClass {
                 zoneInfo[17], zoneInfo[18], zoneInfo[19], zoneInfo[20], zoneInfo[21]);
 
         deliveryZonePage.clickSaveButton();
+
+        Scroll(0, -800);
 
         logger.info("Successfully added Delivery Zone using - {}", zoneInfo[0]);
     }

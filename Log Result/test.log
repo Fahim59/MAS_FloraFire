@@ -358,3 +358,116 @@ Session ID: 7617f556bd884d671f26de5d86920ade
 2025-07-29 17:43:33.200 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Corporate Customer data
 2025-07-29 17:43:33.314 [main] INFO  tests.Settings.Corporate_Settings - Successfully added Max Idle Time Before Session Timeout data
 2025-07-29 17:43:33.809 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 17:44:57.933 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 17:45:07.676 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 17:45:13.572 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 17:45:13.574 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 17:45:18.431 [main] INFO  tests.Settings.Store_Settings - User successfully navigated to the Store page
+2025-07-29 17:45:31.448 [main] INFO  tests.Settings.Store_Settings - Successfully added Store Settings data
+2025-07-29 17:45:31.451 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 17:59:46.232 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 17:59:56.472 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:00:03.597 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:00:03.597 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:00:08.468 [main] INFO  tests.Settings.Delivery.MapOption_Settings - User successfully navigated to the Map Option Settings page
+2025-07-29 18:00:10.831 [main] INFO  tests.Settings.Delivery.MapOption_Settings - Successfully added API key data
+2025-07-29 18:00:10.834 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:00:24.720 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:00:35.383 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:00:43.685 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:00:43.685 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:00:48.554 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-07-29 18:01:04.773 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-07-29 18:01:07.531 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:02:00.728 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:02:11.357 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:02:22.108 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:02:22.108 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:02:27.055 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-07-29 18:02:44.129 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-07-29 18:02:47.074 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:03:47.238 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:03:57.162 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:04:04.262 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:04:04.262 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:04:09.196 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-07-29 18:04:25.906 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-07-29 18:04:29.167 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:04:41.004 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:04:50.605 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:04:58.329 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:04:58.329 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:05:03.701 [main] INFO  tests.Settings.Delivery.Delivery_Zone - User successfully navigated to the Delivery Zone page
+2025-07-29 18:05:22.482 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Coordinates
+2025-07-29 18:05:33.975 [main] INFO  tests.Settings.Delivery.Delivery_Zone - Successfully added Delivery Zone using - Zip
+2025-07-29 18:05:33.978 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:06:06.061 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:06:15.679 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:06:22.408 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:06:22.408 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:06:27.312 [main] INFO  tests.Settings.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-07-29 18:06:46.343 [main] INFO  pages.Settings.Delivery.DeliveryMode_Page - Slot DS-MORN found
+2025-07-29 18:06:51.147 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:08:51.374 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:09:00.883 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:09:07.171 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:09:07.171 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:09:12.050 [main] INFO  tests.Settings.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-07-29 18:09:32.842 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:11:36.631 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:11:46.288 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:11:53.550 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:11:53.552 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:11:58.477 [main] INFO  tests.Settings.Delivery.Delivery_Mode - User successfully navigated to the Delivery Mode page
+2025-07-29 18:12:17.562 [main] INFO  pages.Settings.Delivery.DeliveryMode_Page - Slot DS-MORN found
+2025-07-29 18:12:19.631 [main] INFO  tests.Settings.Delivery.Delivery_Mode - Successfully added Delivery Mode - Standard
+2025-07-29 18:12:38.583 [main] INFO  pages.Settings.Delivery.DeliveryMode_Page - Slot DS-EVE found
+2025-07-29 18:12:40.656 [main] INFO  tests.Settings.Delivery.Delivery_Mode - Successfully added Delivery Mode - Holiday
+2025-07-29 18:12:40.659 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:13:32.194 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:13:41.928 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:13:50.419 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:13:50.419 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:13:55.366 [main] INFO  tests.Settings.Delivery.Calendar - User successfully navigated to the Calendar page
+2025-07-29 18:14:00.350 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.377 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.405 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.430 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.452 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.476 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.501 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.540 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.563 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:00.587 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 not found on the calendar
+2025-07-29 18:14:04.547 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 9 found on the calendar
+2025-07-29 18:14:04.547 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-07-29 18:14:08.865 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.881 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.900 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.918 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.936 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.955 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:08.972 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.002 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.023 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.040 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.059 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.084 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.107 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.130 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.166 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:09.192 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 not found on the calendar
+2025-07-29 18:14:13.121 [main] INFO  pages.Settings.Delivery.Calendar_Page - Date 15 found on the calendar
+2025-07-29 18:14:13.121 [main] INFO  tests.Settings.Delivery.Calendar - Successfully added Calendar data
+2025-07-29 18:14:13.124 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-29 18:14:32.683 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:14:41.658 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:14:47.852 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:14:47.852 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:14:52.845 [main] INFO  tests.Settings.Delivery.Short_Code - User successfully navigated to the Delivery Short Code page
+2025-07-29 18:15:38.237 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-29 18:15:47.844 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-29 18:15:54.287 [main] INFO  base.BaseClass - Element is visible.
+2025-07-29 18:15:54.287 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-29 18:15:59.132 [main] INFO  tests.Settings.CreditCard_Settings - User successfully navigated to the Credit Card Settings page
+2025-07-29 18:16:01.987 [main] INFO  base.BaseClass - Browser quit successfully

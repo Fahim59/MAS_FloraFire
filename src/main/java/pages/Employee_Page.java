@@ -77,9 +77,9 @@ public class Employee_Page extends BaseClass {
         SmallWait(1000);
 
         if (!get_Text(countryField).equals(country)) {
-            //click_Element(countryField);
-            //SmallWait(200);
-            //js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + country + "']")));
+            click_Element(countryField);
+            SmallWait(200);
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + country + "']")));
         }
 
         return this;
@@ -164,7 +164,7 @@ public class Employee_Page extends BaseClass {
         if (!get_Text(statusField).equals(status)) {
             click_Element(statusField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + status + "']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[normalize-space(text())='"+status+"']")));
         }
 
         return this;
@@ -176,7 +176,7 @@ public class Employee_Page extends BaseClass {
         if (!get_Text(roleField).equals(role)) {
             click_Element(roleField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + role + "']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[normalize-space(text())='"+role+"']")));
         }
 
         return this;
@@ -198,7 +198,7 @@ public class Employee_Page extends BaseClass {
         if (!get_Text(departmentField).equals(department)) {
             click_Element(departmentField);
             SmallWait(200);
-            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//span[normalize-space()='" + department + "']")));
+            js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//mat-option/span[normalize-space(text())='"+department+"']")));
         }
 
         return this;

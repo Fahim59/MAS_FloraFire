@@ -25,11 +25,13 @@ public class Vehicle_Page extends BaseClass{
 
     private final By newVehicleButton = By.xpath("//span[contains(text(),'NewVehicle')]");
 
+    private final By idField = By.xpath("//input[@formcontrolname='vehicleNo']");
     private final By licensePlateField = By.xpath("//input[@formcontrolname='licensePlate']");
     private final By nameField = By.xpath("//input[@formcontrolname='name']");
     private final By vinField = By.xpath("//input[@formcontrolname='vin']");
+    private final By mileageField = By.xpath("//input[@formcontrolname='mileage']");
     private final By modelField = By.xpath("//input[@formcontrolname='model']");
-    private final By statusField = By.xpath("(//div[contains(@id,'mat-select-value')])[2]");
+    private final By statusField = By.xpath("//mat-select[@formcontrolname='statusValueId']");
     private final By expireDateField = By.xpath("//input[@formcontrolname='expirationDate']");
     private final By maintenanceDueField = By.xpath("//input[@formcontrolname='maintenanceDue']");
 
@@ -41,6 +43,10 @@ public class Vehicle_Page extends BaseClass{
         click_Element(newVehicleButton);
     }
 
+    public Vehicle_Page enterId(String id){
+        write_Send_Keys(idField, id);
+        return this;
+    }
     public Vehicle_Page enterLicensePlate(String license){
         write_Send_Keys(licensePlateField, license);
         return this;
@@ -52,6 +58,10 @@ public class Vehicle_Page extends BaseClass{
     public Vehicle_Page enterVIN(String vin) throws InterruptedException {
         SmallWait(200);
         write_Send_Keys(vinField, vin);
+        return this;
+    }
+    public Vehicle_Page enterMileage(String mileage){
+        write_Send_Keys(mileageField, mileage);
         return this;
     }
     public Vehicle_Page enterModel(String model) throws InterruptedException {
@@ -80,8 +90,8 @@ public class Vehicle_Page extends BaseClass{
         return this;
     }
 
-    public void enterVehicleInformation(String license, String name, String vin, String model, String status, String exDate, String mainDate) throws InterruptedException {
-        enterLicensePlate(license).enterVehicleName(name).enterVIN(vin).enterModel(model).selectStatus(status).
+    public void enterVehicleInformation(String id, String license, String name, String vin, String mileage, String model, String status, String exDate, String mainDate) throws InterruptedException {
+        enterId(id).enterLicensePlate(license).enterVehicleName(name).enterVIN(vin).enterMileage(mileage).enterModel(model).selectStatus(status).
                 enterExpirationDate(exDate).enterMaintenanceDate(mainDate).clickSaveButton();
     }
 

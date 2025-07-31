@@ -107,19 +107,19 @@ public class Vehicle_Page extends BaseClass{
     private final String vehicleTable = "//table[@role='table']/tbody";
     private final By rows = By.xpath(vehicleTable+"/tr");
 
-    public void verifyVehicleAddition(String shortcut) throws InterruptedException {
+    public void verifyVehicleAddition(String vehicle) throws InterruptedException {
         SmallWait(1500);
 
         for(int l = 1; l<= get_Size(rows); l++){
 
             String code = driver.findElement(By.xpath(vehicleTable+ "/tr["+l+"]/td[2]")).getText();
 
-            if(code.equalsIgnoreCase(shortcut)){
-                logger.info("Vehicle {} found", shortcut);
+            if(code.equalsIgnoreCase(vehicle)){
+                logger.info("Vehicle {} found", vehicle);
                 break;
             }
             else{
-                logger.info("Vehicle {} not found", shortcut);
+                logger.info("Vehicle {} not found", vehicle);
             }
         }
     }

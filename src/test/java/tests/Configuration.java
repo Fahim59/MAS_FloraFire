@@ -1,22 +1,23 @@
-package tests.Settings;
+package tests;
 
 import base.BaseClass;
 import base.DataSource;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import pages.*;
-import pages.Settings.Configuration_Page;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pages.Home_Page;
+import pages.Settings.TransactionType_Page;
 
 import java.util.Map;
 
 public class Configuration extends BaseClass {
     private Home_Page homePage;
-    private Configuration_Page configurationPage;
+    private TransactionType_Page configurationPage;
 
     @BeforeMethod
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
-        configurationPage = new Configuration_Page(driver);
+        configurationPage = new TransactionType_Page(driver);
     }
 
     @Test(description = "Verify that after successful login, the customer is successfully navigated to Configuration page", priority = 1)
@@ -28,7 +29,7 @@ public class Configuration extends BaseClass {
         SmallWait(1000);
         verifyCurrentUrl(jsonData.getJSONObject("tabURL").getString("termCode"));
 
-        logger.info("User clicked on the Vehicle menu and successfully navigated to the Vehicle list page");
+        logger.info("User clicked on the Configuration menu and successfully navigated to the Configuration list page");
     }
 
     public static String[] termCodeData(Map<String, String> valueData) {

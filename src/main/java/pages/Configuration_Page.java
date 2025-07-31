@@ -83,15 +83,15 @@ public class Configuration_Page extends BaseClass{
         return get_Text(successMessage);
     }
 
-    private final String vehicleTable = "//table[@role='table']/tbody";
-    private final By rows = By.xpath(vehicleTable+"/tr");
+    private final String termTable = "//table[@role='table']/tbody";
+    private final By rows = By.xpath(termTable+"/tr");
 
     public void verifyTermCodeAddition(String termCode) throws InterruptedException {
         SmallWait(1500);
 
         for(int l = 1; l<= get_Size(rows); l++){
 
-            String code = driver.findElement(By.xpath(vehicleTable+ "/tr["+l+"]/td[2]")).getText();
+            String code = driver.findElement(By.xpath(termTable+ "/tr["+l+"]/td[2]")).getText();
 
             if(code.equalsIgnoreCase(termCode)){
                 logger.info("Term Code {} found", termCode);

@@ -21,6 +21,8 @@
     "employeeList": "/employees",
     "employeeMaintenance": "/employees/create",
 
+    "termCode": "/terms-code-configuration",
+
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
 
@@ -78,6 +80,8 @@
     "discountCreate": "Discount has been created successfully",
 
     "employeeCreate": "Employee created successfully",
+
+    "termCodeCreate": "Terms code created successfully",
 
     "valueType": "value type added successfully",
     "value": "value added successfully",

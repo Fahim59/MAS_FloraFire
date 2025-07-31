@@ -1,39 +1,28 @@
-2025-07-30 12:51:50.544 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-30 12:52:00.150 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-30 12:52:07.308 [main] INFO  base.BaseClass - Element is visible.
-2025-07-30 12:52:07.308 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-30 12:52:12.173 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2025-07-30 12:52:27.182 [main] INFO  base.BaseClass - Browser quit successfully
-2025-07-30 12:54:41.065 [main] INFO  base.BaseClass - Browser launched successfully
-2025-07-30 12:54:50.572 [main] INFO  tests.UserLogin - User logged in successfully.
-2025-07-30 12:54:56.850 [main] INFO  base.BaseClass - Element is visible.
-2025-07-30 12:54:56.850 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-30 12:55:01.621 [main] INFO  tests.Settings.Vehicle - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
-2025-07-30 12:55:10.051 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 001 not found
-2025-07-30 12:55:10.059 [main] INFO  tests.Settings.Vehicle - Vehicle 001 added successfully
-2025-07-30 12:55:17.412 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 002 not found
-2025-07-30 12:55:17.432 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 002 not found
-2025-07-30 12:55:17.438 [main] INFO  tests.Settings.Vehicle - Vehicle 002 added successfully
-2025-07-30 12:55:24.158 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 003 not found
-2025-07-30 12:55:24.176 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 003 not found
-2025-07-30 12:55:24.196 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 003 not found
-2025-07-30 12:55:24.202 [main] INFO  tests.Settings.Vehicle - Vehicle 003 added successfully
-2025-07-30 12:55:30.960 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 004 not found
-2025-07-30 12:55:30.978 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 004 not found
-2025-07-30 12:55:30.996 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 004 not found
-2025-07-30 12:55:31.017 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 004 not found
-2025-07-30 12:55:31.023 [main] INFO  tests.Settings.Vehicle - Vehicle 004 added successfully
-2025-07-30 12:55:37.706 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 005 not found
-2025-07-30 12:55:37.731 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 005 not found
-2025-07-30 12:55:37.749 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 005 not found
-2025-07-30 12:55:37.767 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 005 not found
-2025-07-30 12:55:37.787 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 005 not found
-2025-07-30 12:55:37.794 [main] INFO  tests.Settings.Vehicle - Vehicle 005 added successfully
-2025-07-30 12:55:44.520 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.536 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.554 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.572 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.589 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.609 [main] INFO  pages.Settings.Vehicle_Page - Vehicle 006 not found
-2025-07-30 12:55:44.618 [main] INFO  tests.Settings.Vehicle - Vehicle 006 added successfully
-2025-07-30 12:55:44.620 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-31 16:12:13.172 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:12:24.387 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 16:12:32.286 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 16:12:32.286 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 16:12:37.230 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:12:50.267 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:13:00.998 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:13:10.859 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 16:13:18.167 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 16:13:18.167 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 16:13:23.076 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:13:35.225 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-31 16:14:40.873 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:14:50.521 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 16:14:56.943 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 16:14:56.943 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 16:15:01.871 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:16:46.748 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:16:56.987 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 16:17:05.337 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 16:17:05.338 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 16:17:10.237 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:17:53.863 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 16:18:03.436 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 16:18:12.243 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 16:18:12.243 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 16:18:17.029 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:18:34.888 [main] INFO  base.BaseClass - Browser quit successfully

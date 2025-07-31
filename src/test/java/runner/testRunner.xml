@@ -21,6 +21,7 @@
 <!--        <class name="tests.Discount_Maintenance"/>-->
 <!--        <class name="tests.GiftCards"/>-->
 <!--        <class name="tests.Employees"/>-->
+            <class name="tests.Settings.Configuration"/>
 <!--        <class name="tests.Settings.Corporate_Settings"/>-->
 <!--        <class name="tests.Settings.Store_Settings"/>-->
 <!--        <class name="tests.Settings.Employee_Settings"/>-->
@@ -29,7 +30,7 @@
 <!--        <class name="tests.Settings.Delivery.Delivery_Mode"/>-->
 <!--        <class name="tests.Settings.Delivery.Calendar"/>-->
 <!--        <class name="tests.Settings.Delivery.Short_Code"/>-->
-        <class name="tests.Settings.Vehicle"/>
+<!--        <class name="tests.Settings.Vehicle"/>-->
 <!--        <class name="tests.Settings.CreditCard_Settings"/>-->
     </classes>
 </test>

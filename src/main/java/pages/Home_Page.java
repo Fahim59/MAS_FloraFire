@@ -34,6 +34,9 @@ public class Home_Page extends BaseClass{
 
     private final By productMaintenanceMenu = By.xpath("(.//span[text()='Product Maintenance'])[1]");
 
+    private final By accountReceivableMenu = By.xpath("(.//span[text()='Account Receivable'])[1]");
+    private final By configurationMenu = By.xpath("(.//span[text()='Configuration'])[1]");
+
     private final By discountMaintenanceMenu = By.xpath("(.//span[text()='Discount Maintenance'])[1]");
 
     private final By giftCardsMenu = By.xpath("(.//span[text()='Gift Cards'])[1]");
@@ -41,6 +44,8 @@ public class Home_Page extends BaseClass{
     private final By employeesMenu = By.xpath("(.//span[text()='Employees'])[1]");
 
     private final By settingsMenu = By.xpath("(.//span[text()='Settings'])[1]");
+
+    private final By transactionTypeSettingMenu = By.xpath("(.//span[text()='Transaction Type Settings'])[1]");
 
     private final By valueSettingMenu = By.xpath("(.//span[text()='Value List'])[1]");
     private final By valueMenu = By.xpath("(.//span[text()='Value Type Mapping'])[1]");
@@ -97,6 +102,11 @@ public class Home_Page extends BaseClass{
         click_Element(productMaintenanceMenu);
     }
 
+    public void clickConfigurationMenu() {
+        click_Element(accountReceivableMenu);
+        click_Element(configurationMenu);
+    }
+
     public void clickDiscountMaintenanceMenu() {
         click_Element(discountMaintenanceMenu);
     }
@@ -107,6 +117,11 @@ public class Home_Page extends BaseClass{
 
     public void clickEmployeesMenu() {
         click_Element(employeesMenu);
+    }
+
+    public void clickTransactionTypeSettingsMenu() {
+        click_Element(settingsMenu);
+        click_Element(transactionTypeSettingMenu);
     }
 
     public void clickValueMenu() throws InterruptedException {

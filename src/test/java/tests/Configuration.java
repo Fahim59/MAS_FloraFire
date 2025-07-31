@@ -5,6 +5,7 @@ import base.DataSource;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.Configuration_Page;
 import pages.Home_Page;
 import pages.Settings.TransactionType_Page;
 
@@ -12,12 +13,12 @@ import java.util.Map;
 
 public class Configuration extends BaseClass {
     private Home_Page homePage;
-    private TransactionType_Page configurationPage;
+    private Configuration_Page configurationPage;
 
     @BeforeMethod
     public void initializePageObjects() {
         homePage = new Home_Page(driver);
-        configurationPage = new TransactionType_Page(driver);
+        configurationPage = new Configuration_Page(driver);
     }
 
     @Test(description = "Verify that after successful login, the customer is successfully navigated to Configuration page", priority = 1)

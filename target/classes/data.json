@@ -23,6 +23,8 @@
 
     "termCode": "/terms-code-configuration",
 
+    "transactionTypeSettings": "/transaction-type-settings",
+
     "valueTypes": "/valuetypes",
     "valueTypeSettings": "/valuetypesettings",
 
@@ -46,34 +48,6 @@
     "users": "/users"
   },
 
-  "values": {
-    "status": "Customer Status",
-    "accClass": "Account Class",
-    "referredBy": "Referred By",
-    "accManager": "Account Manager",
-    "invoicePayment": "Invoice Payment Schedule",
-    "term": "Payment Terms",
-    "statementInvoice": "AR Statement Invoice Type Id",
-    "priceSheet": "Price Sheet Type",
-
-    "productType": "Product Type",
-    "productDepartment": "Product Department",
-    "careCode": "Care Code",
-
-    "employeeStatus": "Employee Status",
-    "empDepartment": "Employee Department",
-    "empRole": "Employee Role",
-    "contactPersonRelation": "Employee Contact Person Relation",
-
-    "vehicleStatus": "Vehicle Status",
-
-    "giftCardReason": "Gift Card Reason",
-
-    "tipCategory": "Tip Category",
-    "miscIncome": "Misc Income Reason",
-    "paidOut": "Paid Out Reason"
-  },
-
   "successMessage": {
     "productCreate": "Created Successfully",
 
@@ -81,7 +55,9 @@
 
     "employeeCreate": "Employee created successfully",
 
-    "termCodeCreate": "Terms code updated successfully",
+    "termCodeCreate": "Terms code created successfully",
+
+    "transactionType": "Added successfully",
 
     "valueType": "value type added successfully",
     "value": "value added successfully",

@@ -2,27 +2,46 @@
 2025-07-31 16:12:24.387 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-07-31 16:12:32.286 [main] INFO  base.BaseClass - Element is visible.
 2025-07-31 16:12:32.286 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-31 16:12:37.230 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:12:37.230 [main] INFO  tests.Settings.TransactionType - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
 2025-07-31 16:12:50.267 [main] INFO  base.BaseClass - Browser launched successfully
 2025-07-31 16:13:00.998 [main] INFO  base.BaseClass - Browser launched successfully
 2025-07-31 16:13:10.859 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-07-31 16:13:18.167 [main] INFO  base.BaseClass - Element is visible.
 2025-07-31 16:13:18.167 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-31 16:13:23.076 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:13:23.076 [main] INFO  tests.Settings.TransactionType - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
 2025-07-31 16:13:35.225 [main] INFO  base.BaseClass - Browser quit successfully
 2025-07-31 16:14:40.873 [main] INFO  base.BaseClass - Browser launched successfully
 2025-07-31 16:14:50.521 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-07-31 16:14:56.943 [main] INFO  base.BaseClass - Element is visible.
 2025-07-31 16:14:56.943 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-31 16:15:01.871 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:15:01.871 [main] INFO  tests.Settings.TransactionType - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
 2025-07-31 16:16:46.748 [main] INFO  base.BaseClass - Browser launched successfully
 2025-07-31 16:16:56.987 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-07-31 16:17:05.337 [main] INFO  base.BaseClass - Element is visible.
 2025-07-31 16:17:05.338 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-31 16:17:10.237 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:17:10.237 [main] INFO  tests.Settings.TransactionType - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
 2025-07-31 16:17:53.863 [main] INFO  base.BaseClass - Browser launched successfully
 2025-07-31 16:18:03.436 [main] INFO  tests.UserLogin - User logged in successfully.
 2025-07-31 16:18:12.243 [main] INFO  base.BaseClass - Element is visible.
 2025-07-31 16:18:12.243 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
-2025-07-31 16:18:17.029 [main] INFO  tests.Settings.Configuration - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
+2025-07-31 16:18:17.029 [main] INFO  tests.Settings.TransactionType - User clicked on the Vehicle menu and successfully navigated to the Vehicle list page
 2025-07-31 16:18:34.888 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-31 17:25:03.624 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 17:25:37.960 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 17:25:48.875 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 17:25:57.809 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 17:25:57.809 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 17:26:02.611 [main] INFO  tests.Settings.TransactionType - User clicked on the Transaction Type menu and successfully navigated to the Transaction Code list page
+2025-07-31 17:26:05.992 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-31 17:28:21.241 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 17:28:31.173 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 17:28:37.767 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 17:28:37.768 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 17:28:42.683 [main] INFO  tests.Settings.TransactionType - User clicked on the Transaction Type menu and successfully navigated to the Transaction Code list page
+2025-07-31 17:28:42.732 [main] INFO  base.BaseClass - Browser quit successfully
+2025-07-31 17:29:32.885 [main] INFO  base.BaseClass - Browser launched successfully
+2025-07-31 17:29:43.065 [main] INFO  tests.UserLogin - User logged in successfully.
+2025-07-31 17:29:49.565 [main] INFO  base.BaseClass - Element is visible.
+2025-07-31 17:29:49.565 [main] INFO  tests.UserLogin - User successfully navigated to the Home page
+2025-07-31 17:29:54.399 [main] INFO  tests.Settings.TransactionType - User clicked on the Transaction Type menu and successfully navigated to the Transaction Code list page
+2025-07-31 17:30:06.707 [main] INFO  base.BaseClass - Browser quit successfully
